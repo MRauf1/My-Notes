@@ -8,7 +8,8 @@ tags: statistics, categorical_variable_prediction
 > For a [[Multinomial Distribution]] denoted $Multinomial(n, p_1, \dots, p_c)$, its variance is
 > $$
 > \begin{align}
-> Var[n_j] = n p_j(1 - p_j)
+> Var[n_j] &= n p_j(1 - p_j) \\
+> Var[X] &= n \begin{bmatrix}p_1 (1 - p_1) & - p_1 p_2 & \dots & - p_1 p_c \\ - p_1 p_2 & p_2 (1 - p_2) & \dots & \dots \\ \vdots & \vdots & \vdots & \vdots \\ - p_1 p_c & \dots & \dots & p_c (1 - p_c)\end{bmatrix}
 > \end{align}
 > $$
 

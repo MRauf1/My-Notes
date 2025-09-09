@@ -28,4 +28,7 @@ Expectation is a [[Linear Map|linear operator]].
 - $c$ is a [[Constant|constant]] and $X$ is a RV $\implies E[cX] = c E[X]$
 - $X_1$ and $X_2$ are [[Random Variable|RVs]] $\implies E[X + Y] = E[X] + E[Y]$
 
+## [[Conditional Expectation]]
+- [[Law of Total Expectation]]
+
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=59)

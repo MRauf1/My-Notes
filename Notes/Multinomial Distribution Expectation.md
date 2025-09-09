@@ -8,7 +8,8 @@ tags: statistics, categorical_variable_prediction
 > For a [[Multinomial Distribution]] denoted $Multinomial(n, p_1, \dots, p_c)$, its expectation/mean is
 > $$
 > \begin{align}
-> E[n_j] = n p_j
+> E[n_j] &= n p_j \\
+> E[X] &= [n p_1, \dots, n p_c]
 > \end{align}
 > $$
 

@@ -2,6 +2,8 @@
 tags: other
 ---
 
+Pearson chi-squared test.
+
 80/20 Rule.
 
 Memento mori.
