@@ -1,17 +1,28 @@
 ---
-tags: statistics
+tags: statistics, bayesian_statistics
 ---
 
 # Definition
 
-> [!info] Definition 1 (Expectation of Discrete RV)[^1]
+> [!info] Definition 1 (Expectation of [[Discrete Random Variable]])[^1]
 > For a [[Discrete Random Variable|discrete RV]] $X$ with an [[Universe of Discourse|outcome space]] $S$, its expectation is
 > $$
 > \begin{align}
 > E[X] = \mu = \sum_{x \in S} x f(x)
 > \end{align}
 > $$
-> The expectation is also known as the [[Mean|mean]] of the random variable.
+
+> [!info] Definition 2 (Expectation of [[Continuous Random Variable]])[^1]
+> For a [[Continuous Random Variable]] $X$ with an [[Universe of Discourse|outcome space]] $S$, its expectation is
+> $$
+> \begin{align}
+> E[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx
+> \end{align}
+> $$
+
+The expectation is also known as the [[Mean|mean]] of the random variable.
+
+Expectation measures the center of the distribution.
 
 Expectation is a [[Linear Map|linear operator]].
 

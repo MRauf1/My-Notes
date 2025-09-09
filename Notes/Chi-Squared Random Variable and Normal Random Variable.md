@@ -5,7 +5,7 @@ tags: statistics, categorical_variable_prediction
 # Definition
 
 > [!info] Definition 1 (Relation between [[Chi-Squared Distribution]] and [[Normal Distribution]])[^1]
-> Let $Z ~ N(0, 1)$ and $Z_1, \dots, Z_v ~ N(0, 1)$. Then
+> Let $Z \sim N(0, 1)$ and $Z_1, \dots, Z_v \sim N(0, 1)$. Then
 > $$
 > \begin{align}
 > Z^2 &= \chi^2(1) \\

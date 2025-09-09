@@ -17,6 +17,6 @@ tags: statistics
 - [[Expectation|Expectation]]
 
 # Distributions
-- [[Discrete Probability Distribution]]
+- [[Univariate Discrete Probability Distribution]]
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=52)

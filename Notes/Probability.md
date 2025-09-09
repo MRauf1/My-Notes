@@ -18,4 +18,13 @@ By definition, probability has the following properties:
 - [[Probability Maximum Value]]
 - [[Probability of Set Union]]
 
+# Frameworks
+- [[Probability Frequentist Framework]]
+- [[Probability Bayesian Framework]]
+
+## Interpretations
+- [[Probability Objective Interpretation]]
+- [[Probability Subjective Interpretation]]
+
+
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=13)

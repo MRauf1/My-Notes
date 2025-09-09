@@ -11,7 +11,6 @@ tags: statistics, categorical_variable_prediction
 - [[Bernoulli Distribution]]
 - [[Binomial Distribution]]
 - [[Negative Binomial Distribution]]
-- [[Multinomial Distribution]]
 - [[Geometric Distribution|Geometric Distribution]]
 - [[Hypergeometric Distribution|Hypergeometric Distribution]]
 - [[Poisson Distribution]]

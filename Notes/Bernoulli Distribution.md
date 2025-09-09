@@ -8,7 +8,7 @@ tags: statistics, categorical_variable_prediction
 > Denoted as $Bernoulli(p)$
 > $$
 > \begin{align}
-> P(x) &= \begin{cases}p & x = 1\\ 1 - p & x = 0\end{cases}
+> P(x) &= \begin{cases}p & x = 1\\ 1 - p & x = 0\end{cases} = p^x(1 - p)^{1 - x}
 > \end{align}
 > $$
 

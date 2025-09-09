@@ -14,7 +14,7 @@ tags: statistics, categorical_variable_prediction
 
 Distribution for a number of events/counts occurring randomly in a given period of time/space. There isn't a fixed amount of trials.
 
-Disjoint periods/regions are [[Independent Random Variable]].
+Events are [[Independent Events]] and identical so the distribution is [[i.i.d.]].
 
 # Properties
 ## Basic Statistical Properties

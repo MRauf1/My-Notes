@@ -2,6 +2,8 @@
 tags: other
 ---
 
+Go through all distributions and write down their use cases.
+
 Pearson chi-squared test.
 
 80/20 Rule.

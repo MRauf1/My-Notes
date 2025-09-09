@@ -15,6 +15,14 @@ tags: statistics
 
 With conditional probability, our sample space changes from the [[Universe of Discourse|universe of discourse]] to the space of event $B \subseteq U$.
 
+> [!info] Definition 2 (Conditional Probability using [[Probability Function]])
+> Giving [[Random Variable]] $X_1, X_2$ with [[Joint Probability Distribution]] $f(x_1, x_2)$, the conditional probability is
+> $$
+> \begin{align}
+> f_{X_1 | X_2}(x_1 | X_2 = x_2) = \frac{f(x_1, x_2)}{f_{X_2}(x_2)}
+> \end{align}
+> $$
+
 # Properties
 
 ## Primary Properties
@@ -38,9 +46,11 @@ With conditional probability, our sample space changes from the [[Universe of Di
 - $A_1 \subseteq A_2 \implies P(A_1 | B) \leq P(A_2 | B)$
 - $P(A | B) \leq 1$
 - $P(A_1 \cup A_2 | B) = P(A_1 | B) + P(A_2 | B) - P(A_1 \cap A_2 | B)$
+- $P(A | B) + P(A^c | B) = 1$, but generally, it follows that $P(A | B) + P(A | B^c) \neq 1$
 
 #TODO 
 - Are the other properties true?
 - For the first other property, is the $P(B) > 0$ necessary?
+- Double check the last property from my notes
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=30)

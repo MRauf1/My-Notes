@@ -4,7 +4,7 @@ tags: statistics
 
 # Definition
 
-> [!info] Definition 1 (Cumulative Mass Function)[^1]
+> [!info] Definition 1 ([[Cumulative Function|Cumulative]] Mass Function)[^1]
 > For a [[Discrete Random Variable|discrete RV]] $X$, its cmf is
 > $$
 > \begin{align}

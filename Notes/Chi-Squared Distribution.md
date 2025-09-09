@@ -5,16 +5,22 @@ tags: statistics, categorical_variable_prediction
 # Definition
 
 > [!info] Definition 1 (Chi-Squared [[Probability Distribution]])[^1]
-> Denoted as $\chi^2(k)$, where $k$ is the [[Degree of Freedom]].
+> With [[Function Support]] $(0, \infty)$, denoted as $\chi^2(k)$, where $k$ is the [[Degree of Freedom]].
 > $$
 > \begin{align}
-> P(x) &= ... \\
-> E[X] &= k \\
-> Var[X] &= 2k
+> f(x) = \frac{1}{2^{k/2} \Gamma(k/2)} x^{k/2 - 1} exp[-x / 2]
 > \end{align}
 > $$
 
+It is the [[Probability Distribution]] of a sum of squares of $k$ [[Independent Random Variable|independent]] [[Standardization|standard]] [[Normal Distribution|normal]] [[Random Variable]].
+
+If $X \sim \chi^2(k)$, then $X \sim Gamma(\alpha = k/2, \theta = 2)$, so it is a special case of the [[Gamma Distribution]].
+
 # Properties
+## Basic Statistical Properties
+- [[Chi-Squared Distribution Expectation]]
+- [[Chi-Squared Distribution Variance]]
+
 ## [[Probability Distribution Skewness]]
 - [[Chi-Squared Distribution Skewness]]
 
