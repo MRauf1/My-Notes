@@ -11,7 +11,7 @@ tags: statistics, categorical_variable_prediction
 > z_w = \frac{\hat{\beta} - \beta_0}{SE} \sim_{H_0} N(0, 1)
 > \end{align}
 > $$
-> where $SE = \sqrt{\frac{1}{\iota(\hat{\beta})}}$
+> where $SE = \sqrt{\frac{1}{\iota(\hat{\beta})}}$, where $\iota(\hat{\beta})$ is the [[Fisher Information]].
 
 Reject the null hypothesis if $|z_w| \geq z_{\alpha/2}$ for a [[Two-Sided Test]] with $\alpha$.
 

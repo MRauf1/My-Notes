@@ -1,5 +1,5 @@
 ---
-tags: statistics
+tags: statistics, bayesian_statistics
 ---
 
 # Definition
@@ -12,10 +12,19 @@ tags: statistics
 > \end{align}
 > $$
 
-The original [[Probability|probability]] $P(A)$ is called the prior, while the new/updated [[Conditional Probability|conditional probability]] $P(A | B)$ is called the posterior.[^1] In other words, after experiencing an event $B$, the probability of event $A$ gets updated.
+> [!info] Definition 2 (Bayes' Theorem in Bayesian Inference)[^2]
+> For data $Y$ and parameters $\theta$, the Bayes' Theorem is
+> $$
+> \begin{align}
+> P(\theta | Y) = \frac{P(Y | \theta) P(\theta)}{P(Y)} \propto P(Y | \theta) P(\theta)
+> \end{align}
+> $$
+> where $P(Y)$ can be expressed as the [[Marginal Distribution]] $P(Y) = \int P(Y | \theta) P(\theta) d\theta$
 
-If $A$ is the unknown parameter, while $B$ is the probability of the data, then $P(B | A)$ is the likelihood of the data given the parameters.
+
+The original [[Probability|probability]] $P(\theta)$ is called the prior, while the new/updated [[Conditional Probability|conditional probability]] $P(\theta | Y)$ is called the posterior.[^1] $P(Y | \theta)$ is the likelihood of the data given the parameters. In other words, given the observed data $Y$, the probability of parameters $\theta$ gets updated.
 
 If the prior is $1$ (no uncertainty about the prior), then the imperfect data will not update the prior (posterior = prior). Conversely, with perfect data, the prior becomes irrelevant.
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=45)
+[^2]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=34)

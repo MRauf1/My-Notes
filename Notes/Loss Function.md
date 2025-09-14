@@ -7,6 +7,11 @@ tags: computer_science, deep_learning
 ...
 
 # Types
+- [[L1 Loss]]
+- [[L2 Loss]]
 
-- [[L2 Loss|L2 Loss]]
-- [[Cross-Entropy Loss|Cross-Entropy Loss]]
+## [[Regression]]
+- [[Mean Squared Error]]
+
+## [[Classification]]
+- [[Cross-Entropy Loss]]

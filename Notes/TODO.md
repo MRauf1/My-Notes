@@ -2,6 +2,10 @@
 tags: other
 ---
 
+Statistics - homogeneity and how it relates to independence
+
+Sensitivity/specificity/TP/TN/FP/FN
+
 Go through all distributions and write down their use cases.
 
 Pearson chi-squared test.

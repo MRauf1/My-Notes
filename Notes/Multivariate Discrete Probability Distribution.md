@@ -12,9 +12,6 @@ tags: statistics, bayesian_statistics
 > \end{align}
 > $$
 
-# Types
-- [[Multinomial Distribution]]
-
 # Properties
 ## Definitional Properties
 - [[Multivariate Discrete Probability Distribution Definitional Properties]]

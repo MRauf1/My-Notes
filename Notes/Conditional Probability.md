@@ -26,27 +26,16 @@ With conditional probability, our sample space changes from the [[Universe of Di
 # Properties
 
 ## Primary Properties
-
-- $P(A | B) \geq 0$
-- $P(B | B) = 1$
-- if $A_1, A_2, \dots, A_n$ are [[Mutually Exclusive Events|mutually exclusive events]], then $P(A_1 \cup A_2 \cup \dots \cup A_n | B) = P(A_1 | B) + P(A_2 | B) + \dots + P(A_n | B)$. This can be extended to an [[Infinity|infinite]], but [[Countably Infinite|countable]] number of events.
+- [[Conditional Probability Primary Properties]]
 
 ## Multiplication Rule
-
-- $P(A \cap B) = P(A) P(B | A) = P(B) P(A | B)$, where $P(A) > 0$ in the first case and $P(B) > 0$ in the second case
+- [[Conditional Probability Multiplication Rule]]
 
 ## Bayes' Theorem
-
 - [[Bayes' Theorem|Bayes' Theorem]]
 
 ## Other Properties
-
-- $P(A | B) = 1 - P(A^c | B)$, given $P(B) > 0$
-- $P(\emptyset | B) = 0$
-- $A_1 \subseteq A_2 \implies P(A_1 | B) \leq P(A_2 | B)$
-- $P(A | B) \leq 1$
-- $P(A_1 \cup A_2 | B) = P(A_1 | B) + P(A_2 | B) - P(A_1 \cap A_2 | B)$
-- $P(A | B) + P(A^c | B) = 1$, but generally, it follows that $P(A | B) + P(A | B^c) \neq 1$
+- [[Conditional Probability Other Properties]]
 
 #TODO 
 - Are the other properties true?

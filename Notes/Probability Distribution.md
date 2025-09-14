@@ -8,7 +8,9 @@ tags: statistics, bayesian_statistics
 
 # Types
 ## [[Univariate Probability Distribution]]
-- [[Univariate Discrete Probability Distribution]]
-- [[Univariate Continuous Probability Distribution]]
+- [[Discrete Probability Distribution]]
+- [[Continuous Probability Distribution]]
 
 ## [[Multivariate Probability Distribution]]
+- [[Multivariate Discrete Probability Distribution]]
+- [[Multivariate Continuous Probability Distribution]]

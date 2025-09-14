@@ -8,6 +8,8 @@ tags: meta_learning
 
 Thought moves along a preexisting [[Thought Pattern|thought pattern]]. It is great for tasks that one already know how to do, but tasks involving new ideas/approaches need a [[Diffuse Mode|diffuse mode]] of thinking.
 
+In general, one can intensely focus for up to 4 hours per day.[^2]
+
 # Improving Focus
 - [[Focus Improvement]]
 
@@ -15,3 +17,4 @@ Thought moves along a preexisting [[Thought Pattern|thought pattern]]. It is gre
 - Is focused always conscious? Yes, right?
 
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/75EsZ/introduction-to-the-focused-and-diffuse-modes
+[^2]: [Meditations for Mortals](zotero://open-pdf/library/items/ZF42TD5D?page=65)

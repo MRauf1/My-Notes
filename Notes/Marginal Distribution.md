@@ -8,7 +8,8 @@ tags: statistics, bayesian_statistics
 > For a [[Joint Probability Distribution]] $f(x_1, x_2)$ with [[Random Variable]] $X_1, X_2$, the marginal distribution of $X_1$ is
 > $$
 > \begin{align}
-> P(X_1 = x_1) = f_1(x_1) = \sum_{x_2} f(x_1, x_2)
+> P(X_1 = x_1) &= f_1(x_1) = \sum_{x_2} f(x_1, x_2)\ \text{(Discrete)} \\
+> f(X_1 \in A) &= \int_{A} f(x_1, x_2) dx_2\ \text{(Continuous)}
 > \end{align}
 > $$
 

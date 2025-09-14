@@ -14,6 +14,7 @@ tags: psychology
 - Use the past to learn from your mistakes and carry on. Don't dwell on the past.
 - You are what you think. Cultivate positive thoughts.
 - Pretend and act like you're happy. Feelings will follow action.
+- Be grateful for what you have rather than lamenting what you don't.
 
 ## Addressing Worry
 - Get all the facts in an impartial/objective manner.
