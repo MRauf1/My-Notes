@@ -15,6 +15,8 @@ tags: psychology
 - You are what you think. Cultivate positive thoughts.
 - Pretend and act like you're happy. Feelings will follow action.
 - Be grateful for what you have rather than lamenting what you don't.
+- Dedicate yourself to others or a task greater than yourself.
+	- Sincerely compliment others
 
 ## Addressing Worry
 - Get all the facts in an impartial/objective manner.

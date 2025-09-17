@@ -2,6 +2,10 @@
 tags: other
 ---
 
+Causal inference/statistics.
+
+Cognitive bias.
+
 Statistics - homogeneity and how it relates to independence
 
 Sensitivity/specificity/TP/TN/FP/FN

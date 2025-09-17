@@ -18,12 +18,8 @@ Limit of a sequence is a value such that for all large $n$, the sequence is arbi
 
 # Types
 ## Convergence
-- [[Convergent Limit of Sequence]]
-- [[Divergent Limit of Sequence]]
-
-# Boundedness
-- [[Bounded Limit of Sequence]]
-- [[Unbounded Limit of Sequence]]
+- [[Convergent Sequence]]
+- [[Divergent Sequence]]
 
 # Examples
 - [[Limit of Sequence Basic Examples]]

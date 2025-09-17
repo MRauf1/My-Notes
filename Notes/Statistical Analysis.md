@@ -1,5 +1,5 @@
 ---
-tags: anki, statistics
+tags: anki, statistics, introduction_to_statistics
 ---
 
 # Definition

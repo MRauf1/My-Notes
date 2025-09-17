@@ -19,4 +19,6 @@ tags: mathematics, differential_geometry
 > \end{align}
 > $$
 
+Natural coordinate functions are a type of [[Euclidean Coordinate Function]].
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=19)

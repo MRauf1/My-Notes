@@ -1,5 +1,5 @@
 ---
-tags: mathematics, pre_calculus, discrete_mathematics, statistics
+tags: mathematics, pre_calculus, discrete_mathematics, statistics, introduction_to_statistics
 ---
 
 # Definition

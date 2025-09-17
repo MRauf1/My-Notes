@@ -5,7 +5,7 @@ tags: mathematics, differential_geometry
 # Definition
 
 > [!info] Definition 1 ([[Vector]] Field)[^1]
-> Vector field $V$ on $\mathbb{R}^3$ is a [[Function]] that assigns to each [[Point]] $\mathbf{p} \in \mathbb{R}^3$ a [[Tangent Vector]] $V(\mathbf{p}) = \mathbf{v}_{\mathbf{p}}$ to $\mathbb{R}^3$ at $\mathbf{p}$.
+> Vector field $V$ on $\mathbb{R}^3$ is a [[Function]] $V: \mathbb{R}^3 \rightarrow T_{\mathbf{p}}(\mathbb{R}^3)$ that assigns to each [[Point]] $\mathbf{p} \in \mathbb{R}^3$ a [[Tangent Vector]] $V(\mathbf{p}) = \mathbf{v}_{\mathbf{p}}$ to $\mathbb{R}^3$ at $\mathbf{p}$.
 
 > [!info] Definition 2 (Alternative Notation)
 > See [[Euclidean Coordinate Function]].

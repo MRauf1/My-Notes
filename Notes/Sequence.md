@@ -9,4 +9,19 @@ tags: mathematics, real_analysis
 
 Unlike [[Set]], sequence is ordered and can have repeating elements.
 
+# Types
+- [[Cauchy Sequence]]
+
+## Increasing vs. Decreasing
+- [[Increasing Sequence]]
+- [[Decreasing Sequence]]
+- [[Monotone Sequence]]
+
+## Boundedness
+- [[Bounded Sequence]]
+- [[Unbounded Sequence]]
+
+# Properties
+- [[Limit of Sequence With Limit Supremum And Limit Infimum]]
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=45)

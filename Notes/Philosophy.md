@@ -17,7 +17,6 @@ In particular, philosophical engagement can give rise to clever ideas that were 
 Therefore, it is this process of self-reflection through philosophy that gives a better understanding of oneself as well as the universe. It is this that grants us the most freedom. And it is this that can positively or negatively change our mind and life.
 
 # Subfields
-
 - [[Logic]]
 - [[Metaphysics]]
 - [[Epistemology]]
@@ -26,8 +25,12 @@ Therefore, it is this process of self-reflection through philosophy that gives a
 - [[Political Philosophy]]
 
 # Periods
-
 - [[Ancient Philosophy]]
 - [[Religious Philosophy]]
+
+# Approaches to Study
+- [[Presentist Approach]]
+- [[Contextualist Approach]]
+- [[Hermeneutic Approach]]
 
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=18)
