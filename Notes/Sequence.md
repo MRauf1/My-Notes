@@ -12,6 +12,9 @@ Unlike [[Set]], sequence is ordered and can have repeating elements.
 # Types
 - [[Cauchy Sequence]]
 
+## Subsequence
+- [[Subsequence]]
+
 ## Increasing vs. Decreasing
 - [[Increasing Sequence]]
 - [[Decreasing Sequence]]
@@ -23,5 +26,12 @@ Unlike [[Set]], sequence is ordered and can have repeating elements.
 
 # Properties
 - [[Limit of Sequence With Limit Supremum And Limit Infimum]]
+
+## Limit
+- [[Limit of Sequence]]
+- [[Subsequential Limit]]
+
+### [[Subsequential Limit]]
+- [[Subsequential Limit Theorem]]
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=45)

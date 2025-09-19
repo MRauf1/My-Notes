@@ -22,8 +22,8 @@ tags: mathematics, pre_algebra
 [[Number|Number]] $n$ whose [[Square|square]] is $m$ is the square root of $m$. The radical sign $\sqrt{}$ stands for the non-negative square root of a number. If the negative square root is needed, place the $-$ sign in front. If both the positive and negative square roots are needed, place the $\pm$ sign in front.
 
 # Properties
-
 - [[Increasing Property of Square Root|Increasing Property of Square Root]]
+- [[Square Root Triangle Inequality]]
 
 #TODO 
 - fix square link

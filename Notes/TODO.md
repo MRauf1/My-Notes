@@ -2,6 +2,9 @@
 tags: other
 ---
 
+Maya civilization and advances in sciences.
+Babylon civilization and advances in sciences.
+
 Causal inference/statistics.
 
 Cognitive bias.
