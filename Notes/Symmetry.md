@@ -6,7 +6,7 @@ tags: mathematics, pre_calculus
 
 Symmetry is an undetectable motion. An object is symmetric if it has symmetries.
 
-$Sym(X)$ is the [[Set|set]] of [[Bijective|bijective]] [[Function|maps]] from $X$ to $X$, which represents the "symmetries of $X$". $(Sym(X), \text{Function Composition})$ forms a [[Group|group]].[^2]
+$Sym(X)$ is the [[Set|set]] of [[Bijective Function]] from $X$ to $X$, which represents the "symmetries of $X$". $(Sym(X), \text{Function Composition})$ forms a [[Group|group]].[^2]
 
 # Types
 

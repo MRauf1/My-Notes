@@ -12,4 +12,8 @@ Because a random batch is sampled, SGD may be able to jump over small bumps in t
 
 SGD can implicitly regularize the learning problem.
 
+# Cons
+- Need to normalize the inputs
+- The learning rate is not adaptive
+
 [^1]: https://visionbook.mit.edu/gradient_descent.html

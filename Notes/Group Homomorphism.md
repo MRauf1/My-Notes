@@ -29,7 +29,7 @@ tags: mathematics, abstract_algebra
 - [[Group Homomorphism Theorem]]
 
 ## Other
-- $\phi$ is [[Injective]] $\iff$ $ker(\phi) = \{e_G\}$
+- $\phi$ is [[Injective Function]] $\iff$ $ker(\phi) = \{e_G\}$
 
 # Types
 - [[Group Isomorphism]]

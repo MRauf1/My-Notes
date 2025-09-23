@@ -25,9 +25,10 @@ There are 3 ways to describe a set:
 # Operations
 
 - [[Set Operations]]
+# Properties
+- [[Set Basic Properties]]
 
-# Laws
-
+## Laws
 - [[Commutative Property|Commutative Laws]]
 - [[Associative Property|Associative Laws]]
 - [[Distributive Property|Distributive Laws]]

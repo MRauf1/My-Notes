@@ -2,7 +2,7 @@
 tags: literature_review
 ---
 
-Review[^1]
+# Review[^1]
 
 Consists of:
 - [[Benjamin Franklin Autobiography]]

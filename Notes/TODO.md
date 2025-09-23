@@ -2,6 +2,37 @@
 tags: other
 ---
 
+Mono no aware.
+
+GRE Practice Text Completion:
+1 of 8: failing, disastrous
+2 of 8: high
+3 of 8: negative
+4 of 8: mines
+5 of 8: different
+6 of 8: pragmatic, practical, more interested in results/effects
+7 of 8: large amount
+8 of 8: originated, derived
+Practice Clues and Transitions:
+1 of 8: first
+2 of 8: appraise
+3 of 8: beneficial
+4 of 8: closed off
+5 of 8: beauty
+6 of 8: indicator
+7 of 8: disrespect
+8 of 8: harm
+Text Completion Drills:
+1 of 6: sorrow
+2 of 6: acute
+3 of 6: static
+4 of 6: invaluable
+5 of 6: stolidity
+6 of 6: commensurate
+
+Cognitive penetration.
+Wishful thinking.
+
 Maya civilization and advances in sciences.
 Babylon civilization and advances in sciences.
 
@@ -40,8 +71,6 @@ Different types of attention.
 Ego depletion.
 
 Mere-exposure effect.
-
-Mythos vs logos vs ethos? (Are there others?)
 
 Paradoxes of Zeno.
 

@@ -5,14 +5,12 @@ tags: mathematics, pre_calculus
 # Definition
 
 ## Increasing vs. Decreasing vs. Constant
-
 For a [[Function|function]] $f$ on an [[Interval Notation|interval]] $I$, $f$ is[^1]
-- Increasing on $I$ $\iff$ $f(a) < f(b)$ for all [[Real Number|real numbers]] $a, b$ in $I$ with $a < b$
-- Decreasing on $I$ $\iff$ $f(a) > f(b)$ for all [[Real Number|real numbers]] $a, b$ in $I$ with $a < b$
+- [[Increasing Function]]
+- [[Decreasing Function]]
 - Constant on $I$ $\iff$ $f(a) = f(b)$ for all [[Real Number|real numbers]] $a, b$ in $I$ with $a < b$
 
 ## Maxima and Minima
-
 - [[Function Minimum|Function Minimum]]
 - [[Function Maximum|Function Maximum]]
 - [[Local Minimum|Local Minimum]]

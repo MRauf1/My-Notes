@@ -21,14 +21,14 @@ Unless specified, all properties that holds for left cosets also hold for right 
 	2) $X = Y$
 - In other words, the distinct left cosets are pairwise disjoint
 
-## [[Cardinality]]
+## [[Set Cardinality]]
 - Every left coset has the same cardinality as $H$
 - [[Lagrange's Theorem]]
 	- [[Generalized Lagrange's Theorem]]
 - [[Order Theorem]]
 
 ## Left vs. Right Cosets
-- There is the same number of left cosets as right cosets because there exists a [[Bijective|bijection]] between the two
+- There is the same number of left cosets as right cosets because there exists a [[Bijective Function]] between the two
 
 ## Other
 - The following are equivalent

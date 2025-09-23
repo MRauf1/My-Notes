@@ -23,7 +23,7 @@ tags: mathematics, abstract_algebra
 
 # Properties
 
-## [[Cardinality]]
+## [[Set Cardinality]]
 - [[Set of Congruence Classes Modulo n Cardinality]]
 
 ## Multiplicative Inverse

@@ -6,7 +6,7 @@ tags: mathematics, abstract_algebra
 
 > [!info] Definition 1 (Quotient [[Function]])
 > Function coming from a [[Quotient Group]] defined as $\pi: G \rightarrow G/N$ with $\pi(g) := gN$.
-> The quotient function is a [[Surjective]] [[Group Homomorphism]].
+> The quotient function is a [[Surjective Function]] [[Group Homomorphism]].
 
 
 

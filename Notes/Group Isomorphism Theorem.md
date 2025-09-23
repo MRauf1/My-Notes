@@ -5,7 +5,7 @@ tags: mathematics, abstract_algebra
 # Definition
 
 > [!abstract] Theorem 1 ([[Group Isomorphism]] Theorem)
-> Given a [[Surjective]] [[Group Homomorphism]] $\phi: G \twoheadrightarrow H$ and $N = ker(\phi) = K$, there exists an isomorphism $\phi': G/N \rightarrow H$ with $\phi'(aN) = \phi(a)$
+> Given a [[Surjective Function]] [[Group Homomorphism]] $\phi: G \twoheadrightarrow H$ and $N = ker(\phi) = K$, there exists an isomorphism $\phi': G/N \rightarrow H$ with $\phi'(aN) = \phi(a)$
 
 Extension of the [[Group Homomorphism Theorem]].
 

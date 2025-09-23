@@ -5,7 +5,7 @@ tags: mathematics, abstract_algebra
 # Definition
 
 > [!info] Definition 1 (Isomorphism)
-> [[Bijective]] [[Function]] $\phi: G \rightarrow H$ ($G, H$ are [[Group]]) such that
+> [[Bijective Function]] $\phi: G \rightarrow H$ ($G, H$ are [[Group]]) such that
 > $$
 > \begin{align}
 > \phi(ab) = \phi(a) \phi(b)
@@ -15,7 +15,7 @@ tags: mathematics, abstract_algebra
 > Notice that the first product is a product in $G$, while the second product is a product in $H$
 > Isomorphism between the two groups is denoted as $G \cong H$
 
-Isomorphism is a [[Group Homomorphism]] that is [[Bijective]].
+Isomorphism is a [[Group Homomorphism]] that is [[Bijective Function]].
 
 # Types
 - [[Group Automorphism]]

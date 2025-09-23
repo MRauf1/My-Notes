@@ -20,13 +20,11 @@ With a random initialization of the parameter vector $\theta^0$ and a sufficient
 Since gradient descent uses gradients, the cost function (and the preceding functions if using backpropagation) should ideally be [[Differentiable|differentiable]]. However, even non-differentiable functions can work as long as they have the property that one can get a meaningful signal of how to perturb the model's parameters in order to reduce the loss function. In particular, [[PyTorch|PyTorch]] uses the one-sided [[Derivative|derivative]] at the [[Discontinuity|discontinuities]].
 
 # Potential Problems
-
 - [[Vanishing Gradients|Vanishing Gradients]]
 - [[Exploding Gradients|Exploding Gradients]]
 - [[Suboptimal Local Minimum|Suboptimal Local Minimum]]
 
 # Types
-
 - [[Stochastic Gradient Descent|Stochastic Gradient Descent]]
 
 #TODO 

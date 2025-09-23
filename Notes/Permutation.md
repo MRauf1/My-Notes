@@ -4,7 +4,7 @@ tags: mathematics, abstract_algebra
 
 # Definition
 
-Permutation is a [[Bijective]] [[Function]] from a set $X$ to itself that represents an arrangement of the elements of $X$ in a specific order.
+Permutation is a [[Bijective Function]] from a set $X$ to itself that represents an arrangement of the elements of $X$ in a specific order.
 
 Permutations can be written in [[Cycle Notation|cycle notation]].
 

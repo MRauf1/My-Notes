@@ -9,9 +9,9 @@ tags: mathematics, pre_calculus
 The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which satisfy the equation $y = f(x)$.[^2]
 
 # Properties
-
 - [[Domain|Domain]]
 - [[Range|Range]]
+- [[Image]]
 - [[Zeros of Function|Zeros of Function]]
 - [[Parity of Function|Parity of Function]]
 - [[Function Behavior|Function Behavior]]
@@ -19,7 +19,6 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Function Inequality|Function Inequality]]
 
 # Operations
-
 - [[Function Operations]]
 
 # Types
@@ -29,19 +28,15 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Inverse Function]]
 
 # Examples
-
 ## [[Polynomial Function|Polynomial Functions]]
-
 - [[Constant Function|Constant Function]]
 - [[Linear Function|Linear Function]]
 - [[Quadratic Function|Quadratic Function]]
 
 ## Other Functions
-
 - [[Absolute Value Function|Absolute Value Function]]
 
 # Other
-
 - [[Difference Quotient of Function|Difference Quotient of Function]]
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=55)

@@ -8,6 +8,7 @@ tags: mathematics, pre_calculus
 > For functions $f, g$, their composition is $f \circ g = (f \circ g)(x) = f(g(x))$, provided that $x$ is in the [[Domain]] of $f$ and $f(x)$ is in the domain of $g$
 
 # Properties
+- [[Function Composition Basic Properties]]
 
 ## [[Associative Property]]
 Composition is associative.

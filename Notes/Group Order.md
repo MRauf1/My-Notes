@@ -5,7 +5,7 @@ tags: mathematics, abstract_algebra
 # Definition
 
 > [!info] Definition 1 (Group Order)
-> Order of a [[Group]] $G$ is the [[Cardinality]] of $G$, i.e. $|G|$
+> Order of a [[Group]] $G$ is the [[Set Cardinality]] of $G$, i.e. $|G|$
 
 # Examples
 
