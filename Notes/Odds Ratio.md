@@ -5,7 +5,7 @@ tags: statistics, categorical_variable_prediction
 # Definition
 
 > [!info] Definition 1 (Odds Ratio)
-> For measuring [[Homogeneity]], the [[Probability Odds]] ratio is
+> For measuring [[Homogeneity]], the [[Odds]] ratio is
 > $$
 > \begin{align}
 > \theta = \frac{\frac{p_1}{1 - p_1}}{\frac{p_2}{1 - p_2}}

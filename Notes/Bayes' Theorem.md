@@ -26,5 +26,9 @@ The original [[Probability|probability]] $P(\theta)$ is called the prior, while 
 
 If the prior is $1$ (no uncertainty about the prior), then the imperfect data will not update the prior (posterior = prior). Conversely, with perfect data, the prior becomes irrelevant.
 
+#TODO 
+Do I have the likelihood function correct? Look into it.
+Does the likelihood function for $\theta$ ($L(\theta | Y)$) equal the above probability $P(Y | \theta)$?
+
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=45)
 [^2]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=34)

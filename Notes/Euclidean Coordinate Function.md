@@ -5,7 +5,7 @@ tags: mathematics, differential_geometry
 # Definition
 
 > [!info] Definition 1 (Euclidean Coordinate [[Function]])[^1]
-> If $V$ is a [[Vector Field]] on $\mathbb{R}^3$, there are $3$ uniquely determined real-valued functions $v_1, v_2, v_3$ on $\mathbb{R}^3$ ($v_i: \mathbb{R}^3 \rightarrow \mathbb{R}^3$) such that
+> If $V$ is a [[Vector Field]] on $\mathbb{R}^3$, there are $3$ uniquely determined real-valued functions $v_1, v_2, v_3$ on $\mathbb{R}^3$ ($v_i: \mathbb{R}^3 \rightarrow \mathbb{R}$) such that
 > $$
 > \begin{align}
 > V = v_1 U_1 + v_2 U_2 + v_3 U_3
@@ -16,7 +16,7 @@ tags: mathematics, differential_geometry
 
 Euclidean coordinate functions are [[Function]] that define coordinates in a [[Euclidean Space]].
 
-#TODO 
-Sometimes these are on R^3, sometimes are on R. Why and when do they switch?
+# Types
+- [[Natural Coordinate Function]]
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=24)

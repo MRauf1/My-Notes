@@ -4,7 +4,7 @@ tags: philosophy
 
 # Definition
 
-Imperative that is a means to achieve a goal/fulfill a desire.[^1]
+Imperative that is a means to achieve a goal/fulfill a desire.[^1] It is not a [[Moral Imperative]] as such action is neither praise or blame-worthy.
 
 As [[Immanuel Kant]] put it, the imperative "says only that the action is good for some actual or possible purpose."
 

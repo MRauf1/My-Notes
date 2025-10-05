@@ -11,5 +11,6 @@ tags: mathematics, differential_geometry
 > (f \cdot g)(\mathbf{p}) := f(\mathbf{p}) \cdot g(\mathbf{p})
 > \end{align}
 > $$
+> The result is also [[Smooth Function]].
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=20)

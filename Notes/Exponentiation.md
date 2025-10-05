@@ -23,16 +23,17 @@ The [[Operation|operation]] of repeated [[Multiplication|multiplication]]. The n
 > > $$
 
 # Properties
+- [[Exponent Basic Properties]]
+- [[Zero Exponent Property|Zero Exponent Property]]
+- [[Negative Exponent Property|Negative Exponent Property]]
+- [[Exponentiation Change of Base]]
 
-## Exponentiation Specific Properties
-
+## Arithmetic Properties
 - [[Product Property of Exponents|Product Property of Exponents]]
 - [[Quotient Property of Exponents|Quotient Property of Exponents]]
 - [[Power Property of Exponents|Power Property of Exponents]]
 - [[Product to a Power Property of Exponents|Product to a Power Property of Exponents]]
 - [[Quotient to a Power Property of Exponents|Quotient to a Power Property of Exponents]]
-- [[Zero Exponent Property|Zero Exponent Property]]
-- [[Negative Exponent Property|Negative Exponent Property]]
 
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=117)

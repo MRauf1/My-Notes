@@ -12,6 +12,8 @@ Humans all have inherent value, and as such, must never be treated as a means to
 
 Unlike [[Utilitarianism]], what matters is one's intention, not the result.
 
+Take actions for the sake of your moral duty. When in doubt, ask whether the maxim (principle of action) can be made into a universal law. If yes, then take it, otherwise, don't.
+
 # Imperatives
 - [[Hypothetical Imperative]]
 - [[Categorical Imperative]]

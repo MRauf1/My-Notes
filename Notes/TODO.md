@@ -2,6 +2,12 @@
 tags: other
 ---
 
+Look into interesting sociology/societal research books like Nickel and Dimed.
+
+Critical theory of Frankfurt School.
+
+Weber's Law.
+
 Mono no aware.
 
 GRE Practice Text Completion:

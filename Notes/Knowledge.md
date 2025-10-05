@@ -17,7 +17,7 @@ Knowledge is truth and is earned through effort ([[Justification]]).[^1]
 
 # Based on Type
 - [[Propositional Knowledge]]
-- [[Procedural Knowledge]]
+- [[Procedural Memory]]
 - [[Knowledge by Acquaintance]]
 
 # Theories of Knowledge

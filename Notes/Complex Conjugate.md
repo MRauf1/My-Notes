@@ -12,6 +12,8 @@ tags: mathematics, pre_calculus
 > \end{align}
 > $$
 
+Multiplying a [[Complex Number]] by its conjugate results in a number without the [[Imaginary Unit]].
+
 # Properties
 
 For a complex numbers $z, w$

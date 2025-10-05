@@ -12,7 +12,7 @@ tags: statistics, categorical_variable_prediction
 > \end{align}
 > $$
 
-Distribution for a single binary observation (e.g. success or failure).
+Distribution for a single binary observation (e.g. success or failure). This is a [[Binomial Distribution]] with $n = 1$.
 
 # Properties
 # Basic Statistical Properties

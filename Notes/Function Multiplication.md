@@ -11,5 +11,6 @@ tags: mathematics, pre_calculus
 > (f \cdot g)(x) = f(x) \cdot g(x)
 > \end{align}
 > $$
+> The [[Domain]] is $X_1 \cap X_2$
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=88)

@@ -14,4 +14,6 @@ I like the format of Q&A present throughout the book. Answers questions that I h
 
 Overall, I liked his portrayal and the importance of the present moment and the disidentification from the mind. These topics were quite enlightening, but the rest of the text was quite spiritual and without substantial evidence (especially the second half), so I started losing interest in the text as it went on.
 
+If you are going to read some of it, I'd recommend only reading Chapters 1, 3, 4 (verify?).
+
 [^1]: [The Power of Now](zotero://open-pdf/library/items/Y684FW3X?page=1)

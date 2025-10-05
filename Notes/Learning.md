@@ -14,7 +14,12 @@ tags: meta_learning
 - [[Metaphor|Metaphor]]
 
 # Types
+- [[Associative Learning]]
+- [[Classical Conditioning]]
+- [[Operant Conditioning]]
+- [[Observational Learning]]
 
+## Hierarchy
 - [[Bottom-up Learning|Bottom-up Learning]]
 - [[Top-down Learning|Top-down Learning]]
 

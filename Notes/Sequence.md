@@ -24,6 +24,9 @@ Unlike [[Set]], sequence is ordered and can have repeating elements.
 - [[Bounded Sequence]]
 - [[Unbounded Sequence]]
 
+# Examples
+- [[Decimal Expansion Sequence]]
+
 # Properties
 - [[Limit of Sequence With Limit Supremum And Limit Infimum]]
 

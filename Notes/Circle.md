@@ -4,6 +4,9 @@ tags: anki, mathematics, pre_algebra
 
 # Definition
 
+> [!info] Definition 1 (Circle [[Curve]] in $\mathbb{R}^2$)
+> Circle of radius $a > 0$ centered at [[Point]] $\mathbf{p}$ is the [[Curve]] $\alpha: \mathbb{R} \rightarrow \mathbb{R}^2$ with $\alpha(t) = \mathbf{p} + a (cos(t), sin(t))$.
+
 2D [[Shape|shape]] with no corners.
 
 ![[Circle.png]]

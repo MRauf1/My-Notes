@@ -14,13 +14,7 @@ tags: mathematics, pre_algebra
 
 Raising a base with an [[Exponentiation|exponent]] to a power is [[Equality|equal]] to the base with the powers [[Multiplication|multiplied]].
 
-> [!example]- Examples 1 (Power Property of Exponents)
-> > [!example]- Example 1.1 (Power Property of Exponents)
-> > $(2^3)^2 = 8^2 = 64 = 2^6 = 2^{3 \cdot 2}$
-
-
 #TODO 
-
-- Is it just reals and ints?
+What about certain exceptions that can result in absolute values: $(x^{2/3})^{3/2} = |x|$, not $x$. Why and when does this happen?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=879)

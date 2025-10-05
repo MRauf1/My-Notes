@@ -4,8 +4,8 @@ tags: mathematics, abstract_algebra
 
 # Definition
 
-> [!info] Definition 1 ([[Conjugate|Conjugation]] [[Group Homomorphism]])
-> [[Function]] $c: G \rightarrow Aut(G)$ defined as $c(g) = c_g$, where $c_g$ is the [[Conjugate|conjugation]] function.
+> [!info] Definition 1 ([[Group Conjugate|Conjugation]] [[Group Homomorphism]])
+> [[Function]] $c: G \rightarrow Aut(G)$ defined as $c(g) = c_g$, where $c_g$ is the [[Group Conjugate|conjugation]] function.
 
 # Properties
 

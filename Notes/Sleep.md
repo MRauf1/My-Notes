@@ -10,6 +10,8 @@ Staying awake creates toxic products in the brain. It is during sleep that these
 
 During sleep, brain organizes the ideas [[Learning|learnt]] and reinforces neural patterns.
 
+# Stages
+- [[Stages of Sleep]]
+
 #TODO 
-- Definition
 - Talk about how dreaming about a topic further enhances your understanding of said topic

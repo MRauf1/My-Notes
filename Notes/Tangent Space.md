@@ -6,10 +6,13 @@ tags: mathematics, differential_geometry
 
 > [!info] Definition 1 ([[Tangent]] [[Space]])[^1]
 > Let $\mathbf{p} \in \mathbb{R}^3$ be a [[Point]]. The [[Set]] $T_{\mathbf{p}}(\mathbb{R}^3)$ consisting of all [[Tangent Vector]] that have point $\mathbf{p}$ as their point of application is called the tangent space of $\mathbb{R}^3$ at $\mathbf{p}$.
-> With [[Operation]] of [[Vector Addition]] and [[Vector Scalar Multiplication]], the tangent space is a [[Vector Space]].
+> It is a [[Vector Space]].
+
+# [[Operation]]
+- [[Tangent Space Vector Addition]]
+- [[Tangent Space Vector Scalar Multiplication]]
 
 # Properties
-
 ## [[Linear Isomorphism]]
 - [[Tangent Space Linear Isomorphism]]
 

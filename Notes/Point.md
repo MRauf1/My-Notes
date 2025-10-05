@@ -13,4 +13,8 @@ Point $(0, \dots, 0)$ is called the [[Origin]] of $\mathbb{R}^n$.
 - [[Point Addition]]
 - [[Point Scalar Multiplication]]
 
+# Properties
+## [[Magnitude]]
+- [[Norm]]
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=18)

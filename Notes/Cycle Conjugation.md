@@ -4,7 +4,7 @@ tags: mathematics, abstract_algebra
 
 # Definition
 
-> [!info] Definition 1 ([[Cycle]] [[Conjugate|Conjugation]])
+> [!info] Definition 1 ([[Cycle]] [[Group Conjugate|Conjugation]])
 > For $\sigma, \tau \in S_n$, where $\tau = (a_1 \dots a_k)$
 > $$
 > \begin{align}

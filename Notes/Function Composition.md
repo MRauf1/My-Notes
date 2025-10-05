@@ -5,7 +5,7 @@ tags: mathematics, pre_calculus
 # Definition
 
 > [!info] Definition 1 ([[Function]] Composition)[^1]
-> For functions $f, g$, their composition is $f \circ g = (f \circ g)(x) = f(g(x))$, provided that $x$ is in the [[Domain]] of $f$ and $f(x)$ is in the domain of $g$
+> For functions $f: B \rightarrow C, g: A \rightarrow B$, their composition is $f \circ g = (f \circ g)(x) = f(g(x))$, provided that $x$ is in the [[Domain]] of $g$ and $g(x)$ is in the domain of $f$. The new function is $f \circ g = h: A \rightarrow C$.
 
 # Properties
 - [[Function Composition Basic Properties]]

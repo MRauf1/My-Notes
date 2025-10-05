@@ -4,7 +4,7 @@ tags: computer_science, computer_vision
 
 # Definition
 
-Theory of [[Vision|vision]] (425 BC) that believed that objects make copies of themselves (eidola or simulacra) that entered [[Eyes|eyes]].[^1]
+Theory of [[Vision|vision]] (425 BC) that believed that objects make copies of themselves (eidola or simulacra) that entered [[Eye|eyes]].[^1]
 
 Defined by Greek philosophers [[Demokritos|Demokritos]], [[Epicurus|Epicurus]], and [[Lucretius|Lucretius]].
 

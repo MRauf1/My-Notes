@@ -6,7 +6,7 @@ tags: philosophy
 
 Form of [[Consequentialism]] that tries to maximize happiness/pleasure for the greatest number of people.[^1]
 
-When deciding between the happiness of two people, one must be impartial.
+When deciding between the happiness of two people, one must be impartial. Thus, it is a middle ground between [[Ethical Egoism]] and [[Ethical Altruism]].
 
 # Types
 - [[Act Utilitarianism]]

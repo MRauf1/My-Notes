@@ -20,7 +20,6 @@ tags: mathematics, pre_calculus
 3) Solve $x = f(y)$ for $y$ to obtain $y = f^{-1}(x)$
 
 # Properties
-
 - $f(a) = b \iff g(b) = a$
 
 ## Uniqueness

@@ -27,11 +27,19 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Bijective Function]]
 - [[Inverse Function]]
 
+## High-Dimensional Input
+- [[Scalar-Valued Function]]
+- [[Vector-Valued Function]]
+
 # Examples
 ## [[Polynomial Function|Polynomial Functions]]
 - [[Constant Function|Constant Function]]
 - [[Linear Function|Linear Function]]
 - [[Quadratic Function|Quadratic Function]]
+
+## Exponential/Logarithmic Functions
+- [[Exponential Function]]
+- [[Logarithmic Function]]
 
 ## Other Functions
 - [[Absolute Value Function|Absolute Value Function]]

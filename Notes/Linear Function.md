@@ -18,16 +18,24 @@ Linear equation in two [[Variable|variables]] has [[Infinity|infinitely]] many [
 
 It takes $\geq 2$ [[Point|points]] to determine a [[Line|line]], but a third point can be used for verification. (Put this in the line note).[^3]
 
+Linear transformation performs an [[Affine Transformation]] of the space.
+
+> [!info] Definition 2 (Linear Function [[Gradient]])
+> $$
+> \begin{align}
+> \frac{\partial f}{\partial x} &= m \\
+> \frac{\partial f}{\partial m} &= x \\
+> \frac{\partial f}{\partial b} &= 1
+> \end{align}
+> $$
+
 # Graph
 
 ![[Pasted image 20250613165332.png]]
 
 # Forms
-
-- Point-Slope Form
-	- $y - y_0 = m(x - x_0)$, where the linear function contains the point $(x_0, y_0)$
-- Slope-Intercept Form
-	- $y = mx + b$ where the linear function has [[Slope|slope]] $m$ and $y$-[[Intercept|intercept]] $(0, b)$
+- [[Linear Function Point-Slope Form]]
+- [[Linear Function Slope-Intercept Form]]
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=971)
 [^2]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=972)

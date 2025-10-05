@@ -5,11 +5,11 @@ tags: mathematics, differential_geometry
 # Definition
 
 > [!info] Definition 1 ([[Directional Derivative]] [[Vector Field]] [[Linearity]])[^1]
-> Let $f, g, h$ be [[Smooth Function]] on $\mathbb{R}^3$, $V, W$ be [[Vector Field]], $a, b \in \mathbb{R}$. Then
+> Let $f, g, h$ be [[Real-Valued Function]] [[Smooth Function]] on $\mathbb{R}^n$, $V, W$ be [[Vector Field]] on $\mathbb{R}^n$, $a, b \in \mathbb{R}$. Then
 > $$
 > \begin{align}
-> (fV + gW)[h] = f V[h] + g W[h] \\
-> V[af + bg] = a V[f] + b V[g]
+> \nabla_{(fV + gW)(\mathbf{p})} h(\mathbf{p}) &= f(\mathbf{p}) \nabla_{V(\mathbf{p})} h(\mathbf{p}) + g(\mathbf{p}) \nabla_{W(\mathbf{p})} h(\mathbf{p}) \\
+> \nabla_{V(\mathbf{p})} (af + bg)(\mathbf{p}) &= a \nabla_{V(\mathbf{p})} f(\mathbf{p}) + b \nabla_{V(\mathbf{p})} g(\mathbf{p})
 > \end{align}
 > $$
 

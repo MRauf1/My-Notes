@@ -3,7 +3,7 @@ tags: mathematics, discrete_mathematics
 ---
 
 # Terms
-
+- [[Axiom]]
 - [[Proposition|Proposition]]
 - [[Proof|Proof]]
 - [[Definition|Definition]]

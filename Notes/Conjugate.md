@@ -1,16 +1,14 @@
 ---
-tags: mathematics, abstract_algebra
+tags: mathematics, real_analysis
 ---
 
 # Definition
 
-> [!info] Definition 1 (Conjugate)
-> For a [[Group]] element $x \in G$, the conjugation [[Function]] by for some $g \in G$, is $c_g: G \rightarrow G$ with $c_g(x) := g x g^{-1}$.
+...
 
-# Properties
+In algebra, they are typically used on [[Binomial]] where you multiply the binomial by its conjugate to simplify the expression.
 
-## [[Group Automorphism]]
-- $c_g \in Aut(G)$ (It's an automorphism)
-
-## [[Group Homomorphism]]
-- [[Conjugation Group Homomorphism]]
+# Types
+- [[Square Root Conjugate]]
+- [[Complex Conjugate]]
+- [[Group Conjugate]]

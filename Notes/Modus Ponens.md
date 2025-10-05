@@ -6,8 +6,8 @@ tags: philosophy
 
 > [!info] Definition 1 (Modus Ponens)
 > For [[Proposition|statements]] $P, Q$, it is the [[Argument|argument]] of the form[^1]
-> - $P \implies Q$
-> - $P$
-> - Therefore, $Q$
+> 1) $P \implies Q$
+> 2) $P$
+> - $Q$
 
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=161)

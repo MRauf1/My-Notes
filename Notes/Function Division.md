@@ -11,6 +11,6 @@ tags: mathematics, pre_calculus
 > (f \div g)(x) = \frac{f(x)}{g(x)}
 > \end{align}
 > $$
-> For $g(x) \neq 0$
+> The [[Domain]] is $\{x \in X_1 \cap X_2 | g(x) \neq 0\}$
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=88)
