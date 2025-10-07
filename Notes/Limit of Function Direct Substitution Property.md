@@ -12,6 +12,6 @@ tags: mathetatics, calculus
 > \end{align}
 > $$
 
-[[Function]] with this property are called [[Continuous Function|continuous]] at $a$.
+[[Function]] with this property are called [[Continuous Function|continuous]] at $a$. Thus, every [[Polynomial Function]] is continuous at all of $\mathbb{R}$, and every [[Rational Function]] is continuous everywhere it is defined (at every point in its [[Domain]]).
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=129)
