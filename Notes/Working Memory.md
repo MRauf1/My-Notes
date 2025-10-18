@@ -8,7 +8,7 @@ tags: meta_learning
 
 Centered in the [[Prefrontal Cortex|prefrontal cortex]], but there are connections to other parts of the brain in order to access [[Long-Term Memory|long-term memory]].
 
-Widely believed that it can hold $~4$ [[Chunk|chunks]] of information. Thus, it is important to enlarge the chunks for greater working memory.
+Widely believed that it can hold $4 \pm 1$ [[Chunk|chunks]] of information. Thus, it is important to enlarge the chunks for greater working memory.
 
 #TODO 
 - Here and in other meta_learning notes, link conscious and unconscious

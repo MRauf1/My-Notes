@@ -4,7 +4,7 @@ tags: philosophy, informal logic
 
 # Definition
 
-[[Aristotle]]'s theory of persuasion. A person can be persuaded using the below three types.[^1]
+[[Aristotle]]'s theory of [[Persuasion]]. A person can be persuaded using the below three types.[^1]
 
 # Types
 - [[Ethos]]

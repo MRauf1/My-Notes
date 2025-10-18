@@ -20,4 +20,4 @@ tags: mathematics, real_analysis
 > \end{align}
 > $$
 
-[[L'Hopital's Rule]], but for [[Sequence]].
+[[L'Hospital's Rule]], but for [[Sequence]].

@@ -46,5 +46,8 @@ The only thing that matters is how $f$ is defined near $a$, not at $x = a$.[^1] 
 - [[Limit of Function Inequality]]
 - [[Limit of Function Squeeze Theorem]]
 
+## Indeterminate Forms
+- [[L'Hospital's Rule]]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=116)
 [^2]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=138)

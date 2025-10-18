@@ -13,6 +13,8 @@ tags: mathematics, differential_geometry
 > $$
 > where $\alpha_i$ are its [[Euclidean Coordinate Function]].
 
+One-dimensional object/space that is locally [[Euclidean 1-Space]]/"flat" embedded in some higher dimensional space. Doesn't have to be globally Euclidean.
+
 One way of thinking of a curve is as a trip of a moving [[Point]] in $\mathbb{R}^n$.
 
 The image of the curve is called the trace of the curve.

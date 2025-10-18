@@ -6,6 +6,8 @@ tags: psychology, introduction_to_psychology
 
 Regulates a number of [[Homeostatis|homeostatic]] processes.[^1] Serves as an interface between the [[Nervous System]] and the [[Endocrine System]]. Serves in the regulation of sexual motivation and behavior.
 
+In response to stress, it releases [[Corticotropin-Releasing Factor]].
+
 # Parts
 - [[Suprachiasmatic Nucleus]]
 

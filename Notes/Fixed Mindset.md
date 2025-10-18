@@ -51,7 +51,7 @@ This creates a paradoxical situation where these people must be flawless right a
 
 They are avert to challenges as they can show one's failures (action (failed) $\rightarrow$ identity (I'm a failure)), which people with fixed mindset struggle to cope with. Risk and effort are dangers that can reveal one's inadequacies. This means that a single test/failure can determine their entire future.
 
-### [[Depression]]
+### [[Major Depressive Disorder]]
 These people have higher rates of depression, which in turn results in even less effort put towards everything.
 
 ### Stereotypes

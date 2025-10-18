@@ -8,4 +8,9 @@ The process in which [[Memory|memory]] from [[Long-Term Memory|long-term memory]
 
 Can take up to years and happens during [[Sleep|sleep]].
 
+# Types
+- [[Recall]]
+- [[Recognition]]
+- [[Relearning]]
+
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/2Uqfy/what-is-long-term-memory

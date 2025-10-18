@@ -9,3 +9,7 @@ A number representing the minimum value.
 # Types
 - [[Set Minimum]]
 - [[Function Minimum]]
+
+## Locality
+- [[Local Minimum]]
+- [[Absolute Minimum]]

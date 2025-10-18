@@ -10,4 +10,6 @@ tags: mathematics, real_analysis
 > [!abstract] Corollary 2 (Infimum Instead of Supremum)
 > Every non-empty [[Subset]] $S$ of $\mathbb{R}$ that is [[Set Lower Bound|bounded below]] has a [[Infimum]].
 
+Related to [[Complete Metric Space]] and ensures that the [[Set of Real Numbers]] is complete (has no gaps).
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=35)

@@ -12,6 +12,10 @@ tags: mathematics, differential_geometry
 > \end{align}
 > $$
 
+Differential $df$ represents the amount the [[Tangent Line]] changes when the inputs $x_i$ change by the amount $dx_i = \Delta x_i$. It is related to the [[Linear Approximation]].
+
+![[Pasted image 20251011160040.png]]
+
 > [!info] Definition 2 (Differential as a [[1-Form]])
 > If $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is a [[Real-Valued Function]] [[Smooth Function]] on $\mathbb{R}^n$, the differential of $f$ is the [[1-Form]] such that
 > $$

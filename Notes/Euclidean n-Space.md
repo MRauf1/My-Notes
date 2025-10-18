@@ -11,4 +11,8 @@ tags: mathematics, differential_geometry
 # Types
 - [[Euclidean 3-Space]]
 
+# Properties
+## [[Metric Space]]
+- [[Complete Metric Space]]
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=18)

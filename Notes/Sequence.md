@@ -24,6 +24,10 @@ Unlike [[Set]], sequence is ordered and can have repeating elements.
 - [[Bounded Sequence]]
 - [[Unbounded Sequence]]
 
+## [[Metric Space]]
+- [[Sequence in Metric Space]]
+- [[High Dimensional Real Sequence]]
+
 # Examples
 - [[Decimal Expansion Sequence]]
 

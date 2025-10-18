@@ -24,4 +24,7 @@ Limit of a [[Function]] $f(x)$ as $x \rightarrow a$ is $L$ from the left wheneve
 
 Limit of a [[Function]] $f(x)$ as $x \rightarrow a$ is $L$ from the right whenever $f(x)$ is arbitrarily close to $L$ for values of $x$ that are arbitrarily close to $a$ and greater than $a$.
 
+# Properties
+- [[One-Sided Limit of Even Function]]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=141)

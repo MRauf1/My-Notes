@@ -16,3 +16,5 @@ Number set is a special mathematical [[Set|set]] used to denote a specific set o
 | [[Set of Real Numbers]] | $\mathbb{R}$ |
 | [[Set of Imaginary Numbers]] |  |
 | [[Set of Complex Numbers]] | $\mathbb{C}$ |
+
+$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$

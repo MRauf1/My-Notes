@@ -12,8 +12,11 @@ tags: statistics, categorical_variable_prediction
 > Var[X] &= E[Var[X | \mu]] + Var[E[X | \mu]]
 > \end{align}
 > $$
+> The reverse is called [[Probability Distribution Underdispersion]].
 
-#TODO 
-- Can there be underdispersion?
+It is a type of [[Lack of Fit]] and may cause [[Goodness of Fit Test]] to reject.
+
+# Potential Causes
+- [[Overdispersion Causes]]
 
 [^1]: [Categorical Data Analysis](zotero://open-pdf/library/items/JZKRKD5L?page=25)

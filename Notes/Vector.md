@@ -22,27 +22,22 @@ The [[Set|set]] of all n-dimensional vectors over field $
 \mathbb{F}$ is $\mathbb{F}^n$.
 
 # Types
-
 ## Column Vector vs. Row Vector
-
 - [[Column Vector|Column Vector]]
 - [[Row Vector|Row Vector]]
 
 ## [[Basis|Basis]] Vectors
-
 - [[Standard Basis Vector|Standard Basis Vector]]
 
 ## Other
-
 - [[Linear Combination|Linear Combination]]
 
 # Properties
-
 - [[Vector Norm|Vector Norm]]
+- [[Vector Component]]
 - [[Span|Span]]
 
 # Operations
-
 - [[Vector Operations]]
 
 #TODO 

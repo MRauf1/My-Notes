@@ -8,7 +8,8 @@ tags: mathematics, pre_calculus
 > For [[Function|function]] $f$, its difference quotient is [^1]
 > $$
 > \begin{align}
-> \frac{f(x + h) - f(x)}{h}
+> \frac{f(x + h) - f(x)}{h} \\
+> \frac{\Delta y}{\Delta x} = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
 > \end{align}
 > $$
 

@@ -11,16 +11,21 @@ The parameters (meta-summary of the data) are a statistic of the dataset (slow f
 Both increasing depth and width can increase the complexity of the model, but increasing depth usually requires far fewer parameters as shown by empirical results (and some preliminary theoretical results).
 
 # Components
-
+## Linear Layers
 - [[Linear Layer|Linear Layer]]
+- [[Convolutional Layer]]
+- [[Attention Layer]]
+
+## Non-Linear Layer
 - [[Activation Layer|Activation Layer]]
 - [[Normalization Layer|Normalization Layer]]
+
+## Output Layer
 - [[Output Layer|Output Layer]]
 
 # Advantages
-
 - They are [[Universal Approximation Theorem|universal approximators]]
-- They are [[Differentiable|differentiable]]
+- They are [[Differentiable Function|differentiable]]
 - They have good inductive biases - neural architectures reflect the real structure in the world
 - They can be processed using parallel hardware
 - They build increasingly abstracted representations of the data as the data moves through the layers

@@ -18,7 +18,16 @@ tags: statistics, categorical_variable_prediction
 - [[Poisson Regression as Generalized Linear Model]]
 
 # Properties
+## Assumptions
 - [[Generalized Linear Model Assumptions]]
+- 
+## [[Goodness of Fit Test]]
+- [[Generalized Linear Model Deviance]]
+- [[Nested Model Comparison]]
+
+## [[Fisher Information Matrix]]
+- [[Generalized Linear Model Fisher Information Matrix]]
+- [[Distribution of Estimated Parameter]]
 
 #TODO 
 - Should Y be from exponential family or natural exponential family?

@@ -9,6 +9,7 @@ Involved in reasoning, motor control, emotion, language.[^1]
 # Parts
 - [[Motor Cortex]]
 - [[Prefrontal Cortex]]
+- [[Orbitofrontal Cortex]]
 - [[Broca's Area]]
 - [[Thalamus]]
 - [[Limbic System]]

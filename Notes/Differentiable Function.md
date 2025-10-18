@@ -16,5 +16,6 @@ It is defined for open intervals only because limits require that points exist o
 
 # Properties
 - [[Differentiable Implies Continuous]]
+- [[Inverse Function Theorem]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=187)

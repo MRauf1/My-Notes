@@ -17,7 +17,7 @@ Gradient descent finds the [[Gradient|gradient]] of the cost function with respe
 
 With a random initialization of the parameter vector $\theta^0$ and a sufficiently small learning rate, the algorithm is guaranteed(?) to converge to a local minimum as $K \rightarrow \infty$.
 
-Since gradient descent uses gradients, the cost function (and the preceding functions if using backpropagation) should ideally be [[Differentiable|differentiable]]. However, even non-differentiable functions can work as long as they have the property that one can get a meaningful signal of how to perturb the model's parameters in order to reduce the loss function. In particular, [[PyTorch|PyTorch]] uses the one-sided [[Derivative|derivative]] at the [[Discontinuity|discontinuities]].
+Since gradient descent uses gradients, the cost function (and the preceding functions if using backpropagation) should ideally be [[Differentiable Function|differentiable]]. However, even non-differentiable functions can work as long as they have the property that one can get a meaningful signal of how to perturb the model's parameters in order to reduce the loss function. In particular, [[PyTorch|PyTorch]] uses the one-sided [[Derivative|derivative]] at the [[Discontinuity|discontinuities]].
 
 # Potential Problems
 - [[Vanishing Gradients|Vanishing Gradients]]

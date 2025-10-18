@@ -1,5 +1,5 @@
 ---
-tags: mathematics, real_analysis
+tags: mathematics, calculus
 ---
 
 # Definition
@@ -19,12 +19,72 @@ It is the [[Slope]] of the [[Tangent Line]] to the curve $y = f(x)$ at $x = a$. 
 
 Differentiation is a local [[Operation]].
 
-# Parts
+# Parts/Types
 - [[Differentiation Operator]]
 - [[Second Derivative]]
 - [[Nth Derivative]]
 
+# [[Inverse Function]]
+- [[Antiderivative]]
+
+# Derivative Rules
+- [[Derivative Power Rule]]
+- [[Derivative Constant Multiple Rule]]
+- [[Derivative Sum Rule]]
+- [[Derivative Difference Rule]]
+- [[Derivative Product Rule]]
+- [[Derivative Quotient Rule]]
+- [[Derivative Chain Rule]]
+- [[Derivative with Respect to Other Variable]]
+
+# Derivatives of [[Function]]
+## [[Inverse Function]]
+- [[Derivative of Inverse Function]]
+
+## [[Exponential Function]]/[[Logarithmic Function]]
+- [[Derivative of Exponential Function]]
+- [[Derivative of Logarithmic Function]]
+
+## [[Trigonometric Function]]
+- [[Derivative of Sine Function]]
+- [[Derivative of Cosine Function]]
+- [[Derivative of Tangent Function]]
+- [[Derivative of Cosecant Function]]
+- [[Derivative of Secant Function]]
+- [[Derivative of Cotangent Function]]
+
+## [[Inverse Trigonometric Function]]
+- [[Derivative of Inverse Sine Function]]
+- [[Derivative of Inverse Cosine Function]]
+- [[Derivative of Inverse Tangent Function]]
+- [[Derivative of Inverse Cosecant Function]]
+- [[Derivative of Inverse Secant Function]]
+- [[Derivative of Inverse Cotangent Function]]
+
+## [[Hyperbolic Function]]
+- [[Derivative of Hyperbolic Sine Function]]
+- [[Derivative of Hyperbolic Cosine Function]]
+- [[Derivative of Hyperbolic Tangent Function]]
+- [[Derivative of Hyperbolic Cosecant Function]]
+- [[Derivative of Hyperbolic Secant Function]]
+- [[Derivative of Hyperbolic Cotangent Function]]
+
+## [[Inverse Hyperbolic Function]]
+- [[Derivative of Inverse Hyperbolic Sine Function]]
+- [[Derivative of Inverse Hyperbolic Cosine Function]]
+- [[Derivative of Inverse Hyperbolic Tangent Function]]
+- [[Derivative of Inverse Hyperbolic Cosecant Function]]
+- [[Derivative of Inverse Hyperbolic Secant Function]]
+- [[Derivative of Inverse Hyperbolic Cotangent Function]]
+
 # Properties
-- [[Differentiable]]
+- [[Differentiable Function]]
+- [[Fundamental Theorem of Calculus]]
+
+## Tests
+- [[First Derivative Test]]
+- [[First Derivative Test for Absolute Extreme Values]]
+- [[Second Derivative Test]]
+- [[Concavity Test]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=176)

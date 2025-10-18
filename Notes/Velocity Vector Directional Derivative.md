@@ -4,7 +4,7 @@ tags: mathematics, differential_geometry
 
 # Definition
 
-> [!info] Definition 1 ([[Velocity Vector]] [[Directional Derivative]])[^1]
+> [!info] Definition 1 ([[Velocity Vector of Smooth Curve]] [[Directional Derivative]])[^1]
 > Let $\alpha$ be a [[Smooth Curve]] in $\mathbb{R}^n$ and $f$ be a [[Real-Valued Function]] [[Smooth Function]] on $\mathbb{R}^n$. Then
 > $$
 > \begin{align}

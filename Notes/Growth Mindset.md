@@ -38,7 +38,7 @@ They are interested when the feedback allows them to learn more.
 ### [[Failure]]
 Failures and setbacks are accepted and viewed as opportunities for growth.
 
-### [[Depression]]
+### [[Major Depressive Disorder]]
 Even with depression, these people strive forward, and the higher the depression, the more determined they are to solve their problems.
 
 ### Stereotypes

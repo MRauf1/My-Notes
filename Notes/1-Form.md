@@ -12,7 +12,7 @@ tags: mathematics, differential_geometry
 > \end{align}
 > $$
 > for any $a, b \in \mathbb{R}$ and $\mathbf{v}_{\mathbf{p}}, \mathbf{w}_{\mathbf{p}} \in T_{\mathbf{p}}(\mathbb{R}^n)$.
-> The [[Set]] of all 1-forms is denoted as $\Omega'(\mathbb{R}^n)$.
+> The [[Set]] of all 1-forms is denoted as $\Omega^1(\mathbb{R}^n)$.
 
 It is a [[Linear Map]] that assigns a scalar value to each [[Tangent Vector]] at a [[Point]] in a [[Manifold]].
 

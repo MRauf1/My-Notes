@@ -2,6 +2,13 @@
 tags: other
 ---
 
+Positive Psychology by Seligman.
+Flow by Csikszentmihalyi.
+
+Different types of biases.
+
+Ebbinghaus forgetting curve + spaced repetition.
+
 Look into interesting sociology/societal research books like Nickel and Dimed.
 
 Critical theory of Frankfurt School.

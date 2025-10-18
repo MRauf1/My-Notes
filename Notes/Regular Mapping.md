@@ -13,6 +13,9 @@ tags: mathematics, differential_geometry
 > 2) $F_*(\mathbf{v}_{\mathbf{p}}) = 0 \implies \mathbf{v}_{\mathbf{p}} = 0$
 > 3) [[Jacobian Matrix]] of $F$ at $\mathbf{p}$ has [[Rank]] $n$, the [[Dimension]] of the [[Domain]] $\mathbb{R}^n$ of $F$.
 
+# Types
+- [[Diffeomorphism]]
+
 # Properties
 - [[Inverse Function Theorem]]
 

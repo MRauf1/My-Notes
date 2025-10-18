@@ -4,7 +4,7 @@ tags: mathematics, differential_geometry
 
 # Definition
 
-> [!info] Definition 1 ([[Curve Reparameterization]] [[Velocity Vector]])[^1]
+> [!info] Definition 1 ([[Curve Reparameterization]] [[Velocity Vector of Smooth Curve]])[^1]
 > If $\beta$ is the reparameterization of $\alpha$ by $h$, then
 > $$
 > \begin{align}

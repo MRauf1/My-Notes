@@ -12,3 +12,5 @@ tags: statistics, categorical_variable_prediction
 > \end{align}
 > $$
 > where $\beta$ are the coefficients.
+
+Type of [[Log-Linear Regression]].

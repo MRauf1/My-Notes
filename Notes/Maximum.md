@@ -9,3 +9,7 @@ A number representing the maximum value.
 # Types
 - [[Set Maximum]]
 - [[Function Maximum]]
+
+## Locality
+- [[Local Maximum]]
+- [[Absolute Maximum]]
