@@ -21,6 +21,7 @@ tags: mathematics, pre_calculus
 > $$
 
 # Properties
+## General
 - [[Logarithm Basic Properties]]
 - [[Logarithm Change of Base]]
 
@@ -28,5 +29,8 @@ tags: mathematics, pre_calculus
 - [[Logarithm Product Rule]]
 - [[Logarithm Quotient Rule]]
 - [[Logarithm Power Rule]]
+
+## [[Complex Number]]
+- [[Complex Logarithm Properties]]
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=434)

@@ -9,6 +9,8 @@ tags: mathematics, differential_geometry
 > 1) Point of application $\mathbf{p}$ denoting the start of the tangent vector.
 > 2) Vector part $\mathbf{v}$ denoting the direction of the tangent vector.
 
+2D tangent vectors lie on [[Tangent Line]] to a [[Curve]], 3D lie on [[Tangent Plane]] to a [[Surface]], higher dimensions lie on [[Tangent Hyperplane]] to a [[Manifold]].
+
 > [!info] Definition 2 (Alternative Notation)[^2]
 > Tangent vector $[a_1, \dots, a_n]_{\mathbf{p}}$ can also be expressed as $\sum_{i=1}^n a_i U_i(\mathbf{p})$, where $a_i$ are the [[Euclidean Coordinate Function]] and $U_i$ are the [[Standard Unit Vector Field]].
 

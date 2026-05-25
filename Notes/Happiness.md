@@ -22,7 +22,7 @@ One way of becoming happy is by acting happy, as the action will increase the li
 # Factors
 - Higher Age
 - Social relationships
-- Material Success only until the point that basic physical needs are provided for
+- Material Success only until the point that basic physical needs are provided for for low emotional well-being people. For high emotional well-being, higher income continues to increase happiness.
 	- Reminder of wealth results in less enjoyment of simple experiences
 - Religion in nations with difficult living conditions
 - Possessing characteristics that are highly valued by one's culture

@@ -16,6 +16,8 @@ The [[Addition|sum]] of the [[Square|squares]] of the sides is [[Equality|equal]
 
 ![[Right Triangle.png]]
 
+Relates to the [[Pythagorean Identities]].
+
 #TODO 
 - Square link fix
 

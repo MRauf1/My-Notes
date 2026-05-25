@@ -13,7 +13,7 @@ tags: computer_science, computer_vision
 > $$
 > where $\eta$ is the [[Learning Rate|learning rate]] and $J$ is the [[Cost Function|cost function]].[^1]
 
-Gradient descent finds the [[Gradient|gradient]] of the cost function with respect to the parameters. The negative gradient then gives the direction of the steepest descent. We take that direction with the step being equal to the learning rate times the gradient magnitude.
+Gradient descent finds the [[Gradient Vector|gradient]] of the cost function with respect to the parameters. The negative gradient then gives the direction of the steepest descent. We take that direction with the step being equal to the learning rate times the gradient magnitude.
 
 With a random initialization of the parameter vector $\theta^0$ and a sufficiently small learning rate, the algorithm is guaranteed(?) to converge to a local minimum as $K \rightarrow \infty$.
 

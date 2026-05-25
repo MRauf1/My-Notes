@@ -12,7 +12,7 @@ tags: mathematics, differential_geometry
 > \end{align}
 > $$
 
-Differential $df$ represents the amount the [[Tangent Line]] changes when the inputs $x_i$ change by the amount $dx_i = \Delta x_i$. It is related to the [[Linear Approximation]].
+In 2D, differential $df$ represents the amount the [[Tangent Line]] changes when the inputs $x_i$ change by the amount $dx_i = \Delta x_i$. In 3D, it is the same but with a [[Tangent Plane]], and in higher dimensions, it is the same but with a [[Tangent Hyperplane]]. It is related to the [[Linear Approximation]].
 
 ![[Pasted image 20251011160040.png]]
 

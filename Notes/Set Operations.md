@@ -12,4 +12,5 @@ tags: mathematics, discrete_mathematics
 | [[Set Union\|Set Union]]                       | $\cup$           | $2$   |
 | [[Set Difference\|Set Difference]]             | $\setminus$      | $2$   |
 | [[Symmetric Difference\|Symmetric Difference]] | $\triangle$      | $2$   |
-| [[Cartesian Product\|Cartesian Product]]       | $\times$         | $2$   | 
+| [[Cartesian Product\|Cartesian Product]]       | $\times$         | $2$   |
+| [[Minkowski Sum]]                              | $+$              | $2$   | 

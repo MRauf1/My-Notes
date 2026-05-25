@@ -19,12 +19,30 @@ tags: mathematics, pre_calculus
 # Graph
 ![[Pasted image 20250924113236.png]]
 
+> [!info] Definition 2 (Exponential Function of [[Complex Number]])
+> For $z = x + iy \in \mathbb{C}$
+> $$
+> \begin{align}
+> e^z &= e^x \cdot e^{iy} = e^x (\cos(y) + i \sin(y)) \\
+> |e^z| &= e^x = e^{Re(z)} \\
+> Arg(z) &= y\ (\text{mod}\ 2 \pi)
+> \end{align}
+> $$
+> $e^z$ is $2 \pi i$ periodic (i.e., $e^{z + 2 \pi i} = e^z$ since $e^{2 \pi i} = 1$)
+> More generally, for $a \in \mathbb{C}$
+> $$
+> \begin{align}
+> a^z = e^{ln(a) \cdot z}
+> \end{align}
+> $$
+> which is [[Multi-Valued Function]], unless you use principal [[Logarithm Function]].
+
 # Properties
 - [[Bijective Function]]
 - [[Continuous Function]]
 - [[Smooth Function]]
 
 ## [[Inverse Function]]
-- [[Logarithmic Function]]
+- [[Logarithm Function]]
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=430)

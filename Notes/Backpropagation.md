@@ -12,7 +12,7 @@ Backward pass for a [[Linear Function]] is the same as the forward pass for a li
 Forward network is a [[Hypernetwork]] that parameterizes the backward network.
 The backward pass can always be represented solely by linear layers since the chain rule is just a product of [[Jacobian Matrix]].
 
-The [[Gradient]] for each parameter is calculated using [[Chain Rule]] and these gradients are used to update the parameters.[^1]
+The [[Gradient Vector]] for each parameter is calculated using [[Chain Rule]] and these gradients are used to update the parameters.[^1]
 
 For efficiency purposes, during the forward pass, some of the calculations/information can be stored and reused in the backward pass since there is a lot of repeated calculations that must be done. Thus, by using [[Dynamic Programming]], the results are stored and reused when needed. It will take additional memory, but it will bring about speed improvements.
 

@@ -12,8 +12,11 @@ tags: mathematics, pre_calculus
 > \end{align}
 > $$
 
-# [[Asymptote]]
+# Types
+- [[Proper Rational Function]]
+- [[Improper Rational Function]]
 
+# [[Asymptote]]
 While the asymptotes are generally lines, a rational function's end behavior may be approaching some other non-linear function, such as a quadratic.
 
 ## Hole/[[Vertical Asymptote]]

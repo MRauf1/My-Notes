@@ -2,6 +2,10 @@
 tags: other
 ---
 
+Finnish education.
+
+On Death and Dying book.
+
 Positive Psychology by Seligman.
 Flow by Csikszentmihalyi.
 

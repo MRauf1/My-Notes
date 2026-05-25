@@ -16,6 +16,13 @@ tags: mathematics, differential_geometry
 Dot product is an [[Inner Product]] and inherits its properties.
 
 # Properties
+- [[Cosine Similarity]]
+- [[Direction Cosine]]
+
+## [[Projection]]
+- [[Scalar Projection]]
+- [[Vector Projection]]
+
 ## [[Inner Product]]
 - [[Inner Product Basic Properties]]
 

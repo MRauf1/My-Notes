@@ -9,4 +9,8 @@ tags: mathematics, real_analysis
 
 Related to [[Completeness Axiom]] and ensures that the space is complete (has no gaps).
 
+# Properties
+- [[Complete Metric Space Theorem]]
+- [[Baire Category Theorem]]
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=97)

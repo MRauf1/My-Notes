@@ -15,16 +15,23 @@ There are 3 ways to describe a set:
 	- Define the set using [[Variable|variables]]
 
 # Types
-
+## Subsets/Supersets
 - [[Subset|Subset]]
 - [[Proper Subset|Proper Subset]]
 - [[Superset|Superset]]
 - [[Proper Superset|Proper Superset]]
+
+## Set within a Set
+- [[Collection of Set]]
+- [[Nondecreasing Sequence of Sets]]
+- [[Nonincreasing Sequence of Sets]]
+
+## Other
 - [[Disjoint Sets|Disjoint Sets]]
 
 # Operations
-
 - [[Set Operations]]
+
 # Properties
 - [[Set Basic Properties]]
 

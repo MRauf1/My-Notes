@@ -8,3 +8,4 @@ tags: mathematics, calculus
 
 # Types
 - [[Continuous Function]]
+- [[Uniformly Continuous Function]]

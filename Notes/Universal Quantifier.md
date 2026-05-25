@@ -8,8 +8,9 @@ tags: mathematics, discrete_mathematics
 
 For a statement $\forall x \in A P(x)$ where the quantifier is bounded, the equivalent unbounded statement is $\forall x (x \in A \implies P(x))$. 
 
-# Laws
+If the [[Domain]] is the [[Empty Set]], then any statement is vacuously true.
 
+# Laws
 - [[Distributive Property|Distributes]] over [[And|conjunction]]
 
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=69)

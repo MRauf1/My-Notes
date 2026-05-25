@@ -16,6 +16,10 @@ tags: mathematics, real_analysis
 # Examples
 - [[Geometric Series]]
 - [[Alternating Series]]
+- [[Power Series]]
+	- [[Maclaurin Series]]
+	- [[Taylor Series]]
+- [[Laurent Series]]
 - [[Infinite Series Convergent Examples]]
 
 # Types
@@ -31,5 +35,7 @@ tags: mathematics, real_analysis
 - [[Infinite Series Root Test]]
 - [[Infinite Series Integral Test]]
 - [[Infinite Series Alternating Series Test]]
+- [[Dirichlet Test]]
+- [[Weierstrass M-Test]]
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=107)

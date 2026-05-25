@@ -11,13 +11,20 @@ An angle is formed by two [[Ray|rays]] that share a common [[Endpoint|endpoint]]
 Angles are measured in either radians or degrees (with $^{\circ}$ symbol).
 
 # Types
-
+## Complementary vs Supplementary
 - [[Complementary Angles|Complementary Angles]]
 - [[Supplementary Angles|Supplementary Angles]]
 
+## In a [[Triangle]]
+- [[Acute Angle]]
+- [[Right Angle]]
+- [[Obtuse Angle]]
+- [[Straight Angle]]
+
+## Degree vs Radian
+- [[Angle Degree Radian Conversion]]
 
 #TODO 
-- Talk about different angles like 90, 180, 360
 - Use more rigorous definition on page 756 for complementary and supplementary angles
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=755)

@@ -9,4 +9,4 @@ tags: mathematics, abstract_algebra
 
 If a [[Group]] has even order, then there exists an element with an order of 2.
 
-It is a special case of the [[Cauchy Theorem]].
+It is a special case of the [[Cauchy's Theorem (Abstract Algebra)]].

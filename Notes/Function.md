@@ -17,15 +17,18 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Function Behavior|Function Behavior]]
 - [[Function Transformation|Function Transformation]]
 - [[Function Inequality|Function Inequality]]
+- [[Extension of Function]]
 
 # Operations
 - [[Function Operations]]
 
 # Types
+## General
 - [[Injective Function]]
 - [[Surjective Function]]
 - [[Bijective Function]]
 - [[Inverse Function]]
+- [[Well-Defined Function]]
 
 ## Concavity/Convexity
 - [[Concave Upward Function]]
@@ -34,6 +37,19 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 ## High-Dimensional Input
 - [[Scalar-Valued Function]]
 - [[Vector-Valued Function]]
+- [[Multi-Valued Function]]
+
+## Different Domains
+- [[Real-Valued Function]]
+- [[Real Vector-Valued Function]]
+- [[Complex-Valued Function]]
+
+## Other
+- [[Analytic Function]]
+- [[Entire Function]]
+- [[Harmonic Function]]
+- [[Holomorphic Function]]
+- [[Periodic Function]]
 
 # Examples
 ## [[Polynomial Function|Polynomial Functions]]
@@ -44,10 +60,13 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 
 ## Exponential/Logarithmic Functions
 - [[Exponential Function]]
-- [[Logarithmic Function]]
+- [[Logarithm Function]]
 
 ## Other Functions
 - [[Absolute Value Function|Absolute Value Function]]
+
+## Trigonometric Functions
+- [[Trigonometric Function]]
 
 # Other
 - [[Difference Quotient of Function|Difference Quotient of Function]]

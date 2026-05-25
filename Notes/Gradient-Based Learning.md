@@ -4,7 +4,7 @@ tags: computer_science, computer_vision
 
 # Definition
 
-A family of [[First-Order Optimization|first-order optimization]] [[Algorithm|algorithms]], which calculate the [[Gradient|gradient]] and descend in the direction of the steepest descent.[^1]
+A family of [[First-Order Optimization|first-order optimization]] [[Algorithm|algorithms]], which calculate the [[Gradient Vector|gradient]] and descend in the direction of the steepest descent.[^1]
 
 # Optimizers
 - [[Gradient Descent|Gradient Descent]]

@@ -4,14 +4,14 @@ tags: mathetatics, calculus
 
 # Definition
 
-> [!info] Definition 1 ([[Derivative]] of [[Logarithmic Function]])[^1]
+> [!info] Definition 1 ([[Derivative]] of [[Logarithm Function]])[^1]
 > $$
 > \begin{align}
 > \frac{d}{dx}(\log_b(x)) = \frac{1}{x \ln(b)}
 > \end{align}
 > $$
 
-> [!info] Definition 1 ([[Derivative]] of Natural [[Logarithmic Function]])[^1]
+> [!info] Definition 1 ([[Derivative]] of Natural [[Logarithm Function]])[^1]
 > $$
 > \begin{align}
 > \frac{d}{dx}(\ln(x)) = \frac{1}{x}

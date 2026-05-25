@@ -19,6 +19,8 @@ tags: meta_learning
 - [[Operant Conditioning]]
 - [[Observational Learning]]
 
+Conditioning appears to be a primitive form of causal induction (process by which we learn about the cause-effect structure of the world)
+
 ## Hierarchy
 - [[Bottom-up Learning|Bottom-up Learning]]
 - [[Top-down Learning|Top-down Learning]]

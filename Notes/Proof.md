@@ -6,6 +6,9 @@ tags: mathematics, discrete_mathematics
 
 [[Deduction|Dedictive]] [[Argument|argument]] where the [[Premise|premises]] of a [[Proposition|statement]] being proven are used to achieve the [[Conclusion|conclusion]] of the statement.[^1]
 
+# List
+- [[List of Interesting Proofs]]
+
 # Types
 
 ## Main

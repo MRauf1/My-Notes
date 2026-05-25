@@ -9,5 +9,6 @@ tags: mathematics, real_analysis
 
 # Properties
 - [[Closure Set Basic Properties]]
+- $E^- = E \cup \partial E$, where $\partial E$ is [[Boundary Set]]
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=100)

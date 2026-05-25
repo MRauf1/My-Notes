@@ -12,4 +12,6 @@ tags: mathematics, pre_calculus
 > \end{align}
 > $$
 
+![[Pasted image 20260413150906.png]]
+
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=513)

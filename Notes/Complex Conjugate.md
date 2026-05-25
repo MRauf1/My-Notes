@@ -11,8 +11,11 @@ tags: mathematics, pre_calculus
 > \overline{a + bi} = a - bi
 > \end{align}
 > $$
+> Note that $Re(z) = \frac{z + \overline{z}}{2}$, $Im(z) = \frac{z - \overline{z}}{2i}$
 
 Multiplying a [[Complex Number]] by its conjugate results in a number without the [[Imaginary Unit]].
+
+Reflection across the real line.
 
 # Properties
 

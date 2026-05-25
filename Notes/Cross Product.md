@@ -13,11 +13,12 @@ tags: mathematics, differential_geometry
 > $$
 > where the vertical matrix represents the [[Determinant]].
 
-The cross product creates a new [[Vector]] that is both [[Orthogonal Vector]] to $\mathbf{v}$ and $\mathbf{w}$. Direction of this new vector can be determined by the [[Right Hand Rule]].
+The cross product creates a new [[Vector]] that is both [[Orthogonal Vector]] to $\mathbf{v}$ and $\mathbf{w}$. Direction of this new vector can be determined by the [[Right Hand Rule]]. Two vectors are [[Parallel Vector]] if and only if their cross product is $0$.
 
 # Properties
 - [[Cross Product Linearity]]
 - [[Cross Product Alternation Rule]]
+- [[Cross Product Basic Properties]]
 
 ## Magnitude
 - [[Cross Product Norm]]

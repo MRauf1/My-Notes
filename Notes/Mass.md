@@ -4,7 +4,9 @@ tags: physics, mechanics
 
 # Definition
 
-...
+Measure of matter within an object.
+
+Within [[Mechanics]], can be viewed as a quantitative measure of the resistance of a body to [[Acceleration]] by a given [[Force]].
 
 # Standard of Mass
 

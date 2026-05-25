@@ -8,6 +8,7 @@ tags: mathematics, real_analysis
 > Let $\sum a_n$ be an [[Infinite Series]] where $a_n \geq 0$ for all $n$.
 > 1) If $\sum a_n$ converges and $|b_n| \leq a_n$ for all $n$, then $\sum b_n$ converges
 > 2) If $\sum a_n = +\infty$ and $b_n \geq a_n$ for all $n$, then $\sum b_n = +\infty$
+> The inequality doesn't have to be true for all $n$, as long as it is true for all $n \geq k$ (greater after some finite terms).
 
 > [!abstract] Corollary 2 (Convergence of Absolutely Convergent [[Infinite Series]])[^1]
 > [[Absolutely Convergent Infinite Series]] are convergent.

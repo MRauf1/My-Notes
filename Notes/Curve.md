@@ -19,7 +19,19 @@ One way of thinking of a curve is as a trip of a moving [[Point]] in $\mathbb{R}
 
 The image of the curve is called the trace of the curve.
 
+> [!info] Definition 2 (Negative of a Curve)
+> Define $- \gamma$ as $[-\gamma](t) = \gamma(a + b - t)$ for $t \in [a, b]$.
+
+Same curve, but traversed in the opposite direction.
+
 # Types
 - [[Smooth Curve]]
+	- [[Piecewise Smooth Curve]]
+- [[Closed Curve]]
+- [[Simple Curve]]
+
+# Properties
+## [[Complex Number]]
+- [[Jordan Curve Theorem]]
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=31)

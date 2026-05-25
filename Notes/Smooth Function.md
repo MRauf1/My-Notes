@@ -5,7 +5,7 @@ tags: mathematics, differential_geometry
 # Definition
 
 > [!info] Definition 1 (Smooth [[Function]])[^1]
-> A [[Real Number|real-valued]] function $f$ is smooth (or infinitely differentiable, or of class $C^{\infty}$) if all [[Partial Derivative|partial derivatives]] exist and are continuous.
+> A [[Real Number|real-valued]] function $f$ is smooth (or [[Infinitely Differentiable Function]], or of class $C^{\infty}$) if all [[Partial Derivative|partial derivatives]] exist and are continuous.
 
 # [[Operation]]
 - [[Smooth Function Addition]]

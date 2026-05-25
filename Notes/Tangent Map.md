@@ -4,7 +4,7 @@ tags: mathematics, differential_geometry
 
 # Definition
 
-> [!info] Definition 1 ([[Tangent]] [[Mapping|Map]])[^1]
+> [!info] Definition 1 ([[Tangent]] [[Mapping|Map]] for [[Smooth Curve]])[^1]
 > Let $F: \mathbb{R}^n \rightarrow \mathbb{R}^m$ be a [[Mapping]] and $\alpha: I \rightarrow \mathbb{R}^n$ be a [[Curve]] in $\mathbb{R}^n$ with initial [[Velocity Vector of Smooth Curve]] $\alpha'(0) = \mathbf{v}_{\mathbf{p}} \in T_{\mathbf{p}}(\mathbb{R}^n)$. Then $F_*: T_{\mathbf{p}}(\mathbb{R}^n) \rightarrow T_{F(\mathbf{p})}(\mathbb{R}^m)$ with $F_*(\mathbf{v}_{\mathbf{p}}) = \beta'(0)$, where $\beta$ is the [[Curve Under Mapping]], is the tangent map.
 
 $F_*$ sends [[Tangent Vector]] in $\mathbb{R}^n$ to [[Tangent Vector]] in $\mathbb{R}^m$. In particular, it sends the [[Velocity Vector of Smooth Curve]] of $\alpha$ at $\alpha(t) = \mathbf{p}$ to a [[Velocity Vector of Smooth Curve]] of $\beta$ at $F(\mathbf{p})$.
@@ -21,5 +21,5 @@ $F_*$ sends [[Tangent Vector]] in $\mathbb{R}^n$ to [[Tangent Vector]] in $\math
 - [[Tangent Map as Linear Transformation]]
 - [[Tangent Map Velocity Vector of Curve]]
 - [[Tangent Map on Natural Frame Field]]
-- 
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=52)

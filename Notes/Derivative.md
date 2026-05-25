@@ -14,15 +14,30 @@ tags: mathematics, calculus
 > \end{align}
 > $$
 > if the [[Limit of Function]] exists ([[Difference Quotient of Function]]).
+> The [[Domain]] of $f'$ is the [[Set]] of [[Point]] at which $f$ is differentiable; thus, $Domain(f') \subseteq Domain(f)$.
 
-It is the [[Slope]] of the [[Tangent Line]] to the curve $y = f(x)$ at $x = a$. Alternatively, it is the instantaneous rate of change of $y = f(x)$ with respect to $x$ when $x = a$.
+It is the [[Slope]] of the [[Tangent Line]] to the curve $y = f(x)$ at $x = a$. Alternatively, it is the instantaneous rate of change of $y = f(x)$ with respect to $x$ when $x = a$. In other words, it is the [[Linear Approximation]] to a [[Function]]'s change.
 
 Differentiation is a local [[Operation]].
 
-# Parts/Types
+# [[Operator]]
 - [[Differentiation Operator]]
+
+# Types
+## Higher Order
 - [[Second Derivative]]
 - [[Nth Derivative]]
+
+## [[Multi-Variable Function]]
+- [[Partial Derivative]]
+
+## [[Complex Number]]
+- [[Complex Number Derivative]]
+
+## Geometry (TODO)
+- [[Directional Derivative]]
+- [[Covariant Derivative]]
+- [[Exterior Derivative]]
 
 # [[Inverse Function]]
 - [[Antiderivative]]
@@ -41,7 +56,7 @@ Differentiation is a local [[Operation]].
 ## [[Inverse Function]]
 - [[Derivative of Inverse Function]]
 
-## [[Exponential Function]]/[[Logarithmic Function]]
+## [[Exponential Function]]/[[Logarithm Function]]
 - [[Derivative of Exponential Function]]
 - [[Derivative of Logarithmic Function]]
 
@@ -78,8 +93,12 @@ Differentiation is a local [[Operation]].
 - [[Derivative of Inverse Hyperbolic Cotangent Function]]
 
 # Properties
+## General
 - [[Differentiable Function]]
 - [[Fundamental Theorem of Calculus]]
+
+## [[Complex Number]]
+- [[Complex Number Derivative]]
 
 ## Tests
 - [[First Derivative Test]]

@@ -16,10 +16,12 @@ Limit of a [[Function]] $f(x)$ as $x \rightarrow a$ is $L$ whenever $f(x)$ is ar
 
 The only thing that matters is how $f$ is defined near $a$, not at $x = a$.[^1] Even if $\lim_{x \rightarrow a} f(x) = L$, $f(a)$ might not be defined or might not be equal to $L$.
 
-> [!abstract] Theorem 2 ([[Limit of Function]] and [[One-Sided Limit of Function]])
+> [!info] Definition 2 (Limit of [[Real-Valued Function]])[^3]
+> For a [[Real-Valued Function]] $f: \mathbb{R}^n \rightarrow \mathbb{R}$ whose [[Domain]] includes [[Point]] arbitrarily close to $(a_1, \dots, a_n)$, then $\lim_{(x_1, \dots, x_n) \rightarrow (a_1, \dots, a_n)} f(x_1, \dots, x_n) = L$ if for every $\epsilon > 0$ there is a number $\delta > 0$ such that
 > $$
 > \begin{align}
-> \lim_{x \rightarrow a} f(x) = L \iff \lim_{x \rightarrow a^-} f(x) = L = \lim_{x \rightarrow a^+} f(x)
+> 0 &< dist(\mathbf{x}, \mathbf{a}) \\
+> &= \sqrt{(x_1 - a_1)^2 + \dots + (x_n - a_n)^2} < \delta \implies |f(x_1, \dots, x_n) - L| < \epsilon
 > \end{align}
 > $$
 
@@ -37,6 +39,7 @@ The only thing that matters is how $f$ is defined near $a$, not at $x = a$.[^1] 
 - [[Limit of Function Quotient Law]]
 - [[Limit of Function Power Law]]
 - [[Limit of Function nth Root Law]]
+- [[Limit of Function Composition Law]]
 
 ## [[Polynomial Function]]/[[Rational Function]]
 - [[Limit of Function Direct Substitution Property]]
@@ -45,9 +48,11 @@ The only thing that matters is how $f$ is defined near $a$, not at $x = a$.[^1] 
 - [[Limit of Function Equality]]
 - [[Limit of Function Inequality]]
 - [[Limit of Function Squeeze Theorem]]
+- [[Limit of Function and One-Sided Limit of Function Theorem]]
 
 ## Indeterminate Forms
 - [[L'Hospital's Rule]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=116)
 [^2]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=138)
+[^3]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=936)

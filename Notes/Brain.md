@@ -18,4 +18,11 @@ Two-sided structure that can be separated into [[Lobe]]. Each lobe is associated
 
 ![[Pasted image 20250924190836.png]]
 
+## [[Brain Wave]]
+- [[Alpha Wave]]
+- [[Beta Wave]]
+- [[Delta Wave]]
+- [[Theta Wave]]
+- [[Gamma Wave]]
+
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=98)

@@ -8,4 +8,10 @@ tags: mathematics, discrete_mathematics
 
 For a statement $\exists x \in A P(x)$ where the quantifier is bounded, the equivalent unbounded statement is $\exists x (x \in A \land P(x))$. 
 
+If the [[Domain]] is the [[Empty Set]], then any statement is vacuously false.
+
+# Properties
+
+- Distributes over disjunction
+
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=69)

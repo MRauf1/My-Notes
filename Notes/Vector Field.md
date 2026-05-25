@@ -17,6 +17,7 @@ tags: mathematics, differential_geometry
 
 # Types
 - [[Smooth Vector Field]]
+- [[Conservative Vector Field]]
 
 # Examples
 - [[Standard Unit Vector Field]]

@@ -10,10 +10,14 @@ tags: mathematics, real_analysis
 Unlike [[Set]], sequence is ordered and can have repeating elements.
 
 # Types
-- [[Cauchy Sequence]]
-
 ## Subsequence
 - [[Subsequence]]
+
+## [[Function]]
+- [[Sequence of Function]]
+
+## Cauchy
+- [[Cauchy Sequence]]
 
 ## Increasing vs. Decreasing
 - [[Increasing Sequence]]

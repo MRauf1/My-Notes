@@ -13,4 +13,8 @@ tags: mathematics, differential_geometry
 > $$
 > where $0 \leq \mathcal{v} \leq \pi$ is the smaller of the two [[Angle]] from $\mathbf{v}$ to $\mathbf{w}$.
 
+[[Norm]] of the cross product is the [[Area]] of the [[Parallelogram]] determined by the two vectors.
+
+![[Pasted image 20251020172254.png]]
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=64)

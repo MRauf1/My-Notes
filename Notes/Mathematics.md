@@ -9,7 +9,7 @@ Mathematics is the field of study of numbers, shapes, and space.
 # Subfields
 
 - [[Algebra|Algebra]]
-	- [[Pre-Algebra|Pre-Algebra]]
+	- [[Notes/Pre-Algebra|Pre-Algebra]]
 	- [[Linear Algebra|Linear Algebra]]
 - [[Geometry|Geometry]]
 	- [[Trigonometry|Trigonometry]]

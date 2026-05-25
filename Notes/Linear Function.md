@@ -20,7 +20,7 @@ It takes $\geq 2$ [[Point|points]] to determine a [[Line|line]], but a third poi
 
 Linear transformation performs an [[Affine Transformation]] of the space.
 
-> [!info] Definition 2 (Linear Function [[Gradient]])
+> [!info] Definition 2 (Linear Function [[Gradient Vector]])
 > $$
 > \begin{align}
 > \frac{\partial f}{\partial x} &= m \\

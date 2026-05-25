@@ -21,12 +21,10 @@ The set of all [[Ordered Pair|ordered pairs]] where the first coordinate is the 
 > A^n = \{(a_1, a_2, \dots, a_n) | a_1, a_2, \dots, a_n \in A\}
 > \end{align}
 > $$
+> Note that for $X \times Y \times Z$, the resulting elements are $(x, y, z)$; for $(X \times Y) \times Z$, it is $((x, y), z)$; for $X \times (Y \times Z)$, it is $(x, (y, z))$.
 
 # Properties
 - [[Cartesian Product Basic Properties]]
 - [[Cartesian Product Set Cardinality]]
-
-#TODO 
-What about $(A x B) x C$, what would the result look like? ((a, b), c) or (a, b, c)?
 
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=178)

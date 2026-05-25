@@ -14,7 +14,7 @@ tags: statistics, categorical_variable_prediction
 > estimated by
 > $$
 > \begin{align}
-> \hat{\theta}_{XY(k)} = \frac{n_{11+} n_{22+}}{n_{12+} n_{21+}}
+> \hat{\theta}_{XY} = \frac{n_{11+} n_{22+}}{n_{12+} n_{21+}}
 > \end{align}
 > $$
 > If $\theta_{XY} = 1$, then there is no marginal association.

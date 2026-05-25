@@ -23,6 +23,7 @@ The [[Operation|operation]] of repeated [[Multiplication|multiplication]]. The n
 > > $$
 
 # Properties
+## General
 - [[Exponent Basic Properties]]
 - [[Zero Exponent Property|Zero Exponent Property]]
 - [[Negative Exponent Property|Negative Exponent Property]]
@@ -35,5 +36,7 @@ The [[Operation|operation]] of repeated [[Multiplication|multiplication]]. The n
 - [[Product to a Power Property of Exponents|Product to a Power Property of Exponents]]
 - [[Quotient to a Power Property of Exponents|Quotient to a Power Property of Exponents]]
 
+## [[Complex Number]]
+- [[Complex Exponent Properties]]
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=117)

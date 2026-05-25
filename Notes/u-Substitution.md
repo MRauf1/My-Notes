@@ -7,7 +7,7 @@ tags: mathematics, pre_calculus
 > [!info] Definition 1 (u-Substitution)[^1]
 > The technique of setting a new [[Variable|variable]] $u$ equal to an [[Expression|expression]] of existing [[Variable|variables]], and then substituting in $u$ for those expressions to simplify the expression.
 
-> [!info] Definition 2 (In [[Indefinite Integral]])[^2]
+> [!info] Definition 2 (In [[Indefinite Riemann Integral]])[^2]
 > If $u = g(x)$ is a [[Differentiable Function]] whose [[Range]] is $I$ with the [[Differential]] $du = g'(x) dx$ and $f$ is [[Continuous Function]] on $I$, then
 > $$
 > \begin{align}
@@ -15,7 +15,7 @@ tags: mathematics, pre_calculus
 > \end{align}
 > $$
 
-> [!info] Definition 2 (In [[Definite Integral]])[^2]
+> [!info] Definition 3 (In [[Definite Riemann Integral]])[^2]
 > If $u = g(x)$ is a [[Differentiable Function]] whose [[Range]] is $I$ with the [[Differential]] $du = g'(x) dx$ and $f$ is [[Continuous Function]] on $I$, then
 > $$
 > \begin{align}

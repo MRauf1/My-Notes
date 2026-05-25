@@ -19,5 +19,7 @@ Order of quantifiers matter unless they are all of the same type.
 # Laws
 
 - [[Quantifier Negation Laws|Quantifier Negation Laws]]
+- [[Restricted Quantification Laws]]
+- [[Quantifier Distributive Laws]]
 
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=71)

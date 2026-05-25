@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"736ecdcf8da4238b","x":-2360,"y":-11760,"width":7400,"height":2600,"type":"file","file":"Notes/Gamification/Skill Trees/Abstract Algebra.md"},
+		{"id":"bf6a3443121b6240","x":-5760,"y":-11760,"width":3040,"height":8760,"type":"file","file":"Notes/Gamification/Skill Trees/Calculus.md"},
+		{"id":"f3016541924d92ba","x":-2124,"y":-8757,"width":4044,"height":1757,"type":"file","file":"Notes/Gamification/Skill Trees/Complex Analysis.md"},
+		{"id":"95b302bb5a3d3f02","x":-2127,"y":-6560,"width":6607,"height":1440,"type":"file","file":"Notes/Gamification/Skill Trees/Differential Equations.md"},
+		{"id":"97528730de8864e9","x":-1994,"y":-4739,"width":19234,"height":3939,"type":"file","file":"Notes/Gamification/Skill Trees/Differential Geometry.md"},
+		{"id":"2e65da96a15405eb","x":5280,"y":-11760,"width":1840,"height":2600,"type":"file","file":"Notes/Gamification/Skill Trees/Discrete Mathematics.md"},
+		{"id":"f64e0cf51f44c07e","x":2174,"y":-9001,"width":3106,"height":2245,"type":"file","file":"Notes/Gamification/Skill Trees/Introduction to Probability and Statistics.md"},
+		{"id":"8b756ecadc67aa26","x":7354,"y":-11704,"width":4606,"height":984,"type":"file","file":"Notes/Gamification/Skill Trees/Introduction to Theoretical Computer Science.md"},
+		{"id":"3bc2c93be938c275","x":5483,"y":-8959,"width":3717,"height":1399,"type":"file","file":"Notes/Gamification/Skill Trees/Linear Algebra.md"},
+		{"id":"055d1dbd7b3ed769","x":4640,"y":-6560,"width":6280,"height":1600,"type":"file","file":"Notes/Gamification/Skill Trees/Optimal Transport.md"},
+		{"id":"37c43d3a44e255ee","x":7367,"y":-10587,"width":7873,"height":1507,"type":"file","file":"Notes/Gamification/Skill Trees/Partial Differential Equations.md"},
+		{"id":"5d5a063281723620","x":5483,"y":-7360,"width":2277,"height":400,"type":"file","file":"Notes/Gamification/Skill Trees/Pre-Algebra.md"},
+		{"id":"46af8b3ed55226d7","x":9280,"y":-8959,"width":6320,"height":1719,"type":"file","file":"Notes/Gamification/Skill Trees/Pre-Calculus.md"},
+		{"id":"53d124bd4d8859b9","x":16000,"y":-10827,"width":10600,"height":3467,"type":"file","file":"Notes/Gamification/Skill Trees/Real Analysis.md"},
+		{"id":"4777282f7eb5a1b4","x":11129,"y":-7108,"width":4111,"height":2148,"type":"file","file":"Notes/Gamification/Skill Trees/Stochastic Differential Equations.md"},
+		{"id":"2873d26ff2d54e69","x":15606,"y":-7188,"width":9194,"height":2228,"type":"file","file":"Notes/Gamification/Skill Trees/Topology.md"}
+	],
+	"edges":[]
+}

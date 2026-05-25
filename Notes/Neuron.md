@@ -24,6 +24,8 @@ At the peak of the spike, the gates for sodium ions close, and the gates for pot
 
 Once the signal is delivered, excess [[Neurotransmitter]] in the [[Synaptic Cleft]] drift away, are broken down into inactive fragments, or are reabsorbed by the neuron ([[Reuptake]]) in order to clear the synapse.
 
+The electric signal travels down [[Axon]] to [[Synaptic Cleft]], it is converted to chemical signal in the form of [[Neurotransmitter]] and moves to the next neuron after which the signal is converted back to electric signal.
+
 # Parts
 - [[Neuron Semipermeable Membrane]]
 - [[Soma]]

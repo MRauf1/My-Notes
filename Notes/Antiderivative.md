@@ -10,6 +10,6 @@ tags: mathetatics, calculus
 
 [[Inverse Function|Inverse]] operator of [[Derivative]].
 
-Usually expressed as an [[Indefinite Integral]].
+Usually expressed as an [[Indefinite Riemann Integral]].
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=382)
