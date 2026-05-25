@@ -1,5 +1,5 @@
 ---
-tags: anki, mathematics, pre_algebra, pre_calculus
+tags: [anki, mathematics, pre_algebra, pre_calculus]
 ---
 
 # Definition

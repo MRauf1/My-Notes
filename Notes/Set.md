@@ -1,5 +1,5 @@
 ---
-tags: mathematics, pre_calculus, discrete_mathematics
+tags: [mathematics, pre_calculus, discrete_mathematics]
 ---
 
 # Definition

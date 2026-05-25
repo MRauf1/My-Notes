@@ -1,5 +1,5 @@
 ---
-tags: 
+tags: [ ]
 - statistics
 - time_series_analysis
 ---

@@ -1,5 +1,5 @@
 ---
-tags: computer_science, artificial_intelligence
+tags: [computer_science, artificial_intelligence]
 ---
 
 # Definition

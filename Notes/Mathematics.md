@@ -1,5 +1,5 @@
 ---
-tags: mathematics
+tags: [mathematics]
 ---
 
 # Definition

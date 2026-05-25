@@ -1,5 +1,5 @@
 ---
-tags: computer_science, deep_learning
+tags: [computer_science, deep_learning]
 ---
 
 # View

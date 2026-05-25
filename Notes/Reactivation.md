@@ -1,5 +1,5 @@
 ---
-tags: meta_learning
+tags: [meta_learning]
 ---
 
 The process in which [[Memory|memory]] from [[Long-Term Memory|long-term memory]] is [[Recall|recalled]] into [[Short-Term Memory|short-term memory]].[^1]

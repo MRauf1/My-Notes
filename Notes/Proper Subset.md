@@ -1,5 +1,5 @@
 ---
-tags: mathematics, discrete_mathematics
+tags: [mathematics, discrete_mathematics]
 ---
 
 # Definition

@@ -1,5 +1,5 @@
 ---
-tags: mathematics, discrete_mathematics, linear_algebra
+tags: [mathematics, discrete_mathematics, linear_algebra]
 ---
 
 # Definition

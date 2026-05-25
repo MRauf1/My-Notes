@@ -1,5 +1,5 @@
 ---
-tags: computer_science, machine_learning
+tags: [computer_science, machine_learning]
 ---
 
 # Definition

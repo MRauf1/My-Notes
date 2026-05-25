@@ -1,5 +1,5 @@
 ---
-tags: physics, introduction_to_physics
+tags: [physics, introduction_to_physics]
 ---
 
 # Definition

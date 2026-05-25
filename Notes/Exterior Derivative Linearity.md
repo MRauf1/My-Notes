@@ -1,5 +1,5 @@
 ---
-tags: mathematics, differential_geometry
+tags: [mathematics, differential_geometry]
 ---
 
 # Definition

@@ -1,5 +1,5 @@
 ---
-tags: computer_science, numerical_analysis
+tags: [computer_science, numerical_analysis]
 ---
 
 # Definition

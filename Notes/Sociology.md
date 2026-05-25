@@ -1,5 +1,5 @@
 ---
-tags: sociology
+tags: [sociology]
 ---
 
 # Definition

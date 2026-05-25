@@ -1,5 +1,5 @@
 ---
-tags: statistics, stochastic_processes
+tags: [statistics, stochastic_processes]
 ---
 
 # Definition

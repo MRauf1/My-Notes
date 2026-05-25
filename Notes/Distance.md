@@ -1,5 +1,5 @@
 ---
-tags: mathematics, pre_calculus, real_analysis
+tags: [mathematics, pre_calculus, real_analysis]
 ---
 
 # Definition

@@ -1,5 +1,5 @@
 ---
-tags: economics
+tags: [economics]
 ---
 
 # Definition

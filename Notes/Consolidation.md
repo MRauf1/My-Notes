@@ -1,5 +1,5 @@
 ---
-tags: meta_learning
+tags: [meta_learning]
 ---
 
 The process of converting a [[Memory|memory]] in [[Short-Term Memory|short-term memory]] into [[Long-Term Memory|long-term memory]].[^1]

@@ -1,5 +1,5 @@
 ---
-tags: psychology, introduction_to_psychology
+tags: [psychology, introduction_to_psychology]
 ---
 
 # Definition

@@ -1,5 +1,5 @@
 ---
-tags: statistics, mathematical_statistics
+tags: [statistics, mathematical_statistics]
 ---
 
 # Definition

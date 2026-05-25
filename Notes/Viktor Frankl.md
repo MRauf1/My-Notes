@@ -1,5 +1,5 @@
 ---
-tags: psychology
+tags: [psychology]
 ---
 
 # Biography

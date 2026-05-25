@@ -1,5 +1,5 @@
 ---
-tags: statistics, bayesian_statistics
+tags: [statistics, bayesian_statistics]
 ---
 
 # Definition

@@ -1,5 +1,5 @@
 ---
-tags: religion
+tags: [religion]
 ---
 
 # Definition

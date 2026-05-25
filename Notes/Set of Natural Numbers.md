@@ -1,5 +1,5 @@
 ---
-tags: mathematics, abstract_algebra, pre_algebra
+tags: [mathematics, abstract_algebra, pre_algebra]
 ---
 
 # Definition

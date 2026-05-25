@@ -1,5 +1,5 @@
 ---
-tags: philosophy, informal_logic
+tags: [philosophy, informal_logic]
 ---
 
 # Definition

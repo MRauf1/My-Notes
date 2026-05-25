@@ -1,5 +1,5 @@
 ---
-tags: computer_science, data_structures_and_algorithms
+tags: [computer_science, data_structures_and_algorithms]
 ---
 
 # Definition

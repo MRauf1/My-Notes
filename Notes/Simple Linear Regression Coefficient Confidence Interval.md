@@ -1,5 +1,5 @@
 ---
-tags: statistics, statistical_learning
+tags: [statistics, statistical_learning]
 ---
 
 # Definition

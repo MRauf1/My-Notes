@@ -1,5 +1,5 @@
 ---
-tags: mathematics, linear_algebra, real_analysis
+tags: [mathematics, linear_algebra, real_analysis]
 ---
 
 # Definition

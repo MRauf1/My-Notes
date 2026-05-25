@@ -1,5 +1,5 @@
 ---
-tags: literature_review
+tags: [literature_review]
 ---
 
 # Review[^1]

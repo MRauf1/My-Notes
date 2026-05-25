@@ -1,5 +1,5 @@
 ---
-tags: physics, mechanics
+tags: [physics, mechanics]
 ---
 
 # Definition
