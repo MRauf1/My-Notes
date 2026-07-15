@@ -13,3 +13,6 @@ tags: [mathematics, complex_analysis]
 > $$
 
 It is an [[Open n-Ball]] of [[Radius]] $\epsilon$.
+
+# Properties
+- [[Star-Shaped Set]] with respect to [[Point]] $x$

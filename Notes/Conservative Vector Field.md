@@ -13,4 +13,7 @@ tags: [mathetatics, calculus]
 > $$
 > for some [[Real-Valued Function]] $f$. $f$ is called a potential function of $V$.
 
+# Properties
+- [[Conservative Vector Field Existence With Curl Theorem]]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=1105)

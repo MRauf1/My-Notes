@@ -12,4 +12,9 @@ tags: [mathematics, linear_algebra]
 > \end{align}
 > $$
 
+If a list of [[Vector]] spans a [[Vector Space]], then any [[Vector]] in the [[Vector Space]] can be written as a [[Linear Combination]] of the list of the [[Vector]].
+
+# Properties
+- [[List of Vectors Span Vector Space]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=46)

@@ -6,4 +6,4 @@ tags: [mathematics, real_analysis]
 
 
 
-[^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=16)
+[^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=1)

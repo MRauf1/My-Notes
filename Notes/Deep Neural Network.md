@@ -30,5 +30,8 @@ Both increasing depth and width can increase the complexity of the model, but in
 - They can be processed using parallel hardware
 - They build increasingly abstracted representations of the data as the data moves through the layers
 
+# Properties
+- [[Latent Variables]]
+
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=19)
 [^2]: https://visionbook.mit.edu/neural_nets.html

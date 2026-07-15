@@ -1,5 +1,8 @@
 ---
-tags: [mathematics, complex_analysis]
+tags:
+  - mathematics
+  - complex_analysis
+  - calculus
 ---
 
 # Definition
@@ -16,3 +19,15 @@ tags: [mathematics, complex_analysis]
 ![[Pasted image 20260405205419.png]]
 
 All curves in $\partial \Omega$ are traversed in the direction so that $\Omega$ stays to the left.
+
+> [!abstract] Theorem 2 (Green's Theorem Calculus)[^1]
+> Let $C$ be positively oriented (counter-clockwise), [[Piecewise Smooth Curve]], [[Simple Curve]], [[Closed Curve]], and let $D$ be the region bounded by $C$. If $P, Q$ have [[Continuous Function]] [[Partial Derivative]] on an [[Open Set|open region]] that contains $D$, then
+> $$
+> \begin{align}
+> \int_C P dx + Q dy &= \int \int_D (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}) dA \\
+> \oint_C F \cdot dr &= \int \int_D (curl(F)) \cdot k dA \\
+> \oint_C F \cdot n ds &= \int \int_D div(F(x, y)) dA
+> \end{align}
+> $$
+
+[^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=1140)

@@ -19,3 +19,6 @@ tags: [mathematics, abstract_algebra]
 > \phi(G) := \{\phi(g) | g \in G\} \leq H
 > \end{align}
 > $$
+
+# Properties
+- [[Linear Map Image]]

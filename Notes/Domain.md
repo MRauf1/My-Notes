@@ -1,10 +1,12 @@
 ---
-tags: [mathematics, pre_calculus]
+tags:
+  - mathematics
+  - pre_calculus
 ---
 
 # Definition
 
-For [[Function|function]] $f: \mathbb{F} \rightarrow \mathbb{F}$, the domain is the [[Set|set]] of all $x$ values.[^1]
+For [[Function|function]] $f: \mathbb{A} \rightarrow \mathbb{B}$, the domain is the [[Set|set]] $A$.[^1]
 
 For a function that is being simplified, one must find the domain before simplifying.[^2]
 

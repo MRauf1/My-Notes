@@ -12,4 +12,9 @@ The three row operations are[^1]
 2) R2: [[Multiplication|Multiplying]] a row by a nonzero [[Constant|constant]]
 3) R3: Switching any two rows
 
+The [[Matrix]] representing each one of these are called [[Elementary Matrix]].
+
+# Properties
+- [[Elementary Matrix Reduced Row Echelon Form Theorem]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=32)

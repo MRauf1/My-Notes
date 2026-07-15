@@ -5,7 +5,7 @@ tags: [mathematics, real_analysis]
 # Definition
 
 > [!info] Definition 1 (Infimum)[^1]
-> If a [[Set]] $S$ is [[Set Lower Bound|bounded below]] and has a greatest lower bound, then the greatest lower bound is called the infimum of $S$ and denoted as $inf S$. If a set $S$ is not bounded below, then $inf S = -\infty$.
+> If a non-empty [[Set]] $S$ is [[Set Lower Bound|bounded below]] and thus has a greatest lower bound, then the greatest lower bound is called the infimum of $S$ and denoted as $inf S$. If a set $S$ is not bounded below, then $inf S = -\infty$.
 > In other words, if $S$ is bounded below, then $M = inf S$ if and only if
 > 1) $s \geq M \forall s \in S$
 > 2) Whenever $M_1 > M$, then there exists $s_1 \in S$ such that $s_1 < M_1$

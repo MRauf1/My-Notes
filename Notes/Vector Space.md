@@ -19,19 +19,21 @@ tags: [mathematics, linear_algebra]
 
 # Types
 
-## Examples
+## Dimensionality
+- [[Finite-Dimensional Vector Space]]
+- [[Infinite-Dimensional Vector Space]]
 
+## Examples
 - $\mathbb{F}^n$
 - [[Complex Vector Space]]
 - [[Real Vector Space|Real Vector Space]]
 
 ## Other
-
 - [[Vector Subspace|Vector Subspace]]
 - [[Function Space|Function Space]]
 
 # Properties
-
+- [[Basis]]
 - Additive identity is unique
 - Additive inverses of vectors are unique ($-\mathbf{v}$)
 - $\forall \mathbf{v} \in V, - (- \mathbf{v}) = \mathbf{v}$

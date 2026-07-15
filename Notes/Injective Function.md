@@ -8,6 +8,7 @@ tags: [mathematics, pre_calculus]
 > Function $f$ is injective (or one-to-one) if $f(a) = f(b) \implies a = b$ (each input is mapped to a unique output).
 
 # Properties
+- If there is a [[Function]] $g: B \rightarrow A$ such that $(g \circ f)(x) = x$, then $f$ is injective.
 
 ## Determining Injectivity
 - [[Horizontal Line Test]]

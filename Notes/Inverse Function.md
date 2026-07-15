@@ -13,6 +13,7 @@ tags: [mathematics, pre_calculus]
 > \end{align}
 > $$
 > Inverse of $f$ is unique and denoted as $f^{-1}$
+> Inverse function of $f$ exists if and only if $f$ is [[Bijective Function]].
 
 # Finding Inverse of a Function
 1) Write $y = f(x)$

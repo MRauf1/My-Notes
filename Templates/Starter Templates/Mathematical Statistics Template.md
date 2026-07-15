@@ -6,4 +6,4 @@ tags: [statistics, mathematical_statistics]
 
 
 
-[^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=13)
+[^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=1)

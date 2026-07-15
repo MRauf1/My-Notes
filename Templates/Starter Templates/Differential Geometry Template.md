@@ -6,4 +6,4 @@ tags: [mathematics, differential_geometry]
 
 
 
-[^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=28)
+[^1]: [Introduction to Manifolds](zotero://open-pdf/library/items/4Y95WRJU?page=1)

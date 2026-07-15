@@ -1,8 +1,13 @@
 ---
-tags: [mathematics, pre_calculus]
+tags:
+  - mathematics
+  - pre_calculus
 ---
 
 # Definition
+
+> [!info] Definition 1 (Function)[^1]
+> [[Relation]] $F: A \rightarrow B$ is a function if for every $a \in A$, there is exactly one $b \in B$ such that $(a, b) \in F$.
 
 [[Relation|Relation]] where each input maps to only a single output.[^1] As such, functions can only have $1$ $y$-[[Intercept|intercept]].[^3]
 
@@ -10,6 +15,7 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 
 # Properties
 - [[Domain|Domain]]
+- [[Codomain]]
 - [[Range|Range]]
 - [[Image]]
 - [[Zeros of Function|Zeros of Function]]
@@ -29,6 +35,11 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Bijective Function]]
 - [[Inverse Function]]
 - [[Well-Defined Function]]
+
+## [[Continuity]] and [[Derivative]]
+- [[C_0 Function]]
+- [[C_k Function]]
+- [[C_infinity Function]]
 
 ## Concavity/Convexity
 - [[Concave Upward Function]]

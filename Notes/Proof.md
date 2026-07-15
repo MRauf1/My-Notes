@@ -16,6 +16,7 @@ tags: [mathematics, discrete_mathematics]
 - [[Direct Proof|Direct Proof]]
 - [[Proof by Contradiction|Proof by Contradiction]]
 - [[Proof by Counterexample|Proof by Counterexample]]
+- [[Proof by Induction]]
 
 ## [[Logic|Logical]] Connectives
 

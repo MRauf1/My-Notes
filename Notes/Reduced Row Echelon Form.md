@@ -12,5 +12,6 @@ tags: [mathematics, linear_algebra]
 > [!abstract] Theorem
 > Every [[Linear System of Equations|linear system]] can be put in RREF using [[Row Operations|row operations]].
 
+The [[Pivot Variable]] in RREF are the same as the pivots in [[Row Echelon Form]].
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=32)

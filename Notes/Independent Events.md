@@ -25,6 +25,9 @@ When the occurrence of one [[Event|event]] does not change the [[Probability|pro
 
 In general, this does not imply that $A, B$ are marginally independent.
 
+# Types
+- [[Mutually Independent Events]]
+
 # Properties
 
 - $P(A | B) = P(A)$, $P(B | A) = P(B)$ ([[Conditional Probability]] = [[Marginal Probability]])

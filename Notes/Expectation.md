@@ -42,4 +42,8 @@ Expectation is a [[Linear Map|linear operator]].
 ## [[Conditional Expectation]]
 - [[Law of Total Expectation]]
 
+## [[Inequality]]
+- [[Markov's Inequality]]
+- [[Jensen's Inequality]]
+
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=59)

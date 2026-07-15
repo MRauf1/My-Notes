@@ -5,4 +5,7 @@ tags: [mathematics, pre_calculus]
 # Definition
 
 > [!info] Definition 1 (Surjective [[Function]])[^1]
-> Function $f: X \rightarrow Y$ is surjective (or onto) if $\forall y \in Y, \exists x \in X$ such that $f(x) = y$ (the [[Range]] is completed mapped to (each element in the range is mapped to)).
+> Function $f: X \rightarrow Y$ is surjective (or onto) if $\forall y \in Y, \exists x \in X$ such that $f(x) = y$ (the [[Range]] is completely mapped to (each element in the range is mapped to)).
+
+# Properties
+- If there is a [[Function]] $g: B \rightarrow A$ such that $(f \circ g)(x) = x$, then $f$ is surjective.

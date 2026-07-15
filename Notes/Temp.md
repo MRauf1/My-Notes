@@ -1,3 +1,7 @@
+Baby Rudin exercises to be completed:
+Chapter 1: 14-19
+
+
 ==**No, not all linear operators are matrices.**== [[1](https://www.reddit.com/r/math/comments/1hea45m/what_is_the_logic_behind_matrices_and_determinants/), [2](https://mathoverflow.net/questions/109567/eigenvalues-of-infinite-matrices)]
 
 While every linear operator on a **finite-dimensional** vector space can be _represented_ by a matrix (once a basis is chosen), the linear operator itself is an abstract function. In **infinite-dimensional** spaces, many linear operators cannot be represented by matrices at all. [[1](https://www.sciencedirect.com/topics/mathematics/linear-operator), [2](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Symmetry_\(Vallance\)/01%3A_Chapters/1.10%3A_Matrix_Representations_of_Groups), [3](https://www.reddit.com/r/mathematics/comments/onef1e/matrices_why_is_it_that_when_the_determinant_is/), [4](https://en.wikipedia.org/wiki/Operator_\(mathematics\)), [5](https://iopscience.iop.org/article/10.1088/1742-6596/1517/1/012053/pdf)]

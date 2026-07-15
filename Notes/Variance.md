@@ -23,6 +23,7 @@ tags: [statistics, categorical_variable_prediction]
 Variance measures the spread around the mean via the expected squared deviation from the center of the distribution.[^1]
 
 # Properties
+- [[Variance Basic Properties]]
 
 ## [[Conditional Variance]]
 - [[Law of Total Variance]]

@@ -30,4 +30,8 @@ tags: [mathematics, differential_geometry]
 ## [[Directional Derivative]]
 - [[Directional Derivative Vector Field]]
 
+# Properties
+- [[Curl of Vector Field]]
+- [[Divergence of Vector Field]]
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=23)

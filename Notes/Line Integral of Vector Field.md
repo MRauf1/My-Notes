@@ -13,7 +13,7 @@ tags: [mathetatics, calculus]
 > &= \int_C (P dx + Q dy + R dz)
 > \end{align}
 > $$
-> where $V = P \cdot U_1 + Q \cdot U_2 + R \cdot U_3$
+> where $V = P \cdot U_1 + Q \cdot U_2 + R \cdot U_3$ and $T$ is a [[Unit Tangent Vector Field on Curve]] $C$.
 > If $V$ is a [[Conservative Vector Field]], then it is [[Line Integral Independent of Path]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=1115)

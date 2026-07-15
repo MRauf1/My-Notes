@@ -15,5 +15,7 @@ If $A$ is in REF, the first nonzero entry of each row is called a pivot.
 > [!abstract] Theorem 1
 > Every [[Linear System of Equations|linear system]] can be put in REF using [[Row Operations|row operations]].
 
+The [[Pivot Variable]] in REF are the same as the pivots in [[Reduced Row Echelon Form]].
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=32)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=38)

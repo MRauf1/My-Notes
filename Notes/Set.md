@@ -26,8 +26,13 @@ There are 3 ways to describe a set:
 - [[Nondecreasing Sequence of Sets]]
 - [[Nonincreasing Sequence of Sets]]
 
+## Order
+- [[Set Order]]
+- [[Ordered Set]]
+
 ## Other
 - [[Disjoint Sets|Disjoint Sets]]
+- [[Star-Shaped Set]]
 
 # Operations
 - [[Set Operations]]

@@ -1,5 +1,9 @@
 ---
-tags: [mathetatics, calculus]
+tags:
+  - mathetatics
+  - calculus
+  - mathematics
+  - linear_algebra
 ---
 
 # Definition
@@ -12,4 +16,8 @@ tags: [mathetatics, calculus]
 > \end{align}
 > $$
 
+> [!info] Definition 2 ([[Operator]]-Centric)[^2]
+> Differentiation [[Operator]] $D: C^1[a, b] \rightarrow C[a, b]$ is defined by $Df(x) = f'(x)$.
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=187)
+[^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=106)

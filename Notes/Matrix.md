@@ -15,4 +15,41 @@ tags: [mathematics, linear_algebra]
 
 The set of all $m \times n$ matrices over field $\mathbb{F}$ is denoted by $M_{m,n}(\mathbb{F})$.[^1] The set of all $n \times n$ matrices over field $\mathbb{F}$ is denoted by $M_n(\mathbb{F})$.[^1]
 
+A matrix acts as a [[Finite-Dimensional Linear Operator]] through [[Matrix-Vector Multiplication]].
+
+# Representation
+- [[Matrix of Linear Map]]
+
+# Types
+- [[Diagonal Matrix]]
+- [[Lower Triangular Matrix]]
+- [[Upper Triangular Matrix]]
+
+# Properties
+## [[Operation]]
+- [[Matrix Multiplication]]
+- [[Matrix Transpose]]
+- [[Matrix Conjugate Transpose]]
+- [[Matrix Inverse]]
+- [[Linear Map Image]]
+- [[Matrix Column Space]]
+- [[Kernel]]
+
+## Eigens
+- [[Eigenvector]]
+- [[Eigenvalue]]
+- [[Eigenspace]]
+
+## [[Rank]]-[[Nullity]]
+- [[Rank]]
+- [[Nullity]]
+- [[Rank-Nullity Theorem]]
+
+## Decomposition
+- [[LU Decomposition]]
+- [[LUP Decomposition]]
+
+## Other
+- [[Matrix Equivalence Invertible Basis RREF]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=30)

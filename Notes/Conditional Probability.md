@@ -24,17 +24,10 @@ With conditional probability, our sample space changes from the [[Universe of Di
 > $$
 
 # Properties
-
-## Primary Properties
 - [[Conditional Probability Primary Properties]]
-
-## Multiplication Rule
 - [[Conditional Probability Multiplication Rule]]
-
-## Bayes' Theorem
+- [[Law of Total Probability]]
 - [[Bayes' Theorem|Bayes' Theorem]]
-
-## Other Properties
 - [[Conditional Probability Other Properties]]
 
 #TODO 

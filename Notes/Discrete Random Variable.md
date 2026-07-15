@@ -8,12 +8,10 @@ tags: [statistics, introduction_to_statistics]
 > Random variable $X$ whose [[Universe of Discourse|outcome space]] $S$ has a [[Countably Infinite|countable]] (includes finite) number of elements.
 
 # [[Probability|Probability]] [[Function|Functions]]
-
 - [[Probability Mass Function|Probability Mass Function]]
-- [[Cumulative Mass Function|Cumulative Mass Function]]
+- [[Cumulative Distribution Function]]
 
 # Properties
-
 - [[Expectation|Expectation]]
 
 # Distributions

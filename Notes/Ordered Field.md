@@ -5,7 +5,7 @@ tags: [mathematics, real_analysis]
 # Definition
 
 > [!info] Definition 1 (Ordered [[Field]])[^1]
-> A field with the [[Relation]] $\leq$ that satisfies the following properties $\forall a, b, c \in \mathbb{F}$
+> A field with the [[Relation]] $\leq$ (or [[Ordered Set]]) that satisfies the following properties $\forall a, b, c \in \mathbb{F}$
 > 1) Either $a \leq b$ or $b \leq a$
 > 2) $a \leq b \land b \leq a \implies a = b$
 > 3) $a \leq b \land b \leq c \implies a \leq c$ ([[Transitive]])
