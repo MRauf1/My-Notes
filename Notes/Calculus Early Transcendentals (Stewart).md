@@ -1,6 +1,6 @@
 ---
 tags:
-  - literature_review
+  - review
   - mathematics
   - calculus
 ---

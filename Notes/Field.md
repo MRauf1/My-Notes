@@ -22,6 +22,7 @@ A [[Set|set]] with [[Operation|operations]] of [[Addition|addition]], [[Multipli
 
 # Types
 - [[Ordered Field]]
+- [[Algebraically Closed Field]]
 
 # Properties
 - [[Field Basic Properties]]

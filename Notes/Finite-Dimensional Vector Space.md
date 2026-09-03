@@ -14,5 +14,6 @@ Notice that it follows immediately that $\langle v_1, \dots, v_n \rangle \subset
 # Properties
 - [[Basis Finite-Dimensional Vector Space]]
 - [[Finite-Dimensional Vector Space Vector Subspace Dimension]]
+- [[Orthonormal Basis Finite-Dimensional Inner Product Space]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=170)

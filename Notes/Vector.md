@@ -25,6 +25,8 @@ The [[Set|set]] of all n-dimensional vectors over field $
 ## Column Vector vs. Row Vector
 - [[Column Vector|Column Vector]]
 - [[Row Vector|Row Vector]]
+- [[Orthogonal Vector]]
+- [[Orthonormal Vector]]
 
 ## [[Basis|Basis]] Vectors
 - [[Standard Basis Vector|Standard Basis Vector]]
@@ -36,9 +38,13 @@ The [[Set|set]] of all n-dimensional vectors over field $
 - [[Vector Norm|Vector Norm]]
 - [[Vector Component]]
 - [[Span|Span]]
+- [[Vector Orthogonal Representation]]
 
 # Operations
 - [[Vector Operations]]
+
+## [[Dot Product]]
+- [[Vector as Dot Product with Standard Basis]]
 
 #TODO 
 - Have converted all real number symbols to the field symbols. Do all these hold for any field?

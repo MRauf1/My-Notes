@@ -21,4 +21,10 @@ tags: [mathematics, linear_algebra]
 > [!abstract] Theorem 1
 > If $a_{ii} \neq 0$ for each $i$, then the [[Linear System of Equations|linear system]] is consistent.
 
+# Properties
+- [[Triangular Matrix Invertibility]]
+- [[Triangular Matrix Eigenvalue]]
+- [[Triangular Matrix Algebraically Closed Field Similar Matrix]]
+- [[Triangular Matrix Lemma]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=32)

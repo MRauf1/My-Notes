@@ -12,15 +12,20 @@ tags: [mathematics, differential_geometry]
 > \end{align}
 > $$
 
-The above is an equality if and only if one [[Vector]] is a [[Multiple]] of the other [[Vector]].
+The above is an equality if and only if one [[Vector]] is a [[Multiple]] of the other [[Vector]] (they are [[Collinear]]).
 
 > [!info] Definition 2 (Equality)
 > For [[Vector]] $\mathbf{v}, \mathbf{w} \in \mathbb{R}^n$,
 > $$
 > \begin{align}
-> \mathbf{v} \cdot \mathbf{w} = ||\mathbf{v}|| \cdot ||\mathbf{w}|| \cdot cos(\mathcal{v})
+> \mathbf{v} \cdot \mathbf{w} = ||\mathbf{v}|| \cdot ||\mathbf{w}|| \cdot \cos(\theta)
 > \end{align}
 > $$
-> where $\mathcal{v}$ is the [[Angle]] between $\mathbf{v}$ and $\mathbf{w}$.
+> where $\theta$ is the [[Angle]] between $\mathbf{v}$ and $\mathbf{w}$.
+
+Both of the above are generalized using [[Inner Product]].
+
+# Properties
+- [[Triangle Inequality]]
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=60)

@@ -1,6 +1,4 @@
-Baby Rudin exercises to be completed:
-Chapter 1: 14-19
-
+Similar to one of the Python IDEs, find a tool on NeoVim, that lets me pause the iteration when a crash occurs or something of that sort, basically saves the state before the crash, then I can modify the data directly and change that state, and then restart the program. Because a lot of my time is restarting PyTorch runs which take a bunch of time to initialize and setup, just to crash because I forgot to write the normalizing code or what have you. It'd be even better if this tool is language-agnostic and can be used with other languages too. Or should I just use JupyterNotebook for this?
 
 ==**No, not all linear operators are matrices.**== [[1](https://www.reddit.com/r/math/comments/1hea45m/what_is_the_logic_behind_matrices_and_determinants/), [2](https://mathoverflow.net/questions/109567/eigenvalues-of-infinite-matrices)]
 

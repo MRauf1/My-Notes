@@ -26,6 +26,7 @@ Linear maps respect the vector space structure - performing vector space operati
 
 # Types
 - [[Invertible Linear Map]]
+- [[Diagonalizable Linear Map]]
 
 # Properties
 - [[Linear Map Image]]

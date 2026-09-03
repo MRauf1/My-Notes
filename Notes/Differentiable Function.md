@@ -1,5 +1,5 @@
 ---
-tags: [mathetatics, calculus]
+tags: [mathematics, calculus]
 ---
 
 # Definition
@@ -10,7 +10,6 @@ tags: [mathetatics, calculus]
 > 1) Its graph has "corners" or "kinks" in it. 
 > 2) If a function is not continuous, then it is not differentiable.
 > 3) If it has a [[Vertical Line]] [[Tangent Line]]: $\lim_{x \rightarrow a} |f'(x)| = \infty$
-
 
 It is defined for open intervals only because limits require that points exist on both sides near the point at question, which a closed interval doesn't provide at the endpoints.
 

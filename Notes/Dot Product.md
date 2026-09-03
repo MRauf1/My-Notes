@@ -5,10 +5,10 @@ tags: [mathematics, differential_geometry]
 # Definition
 
 > [!info] Definition 1 (Dot Product)[^1]
-> For [[Point]] $\mathbf{p} = (p_1, p_2, p_3), \mathbf{q} = (q_1, q_2, q_3)$ in $\mathbb{R}^3$, the dot product is
+> For [[Point]] $\mathbf{p} = (p_1, \dots, p_n), \mathbf{q} = (q_1, \dots, q_n)$ in $\mathbb{R}^n$, the dot product is
 > $$
 > \begin{align}
-> \mathbf{p} \cdot \mathbf{q} = p_1 q_1 + p_2 q_2 + p_3 q_3
+> \mathbf{p} \cdot \mathbf{q} = \sum_{i=1}^n p_i q_i
 > \end{align}
 > $$
 > The dot product of two [[Vector]] is $0$ if and only if the two vectors are [[Orthogonal Vector]].
@@ -18,6 +18,8 @@ Dot product is an [[Inner Product]] and inherits its properties.
 # Properties
 - [[Cosine Similarity]]
 - [[Direction Cosine]]
+- [[Angle Between Vectors]]
+- [[Vector as Dot Product with Standard Basis]]
 
 ## [[Projection]]
 - [[Scalar Projection]]

@@ -1,5 +1,5 @@
 ---
-tags: [literature_review]
+tags: [review]
 ---
 
 # Review[^1]
@@ -92,5 +92,23 @@ Each person has a unique set of potentials that yearn to be realized. One who is
 Awareness of responsibility is the first step. It must be followed by action. Willing is composed of wishing and action.
 
 One's inability to wish may also stem from one's inability to feel (alexithymia). If the inability to feel is taken care of, one's inability to wish may be taken care of as well automatically. Wishing requires feeling. If one cannot feel, one may emulate feeling by feeling what others feel, but this type of inauthentic feeling is insufficient for true wishing.
+
+Decision is the bridge between wishing and action.
+
+Best way to deal with guilt is through atonement. Not by getting stuck in the past, but by altering the future.
+
+If a decision is difficult because one must relinquish one thing while accepting another, a decision can be made easier by making the relinquishment smaller/simpler.
+
+In a decision, one feels more discomfort when the choices are nearly equivalent in value. Comfortable decision-making demands that one option is obviously more attractive than the other.
+
+Every person must own and take responsibility for their decisions. They shouldn't look to others to make the decisions for them. By accepting an active approach to decision where you are the master of your decisions, you also accept the reality that you are the master of your life. This helps prevent learned-helplessness.
+
+Responsibility is continuous: one does not create their world/life once and for all; one is continuously creating oneself. Similarly, so does change appear from oneself continuously.
+
+Secondary anxiety stemming from anxiety often creates more havoc than the primary disease.
+
+Different interpretations such as Jungian, Freudian, Adlerian, and so on are human constructs. They do not truly exist (as far as we know). None is better than the other objectively, but they can be more suited to a specific individual than the other. Thus, for most effectiveness, a suitable interpretation must be tailored to each patient so that this interpretation effectively improves the life of the patient. That's the primary criteria. Even if the interpretation is religious or astrological or something like that in nature, as long as it truly helps the patient, then this interpretation is valid.
+
+Responsibility applies to every human equally in the same manner. You are not special in terms of this so do not assume more guilt or responsibility than others because you feel like you "deserve" it.
 
 [^1]: [Existential Psychotherapy](zotero://open-pdf/library/items/9AN2W49G?page=1)

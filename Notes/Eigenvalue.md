@@ -15,5 +15,6 @@ They only exist for [[Square Matrix]].
 # Properties
 - [[Zero Eigenvalue Linear Map Injectivity]]
 - [[Eigenvalue Kernel]]
+- [[Geometric Multiplicity of Eigenvalue]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=89)

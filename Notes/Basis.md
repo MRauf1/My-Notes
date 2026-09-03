@@ -20,6 +20,12 @@ tags:
 
 Notice that it follows immediately that $\langle v_1, \dots, v_n \rangle \subseteq V$ and hence it follows that $V = \langle v_1, \dots, v_n \rangle$.
 
+Choosing a [[Basis]] determines what the [[Matrix]] will be like, but it doesn't change the abstract operation of the [[Linear Map]] itself. For the [[Linear Map]], it still does the same thing, and only the expression of the vectors changes.
+
+# Types
+- [[Orthogonal Basis]]
+- [[Orthonormal Basis]]
+
 # Properties
 - [[Basis Matrix RREF]]
 - [[Basis Linear Combination]]
