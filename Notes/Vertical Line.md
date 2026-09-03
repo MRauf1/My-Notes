@@ -1,5 +1,8 @@
 ---
-tags: [mathematics, pre_algebra, pre_calculus]
+tags:
+  - mathematics
+  - pre_algebra
+  - pre_calculus
 ---
 
 # Definition

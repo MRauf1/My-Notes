@@ -1,5 +1,7 @@
 ---
-tags: [computer_science, computer_vision]
+tags:
+  - computer_science
+  - computer_vision
 ---
 
 Hasan Ibn al-Haytham, known as Alhacen in the Latin world, lived 965-1040 AD.

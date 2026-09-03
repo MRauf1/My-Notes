@@ -1,5 +1,6 @@
 ---
-tags: [review]
+tags:
+  - review
 ---
 
 # Review[^1]

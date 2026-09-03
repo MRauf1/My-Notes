@@ -1,5 +1,6 @@
 ---
-tags: [other]
+tags:
+  - other
 ---
 
 # Biography

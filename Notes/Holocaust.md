@@ -1,5 +1,6 @@
 ---
-tags: [history]
+tags:
+  - history
 ---
 
 # Definition

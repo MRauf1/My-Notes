@@ -1,5 +1,7 @@
 ---
-tags: [mathematics, linear_algebra]
+tags:
+  - mathematics
+  - linear_algebra
 ---
 
 # Definition

@@ -1,5 +1,7 @@
 ---
-tags: [philosophy, informal logic]
+tags:
+  - philosophy
+  - informal logic
 ---
 
 # Definition

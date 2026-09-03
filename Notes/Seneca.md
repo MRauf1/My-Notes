@@ -1,5 +1,6 @@
 ---
-tags: [philosophy]
+tags:
+  - philosophy
 ---
 
 # Biography

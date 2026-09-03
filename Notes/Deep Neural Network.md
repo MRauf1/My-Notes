@@ -1,5 +1,8 @@
 ---
-tags: [computer_science, deep_learning, computer_vision]
+tags:
+  - computer_science
+  - deep_learning
+  - computer_vision
 ---
 
 # Definition

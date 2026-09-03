@@ -1,5 +1,7 @@
 ---
-tags: [statistics, time_series_analysis]
+tags:
+  - statistics
+  - time_series_analysis
 ---
 
 # Definition

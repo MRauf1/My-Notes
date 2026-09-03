@@ -1,5 +1,7 @@
 ---
-tags: [psychology, lifespan_development]
+tags:
+  - psychology
+  - lifespan_development
 ---
 
 # Definition

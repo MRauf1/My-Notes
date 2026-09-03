@@ -1,5 +1,7 @@
 ---
-tags: [statistics, categorical_variable_prediction]
+tags:
+  - statistics
+  - categorical_variable_prediction
 ---
 
 # Definition

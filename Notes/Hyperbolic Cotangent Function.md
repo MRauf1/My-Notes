@@ -1,5 +1,7 @@
 ---
-tags: [mathetatics, calculus]
+tags:
+  - mathetatics
+  - calculus
 ---
 
 # Definition

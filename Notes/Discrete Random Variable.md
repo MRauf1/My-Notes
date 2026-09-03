@@ -1,5 +1,7 @@
 ---
-tags: [statistics, introduction_to_statistics]
+tags:
+  - statistics
+  - introduction_to_statistics
 ---
 
 # Definition

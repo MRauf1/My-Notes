@@ -1,5 +1,7 @@
 ---
-tags: [computer_science, computer_vision]
+tags:
+  - computer_science
+  - computer_vision
 ---
 
 # Definition

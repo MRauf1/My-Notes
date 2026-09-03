@@ -1,5 +1,7 @@
 ---
-tags: [computer_science, theoretical_computer_science]
+tags:
+  - computer_science
+  - theoretical_computer_science
 ---
 
 # Definition

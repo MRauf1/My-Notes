@@ -1,5 +1,6 @@
 ---
-tags: [meta_learning]
+tags:
+  - meta_learning
 ---
 
 # Definition

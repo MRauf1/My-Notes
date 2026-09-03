@@ -1,5 +1,7 @@
 ---
-tags: [biology, nutrition]
+tags:
+  - biology
+  - nutrition
 ---
 
 # Definition

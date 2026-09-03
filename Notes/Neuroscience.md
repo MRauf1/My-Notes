@@ -1,5 +1,6 @@
 ---
-tags: [neuroscience]
+tags:
+  - neuroscience
 ---
 
 # Definition

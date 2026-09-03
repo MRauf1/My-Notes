@@ -1,5 +1,6 @@
 ---
-tags: [mathematics: complex_analysis]
+tags:
+  - mathematics: complex_analysis
 ---
 
 # Definition

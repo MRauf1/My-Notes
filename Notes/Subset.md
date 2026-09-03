@@ -1,5 +1,9 @@
 ---
-tags: [mathematics, discrete_mathematics, statistics, introduction_to_statistics]
+tags:
+  - mathematics
+  - discrete_mathematics
+  - statistics
+  - introduction_to_statistics
 ---
 
 # Definition
