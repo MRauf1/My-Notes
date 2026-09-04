@@ -15,4 +15,6 @@ tags:
 > $$
 > where $\hat{y} = \hat{f}(x) = f(\hat{x})$
 
+![[Forward and Backward Error Diagram.png]]
+
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/UQ4SGXEK?page=23)

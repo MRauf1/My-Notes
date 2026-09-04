@@ -21,6 +21,7 @@ Triangle is a 2D [[Shape|shape]] with $3$ sides and $3$ [[Angle|angles]]. It is 
 - [[Sum of the Measures of the Angles of a Triangle|Sum of the Measures of the Angles of a Triangle]]
 - [[Similar Triangles|Similar Triangles]]
 - [[Congruent Triangles|Congruent Triangles]]
+- [[Barycentric Coordinates]]
 
 ## [[Perimeter|Perimeter]]
 
@@ -30,7 +31,7 @@ $$P = a + b + c$$
 
 $$A = \frac{1}{2} b h$$
 
-where $b$ is the base, and $h$ is the length of the line that connects the base to the opposite vertex at a [[Right Angle|right angle]] with the base.
+where $b$ is the base, and $h$ is the length of the line that connects the base to the opposite vertex at a [[Right Angle|right angle]] with the base. A signed variant of this formula, used for orientation tests and [[Barycentric Coordinates]], is given by [[Signed Area of a Triangle]].
 
 #TODO 
 - Why does this area formula work for all triangles, not just right triangles?

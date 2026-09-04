@@ -19,4 +19,6 @@ Measuring error by how large a modification from the true input/true problem is 
 
 In other words, how much [[Propagated Data Error]] in the initial input would be required to explain all of the error in the final computed result.
 
+![[Forward and Backward Error Diagram.png]]
+
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/UQ4SGXEK?page=23)

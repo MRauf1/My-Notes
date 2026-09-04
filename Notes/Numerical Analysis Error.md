@@ -8,7 +8,7 @@ tags:
 
 [[Error]] present in [[Numerical Analysis]].[^1]
 
-Conditioning is for the [[Propagated Data Error]], while stability is for the [[Computational Error]]. Accuracy is the closeness of the computed solution to the true solution. Thus, a solution is accurate if it is both well-conditioned and stable.
+[[Sensitivity|Conditioning]] is for the [[Propagated Data Error]], while [[Stable Algorithm|stability]] is for the [[Computational Error]]. [[Accuracy]] is the closeness of the computed solution to the true solution. Thus, a solution is accurate if it is both well-conditioned and stable.
 
 # Types
 ## Absolute/Relative
@@ -28,5 +28,14 @@ Conditioning is for the [[Propagated Data Error]], while stability is for the [[
 ## [[Sensitivity]]/Conditioning
 - [[Relative Condition Number]]
 - [[Absolute Condition Number]]
+
+## Well-Posedness & Algorithm Quality
+- [[Well-Posed Problem]]
+- [[Stable Algorithm]]
+- [[Accuracy]]
+- [[Inverse Problem]]
+
+## Underlying Representation
+- [[Floating-Point Number System]]
 
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/UQ4SGXEK?page=17)
