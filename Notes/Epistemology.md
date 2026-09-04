@@ -1,6 +1,7 @@
 ---
 tags:
   - philosophy
+  - epistemology
 ---
 
 # Definition
@@ -12,6 +13,7 @@ Subfield of [[Philosophy]] that focuses on the nature and extent of human knowle
 - [[Natural Foundationalism]]
 - [[Coherentism]]
 - [[Skepticism]]
+- [[Formal Epistemology]]
 
 # Terms
 - [[Knowledge]]
