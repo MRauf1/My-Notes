@@ -21,6 +21,7 @@ The creator does research in computer science/mathematics/statistics with the sp
 - Do not provide examples unless specifically requested by the creator.
 - Raw highlight text from PDFs may drop certain mathematical symbols due to PDF encoding issues. You must actively verify and reconstruct mathematically sound LaTeX based on the context of the theorem and textbook conventions.
 - The creator may attach an image that he wants to be incorporated in the notes. Paste that image in `Media/<Appropriate Name>.png` and link that image within the appropriate notes.
+- If a note with the same name for a different concept already exists, create a new note with the title `<Concept Name>(<Subdomain>)` to avoid conflicts and rewriting information.
 - Make sure to link relevant notes to each other. 
 	- Search for any relevant notes within the vault that could be linked.
 	- Use your own knowledge of the material to search for related notes that might exist in the vault without going through the entire vault. 

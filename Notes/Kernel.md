@@ -2,7 +2,6 @@
 tags:
   - mathematics
   - abstract_algebra
-  - linear_algebra
 ---
 
 # Definition
