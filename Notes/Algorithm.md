@@ -12,4 +12,8 @@ A set of steps that completes a task by transforming some input into some output
 - [[Sorting Algorithm]]
 - [[Online Algorithm]]
 
+## Search Algorithms
+- [[Linear Search]]
+- [[Binary Search]]
+
 [^1]: [Introduction to Algorithms](zotero://open-pdf/library/items/X422WTMW?page=28)

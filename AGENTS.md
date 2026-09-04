@@ -45,7 +45,7 @@ tags:
 ---
 
 # Definition 
-> [!<callout_type>] <Title / Theorem Name>[^1] 
+> [!info] <Title / Theorem Name>[^1] 
 > Core statement in LaTeX. 
 
 <Additional Details/Creator's Interpretations if requested>
