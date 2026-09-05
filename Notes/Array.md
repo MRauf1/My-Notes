@@ -6,7 +6,9 @@ tags:
 
 # Definition
 > [!info] Array
-> A [[Data Structure]] that stores elements of the same type in contiguous blocks of memory, where each element is accessed directly by an integer index.
+> A fixed-size [[Data Structure]] that stores elements of the same type in contiguous blocks of memory, where each element is accessed directly by an integer index. Its size is set at allocation and cannot grow or shrink; see [[ArrayList]] for a resizable variant.
+
+As a fixed-size structure, an Array allocates exactly the space it needs and never wastes space due to resizing, unlike its dynamic counterparts (see [[ArrayList]]).
 
 # Operations
 | Operation | Time Complexity | Space Complexity |
@@ -14,9 +16,16 @@ tags:
 | Access | $O(1)$ | $O(1)$ |
 | [[Linear Search\|Search (Unsorted)]] | $O(n)$ | $O(1)$ |
 | [[Binary Search\|Search (Sorted)]] | $O(\log n)$ | $O(1)$ |
-| Add (End) | $O(1)^*$ | $O(1)$ |
-| Add (Beginning / Middle) | $O(n)$ | $O(1)$ |
-| Remove (End) | $O(1)$ | $O(1)$ |
-| Remove (Beginning / Middle) | $O(n)$ | $O(1)$ |
+| [[Sorting Algorithm\|Sort]] | Varies$^*$ | Varies$^*$ |
 
-$^*$Amortized, since a dynamic array must occasionally reallocate to a larger block once it is full.
+$^*$Depends on the sorting algorithm used; see [[Sorting Algorithm]].
+
+# Space Usage
+$n + O(1)$ words: $n$ words for the elements themselves, plus a constant number of bookkeeping fields (e.g. its length).
+
+# Types
+- [[ArrayList]]
+
+# Properties
+- [[Linear Data Structure]]
+- [[Contiguous Data Structure]]
