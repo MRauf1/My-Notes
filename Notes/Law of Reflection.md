@@ -10,4 +10,7 @@ Light will follow the shortest path between two points, so the angle of incidenc
 
 Early version originated by [[Hero of Alexandria|Hero of Alexandria]] (10-70 AD) in his work Catoptrica.
 
+# Properties
+- Underlies [[Specular Reflection]] in [[Ray Tracing]], where the reflected ray direction is computed as $\mathbf{r} = \mathbf{d} - 2(\mathbf{d} \cdot \mathbf{n})\mathbf{n}$.
+
 [^1]: https://visionbook.mit.edu/taxonomy.html

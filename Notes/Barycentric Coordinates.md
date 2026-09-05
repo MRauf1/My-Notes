@@ -35,6 +35,9 @@ Since $\alpha, \beta, \gamma$ always sum to $1$, Definition 2 mixes the three ve
 ## 3D
 - [[3D Barycentric Coordinates]]
 
+# Applications
+- [[Ray-Triangle Intersection]]
+
 # Properties
 
 ## Triangle Membership

@@ -16,4 +16,7 @@ tags:
 - [[Extension of Orthonormal List to Orthonormal Basis]]
 - [[Orthonormal Basis Finite-Dimensional Inner Product Space]]
 
+# Applications
+- [[Camera Frame]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=259)
