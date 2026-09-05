@@ -11,6 +11,8 @@ Even then, he never talked back to other when they would, for example, insult hi
 
 When asked for presents, he would always say nothing. Perhaps there was fear involved as with all of his external actions, but to him, he wanted nothing primarily because he thought that there was nothing that would make him happy. Even so, he could not express his feeling when gifted a present, such as "I do not like it".
 
+A point I saw being mentioned online is how Yozo downplays the abuse he received as a child. It wasn't physical by the sounds of it, but the very fact that he felt the way he felt when talking to his father, when telling his father what present he would like, subtlely shows the abusive dynamic between them, which would only escalate in the future. It's no wonder that he keeps saying that his father is the one man that he feared the most (or among the most).
+
 His upbringing wasn't particularly harsh or horrible nor was it luxurious and rich. Although he did live in a rural setting without leaving the place and seeing urban territories and even a train until later in his childhood. His father would also buy him and the family and relatives presents after his job travel. They had a piano in their house too, so overall, his family was relatively well-off.
 
 In school, he ranked first and often was known as the one who had the "brains". In particularly, he became better and better at crafting stories and writing, which may have very well led to him becoming a writer and an author. Crafting stories as his responsibility as the jester who is trying to fool everyone.
@@ -49,11 +51,15 @@ His new family seemed better off without him in it, and he was afraid that he wo
 
 In the end, he found a very trusting girl, to a fault actually, and he found this trustworthiness of her beautiful and a virtue, which led to him promptly marrying her and starting a life together. Everything was going well initially until one day he saw her get violated by another man due to her trustworthy nature. This ended up ruining both of them. The girl lost her virtue of trust and no longer acted the way she used to. Meanwhile, the one thing, the one virtue that kept Dazai afloat backfired on him, and he now had nothing left to cling onto. He started suspecting his wife of other affairs, began drinking more frequently, and eventually, tried to commit suicide for the second time by overdosing on sleeping pills. Once again, he did not succeed.
 
+His friend as well (if he can even be called that) was quite cruel in this event as well. The way he didn't bother to stop it, but instead went back up to Yozo to inform him about, and then followed along to see his reaction before leaving altogether as Yozo's life was falling apart in real time.
+
 In an attempt to save his health, he ended up going to a pharmacy where he connected with the crippled shopkeeper lady. She gave him medicine as well as morphine to make him quit his drinking addiction. But that instead gave way to his new morphine addiction. He would frequently visit the pharmacy, begging for more, accumulating a large debt, while also having an affair with the crippled widow. In the end, he was admitted to a mental hospital. Now, he was a lunatic. He truly ceased being a human being.
 
 According to him, his unhappiness stemmed from his inability to say no. He believes that many of his problems would not have happened had he just said no.
 
 In the end of the story, he relocates to an isolated house in the country with an elder maid to take care of him thanks to his elder brother's help. Now, everything just passes him. He does not feel alive. He does not feel anything. Everything just passes.
+
+I love the epilogue of the story how when asking others about Yozo, the bar woman described him as a sweet angel. Throughout the entire story, Yozo kept describing himself as a parasite that only ruins other people. And yet, some people still viewed him positively. It's a fascinating dichotomy just how different one's perspective about oneself can be from how others view you.
 
 Apparently, the story is a semi-autobiography, and I'm not sure which parts are autobiographical and which ones are fictional.
 

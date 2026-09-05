@@ -26,4 +26,6 @@ tags:
 > \end{align}
 > $$
 
+This [[Algorithm]] can be used to check for [[Linearly Dependent]] [[Vector]]. If you end up with a 0 [[Vector]] before the process ends, then the list is [[Linearly Dependent]].
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=264)

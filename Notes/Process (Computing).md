@@ -14,5 +14,7 @@ tags:
 - Created via [[Fork and Exec|fork() and exec()]].
 - Has a user owner and is said to run as that owner (see [[User (Unix)]]).
 - Managed by [[Process Management]], including [[Context Switch|context switching]] between processes sharing a CPU.
+- Identified by a numeric process ID (PID).
+- Reads and writes data through its [[Standard Streams (Unix)|standard streams]].
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)

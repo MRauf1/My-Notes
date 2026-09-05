@@ -13,5 +13,6 @@ tags:
 - A person who can operate as root has root access and is an administrator on a traditional Unix system.
 - Still runs in [[User Mode]], not [[Kernel Mode]], despite its elevated privileges.
 - System designers try to minimize the need for root access, since operating as root makes mistakes difficult to identify or correct.
+- Exempt from the ordinary restrictions of [[File Permissions (Unix)|file permissions]] and may read any file on the system.
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
