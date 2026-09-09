@@ -27,5 +27,11 @@ tags:
 - [[Gram-Schmidt Algorithm]]
 - [[Orthonormal Basis Finite-Dimensional Inner Product Space]]
 - [[Bessel's Inequality]]
+- [[Orthogonal Complement]]
+- [[Orthogonal Direct Sum]]
+- [[Orthogonal Decomposition Theorem]]
+- [[Orthogonal Projection]]
+- [[Orthogonal Projection Matrix]]
+- [[Best Approximation Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=246)

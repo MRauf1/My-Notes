@@ -57,4 +57,6 @@ While a life of struggle can have its own benefits, it's unwise to seek struggle
 
 Speech should be meaningful so that it hits someone deep, just like a medicine that stays in one's body to cure them. Speech should not be rushed or disorderly, but come in a manner that others can understand easily. Thus, speak slowly.
 
+In light of existential isolation, we are inherently alone and isolated from others. So then, why should long distance separations weigh heavily on us when it is minor compared to the existential barrier between us?
+
 [^1]: [Letters on Ethics: To Lucilius](zotero://open-pdf/library/items/CZ8RD9TG?page=1)

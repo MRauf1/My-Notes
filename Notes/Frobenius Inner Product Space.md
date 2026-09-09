@@ -10,7 +10,7 @@ tags:
 > [[Inner Product]] on the [[Vector Space]] of $M_{m, n}(\mathbb{C})$ with the [[Inner Product]]
 > $$
 > \begin{align}
-> \langle A, B \rangle = tr(A B^*)
+> \langle A, B \rangle = tr(A^* B)
 > \end{align}
 > $$
 

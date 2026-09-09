@@ -10,7 +10,7 @@ tags:
 > [[Vector Norm]] in [[Frobenius Inner Product Space]] is
 > $$
 > \begin{align}
-> \lVert A \rVert_F = \sqrt{tr(A A^*)}
+> \lVert A \rVert_F = \sqrt{tr(A^* A)}
 > \end{align}
 > $$
 

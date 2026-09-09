@@ -29,4 +29,7 @@ tags:
 - [[Simple Linear Regression Coefficient Confidence Interval]]
 - [[Simple Linear Regression Hypothesis Test]]
 
+## Geometric Interpretation
+- The least-squares fit is the [[Orthogonal Projection]] of the response vector onto the subspace of vectors of the form $mx+b$, per the [[Best Approximation Theorem]].
+
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=80)
