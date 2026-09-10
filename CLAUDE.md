@@ -17,9 +17,12 @@ The creator does research in computer science/mathematics/statistics with the sp
 - Every note represents a single, focused concept or theorem.
 - Keep definitions crisp and concise at the top, followed by properties.
 - If requested, add additional details, such as creator's interpretation or non-definitional properties, below the callout.
+- Capture the fundamental ideas/concepts/insights/laws/theorems/propositions from the highlights. Do not write the specific examples unless requested by the creator.
+- Highlights may capture special/simplified cases/concepts of a more general case/concept. In such cases, write down the special/simplified case/concept, but also write down the general case/concept.
 - Titles must use Title Case matching the filename (e.g., `Spectral Theorem.md` -> `# Spectral Theorem`).
 - Do not provide examples unless specifically requested by the creator.
 - Raw highlight text from PDFs may drop certain mathematical symbols due to PDF encoding issues. You must actively verify and reconstruct mathematically sound LaTeX based on the context of the theorem and textbook conventions.
+- Highlights may come from old sources. If you encounter out-of-date information, replace it with the updated information accordingly so that the notes have the most up-to-date knowledge.
 - The creator may attach an image that he wants to be incorporated in the notes. Paste that image in `Media/<Appropriate Name>.png` and link that image within the appropriate notes.
 - If a note with the same name for the same concept already exists, append to this existing note to avoid conflicts and rewriting information.
 - If a note with the same name for a different concept already exists, create a new note with the title `<Concept Name>(<Subdomain>)` to avoid conflicts and rewriting information.

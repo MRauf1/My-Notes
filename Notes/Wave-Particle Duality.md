@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - classical_mechanics
+  - introduction_to_physics
 ---
 
 # Definition

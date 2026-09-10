@@ -112,4 +112,24 @@ Different interpretations such as Jungian, Freudian, Adlerian, and so on are hum
 
 Responsibility applies to every human equally in the same manner. You are not special in terms of this so do not assume more guilt or responsibility than others because you feel like you "deserve" it.
 
+Types of Isolation:
+1) Interpersonal Isolation
+	1) Loneliness. Isolation from other individuals.
+2) Intrapersonal Isolation
+	1) Process whereby one partitions off parts of oneself. Stifling one's feelings/desires, accepting "oughts"/"shoulds" as one's own wishes, distrusting one's own judgement, or burying one's own potential. For example, blocking your conscious processes like thinking so that you don't have to think about scary thoughts.
+	2) Some believe this arises due to obstructions in one's early life, which act to derail the individual's natural development.
+	3) One must reintegrate the previously split-off parts of oneself.
+3) Existential Isolation
+	1) Unbridgeable gulf between oneself and another. The separation between one and the world.
+
+Both the existential concerns of death and freedom inevitably lead towards the existential isolation.
+
+Dying is the most lonely human experience.
+
+The act of sole authorship, of being one's own sole parent is a lonely experience. You, and only you are the sole being responsible for yourself.
+
+Despite the loneliness, as a protective mechanism, we constitute the world around us as the one we are inherently part of and inseparable from; one that we are deeply connected to. And such, the primordial loneliness and emptiness are buried deep within, usually only arising as deep anxiety.
+
+Interpersonal and existential isolations are closely linked. Emergence from interpersonal fusion/dependence thrusts you into existential isolation. Thus, the fear of existential isolation is a driving force behind many interpersonal relationships.
+
 [^1]: [Existential Psychotherapy](zotero://open-pdf/library/items/9AN2W49G?page=1)

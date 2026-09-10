@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - classical_mechanics
+  - introduction_to_physics
 ---
 
 # Definition
@@ -12,6 +12,6 @@ tags:
 - The source of the [[Electromagnetic Field]] and the mediator of the electromagnetic [[Force]].
 - Its coupling strength to the [[Photon]] is set by the fine-structure constant, approximately 1/137, the fundamental coupling constant of [[Quantum Electrodynamics]].
 - Unlike mass, the source of gravitation, charge comes in two signs, so the electromagnetic interaction can be either attractive or repulsive.
-- Conserved in every known interaction.
+- Conserved in every known interaction; see [[Conservation of Charge]].
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 2: Basic Physics](https://www.feynmanlectures.caltech.edu/I_02.html)

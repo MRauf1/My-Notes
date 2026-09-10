@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - classical_mechanics
+  - introduction_to_physics
 ---
 
 # Definition
@@ -11,7 +11,8 @@ tags:
 # Properties
 - The electron's antiparticle is named the positron; for most other particles the antiparticle is denoted "anti-" followed by the particle's name (e.g. antiproton, antineutron).
 - Predicted for the electron by relativistic [[Quantum Electrodynamics]] and subsequently confirmed and generalized to essentially all particles.
-- A particle-antiparticle annihilation converts the pair's rest energy into radiation, such as gamma-ray [[Photon]]s.
+- A particle-antiparticle annihilation converts the pair's rest energy into radiation, such as gamma-ray [[Photon]]s, per [[Mass-Energy Equivalence]].
+- An antiparticle carries baryon or lepton number $-1$ where its corresponding particle carries $+1$, per [[Conservation of Baryon Number]] and [[Conservation of Lepton Number]].
 - The [[Photon]] is its own antiparticle.
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 2: Basic Physics](https://www.feynmanlectures.caltech.edu/I_02.html)
