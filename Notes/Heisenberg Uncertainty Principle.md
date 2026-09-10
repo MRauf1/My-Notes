@@ -14,5 +14,8 @@ tags:
 - Explains why atoms do not collapse: confining an electron within the nucleus would fix its position precisely, forcing (by the principle) an enormous uncertainty in momentum and hence kinetic energy large enough to eject the electron; electrons instead settle at a distance that balances confinement against this kinetic cost, which is why atoms (~$10^{-8}$ cm) are vastly larger than their nuclei (~$10^{-13}$ cm).
 - Explains [[Zero-Point Motion]]: an atom completely at rest at absolute zero would have a precisely known position and a precisely known (zero) momentum simultaneously, which the principle forbids, so residual vibration persists no matter how low the temperature.
 - One expression of the broader loss of definite classical trajectories in quantum mechanics, alongside [[Wave-Particle Duality]] and [[Quantum Indeterminism]].
+- Has an analogous form for energy and time, the [[Energy-Time Uncertainty Principle]], $\Delta t \geq \hbar / 2\Delta E$.
+- Equivalently expressed in terms of velocity rather than momentum: since $p = mv$, the position-momentum form can be written $[\Delta x][\Delta v] \geq \hbar/2m$ for a particle of mass $m$.
+- Underlies the [[Electron Cloud]] picture of the atom, since it forbids a simultaneously well-defined position and velocity for the electron.
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 2: Basic Physics](https://www.feynmanlectures.caltech.edu/I_02.html)

@@ -23,6 +23,7 @@ By definition, probability has the following properties:
 - [[Probability of Subset]]
 - [[Probability Maximum Value]]
 - [[Probability of Set Union]]
+- [[Probability of Equally Likely Outcomes]]
 
 # Frameworks
 - [[Probability Frequentist Framework]]
