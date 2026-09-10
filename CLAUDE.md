@@ -59,6 +59,9 @@ tags:
 > [!example]- <Title / Example Summary>
 > Example in LaTeX.
 
+# Types <If applicable>
+- Bulleted list of types of this concept with [[Wikilinks]].
+
 # Properties 
 - Bulleted list of mathematical or structural properties with [[Wikilinks]]. 
 

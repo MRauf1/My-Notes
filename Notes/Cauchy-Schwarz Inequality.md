@@ -14,7 +14,7 @@ tags:
 > \end{align}
 > $$
 
-The above is an equality if and only if one [[Vector]] is a [[Multiple]] of the other [[Vector]] (they are [[Collinear]]).
+The above is an equality if and only if one [[Vector]] is a [[Multiple]] of the other [[Vector]] (they are [[Collinear]]) — **any** scalar multiple, positive or negative, suffices, since the left side is an absolute value. This is weaker than the equality condition for the [[Triangle Inequality]], which additionally requires the multiple to be nonnegative (the vectors must point in the *same* direction).
 
 > [!info] Definition 2 (Equality)
 > For [[Vector]] $\mathbf{v}, \mathbf{w} \in \mathbb{R}^n$,

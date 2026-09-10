@@ -14,6 +14,8 @@ tags:
 > \end{align}
 > $$
 
+This is the $\mathbb{R}^n$/[[Dot Product]] special case of the axiomatic [[Normed Space]] definition.
+
 # Properties
 - [[Norm Addition (Triangle Inequality)]]
 - [[Norm Scalar Multiplication]]

@@ -22,6 +22,7 @@ Triangle is a 2D [[Shape|shape]] with $3$ sides and $3$ [[Angle|angles]]. It is 
 - [[Similar Triangles|Similar Triangles]]
 - [[Congruent Triangles|Congruent Triangles]]
 - [[Barycentric Coordinates]]
+- [[Triangle Inequality (Geometry)]]
 
 ## [[Perimeter|Perimeter]]
 

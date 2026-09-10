@@ -16,10 +16,13 @@ tags:
 > where $v \cdot v$ is a [[Dot Product]].
 > If $\lVert v \rVert = 1$, then $v$ is a [[Unit Vector]].
 
+This is the standard 2-[[p-Norm]] on $\mathbf{F}^n$; it is the $\mathbf{F}^n$ special case of the axiomatic [[Normed Space]] definition.
+
 # Types
 - [[Frobenius Norm]]
 
 # Properties
 - [[Vector Norm Basic Properties]]
+- [[Norm Equivalence Inequalities (Finite-Dimensional)]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=49)

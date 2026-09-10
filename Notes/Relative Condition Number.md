@@ -22,4 +22,8 @@ A problem is ill-conditioned/sensitive if the condition number is much larger th
 > Given a condition number $\kappa$ for a problem, the condition number of the [[Inverse Problem|inverse problem]] is $\frac{1}{\kappa}$.
 > Thus, if the condition number is close to 1, then both problems are well-conditioned. If it's not, then one of them is ill-conditioned.
 
+
+# Properties
+- [[Condition Number of a Matrix]]
+
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/UQ4SGXEK?page=25)
