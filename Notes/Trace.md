@@ -16,6 +16,7 @@ It is the sum of the diagonal entries.
 
 # Properties
 - [[Trace of Matrix Multiplication]]
+- [[Trace of Transpose Matrix Multiplication]]
 - [[Trace Eigenvalue]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=228)
