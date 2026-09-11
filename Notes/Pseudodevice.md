@@ -12,4 +12,7 @@ tags:
 - Does not technically need to reside in the [[Kernel (Operating System)|kernel]], but usually does for practical reasons.
 - Supports [[Process (Computing)|user processes]] alongside traditional [[System Call|system calls]].
 
+# Types
+- [[Pseudoterminal]] — an emulated [[Terminal (Unix)|terminal]] backed by software instead of hardware.
+
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)

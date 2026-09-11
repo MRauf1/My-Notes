@@ -19,6 +19,7 @@ tags:
 - Also provides relocation: since every virtual memory system relocates a program as a set of fixed-size pages rather than a single contiguous block, the operating system need only find enough free pages, not one large contiguous span, letting a program load anywhere in main memory. Two virtual addresses can alias the same physical page to let programs share data or code.
 - Segmentation is an alternative, variable-size address mapping scheme in which an address consists of a segment number, mapped to a physical address, and a segment offset; extending an existing unsegmented address space by adding segmentation on top of it is a common pitfall.
 - A TLB miss can mean either that a valid translation is simply missing from the TLB (resolved by reloading it from the page table) or that the page itself is not in memory at all (a genuine page fault, handled via an [[Exception (Computer Architecture)|exception]] into the operating system).
+- Extends real memory with disk storage by paging out to [[Swap Space]] when memory runs low.
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
 [^2]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=451&annotation=J2ASJQXW)

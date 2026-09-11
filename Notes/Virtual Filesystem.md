@@ -11,4 +11,10 @@ tags:
 # Properties
 - Linux provides three main virtual filesystems.
 
+# Types
+- [[sysfs]] — exposes attached devices according to their hardware attributes.
+- [[Devtmpfs]] — lets the kernel create [[Device File|device files]] directly during boot.
+- [[Procfs]] — exposes running processes and kernel/hardware information.
+- [[Tmpfs]] — uses physical memory and swap space as temporary file storage.
+
 [^1]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=292&annotation=HTRUB7NT)

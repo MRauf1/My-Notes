@@ -12,7 +12,11 @@ tags:
 - Filesystems generally forbid hard-linking directories: since a directory conventionally has only one parent (referenced by `..`), allowing more than one hard link to a directory would turn the directory structure into an arbitrary graph rather than an acyclic tree reachable from the root, breaking assumptions that filesystem integrity tools and recursive searches rely on — a recursive search could fail to terminate, and an integrity tool could become unable to repair the filesystem.[^2]
 - Symbolic links are exempt from this restriction because filesystem integrity tools simply ignore them, which is why they, unlike hard links, can safely reference directories.[^2]
 - Used to implement efficient incremental backups: once an archive holds a copy of a file, a later archive can hard-link to that same copy instead of duplicating it, so only files that actually changed consume new storage.[^3]
+- Removing a name ("unlinking") decrements its target [[Inode|inode's]] link count; once that count reaches zero, no name refers to the inode any longer, and the kernel is free to delete it along with its data.[^4]
+- Link counts are tracked the same way for directories as for files.[^5]
 
 [^1]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=286&annotation=DLQ8AGVD)
 [^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=286&annotation=EQBBIR6C)
 [^3]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=286&annotation=FQXZDHA6)
+[^4]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=114&annotation=AFMLM6CQ)
+[^5]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=114&annotation=XN7M5TND)
