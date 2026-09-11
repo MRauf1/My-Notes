@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - discrete_mathetatics
+  - discrete_mathematics
 ---
 
 # Definition

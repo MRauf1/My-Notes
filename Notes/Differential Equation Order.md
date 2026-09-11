@@ -1,6 +1,6 @@
 ---
 tags:
-  - mathetatics
+  - mathematics
   - calculus
 ---
 
