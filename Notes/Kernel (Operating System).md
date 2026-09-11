@@ -6,7 +6,7 @@ tags:
 
 # Definition
 > [!definition] Kernel (Operating System)[^1]
-> The kernel is the core of the operating system: software residing in main memory that tells the CPU what to do. It manages the hardware and acts primarily as the interface between the hardware and any running program.
+> The kernel is the core of the [[Operating System]]: software residing in main memory that tells the CPU what to do. It manages the hardware and acts primarily as the interface between the hardware and any running program.
 
 # Properties
 - Occupies the middle [[Abstraction Layer|level]] of a Linux system, between the hardware and [[User Space]].

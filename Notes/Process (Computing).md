@@ -16,5 +16,7 @@ tags:
 - Managed by [[Process Management]], including [[Context Switch|context switching]] between processes sharing a CPU.
 - Identified by a numeric process ID (PID).
 - Reads and writes data through its [[Standard Streams (Unix)|standard streams]].
+- Includes one or more [[Thread|threads]], its address space, and its operating-system state; a process switch therefore usually invokes the operating system, unlike a plain thread switch within the same process.[^2]
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
+[^2]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=539&annotation=NM2XKJA2)
