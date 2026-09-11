@@ -41,6 +41,7 @@ The [[Set|set]] of all n-dimensional vectors over field $
 - [[Vector Component]]
 - [[Span|Span]]
 - [[Vector Orthogonal Representation]]
+- In physics, quantities that carry a direction (e.g. displacement, velocity, momentum, force) are vectors, in contrast to a scalar, an undirected quantity fully specified by a single number (e.g. temperature, mass, energy).
 
 # Operations
 - [[Vector Operations]]

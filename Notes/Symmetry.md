@@ -44,6 +44,10 @@ The graph of [[Function|function]] $f$ is
 
 - [[Permutation|Permutations]]
 
+## Physical Law
+
+- [[Symmetry of Physical Law]]: a physical law is symmetric under an operation (e.g. translating or rotating coordinates) if it takes the same form before and after; by [[Noether's Theorem]], such symmetries correspond to conservation laws.
+
 #TODO 
 Study symmetry in more detail.
 

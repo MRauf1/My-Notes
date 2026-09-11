@@ -16,4 +16,7 @@ tags:
 
 Smaller step sizes give better approximations.
 
+# Properties
+- Applied to [[Newton's Second Law]], evolves position and velocity together at each time step: the current position gives the force and hence acceleration, the acceleration updates the velocity, and the velocity updates the position — a numerical scheme for integrating the equations of motion (e.g. [[Simple Harmonic Motion]]) when no closed-form solution is used directly.
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=627)

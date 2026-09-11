@@ -15,5 +15,6 @@ tags:
 - At high frequencies the field's behavior becomes markedly particle-like, appearing as discrete [[Photon]]s rather than a continuous wave, an instance of [[Wave-Particle Duality]].
 - Its quantum-mechanically correct description is [[Quantum Electrodynamics]].
 - One of the [[Four Fundamental Interactions]] of nature.
+- Its electric part exerts [[Coulomb's Law|Coulomb's-law]] forces via the [[Electric Field]]; its full electric-and-magnetic effect on a moving charge is given by the [[Lorentz Force Law]]. The field produced by multiple sources obeys the [[Superposition Principle]].
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 2: Basic Physics](https://www.feynmanlectures.caltech.edu/I_02.html)

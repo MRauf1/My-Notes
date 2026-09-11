@@ -33,4 +33,8 @@ Dot product is an [[Inner Product]] and inherits its properties.
 ## [[Inequality]]
 - [[Cauchy-Schwarz Inequality]]
 
+## Physics
+- [[Kinetic Energy]]: $KE = \tfrac{1}{2}m(\mathbf{v}\cdot\mathbf{v})$.
+- [[Work]]: $W = \mathbf{F}\cdot\mathbf{s}$.
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=59)

@@ -25,4 +25,6 @@ Vector addition is the elementwise addition of the vectors.
 
 ![[Pasted image 20250612180638.png]]
 
+![[Vector Addition.png]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=46)

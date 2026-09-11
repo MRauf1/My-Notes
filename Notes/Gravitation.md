@@ -13,5 +13,7 @@ tags:
 - By far the weakest of the [[Four Fundamental Interactions]].
 - Couples to all mass-energy, not to a distinct "gravitational charge".
 - General relativity replaces the Newtonian picture of gravitation as a [[Force]] transmitted through a fixed space with curvature of [[Spacetime]] itself.
+- Quantitatively described, in the classical (pre-relativistic) limit, by [[Newton's Law of Universal Gravitation]], from which [[Kepler's First Law|Kepler's]] [[Kepler's Second Law|three]] [[Kepler's Third Law|laws]] of planetary motion, [[Newton's Cannonball|orbital motion]], and [[Tidal Force|tidal forces]] can all be derived.
+- Acts exactly in proportion to mass — see the [[Equivalence Principle]].
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 2: Basic Physics](https://www.feynmanlectures.caltech.edu/I_02.html)

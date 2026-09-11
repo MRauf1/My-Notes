@@ -12,3 +12,4 @@ tags:
 # Properties
 - Reduces to [[Mass-Energy Equivalence]], $E = mc^2$, when the particle is at rest ($p = 0$).
 - For a massless particle ($m = 0$), reduces to $E = pc$, e.g. for a [[Photon]].
+- Equivalent to stating that the Minkowski norm of the [[Four-Momentum]] equals $mc$; $E$ and the [[Relativistic Momentum|relativistic momentum]] $p$ are individually frame-dependent, but this combination of them is invariant across all reference frames, since $m$ is invariant.
