@@ -13,5 +13,7 @@ tags:
 - Holds each active procedure's [[Procedure Frame]], containing its saved registers and local variables.
 - Has a predefined size limit; exceeding it (for example, through unbounded recursion) causes a stack overflow.
 - One of the segments of a running program's address space; see [[Process Memory Layout]].
+- Deallocating a procedure's automatic variables on return is fast, since it only requires restoring the stack pointer to the previous value saved on the stack, rather than explicitly freeing anything.[^2]
 
 [^1]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=121&annotation=ML4E6AGR)
+[^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=132&annotation=5YB49G8N)

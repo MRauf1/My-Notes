@@ -28,5 +28,6 @@ $n + O(n)$ words, the same as an [[ArrayList]].
 # Properties
 - [[Linear Data Structure]]
 - [[Contiguous Data Structure]]
+- Known as a [[Ring Buffer]] when used at a fixed size, without reallocation, as is common in systems programming.
 
 [^1]: [Morin, p. 38](zotero://select/library/items/HYS8NDAB)

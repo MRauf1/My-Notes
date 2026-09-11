@@ -11,5 +11,7 @@ tags:
 # Properties
 - One of the [[Kernel (Operating System)|kernel's]] four general responsibility areas, alongside memory, [[Device Driver|device drivers]], and [[System Call|system calls]].
 - Realized through [[Context Switch|context switching]] and [[Time Slice|time slicing]], which together produce the appearance of [[Multitasking]].
+- Deciding which process runs next is the [[CPU Scheduling]] problem, which must balance staying responsive against wasting time on context switches.[^2]
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
+[^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=235&annotation=PV5ZZXRC)

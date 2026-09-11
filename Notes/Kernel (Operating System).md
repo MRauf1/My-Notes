@@ -14,5 +14,7 @@ tags:
 - Manages four general system areas: [[Process Management]], [[Main Memory]], [[Device Driver|device drivers]], and [[System Call|system calls]].
 - Responsible for [[Context Switch|context switching]] between processes.
 - Initializes and maintains the [[Page Table|memory address map]] used to implement [[Virtual Memory]].
+- Its first task after booting is to create the [[Init Process]], the only process the kernel creates directly; every other process descends from it via [[Fork and Exec|fork() and exec()]].[^2]
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
+[^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=90&annotation=58T785F7)
