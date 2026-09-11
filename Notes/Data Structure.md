@@ -24,4 +24,8 @@ Structure for storing and using data.[^1]
 - [[ArrayList]]
 - [[RootishArrayList]]
 
+## [[Hash Table]]
+- [[Chained Hash Table]]
+- [[Linear Hash Table]]
+
 [^1]: [Introduction to Algorithms](zotero://open-pdf/library/items/X422WTMW?page=33)

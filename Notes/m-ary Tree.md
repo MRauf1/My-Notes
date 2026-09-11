@@ -13,5 +13,6 @@ tags:
 - [[Full m-ary Tree]]
 - [[Complete m-ary Tree]]
 - [[Full and Complete m-ary Tree]]
+- [[2-4 Tree]]
 
 [^1]: [Building Blocks for Theoretical Computer Science](zotero://open-pdf/library/items/5IGT8C55?page=165)

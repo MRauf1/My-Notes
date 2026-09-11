@@ -8,7 +8,7 @@ tags:
 > [!info] Singly Linked List
 > A [[Linked List]] made up of nodes, each storing a data value and a reference to the next node in the sequence; the last node's next reference is nil.[^1]
 
-For efficiency, a Singly Linked List keeps references to its first (`head`) and last (`tail`) nodes, plus an integer count of its length, so that pushing/popping at the head and adding at the tail can all be done in $O(1)$ time without traversal.[^2] It implements the [[Stack]] interface (push/pop at the head) and the [[Queue]] interface (add at the tail, remove at the head) — see [[Stack (Linked List)]] and [[Queue (Linked List)]].[^3] Multiple levels of singly-linked lists are also the building block of a [[Skiplist]].
+For efficiency, a Singly Linked List keeps references to its first (`head`) and last (`tail`) nodes, plus an integer count of its length, so that pushing/popping at the head and adding at the tail can all be done in $O(1)$ time without traversal.[^2] It implements the [[Stack]] interface (push/pop at the head) and the [[Queue]] interface (add at the tail, remove at the head) — see [[Stack (Linked List)]] and [[Queue (Linked List)]].[^3] Multiple levels of singly-linked lists are also the building block of a [[Skiplist]]. It is also the most commonly used implementation for the per-bucket lists of a [[Chained Hash Table]], since most buckets hold only $O(1)$ elements and so gain little from an [[ArrayList]]'s random access while avoiding its per-bucket wasted capacity.
 
 # Operations
 | Operation | Time Complexity | Space Complexity |

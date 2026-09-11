@@ -28,3 +28,4 @@ Binary search repeatedly halves the search interval of a sorted [[Array]] $A$ by
 - Time complexity: $O(\log n)$ worst-case and average-case; $O(1)$ best-case.
 - Space complexity: $O(1)$ iteratively; $O(\log n)$ if implemented recursively, due to the call stack.
 - Requires the [[Array]] to be sorted.
+- The same less-than/greater-than/found trichotomy drives search in a [[Binary Search Tree]], which walks down a tree of vertices instead of halving an index range.

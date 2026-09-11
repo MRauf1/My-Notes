@@ -30,5 +30,6 @@ As with [[Stack]], the array-based implementation is generally preferred in prac
 
 # Properties
 - [[Linear Data Structure]]
+- Used to implement [[Breadth-First Search]] traversal, ordering vertices to be visited level-by-level.
 
 [^1]: [Morin, p. 38](zotero://select/library/items/HYS8NDAB)
