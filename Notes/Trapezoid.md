@@ -20,8 +20,6 @@ Trapezoid is a [[Quadrilateral|quadrilateral]] with $2$ sides that are [[Paralle
 
 $$A = \frac{1}{2} h (b + B)$$
 
-
-#TODO 
-- Derivation of this area formula using triangles on page 793
+Splitting the trapezoid along a diagonal gives two [[Triangle|triangles]], one with base $b$ and one with base $B$, both with height $h$; summing their areas ($\frac{1}{2}hb + \frac{1}{2}hB$) gives the formula above.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=792)

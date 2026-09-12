@@ -9,15 +9,11 @@ tags:
 > [!info] Definition 1 ([[F-Test]] Statistic)[^1]
 > $$
 > \begin{align}
-> F = \frac{(TSS - RSS) / p}{RSS / (n - p - 1)} \sim F()
+> F = \frac{(TSS - RSS) / p}{RSS / (n - p - 1)} \sim F_{p, n - p - 1}
 > \end{align}
 > $$
 > where $TSS$ is [[Total Sum of Squares]] and $RSS$ is [[Residual Sum of Squares]].
 
-If the linear model assumptions are correct, then $E[RSS / (n - p - 1)] = \sigma^2$, and if $H_0$ is true, then $E[(TSS - RSS) / p] = \sigma^2$, so if there's no relationship between $X, Y$, then $F \approx 1$.
-
-#TODO 
-Complete and verify this section.
-Relationship between t-test and F-test
+If the linear model assumptions are correct, then $E[RSS / (n - p - 1)] = \sigma^2$, and if $H_0$ is true, then $E[(TSS - RSS) / p] = \sigma^2$, so if there's no relationship between $X, Y$, then $F \approx 1$. For a single predictor ($p = 1$), the [[t-Test Statistic|t-statistic]] and $F$-statistic test the same null hypothesis, and $F = t^2$.
 
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=93)

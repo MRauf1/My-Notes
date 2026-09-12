@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -40,8 +39,6 @@ $0$ [[Division|divided]] by any [[Number|number]] is $0$. Any number divided by 
 > > \end{align}
 > > $$
 
-#TODO
-
-- Make a note for undefined? There was a list of math terms, like well-defined, unique, and so on. Add undefined, valid in there. Also, is there a special symbol for undefined?
+There is no universal special symbol for "undefined"; it is conventionally just written as the word itself (occasionally abbreviated "DNE", does not exist, in limit contexts).
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=86)

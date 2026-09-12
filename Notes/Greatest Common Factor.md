@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -18,9 +17,5 @@ Greatest Common Factor (GCF) of $\geq 2$ [[Expression|expressions]] is the large
 >
 > > [!example]- Example 1.3 (Greatest Common Factor of 2 Polynomials)
 > > $GCF(2x + 3y^2, x^2 + 2y) = x + y$
-
-#TODO 
-
-- Factoring polynomials using GCF on page 943
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=940)

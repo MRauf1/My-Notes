@@ -21,8 +21,5 @@ It is the most powerful of human sensory abilities. Human body has about 11 mill
 # Properties
 - [[Vision Eye Pathway]]
 
-#TODO 
-Verify the last paragraph from the Atomic Habits.
-
 [^1]: https://visionbook.mit.edu/taxonomy.html
 [^2]: https://visionbook.mit.edu/visionscience.html

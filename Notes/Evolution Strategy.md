@@ -20,7 +20,4 @@ tags:
 
 Evolution Strategy is used when the [[Gradient Descent|gradient descent]] struggles, such as with functions with near-zero [[Gradient Vector|gradients]]. The algorithms tries different perturbations $\epsilon_i$ to see which one leads to the lower loss and moves towards the $\epsilon_i$'s that decrease the loss.
 
-#TODO 
-- Understand what this means and do a simple write up
-
 [^1]: https://visionbook.mit.edu/gradient_descent.html

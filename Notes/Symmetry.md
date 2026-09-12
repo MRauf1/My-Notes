@@ -48,8 +48,5 @@ The graph of [[Function|function]] $f$ is
 
 - [[Symmetry of Physical Law]]: a physical law is symmetric under an operation (e.g. translating or rotating coordinates) if it takes the same form before and after; by [[Noether's Theorem]], such symmetries correspond to conservation laws.
 
-#TODO 
-Study symmetry in more detail.
-
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=38)
 [^2]: [Algebra - Abstract and Concrete](zotero://open-pdf/library/items/IQ3GJ7PV?page=30)

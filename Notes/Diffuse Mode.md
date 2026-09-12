@@ -11,8 +11,7 @@ Due to the broadness, there is a lack of focus or understanding of finest concep
 
 The source uses a pinball analogy to explain this concept.
 
-#TODO 
-- Is diffuse always unconscious or can it be conscious?
+Diffuse mode is not always unconscious: it can occur while awake in a relaxed, unfocused state (e.g. during a walk or shower), not only during sleep.
 
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/75EsZ/introduction-to-the-focused-and-diffuse-modes
 [^2]: https://www.coursera.org/learn/learning-how-to-learn/lecture/3YLAF/practice-makes-permanent

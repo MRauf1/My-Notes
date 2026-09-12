@@ -25,7 +25,8 @@ These change the shape of the graph.
 - [[Vertical Scaling|Vertical Scaling]]
 - [[Horizontal Scaling|Horizontal Scaling]]
 
-#TODO 
-- Add in note about the order of transformations when multiple are applied
+# Order
+
+When multiple transformations are combined, e.g. $y = a f(b(x - h)) + k$, the horizontal shift $h$ and horizontal scaling/reflection $b$ (applied to the input) are resolved first, followed by the vertical scaling/reflection $a$ and vertical shift $k$ (applied to the output) last.
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=132)

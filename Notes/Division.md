@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -35,11 +34,6 @@ The [[Operation|operation]] of repeated [[Subtraction|subtraction]]. The number 
 - [[Division of Signed Numbers|Division of Signed Numbers]]
 - [[Division Property of Equality|Division Properties of Equality]]
 - For $a, d \in \mathbb{Z}, d \geq 1, \exists ! q, r \in \mathbb{Z}, a = qd + r$, with $0 \leq r < d$[^2]
-
-#TODO
-
-For aliases, should I include subparts, like dividend and divisor?
-Make the properties look better
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=81)
 [^2]: [Algebra - Abstract and Concrete](zotero://open-pdf/library/items/IQ3GJ7PV?page=40)

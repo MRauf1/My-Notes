@@ -34,8 +34,5 @@ Curve $\beta$ can be approximated with the Frenet Frame Field by using the [[Tay
 # Properties
 - [[Frenet Formula]]
 
-#TODO 
-is s(t) an arc length function or the reparameterization?
-
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=74)
 [^2]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=78)

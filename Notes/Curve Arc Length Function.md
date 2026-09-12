@@ -13,10 +13,9 @@ tags:
 > s(t) = \int_{t_0}^t ||\alpha'(u)|| du
 > \end{align}
 > $$
-> where $t_0$ is fixed (the resulting [[Curve Reparameterization]] is said to be based at $t = t_0$).
+> where $t_0$ is fixed (the arc length is said to be based at $t = t_0$).
 > The [[Derivative]] $\frac{ds}{dt}$ is the [[Curve Speed]] [[Function]] $v(t) = ||\alpha'(t)||$ of $\alpha$.
 
-#TODO 
-Is this a [[Curve Reparameterization]]???
+$s$ itself is not a [[Curve Reparameterization]] (it is real-valued, not a curve into $\mathbb{R}^n$); rather, when $s$ is invertible, $h = s^{-1}$ is used to build the arc-length reparameterization $\beta = \alpha \circ s^{-1}$.
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=68)

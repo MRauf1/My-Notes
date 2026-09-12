@@ -6,7 +6,7 @@ tags:
 
 # Definition
 
-3D version of a [[Rectangle]].
+A rectangular solid (rectangular prism) is a 3D [[Shape|shape]] bounded by six rectangular faces meeting at right angles, with length $L$, width $W$, and height $H$. It is the 3D version of a [[Rectangle]].
 
 ![[Rectangular Solid.png]]
 
@@ -19,8 +19,3 @@ $$S = 2LH + 2LW + 2WH$$
 ## [[Volume|Volume]]
 
 $$V = LWH$$
-
-
-#TODO 
-- Better definition
-- What is the variable for surface area? S or A?

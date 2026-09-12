@@ -20,7 +20,7 @@ tags:
 > > [!example]- Example 1.1 (Property with 2 Numbers)
 > > $\frac{2^4}{2^2} = \frac{16}{4} = 4 = 2^2 = 2^{4 - 2}$
 
-#TODO 
-- Reals and ints?
+# Properties
+- Holds for $x$ in any [[Field|field]] (e.g. $\mathbb{C}$), not just $\mathbb{R}$, since it follows purely from repeated [[Multiplication]] under integer exponents.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=903)

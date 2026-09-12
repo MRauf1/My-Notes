@@ -49,7 +49,6 @@ The [[Set|set]] of all n-dimensional vectors over field $
 ## [[Dot Product]]
 - [[Vector as Dot Product with Standard Basis]]
 
-#TODO 
-- Have converted all real number symbols to the field symbols. Do all these hold for any field?
+Purely algebraic notions ([[Linear Combination]], [[Span]], [[Basis]]) hold over any field $\mathbb{F}$. [[Vector Norm|Norm]] and [[Dot Product]], however, rely on a notion of length/positivity and are only naturally defined over $\mathbb{R}$ (or, via a Hermitian form, over $\mathbb{C}$) — not over an arbitrary field.
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=45)

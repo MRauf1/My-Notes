@@ -8,7 +8,7 @@ tags:
 
 > [!info] Definition 1 (Generalized Linear Model)
 > Generalized Linear Model consists of $3$ components:
-> 1) Random Component: Dependent variable $Y$ with a [[Probability Distribution]] from the [[Exponential Family]].
+> 1) Random Component: Dependent variable $Y$ with a [[Probability Distribution]] from the [[Exponential Family|exponential dispersion family]] (the exponential family generalized with a dispersion parameter $\phi$, allowing distributions like [[Normal Distribution|Normal]] and [[Gamma Distribution|Gamma]] in addition to the natural exponential family).
 > 2) [[Systematic Component]]/Linear Predictor: $\eta = X \beta$, where $X$ is an independent variable with $p$ predictors and $\beta$ are the coefficients of the linear predictor.
 > 3) [[Link Function]]: [[Function]] $g$ such that for $E[Y | X] = \mu$, $g(\mu) = \eta$.
 > The [[Canonical Link]] satisfies $g(\mu) = Q(\theta)$, where $Q(\theta)$ is the natural parameter of the [[Exponential Family]]. This leads to $Q(\theta) = \eta$.
@@ -30,8 +30,3 @@ tags:
 ## [[Fisher Information Matrix]]
 - [[Generalized Linear Model Fisher Information Matrix]]
 - [[Distribution of Estimated Parameter]]
-
-#TODO 
-- Should Y be from exponential family or natural exponential family?
-- Should it be $E[Y|X]$ or $E[Y]$?
-- Make a separate link for canonical link?

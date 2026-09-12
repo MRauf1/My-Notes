@@ -14,7 +14,6 @@ tags:
 > \end{align}
 > $$
 
-#TODO 
-- Is this formula for skewness general for any distribution?
+The left-hand side, the third standardized moment $E[X-\mu]^3/\sigma^3$, is the general definition of skewness for any distribution; the right-hand side closed form is specific to the [[Binomial Distribution]].
 
 [^1]: [Categorical Data Analysis](zotero://open-pdf/library/items/JZKRKD5L?page=23)

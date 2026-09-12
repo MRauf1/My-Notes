@@ -22,7 +22,3 @@ Even though they are products, think of them as adding odd and even numbers.
 > [!abstract] Theorem 2
 > For a permutation $\sigma$ of a finite set, if $\sigma = \tau_1 \cdot \dots \cdot \tau_k = v_1 \cdot \dots v_l$ where $\tau_i, v_j$ are transpositions, then either $k, l$ are both even or both odd, i.e. $(-1)^k = (-1)^l$
 
-
-#TODO 
-- Is the last permutation product correct?
-

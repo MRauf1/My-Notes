@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -14,10 +13,6 @@ tags:
 > \end{align}
 > $$
 
-[[Fraction|Fraction]] whose numerator is greater than or equal to the denominator.
-
-#TODO
-
-- For this and proper, may want to talk about the reasoning behind the names. How for improper, you would think to create a whole number from the excess so that the fraction is always less than 1. Still though, improper fractions are used very frequently.
+[[Fraction|Fraction]] whose numerator is greater than or equal to the denominator. Despite the name, improper fractions (rather than [[Mixed Number|mixed numbers]]) are the form generally preferred for calculations.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=287)

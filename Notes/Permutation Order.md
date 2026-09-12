@@ -18,7 +18,4 @@ tags:
 # Properties
 - Order of a permutation is the [[Least Common Multiple]] of the lengths of its [[Disjoint Cycles]]
 
-#TODO 
-- Verify the LCM property
-
 [^1]: [Algebra - Abstract and Concrete](zotero://open-pdf/library/items/IQ3GJ7PV?page=32)

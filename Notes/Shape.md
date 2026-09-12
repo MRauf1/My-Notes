@@ -12,7 +12,9 @@ Graphical representation of an object's form/boundary/outline/surface.[^1]
 
 ## 2-Dimensional
 
-- [[Circle|Circle]]
+- [[Ellipse|Ellipse]]
+	- [[Circle|Circle]] (special case with equal semi-axes)
+- [[Hyperbola|Hyperbola]]
 - [[Polygon|Polygon]]
 	- [[Triangle|Triangle]]
 	- [[Quadrilateral|Quadrilateral]]
@@ -28,11 +30,7 @@ Graphical representation of an object's form/boundary/outline/surface.[^1]
 - [[Rectangular Solid|Rectangular Solid]]
 	- [[Cube|Cube]]
 
-#TODO 
-- Add hyperbolics?
-- Circle vs ellipse
-- Are 3D shapes technical shapes or something different?
-- Irregular figures on page 807 of pre-algebra
-- Create a culmination of all formulas like on page 832 of pre-algebra
+# Properties
+- 3D objects are shapes under this definition too, since it covers any object's form/boundary/surface, not just 2D outlines.
 
 [^1]: https://en.wikipedia.org/wiki/Shape

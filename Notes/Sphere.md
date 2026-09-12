@@ -6,7 +6,7 @@ tags:
 
 # Definition
 
-Sphere is a 3D version of a [[Circle|circle]] with radius $r$.[^1]
+Sphere is the set of all points in 3D space at a fixed distance $r$ (the radius) from a center point; it is the 3D version of a [[Circle|circle]].[^1]
 
 # Properties
 
@@ -18,10 +18,6 @@ $$S = 4 \pi r^2$$
 
 $$V = \frac{4}{3} \pi r^3$$
 
-
-#TODO 
-- Better definition
-- Symbol for surface area?
-- Talk about how derivative of volume gives surface area. Why?
+$\frac{dV}{dr} = S$: growing the radius by an infinitesimal $dr$ adds a thin shell of volume equal to the surface area at that radius times $dr$, so the volume's rate of change with $r$ is exactly the surface area.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=822)

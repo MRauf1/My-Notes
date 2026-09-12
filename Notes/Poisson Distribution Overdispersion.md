@@ -15,9 +15,6 @@ tags:
 > \end{align}
 > $$
 
-[[Negative Binomial Distribution]] is a better alternative to Poisson when overdispersion is present.
-
-#TODO 
-- Should it be $\geq$ or $>$? Can't variance be 0?
+[[Negative Binomial Distribution]] is a better alternative to Poisson when overdispersion is present. The strict inequality $>$ is correct: $Var[\mu] = 0$ means there is no overdispersion, reducing to the plain Poisson case where $Var[X] = \theta$.
 
 [^1]: [Categorical Data Analysis](zotero://open-pdf/library/items/JZKRKD5L?page=25)

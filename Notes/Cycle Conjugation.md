@@ -17,6 +17,4 @@ tags:
 # Properties
 - $\forall \sigma, \tau \in S_n$, $\tau$ and $\sigma \tau \sigma^{-1}$ have the same [[Cycle Type]]
 - If $\tau, \tau' \in S_n$ have the same cycle type, then $\tau' = \sigma \tau \sigma^{-1}$ for some $\sigma \in S_n$
-
-#TODO 
-- Is the second property an iff? Can it be restated as 2 permutations are conjugate iff they have the same cycle type?
+- Together, these two properties give: two permutations in $S_n$ are conjugate iff they have the same cycle type.

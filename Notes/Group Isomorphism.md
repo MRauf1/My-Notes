@@ -36,7 +36,5 @@ Isomorphism is a [[Group Homomorphism]] that is [[Bijective Function]].
 
 # Examples
 - $D_3$ ([[Symmetry]] of [[Equilateral Triangle]]) and $S_3$ ([[Permutation]] of $\{1, 2, 3\}$)
-- $(Z_4, +)$ ([[Set of Congruence Classes Modulo n]]), [[Symmetry]] of [[Rectangle]], $\Phi(5, \cdot)$, $\Phi(8, \cdot)$ ($\Phi$ being the [[Group of Modular Units]])
-
-#TODO 
-- Is the second example correct?
+- $(Z_4, +)$ ([[Set of Congruence Classes Modulo n]]) and $\Phi(5, \cdot)$ ($\Phi$ being the [[Group of Modular Units]]) are both cyclic of order 4
+- [[Symmetry]] of [[Rectangle]] and $\Phi(8, \cdot)$ are both isomorphic to the Klein four-group $\mathbb{Z}_2 \times \mathbb{Z}_2$ (not to $(Z_4, +)$, since neither has an element of order 4)

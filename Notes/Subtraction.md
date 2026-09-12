@@ -31,11 +31,5 @@ The [[Operation|operation]] of taking away one [[Number|number]] from the other.
 - [[Subtraction Property|Subtraction Property]]
 - [[Subtraction Property of Equality|Subtraction Property of Equality]]
 
-
-#TODO:
-
-- For operations, maybe add a table which lists the names of each part, like divisor and dividend for division, their result, like difference, and the operation symbol.
-- For subtraction property, may be add a separate callout for properties or something? Make it look better than this. Also add the properties to other operations.
-
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=48)
 [^2]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=231)

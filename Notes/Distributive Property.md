@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -35,8 +34,6 @@ Distributive property states that [[Multiplication|multiplication]] can be distr
 > \end{align}
 > $$
 
-#TODO 
-Is this only for addition and multiplication or are there other operations for which this works? -> what about the other forms on page 625?
-Provide a more thorough definition.
+More generally, for any two [[Binary Operation|binary operations]] $\circ, \bullet$ on a set, $\bullet$ distributes over $\circ$ if $x \bullet (y \circ z) = (x \bullet y) \circ (x \bullet z)$ for all $x, y, z$; multiplication over addition, AND over OR, and union over intersection are all instances of this.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=623)

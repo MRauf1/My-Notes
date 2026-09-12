@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -14,11 +13,5 @@ tags:
 > ad = bc
 > \end{align}
 > $$
-
-
-
-#TODO 
-Examples
-Adjust the multiple link. Should LCD be a separate note?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=580)

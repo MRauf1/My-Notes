@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -17,9 +16,5 @@ tags:
 
 [[Multiplication|Product]] of a number and its [[Reciprocal|reciprocal]] (multiplicative inverse) is $1$ (multiplicative identity).
 
-
-#TODO 
-
-- Maybe add multiplicative inverse to reciprocal note?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=637)

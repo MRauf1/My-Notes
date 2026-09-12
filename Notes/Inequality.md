@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -23,8 +22,11 @@ tags:
 - [[Function Inequality|Function Inequality]]
 - [[Absolute Value Inequality|Absolute Value Inequality]]
 
-#TODO
+# Properties
 
-- Add in inequality properties
+- Trichotomy: for any $a, b$, exactly one of $a < b$, $a = b$, $a > b$ holds.
+- Transitive: $a < b, b < c \implies a < c$.
+- Addition/Subtraction: $a < b \iff a + c < b + c$ for any $c$.
+- Multiplication/Division: $a < b \iff ac < bc$ if $c > 0$; $a < b \iff ac > bc$ if $c < 0$ (the inequality direction flips).
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=112)

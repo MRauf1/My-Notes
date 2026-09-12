@@ -14,13 +14,10 @@ tags:
 > \end{align}
 > $$
 
-The [[Addition|sum]] of the [[Square|squares]] of the sides is [[Equality|equal]] to the square of the hypotenuse.
+The [[Addition|sum]] of the [[Exponentiation|squares]] of the sides is [[Equality|equal]] to the square of the hypotenuse.
 
 ![[Right Triangle.png]]
 
 Relates to the [[Pythagorean Identities]].
-
-#TODO 
-- Square link fix
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=765)

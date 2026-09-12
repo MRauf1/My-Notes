@@ -25,6 +25,8 @@ Rectangle has $4$ symmetries[^1]
 3) [[Rotation|Rotation]] around $y$-[[Axis|axis]] by $\pi$ radians
 4) [[Rotation|Rotation]] around $z$-[[Axis|axis]] by $\pi$ radians
 
+This is an [[Abelian Group|abelian group]] (every element is its own inverse).
+
 ![[Pasted image 20250621152002.png]]
 
 ### Multiplication Table
@@ -41,11 +43,10 @@ Square has $8$ symmetries[^1]
 
 Note that the top rotation is $3$ symmetries ($\pi/2$ radians, $\pi$ radians, $3\pi/2$ radians)
 
+This is the [[Dihedral Group|dihedral group]] $D_4$, which is non-abelian (unlike the rectangle's symmetry group above).
+
 ### Multiplication Table
 
 ![[Pasted image 20250621152704.png]]
-
-#TODO 
-- Non-abelian group, not just group -> not commutative
 
 [^1]: [Algebra - Abstract and Concrete](zotero://open-pdf/library/items/IQ3GJ7PV?page=15)

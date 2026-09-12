@@ -23,12 +23,7 @@ Proportion is an [[Equation]] of two [[Ratio|ratios]] or [[Rate|rates]]. It is r
 # Properties
 
 - [[Cross Products of Proportion|Cross Products of Proportion]]
-
-
-#TODO 
-- Ratio/rate or fraction?
-- Page 583 -> units must match (maybe make a unit of measurement note?)
-- Can the proportion be flipped upside down and still be valid?
-- Page 586 -> do I need percent proportions? Maybe add it as a type of proportion?
+- When relating [[Rate|rates]], the units in the numerators must match each other, and likewise for the denominators.
+- A proportion can be flipped: $\frac{a}{b} = \frac{c}{d} \iff \frac{b}{a} = \frac{d}{c}$ (for $a, c \neq 0$), since both sides are reciprocals of equal quantities.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=578)

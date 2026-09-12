@@ -10,11 +10,8 @@ tags:
 > For any $\Delta ABC$
 > $$
 > \begin{align}
-> m \angle A + m \angle B + m \angle C = 360
+> m \angle A + m \angle B + m \angle C = 180
 > \end{align}
 > $$
-
-#TODO
-- Make a note for a more generalized version of this for all polygons.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=755)

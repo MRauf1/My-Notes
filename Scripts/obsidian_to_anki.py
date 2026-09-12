@@ -80,7 +80,9 @@ IMAGE_EMBED_RE = re.compile(r"!\[\[([^\]]+?)\]\]")
 WIKILINK_ALIASED_RE = re.compile(r"\[\[([^\]|]+)\|([^\]]+)\]\]")
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 CALLOUT_START_RE = re.compile(r"^>\s*\[!(\w+)\]([-+]?)\s*(.*)$")
-ORDERED_LIST_FIX_RE = re.compile(r"^(\d+)\)\s+", re.MULTILINE)
+ORDERED_LIST_FIX_RE = re.compile(r"^([ \t]*)(\d+)\)\s+", re.MULTILINE)
+ORDERED_MARKER_RE = re.compile(r"^[ \t]*\d+[.)]\s")
+UNORDERED_MARKER_RE = re.compile(r"^[ \t]*[-*+]\s")
 BLOCK_MATH_RE = re.compile(r"\$\$(.+?)\$\$", re.DOTALL)
 INLINE_MATH_RE = re.compile(r"\$([^\$\n]+?)\$")
 
@@ -89,25 +91,21 @@ CARD_CSS = """
     font-family: -apple-system, Helvetica, Arial, sans-serif;
     font-size: 20px;
     text-align: left;
-    color: #1a1a1a;
-    background-color: #fafafa;
     line-height: 1.4;
 }
 .callout {
     border-left: 4px solid #7c93c0;
-    background-color: #eef1f8;
     padding: 6px 12px;
     margin: 8px 0;
-    border-radius: 2px;
 }
 .source {
     margin-top: 12px;
-    color: #888;
+    opacity: 0.6;
     font-size: 14px;
     font-style: italic;
 }
 code {
-    background-color: #eee;
+    background-color: rgba(128, 128, 128, 0.2);
     padding: 1px 4px;
     border-radius: 3px;
 }
@@ -197,6 +195,35 @@ def wrap_callouts(text: str) -> str:
     return "\n".join(out)
 
 
+def marker_type(line: str):
+    if ORDERED_MARKER_RE.match(line):
+        return "ordered"
+    if UNORDERED_MARKER_RE.match(line):
+        return "unordered"
+    return None
+
+
+def indent_of(line: str) -> int:
+    return len(line) - len(line.lstrip(" \t"))
+
+
+def ensure_blank_lines_before_lists(text: str) -> str:
+    """python-markdown (unlike Obsidian's CommonMark renderer) needs a blank
+    line before a list interrupts a paragraph, and needs one between two
+    adjacent top-level lists of different marker types (ordered vs bullet) or
+    it silently merges them into a single run-on paragraph/list item."""
+    lines = text.split("\n")
+    out = []
+    for line in lines:
+        mtype = marker_type(line)
+        if mtype is not None and indent_of(line) == 0 and out and out[-1].strip() != "":
+            prev_type = marker_type(out[-1])
+            if prev_type != mtype:
+                out.append("")
+        out.append(line)
+    return "\n".join(out)
+
+
 def protect_math(text: str):
     placeholders = {}
 
@@ -223,7 +250,8 @@ def render_section_html(raw_text: str, media_used: set) -> str:
     text = convert_images(text, media_used)
     text = convert_wikilinks(text)
     text = wrap_callouts(text)
-    text = ORDERED_LIST_FIX_RE.sub(r"\1. ", text)
+    text = ORDERED_LIST_FIX_RE.sub(r"\1\2. ", text)
+    text = ensure_blank_lines_before_lists(text)
     text, placeholders = protect_math(text)
     rendered_html = markdown.markdown(text, extensions=["md_in_html", "sane_lists"])
     rendered_html = restore_math(rendered_html, placeholders)

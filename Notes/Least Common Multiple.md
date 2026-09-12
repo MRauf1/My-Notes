@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -20,9 +19,6 @@ It can be found using the [[Prime Factors Method|prime factors method]]. Alterna
 
 # Properties
 
-- $a, b \in \mathbb{N}, d = gcd(a, b), m = lcm(a, b) \implies m = \frac{ab}{d}$
-
-#TODO 
-- For first property, what about integers
+- $a, b \in \mathbb{Z} \setminus \{0\}, d = gcd(a, b), m = lcm(a, b) \implies m = \frac{|ab|}{d}$
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=177)

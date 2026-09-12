@@ -62,10 +62,4 @@ Despite being a preparatory course for algebra, pre-algebra also introduces seve
 	- [[Polynomial|Polynomials]]
 	- Graphs
 
-#TODO:
-
-- LaTeX inside the link
-- Proper links for all (like number types and sets linking to their specific section within numbers)
-- Since prealgebra is a subset of algebra, should all prealgebra notes have the algebra tag?
-
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=9)

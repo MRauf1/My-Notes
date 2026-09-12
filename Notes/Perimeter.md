@@ -6,11 +6,16 @@ tags:
 
 # Definition
 
-[[Distance|Distance]] around a [[Shape|shape]].[^1] The perimeter is measured in linear units.
+[[Distance|Distance]] around a [[Shape|shape]].[^1] The perimeter is measured in linear units. Perimeter applies to 2D shapes; the analogous concept for 3D solids is [[Surface Area|surface area]].
 
 # Perimeter of Different Shapes
 
-
+| Shape | Perimeter |
+| --- | --- |
+| Square | $4s$ |
+| Rectangle | $2(l + w)$ |
+| [[Triangle]] | $a + b + c$ |
+| [[Circle]] | $2\pi r$ (circumference) |
 
 > [!example]- Examples 1 (Perimeter)
 > > [!example]- Example 1.1 (Perimeter of a Square)
@@ -20,13 +25,5 @@ tags:
 > > 4 + 4 + 4 + 4 = 16
 > > \end{align}
 > > $$
-
-#TODO
-
-- Remove rectangular from figure and add it to the table
-- Is it valid for only 2D and 1D shapes?
-- Geometric figure or shape or what?
-- Expand this to other shapes.
-- Create a parent note for things like perimeter and surface area (they seem similar, like length, area and volume are).
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=42)

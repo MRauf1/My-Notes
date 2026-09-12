@@ -14,8 +14,5 @@ In general, one can intensely focus for up to 4 hours per day.[^2]
 # Improving Focus
 - [[Focus Improvement]]
 
-#TODO 
-- Is focused always conscious? Yes, right?
-
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/75EsZ/introduction-to-the-focused-and-diffuse-modes
 [^2]: [Meditations for Mortals](zotero://open-pdf/library/items/ZF42TD5D?page=65)

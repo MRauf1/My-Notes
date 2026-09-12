@@ -12,13 +12,10 @@ tags:
 # Properties
 
 ## Theorems
-- [[Fundamental Theorem of Cyclic Groups]]
+- [[Fundamental Theorem of Cyclic Groups]]: the uniqueness is one *subgroup* per divisor $d$ of $n$, not one *element*. The number of elements of order $d$ (for $d | n$) is $\varphi(d)$ (Euler's totient), so most elements are not generators; only the $\varphi(n)$ elements of full order $n$ are.
 
 ## [[Finitely Generated Group]]
 - Every cyclic group is finitely generated
 
 ## Prime [[Group Order]]
 - $|G| = p$, where $p$ is a [[Prime Number]] $\implies$ that $G$ is cyclic
-
-#TODO 
-- Is the intuition for 4th property true? Is it exactly one of each divisor? But the number of divisor is less than the order of the cyclic group, so what about the rest? Are they all generators?

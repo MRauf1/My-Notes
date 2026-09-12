@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -38,10 +37,6 @@ $$C = 2 \pi r = \pi d$$
 ## [[Area|Area]]
 
 $$A = \pi r^2$$
-
-#TODO
-- Maybe make the properties a table instead
-- Add the properties to Anki too. Not just for this, but all notes.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=460)
 [^2]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=510)

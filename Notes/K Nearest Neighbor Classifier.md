@@ -19,7 +19,6 @@ K Nearest Neighbor, for a given new observation, calculates the [[Distance]] wit
 
 The lower the $K$, the more flexible the model is.
 
-#TODO 
-Connection between KNN and Bayes Classifier (page 46-47)
+KNN estimates the Bayes classifier's conditional probability $P(Y = j | X = x)$ non-parametrically using the $K$ nearest observations instead of the true (usually unknown) conditional distribution; as $n \to \infty$ with $K \to \infty$ and $K/n \to 0$, the KNN classifier approaches the Bayes classifier.
 
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=47)

@@ -17,6 +17,8 @@ tags:
 
 The quotient group for the right $N$-cosets is the same since $N$ is normal.
 
+The left $N$-cosets are exactly the [[Equivalence Class|equivalence classes]] of the [[Equivalence Relation]] $g \sim h \iff g^{-1}h \in N$ on $G$, so $G/N$ is precisely this relation's set of equivalence classes.
+
 # Types
 - [[Group of Normal Cosets]]
 - > [!example]- Examples 2 (Examples from Lecture)
@@ -29,7 +31,3 @@ The quotient group for the right $N$-cosets is the same since $N$ is normal.
 > > [!example]- Example 2.3 ([[Projective Linear Group]])
 > > ![[Screenshot 2025-07-06 144528.png]]
 
-
-
-#TODO 
-- Add in info about equivalence classes and how it relates to this.

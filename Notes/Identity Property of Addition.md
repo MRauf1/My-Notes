@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -21,8 +20,5 @@ tags:
 > > [!example]- Example 1.1 (Identity Property of Addition)
 > > $8 + 0 = 8$
 
-
-#TODO 
-Create a note for 0 with its properties, and mention it being an additive identity.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=635)

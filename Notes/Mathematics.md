@@ -22,8 +22,3 @@ Mathematics is the field of study of numbers, shapes, and space.
 - [[Analysis|Analysis]]
 - [[Statistics|Statistics]]
 - [[Probability|Probability]]
-
-
-#TODO:
-
-- Find a more rigorous definition of math

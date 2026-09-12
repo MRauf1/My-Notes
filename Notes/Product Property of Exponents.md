@@ -20,8 +20,7 @@ tags:
 > > [!example]- Example 1.1 (Product Property of Exponents)
 > > $2^3 \cdot 2^6 = 8 \cdot 64 = 512 = 2^9 = 2^{3 + 6}$
 
-
-#TODO 
-- Only real and ints? Would this not work with other number sets?
+# Properties
+- Holds for $x$ in any [[Field|field]] (e.g. $\mathbb{C}$), not just $\mathbb{R}$, since it follows purely from repeated [[Multiplication]] under integer exponents.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=876)

@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -11,7 +10,7 @@ tags:
 > $\forall x_1, x_2, a$
 > $$
 > \begin{align}
-> x_1 = x_2 \quad &\implies \quad x_1 + a = x_2 + a
+> x_1 = x_2 \quad &\iff \quad x_1 + a = x_2 + a
 > \end{align}
 > $$
 
@@ -24,9 +23,5 @@ tags:
 > > 2 = 2 &\iff 2 + 2 = 2 + 2 \\ &\iff 4 = 4
 > > \end{align}
 > > $$
-
-#TODO
-- Shouldn't it be iff, and not just implies?
-- equation or equality?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=149)

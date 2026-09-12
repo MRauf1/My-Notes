@@ -1,7 +1,7 @@
 ---
 tags:
   - philosophy
-  - informal logic
+  - informal_logic
 ---
 
 # Definition

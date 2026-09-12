@@ -18,7 +18,6 @@ tags:
 
 In general, more flexible models have high [[Variance]] and low [[Bias]].
 
-#TODO 
-Is this decomposition for MSE only or does it work in general for any loss function?
+This additive decomposition is specific to squared-error loss; other loss functions (e.g. 0-1 loss) do not admit the same clean additive bias/variance split.
 
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=42)

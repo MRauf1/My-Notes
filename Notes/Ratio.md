@@ -10,10 +10,4 @@ Ratio compares two [[Number|numbers]] with the same [[Unit|unit]]. For a ratio o
 
 When written in [[Fraction|fraction]] form, the ratio should be simplified, but kept as an [[Improper Fraction|improper fraction]].
 
-
-#TODO 
-
-- Add an example
-
-
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=489)

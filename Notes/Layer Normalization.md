@@ -19,7 +19,5 @@ tags:
 Unlike BN, layer normalization does not contradict the iid assumption.
 
 Similar to [[L2 Normalization|L2 Normalization]], layer normalization also projects the input onto a unit [[Hypersphere|hypersphere]], but also centers and then potentially shifts and scales the inputs.
-#TODO 
-- Write layernorm in terms L2 normalization
 
 [^1]: https://visionbook.mit.edu/neural_nets.html

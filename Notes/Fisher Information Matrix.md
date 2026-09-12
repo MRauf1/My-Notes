@@ -17,5 +17,4 @@ tags:
 # Properties
 - [[Fisher Information Matrix Relationship with Covariance Matrix]]
 
-#TODO 
-Intuitive explanation
+Fisher information measures how much the data constrains $\beta$ by quantifying the [[Curvature|curvature]] of the [[Log-Likelihood Function|log-likelihood]] $L(\beta)$ around its maximum: a log-likelihood that is sharply peaked (high curvature, large $I(\beta)$) means only a narrow range of $\beta$ values fit the data well, so the estimate is precise; a flat log-likelihood (low curvature, small $I(\beta)$) means many nearby values of $\beta$ are almost equally plausible, so the estimate is imprecise. This is why $I(\beta)^{-1}$ equals the [[Fisher Information Matrix Relationship with Covariance Matrix|estimator's asymptotic covariance]].

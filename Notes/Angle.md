@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -26,8 +25,5 @@ Angles are measured in either radians or degrees (with $^{\circ}$ symbol).
 
 ## Degree vs Radian
 - [[Angle Degree Radian Conversion]]
-
-#TODO 
-- Use more rigorous definition on page 756 for complementary and supplementary angles
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=755)

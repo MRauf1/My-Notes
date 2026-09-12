@@ -2,6 +2,8 @@
 tags:
   - mathematics
   - pre_algebra
+aliases:
+  - Coefficient
 ---
 
 # Definition
@@ -27,10 +29,6 @@ Term is a [[Constant|constant]] or a [[Multiplication|product]] of a constant an
 
 - [[Like Terms|Like Terms]]
 
-
-#TODO 
-
-- Maybe add coefficient as an alias for searching or maybe add as a separate header
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=133)
 [^2]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=133)

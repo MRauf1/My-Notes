@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -20,8 +19,5 @@ $$S = 6s^2$$
 ## [[Volume|Volume]]
 
 $$V = s^3$$
-
-#TODO 
-- Symbol for surface area?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=819)

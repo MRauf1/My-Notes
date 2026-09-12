@@ -20,7 +20,6 @@ tags:
 > > [!example]- Example 1.1 (Constant with a Zero Exponent)
 > > $$3^0 = 1$$
 
-#TODO
-- What is 0^0?
+$0^0$ is excluded here: it is commonly taken to be $1$ by convention (e.g. empty products, the binomial theorem, power series), but is an indeterminate form when $x^y$ is viewed as a limit of a two-variable function as $(x, y) \to (0, 0)$.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=907)

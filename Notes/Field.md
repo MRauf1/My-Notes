@@ -18,10 +18,10 @@ tags:
 > 7) Multiplication is [[Commutative Property|commutative]]: $\forall a, b \in \mathbb{F}, a \cdot b = b \cdot a$
 > 8) Multiplication is [[Associative Property|associative]]: $\forall a, b, c \in \mathbb{F}, a \cdot (b \cdot c) = (a \cdot b) \cdot c$
 > 9) $1$ is a multiplicative [[Identity Property]]: $\forall a, a \cdot 1 = 1 \cdot a = a$
-> 10) Every non-zero element has a multiplicative [[Inverse|inverse]]: $\forall a \in \mathbb{F}, a \neq 0, \exists b \in \mathbb{F}, a \cdot b = b \cdot a = 0$
+> 10) Every non-zero element has a multiplicative [[Inverse|inverse]]: $\forall a \in \mathbb{F}, a \neq 0, \exists b \in \mathbb{F}, a \cdot b = b \cdot a = 1$
 > 11) [[Distributive Property|Distributive Law]]: $\forall a, b, c \in \mathbb{F}, a \cdot (b + c) = a \cdot b + a \cdot c$
 
-A [[Set|set]] with [[Operation|operations]] of [[Addition|addition]], [[Multiplication|multiplication]], [[Subtraction|subtraction]], and [[Division|division]].
+A [[Set|set]] with [[Operation|operations]] of [[Addition|addition]], [[Multiplication|multiplication]], [[Subtraction|subtraction]], and [[Division|division]]. Every field is a [[Ring|ring]] that additionally has multiplicative inverses for all non-zero elements and commutative multiplication.
 
 # Types
 - [[Ordered Field]]
@@ -35,8 +35,5 @@ A [[Set|set]] with [[Operation|operations]] of [[Addition|addition]], [[Multipli
 - [[Real Number|Real Numbers]]
 - [[Complex Number|Complex Numbers]]
 - $\mathbb{Z}_p$: [[Set of Congruence Classes Modulo n|Set of congruence classes modulo]] [[Prime Number]] $p$
-
-#TODO 
-- Fields are rings but with a bit more
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=59)

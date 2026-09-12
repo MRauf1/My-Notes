@@ -6,14 +6,10 @@ tags:
 
 # Definition
 
-Perfect square is a [[Square|square]] of a [[Whole Number|whole number]].[^1]
+Perfect square is a [[Whole Number|whole number]] raised to the power of $2$ (see [[Exponentiation]]; this is squaring the number, not the geometric shape). Analogously, a perfect cube is a whole number raised to the power of $3$.
 
 > [!example]- Examples 1 (Perfect Square)
 > > [!example]- Example 1.1 (Perfect Square)
 > > $16 = $4^2$ is a perfect square
-
-#TODO 
-
-- Clarify the link of square since it's square of a number, not the shape. Also, what about other ones, like cube of a number? page 502
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=503)

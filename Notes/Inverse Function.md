@@ -35,13 +35,7 @@ tags:
 ## [[Graph]]
 - $(a, b)$ is on the graph of $f$ $\iff$ $(b, a)$ is on the graph of $g$ (Graphs of inverse functions are [[Reflection]] about the [[Line]] $y = x$)
 
-#TODO 
-Put this in or not:
 ## Existence
-Following statements are equivalent: (Page 394)
-- $f$ is invertible
-- $f$ is [[Injective Function]]
-- $f$ passes the [[Horizontal Line Test]]
-This is true only if it's a function from some domain to the image of the function (not an arbitrary range)
+- For a function $f$ from a domain to its image (i.e. codomain restricted to the [[Range|range]]), the following are equivalent: $f$ is invertible $\iff$ $f$ is [[Injective Function|injective]] $\iff$ $f$ passes the [[Horizontal Line Test]].
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=391)

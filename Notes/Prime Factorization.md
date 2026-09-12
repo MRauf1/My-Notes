@@ -17,8 +17,4 @@ The process of decomposing a [[Number|number]] into a [[Multiplication|product]]
 > > $$
 > > $2^2 \cdot 3$ is the prime factorization of $12$.
 
-#TODO 
-
-- Maybe mention how to do this, such as the factor tree method on page 172-173? Or the ladder method on page 175.
-
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=172)

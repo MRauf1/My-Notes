@@ -32,9 +32,4 @@ With conditional probability, our sample space changes from the [[Universe of Di
 - [[Bayes' Theorem|Bayes' Theorem]]
 - [[Conditional Probability Other Properties]]
 
-#TODO 
-- Are the other properties true?
-- For the first other property, is the $P(B) > 0$ necessary?
-- Double check the last property from my notes
-
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=30)

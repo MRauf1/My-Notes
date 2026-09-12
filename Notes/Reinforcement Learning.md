@@ -13,7 +13,4 @@ tags:
 - [[Temporal Credit Assignment Problem|Temporal Credit Assignment Problem]]
 - Exploitation vs. Exploration Tradeoff
 
-#TODO 
-- Note for exploitation vs exploration tradeoff
-
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=25)

@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -15,7 +14,7 @@ tags:
 > \end{align}
 > $$
 
-Fraction is a number that represents a part of a whole (also represents [[Division|division]]). $x_1$ is the numerator, and $x_2$ is the denominator.[^1]
+Fraction is a number that represents a part of a whole (also represents [[Division|division]]). $x_1$ is the numerator, and $x_2$ is the denominator.[^1] [[Improper Fraction|Improper fractions]] are generally preferred over [[Mixed Number|mixed numbers]] for carrying out calculations.
 
 # Types
 
@@ -24,18 +23,5 @@ Fraction is a number that represents a part of a whole (also represents [[Divisi
 - [[Improper Fraction|Improper Fraction]]
 - [[Complex Fraction|Complex Fraction]]
 - [[Equivalent Fractions|Equivalent Fractions]]
-
-#TODO
-
-- In definition, do x1 and x2 have to be integers?
-- Include fraction operations, like addition, multiplication and so on. Should that be here or in the respective operation's sections? Same for other number representations, such as percents, decimals, scientific notation, and etc...
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=310)
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=318)
-- May wanna mention that generally we use improper fractions.
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=332)
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=340)
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=344)
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=360)
-- [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=382)
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=282)

@@ -20,8 +20,7 @@ tags:
 > > [!example]- Example 1.1 (Product to a Power Property of Exponents)
 > > $(2 \cdot 3)^2 = 6^2 = 36 = 4 \cdot 9 = 2^2 \cdot 3^2$
 
-#TODO 
-- reals and ints?
-- For multiplying polynomials, come up with a single general method using distributive property, no need for FOIL method or anything specific like that. Come up with a generalized method that works for all polynomials.
+# Properties
+- Holds for $x, y$ in any [[Field|field]] (e.g. $\mathbb{C}$), not just $\mathbb{R}$, since it follows purely from repeated [[Multiplication]] under integer exponents.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=880)

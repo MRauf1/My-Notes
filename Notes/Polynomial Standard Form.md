@@ -14,15 +14,11 @@ tags:
 > \end{align}
 > $$
 
-[[Polynomial|Polynomial]] is in standard form when its [[Term|terms]] are written in the descending order of [[Degree|degrees]].[^1]
+[[Polynomial|Polynomial]] is in standard form when its [[Term|terms]] are written in the descending order of [[Degree of Polynomial|degree]].[^1]
 
 > [!example]- Examples 1 (Polynomial Standard Form)
 > > [!example]- Example 1.1 (Polynomial Standard Form)
 > > Polynomial $x + x^3 + 2$ in standard form is $x^3 + x + 2$
 
-
-#TODO 
-
-- degree note?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=865)

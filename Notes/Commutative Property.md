@@ -1,6 +1,5 @@
 ---
 tags:
-  - anki
   - mathematics
   - pre_algebra
 ---
@@ -11,7 +10,7 @@ tags:
 > For [[Operation|operation]] $\times$, $\forall x_1, x_2$
 > $$
 > \begin{align}
-> \mathrm{Operation} \times \mathrm{is\ commutative} \quad \implies \quad x_1 \times x_2 &= x_2 \times x_1
+> \mathrm{Operation} \times \mathrm{is\ commutative} \quad \iff \quad x_1 \times x_2 &= x_2 \times x_1
 > \end{align}
 > $$
 
@@ -31,10 +30,6 @@ An [[Operation|operation]] is commutative if the order of the operands does not 
 > > 5 \cdot 4 = 20 = 4 \cdot 5
 > > \end{align}
 > > $$
-
-#TODO 
-
-- if or iff?
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=36)
 [^2]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=66)

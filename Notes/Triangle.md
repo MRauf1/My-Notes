@@ -34,9 +34,7 @@ $$A = \frac{1}{2} b h$$
 
 where $b$ is the base, and $h$ is the length of the line that connects the base to the opposite vertex at a [[Right Angle|right angle]] with the base. A signed variant of this formula, used for orientation tests and [[Barycentric Coordinates]], is given by [[Signed Area of a Triangle]].
 
-#TODO 
-- Why does this area formula work for all triangles, not just right triangles?
-
+This formula holds for any triangle, not just right triangles, because dropping the altitude $h$ from a vertex to the line containing the opposite side $b$ always splits (or, for obtuse triangles, extends and subtracts) the triangle into right triangles whose areas sum to $\frac{1}{2}bh$.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=759)
 [^2]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=763)

@@ -13,6 +13,3 @@ During sleep, brain organizes the ideas [[Learning|learnt]] and reinforces neura
 
 # Stages
 - [[Stages of Sleep]]
-
-#TODO 
-- Talk about how dreaming about a topic further enhances your understanding of said topic
