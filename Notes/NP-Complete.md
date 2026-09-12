@@ -13,4 +13,6 @@ tags:
 
 This implies that if a [[Polynomial Function]] time solution to NP-Complete problem is found, then it can be used to solve all [[NP]] problems in [[Polynomial Function]] time.
 
+NP-Completeness is the standard basis for analyzing the [[Tractability]] of a problem: any problem class to which the class of NP-Complete problems can be reduced is likely intractable.
+
 [^1]: [Building Blocks for Theoretical Computer Science](zotero://open-pdf/library/items/5IGT8C55?page=209)

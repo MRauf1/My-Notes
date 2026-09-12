@@ -21,5 +21,7 @@ tags:
 - The same evidence can confirm two mutually incompatible hypotheses, since confirmation is a comparative, not absolute, relation.
 - Confirmation requires only correlation between $E$ and $H$, not causation.
 - Confirmation does not distribute over logical entailment: $E$ confirming $H$ does not imply $E$ confirms every proposition that $H$ entails.
+- This framework operationalizes the confirmation theory of Carnap and Hempel, developed within the program of [[Logical Positivism]] to analyze the acquisition of knowledge from experience.[^2]
 
 [^1]: [A Critical Introduction to Formal Epistemology](zotero://open-pdf/library/items/9XYCZDPF?page=10)
+[^2]: [Russell and Norvig, 2022, p. 25](zotero://open-pdf/library/items/JZXT5DZQ?page=25&annotation=NSKWZWQ9)

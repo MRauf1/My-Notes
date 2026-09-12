@@ -18,5 +18,7 @@ tags:
 	- Modern AI is being exploited and used by the advanced global companies, and this will concentrate even more power in their hands, while the lower class will unlikely see benefits
 - Existential Risk
 	- Modern AI is advancing very quickly and there is no proper regulation of the technology. It may end up that the technology surpasses humanity and will not be able to be controlled/regulated by humans, which may pose an existential risk.
+- Value Alignment
+	- Ensuring that the objectives given to an AI system are aligned with humans' true preferences is known as the [[Value Alignment Problem]].
 
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=27)
