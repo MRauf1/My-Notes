@@ -1,5 +1,6 @@
 ---
 tags:
+  - mathematics
   - discrete_mathematics
 ---
 

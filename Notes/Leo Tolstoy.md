@@ -1,1 +1,0 @@
-People like [[Leo Tolstoy|Leo Tolstoy]] were at first ordinary children who later on went to do great things.

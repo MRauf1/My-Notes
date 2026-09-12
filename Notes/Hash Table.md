@@ -25,6 +25,7 @@ Both variants maintain $\text{length}(t) = \Theta(n)$, so both use $n + O(n)$ wo
 # Types
 - [[Chained Hash Table]]
 - [[Linear Hash Table]]
+- [[Python Dictionary]], which CPython implements on top of a hash table.
 
 # Properties
 - [[Hash Code]]

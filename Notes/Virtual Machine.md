@@ -14,5 +14,6 @@ tags:
 - To remain in control, the VMM must run at a higher privilege level than any guest, which normally runs in user mode, so that the VMM handles the execution of every privileged instruction.
 - A key motivation for [[Virtual Memory]] today is enabling multiple virtual machines to safely and efficiently share a single main memory, particularly in cloud computing.
 - Pitfall: implementing a VMM on an instruction set architecture that was not designed to be virtualizable — for example, one whose privileged instructions do not reliably trap when executed in user mode — greatly complicates or degrades virtualization.
+- Contrasts with a process virtual machine such as the [[Python Virtual Machine|Python Virtual Machine (PVM)]], which executes the instructions of a single program rather than virtualizing an entire computer and its operating system.
 
 [^1]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=447&annotation=Z8NG8PK7)

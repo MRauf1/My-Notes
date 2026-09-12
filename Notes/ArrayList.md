@@ -34,6 +34,7 @@ $n + O(n)$ words in the worst case: the underlying array's capacity stays within
 - [[Stack]]
 - [[Queue]]
 - [[Deque]]
+- [[Python List]], which CPython implements as a resizable array in this style.
 
 # Properties
 - [[Linear Data Structure]]

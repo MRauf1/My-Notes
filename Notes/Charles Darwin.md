@@ -1,1 +1,0 @@
-People like [[Charles Darwin|Charles Darwin]] were at first ordinary children who later on went to do great things.
