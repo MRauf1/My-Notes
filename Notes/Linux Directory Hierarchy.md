@@ -13,7 +13,7 @@ tags:
 # Properties
 - /bin — ready-to-run programs (executables), including most basic Unix commands.
 - /dev — [[Device File|device files]].
-- /etc — core system configuration, such as user password, boot, device, and networking setup files.
+- /etc — the [[System Configuration Directory]], holding core system configuration such as user password, boot, device, and networking setup files.
 - /home — personal directories for regular users.
 - /lib — library files containing code that executables can use; should contain only shared libraries, unlike other lib directories such as /usr/lib.
 - /proc — system statistics and information about currently running processes and kernel parameters, exposed through a browsable directory-and-file interface.

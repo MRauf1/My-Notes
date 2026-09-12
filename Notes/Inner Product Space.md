@@ -18,6 +18,8 @@ tags:
 
 Every inner product space is a [[Normed Space]]: the norm $\lVert v \rVert = \sqrt{\langle v, v \rangle}$ induced by the inner product satisfies all of the [[Normed Space]] axioms.[^2] An Inner Product Space is thus a special case of a [[Normed Space]]; not every norm on a [[Normed Space]] comes from an inner product.
 
+If it is also [[Complete Metric Space]], then it is [[Hilbert Space]]. In particular, all [[Finite-Dimensional Vector Space|finite-dimensional]] inner product spaces are [[Complete Metric Space]].
+
 # Types
 - [[Dot Product Space]]
 - [[Frobenius Inner Product Space]]
@@ -35,6 +37,8 @@ Every inner product space is a [[Normed Space]]: the norm $\lVert v \rVert = \sq
 - [[Orthogonal Projection]]
 - [[Orthogonal Projection Matrix]]
 - [[Best Approximation Theorem]]
+- [[Jordan-von Neumann Theorem]]
+- [[Polarization Identity]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=246)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=287)

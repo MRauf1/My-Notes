@@ -14,6 +14,9 @@ tags:
 - [[Compact Metric Space]]
 - [[Connected Metric Space]]
 	- [[Disconnected Metric Space]]
+- [[Normed Space]]
+	- [[Inner Product Space]]
+	- [[Banach Space]]
 
 # [[Subset]]
 ## Openness

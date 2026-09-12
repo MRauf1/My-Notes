@@ -15,6 +15,8 @@ tags:
 
 A normed space is the general concept; an [[Inner Product Space]] is a special case of a normed space, since every inner product $\langle \cdot, \cdot \rangle$ induces a norm $\lVert v \rVert = \sqrt{\langle v, v \rangle}$ satisfying all of the properties above. However, not every norm comes from an inner product — see [[1-Norm]] and [[Infinity Norm]] for examples of norms that do not arise from any inner product (this can be verified with the [[Parallelogram Identity]]).
 
+It is a type of [[Metric Space]]. You define the distance $d(x, y)$ between two [[Vector]] using the [[Norm]] of their difference: $d(x, y) = \Vert{}x - y\Vert{}$. They are always [[Connected Metric Space]]. If they are also [[Complete Metric Space]], then they are [[Banach Space]]. In particular, all [[Finite-Dimensional Vector Space|finite-dimensional]] normed spaces are [[Complete Metric Space]].
+
 # Types
 - [[Inner Product Space]]
 
@@ -22,5 +24,6 @@ A normed space is the general concept; an [[Inner Product Space]] is a special c
 - [[Triangle Inequality]]
 - [[Parallelogram Identity]]
 - [[Strictly Convex Space]]
+- [[Jordan-von Neumann Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=287)

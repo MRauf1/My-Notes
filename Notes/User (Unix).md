@@ -14,5 +14,8 @@ tags:
 - A user may choose whether to share its files with other users, subject to [[File Permissions (Unix)|file permissions]].
 - [[Group (Unix)|Groups]] are sets of users, letting members share file access with one another.
 - [[Root User|Root]] is a special user exempt from the ordinary restrictions on affecting other users' processes and files.
+- A user together with its corresponding home directory is collectively known as an [[Account (Unix)|account]]; usernames are mapped to numeric user IDs in the [[Passwd File|passwd file]].
+- A user that cannot log in, such as `nobody`, is called a [[Pseudo-User|pseudo-user]].
+- A process actually carries several distinct [[Process User ID|user IDs]] — real, effective, saved, and filesystem — rather than a single one.
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
