@@ -16,5 +16,6 @@ tags:
 	3) Aggregate multiple exceptions so they are handled by a single piece of code in one place.
 	4) Let the exception crash the application, when recovery is not worthwhile.
 - Should not be eliminated entirely; some exceptions genuinely need to propagate and be handled explicitly.
+- Implemented concretely in Python by the [[Exception (Python)|exception]] mechanism: a [[Try Statement (Python)|try statement]] catches and recovers from exceptions, a [[Finally Clause (Python)|finally clause]] guarantees termination actions, and a [[Context Manager (Python)|context manager]] automates both around a block of code.
 
 [^1]: [A Philosophy of Software Design](zotero://open-pdf/library/items/283RR677?page=1)

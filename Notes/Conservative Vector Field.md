@@ -17,5 +17,6 @@ tags:
 
 # Properties
 - [[Conservative Vector Field Existence With Curl Theorem]]
+- The physical analogue is a [[Conservative Force]], such as gravity, whose potential function is (up to sign) its [[Potential Energy]].
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=1105)

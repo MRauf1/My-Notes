@@ -18,6 +18,7 @@ tags:
 - Code is packaged for reuse chiefly as [[Function (Python)|functions]], which Python also treats as first-class objects.
 - Programs are organized into [[Module (Python)|modules]] — normally one file each — which a script or another module accesses via [[Import Statement (Python)|import]].
 - Supports object-oriented programming through [[Class (Python)|classes]], which act as factories for [[Instance (Python)|instances]] and support customization via inheritance.
+- Signals errors and unusual conditions as [[Exception (Python)|exceptions]], caught and recovered from with a [[Try Statement (Python)|try statement]].
 
 # Types
 - [[Python String]]

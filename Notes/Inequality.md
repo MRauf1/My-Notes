@@ -28,5 +28,6 @@ tags:
 - Transitive: $a < b, b < c \implies a < c$.
 - Addition/Subtraction: $a < b \iff a + c < b + c$ for any $c$.
 - Multiplication/Division: $a < b \iff ac < bc$ if $c > 0$; $a < b \iff ac > bc$ if $c < 0$ (the inequality direction flips).
+- [[Inequality Sign Change]]: applying a [[Function|function]] to both sides preserves or reverses the direction of the inequality depending on whether the function is increasing or decreasing.
 
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=112)
