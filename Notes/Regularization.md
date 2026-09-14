@@ -19,4 +19,7 @@ Regularizers can also be thought of as [[Bayes' Theorem|priors]] for the types o
 - $L_p$ [[Norm|Norms]]
 	- These encourages most parameters to be $0$/near $0$.
 
+# Properties
+- Used in [[Regularized Image Reconstruction]] to recover a well-behaved scene estimate $\ell_w$ from a camera's sensor measurements $\ell_s$ when the camera's [[Imaging Matrix]] is non-invertible or ill-conditioned.
+
 [^1]: https://visionbook.mit.edu/problem_of_generalization.html

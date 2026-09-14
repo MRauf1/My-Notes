@@ -12,7 +12,7 @@ tags:
 > P(\theta, \Phi, \lambda, t, X, Y, Z)
 > \end{align}
 > $$
-> where $P$ is the [[Light|light]] intensity of a light [[Ray|ray]] passing through the world location $(X, Y, Z)$ in the direction given by angle $(\theta, \Phi)$ with [[Wavelength|wavelength]] $\lambda$ and [[Time|time]] $t$.[^1]
+> where $P$ is the [[Light|light]] intensity of a [[Light Ray|light ray]] passing through the world location $(X, Y, Z)$ in the direction given by angle $(\theta, \Phi)$ with [[Wavelength|wavelength]] $\lambda$ and [[Time|time]] $t$.[^1]
 
 The plenoptic function contains all the information needed to describe the complete pattern of light rays that fills the space.
 

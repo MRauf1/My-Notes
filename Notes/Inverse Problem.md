@@ -11,5 +11,6 @@ tags:
 
 # Properties
 - The [[Relative Condition Number]] of the inverse problem is the reciprocal of that of the original problem, so if the condition number is near $1$, both the problem and its inverse are well-conditioned; if it is much larger or smaller than $1$, then either the problem or its inverse, respectively, is ill-conditioned.
+- Recovering a scene $\ell_w$ from a camera's sensor measurements $\ell_s$ in the [[Camera as Linear System|linear camera model]] $\ell_s = \mathbf{A}\ell_w$ is an inverse problem, addressed by [[Regularized Image Reconstruction]] when $\mathbf{A}$ is not directly invertible.
 
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=35)

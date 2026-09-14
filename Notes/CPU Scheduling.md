@@ -14,6 +14,8 @@ tags:
 - Affects a system's latency and throughput.[^2]
 - No single scheduler is optimal for every environment and set of goals.[^3]
 - Implemented either inside the kernel, or, for a fixed list of commands, by a [[User Space Scheduler]].[^4]
+- On Linux, expressed per-process as a [[Scheduling Priority (Linux)|scheduling priority]], influenced indirectly through the process's [[Nice Value|nice value]]; a similar priority scheme governs [[IO Scheduling Priority|I/O scheduling]].
+- The [[Ready Queue]]'s size at any moment is estimated by the [[Load Average]].
 
 [^1]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=235&annotation=PV5ZZXRC)
 [^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=236&annotation=2NFW9N2V)

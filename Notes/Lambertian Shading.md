@@ -20,5 +20,6 @@ tags:
 - Since $\mathbf{n}$ and $\mathbf{l}$ are [[Unit Vector|unit vectors]], their [[Dot Product]] $\mathbf{n} \cdot \mathbf{l}$ directly gives $\cos\theta$.
 - A surface facing directly toward the light receives maximum illumination; a surface tangent to or facing away from the light direction receives none.
 - View-independent: the shaded color does not depend on the view direction $\mathbf{v}$, unlike [[Blinn-Phong Shading]], which adds a view-dependent specular highlight on top of this diffuse component.
+- Analogous to the [[Lambertian Reflectance Model]] used in computer vision, which frames the same diffuse behavior as a [[Bidirectional Reflectance Distribution Function (BRDF)|BRDF]] depending on wavelength, without clamping negative orientations to zero.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=97&annotation=HUBEY4V2)

@@ -16,5 +16,6 @@ tags:
 - As with parallel views, distinguished as oblique or non-oblique based on the projection direction at the center of the image.
 - All perspective viewing rays share the same origin (the viewpoint) but have different directions, unlike [[Parallel Projection]].
 - The [[Camera Frame]] and [[Focal Length]] (image plane distance) together determine the viewing rays of a perspective view.
+- The [[Perspective Projection Equations]] give the analogous quantitative projection for a [[Pinhole Camera]], relating world and camera-plane coordinates directly by similar triangles.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=84&annotation=4U5WR7CJ)

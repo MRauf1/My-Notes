@@ -12,6 +12,7 @@ tags:
 - Can be a dedicated [[Partition (Operating Systems)|partition]] or, to avoid repartitioning, an ordinary file.[^2]
 - Traditional Unix guidance recommended reserving at least twice as much swap as real memory, but today's large, variable disk and memory capacities have undermined that rule of thumb.[^3]
 - Heavy reliance on swap causes serious performance problems, since disk I/O is far slower than main memory; the only remedies are more memory, fewer active processes, or tolerating the slowdown.[^4]
+- Rapid swapping under low memory is called [[Thrashing]], and inflates the [[Load Average]] with processes stuck ready-to-run without available memory.
 - The kernel may swap out a process's memory simply to grow the disk cache, which is why some administrators (e.g. of high-performance servers) disable swap entirely on systems that should never incur disk I/O.[^5]
 - If both real memory and swap are exhausted, the kernel invokes the [[Out-of-Memory Killer|out-of-memory (OOM) killer]] to reclaim memory.[^6]
 

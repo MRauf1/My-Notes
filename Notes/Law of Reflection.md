@@ -12,5 +12,6 @@ Early version originated by [[Hero of Alexandria|Hero of Alexandria]] (10-70 AD)
 
 # Properties
 - Underlies [[Specular Reflection]] in [[Ray Tracing]], where the reflected ray direction is computed as $\mathbf{r} = \mathbf{d} - 2(\mathbf{d} \cdot \mathbf{n})\mathbf{n}$.
+- Also underlies the direction of maximum specular reflection $\mathbf{r} = 2(\mathbf{p} \cdot \mathbf{n})\mathbf{n} - \mathbf{p}$ in the [[Phong Reflection Model]].
 
 [^1]: https://visionbook.mit.edu/taxonomy.html

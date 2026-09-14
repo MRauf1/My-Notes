@@ -14,5 +14,6 @@ tags:
 - Called **orthographic** if the image plane is perpendicular to the projection (view) direction, and **oblique** otherwise.
 - Contrasts with [[Perspective Projection]], which projects along lines through a single viewpoint rather than along parallel lines.
 - All viewing rays generated for a parallel/orthographic view share the same direction, unlike in [[Perspective Projection]].
+- The [[Orthographic Projection]] equations $x = kX$, $y = kY$ used in computer vision give the analogous quantitative projection, scaling world coordinates by a fixed constant $k$ independent of depth.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=84&annotation=4U5WR7CJ)

@@ -21,5 +21,6 @@ tags:
 - The Phong exponent $p$ controls apparent shininess: larger values (e.g., thousands) sharpen the highlight into a nearly mirror-like appearance, while small values (e.g., tens) give a matte "eggshell" look. When in doubt, the specular color is set to gray (equal red, green, blue).
 - Combined with [[Ambient Shading]], the full local illumination model is $L = k_a I_a + k_d I \max(0, \mathbf{n} \cdot \mathbf{l}) + k_s I \max(0, \mathbf{n} \cdot \mathbf{h})^p$.
 - By the superposition property of light, the contributions of multiple light sources are simply summed, extending the model to $N$ lights by summing the diffuse and specular terms over all lights.
+- An approximation of the original [[Phong Reflection Model]], which computes the specular term from a mirror-reflection direction $\mathbf{r}$ rather than from the half vector $\mathbf{h}$.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=98&annotation=MXYW8TWV)

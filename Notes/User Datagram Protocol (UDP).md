@@ -11,5 +11,7 @@ tags:
 # Properties
 - Provides no delivery guarantee: packets may be dropped under network congestion, duplicated, or arrive out of order.
 - Simpler to use than [[Transmission Control Protocol (TCP)|TCP]], at the cost of TCP's delivery guarantees and its abstraction over the packet-based network.
+- Defines a transport only for single messages rather than a data stream, and has [[Port (Networking)|ports]] but no connections; applications favor it for speed when they assume the network is reliable or handle errors themselves, much as a telegram is simpler than a phone call.[^2]
 
 [^1]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=262&annotation=Z7DWDMI9)
+[^2]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=237&annotation=5HGEZXLZ)

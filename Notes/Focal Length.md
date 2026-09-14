@@ -11,5 +11,6 @@ tags:
 # Properties
 - Used together with the [[Camera Frame]] to define the direction of each pixel's viewing ray in [[Ray Generation]] for a perspective view.
 - Has no analogue in an orthographic [[Parallel Projection|parallel view]], since parallel views have no single viewpoint from which an image plane distance is measured.
+- Distinct from the [[Focal Length (Lens)|focal length of a physical lens]], which is instead derived from the lens's curvature and index of refraction via the [[Lensmaker's Equation]].
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=90&annotation=GVYNVJQA)

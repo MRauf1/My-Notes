@@ -17,6 +17,12 @@ tags:
 - Multiple threads of one process can run simultaneously on multiple CPUs; the operating system assigns threads to CPUs, time-slicing a CPU across threads whenever there are more active threads than CPUs.[^4]
 - Concurrent threads can produce a [[Race Condition]] whenever the program's outcome depends on how the kernel happens to schedule them.[^5]
 - If a process with multiple threads calls [[Fork and Exec|fork()]], the resulting child process has only a single thread: a clone of the thread that called fork().[^6]
+- Identified by a thread ID (TID); the kernel schedules and runs threads just like processes.[^7]
+- A process with one thread is single-threaded; one with more than one is multithreaded. Every process starts single-threaded, running its main thread, which may then start further threads to become multithreaded.[^8]
+- Threads start faster than processes and can more easily intercommunicate through shared memory than processes can over a channel such as a network connection or pipe, letting them run simultaneously on multiple processors to speed up computation.[^9]
+- Also used to manage multiple I/O streams without the overhead of starting a new process via fork().[^10]
+- Interacting with one thread of a running program, rather than the process as a whole, requires knowing how that particular multithreaded program was written, and often is not advisable.[^11]
+- Complicates resource monitoring, since individual threads within one multithreaded process can consume resources simultaneously.[^12]
 
 [^1]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=539&annotation=DFPPV23G)
 [^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=131&annotation=U7Q4DELF)
@@ -24,3 +30,9 @@ tags:
 [^4]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=133&annotation=KZ3Y2MQV)
 [^5]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=136&annotation=VF4D4KGS)
 [^6]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=139&annotation=EGPJ95GQ)
+[^7]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=201&annotation=5JN74UFD)
+[^8]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=201&annotation=7GQMV5AX)
+[^9]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=201&annotation=Y27698TK)
+[^10]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=201&annotation=8E9Z7JTV)
+[^11]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=202&annotation=NTB5NBLD)
+[^12]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=203&annotation=W3AVITH6)
