@@ -132,4 +132,12 @@ Despite the loneliness, as a protective mechanism, we constitute the world aroun
 
 Interpersonal and existential isolations are closely linked. Emergence from interpersonal fusion/dependence thrusts you into existential isolation. Thus, the fear of existential isolation is a driving force behind many interpersonal relationships.
 
+Interpersonal relationships are one way of protecting oneself from the existential isolation by masking that isolation/hiding isolation from surfacing. Even so, no relationship can get rid of the isolation. It'd be better to "bear it courageously", but that's far more difficult.
+
+However, by confronting the isolation resolutely, one may become more loving towards others. Otherwise, one may end up using others and the interpersonal relationship primarily to protect themselves from the existential isolation.
+
+A true relationship is a need-free relationship where you relate to the other being without any need or want or function.
+
+Being unloved is not the problem when it comes to existential isolation. Not being to love is the issue.
+
 [^1]: [Existential Psychotherapy](zotero://open-pdf/library/items/9AN2W49G?page=1)

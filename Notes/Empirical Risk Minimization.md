@@ -16,4 +16,7 @@ tags:
 
 Minimizing the [[Mean|average]] error/risk over all the training data (empirical distribution).[^1]
 
+# Properties
+- Depending on the [[Loss Function|loss function]] $L$, ERM often has an interpretation as [[Maximum Likelihood Learning|maximum likelihood]] probabilistic inference: searching for the hypothesis $f$ that assigns the highest probability to the observed data.
+
 [^1]: https://visionbook.mit.edu/intro_to_learning.html

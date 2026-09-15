@@ -12,7 +12,7 @@ $H_k$ has no simple closed form, but is closely related to the [[Logarithm|natur
 
 # Properties
 - These bounds follow from interpreting $\int_1^k \frac{1}{x}\, dx = \ln k$ as the area between the curve $1/x$ and the $x$-axis: this area lower-bounds $H_k$ and $1 + \int_1^k \frac{1}{x}\, dx$ upper-bounds it.[^2]
-- Used to express the expected search-path length in a [[Random Binary Search Tree]] and in a [[Treap]].
+- Used to express the expected search-path length in a [[Random Binary Search Tree]] and in a [[Treap]], and to bound the expected number of pivot comparisons in [[Quicksort]].
 
 [^1]: [Morin, p. 146](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 147](zotero://select/library/items/HYS8NDAB)

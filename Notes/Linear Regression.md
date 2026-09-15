@@ -11,6 +11,7 @@ tags:
 # Types
 - [[Simple Linear Regression]]
 - [[Multiple Linear Regression]]
+- [[Polynomial Regression]]
 
 # Assumptions
 - [[Linear Regression Assumptions]]

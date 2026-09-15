@@ -27,7 +27,7 @@ $^*$Ignoring the cost of calls to `grow()`, and assuming a good hash function ma
 $^\dagger$Beginning from an empty table, any sequence of $m$ `add(x)`/`remove(x)` operations spends a total of $O(m)$ time across all calls to `grow()`.
 
 > [!abstract] Theorem 5.1[^8]
-> A ChainedHashTable implements the USet interface. Ignoring the cost of calls to `grow()`, a ChainedHashTable supports `add(x)`, `remove(x)`, and `find(x)` in $O(1)$ expected time per operation. Furthermore, beginning with an empty ChainedHashTable, any sequence of $m$ `add(x)` and `remove(x)` operations results in a total of $O(m)$ time spent during all calls to `grow()`.
+> A ChainedHashTable implements the same interface as a [[Hash Table]]. Ignoring the cost of calls to `grow()`, a ChainedHashTable supports `add(x)`, `remove(x)`, and `find(x)` in $O(1)$ expected time per operation. Furthermore, beginning with an empty ChainedHashTable, any sequence of $m$ `add(x)` and `remove(x)` operations results in a total of $O(m)$ time spent during all calls to `grow()`.
 
 # Space Usage
 $n + O(n)$ words: the invariant $n \leq \text{length}(t)$ together with doubling keeps $\text{length}(t) = \Theta(n)$, and the $n$ stored elements are spread across the $\text{length}(t)$ list headers.

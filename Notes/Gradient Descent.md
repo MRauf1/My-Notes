@@ -21,6 +21,10 @@ With a random initialization of the parameter vector $\theta^0$ and a sufficient
 
 Since gradient descent uses gradients, the cost function (and the preceding functions if using backpropagation) should ideally be [[Differentiable Function|differentiable]]. However, even non-differentiable functions can work as long as they have the property that one can get a meaningful signal of how to perturb the model's parameters in order to reduce the loss function. In particular, [[PyTorch|PyTorch]] uses the one-sided [[Derivative|derivative]] at the [[Discontinuity|discontinuities]].
 
+# Properties
+- A [[Gradient-Based Learning|gradient-based]], or [[First-Order Optimization|first-order optimization]] method: at each [[Operating Point]], it observes the gradient of the [[Cost Function]] and uses it to move to a new operating point with lower cost, in contrast to [[Zeroth-Order Optimization]], which observes only the cost's value, and [[Higher-Order Optimization]], which also uses curvature information such as the [[Hessian Matrix]].
+- The learning rate is often varied during training according to a [[Learning Rate Schedule]] rather than held fixed.
+
 # Potential Problems
 - [[Vanishing Gradients|Vanishing Gradients]]
 - [[Exploding Gradients|Exploding Gradients]]

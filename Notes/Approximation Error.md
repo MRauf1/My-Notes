@@ -17,4 +17,7 @@ The [[Cost Function|cost]] between the predicted training samples and the ground
 
 This is the cost function being minimized in [[Empirical Risk Minimization|ERM]].
 
+# Properties
+- Contrasts with [[Generalization Error]], which measures expected cost on new data rather than fit to the training data; approximation error alone going down (e.g., as [[Model Capacity]] increases) does not imply generalization error is also going down.
+
 [^1]: https://visionbook.mit.edu/problem_of_generalization.html

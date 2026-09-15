@@ -31,7 +31,7 @@ Because priorities are unique, the heap and binary search tree properties togeth
 The cost of `add(x)` is the length of the search path for $x$ (at most $2\ln n + O(1)$ expected, by Lemma 7.2) plus the number of rotations needed to restore the heap property; each rotation decreases $u$'s depth by one and stops once $u$ reaches the root, so the expected rotation count cannot exceed the expected search-path length — giving $O(\log n)$ expected total.[^8] The `remove(x)` operation exactly reverses `add(x)`: reinserting $x$ with the same priority would perform the same rotations in reverse and restore the prior Treap state, so `remove(x)` on a Treap of size $n$ costs the same, in expectation, as `add(x)` on a Treap of size $n-1$ — also $O(\log n)$ expected.[^9]
 
 > [!abstract] Theorem 7.2[^10]
-> A Treap implements the SSet interface. A Treap supports the operations `add(x)`, `remove(x)`, and `find(x)` in $O(\log n)$ expected time per operation.
+> A Treap implements the same interface as a [[Binary Search Tree]]. A Treap supports the operations `add(x)`, `remove(x)`, and `find(x)` in $O(\log n)$ expected time per operation.
 
 # Space Usage
 $O(n)$ words for $n$ elements: one data value, one priority, and up to three neighbour references per node.
@@ -42,6 +42,7 @@ $O(n)$ words for $n$ elements: one data value, one priority, and up to three nei
 - [[Tree Rotation]]
 - [[Total Order]]
 - Unlike a [[Scapegoat Tree]], which restores balance amortized via occasional [[Partial Rebuilding|partial rebuilds]], a Treap restores balance on every `add(x)`/`remove(x)` via local rotations.
+- Extended with `split`/`merge`, a Treap serves as the secondary structure holding the non-sampled elements of a [[Y-Fast Trie]].
 
 [^1]: [Morin, p. 151](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 151](zotero://select/library/items/HYS8NDAB)

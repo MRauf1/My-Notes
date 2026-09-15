@@ -18,6 +18,7 @@ tags:
 - Caching is a direct application of the big idea of prediction: it relies on the [[Principle of Locality]] to guess that recently or nearby accessed data will be wanted next, and falls back to the lower level of the hierarchy whenever that guess (a cache miss) is wrong; see [[Cache Write Policy]] for how writes are kept consistent with lower levels, and [[Average Memory Access Time]] and [[Three Cs Model]] for evaluating cache performance.
 - A nonblocking cache lets the processor keep making cache references while an earlier miss is still being serviced, rather than stalling the whole pipeline as a simple in-order design would.
 - Prefetching brings blocks into the cache before they are needed, using special instructions that name the address to fetch, to hide the miss penalty for accesses whose need can be anticipated ahead of time.
+- The algorithmic analogue of this block-based buffering is the [[External Memory Model]], which likewise charges for block transfers between a large slow memory and a small fast one, treating computation within the fast memory as free.
 
 [^1]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=44&annotation=DZUJKRLD)
 [^2]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=399&annotation=UGY2DSVR)

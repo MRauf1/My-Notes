@@ -22,15 +22,15 @@ Because element heights are assigned randomly, the running time of skiplist oper
 | Remove (by index, remove(i)) | $O(\log n)$ expected | $O(1)$ |
 | Remove (by value, remove(x)) | $O(\log n)$ expected | $O(1)$ |
 
-Indexed by position, a Skiplist implements the List interface (get/set/add/remove by index);[^3] indexed by value, it implements a sorted associative container's interface — an SSet, supporting add/remove/find by value.[^4] Unlike a plain [[Doubly Linked List]] or [[Space Efficient Linked List]], these complexities are uniform: they do not depend on whether the index or value is near the beginning, middle, or end. As an SSet, a Skiplist's $O(\log n)$ expected time compares favorably to a plain [[Binary Search Tree]], whose operations can degrade to $O(n)$ time once the tree becomes unbalanced.[^6]
+Indexed by position, a Skiplist implements the List interface (get/set/add/remove by index);[^3] indexed by value, it implements the same interface as a [[Binary Search Tree]] — add/remove/find by value.[^4] Unlike a plain [[Doubly Linked List]] or [[Space Efficient Linked List]], these complexities are uniform: they do not depend on whether the index or value is near the beginning, middle, or end. Like a [[Binary Search Tree]], a Skiplist's $O(\log n)$ expected time compares favorably to a plain (unbalanced) one, whose operations can degrade to $O(n)$ time once the tree becomes unbalanced.[^6]
 
 # Space Usage
 A Skiplist storing $n$ elements has expected size $O(n)$.[^5]
 
 # Properties
 - [[Linear Data Structure]]
-- [[Treap]] is an alternative randomized SSet achieving the same $O(\log n)$ expected time via random node priorities on a [[Binary Search Tree]] rather than random level promotion.
-- [[Scapegoat Tree]] achieves the same $O(\log n)$ SSet bound deterministically, via amortized [[Partial Rebuilding|partial rebuilding]] instead of randomization.
+- [[Treap]] is an alternative randomized [[Binary Search Tree]] achieving the same $O(\log n)$ expected time via random node priorities rather than random level promotion.
+- [[Scapegoat Tree]] achieves the same $O(\log n)$ bound deterministically, via amortized [[Partial Rebuilding|partial rebuilding]] instead of randomization.
 
 [^1]: [Morin, p. 83](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 84](zotero://select/library/items/HYS8NDAB)

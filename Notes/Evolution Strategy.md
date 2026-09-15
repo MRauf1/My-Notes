@@ -20,4 +20,8 @@ tags:
 
 Evolution Strategy is used when the [[Gradient Descent|gradient descent]] struggles, such as with functions with near-zero [[Gradient Vector|gradients]]. The algorithms tries different perturbations $\epsilon_i$ to see which one leads to the lower loss and moves towards the $\epsilon_i$'s that decrease the loss.
 
+# Properties
+- An alternative to using a [[Surrogate Loss Function]] for obtaining a useful update direction when the true gradient is zero almost everywhere or otherwise unhelpful, since most [[Gradient-Based Learning|gradient-based optimizers]] only require some locally loss-minimizing direction, not necessarily the true gradient.
+- A form of [[Zeroth-Order Optimization]], since it estimates a useful update direction from cost values alone, without an analytical gradient.
+
 [^1]: https://visionbook.mit.edu/gradient_descent.html

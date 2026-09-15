@@ -23,6 +23,7 @@ A 2-4 tree is **not** a [[Binary Tree]] or [[Binary Search Tree]]: its internal 
 # Properties
 - [[m-ary Tree]]
 - [[Red-Black Tree]]
+- Generalized by [[B-Tree]] to allow $B$-to-$2B$ children per node for any $B \geq 2$; a 2-4 tree is exactly the $B=2$ case.
 
 [^1]: [Morin, p. 178](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 178](zotero://select/library/items/HYS8NDAB)

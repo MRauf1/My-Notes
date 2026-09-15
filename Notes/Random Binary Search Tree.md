@@ -26,6 +26,7 @@ Both parts bound the [[Expectation|expected]] search-path length by $2\ln n + O(
 - [[Binary Search Tree]]
 - [[Harmonic Number]]
 - [[Treap]]
+- [[Quicksort]]'s recursion tree, when sorting $n$ distinct elements, is itself a random binary search tree on those elements.
 
 [^1]: [Morin, p. 146](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 146](zotero://select/library/items/HYS8NDAB)

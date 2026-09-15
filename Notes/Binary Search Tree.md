@@ -32,6 +32,8 @@ $O(n)$ words for $n$ elements: one data value and up to three neighbour referenc
 # Properties
 - [[Binary Tree]]
 - [[Total Order]]
+- Contrast with a [[Heap]], Morin's "disorganized pile": a heap only orders each node relative to its parent, whereas a BinarySearchTree fully orders left and right subtrees relative to every node.
+- A [[B-Tree]] generalizes this same ordered interface to nodes with many children, trading tree height for larger nodes that better exploit block-based transfer in the [[External Memory Model]].
 
 [^1]: [Morin, p. 133](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 134](zotero://select/library/items/HYS8NDAB)

@@ -33,7 +33,7 @@ $^*$Ignoring the cost of calls to `rebuild(u)`; see below.
 > Starting with an empty ScapegoatTree, any sequence of $m$ `add(x)` and `remove(x)` operations causes at most $O(m \log m)$ total time to be used by `rebuild(u)` operations.
 
 > [!abstract] Theorem 8.1[^9]
-> A ScapegoatTree implements the SSet interface. Ignoring the cost of `rebuild(u)` operations, a ScapegoatTree supports `add(x)`, `remove(x)`, and `find(x)` in $O(\log n)$ time per operation. Furthermore, beginning with an empty ScapegoatTree, any sequence of $m$ `add(x)` and `remove(x)` operations results in a total of $O(m \log m)$ time spent during all calls to `rebuild(u)`.
+> A ScapegoatTree implements the same interface as a [[Binary Search Tree]]. Ignoring the cost of `rebuild(u)` operations, a ScapegoatTree supports `add(x)`, `remove(x)`, and `find(x)` in $O(\log n)$ time per operation. Furthermore, beginning with an empty ScapegoatTree, any sequence of $m$ `add(x)` and `remove(x)` operations results in a total of $O(m \log m)$ time spent during all calls to `rebuild(u)`.
 
 # Space Usage
 $O(n)$ words for $n$ elements: one data value and up to three neighbour references per node, plus the constant-size $n$/$q$ counters.
@@ -41,7 +41,7 @@ $O(n)$ words for $n$ elements: one data value and up to three neighbour referenc
 # Properties
 - [[Binary Search Tree]]
 - [[Partial Rebuilding]]
-- Like [[Treap]] and [[Skiplist]], achieves $O(\log n)$-time SSet operations without relying on randomization — instead trading worst-case guarantees on individual `add(x)`/`remove(x)` calls for amortized guarantees across a sequence of operations.
+- Like [[Treap]] and [[Skiplist]], achieves $O(\log n)$-time operations without relying on randomization — instead trading worst-case guarantees on individual `add(x)`/`remove(x)` calls for amortized guarantees across a sequence of operations.
 - A [[Red-Black Tree]] improves on exactly this trade-off: it guarantees the same $O(\log n)$ height deterministically, but bounds `add(x)`/`remove(x)` in $O(\log n)$ *worst-case* time rather than only amortized time.
 
 [^1]: [Morin, p. 165](zotero://select/library/items/HYS8NDAB)

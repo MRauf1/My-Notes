@@ -20,4 +20,6 @@ Due to the reliance on the batch for each datapoint, it violates the assumption 
 
 At test time, the standard approach is to aggregate the statistics from the training dataset, but using test batch statistics can be useful to achieve invariance to changes in the statistics from the training data to the test data.
 
+If a batch is stored as a [[Tensor]] $\mathbf{X} \in \mathbb{R}^{N_{batch}\times C}$, batchnorm standardizes each element by the mean and variance of its column (over the batch), which is a "transpose" of what [[Layer Normalization|layernorm]] does, standardizing by the mean and variance of each row (over the channels of a datapoint) instead.
+
 [^1]: https://visionbook.mit.edu/neural_nets.html

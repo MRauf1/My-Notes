@@ -8,7 +8,7 @@ tags:
 > [!info] Hash Table
 > An efficient [[Data Structure]] for storing a small number, $n$, of integers from a large universe $U = \{0, \dots, 2^w - 1\}$, by mapping each item to an index of an underlying table via a hash function.[^1]
 
-The term hash table encompasses a broad range of data structures that all rely on this idea;[^1] [[Chained Hash Table]] and [[Linear Hash Table]] are the two described here. Both implement the USet interface (`add(x)`, `remove(x)`, `find(x)`) over a table $t$ whose length is kept within a constant factor of $n$. Very often a hash table stores data that is not itself an integer — in that case, an integer [[Hash Code|hash code]] is computed for each data item and used in place of the item itself.[^2] The performance of any hash table depends critically on the choice of hash function: a good one spreads elements evenly across the table so that the expected number of elements sharing a table location is $O(n / \text{length}(t)) = O(1)$.[^3]
+The term hash table encompasses a broad range of data structures that all rely on this idea;[^1] [[Chained Hash Table]] and [[Linear Hash Table]] are the two described here. Both support the same core operations — `add(x)`, `remove(x)`, `find(x)` — over a table $t$ whose length is kept within a constant factor of $n$. Very often a hash table stores data that is not itself an integer — in that case, an integer [[Hash Code|hash code]] is computed for each data item and used in place of the item itself.[^2] The performance of any hash table depends critically on the choice of hash function: a good one spreads elements evenly across the table so that the expected number of elements sharing a table location is $O(n / \text{length}(t)) = O(1)$.[^3]
 
 # Operations
 | Operation | [[Chained Hash Table]] | [[Linear Hash Table]] |
@@ -31,6 +31,7 @@ Both variants maintain $\text{length}(t) = \Theta(n)$, so both use $n + O(n)$ wo
 - [[Hash Code]]
 - [[Multiplicative Hashing]]
 - [[Tabulation Hashing]]
+- An [[X-Fast Trie]] keeps one hash table per trie level to binary-search for a node in $O(\log w)$ expected time.
 
 [^1]: [Morin, p. 101](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 101](zotero://select/library/items/HYS8NDAB)

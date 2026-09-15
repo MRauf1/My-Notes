@@ -31,5 +31,6 @@ As with [[Stack]], the array-based implementation is generally preferred in prac
 # Properties
 - [[Linear Data Structure]]
 - Used to implement [[Breadth-First Search]] traversal, ordering vertices to be visited level-by-level.
+- Contrast with a [[Priority Queue]], whose removal order is governed by priority rather than arrival order.
 
 [^1]: [Morin, p. 38](zotero://select/library/items/HYS8NDAB)

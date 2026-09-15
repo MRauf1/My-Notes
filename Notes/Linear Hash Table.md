@@ -41,7 +41,7 @@ Assuming all hash values are independent and uniformly distributed over $\{0, \d
 From this, the expected running time of `find(x)` for a value $x$ *not* in the table is $O(1)$.[^13] The cost of `add(x)` for a value not yet present is governed by the same analysis; the cost of `find(x)` for a value that *is* present equals the cost of the `add(x)` that originally inserted it; and the cost of `remove(x)` equals the cost of the corresponding `find(x)`.[^14] So, ignoring the cost of `resize()`, every operation runs in $O(1)$ expected time.[^15]
 
 > [!abstract] Theorem 5.2[^16]
-> A LinearHashTable implements the USet interface. Ignoring the cost of calls to `resize()`, a LinearHashTable supports `add(x)`, `remove(x)`, and `find(x)` in $O(1)$ expected time per operation. Furthermore, beginning with an empty LinearHashTable, any sequence of $m$ `add(x)` and `remove(x)` operations results in a total of $O(m)$ time spent during all calls to `resize()`.
+> A LinearHashTable implements the same interface as a [[Hash Table]]. Ignoring the cost of calls to `resize()`, a LinearHashTable supports `add(x)`, `remove(x)`, and `find(x)` in $O(1)$ expected time per operation. Furthermore, beginning with an empty LinearHashTable, any sequence of $m$ `add(x)` and `remove(x)` operations results in a total of $O(m)$ time spent during all calls to `resize()`.
 
 This same $O(1)$-expected bound continues to hold even when the unrealistic full-independence assumption above is relaxed to [[Tabulation Hashing]].[^17]
 

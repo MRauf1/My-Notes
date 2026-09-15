@@ -18,4 +18,10 @@ What can be achieved by one method can be achieved by the others (note the hard/
 
 ![[Pasted image 20250611155435.png]]
 
+![[Needle in Haystack of Hypotheses.png]]
+
+# Properties
+- Visualized as searching for a "needle of truth" within the full space of mappings $\mathcal{X} \to \mathcal{Y}$: the [[Hypothesis Space]] rules out most of this space entirely, the data isolates a region of high likelihood, and the prior isolates a region of high probability a priori; a learning algorithm that maximizes likelihood times prior finds a solution in the overlap of these two regions.
+- [[The Bitter Lesson (Sutton)|Sutton's Bitter Lesson]] can be framed with these same three tools: hand-designed, human priors tend to eventually be outperformed by simply providing more data and more compute to a more general-purpose hypothesis space and learning method. In the terms of this chapter, Sutton is arguing that, historically, the "soft constraint" of a strong human-authored prior has been a worse long-run bet than relaxing that prior and instead scaling the "data" and "hypothesis space" tools, since general methods that hardly rely on hand-crafted priors tend to make better use of additional compute and data than niche methods do.
+
 [^1]: https://visionbook.mit.edu/problem_of_generalization.html
