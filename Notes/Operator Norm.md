@@ -42,6 +42,11 @@ for every $v \in V$ (compare [[Linear Map Norm Continuity]]). Lemma 1 says there
 - [[Rank-1 Matrix Operator Norm]]
 - [[Operator Norm and Frobenius Norm Inequality]]
 - [[Condition Number of a Matrix]]
+- [[Unitary Matrix Norm]]
+- [[Unitarily Invariant Norm]]
+- [[Singular Value]]
+- [[Low-Rank Matrix Approximation Theorem]]
+- [[Adjoint]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=290)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=291)

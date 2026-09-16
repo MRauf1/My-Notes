@@ -14,5 +14,6 @@ The [[Dimension]] of these two [[Vector Space]] must be the same if they are [[F
 # Properties
 - [[Linear Map Invertible Isomorphism Theorem]]
 - [[Basis Linear Map Isomorphism]]
+- [[Isometry (Linear Algebra)]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=98)

@@ -24,6 +24,10 @@ tags:
 # Properties
 - [[Operator Norm and Frobenius Norm Inequality]]
 - [[Rank-1 Matrix Operator Norm]]
+- [[Unitary Matrix Norm]]
+- [[Unitarily Invariant Norm]]
+- [[Singular Value]]
+- [[Low-Rank Matrix Approximation Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=254)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=254)

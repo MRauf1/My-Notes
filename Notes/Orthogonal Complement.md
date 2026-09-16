@@ -18,5 +18,6 @@ tags:
 - $(U^\perp)^\perp = U$ for any subspace $U$ of a finite-dimensional [[Inner Product Space]].
 - $dim(U) + dim(U^\perp) = dim(V)$ for any subspace $U$ of a finite-dimensional [[Inner Product Space]] $V$.
 - [[Orthogonal Decomposition Theorem]]: $V = U \oplus U^\perp$.
+- [[Adjoint Kernel Range Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=272)

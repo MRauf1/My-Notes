@@ -15,6 +15,7 @@ tags:
 # Properties
 - [[Inverse of Linear Map is Linear]]
 - [[Eigenvalue and Eigenvector of Inverse Linear Map]]
+- [[Singular Value]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=99)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=214)

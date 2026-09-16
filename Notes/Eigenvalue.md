@@ -17,5 +17,7 @@ They only exist for [[Square Matrix]].
 - [[Eigenvalue Kernel]]
 - [[Geometric Multiplicity of Eigenvalue]]
 - [[Eigenvalue Bound by Operator Norm]]
+- [[Isometry Eigenvalue Modulus Theorem]]
+- [[Singular Value Decomposition Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=89)

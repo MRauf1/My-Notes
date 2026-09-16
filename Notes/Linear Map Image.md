@@ -15,4 +15,9 @@ tags:
 > [!abstract] Theorem 3 ([[Basis]] [[Span]] Image)
 > Let $T \in \mathcal{L}(V, W)$ where $(v_1, \dots, v_n)$ form a [[Basis]] of $V$. Then the list $(T(v_1), \dots, T(v_n))$ [[Span]] $image(T)$.
 
+The image of $T$ is also called its range, e.g. in [[Adjoint Kernel Range Theorem]].
+
+# Properties
+- [[Adjoint Kernel Range Theorem]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=135)

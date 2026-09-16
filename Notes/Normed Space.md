@@ -25,5 +25,6 @@ It is a type of [[Metric Space]]. You define the distance $d(x, y)$ between two 
 - [[Parallelogram Identity]]
 - [[Strictly Convex Space]]
 - [[Jordan-von Neumann Theorem]]
+- [[Isometry (Linear Algebra)]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=287)

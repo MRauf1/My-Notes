@@ -23,6 +23,7 @@ Since $0$ is the identity element of [[Vector Space]] (since the main [[Operatio
 # Properties
 - [[Linear Map Injective Kernel]]
 - [[Kernel Linear System]]
+- [[Adjoint Kernel Range Theorem]]
 
 ## [[Subgroup]]/[[Vector Subspace]]
 - $ker(\phi)$ is a [[Normal Subgroup]]

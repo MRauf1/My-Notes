@@ -14,4 +14,7 @@ They only exist for [[Square Matrix]].
 
 Non-zero vectors on which $T$ acts by scalar multiplication. Geometrically, $T$ may change the length of the eigenvector, but not its direction (opposite direction is allowed though). Algebraically, the set $\langle v \rangle$ of all scalar multiples of $v$ is invariant under $T$ (if $w \in \langle v \rangle$, then $T(w) \in \langle v \rangle$).
 
+# Properties
+- [[Self-Adjoint Linear Map]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=89)

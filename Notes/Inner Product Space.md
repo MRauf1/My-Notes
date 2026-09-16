@@ -39,6 +39,7 @@ If it is also [[Complete Metric Space]], then it is [[Hilbert Space]]. In partic
 - [[Best Approximation Theorem]]
 - [[Jordan-von Neumann Theorem]]
 - [[Polarization Identity]]
+- [[Isometry (Linear Algebra)]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=246)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=287)

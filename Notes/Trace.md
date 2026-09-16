@@ -18,5 +18,7 @@ It is the sum of the diagonal entries.
 - [[Trace of Matrix Multiplication]]
 - [[Trace of Transpose Matrix Multiplication]]
 - [[Trace Eigenvalue]]
+- [[Adjoint]]
+- [[Self-Adjoint Linear Map]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=228)

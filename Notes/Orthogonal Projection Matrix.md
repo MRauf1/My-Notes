@@ -25,6 +25,7 @@ tags:
 - Theorem 2 implicitly claims that the matrix $A^*A$ is [[Matrix Inverse|invertible]].
 - $A^*$ denotes the [[Matrix Conjugate Transpose]] of $A$.
 - This formula underlies computing the best-fitting solution in [[Simple Linear Regression|least-squares]] problems, per the [[Best Approximation Theorem]].
+- [[Pseudoinverse]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=276)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=277)
