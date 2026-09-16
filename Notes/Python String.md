@@ -14,6 +14,7 @@ tags:
 - A raw string, prefixed with `r`, turns off the backslash escape mechanism, which is useful for regular-expression patterns and Windows file paths[^3].
 - Length is measured in characters (code points), not bytes, and no special character terminates a string the way a null byte does in C — Python tracks the string's length directly[^4].
 - Comes with full Unicode support for processing non-ASCII text[^5].
+- Represents already-decoded text; raw or still-encoded byte data instead uses Python's [[Bytes and Bytearray (Python)|bytes and bytearray]] types.
 
 [^1]: [Learning Python](zotero://open-pdf/library/items/C6PDA59I?page=218&annotation=24KUILZ9)
 [^2]: [Learning Python](zotero://open-pdf/library/items/C6PDA59I?page=111&annotation=UUFKCKQ7)
