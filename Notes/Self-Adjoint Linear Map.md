@@ -26,14 +26,27 @@ This follows from $tr(T^*) = \overline{tr(T)}$ ([[Adjoint]]) together with $T^* 
 
 This vector space is only real, not complex: if $T$ is self-adjoint and nonzero, $iT$ is generally not self-adjoint, since $(iT)^* = \bar{i}T^* = -iT \neq iT$.
 
+> [!abstract] Theorem 6 (Exercise 5.4.19a -- Real Case)[^5]
+> Let $V$ be a finite-dimensional inner product space over $\mathbb{R}$ and $T \in \mathcal{L}(V)$. Then $T$ is self-adjoint if and only if $V$ is the [[Orthogonal Direct Sum]] of the [[Eigenspace|eigenspaces]] of $T$.
+
+> [!abstract] Theorem 7 (Exercise 5.4.19c -- Complex Case)[^5]
+> Let $V$ be a finite-dimensional inner product space over $\mathbb{C}$ and $T \in \mathcal{L}(V)$. Then $T$ is self-adjoint if and only if all eigenvalues of $T$ are real and $V$ is the [[Orthogonal Direct Sum]] of the eigenspaces of $T$.
+
+These are the eigenspace-decomposition forms of the [[Spectral Theorem]].
+
 # Properties
 - [[Adjoint]]
 - [[Eigenvector]]
 - [[Eigenvalue]]
 - [[Trace]]
 - [[Vector Space]]
+- [[Spectral Theorem]]
+- [[Normal Matrix]]
+- [[Eigenspace]]
+- [[Orthogonal Direct Sum]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=334)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=334)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=334)
 [^4]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=339)
+[^5]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=351)

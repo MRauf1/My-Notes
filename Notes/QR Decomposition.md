@@ -22,6 +22,8 @@ Invertibility of $A$ is therefore not needed for a QR decomposition to exist. Wh
 - [[Orthogonal Matrix]]
 - [[Gram-Schmidt Algorithm]]
 - [[LU Decomposition]]
+- [[Schur Decomposition]]
+- [[Cholesky Decomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=303)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=303)

@@ -23,10 +23,16 @@ tags:
 > [!abstract] Theorem 1
 > If $a_{ii} \neq 0$ for each $i$, then the [[Linear System of Equations|linear system]] is consistent.
 
+> [!abstract] Theorem 2 (Closure Under Products and Inverses)[^2]
+> Products of upper triangular matrices are upper triangular, and the inverse of an invertible upper triangular matrix is upper triangular.
+
 # Properties
 - [[Triangular Matrix Invertibility]]
 - [[Triangular Matrix Eigenvalue]]
 - [[Triangular Matrix Algebraically Closed Field Similar Matrix]]
 - [[Triangular Matrix Lemma]]
+- [[Schur Decomposition]]
+
+[^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=347)
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=32)

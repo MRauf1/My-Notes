@@ -18,4 +18,12 @@ tags:
 
 It is the [[Set]] of all [[Eigenvector]] and the zero [[Vector]].
 
+> [!abstract] Theorem 2 (Lemma 5.22 -- Commuting Operators Preserve Eigenspaces)[^2]
+> Suppose $S, T \in \mathcal{L}(V)$ and $ST = TS$. If $\lambda$ is an [[Eigenvalue]] of $T$ and $v \in Eig_{\lambda}(T)$, then $Sv \in Eig_{\lambda}(T)$.
+
+# Properties
+- [[Spectral Theorem]]
+- [[Normal Matrix]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=140)
+[^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=345)

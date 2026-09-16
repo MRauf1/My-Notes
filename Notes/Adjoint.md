@@ -63,6 +63,8 @@ Property 5 of Proposition 5 identifies exactly when an [[Isometry (Linear Algebr
 - [[Adjoint Kernel Range Theorem]]
 - [[Trace]]
 - [[Operator Norm]]
+- [[Normal Matrix]]
+- [[Spectral Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=331)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=332)

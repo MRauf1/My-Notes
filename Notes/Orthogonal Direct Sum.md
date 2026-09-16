@@ -17,5 +17,8 @@ tags:
 - $dim(V) = dim(U_1) + \dots + dim(U_m)$.
 - [[Orthogonal Decomposition Theorem]] is the special case $m = 2$ with $U_1 = U$ and $U_2 = U^\perp$.
 - If $U$ is a subspace of a finite-dimensional [[Inner Product Space]] with $U = U_1 \oplus \dots \oplus U_m$, then $P_U = P_{U_1} + \dots + P_{U_m}$, where $P_U$ denotes the [[Orthogonal Projection]] onto $U$.
+- [[Self-Adjoint Linear Map]]
+- [[Normal Matrix]]
+- [[Spectral Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=274)

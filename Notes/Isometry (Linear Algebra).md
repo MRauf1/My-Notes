@@ -40,6 +40,7 @@ This condition says precisely that $T^{-1} = T^*$, the [[Adjoint]] of $T$.
 - [[Isometry Eigenvalue Modulus Theorem]]
 - [[Singular Value]]
 - [[Adjoint]]
+- [[Normal Matrix]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=296)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=297)

@@ -27,6 +27,8 @@ Combined with Proposition 2, this means [[Isometry (Linear Algebra)|isometries]]
 - [[Unitarily Invariant Norm]]
 - [[Condition Number of a Matrix]]
 - [[Adjoint]]
+- [[Normal Matrix]]
+- [[Spectral Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=301)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=301)

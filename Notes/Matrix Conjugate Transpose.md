@@ -20,5 +20,8 @@ tags:
 - [[Matrix Inverse of Matrix Transpose]]
 - [[Adjoint]]
 - [[Self-Adjoint Linear Map]]
+- [[Positive Definite Matrix]]
+- [[Positive Semidefinite Matrix]]
+- [[Cholesky Decomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=117)

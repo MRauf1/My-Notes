@@ -16,5 +16,9 @@ The above theorem implies that a diagonal matrix always has $n$ [[Linearly Indep
 
 Though they look different, the above 2 definitions are actually the same.
 
+# Properties
+- [[Spectral Theorem]]
+- [[Function of a Matrix]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=88)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=212)
