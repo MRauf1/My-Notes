@@ -17,6 +17,7 @@ tags:
 Can be thought of as [[Magnitude]].
 
 # Properties
+- $|z| \geq 0$, with $|z| = 0$ if and only if $z = 0$[^1]
 - $|Re(z)| = |x| \leq |z|$
 - $|Im(z)| = |y| \leq |z|$
 - $|\overline{z}| = |z|$
@@ -24,3 +25,6 @@ Can be thought of as [[Magnitude]].
 - $|z_1 z_2| = |z_1| |z_2|$
 - $|\frac{z_1}{z_2}| = \frac{|z_1|}{|z_2|}$
 - $|z^n| = |z|^n$
+- [[Triangle Inequality]]: $|z_1 + z_2| \leq |z_1| + |z_2|$
+
+[^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=23)

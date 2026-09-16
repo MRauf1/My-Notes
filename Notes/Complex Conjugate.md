@@ -28,5 +28,7 @@ For a complex numbers $z, w$
 - $\overline{z} \overline{w} = \overline{zw}$
 - $(\overline{z})^n = \overline{z^n}$, for $n \in \mathbb{N}$
 - $z \in \mathbb{R} \iff \overline{z} = z$
+- $z \overline{z}$ is real and non-negative, and $z \overline{z} = 0 \iff z = 0$[^2]
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=300)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=23)
