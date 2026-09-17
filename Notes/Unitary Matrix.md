@@ -20,6 +20,9 @@ So $A$ is unitary (or [[Orthogonal Matrix|orthogonal]], in the real case) exactl
 
 Combined with Proposition 2, this means [[Isometry (Linear Algebra)|isometries]] between [[Inner Product Space]]s are represented, with respect to orthonormal bases, by unitary matrices in the complex case and by [[Orthogonal Matrix|orthogonal matrices]] in the real case. This is one of the reasons inner product spaces are especially convenient to work with: the inverse of the corresponding structure-preserving map is trivial to compute, since if $A$ is unitary then $A^{-1} = A^*$ ([[Matrix Conjugate Transpose]]).[^4]
 
+> [!abstract] Theorem 4 (Exercise 6.2.3a)[^5]
+> If $U \in M_n(\mathbb{C})$ is unitary, then $|\det(U)| = 1$.
+
 # Properties
 - [[Orthogonal Matrix]]
 - [[Isometry (Linear Algebra)]]
@@ -29,8 +32,10 @@ Combined with Proposition 2, this means [[Isometry (Linear Algebra)|isometries]]
 - [[Adjoint]]
 - [[Normal Matrix]]
 - [[Spectral Theorem]]
+- [[Determinant]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=301)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=301)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=300)
 [^4]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=301)
+[^5]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=375)

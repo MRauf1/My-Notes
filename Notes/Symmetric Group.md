@@ -10,4 +10,7 @@ tags:
 
 Symmetric Group is also known as the [[Permutation Group]].
 
+# Properties
+- [[Permutation Matrix]]
+
 [^1]: [Algebra - Abstract and Concrete](zotero://open-pdf/library/items/IQ3GJ7PV?page=28)

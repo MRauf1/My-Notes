@@ -22,5 +22,8 @@ They only exist for [[Square Matrix]].
 - [[Spectral Theorem]]
 - [[Positive Definite Matrix]]
 - [[Positive Semidefinite Matrix]]
+- [[Eigendecomposition]]
+- [[Characteristic Polynomial]]
+- [[Algebraic Multiplicity of Eigenvalue]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=89)

@@ -16,5 +16,6 @@ Non-zero vectors on which $T$ acts by scalar multiplication. Geometrically, $T$ 
 
 # Properties
 - [[Self-Adjoint Linear Map]]
+- [[Eigendecomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=89)

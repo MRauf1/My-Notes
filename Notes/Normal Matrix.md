@@ -32,6 +32,7 @@ Combined with the [[Spectral Theorem]], normality is exactly the necessary and s
 - [[Spectral Theorem]]
 - [[Eigenspace]]
 - [[Orthogonal Direct Sum]]
+- [[Eigendecomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=345)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=345)

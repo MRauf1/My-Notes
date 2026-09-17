@@ -34,6 +34,9 @@ This vector space is only real, not complex: if $T$ is self-adjoint and nonzero,
 
 These are the eigenspace-decomposition forms of the [[Spectral Theorem]].
 
+> [!abstract] Theorem 8 (Exercise 6.1.11)[^6]
+> If $A \in M_n(\mathbb{C})$ is Hermitian, then $\det(A) \in \mathbb{R}$.
+
 # Properties
 - [[Adjoint]]
 - [[Eigenvector]]
@@ -44,9 +47,12 @@ These are the eigenspace-decomposition forms of the [[Spectral Theorem]].
 - [[Normal Matrix]]
 - [[Eigenspace]]
 - [[Orthogonal Direct Sum]]
+- [[Determinant]]
+- [[Eigendecomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=334)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=334)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=334)
 [^4]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=339)
 [^5]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=351)
+[^6]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=365)

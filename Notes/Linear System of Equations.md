@@ -54,6 +54,9 @@ An $m \times n$ linear system is overdetermined if $m > n$.[^5] It has more equa
 > [!abstract] Corollary 3
 > It is impossible for an underdetermined linear system to have a unique solution.[^5]
 
+# Properties
+- [[Cramer's Rule]]
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=22)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=27)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=38)

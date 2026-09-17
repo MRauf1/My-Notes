@@ -24,5 +24,6 @@ This is the standard 2-[[p-Norm]] on $\mathbf{F}^n$; it is the $\mathbf{F}^n$ sp
 # Properties
 - [[Vector Norm Basic Properties]]
 - [[Norm Equivalence Inequalities (Finite-Dimensional)]]
+- [[Hadamard's Inequality]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=49)

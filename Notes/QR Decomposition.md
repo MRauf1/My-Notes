@@ -17,6 +17,9 @@ The QR decomposition is useful for solving linear systems: given $Ax = b$ with $
 
 Invertibility of $A$ is therefore not needed for a QR decomposition to exist. What Theorem 1 does implicitly rely on is that $A$ is square: $Q$ and $R$ are both taken in $M_n(\mathbb{F})$, matching the shape of $A$. Squareness itself is not essential to the underlying Gram-Schmidt argument, however: for any $A \in M_{m,n}(\mathbb{F})$ with $m \geq n$ (at least as many rows as columns, so that $n$ orthonormal vectors can exist in $\mathbb{F}^m$), the same argument produces $Q \in M_{m,n}(\mathbb{F})$ with orthonormal columns and upper triangular $R \in M_n(\mathbb{F})$ with $A = QR$ — the columns of $A$ need not even be linearly independent, by the same fix used for singular square $A$. This more general rectangular form is often called the reduced (or thin) QR decomposition.
 
+> [!abstract] Theorem 3 (Exercise 6.2.6 -- Determinant)[^4]
+> If $A = QR$ is a QR decomposition of $A \in M_n(\mathbb{C})$, then $|\det(A)| = |r_{11} \cdots r_{nn}|$.
+
 # Properties
 - [[Unitary Matrix]]
 - [[Orthogonal Matrix]]
@@ -24,7 +27,9 @@ Invertibility of $A$ is therefore not needed for a QR decomposition to exist. Wh
 - [[LU Decomposition]]
 - [[Schur Decomposition]]
 - [[Cholesky Decomposition]]
+- [[Determinant]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=303)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=303)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=307)
+[^4]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=375)

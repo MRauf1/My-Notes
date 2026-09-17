@@ -140,4 +140,8 @@ A true relationship is a need-free relationship where you relate to the other be
 
 Being unloved is not the problem when it comes to existential isolation. Not being to love is the issue.
 
+Young adults from loving families tend to confront the isolation much better compared to those who come from abused families. The latter tend to cling on to their family for shelter.
+
+What follows successfully confronting existential isolation is personal growth.
+
 [^1]: [Existential Psychotherapy](zotero://open-pdf/library/items/9AN2W49G?page=1)

@@ -31,6 +31,7 @@ Permutations can be written in [[Cycle Notation|cycle notation]].
 ## Representations
 - Every permutation of a finite set can be written uniquely as a product of [[Disjoint Cycles|disjoint cycles]][^1]
 - Every permutation of a finite set can be written as a product of [[Transposition|transpositions]]
+- [[Permutation Matrix]]: a permutation of $\{1, \dots, n\}$ can be represented as an $n \times n$ matrix
 
 ## [[Algebraic Structures]]
 - [[Permutation Group]]

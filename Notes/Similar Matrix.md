@@ -22,5 +22,8 @@ The [[Matrix]] $A, B$ represent the same [[Linear Map]], but with respect to two
 - [[Similar Matrix Trace]]
 - [[Similar Matrix Geometric Multiplicity of Eigenvalue]]
 - [[Similar Matrix Matrix Transpose]]
+- [[Similar Matrix Determinant]]
+- [[Eigendecomposition]]
+- [[Similar Matrix Characteristic Polynomial]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=223)

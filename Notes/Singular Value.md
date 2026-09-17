@@ -8,6 +8,8 @@ tags:
 > [!info] Definition 1 (Singular Value)[^1]
 > Let $V$ and $W$ be [[Finite-Dimensional Vector Space|finite-dimensional]] [[Inner Product Space]]s and let $T \in \mathcal{L}(V, W)$. The singular values of $T$ are the numbers $\sigma_1 \geq \dots \geq \sigma_p \geq 0$, where $p = \min\{m, n\}$: $\sigma_1, \dots, \sigma_r$ are as given by the [[Singular Value Decomposition Theorem]], and $\sigma_j = 0$ for $r+1 \leq j \leq p$.
 
+Singular values are always [[Real Number]] and non-negative.
+
 > [!info] Definition 2 (Singular Value of a Matrix)[^7]
 > Let $A \in M_{m,n}(\mathbb{C})$ with $A = U \Sigma V^*$ as in the matrix form of the [[Singular Value Decomposition Theorem]], and $p = \min\{m,n\}$. The singular values of $A$ are the diagonal entries $\sigma_j$ of $\Sigma$ for $1 \leq j \leq r$, together with $\sigma_j := 0$ for $r+1 \leq j \leq p$. The columns of $U$ are the left singular vectors of $A$, and the columns of $V$ are the right singular vectors of $A$.
 
@@ -29,6 +31,9 @@ Together with $\lVert A \rVert_{op} = \sigma_1$ (the length of the longest semi-
 
 > [!abstract] Theorem 11 (Exercise 5.2.8)[^11]
 > If $A = \text{diag}(\lambda_1, \dots, \lambda_n)$, then the singular values of $A$ are $|\lambda_1|, \dots, |\lambda_n|$ (though not necessarily in that order).
+
+> [!abstract] Theorem 12 (Exercise 6.2.3b)[^12]
+> If $\sigma_1, \dots, \sigma_n$ are the singular values of $A \in M_n(\mathbb{C})$, then $|\det(A)| = \sigma_1 \cdots \sigma_n$.
 
 > [!abstract] Theorem 2 (Largest Singular Value is the Operator Norm)[^2]
 > The largest singular value of $T$ equals its [[Operator Norm]]: $\sigma_1 = \lVert T \rVert_{op}$.
@@ -65,6 +70,7 @@ For example, for the identity map $I: V \to V$, every [[Orthonormal Basis]] $(e_
 - [[Rank Matrix Transpose]]
 - [[Condition Number of a Matrix]]
 - [[Pseudoinverse]]
+- [[Determinant]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=315)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=311)
@@ -77,3 +83,4 @@ For example, for the identity map $I: V \to V$, every [[Orthonormal Basis]] $(e_
 [^9]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=322)
 [^10]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=323)
 [^11]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=329)
+[^12]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=375)

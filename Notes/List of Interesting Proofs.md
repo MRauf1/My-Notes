@@ -13,6 +13,7 @@ tags:
 4) [[Cantor-Schroder-Bernstein Theorem]][^4]
 5) [[Rank-Nullity Theorem]][^5]
 6) [[Singular Value Decomposition Theorem]][^6]
+7) Existence and Uniqueness of [[Determinant]][^7]
 
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=170)
 [^2]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=309)
@@ -20,3 +21,4 @@ tags:
 [^4]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=336)
 [^5]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=195)
 [^6]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=311)
+[^7]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=339)

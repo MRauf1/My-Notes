@@ -11,10 +11,19 @@ tags:
 
 > [!abstract] Theorem 2 (Alternative)
 > [[Matrix]] $A \in M_n(\mathbb{F})$ is diagonalizable if and only if there is a [[Basis]] $(v_1, \dots, v_n)$ of $\mathbb{F}^n$ such that for each $i = 1, \dots, n$, $v_i$ is an [[Eigenvector]] of $A$.
-> In that case, $A = S \begin{bmatrix}\lambda_1 & & 0 \\ & \ddots & \\ 0 & & \lambda_n \end{bmatrix} S^{-1}$ where $Av_i = \lambda_i v_i$ and $S = \begin{bmatrix}\mid & & \mid \\ v_1 & \dots & v_n \\ \mid & & \mid \end{bmatrix}$ ($S$ is the [[Eigenvector Matrix]] and the middle [[Matrix]] is the [[Matrix]] of [[Eigenvalue]] ([[Diagonal Matrix]])).
+
+The constructive form of Theorem 2 — writing out $A$ in terms of its eigenvector and eigenvalue matrices — is the [[Eigendecomposition]] of $A$.
+
+# Types
+- [[Diagonal Matrix]] (trivially diagonalizable, since $D = I \cdot D \cdot I^{-1}$)
+- [[Self-Adjoint Linear Map|Hermitian Matrix]] / [[Self-Adjoint Linear Map|Symmetric Matrix]] (orthonormally diagonalizable, per the [[Spectral Theorem]])
+- [[Normal Matrix]] (unitarily diagonalizable, per the [[Spectral Theorem]])
+- [[Unitary Matrix]]
+- [[Orthogonal Matrix]]
 
 # Properties
 - [[Diagonalizable Matrix Linear Map]]
 - [[Spectral Theorem]]
+- [[Eigendecomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=224)

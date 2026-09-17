@@ -5,6 +5,8 @@ tags:
 ---
 
 # Definition
+In short, the Spectral Theorem is just the [[Eigendecomposition]] applied to a [[Normal Matrix|normal]]/[[Self-Adjoint Linear Map|Hermitian/symmetric]] matrix: it guarantees that for exactly these matrices, the eigenvector matrix $S$ in $A = SDS^{-1}$ can be chosen unitary (or orthogonal), i.e. $S^{-1} = S^*$, turning an ordinary eigendecomposition into a spectral decomposition.
+
 > [!abstract] Lemma 1 (Lemma 5.18)[^1]
 > If $A \in M_n(\mathbb{F})$ is Hermitian, then $A$ has an [[Eigenvector]] in $\mathbb{F}^n$. If $V$ is a nonzero finite-dimensional [[Inner Product Space]] and $T \in \mathcal{L}(V)$ is [[Self-Adjoint Linear Map|self-adjoint]], then $T$ has an eigenvector.
 
@@ -37,6 +39,7 @@ The eigenvalues $\lambda_j$ and $\mu_j$ can still differ between $A$ and $B$ —
 - [[Orthogonal Direct Sum]]
 - [[Function of a Matrix]]
 - [[Schur Decomposition]]
+- [[Eigendecomposition]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=341)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=341)
