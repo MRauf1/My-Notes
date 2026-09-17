@@ -15,6 +15,7 @@ tags:
 - Distinguishes a law's invariance under a static change of orientation from invariance under continuous rotation: sufficiently delicate experiments can detect that the earth is rotating (i.e. that its orientation is changing), even though no experiment can detect the earth's absolute orientation at a given instant.
 - Newton's laws, and — so far as is known today — every fundamental physical law (the Standard Model and general relativity included) possesses both translational and rotational symmetry; this is not merely a historical Newtonian assumption but a feature confirmed to hold, to very high precision, of all currently known physics.
 - By [[Noether's Theorem]], translational symmetry of the laws implies [[Conservation of Momentum]], and rotational symmetry implies conservation of angular momentum.
-- A companion symmetry, invariance under a constant *change of velocity* (rather than of position or orientation) of the coordinate frame, is [[Galilean Relativity]].
+- A companion symmetry, invariance under a constant *change of velocity* (rather than of position or orientation) of the coordinate frame, is [[Galilean Relativity]]; the discovery that this symmetry instead requires the [[Lorentz Transformation]], not the naive Galilean one, to keep electrodynamics (and, per [[Special Relativity]], all physical law) unchanged is the same kind of search for form-preserving transformations, extended from ordinary rotations to a "rotation" mixing space and time.[^2]
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 11: Vectors](https://www.feynmanlectures.caltech.edu/I_11.html)
+[^2]: [The Feynman Lectures on Physics, Vol. I, Ch. 16: Relativistic Energy and Momentum](https://www.feynmanlectures.caltech.edu/I_16.html)
