@@ -19,5 +19,6 @@ tags:
 - Discretizing the incoming light into a finite set of rays is what allows the imaging process to be described with linear algebra.
 - Generalizes the [[Pinhole Camera]] and [[Lens|lens-based]] camera models, the special cases where $\mathbf{A}$ is approximately the identity matrix, to arbitrary [[Computational Camera|computational cameras]].
 - Recovering the scene $\ell_w$ from sensor measurements $\ell_s$ is an [[Inverse Problem]], addressed by [[Regularized Image Reconstruction]] when $\mathbf{A}$ is not directly invertible.
+- Also models biological imaging systems such as the eye's [[Retinal Image Formation|optics]], which are approximately [[Shift-Invariant System|shift-invariant]] near the [[Fovea]].
 
 [^1]: [MIT Vision Book - The Camera as a Linear System](https://visionbook.mit.edu/camera_as_linsys.html)

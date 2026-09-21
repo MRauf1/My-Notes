@@ -21,5 +21,6 @@ tags:
 
 # Properties
 - [[Vision Eye Pathway]]
+- [[Retinal Image Formation]]
 
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=165)

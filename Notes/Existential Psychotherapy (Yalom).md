@@ -144,4 +144,12 @@ Young adults from loving families tend to confront the isolation much better com
 
 What follows successfully confronting existential isolation is personal growth.
 
+There is a difference between cosmic meaning (what is the meaning of life?) and terrestrial meaning (what is the meaning of my life?).
+
+Such existential questions, especially that of meaning, tend to arise more often in the presence of free time, which is one of the reasons that previous generations didn't feel as terrified as the current generations. This alongside the existence of religion, people being closer to nature, people's work allowing creativity and thus meaning to exist, while most workers feel like cogs in the machine and with no creative output available.
+
+As the Eastern philosophies say, one does not even necessarily need a meaning of life. One should just enjoy the river of life for what it is without bothering about such questions to begin with.
+
+Engagement is an effective way to momentarily escape from meaninglessness, but also as a way to slowly build up a repertoire of things that do matter to you.
+
 [^1]: [Existential Psychotherapy](zotero://open-pdf/library/items/9AN2W49G?page=1)
