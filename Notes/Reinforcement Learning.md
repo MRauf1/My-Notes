@@ -17,5 +17,8 @@ tags:
 - [[Temporal Credit Assignment Problem|Temporal Credit Assignment Problem]]
 - Exploitation vs. Exploration Tradeoff
 
+# Properties
+- Interactions between agent and environment are often formalized as a [[Markov Decision Process]], in which the agent follows a [[Policy]] to maximize its expected [[Discounted Return]].
+
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=25)
 [^2]: [MIT Vision Book - Introduction to Learning](https://visionbook.mit.edu/intro_to_learning.html)
