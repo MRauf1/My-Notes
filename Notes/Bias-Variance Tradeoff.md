@@ -20,4 +20,6 @@ In general, more flexible models have high [[Variance]] and low [[Bias]].
 
 This additive decomposition is specific to squared-error loss; other loss functions (e.g. 0-1 loss) do not admit the same clean additive bias/variance split.
 
+The general [[Bias-Variance-MSE Decomposition of an Estimator]] drops the irreducible-error term $\mathrm{Var}[\epsilon]$ and applies to any estimator of a fixed, deterministic quantity rather than only to a fitted predictive model.
+
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=42)

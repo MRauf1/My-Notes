@@ -19,5 +19,6 @@ tags:
 - Some APIs and file formats instead index rows top-to-bottom, so that $(0,0)$ is at the top left, for historical reasons tracing to analog television transmission.
 - Some systems instead shift coordinates by half a pixel, placing sample points halfway between integers and the image edges at integers.
 - The convention for indexing and bounding a [[Raster Image]].
+- The target rectangle of the [[Viewport Transformation]], which maps the canonical view volume into these pixel coordinates.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=68&annotation=6QKT4SFD)

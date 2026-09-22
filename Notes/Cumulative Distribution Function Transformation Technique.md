@@ -15,4 +15,7 @@ tags:
 > $$
 > where $\frac{dx}{dy} = \frac{d[g^{-1}(y)]}{dy}$ (also called the [[Jacobian Matrix|Jacobian]] of the transformation) and $S_Y$ is the support of $Y$. 
 
+# Properties
+- [[Inverse Transform Sampling]] is the special case where $g = F$ (the target CDF itself) and $X \sim \mathcal{U}[0,1]$.
+
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=71)

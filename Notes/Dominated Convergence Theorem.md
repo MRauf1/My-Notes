@@ -14,4 +14,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Its hypothesis, applied to a difference quotient, is what licenses the [[Interchange of Differentiation and Expectation]].
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=297)

@@ -17,5 +17,6 @@ Change of basis translates [[Coordinates]] within the exact same [[Vector Space]
 - [[Change of Basis Matrix to Standard Basis]]
 - [[Change of Basis Matrix Inverse]]
 - [[Change of Basis Matrix with Linear Map]]
+- [[Coordinate Frame]] extends this idea to affine (origin-including) coordinate systems in computer graphics.
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=219)

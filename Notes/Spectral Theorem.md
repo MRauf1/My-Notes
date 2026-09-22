@@ -41,6 +41,12 @@ The eigenvalues $\lambda_j$ and $\mu_j$ can still differ between $A$ and $B$ —
 - [[Schur Decomposition]]
 - [[Eigendecomposition]]
 
+# Geometric Interpretation (Computer Graphics)[^5]
+- Writing the real spectral decomposition as $A = RSR^T$ with $R$ orthogonal (columns $\mathbf{v}_1, \mathbf{v}_2, \dots$, the eigenvectors) and $S$ diagonal (entries $\lambda_1, \lambda_2, \dots$, the eigenvalues), the map $\mathbf{x} \mapsto A\mathbf{x}$ decomposes geometrically into: (1) rotate $\mathbf{v}_1, \mathbf{v}_2, \dots$ onto the coordinate axes (the transform by $R^T$), (2) scale along each axis by the corresponding eigenvalue (the transform by $S$), (3) rotate the axes back to $\mathbf{v}_1, \mathbf{v}_2, \dots$ (the transform by $R$).
+- Consequently, every symmetric matrix is geometrically just a [[Scale Transformation|scale]] along some (possibly non-uniform, non–axis-aligned) set of orthogonal directions — its eigenvectors.
+
+[^5]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=135&annotation=LEDLVFTS)
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=341)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=341)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=346)

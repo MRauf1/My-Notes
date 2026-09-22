@@ -47,6 +47,13 @@ This alternate form shows that a rank-$r$ matrix in $M_{m,n}(\mathbb{F})$, which
 - [[Pseudoinverse]]
 - [[Adjoint]]
 
+# Geometric Interpretation (Computer Graphics)[^7]
+- Every matrix $A = U\Sigma V^*$ decomposes geometrically as a rotation ($V^*$) followed by a scale along the axes ($\Sigma$) followed by another rotation ($U$) — analogous to the rotation-scale-inverse-rotation geometric picture of the [[Spectral Theorem|spectral/eigenvalue decomposition]] of a symmetric matrix, but with two different orthogonal matrices instead of one and its inverse.
+- Because $U$ and $V$ need not be rotations (an [[Orthogonal Matrix]] can also encode a reflection), the SVD does not require negative singular values: the sign of a singular value can always be flipped along with the direction of its associated singular vector without changing the decomposed transformation, which is why singular values are conventionally taken non-negative.
+- Whether an orthogonal matrix is a rotation or a reflection is read off from its determinant ($+1$ for a rotation, $-1$ for a reflection). If $U$ or $V$ is a reflection but pure rotations are desired, negating one singular value converts that reflection into a rotation, rolling the sign into the (otherwise unsigned) scale factor rather than into a rotation matrix.
+
+[^7]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=136&annotation=KGZBHLZU)
+
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=309)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=309)
 [^3]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=310)

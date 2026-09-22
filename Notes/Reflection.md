@@ -25,5 +25,17 @@ Reflection about the origin is a distinct transformation from reflection about t
 > - $-f(x)$ reflects the [[Graph|graph]] of $f(x)$ across the $x$-[[Axis|axis]]
 > - $f(-x)$ reflects the graph of $f(x)$ across the $y$-axis[^2]
 
+# Matrix Form
+> [!info] Definition 2 (Reflection as a [[Scale Transformation]])[^3]
+> Reflecting a vector across a coordinate axis is a [[Scale Transformation|scale]] with one negative scale factor:
+> $$
+> \begin{align}
+> \text{reflect-x} = \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}, \qquad \text{reflect-y} = \begin{bmatrix} -1 & 0 \\ 0 & 1 \end{bmatrix}
+> \end{align}
+> $$
+
+A general linear map is a reflection (rather than a rotation) exactly when it is an [[Orthogonal Matrix]] with $\det = -1$.
+
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=22)
 [^2]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=138)
+[^3]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=129&annotation=D9ZWGBPI)

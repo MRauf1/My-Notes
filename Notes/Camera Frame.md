@@ -14,5 +14,6 @@ tags:
 - Constructed from the viewpoint $\mathbf{e}$, the view direction ($-\mathbf{w}$), and an up vector, using the [[Gram-Schmidt Algorithm|Gram-Schmidt-like]] process for building an orthonormal basis from two vectors; since $\mathbf{v}$ and $\mathbf{w}$ must be perpendicular, the up vector and $\mathbf{v}$ are generally not the same, but an up vector pointing straight upward in the scene orients the camera "upright."
 - Used by [[Ray Generation]] to compute each pixel's viewing ray for both orthographic and perspective views.
 - The image is positioned relative to $\mathbf{e}$ using the plane spanned by $\mathbf{u}$ and $\mathbf{v}$, bounded by left/right/bottom/top extents measured along $\mathbf{u}$ and $\mathbf{v}$.
+- A specific instance of a general [[Coordinate Frame]], with the viewpoint $\mathbf{e}$ as origin.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=89&annotation=PUQPY4AM)

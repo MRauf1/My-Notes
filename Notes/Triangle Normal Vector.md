@@ -22,6 +22,10 @@ $$
 $$
 This area is not signed, so it cannot be used directly to evaluate [[Barycentric Coordinates]]. However, a triangle with a clockwise vertex order has a normal vector pointing in the opposite direction to that of a triangle in the same plane with a counterclockwise vertex order, so orientation is still recoverable from the direction of $\mathbf{n}$.[^3]
 
+If the triangle is transformed by a matrix $M$, this normal vector should not be transformed by $M$ directly; see [[Normal Vector Transformation]].
+
+An outward-facing normal that points away from the camera identifies a primitive facing away from the viewer, which is the basis of [[Backface Culling]].
+
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=63&annotation=TG4WP2JU)
 [^2]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=63&annotation=W4JTGXBT)
 [^3]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=63&annotation=ME5E3LN3)

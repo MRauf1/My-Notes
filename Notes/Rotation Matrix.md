@@ -36,3 +36,11 @@ Let $u$ be a unit vector
 - $R_{\alpha, u} R_{\beta, v} = $ a rotation matrix
 - $R_{\alpha, u} R_{\beta, u} = R_{\alpha + \beta, u}$
 - For a [[Unit Vector|unit vector]] $u$, [[Orthogonal Matrix|orthogonal matrix]] $P$, $\theta \in \mathbb{R}$, $R_{\theta} P u = P R_{\theta} u P^{-1}$ ([[Change of Basis|Change of Basis]])
+
+# Computer Graphics[^1]
+- Rotation matrices are [[Orthogonal Matrix|orthogonal matrices]]: in 2D, the norm of each row of $R_\theta$ is $1$ (since $\sin^2\varphi + \cos^2\varphi = 1$) and the rows are orthogonal to each other. The two columns are the images of the canonical basis vectors under the transformation, and the two rows are the vectors the transformation sends to the canonical basis vectors.
+- In 3D, rotation about a single coordinate axis reduces to the 2D rotation matrix acting on the other two coordinates, giving $\text{rotate-x}(\varphi)$, $\text{rotate-y}(\varphi)$, $\text{rotate-z}(\varphi)$; more generally, since rotation matrices are orthogonal, any [[Orthonormal Basis|orthonormal basis]] can be used to build a rotation matrix, and rotation about an arbitrary unit axis $\mathbf{a}$ is achieved by rotating an orthonormal basis with $\mathbf{w} = \mathbf{a}$ to the canonical basis, rotating about the canonical $z$-axis, then rotating back.
+- Given a 3D rotation matrix, its axis-angle form can be recovered from its one real eigenvalue $\lambda = 1$: the corresponding eigenvector is the axis of rotation, since it is the one direction left unchanged by the rotation.
+- A 2D rotation can also be decomposed into a product of three [[Shear Transformation|shear matrices]] (Paeth, 1990), which is useful for raster image rotation because shearing is an efficient, gap-free raster operation.
+
+[^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=129&annotation=STIT2BAS)

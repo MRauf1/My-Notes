@@ -27,6 +27,7 @@ Integral measures the [[Area of Region Under Curve]]. [[Double Riemann Integral]
 # Properties
 - [[Fundamental Theorem of Calculus]]
 - [[Change of Variables]]
+- A special case of the [[Lebesgue Integral (Measure Theory)|Lebesgue integral]]: 1D Riemann integrals are Lebesgue integrals with respect to the [[Borel Measure]], and nested Riemann integrals are Lebesgue integrals with respect to the [[Lebesgue Measure]].
 
 ## Integrability
 - [[Riemann Integrable Theorem]]

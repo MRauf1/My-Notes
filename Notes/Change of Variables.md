@@ -25,4 +25,7 @@ tags:
 
 This allows to relate a product of one set of [[Differential]] with a set of other set of [[Differential]]. 
 
+# Properties
+- For probability densities, the 1D version of this rule is the [[Density with Respect to a Measure|change-of-variables formula]] relating the density of $Y = g(X)$ to that of $X$ through the Jacobian of $g^{-1}$.
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=1088)

@@ -17,5 +17,7 @@ tags:
 - All perspective viewing rays share the same origin (the viewpoint) but have different directions, unlike [[Parallel Projection]].
 - The [[Camera Frame]] and [[Focal Length]] (image plane distance) together determine the viewing rays of a perspective view.
 - The [[Perspective Projection Equations]] give the analogous quantitative projection for a [[Pinhole Camera]], relating world and camera-plane coordinates directly by similar triangles.
+- The key quantitative property is that projected size scales as $1/z$: for an eye at the origin looking down $-z$, a point at distance $y$ along the image-plane axis, at depth $z$, projects to $y_s = (d/z)\,y$ on a plane at distance $d$.[^2] This underlies the [[Perspective Projection Matrix]] used within the [[Viewing Transformation]] pipeline.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=84&annotation=4U5WR7CJ)
+[^2]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=161&annotation=KCQMUZQG)
