@@ -12,9 +12,12 @@ tags:
 > $$
 > for each $i = 1, \dots, n$.
 
+Cramer's rule should be avoided for solving linear systems in practice. It is astronomically expensive for full matrices of nontrivial size and is useful mostly as a theoretical tool; use [[LU Decomposition]] instead.[^2]
+
 # Properties
 - [[Determinant]]
 - [[Linear System of Equations]]
 - [[Determinant Invertible Matrix Theorem]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=390)
+[^2]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=99)

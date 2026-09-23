@@ -37,6 +37,7 @@ for every $v \in V$ (compare [[Linear Map Norm Continuity]]). Lemma 1 says there
 > $$
 
 # Properties
+- [[Induced Matrix Norm]] (generalization to any vector norm)
 - [[Frobenius Norm]]
 - [[Eigenvalue Bound by Operator Norm]]
 - [[Rank-1 Matrix Operator Norm]]

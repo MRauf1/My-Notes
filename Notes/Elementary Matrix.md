@@ -15,6 +15,9 @@ tags:
 > - $\det(P_{c,i,j}) = 1$
 > - $\det(R_{i,j}) = -1$
 
+# Types
+- [[Elementary Elimination Matrix]] (Gauss transformation: several R1 operations sharing one pivot row)
+
 # Properties
 - [[Determinant Computation Algorithm]]
 

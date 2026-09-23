@@ -18,6 +18,7 @@ Every [[Matrix]] has an LUP Decomposition.
 > $$
 
 # Properties
+- [[Partial Pivoting]] (computes $PA = LU$ in numerical practice)
 - [[Permutation Matrix]]
 - [[Determinant]]
 

@@ -15,5 +15,7 @@ A weaker notion of stability, useful in some contexts, only requires that the al
 
 # Properties
 - A stable algorithm applied to a well-conditioned problem yields an [[Accuracy|accurate]] solution.
+- For linear systems, a stable algorithm always yields a small relative [[Residual of Linear System|residual]], regardless of conditioning.[^2]
 
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=37)
+[^2]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=83)
