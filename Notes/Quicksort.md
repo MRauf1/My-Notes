@@ -36,6 +36,8 @@ Quicksort is an in-place algorithm and a close second to [[Merge Sort]] in numbe
 - [[Comparison-Based Sorting Algorithm]]
 - [[Random Binary Search Tree]]
 - [[Harmonic Number]]
+- [[Divide and Conquer]]
+- [[Quickselect]]
 
 [^1]: [Morin, p. 222](zotero://select/library/items/HYS8NDAB)
 [^2]: [Morin, p. 223](zotero://select/library/items/HYS8NDAB)

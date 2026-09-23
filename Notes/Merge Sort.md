@@ -25,6 +25,7 @@ Unlike [[Quicksort]] and [[Heapsort]], merge sort needs an auxiliary array of si
 
 # Properties
 - [[Comparison-Based Sorting Algorithm]]
+- [[Divide and Conquer]]
 - [[Stable Sorting Algorithm]]
 
 [^1]: [Morin, p. 218](zotero://select/library/items/HYS8NDAB)

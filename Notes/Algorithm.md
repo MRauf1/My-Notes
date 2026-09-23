@@ -12,6 +12,11 @@ A set of steps that completes a task by transforming some input into some output
 - [[Sorting Algorithm]]
 - [[Online Algorithm]]
 
+## Design Techniques
+- [[Reduction]]
+- [[Recursion]]
+- [[Divide and Conquer]]
+
 ## Search Algorithms
 - [[Linear Search]]
 - [[Binary Search]]
