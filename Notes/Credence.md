@@ -12,5 +12,6 @@ tags:
 - Unlike a binary view on which an agent either believes a proposition or does not, credences admit intermediate values between full belief and full disbelief, much like a dimmer switch rather than a light switch.
 - Grounds [[Epistemic Possibility]]: a proposition is possible for an agent exactly when their credence in it is greater than $0$.
 - Has a coarse-grained, all-or-nothing counterpart in [[Acceptance]].
+- [[Probabilism]] is the [[Epistemic Rationality|rationality constraint]] requiring credences to be probabilities.
 
 [^1]: [A Critical Introduction to Formal Epistemology](zotero://open-pdf/library/items/9XYCZDPF?page=10)

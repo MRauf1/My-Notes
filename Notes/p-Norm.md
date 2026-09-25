@@ -27,6 +27,8 @@ The norm of a vector is the factor by which the corresponding unit sphere $\{x :
 - $\lVert x \rVert_1 \geq \lVert x \rVert_2 \geq \lVert x \rVert_\infty$ for any $x \in \mathbb{R}^n$.[^3]
 - All $p$-norms on $\mathbb{R}^n$ are equivalent (they differ by at most a constant depending on $n$): [[Norm Equivalence Inequalities (Finite-Dimensional)]]
 - [[Induced Matrix Norm]]
+- The [[Dual Norm]] of $\lVert \cdot \rVert_p$ is $\lVert \cdot \rVert_q$ with $\frac{1}{p} + \frac{1}{q} = 1$: [[Hölder's Inequality]]
+- Only $p = 2$ comes from an [[Inner Product]] (the others violate the [[Parallelogram Identity]]), so the [[Cauchy-Schwarz Inequality]] only holds for $p = 2$.
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=287)
 [^2]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=73)

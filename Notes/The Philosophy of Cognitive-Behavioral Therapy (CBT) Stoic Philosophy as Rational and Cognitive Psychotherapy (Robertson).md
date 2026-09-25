@@ -17,4 +17,6 @@ Client is helped by the therapist to do the following:
 4. To generate alternative cognitions and to substitute them for  the negative ones; 
 5. To identify and modify underlying dysfunctional assumptions  and beliefs which predispose him to negative automatic thoughts.
 
+Stoicism and Stoic philosophers like Epictetus, Seneca, Marcus Aurelius have played a big role in the modern establishment of CBT.
+
 [^1]: [The Philosophy of Cognitive-Behavioral Therapy (CBT) Stoic Philosophy as Rational and Cognitive Psychotherapy](zotero://open-pdf/library/items/XDSK83B7?page=1)

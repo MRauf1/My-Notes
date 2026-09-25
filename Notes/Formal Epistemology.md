@@ -11,5 +11,6 @@ tags:
 # Properties
 - Models an agent's [[Credence|degrees of belief]] using probability, an approach known as the [[Probability Bayesian Framework|Bayesian approach]].
 - Focuses on modeling how ideally rational agents should behave, as opposed to how humans actually behave, which is instead the domain of the sciences (psychology, sociology, economics, anthropology).
+- Studies which [[Epistemic Rationality|rationality constraints]] beliefs must satisfy, the most basic being [[Probabilism]].
 
 [^1]: [A Critical Introduction to Formal Epistemology](zotero://open-pdf/library/items/9XYCZDPF?page=10)

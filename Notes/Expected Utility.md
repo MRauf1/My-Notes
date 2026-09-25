@@ -11,5 +11,6 @@ tags:
 # Properties
 - A rational [[Utility-Based Agent|utility-based agent]] chooses the action that maximizes expected utility.
 - Central to [[Decision Theory|decision theory]], which combines probability theory with utility theory to formalize decisions under uncertainty.
+- The [[Von Neumann-Morgenstern Utility Theorem]] shows that preferences satisfying completeness, transitivity, continuity, and independence can be represented as expected utility maximization.
 
 [^1]: [Russell and Norvig, 2022, p. 73](zotero://open-pdf/library/items/JZXT5DZQ?page=73&annotation=DKY5I7AS)

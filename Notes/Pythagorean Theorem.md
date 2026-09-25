@@ -20,4 +20,6 @@ The [[Addition|sum]] of the [[Exponentiation|squares]] of the sides is [[Equalit
 
 Relates to the [[Pythagorean Identities]].
 
+Generalized to arbitrary [[Triangle|triangles]] by the [[Law of Cosines]].
+
 [^1]: [Prealgebra2e-WEB.pdf](zotero://open-pdf/library/items/W4QW2QZI?page=765)
