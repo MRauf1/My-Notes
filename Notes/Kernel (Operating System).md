@@ -16,7 +16,9 @@ tags:
 - Responsible for [[Context Switch|context switching]] between processes.
 - Initializes and maintains the [[Page Table|memory address map]] used to implement [[Virtual Memory]].
 - Its first task after booting is to create the [[Init Process]], the only process the kernel creates directly; every other process descends from it via [[Fork and Exec|fork() and exec()]].[^2]
+- Distributed to end users bundled into a [[Linux Distribution|Linux distribution]], alongside system utilities, libraries, applications, and usually a package manager.[^4]
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=27&annotation=NBSDE75L)
 [^2]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=90&annotation=58T785F7)
 [^3]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=196&annotation=AKJU4RCC)
+[^4]: [Linux Journey: Getting Started](https://labex.io/linuxjourney/courses/getting-started)
