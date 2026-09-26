@@ -14,5 +14,6 @@ tags:
 - On Linux, the default shell is normally [[Bash]].
 - Matches simple patterns to file and directory names through [[Globbing]].
 - Can store temporary [[Shell Variable|shell variables]] and has access to [[Environment Variable|environment variables]].
+- Is either a [[Login Shell|login shell]], the initial shell obtained on first logging in, or a [[Non-Login Shell|non-login shell]], any interactive shell run afterward.
 
 [^1]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=37&annotation=HX8MFD89)

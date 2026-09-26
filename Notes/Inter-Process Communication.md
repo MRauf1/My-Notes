@@ -12,6 +12,7 @@ tags:
 - Achieved along two general avenues: asking the kernel for a dedicated communication interface, or asking the kernel to map the same physical pages into multiple processes' virtual address spaces (for example, via [[mmap (System Call)|mmap]]) and handling any resulting synchronization directly.
 - Necessary precisely because a [[Process (Computing)|process]] is isolated by default and cannot otherwise read or modify another process's memory.
 - Applications using network facilities don't have to involve two separate hosts: client-server or peer-to-peer processes on the same machine can use IPC instead to negotiate which of them does the work.[^2]
+- On the Linux desktop, often carried out over the [[Desktop Bus (D-Bus)|Desktop Bus (D-Bus)]] rather than a raw [[Unix Domain Socket|Unix domain socket]].
 
 [^1]: [Systems Programming](zotero://open-pdf/library/items/8Y3AE875?page=216&annotation=X6ZGRFD3)
 [^2]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=272&annotation=WIYG6JZI)

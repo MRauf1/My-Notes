@@ -15,5 +15,8 @@ tags:
 - A key motivation for [[Virtual Memory]] today is enabling multiple virtual machines to safely and efficiently share a single main memory, particularly in cloud computing.
 - Pitfall: implementing a VMM on an instruction set architecture that was not designed to be virtualizable — for example, one whose privileged instructions do not reliably trap when executed in user mode — greatly complicates or degrades virtualization.
 - Contrasts with a process virtual machine such as the [[Python Virtual Machine|Python Virtual Machine (PVM)]], which executes the instructions of a single program rather than virtualizing an entire computer and its operating system.
+- Can be activated and deactivated at will, and even moved or copied to other physical machines, avoiding the inefficiency of dedicating hardware to one specific server task until it is reinstalled.[^2]
+- [[Cloud Computing]] tools are built on top of this technology to ease resource management.
 
 [^1]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=447&annotation=Z8NG8PK7)
+[^2]: [How Linux Works: What Every Superuser Should Know](zotero://open-pdf/library/items/B4TILA8A?page=372&annotation=9N9VBBHF)
