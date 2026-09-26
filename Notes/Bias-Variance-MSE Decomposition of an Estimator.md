@@ -19,5 +19,6 @@ tags:
 - Reduces to the model-fitting [[Bias-Variance Tradeoff]] when the fixed target $I$ is replaced by a randomly observed $y_0$ with irreducible noise, which contributes a further $\mathrm{Var}[\epsilon]$ term.
 - Specializes to the [[Expected Squared-Error Loss of a Noisy Monte Carlo Estimator|expected squared-error loss of a noisy estimator]] when the quantity being scored is a loss evaluated at the random estimator itself rather than the estimator compared against $I$.
 - Applies to any [[Monte Carlo Estimator]] of a fixed integral $I$.
+- Holds exactly only for squared-error loss; see [[Bias-Variance Decomposition Specificity to Squared Error Loss]].
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

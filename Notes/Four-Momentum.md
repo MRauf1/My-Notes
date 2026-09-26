@@ -19,3 +19,5 @@ $$
 equivalent to the [[Relativistic Energy-Momentum Relation]].
 - While the individual components $E$ and $\mathbf{p}$ are frame-dependent — mixing into one another under a Lorentz boost, just as space and time coordinates mix under a change of reference frame — the invariant length of the four-vector, the rest mass $m$, is not.
 - Energy measures a particle's "motion through time," while [[Relativistic Momentum|momentum]] measures its motion through space; mass is the combined, frame-independent length of both.
+- A specific instance of the general [[Four-Vector]] concept.
+- [[Conservation of Momentum]] and [[Conservation of Energy]] combine into a single four-vector conservation law, $\sum_i P_i^\mu = \sum_j P_j^\mu$ (summed separately over each component $\mu$, for particles $i$ entering and $j$ leaving an interaction): relativistic invariance requires the three-component momentum law to be completed with this fourth, energy, component, or it would not hold in every frame.
