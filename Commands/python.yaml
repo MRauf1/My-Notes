@@ -1,0 +1,1546 @@
+deck: Commands::Python
+source: https://docs.python.org/3/library/functions.html
+entries:
+  # --- Built-in functions ------------------------------------------------
+
+  - command: abs(number, /)
+    meaning: Return the absolute value of a number (the magnitude for a complex number).
+    details: |
+      Works on any object implementing `__abs__()`.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#abs
+
+  - command: all(iterable, /)
+    meaning: Return True if every element of the iterable is true (or the iterable is empty).
+    details: |
+      Short-circuits at the first false element.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#all
+
+  - command: any(iterable, /)
+    meaning: Return True if at least one element of the iterable is true; False for an empty iterable.
+    details: |
+      Short-circuits at the first true element.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#any
+
+  - command: bool(object=False, /)
+    meaning: Convert a value to True or False using the standard truth testing procedure.
+    details: |
+      `bool` is a subclass of `int` that cannot be subclassed further; its only instances are `False` and `True`.
+    tags: [builtins, types]
+    source: https://docs.python.org/3/library/functions.html#bool
+
+  - command: breakpoint(*args, **kws)
+    meaning: Drop into the debugger at the call site.
+    details: |
+      Calls `sys.breakpointhook()`, which by default calls `pdb.set_trace()`, so there is no need to `import pdb`.
+      The debugger can be changed or disabled with the `PYTHONBREAKPOINT` environment variable (e.g. `PYTHONBREAKPOINT=0`).
+    tags: [builtins, debugging]
+    source: https://docs.python.org/3/library/functions.html#breakpoint
+
+  - command: bytearray(source=b'')
+    meaning: Return a new mutable sequence of integers in the range 0 <= x < 256 (a mutable counterpart of bytes).
+    details: |
+      Other form: `bytearray(source, encoding, errors='strict')`.
+      `source` may be a str (requires `encoding`; converted with `str.encode()`), an int (that many null bytes), a buffer-protocol object, or an iterable of ints in `range(256)`.
+    tags: [builtins, bytes]
+    source: https://docs.python.org/3/library/functions.html#func-bytearray
+
+  - command: bytes(source=b'')
+    meaning: Return a new immutable sequence of integers in the range 0 <= x < 256.
+    details: |
+      Other form: `bytes(source, encoding, errors='strict')`. Arguments are interpreted as for `bytearray()`.
+      Also created with literals: `b'...'`.
+    tags: [builtins, bytes]
+    source: https://docs.python.org/3/library/functions.html#func-bytes
+
+  - command: callable(object, /)
+    meaning: Return True if the object appears callable, False if not.
+    details: |
+      A True result does not guarantee the call succeeds, but False means it never will.
+      Classes are callable; instances are callable if their class defines `__call__()`.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#callable
+
+  - command: "@classmethod"
+    meaning: Decorator that turns a method into a class method, which receives the class (cls) as its implicit first argument instead of the instance.
+    details: |
+      Callable on the class (`C.f()`) or an instance (`C().f()`); on a subclass, the subclass is passed. Typically used for alternative constructors.
+      Unlike C++/Java static methods; for those see `@staticmethod`. Since 3.13 it can no longer wrap other descriptors such as `property()`.
+    tags: [builtins, classes]
+    source: https://docs.python.org/3/library/functions.html#classmethod
+
+  - command: delattr(object, name, /)
+    meaning: Delete the attribute with the given string name from the object.
+    details: |
+      `delattr(x, 'foobar')` is equivalent to `del x.foobar`.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#delattr
+
+  - command: dict(**kwargs)
+    meaning: Create a new dictionary.
+    details: |
+      Other forms: `dict(mapping, /, **kwargs)` and `dict(iterable, /, **kwargs)` (iterable of key/value pairs).
+    tags: [builtins, dict]
+    source: https://docs.python.org/3/library/functions.html#func-dict
+
+  - command: divmod(a, b, /)
+    meaning: Return the pair (quotient, remainder) of integer division, i.e. (a // b, a % b) for integers.
+    details: |
+      For floats, the quotient is usually `math.floor(a / b)` (possibly 1 less); `a % b` has the sign of `b`.
+    tags: [builtins, numeric]
+    source: https://docs.python.org/3/library/functions.html#divmod
+
+  - command: enumerate(iterable, start=0)
+    meaning: Return an iterator of (count, value) tuples, with the count starting at start.
+    details: |
+      Equivalent to a generator that yields `n, elem` and increments `n` for each element.
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#enumerate
+
+  - command: filter(function, iterable, /)
+    meaning: Return an iterator over the elements of the iterable for which function(element) is true.
+    details: |
+      With `function=None`, removes the false elements. Equivalent to `(item for item in iterable if function(item))`.
+      `itertools.filterfalse()` is the complement.
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#filter
+
+  - command: float(number=0.0, /)
+    meaning: Return a floating-point number constructed from a number or a string.
+    details: |
+      Other form: `float(string, /)`. Strings may have a sign, surrounding whitespace, underscores between digits, exponents, and `"nan"`/`"inf"`/`"Infinity"` (case-insensitive).
+      Raises `OverflowError` if out of range. Delegates to `__float__()`, falling back to `__index__()`.
+    tags: [builtins, numeric]
+    source: https://docs.python.org/3/library/functions.html#float
+
+  - command: format(value, format_spec='', /)
+    meaning: Convert a value to a formatted string as controlled by format_spec (the format specification mini-language).
+    details: |
+      Calls `type(value).__format__(value, format_spec)`. An empty spec usually gives the same result as `str(value)`.
+    tags: [builtins, str]
+    source: https://docs.python.org/3/library/functions.html#format
+
+  - command: frozenset(iterable=(), /)
+    meaning: Return a new immutable (and hashable) set, optionally containing the elements of the iterable.
+    tags: [builtins, set]
+    source: https://docs.python.org/3/library/functions.html#func-frozenset
+
+  - command: getattr(object, name, /)
+    meaning: Return the value of the attribute of the object with the given string name.
+    details: |
+      Other form: `getattr(object, name, default, /)` returns `default` instead of raising `AttributeError` when the attribute is missing.
+      `getattr(x, 'foobar')` is `x.foobar`. Private names (`__x`) must be mangled manually (`_Class__x`).
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#getattr
+
+  - command: hasattr(object, name, /)
+    meaning: Return True if the object has an attribute with the given string name.
+    details: |
+      Implemented by calling `getattr(object, name)` and checking whether it raises `AttributeError`.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#hasattr
+
+  - command: hash(object, /)
+    meaning: Return the integer hash value of the object (if it is hashable).
+    details: |
+      Used to compare dictionary keys quickly. Numbers that compare equal have the same hash (e.g. `1` and `1.0`).
+      Custom `__hash__()` results are truncated to the machine's bit width.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#hash
+
+  - command: id(object, /)
+    meaning: Return the identity of an object, an integer unique and constant for the object during its lifetime.
+    details: |
+      Objects with non-overlapping lifetimes may share an id. In CPython, it is the object's memory address.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#id
+
+  - command: input(prompt, /)
+    meaning: Write the optional prompt to stdout (without a newline), read a line from input, and return it as a string without the trailing newline.
+    details: |
+      Raises `EOFError` at end of input. Uses the `readline` module for line editing/history if it is loaded.
+    tags: [builtins, io]
+    source: https://docs.python.org/3/library/functions.html#input
+
+  - command: int(number=0, /)
+    meaning: Return an integer constructed from a number (truncating floats toward zero) or a string.
+    details: |
+      Other form: `int(string, /, base=10)`. Bases 2-36 or 0; base 0 interprets prefixes `0b`/`0o`/`0x` like code literals (and disallows leading zeros).
+      Strings may have a sign, whitespace, and single underscores between digits. Delegates to `__int__()`, then `__index__()` (no longer `__trunc__()` since 3.14).
+    tags: [builtins, numeric]
+    source: https://docs.python.org/3/library/functions.html#int
+
+  - command: isinstance(object, classinfo, /)
+    meaning: Return True if the object is an instance of classinfo or of a (direct, indirect, or virtual) subclass of it.
+    details: |
+      `classinfo` may be a tuple of types or a union type (`int | str`), in which case any match counts.
+      Preferred over `type(x) == C` because it respects subclasses.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#isinstance
+
+  - command: issubclass(class, classinfo, /)
+    meaning: Return True if class is a (direct, indirect, or virtual) subclass of classinfo.
+    details: |
+      A class is a subclass of itself. `classinfo` may be a tuple of classes or a union type.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#issubclass
+
+  - command: iter(iterable, /)
+    meaning: Return an iterator for an object that supports the iteration protocol (__iter__) or the sequence protocol (__getitem__ from 0).
+    details: |
+      Other form: `iter(callable, sentinel, /)` calls `callable()` repeatedly until it returns `sentinel`,
+      e.g. `iter(partial(f.read, 64), b'')` reads fixed-size blocks until EOF.
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#iter
+
+  - command: len(object, /)
+    meaning: Return the number of items in a sequence or collection.
+    details: |
+      In CPython, raises `OverflowError` for lengths above `sys.maxsize` (e.g. `range(2 ** 100)`).
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#len
+
+  - command: list(iterable=(), /)
+    meaning: Create a new list, optionally from the items of the iterable; list is a mutable sequence type rather than a function.
+    tags: [builtins, list]
+    source: https://docs.python.org/3/library/stdtypes.html#list
+
+  - command: map(function, iterable, /, *iterables, strict=False)
+    meaning: Return an iterator that applies function to every item of the iterable(s), yielding the results.
+    details: |
+      With several iterables, `function` takes that many arguments and stops at the shortest one; `strict=True` (3.14+) raises `ValueError` on unequal lengths.
+      For pre-packed argument tuples use `itertools.starmap()`.
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#map
+
+  - command: max(iterable, /, *, key=None)
+    meaning: Return the largest item in an iterable, or the largest of two or more arguments.
+    details: |
+      Other forms: `max(iterable, /, *, default, key=None)` and `max(arg1, arg2, /, *args, key=None)`.
+      Empty iterable without `default` raises `ValueError`. Ties return the first maximal item.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#max
+
+  - command: min(iterable, /, *, key=None)
+    meaning: Return the smallest item in an iterable, or the smallest of two or more arguments.
+    details: |
+      Other forms: `min(iterable, /, *, default, key=None)` and `min(arg1, arg2, /, *args, key=None)`.
+      Empty iterable without `default` raises `ValueError`. Ties return the first minimal item.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#min
+
+  - command: next(iterator, /)
+    meaning: Retrieve the next item from the iterator by calling its __next__() method.
+    details: |
+      Other form: `next(iterator, default, /)` returns `default` when the iterator is exhausted instead of raising `StopIteration`.
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#next
+
+  - command: open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+    meaning: Open a file and return a corresponding file object (raises OSError on failure).
+    details: |
+      Modes: `'r'` read (default), `'w'` write (truncate), `'x'` exclusive create (fails if it exists), `'a'` append, `'b'` binary, `'t'` text (default), `'+'` read and write (`'r+'` no truncation, `'w+'` truncates).
+      Text mode returns `str` decoded with `encoding` (default: locale encoding, so pass `encoding='utf-8'` explicitly); binary mode returns `bytes`.
+      `newline=None` enables universal newlines; `errors` sets the decoding error handler (`'strict'`, `'ignore'`, `'replace'`, ...). Best used in a `with` statement.
+    tags: [builtins, io]
+    source: https://docs.python.org/3/library/functions.html#open
+
+  - command: pow(base, exp, mod=None)
+    meaning: Return base to the power exp, or base**exp % mod computed efficiently when mod is given.
+    details: |
+      `pow(10, -2)` returns a float (`0.01`); a negative base with a non-integral exponent returns a complex number.
+      With a negative `exp` and `mod`, computes a modular inverse: `pow(38, -1, mod=97)` is `23`.
+    tags: [builtins, numeric]
+    source: https://docs.python.org/3/library/functions.html#pow
+
+  - command: print(*objects, sep=' ', end='\n', file=None, flush=False)
+    meaning: Print the objects to the text stream file (default sys.stdout), converted with str(), separated by sep and followed by end.
+    details: |
+      `sep`, `end`, `file`, and `flush` are keyword-only. `flush=True` forcibly flushes the stream. Cannot write to binary files.
+    tags: [builtins, io]
+    source: https://docs.python.org/3/library/functions.html#print
+
+  - command: range(start, stop, step=1, /)
+    meaning: Create an immutable sequence of integers from start up to (excluding) stop in increments of step; range is a type rather than a function.
+    details: |
+      Other form: `range(stop, /)` starts at 0.
+    tags: [builtins, sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#range
+
+  - command: reversed(object, /)
+    meaning: Return a reverse iterator over the object.
+    details: |
+      The object must define `__reversed__()` or support the sequence protocol (`__len__()` and `__getitem__()`).
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#reversed
+
+  - command: round(number, ndigits=None)
+    meaning: Round the number to ndigits digits after the decimal point, or to the nearest integer (returned as int) if ndigits is omitted.
+    details: |
+      Ties round to even ("banker's rounding"): `round(0.5)` and `round(-0.5)` are `0`, `round(1.5)` is `2`. `ndigits` may be negative.
+      Float surprises: `round(2.675, 2)` is `2.67` because 2.675 is not exactly representable.
+    tags: [builtins, numeric]
+    source: https://docs.python.org/3/library/functions.html#round
+
+  - command: set(iterable=(), /)
+    meaning: Return a new mutable set, optionally containing the elements of the iterable.
+    details: |
+      Elements must be hashable, so sets of sets need `frozenset` inner sets.
+      Sets can also be created with braces `{'a', 'b'}` or a set comprehension `{c for c in s if c not in 'abc'}`.
+    tags: [builtins, set]
+    source: https://docs.python.org/3/library/functions.html#func-set
+
+  - command: setattr(object, name, value, /)
+    meaning: Assign the value to the object's attribute with the given string name (existing or new).
+    details: |
+      `setattr(x, 'foobar', 123)` is `x.foobar = 123`. A name that is not an identifier is allowed but only reachable via `getattr()`.
+      Private names (`__x`) must be mangled manually.
+    tags: [builtins, introspection]
+    source: https://docs.python.org/3/library/functions.html#setattr
+
+  - command: slice(start, stop, step=None, /)
+    meaning: Return a slice object representing the indices range(start, stop, step), as produced by the syntax a[start:stop:step].
+    details: |
+      Other form: `slice(stop, /)`. Has read-only attributes `start`, `stop`, `step`. Hashable since 3.12.
+      `itertools.islice()` is an iterator version.
+    tags: [builtins, sequence]
+    source: https://docs.python.org/3/library/functions.html#slice
+
+  - command: sorted(iterable, /, *, key=None, reverse=False)
+    meaning: Return a new sorted list from the items of the iterable.
+    details: |
+      `key` is a one-argument function extracting the comparison key (e.g. `key=str.lower`); `reverse=True` sorts descending.
+      Guaranteed stable, so multi-pass sorts work. Uses only `<` comparisons. `functools.cmp_to_key()` converts old-style cmp functions.
+    tags: [builtins]
+    source: https://docs.python.org/3/library/functions.html#sorted
+
+  - command: "@staticmethod"
+    meaning: Decorator that turns a method into a static method, which receives no implicit first argument.
+    details: |
+      Callable on the class (`C.f()`) or an instance (`C().f()`), like Java/C++ static methods.
+      Can also be called as a function: `method = staticmethod(regular_function)`.
+    tags: [builtins, classes]
+    source: https://docs.python.org/3/library/functions.html#staticmethod
+
+  - command: str(object)
+    meaning: Return the string version of object (via object.__str__()).
+    details: |
+      Other forms: `str(*, encoding='utf-8', errors='strict')`, `str(object, encoding, errors='strict')` (decode a bytes-like object), `str(object, *, errors)`.
+    tags: [builtins, str]
+    source: https://docs.python.org/3/library/stdtypes.html#str
+
+  - command: sum(iterable, /, start=0)
+    meaning: Return start plus the sum of the items of the iterable, added left to right.
+    details: |
+      `start` cannot be a string: use `''.join(seq)` to concatenate strings, `math.fsum()` for extended-precision floats, and `itertools.chain()` to concatenate iterables.
+    tags: [builtins, numeric]
+    source: https://docs.python.org/3/library/functions.html#sum
+
+  - command: super(type, object_or_type=None, /)
+    meaning: Return a proxy object that delegates method calls to the next class after type in the MRO of object_or_type (a parent or sibling class).
+    details: |
+      Inside a method, the zero-argument form `super()` is the same as `super(CurrentClass, self)` (not usable in nested functions or generator expressions).
+      Used to call overridden parent methods and for cooperative multiple inheritance. Works for explicit lookups like `super().__getitem__(k)` but not `super()[k]`.
+    tags: [builtins, classes]
+    source: https://docs.python.org/3/library/functions.html#super
+
+  - command: tuple(iterable=(), /)
+    meaning: Create a new tuple, optionally from the items of the iterable; tuple is an immutable sequence type rather than a function.
+    tags: [builtins, tuple]
+    source: https://docs.python.org/3/library/stdtypes.html#tuple
+
+  - command: type(object, /)
+    meaning: Return the type of an object (generally the same as object.__class__).
+    details: |
+      Other form: `type(name, bases, dict, /, **kwargs)` creates a new class dynamically, e.g. `X = type('X', (), dict(a=1))` is equivalent to a `class X` statement.
+      Use `isinstance()` to test types since it accounts for subclasses.
+    tags: [builtins, introspection, classes]
+    source: https://docs.python.org/3/library/functions.html#type
+
+  - command: zip(*iterables, strict=False)
+    meaning: Iterate over several iterables in parallel, producing tuples with the i-th item from each.
+    details: |
+      Lazy; stops at the shortest iterable. `strict=True` raises `ValueError` on unequal lengths; `itertools.zip_longest()` pads instead.
+      Unzip with `zip(*pairs)`; chunk into n-tuples with `zip(*[iter(s)] * n)`.
+    tags: [builtins, iteration]
+    source: https://docs.python.org/3/library/functions.html#zip
+
+  # --- Built-in constants ------------------------------------------------
+
+  - command: "False"
+    meaning: The false value of the bool type.
+    details: |
+      Assigning to `False` is a `SyntaxError`.
+    tags: [constants]
+    source: https://docs.python.org/3/library/constants.html#False
+
+  - command: "True"
+    meaning: The true value of the bool type.
+    details: |
+      Assigning to `True` is a `SyntaxError`.
+    tags: [constants]
+    source: https://docs.python.org/3/library/constants.html#True
+
+  - command: "None"
+    meaning: The object used to represent the absence of a value, e.g. for default arguments that were not passed.
+    details: |
+      The sole instance of `NoneType`. Assigning to `None` is a `SyntaxError`.
+    tags: [constants]
+    source: https://docs.python.org/3/library/constants.html#None
+
+  - command: NotImplemented
+    meaning: Special value returned by binary special methods (__eq__, __add__, ...) to signal that the operation is not implemented for the other operand's type.
+    details: |
+      The interpreter then tries the reflected operation (e.g. `__radd__`), raising an exception if all attempts return it.
+      Not the same as the `NotImplementedError` exception. Using it in a boolean context raises `TypeError` since 3.14.
+    tags: [constants]
+    source: https://docs.python.org/3/library/constants.html#NotImplemented
+
+  - command: Ellipsis
+    meaning: The object written as the literal ..., used to indicate that something is omitted.
+    details: |
+      The sole instance of `types.EllipsisType`. `Ellipsis` can be reassigned; `...` cannot.
+    tags: [constants]
+    source: https://docs.python.org/3/library/constants.html#Ellipsis
+
+  # --- Truth, Booleans, comparisons --------------------------------------
+
+  - command: Truth value testing
+    meaning: Every object is true unless its class defines __bool__() returning False or __len__() returning 0.
+    details: |
+      False values: `None`, `False`, numeric zeros (`0`, `0.0`, `0j`, `Decimal(0)`, `Fraction(0, 1)`), and empty collections (`''`, `()`, `[]`, `{}`, `set()`, `range(0)`).
+    tags: [semantics]
+    source: https://docs.python.org/3/library/stdtypes.html#truth-value-testing
+
+  - command: x or y / x and y / not x
+    meaning: "x or y returns x if x is true, else y; x and y returns x if x is false, else y; not x returns True if x is false, else False."
+    details: |
+      `or` and `and` short-circuit and return one of their operands (not necessarily a bool).
+      Ascending priority: `or`, `and`, `not`. `not` binds looser than comparisons: `not a == b` is `not (a == b)`.
+    tags: [semantics, operators]
+    source: https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not
+
+  - command: Comparisons (<, <=, >, >=, ==, !=, is, is not)
+    meaning: The eight comparison operators, all with the same priority (higher than Boolean operators); they can be chained, e.g. x < y <= z.
+    details: |
+      A chain evaluates each operand at most once and short-circuits. `is`/`is not` test object identity and cannot be customized.
+      Objects of different types never compare equal (numbers excepted); ordering requires `__lt__()` etc. `in`/`not in` have the same priority.
+    tags: [semantics, operators]
+    source: https://docs.python.org/3/library/stdtypes.html#comparisons
+
+  # --- Numeric types -----------------------------------------------------
+
+  - command: Numeric types (int, float, complex)
+    meaning: Python's three numeric types; ints have unlimited precision, floats are C doubles, and complex numbers have float real and imaginary parts (z.real, z.imag).
+    details: |
+      `bool` is a subtype of `int`. Mixed arithmetic widens the narrower operand: int → float → complex.
+      `x // y` floors toward minus infinity (`(-1)//2 == -1`), `x % y` takes the sign of `y`, `int(x)` truncates floats, and `pow(0, 0) == 0 ** 0 == 1`.
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
+
+  - command: Bitwise operators (|, ^, &, <<, >>, ~)
+    meaning: Integer-only operations computed as if in two's complement with infinitely many sign bits.
+    details: |
+      Ascending priority: `|`, `^`, `&`, shifts; `~x` inverts the bits (`-x - 1`).
+      `x << n` is `x * 2**n` and `x >> n` is `x // 2**n`; negative shift counts raise `ValueError`.
+    tags: [numeric, operators]
+    source: https://docs.python.org/3/library/stdtypes.html#bitwise-operations-on-integer-types
+
+  - command: Additional methods on int
+    meaning: int implements the numbers.Integral abstract base class and adds methods such as bit_length(), bit_count(), to_bytes(), and from_bytes().
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#additional-methods-on-integer-types
+
+  - command: int.bit_length()
+    meaning: Return the number of bits needed to represent the integer in binary, excluding the sign and leading zeros.
+    details: |
+      For nonzero `x`, it is the unique `k` with `2**(k-1) <= abs(x) < 2**k`; `0` for zero.
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#int.bit_length
+
+  - command: int.bit_count()
+    meaning: Return the number of ones in the binary representation of the integer's absolute value (population count).
+    details: |
+      Equivalent to `bin(self).count("1")`. Added in 3.10.
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#int.bit_count
+
+  - command: int.to_bytes(length=1, byteorder='big', *, signed=False)
+    meaning: Return a bytes object of the given length representing the integer.
+    details: |
+      `byteorder='big'` puts the most significant byte first, `'little'` last. `signed=True` uses two's complement; otherwise negative ints raise `OverflowError`, as do values that don't fit in `length` bytes.
+      With the defaults, `(65).to_bytes()` gives `b'A'`.
+    tags: [numeric, bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#int.to_bytes
+
+  - command: int.from_bytes(bytes, byteorder='big', *, signed=False)
+    meaning: Class method that returns the integer represented by the given bytes-like object (or iterable of bytes).
+    details: |
+      `byteorder` as in `int.to_bytes()` (use `sys.byteorder` for native order); `signed=True` interprets the bytes as two's complement.
+    tags: [numeric, bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#int.from_bytes
+
+  - command: Additional methods on float
+    meaning: float implements the numbers.Real abstract base class and adds methods such as as_integer_ratio(), is_integer(), hex(), and fromhex().
+    details: |
+      Hexadecimal strings (`float.hex()`, `float.fromhex()`) represent floats exactly, unlike decimal strings.
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#additional-methods-on-float
+
+  - command: float.as_integer_ratio()
+    meaning: Return a pair of integers, in lowest terms with a positive denominator, whose ratio exactly equals the float.
+    details: |
+      Raises `OverflowError` on infinities and `ValueError` on NaNs.
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#float.as_integer_ratio
+
+  - command: float.is_integer()
+    meaning: Return True if the float is finite with an integral value (e.g. -2.0), else False.
+    tags: [numeric]
+    source: https://docs.python.org/3/library/stdtypes.html#float.is_integer
+
+  - command: bool type
+    meaning: The type with exactly two constant instances, True and False; a subclass of int where False and True behave like 0 and 1.
+    details: |
+      `&`, `|`, `^` on two bools give bools, but prefer `and`, `or`, `!=`. `~` on a bool is deprecated since 3.12 (error in 3.16).
+      Prefer explicit `int()` over relying on the numeric behavior.
+    tags: [types]
+    source: https://docs.python.org/3/library/stdtypes.html#boolean-type-bool
+
+  # --- Iterators and generators ------------------------------------------
+
+  - command: Iterator protocol (__iter__, __next__)
+    meaning: An iterable defines __iter__() returning an iterator; an iterator defines __iter__() returning itself and __next__() returning the next item or raising StopIteration.
+    details: |
+      Once `__next__()` raises `StopIteration`, it must keep doing so on later calls, or the iterator is considered broken.
+    tags: [iteration]
+    source: https://docs.python.org/3/library/stdtypes.html#iterator-types
+
+  - command: Generator types
+    meaning: Generators (functions using yield) are a convenient way to implement the iterator protocol; calling one returns a generator object providing __iter__() and __next__().
+    details: |
+      Implementing a container's `__iter__()` as a generator automatically makes it return an iterator.
+    tags: [iteration]
+    source: https://docs.python.org/3/library/stdtypes.html#generator-types
+
+  # --- Sequences ---------------------------------------------------------
+
+  - command: Sequence types (list, tuple, range)
+    meaning: The three basic sequence types; str and the binary types (bytes, bytearray, memoryview) are additional specialized sequences.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range
+
+  - command: Common sequence operations (x in s, s + t, s * n, s[i], s[i:j:k], len, min, max)
+    meaning: Operations supported by most sequence types, mutable or immutable.
+    details: |
+      `s * n` repeats references, not copies: `[[]] * 3` holds the same list three times (use `[[] for _ in range(3)]`).
+      Negative indices count from the end; slices include `i` and exclude `j`, and out-of-range slice bounds are clipped.
+      Repeated concatenation of immutable sequences is quadratic: use `str.join()`, `io.StringIO`, or a list instead.
+      Sequences of the same type compare lexicographically. `in` does substring testing for `str`/`bytes`.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+
+  - command: sequence.count(value, /)
+    meaning: Return the total number of occurrences of value in the sequence.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.count
+
+  - command: sequence.index(value[, start[, stop]])
+    meaning: Return the index of the first occurrence of value in the sequence, raising ValueError if it is absent.
+    details: |
+      `start`/`stop` search a subsection without copying (like `start + s[start:stop].index(value)`); not all sequence types support them.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.index
+
+  - command: Immutable sequence types
+    meaning: Immutable sequences (e.g. tuple) additionally support hash(), so they can be dict keys and set elements.
+    details: |
+      Hashing one that contains unhashable values raises `TypeError`.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#immutable-sequence-types
+
+  - command: Mutable sequence operations (s[i] = x, del s[i], s[i:j] = t, s += t, s *= n)
+    meaning: Item and slice assignment/deletion and in-place extension/repetition, defined on mutable sequences such as list and bytearray.
+    details: |
+      Extended-slice assignment `s[i:j:k] = t` requires `t` to have the same length as the slice.
+      `s *= n` with `n <= 0` clears the sequence; items are referenced, not copied.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types
+
+  - command: sequence.append(value, /)
+    meaning: Append value to the end of the mutable sequence.
+    details: |
+      Equivalent to `s[len(s):len(s)] = [value]`.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.append
+
+  - command: sequence.clear()
+    meaning: Remove all items from the mutable sequence.
+    details: |
+      Equivalent to `del s[:]`.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.clear
+
+  - command: sequence.copy()
+    meaning: Return a shallow copy of the mutable sequence.
+    details: |
+      Equivalent to `s[:]`.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.copy
+
+  - command: sequence.extend(iterable, /)
+    meaning: Extend the mutable sequence with the contents of the iterable.
+    details: |
+      Mostly the same as `s[len(s):len(s)] = iterable` or `s += iterable`.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.extend
+
+  - command: sequence.insert(index, value, /)
+    meaning: Insert value into the mutable sequence at the given index.
+    details: |
+      Equivalent to `s[index:index] = [value]`.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.insert
+
+  - command: sequence.pop(index=-1, /)
+    meaning: Remove and return the item at index (the last item by default).
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.pop
+
+  - command: sequence.remove(value, /)
+    meaning: Remove the first item equal to value, raising ValueError if there is none.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.remove
+
+  - command: sequence.reverse()
+    meaning: Reverse the items of the mutable sequence in place and return None.
+    tags: [sequence, list]
+    source: https://docs.python.org/3/library/stdtypes.html#sequence.reverse
+
+  - command: Lists
+    meaning: Mutable sequences, typically used to store collections of homogeneous items.
+    details: |
+      Built with `[]`, `[a, b]`, a list comprehension `[x for x in it]`, or `list(iterable)`.
+    tags: [list]
+    source: https://docs.python.org/3/library/stdtypes.html#lists
+
+  - command: list.sort(*, key=None, reverse=False)
+    meaning: Sort the list in place using only < comparisons, and return None.
+    details: |
+      `key` and `reverse` are keyword-only, as in `sorted()`; each key is computed once. Stable.
+      If a comparison fails, the list may be left partially modified. Use `sorted()` for a new list.
+    tags: [list]
+    source: https://docs.python.org/3/library/stdtypes.html#list.sort
+
+  - command: Tuples
+    meaning: Immutable sequences, typically used for heterogeneous data (e.g. the pairs from enumerate()) or wherever an immutable, hashable sequence is needed.
+    details: |
+      The comma makes the tuple, not the parentheses: `1,` or `(1,)`; `()` is the empty tuple.
+      `collections.namedtuple()` adds access by name.
+    tags: [tuple]
+    source: https://docs.python.org/3/library/stdtypes.html#tuples
+
+  - command: Ranges
+    meaning: Immutable sequences of numbers, commonly used for looping a fixed number of times in for loops.
+    details: |
+      Always use the same small amount of memory (they store only `start`, `stop`, `step`). Support `in` (constant time for ints), `index()`, slicing, and negative indices.
+      `==` compares the represented values: `range(0) == range(2, 1, 3)`.
+    tags: [sequence]
+    source: https://docs.python.org/3/library/stdtypes.html#ranges
+
+  # --- Strings -----------------------------------------------------------
+
+  - command: str type
+    meaning: Immutable sequences of Unicode code points, written with single, double, or triple quotes.
+    details: |
+      Adjacent literals are concatenated: `("spam " "eggs") == "spam eggs"`. The `r` prefix makes a raw string.
+      There is no character type: `s[0]` is a string of length 1. Build strings efficiently with `str.join()` or `io.StringIO`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+
+  - command: String methods
+    meaning: Strings support all common sequence operations plus many str methods, and two formatting styles (str.format()/f-strings and printf-style %).
+    details: |
+      Regular expressions are in the `re` module.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#string-methods
+
+  - command: str.capitalize()
+    meaning: Return a copy with the first character in titlecase and the rest lowercased.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.capitalize
+
+  - command: str.center(width, fillchar=' ', /)
+    meaning: Return the string centered in a string of length width, padded with fillchar.
+    details: |
+      Returns the original string if `width <= len(s)`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.center
+
+  - command: str.count(sub[, start[, end]])
+    meaning: Return the number of non-overlapping occurrences of the substring sub in s[start:end].
+    details: |
+      An empty `sub` returns `len(s) + 1`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.count
+
+  - command: str.encode(encoding='utf-8', errors='strict')
+    meaning: Return the string encoded to bytes.
+    details: |
+      `errors`: `'strict'` (raise `UnicodeError`, default), `'ignore'`, `'replace'`, `'xmlcharrefreplace'`, `'backslashreplace'`, or any handler registered via `codecs.register_error()`.
+    tags: [str, bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#str.encode
+
+  - command: str.endswith(suffix[, start[, end]])
+    meaning: Return True if the string ends with the suffix, else False.
+    details: |
+      `suffix` may be a tuple of suffixes to try. `start`/`end` test `s[start:end]` instead.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.endswith
+
+  - command: str.find(sub[, start[, end]])
+    meaning: Return the lowest index where the substring sub is found in s[start:end], or -1 if not found.
+    details: |
+      To only test containment, use `sub in s`. `str.index()` raises instead of returning -1.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.find
+
+  - command: str.index(sub[, start[, end]])
+    meaning: Like find(), but raise ValueError when the substring is not found.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.index
+
+  - command: str.isalnum()
+    meaning: Return True if the string is non-empty and every character is alphanumeric.
+    details: |
+      A character is alphanumeric if `isalpha()`, `isdecimal()`, `isdigit()`, or `isnumeric()` is true for it.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isalnum
+
+  - command: str.isalpha()
+    meaning: Return True if the string is non-empty and every character is alphabetic (a Unicode "Letter").
+    details: |
+      Non-ASCII letters count, e.g. `'µ'.isalpha()` is True.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isalpha
+
+  - command: str.isascii()
+    meaning: Return True if the string is empty or every character is ASCII (U+0000 to U+007F).
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isascii
+
+  - command: str.isdecimal()
+    meaning: Return True if the string is non-empty and every character is a decimal character usable to form base-10 numbers (Unicode category Nd).
+    details: |
+      Strictest of the three: `isdecimal()` ⊂ `isdigit()` ⊂ `isnumeric()`. `'²'.isdecimal()` is False.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isdecimal
+
+  - command: str.isdigit()
+    meaning: Return True if the string is non-empty and every character is a digit, including digits like superscripts that cannot form base-10 numbers.
+    details: |
+      `'²'.isdigit()` is True but `'⅕'.isdigit()` is False.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isdigit
+
+  - command: str.islower()
+    meaning: Return True if all cased characters are lowercase and there is at least one cased character.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.islower
+
+  - command: str.isnumeric()
+    meaning: Return True if the string is non-empty and every character has a Unicode numeric value (digits, fractions like ⅕, etc.).
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isnumeric
+
+  - command: str.isspace()
+    meaning: Return True if the string is non-empty and contains only whitespace characters.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isspace
+
+  - command: str.istitle()
+    meaning: Return True if the string is non-empty and titlecased (uppercase only after uncased characters, lowercase only after cased ones).
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.istitle
+
+  - command: str.isupper()
+    meaning: Return True if all cased characters are uppercase and there is at least one cased character.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.isupper
+
+  - command: str.join(iterable, /)
+    meaning: Return the concatenation of the strings in the iterable, with the string itself as the separator.
+    details: |
+      E.g. `', '.join(['a', 'b'])` is `'a, b'`. Raises `TypeError` on non-string items (including bytes).
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.join
+
+  - command: str.ljust(width, fillchar=' ', /)
+    meaning: Return the string left-justified in a string of length width, padded on the right with fillchar.
+    details: |
+      Returns the original string if `width <= len(s)`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.ljust
+
+  - command: str.lower()
+    meaning: Return a copy of the string with all cased characters converted to lowercase.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.lower
+
+  - command: str.lstrip(chars=None, /)
+    meaning: Return a copy with leading characters in the set chars removed (whitespace by default).
+    details: |
+      `chars` is a set of characters, not a prefix: `'Arthur: three!'.lstrip('Arthur: ')` is `'ee!'`. Use `removeprefix()` to remove a prefix.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.lstrip
+
+  - command: str.partition(sep, /)
+    meaning: Split at the first occurrence of sep and return the 3-tuple (before, sep, after).
+    details: |
+      If `sep` is not found, returns `(s, '', '')`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.partition
+
+  - command: str.removeprefix(prefix, /)
+    meaning: Return the string with the prefix removed if it starts with it, else a copy of the original.
+    details: |
+      Added in 3.9.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.removeprefix
+
+  - command: str.removesuffix(suffix, /)
+    meaning: Return the string with the (non-empty) suffix removed if it ends with it, else a copy of the original.
+    details: |
+      Added in 3.9.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.removesuffix
+
+  - command: str.replace(old, new, /, count=-1)
+    meaning: Return a copy with occurrences of the substring old replaced by new (only the first count if count is given).
+    details: |
+      `count` can be passed by keyword since 3.13.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.replace
+
+  - command: str.rfind(sub[, start[, end]])
+    meaning: Return the highest index where the substring sub is found in s[start:end], or -1 if not found.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.rfind
+
+  - command: str.rindex(sub[, start[, end]])
+    meaning: Like rfind(), but raise ValueError when the substring is not found.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.rindex
+
+  - command: str.rjust(width, fillchar=' ', /)
+    meaning: Return the string right-justified in a string of length width, padded on the left with fillchar.
+    details: |
+      Returns the original string if `width <= len(s)`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.rjust
+
+  - command: str.rpartition(sep, /)
+    meaning: Split at the last occurrence of sep and return the 3-tuple (before, sep, after).
+    details: |
+      If `sep` is not found, returns `('', '', s)`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.rpartition
+
+  - command: str.rsplit(sep=None, maxsplit=-1)
+    meaning: Like split(), but when maxsplit is given, the splits are done from the right.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.rsplit
+
+  - command: str.rstrip(chars=None, /)
+    meaning: Return a copy with trailing characters in the set chars removed (whitespace by default).
+    details: |
+      `chars` is a set, not a suffix: `'Monty Python'.rstrip(' Python')` is `'M'`. Use `removesuffix()` to remove a suffix.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.rstrip
+
+  - command: str.split(sep=None, maxsplit=-1)
+    meaning: Return a list of the words in the string, using sep as the delimiter string (at most maxsplit splits).
+    details: |
+      With `sep` given, consecutive delimiters produce empty strings (`'1,,2'.split(',')` is `['1', '', '2']`) and `''.split(',')` is `['']`.
+      With `sep=None`, runs of whitespace are one separator and leading/trailing whitespace is ignored (`'  '.split()` is `[]`). For several delimiters use `re.split()`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.split
+
+  - command: str.splitlines(keepends=False)
+    meaning: Return a list of the lines in the string, breaking at line boundaries (without the line breaks unless keepends is true).
+    details: |
+      Splits on `\n`, `\r`, `\r\n`, `\v`, `\f`, `\x1c`-`\x1e`, `\x85`, `\u2028`, `\u2029`.
+      Unlike `split('\n')`, it returns `[]` for `''` and adds no extra empty line after a trailing newline.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.splitlines
+
+  - command: str.startswith(prefix[, start[, end]])
+    meaning: Return True if the string starts with the prefix, else False.
+    details: |
+      `prefix` may be a tuple of prefixes to try. `start`/`end` restrict the tested range.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.startswith
+
+  - command: str.strip(chars=None, /)
+    meaning: Return a copy with leading and trailing characters in the set chars removed (whitespace by default).
+    details: |
+      `chars` is a set of characters, not a prefix/suffix: `'www.example.com'.strip('cmowz.')` is `'example'`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.strip
+
+  - command: str.swapcase()
+    meaning: Return a copy with uppercase characters converted to lowercase and vice versa.
+    details: |
+      `s.swapcase().swapcase() == s` is not always true (e.g. `'straße'` becomes `'strasse'`).
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.swapcase
+
+  - command: str.title()
+    meaning: Return a titlecased copy where each word starts with an uppercase character and the rest are lowercase.
+    details: |
+      Words are runs of letters, so apostrophes break words: `"they're".title()` is `"They'Re"`. `string.capwords()` splits on spaces only.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.title
+
+  - command: str.upper()
+    meaning: Return a copy of the string with all cased characters converted to uppercase.
+    details: |
+      `s.upper().isupper()` can be False (e.g. uncased or titlecase characters).
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.upper
+
+  - command: str.zfill(width, /)
+    meaning: Return a copy left-filled with '0' digits to length width, inserting the padding after a leading sign.
+    details: |
+      `"-42".zfill(5)` is `'-0042'`. Returns the original string if `width <= len(s)`.
+    tags: [str]
+    source: https://docs.python.org/3/library/stdtypes.html#str.zfill
+
+  # --- f-strings ---------------------------------------------------------
+
+  - command: f'{expr}'
+    meaning: A formatted string literal (f-string), a string prefixed with f or F whose {} replacement fields embed the values of arbitrary Python expressions.
+    details: |
+      Each field is `{expression[=][!conversion][:format_spec]}`: optional debug specifier `=`, conversion `!s`/`!r`/`!a`, and format spec after `:`.
+      Since 3.12, nested quotes, comments, and backslashes are allowed inside the expressions.
+    tags: [str, f-strings]
+    source: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+
+  - command: f'{expr=}'
+    meaning: Debug specifier, producing the expression's source text, an equals sign, and its value (e.g. f'{number=}' gives 'number=14.3').
+    details: |
+      Whitespace around the expression and `=` is kept in the output. Uses `repr()` by default unless a format spec is given.
+    tags: [str, f-strings]
+    source: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+
+  - command: f'{expr!r}' / f'{expr!s}' / f'{expr!a}'
+    meaning: Conversion specifier that converts the value with repr(), str(), or ascii() respectively before formatting.
+    details: |
+      Default conversion is `str()` (or `repr()` with a debug specifier and no format spec).
+    tags: [str, f-strings]
+    source: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+
+  - command: f'{expr:format_spec}'
+    meaning: Format specifier, passed with the (converted) value to format(), e.g. f'{x:.6f}' or f'{x:_^10}'.
+    details: |
+      Uses the format specification mini-language `[[fill]align][sign][#][0][width][grouping][.precision][type]`.
+      Can be combined with conversion and debug specifiers: `f'{x!r:>20}'`, `f'{x = :~>10}'`.
+    tags: [str, f-strings]
+    source: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+
+  # --- Binary sequences --------------------------------------------------
+
+  - command: Binary sequence types (bytes, bytearray, memoryview)
+    meaning: The core built-in types for binary data; bytes and bytearray hold the data, and memoryview accesses other objects' memory via the buffer protocol without copying.
+    details: |
+      The `array` module efficiently stores basic numeric types.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview
+
+  - command: bytes objects
+    meaning: Immutable sequences of single bytes (integers 0-255), with many str-like methods that assume ASCII-compatible data.
+    details: |
+      Indexing gives an int (`b[0]`), slicing gives bytes (`b[0:1]`), unlike str. Repr uses literals `b'...'`; `list(b)` gives the ints.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes-objects
+
+  - command: bytearray objects
+    meaning: The mutable counterpart of bytes objects (a list-like sequence of integers 0-255).
+    details: |
+      Indexing gives an int, slicing gives a bytearray. Repr: `bytearray(b'...')`.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytearray-objects
+
+  - command: bytes and bytearray operations
+    meaning: Both support the common sequence operations and interoperate with any bytes-like object, though the result type may depend on operand order.
+    details: |
+      Their methods take bytes, not str, arguments (`b"abc".replace(b"a", b"f")`). ASCII-based methods may corrupt non-ASCII binary data.
+      The bytearray versions of non-mutating methods (e.g. `replace`, `strip`, `upper`) always return a new object, not an in-place change.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes-and-bytearray-operations
+
+  - command: bytes.count(sub[, start[, end]])
+    meaning: Return the number of non-overlapping occurrences of the subsequence sub in the range [start, end].
+    details: |
+      `sub` may be any bytes-like object or an int 0-255. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.count
+
+  - command: bytes.removeprefix(prefix, /)
+    meaning: Return the data with the prefix removed if it starts with it, else a copy of the original.
+    details: |
+      Also on bytearray (returns a new object). Added in 3.9.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.removeprefix
+
+  - command: bytes.removesuffix(suffix, /)
+    meaning: Return the data with the (non-empty) suffix removed if it ends with it, else a copy of the original.
+    details: |
+      Also on bytearray (returns a new object). Added in 3.9.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.removesuffix
+
+  - command: bytes.decode(encoding='utf-8', errors='strict')
+    meaning: Return the bytes decoded to a str.
+    details: |
+      `errors`: `'strict'` (raise `UnicodeError`, default), `'ignore'`, `'replace'`, or a registered handler.
+      `str(data, encoding)` decodes any bytes-like object without a temporary copy. Also on bytearray.
+    tags: [bytes, str]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.decode
+
+  - command: bytes.endswith(suffix[, start[, end]])
+    meaning: Return True if the binary data ends with the suffix (or one of a tuple of suffixes), else False.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.endswith
+
+  - command: bytes.find(sub[, start[, end]])
+    meaning: Return the lowest index where the subsequence sub is found in s[start:end], or -1 if not found.
+    details: |
+      `sub` may be bytes-like or an int 0-255. Use `in` for plain containment tests. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.find
+
+  - command: bytes.index(sub[, start[, end]])
+    meaning: Like bytes.find(), but raise ValueError when the subsequence is not found.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.index
+
+  - command: bytes.join(iterable, /)
+    meaning: Return the concatenation of the bytes-like objects in the iterable, with the bytes itself as the separator.
+    details: |
+      Raises `TypeError` on non-bytes-like items (including str). Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.join
+
+  - command: bytes.partition(sep, /)
+    meaning: Split at the first occurrence of sep and return the 3-tuple (before, sep, after).
+    details: |
+      If not found, returns `(copy, b'', b'')`. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.partition
+
+  - command: bytes.replace(old, new, count=-1, /)
+    meaning: Return a copy with occurrences of the subsequence old replaced by new (only the first count if given).
+    details: |
+      Also on bytearray (returns a new object, not in place).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.replace
+
+  - command: bytes.rfind(sub[, start[, end]])
+    meaning: Return the highest index where the subsequence sub is found in s[start:end], or -1 if not found.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.rfind
+
+  - command: bytes.rindex(sub[, start[, end]])
+    meaning: Like bytes.rfind(), but raise ValueError when the subsequence is not found.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.rindex
+
+  - command: bytes.rpartition(sep, /)
+    meaning: Split at the last occurrence of sep and return the 3-tuple (before, sep, after).
+    details: |
+      If not found, returns `(b'', b'', copy)`. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.rpartition
+
+  - command: bytes.startswith(prefix[, start[, end]])
+    meaning: Return True if the binary data starts with the prefix (or one of a tuple of prefixes), else False.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.startswith
+
+  - command: bytes.center(width, fillbyte=b' ', /)
+    meaning: Return a copy centered in a sequence of length width, padded with fillbyte.
+    details: |
+      Also on bytearray (always a new object).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.center
+
+  - command: bytes.ljust(width, fillbyte=b' ', /)
+    meaning: Return a copy left-justified in a sequence of length width, padded with fillbyte.
+    details: |
+      Also on bytearray (always a new object).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.ljust
+
+  - command: bytes.lstrip(bytes=None, /)
+    meaning: Return a copy with leading bytes in the given set removed (ASCII whitespace by default).
+    details: |
+      The argument is a set of byte values, not a prefix; use `removeprefix()` for a prefix. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.lstrip
+
+  - command: bytes.rjust(width, fillbyte=b' ', /)
+    meaning: Return a copy right-justified in a sequence of length width, padded with fillbyte.
+    details: |
+      Also on bytearray (always a new object).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.rjust
+
+  - command: bytes.rsplit(sep=None, maxsplit=-1)
+    meaning: Like bytes.split(), but when maxsplit is given, the splits are done from the right.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.rsplit
+
+  - command: bytes.rstrip(bytes=None, /)
+    meaning: Return a copy with trailing bytes in the given set removed (ASCII whitespace by default).
+    details: |
+      The argument is a set of byte values, not a suffix; use `removesuffix()` for a suffix. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.rstrip
+
+  - command: bytes.split(sep=None, maxsplit=-1)
+    meaning: Split the binary sequence into a list of subsequences of the same type, using sep as the delimiter (at most maxsplit splits).
+    details: |
+      Same rules as `str.split()`: with `sep`, consecutive delimiters give empty items; with `sep=None`, runs of ASCII whitespace are one separator. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.split
+
+  - command: bytes.strip(bytes=None, /)
+    meaning: Return a copy with leading and trailing bytes in the given set removed (ASCII whitespace by default).
+    details: |
+      Also on bytearray (always a new object).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.strip
+
+  - command: bytes.capitalize()
+    meaning: Return a copy with the first byte uppercased and the rest lowercased, treating bytes as ASCII characters.
+    details: |
+      Non-ASCII byte values pass through unchanged. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.capitalize
+
+  - command: bytes.isalnum()
+    meaning: Return True if the sequence is non-empty and every byte is an ASCII letter or decimal digit.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.isalnum
+
+  - command: bytes.isalpha()
+    meaning: Return True if the sequence is non-empty and every byte is an ASCII letter.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.isalpha
+
+  - command: bytes.isascii()
+    meaning: Return True if the sequence is empty or every byte is ASCII (0-0x7F).
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.isascii
+
+  - command: bytes.isdigit()
+    meaning: Return True if the sequence is non-empty and every byte is an ASCII decimal digit.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.isdigit
+
+  - command: bytes.islower()
+    meaning: Return True if there is at least one lowercase ASCII character and no uppercase ASCII characters.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.islower
+
+  - command: bytes.isspace()
+    meaning: Return True if the sequence is non-empty and every byte is ASCII whitespace (space, \t, \n, \r, \x0b, \f).
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.isspace
+
+  - command: bytes.istitle()
+    meaning: Return True if the sequence is non-empty and ASCII titlecase.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.istitle
+
+  - command: bytes.isupper()
+    meaning: Return True if there is at least one uppercase ASCII character and no lowercase ASCII characters.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.isupper
+
+  - command: bytes.lower()
+    meaning: Return a copy with all uppercase ASCII characters converted to lowercase.
+    details: |
+      Also on bytearray (always a new object).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.lower
+
+  - command: bytes.splitlines(keepends=False)
+    meaning: Return a list of the lines in the binary sequence, breaking at ASCII line boundaries (universal newlines).
+    details: |
+      Returns `[]` for empty data and no extra empty line after a trailing newline. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.splitlines
+
+  - command: bytes.swapcase()
+    meaning: Return a copy with lowercase ASCII characters converted to uppercase and vice versa.
+    details: |
+      Unlike `str.swapcase()`, `b.swapcase().swapcase() == b` always holds. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.swapcase
+
+  - command: bytes.title()
+    meaning: Return a titlecased copy where words start with an uppercase ASCII character and the rest are lowercase.
+    details: |
+      Words are runs of letters, so apostrophes break words. Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.title
+
+  - command: bytes.upper()
+    meaning: Return a copy with all lowercase ASCII characters converted to uppercase.
+    details: |
+      Also on bytearray (always a new object).
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.upper
+
+  - command: bytes.zfill(width, /)
+    meaning: Return a copy left-filled with b'0' digits to length width, inserting the padding after a leading sign.
+    details: |
+      Also on bytearray.
+    tags: [bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#bytes.zfill
+
+  - command: memoryview(object)
+    meaning: Create a memoryview that references the data of an object supporting the buffer protocol (e.g. bytes, bytearray) without copying.
+    details: |
+      Supports indexing and slicing (slices are subviews); `itemsize` gives bytes per element, and `tolist()`/`tobytes()` convert.
+      If the underlying object is writable, slice assignment of the same size is allowed (no resizing). Read-only 1-D views with format 'B', 'b', or 'c' are hashable.
+    tags: [builtins, bytes]
+    source: https://docs.python.org/3/library/stdtypes.html#memoryview
+
+  # --- Sets --------------------------------------------------------------
+
+  - command: Set types (set, frozenset)
+    meaning: Unordered collections of distinct hashable objects, used for membership testing, removing duplicates, and set algebra (union, intersection, difference, symmetric difference).
+    details: |
+      No indexing or slicing. `set` is mutable (so unhashable); `frozenset` is immutable and hashable, so it can be a dict key or set element.
+      Non-empty sets can be written `{'a', 'b'}` (`{}` is an empty dict).
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset
+
+  - command: set.isdisjoint(other, /)
+    meaning: Return True if the set has no elements in common with other (their intersection is empty).
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.isdisjoint
+
+  - command: set.issubset(other, /) / set <= other
+    meaning: Test whether every element in the set is in other.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.issubset
+
+  - command: set < other
+    meaning: Test whether the set is a proper subset of other (set <= other and set != other).
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.issubset
+
+  - command: set.issuperset(other, /) / set >= other
+    meaning: Test whether every element in other is in the set.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.issuperset
+
+  - command: set > other
+    meaning: Test whether the set is a proper superset of other (set >= other and set != other).
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.issuperset
+
+  - command: set.union(*others) / set | other | ...
+    meaning: Return a new set with the elements from the set and all others.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.union
+
+  - command: set.intersection(*others) / set & other & ...
+    meaning: Return a new set with the elements common to the set and all others.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.intersection
+
+  - command: set.difference(*others) / set - other - ...
+    meaning: Return a new set with the elements in the set that are not in the others.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.difference
+
+  - command: set.symmetric_difference(other, /) / set ^ other
+    meaning: Return a new set with the elements in either the set or other but not both.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.symmetric_difference
+
+  - command: set.copy()
+    meaning: Return a shallow copy of the set.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.copy
+
+  - command: Set methods vs. operators and set comparisons
+    meaning: The method forms (union(), intersection(), issubset(), ...) accept any iterable, while the operator forms (|, &, <=, ...) require sets.
+    details: |
+      Sets compare by subset relations (`==`, `<` proper subset, `>` proper superset), a partial order, so `list.sort()` on sets is undefined.
+      `set('abc') == frozenset('abc')`; mixing set and frozenset returns the type of the first operand.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#frozenset.union
+
+  - command: set.update(*others) / set |= other | ...
+    meaning: Update the set in place, adding the elements from all others.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.update
+
+  - command: set.intersection_update(*others) / set &= other & ...
+    meaning: Update the set in place, keeping only the elements found in it and all others.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.intersection_update
+
+  - command: set.difference_update(*others) / set -= other | ...
+    meaning: Update the set in place, removing the elements found in the others.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.difference_update
+
+  - command: set.symmetric_difference_update(other, /) / set ^= other
+    meaning: Update the set in place, keeping only the elements found in either set but not in both.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.symmetric_difference_update
+
+  - command: set.add(elem, /)
+    meaning: Add the element to the set.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.add
+
+  - command: set.remove(elem, /)
+    meaning: Remove the element from the set, raising KeyError if it is not present.
+    details: |
+      `elem` may itself be a set (it is looked up as an equivalent frozenset).
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.remove
+
+  - command: set.discard(elem, /)
+    meaning: Remove the element from the set if it is present (no error otherwise).
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.discard
+
+  - command: set.pop()
+    meaning: Remove and return an arbitrary element from the set, raising KeyError if it is empty.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.pop
+
+  - command: set.clear()
+    meaning: Remove all elements from the set.
+    tags: [set]
+    source: https://docs.python.org/3/library/stdtypes.html#set.clear
+
+  # --- Dictionaries ------------------------------------------------------
+
+  - command: Mapping types (dict)
+    meaning: A dict maps hashable keys to arbitrary values; it is the only standard mapping type and is mutable.
+    details: |
+      Unhashable values (lists, dicts, ...) cannot be keys. Keys that compare equal (`1`, `1.0`, `True`) index the same entry.
+      Order is guaranteed to be insertion order (since 3.7).
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: list(d)
+    meaning: Return a list of all the keys in the dictionary d.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: len(d)
+    meaning: Return the number of items in the dictionary d.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: d[key]
+    meaning: Return the value for key, raising KeyError if the key is missing.
+    details: |
+      If a dict subclass defines `__missing__(key)`, it is called instead of raising (used by `collections.Counter` and `defaultdict`). No other operation calls it.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: d[key] = value
+    meaning: Set the value for key in the dictionary.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: del d[key]
+    meaning: Remove key and its value from the dictionary, raising KeyError if it is missing.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: key in d / key not in d
+    meaning: Test whether the dictionary has (or does not have) the key.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: iter(d)
+    meaning: Return an iterator over the keys of the dictionary (shortcut for iter(d.keys())).
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: dict.clear()
+    meaning: Remove all items from the dictionary.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.clear
+
+  - command: dict.copy()
+    meaning: Return a shallow copy of the dictionary.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.copy
+
+  - command: dict.fromkeys(iterable, value=None, /)
+    meaning: Class method that creates a new dictionary with keys from the iterable, all mapped to value.
+    details: |
+      All values are the same object, so a mutable `value` (e.g. `[]`) is shared; use a dict comprehension for distinct values.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.fromkeys
+
+  - command: dict.get(key, default=None, /)
+    meaning: Return the value for key if present, else default (never raises KeyError).
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.get
+
+  - command: dict.items()
+    meaning: Return a new view of the dictionary's (key, value) pairs.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.items
+
+  - command: dict.keys()
+    meaning: Return a new view of the dictionary's keys.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.keys
+
+  - command: dict.pop(key, /)
+    meaning: Remove key and return its value, raising KeyError if it is missing.
+    details: |
+      Other form: `dict.pop(key, default, /)` returns `default` instead of raising.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.pop
+
+  - command: dict.popitem()
+    meaning: Remove and return a (key, value) pair in LIFO order, raising KeyError if the dictionary is empty.
+    details: |
+      LIFO order is guaranteed since 3.7. Useful for destructive iteration.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.popitem
+
+  - command: reversed(d)
+    meaning: Return a reverse iterator over the keys of the dictionary (shortcut for reversed(d.keys())).
+    details: |
+      Dicts and their views are reversible since 3.8, e.g. `reversed(d.items())`.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: dict.setdefault(key, default=None, /)
+    meaning: Return the value for key if present; otherwise insert key with value default and return default.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.setdefault
+
+  - command: dict.update(mapping, /, **kwargs)
+    meaning: Update the dictionary with the key/value pairs from a mapping or iterable of pairs and from keyword arguments, overwriting existing keys; returns None.
+    details: |
+      Other forms: `update(**kwargs)` (e.g. `d.update(red=1, blue=2)`) and `update(iterable, /, **kwargs)`.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.update
+
+  - command: dict.values()
+    meaning: Return a new view of the dictionary's values.
+    details: |
+      Two values views never compare equal, even `d.values() == d.values()`.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dict.values
+
+  - command: d | other
+    meaning: Create a new dictionary with the merged keys and values of the dicts d and other, with other's values winning on shared keys.
+    details: |
+      Added in 3.9.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: d |= other
+    meaning: Update d in place with the keys and values of other (a mapping or iterable of pairs), with other's values winning on shared keys.
+    details: |
+      Added in 3.9.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+  - command: Dictionary view objects
+    meaning: The objects returned by dict.keys(), dict.values(), and dict.items(); they are dynamic views that reflect later changes to the dictionary.
+    details: |
+      Support `len()`, iteration (insertion order), `in`, and `reversed()`.
+      Keys views (and items views with hashable values) are set-like and support `&`, `|`, `^`, `-`, `<`, ... with any iterable; values views are not.
+      Adding/deleting entries while iterating a view may raise `RuntimeError`.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
+  - command: len(dictview)
+    meaning: Return the number of entries in the underlying dictionary.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
+  - command: iter(dictview)
+    meaning: Return an iterator over the keys, values, or (key, value) items of the dictionary, in insertion order.
+    details: |
+      E.g. `zip(d.values(), d.keys())` builds (value, key) pairs. Modifying the dict during iteration may raise `RuntimeError`.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
+  - command: x in dictview
+    meaning: Return True if x is among the dictionary's keys, values, or items (a (key, value) tuple for items views).
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
+  - command: reversed(dictview)
+    meaning: Return a reverse iterator over the keys, values, or items, in reverse insertion order.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
+  - command: dictview.mapping
+    meaning: Return a read-only types.MappingProxyType wrapping the dictionary the view refers to.
+    details: |
+      Added in 3.10.
+    tags: [dict]
+    source: https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
+  # --- Context managers --------------------------------------------------
+
+  - command: Context manager protocol (__enter__, __exit__)
+    meaning: The with statement calls __enter__() on entry (its return value is bound by as) and __exit__(exc_type, exc_val, exc_tb) on exit.
+    details: |
+      `__exit__` receives the exception info (or three `None`s); returning a true value suppresses the exception. It should not re-raise the passed exception itself.
+      File objects return themselves from `__enter__`. `@contextlib.contextmanager` turns a generator function into a context manager.
+    tags: [classes, semantics]
+    source: https://docs.python.org/3/library/stdtypes.html#context-manager-types

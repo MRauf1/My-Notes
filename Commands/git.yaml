@@ -1,0 +1,691 @@
+deck: Commands::Git
+source: https://git-scm.com/docs
+entries:
+  # --- Recording changes -------------------------------------------------
+
+  - command: git diff
+    meaning: Show the changes in the working tree that are not yet staged (working tree vs. staging area).
+    details: |
+      Does not show changes that are already staged; use `git diff --staged` for those.
+    tags: [recording]
+    source: https://git-scm.com/docs/git-diff
+
+  - command: git diff --staged
+    meaning: Show the staged changes, i.e. what will go into the next commit (staging area vs. last commit).
+    details: |
+      `--cached` is a synonym.
+    tags: [recording]
+    source: https://git-scm.com/docs/git-diff
+
+  - command: git rm <file>
+    meaning: Remove a file from both the staging area and the working tree, so it stops being tracked.
+    details: |
+      `--cached` removes it only from the index and keeps the file on disk (e.g. to untrack a file that should be ignored).
+      `-f` is needed if the file is modified or already staged.
+    tags: [recording]
+    source: https://git-scm.com/docs/git-rm
+
+  - command: git mv <from> <to>
+    meaning: Move or rename a tracked file and stage the rename.
+    details: |
+      Equivalent to `mv <from> <to>; git rm <from>; git add <to>`. Git does not store renames explicitly; it infers them from content.
+    tags: [recording]
+    source: https://git-scm.com/docs/git-mv
+
+  - command: git commit --amend
+    meaning: Replace the tip commit with a new commit containing the currently staged changes (and optionally a new message).
+    details: |
+      Opens the editor pre-filled with the previous message; `--no-edit` keeps it unchanged.
+      Creates a new commit with a new hash, so avoid amending commits that have already been pushed.
+    tags: [undo]
+    source: https://git-scm.com/docs/git-commit
+
+  - command: git add --patch
+    meaning: Interactively choose which hunks of the changes in each file to stage.
+    details: |
+      `-p` is a shortcut. At each hunk: `y` stage, `n` skip, `s` split into smaller hunks, `e` edit manually, `q` quit.
+    tags: [recording]
+    source: https://git-scm.com/docs/git-add
+
+  # --- Viewing history ---------------------------------------------------
+
+  - command: git log
+    meaning: List the commits reachable from HEAD in reverse chronological order, with hash, author, date, and message.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log -p / git log --patch
+    meaning: Show the diff (patch) introduced by each commit along with the log.
+    details: |
+      Often combined with a limit, e.g. `git log -p -2`.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --stat
+    meaning: Show abbreviated statistics for each commit, listing the modified files and how many lines were added/removed.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --pretty=<format>
+    meaning: Change the log output format.
+    details: |
+      Built-in values: `oneline`, `short`, `full`, `fuller`, `reference`.
+      `--pretty=format:"%h - %an, %ar : %s"` gives a custom format with placeholders
+      (`%H`/`%h` full/abbreviated hash, `%an`/`%ae` author name/email, `%ad`/`%ar` author date absolute/relative, `%cn` committer name, `%s` subject).
+    tags: [history]
+    source: https://git-scm.com/docs/pretty-formats
+
+  - command: git log --graph
+    meaning: Draw an ASCII graph of the branch and merge history next to the log output.
+    details: |
+      Commonly used as `git log --oneline --graph --all`.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log -<n>
+    meaning: Show only the last n commits.
+    details: |
+      Same as `-n <n>` or `--max-count=<n>`.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --since=<date>
+    meaning: Show only commits more recent than the given date.
+    details: |
+      Accepts absolute (`"2008-01-15"`) or relative (`2.weeks`, `"2 years 1 day ago"`) dates. `--after` is a synonym.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --until=<date>
+    meaning: Show only commits older than the given date.
+    details: |
+      Same date syntax as `--since`. `--before` is a synonym.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --author=<pattern>
+    meaning: Show only commits whose author name or email matches the regex pattern.
+    details: |
+      Several `--author` options are OR-ed together.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --committer=<pattern>
+    meaning: Show only commits whose committer name or email matches the regex pattern.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: Git author vs. committer
+    meaning: The author is the person who originally wrote the change; the committer is the person who last applied it to the repository.
+    details: |
+      They differ when a change is applied by someone else (e.g. an emailed patch) or rewritten via rebase, cherry-pick, or `commit --amend`; the original author is kept and the committer is updated.
+      Each has its own date (`%ad` vs. `%cd`).
+    tags: [history]
+    source: https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
+  - command: git log --grep=<pattern>
+    meaning: Show only commits whose message matches the regex pattern.
+    details: |
+      Several `--grep` options are OR-ed; add `--all-match` to require all of them.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log -S <string>
+    meaning: Show only commits that change the number of occurrences of the string, i.e. that added or removed it ("pickaxe").
+    details: |
+      Useful for finding when a function or variable was introduced or deleted. `-G <regex>` instead matches any added/removed line against a regex.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log -- <path>
+    meaning: Show only commits that modified the given file or directory.
+    details: |
+      The `--` separates paths from options and revisions; it is always the last option.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --no-merges
+    meaning: Hide merge commits from the log.
+    tags: [history]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --decorate
+    meaning: Show the names of refs (branches, tags, HEAD) next to the commits they point to.
+    details: |
+      On by default when output goes to a terminal (`log.decorate = auto`).
+    tags: [history, branching]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log --all
+    meaning: Show commits reachable from all refs (every branch and tag), not just from HEAD.
+    tags: [history, branching]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git log <branch>
+    meaning: Show the history of the given branch without switching to it.
+    tags: [history, branching]
+    source: https://git-scm.com/docs/git-log
+
+  - command: git blame <file>
+    meaning: Annotate each line of the file with the commit, author, and date that last modified it.
+    details: |
+      `-L <start>,<end>` limits to a line range; `-C` also detects lines moved or copied from other files.
+    tags: [debugging]
+    source: https://git-scm.com/docs/git-blame
+
+  # --- Undoing things ----------------------------------------------------
+
+  - command: git reset HEAD <file>
+    meaning: (Outdated) Unstage a file while keeping its changes in the working tree.
+    details: |
+      Replaced by `git restore --staged <file>` since Git 2.23.
+    tags: [undo, outdated]
+    source: https://git-scm.com/docs/git-reset
+
+  - command: git checkout -- <file>
+    meaning: (Outdated) Discard the changes to a file in the working tree, reverting it to its staged/committed version.
+    details: |
+      Replaced by `git restore <file>` since Git 2.23. The discarded changes are unrecoverable.
+    tags: [undo, outdated]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git restore --staged <file>
+    meaning: Unstage a file (reset its index entry to HEAD) while keeping its changes in the working tree.
+    tags: [undo]
+    source: https://git-scm.com/docs/git-restore
+
+  - command: git restore <file>
+    meaning: Discard the unstaged changes to a file, restoring it from the staging area.
+    details: |
+      The discarded changes are unrecoverable. `--source=<commit>` restores from a specific commit instead.
+    tags: [undo]
+    source: https://git-scm.com/docs/git-restore
+
+  - command: git reset --soft HEAD~
+    meaning: Move the current branch back one commit, keeping the index and working tree, so the undone commit's changes stay staged.
+    details: |
+      Useful for squashing: reset, then commit again.
+    tags: [undo, reset]
+    source: https://git-scm.com/docs/git-reset
+
+  - command: git reset --mixed HEAD~
+    meaning: Move the current branch back one commit and reset the index, so the undone commit's changes are kept but unstaged.
+    details: |
+      `--mixed` is the default mode of `git reset`.
+    tags: [undo, reset]
+    source: https://git-scm.com/docs/git-reset
+
+  - command: git reset --hard HEAD~
+    meaning: Move the current branch back one commit and reset both the index and the working tree, discarding the changes.
+    details: |
+      The only destructive form of `reset`: uncommitted work is lost. The discarded commit remains recoverable via `git reflog` for a while.
+    tags: [undo, reset]
+    source: https://git-scm.com/docs/git-reset
+
+  - command: git merge --abort
+    meaning: Abort a conflicted merge and try to restore the state from before the merge started.
+    details: |
+      May be unable to fully restore uncommitted changes that existed before the merge, so commit or stash before merging.
+    tags: [undo, merging]
+    source: https://git-scm.com/docs/git-merge
+
+  - command: git revert -m 1 HEAD
+    meaning: Create a new commit that undoes the merge commit HEAD, treating parent 1 (the branch merged into) as the mainline to keep.
+    details: |
+      Gotcha: merging the reverted branch again later will not bring back its old commits; revert the revert first.
+    tags: [undo, merging]
+    source: https://git-scm.com/docs/git-revert
+
+  # --- Remotes -----------------------------------------------------------
+
+  - command: git remote
+    meaning: List the shortnames of the configured remotes.
+    details: |
+      After `git clone`, the source repository is named `origin`.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-remote
+
+  - command: git remote -v
+    meaning: List the remotes together with their fetch and push URLs.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-remote
+
+  - command: git remote add <shortname> <url>
+    meaning: Add a new remote repository under the given shortname.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-remote
+
+  - command: git fetch <remote>
+    meaning: Download all the data from the remote that you don't have yet and update the remote-tracking branches (<remote>/<branch>).
+    details: |
+      Does not merge anything into your local branches or modify your working tree; `git pull` = fetch + merge (or rebase).
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-fetch
+
+  - command: git fetch --all
+    meaning: Fetch from all configured remotes.
+    details: |
+      Run before `git branch -vv` to get up-to-date ahead/behind counts.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-fetch
+
+  - command: git push <remote> <branch>
+    meaning: Upload the local branch's commits to the branch of the same name on the remote.
+    details: |
+      Rejected if someone else pushed in the meantime; fetch and integrate their work first.
+      Short for `git push <remote> refs/heads/<branch>:refs/heads/<branch>`.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git push <remote> <local_branch>:<remote_branch>
+    meaning: Push the local branch to a branch with a different name on the remote.
+    tags: [remotes, branching]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git push --set-upstream origin <branch>
+    meaning: Push the branch to origin and set origin/<branch> as its upstream (tracking) branch.
+    details: |
+      `-u` is a shortcut. Afterwards, plain `git push` and `git pull` work on that branch without arguments.
+    tags: [remotes, branching]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git push <remote> --delete <branch>
+    meaning: Delete the branch on the remote.
+    details: |
+      The data is kept on the server until garbage collection runs.
+    tags: [remotes, branching]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git remote show <remote>
+    meaning: Show details about a remote, such as its URL, its branches and whether they are tracked, and which local branches push and pull to which remote branches.
+    details: |
+      Also shows remote branches that no longer exist on the server ("stale").
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-remote
+
+  - command: git remote rename <old> <new>
+    meaning: Rename a remote's shortname.
+    details: |
+      Also renames its remote-tracking branches (e.g. `old/main` becomes `new/main`).
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-remote
+
+  - command: git remote remove <remote>
+    meaning: Remove a remote, along with its remote-tracking branches and configuration settings.
+    details: |
+      `git remote rm` is a synonym.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-remote
+
+  - command: git ls-remote <remote>
+    meaning: List the references (branches, tags, etc.) in a remote repository along with their commit IDs.
+    details: |
+      Also reveals refs that are not fetched by default, e.g. GitHub's `refs/pull/<n>/head`.
+    tags: [remotes]
+    source: https://git-scm.com/docs/git-ls-remote
+
+  # --- Tags --------------------------------------------------------------
+
+  - command: git tag
+    meaning: List the existing tags in alphabetical order.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-tag
+
+  - command: git tag -l <pattern>
+    meaning: List only the tags matching the wildcard pattern (e.g. "v1.8.5*").
+    details: |
+      `-l`/`--list` is required when a pattern is given; otherwise `git tag <name>` would create a tag.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-tag
+
+  - command: git tag -a <tag> -m <message>
+    meaning: Create an annotated tag on the current commit with the given message.
+    details: |
+      Annotated tags are full objects storing the tagger, date, and message, and can be signed; they are recommended for releases.
+      Without `-m`, an editor opens for the message.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-tag
+
+  - command: git tag <tag>
+    meaning: Create a lightweight tag on the current commit.
+    details: |
+      A lightweight tag is just a pointer to a commit (the checksum stored in a file) with no extra information.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-tag
+
+  - command: git tag -a <tag> <commit>
+    meaning: Tag an earlier commit, identified by its (possibly abbreviated) checksum.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-tag
+
+  - command: git show <tag>
+    meaning: Show the tag's data (tagger, date, and message for annotated tags) together with the commit it points to.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-show
+
+  - command: git push origin <tag>
+    meaning: Push a single tag to the remote.
+    details: |
+      `git push` does not transfer tags by default.
+    tags: [tags, remotes]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git push origin --tags
+    meaning: Push all local tags that are not already on the remote.
+    details: |
+      Pushes both lightweight and annotated tags; `--follow-tags` pushes only annotated tags reachable from the pushed commits.
+    tags: [tags, remotes]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git tag -d <tag>
+    meaning: Delete a tag from the local repository.
+    details: |
+      Does not remove it from any remote; see `git push origin --delete <tag>`.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-tag
+
+  - command: git push origin --delete <tag>
+    meaning: Delete a tag from the remote.
+    details: |
+      Equivalent older form: `git push origin :refs/tags/<tag>` (push "nothing" onto the tag).
+    tags: [tags, remotes]
+    source: https://git-scm.com/docs/git-push
+
+  - command: git checkout <tag>
+    meaning: Check out the commit a tag points to, which puts the repository in a "detached HEAD" state.
+    details: |
+      New commits made there belong to no branch and are only reachable by their hash; create a branch to keep them.
+    tags: [tags]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git checkout -b <branch> <tag>
+    meaning: Create a new branch starting at the tagged commit and switch to it.
+    tags: [tags, branching]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git describe <branch>
+    meaning: Give a human-readable name for a commit, built from the most recent reachable annotated tag.
+    details: |
+      Output is `<tag>-<commits since tag>-g<abbrev hash>`, e.g. `v1.6.2-rc1-20-g8c5b85c`; just `<tag>` if the tag points to the commit itself.
+      Only considers annotated tags unless `--tags` is given.
+    tags: [tags, release]
+    source: https://git-scm.com/docs/git-describe
+
+  # --- Branching and merging ---------------------------------------------
+
+  - command: git branch <branch>
+    meaning: Create a new branch pointing at the current commit, without switching to it.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git checkout <branch>
+    meaning: Switch to an existing branch, moving HEAD to it and updating the working tree to its snapshot.
+    details: |
+      Refuses if uncommitted changes would conflict. If `<branch>` does not exist locally but exactly one remote has a branch with that name, it creates a local branch tracking it.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git checkout -b <new_branch>
+    meaning: Create a new branch at the current commit and switch to it.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git switch <branch>
+    meaning: Switch to an existing branch (the dedicated modern replacement for git checkout <branch>).
+    details: |
+      `git switch -` switches back to the previously checked out branch.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-switch
+
+  - command: git switch -c <new_branch>
+    meaning: Create a new branch and switch to it.
+    details: |
+      `--create` is the long form. Equivalent to `git checkout -b <new_branch>`.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-switch
+
+  - command: git merge <branch>
+    meaning: Merge the given branch into the current branch.
+    details: |
+      Fast-forwards if the current branch is an ancestor of `<branch>`; otherwise does a three-way merge that creates a merge commit.
+      On conflict, resolve the files, `git add` them, then `git commit`.
+    tags: [branching, merging]
+    source: https://git-scm.com/docs/git-merge
+
+  - command: git branch
+    meaning: List the local branches, marking the current one with *.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch -v
+    meaning: List the local branches along with the last commit on each.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch -vv
+    meaning: List the local branches with their last commit, their upstream branch, and how far ahead/behind of it they are.
+    details: |
+      Ahead/behind counts are relative to the last fetch; run `git fetch --all` first for current numbers.
+    tags: [branching, remotes]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch --merged
+    meaning: List the branches that are already merged into the current branch (their tips are reachable from HEAD).
+    details: |
+      Branches in this list without * can usually be safely deleted with `git branch -d`.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch --no-merged
+    meaning: List the branches whose work is not yet merged into the current branch.
+    details: |
+      `git branch -d` refuses to delete these; `-D` forces it.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch --merged <branch>
+    meaning: List the branches that are merged into the given branch, without having to check it out.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch --no-merged <branch>
+    meaning: List the branches that are not yet merged into the given branch, without having to check it out.
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git branch --move <old_branch> <new_branch>
+    meaning: Rename a local branch.
+    details: |
+      `-m` is a shortcut. Only the local branch is renamed; to rename it on the remote, push the new name (`git push --set-upstream origin <new_branch>`) and delete the old one (`git push origin --delete <old_branch>`).
+    tags: [branching]
+    source: https://git-scm.com/docs/git-branch
+
+  - command: git checkout -b <branch> <remote>/<remote_branch>
+    meaning: Create a local branch starting at the remote-tracking branch, set it to track that branch, and switch to it.
+    details: |
+      Use this form when the local name should differ from the remote branch name.
+    tags: [branching, remotes]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git checkout --track <remote>/<branch>
+    meaning: Create a local branch with the same name as the remote branch, tracking it, and switch to it.
+    tags: [branching, remotes]
+    source: https://git-scm.com/docs/git-checkout
+
+  - command: git branch -u <remote>/<branch>
+    meaning: Set the given remote branch as the upstream (tracking) branch of the current branch.
+    details: |
+      `--set-upstream-to` is the long form. The upstream can then be referred to as `@{upstream}` / `@{u}`, e.g. `git merge @{u}`.
+    tags: [branching, remotes]
+    source: https://git-scm.com/docs/git-branch
+
+  # --- Rebasing ----------------------------------------------------------
+
+  - command: git rebase <branch>
+    meaning: Replay the commits of the current branch on top of the given branch, producing a linear history.
+    details: |
+      Rebasing rewrites commits (new hashes): never rebase commits that exist outside your repository and that others may have based work on.
+    tags: [rebasing]
+    source: https://git-scm.com/docs/git-rebase
+
+  - command: git rebase <main_branch> <topic_branch>
+    meaning: Check out topic_branch and replay its commits on top of main_branch.
+    details: |
+      Saves running `git checkout <topic_branch>` first.
+    tags: [rebasing]
+    source: https://git-scm.com/docs/git-rebase
+
+  - command: git rebase --onto <branch1> <branch2> <branch3>
+    meaning: Take the commits on branch3 that are not on branch2 and replay them on top of branch1.
+    details: |
+      E.g. `git rebase --onto master server client` moves the `client` work, branched off `server`, directly onto `master`.
+    tags: [rebasing]
+    source: https://git-scm.com/docs/git-rebase
+
+  - command: git pull --rebase
+    meaning: Fetch from the upstream and rebase the current branch onto it instead of merging.
+    details: |
+      Also handles an upstream that was itself rebased. Make it the default with `git config --global pull.rebase true`.
+    tags: [rebasing, remotes]
+    source: https://git-scm.com/docs/git-pull
+
+  - command: git cherry-pick <commit>
+    meaning: Apply the changes introduced by an existing commit onto the current branch as a new commit.
+    details: |
+      The new commit has the same changes but a different hash.
+    tags: [rebasing]
+    source: https://git-scm.com/docs/git-cherry-pick
+
+  - command: git rerere
+    meaning: '"Reuse recorded resolution": record how you resolved a conflict and automatically reapply that resolution when the same conflict happens again.'
+    details: |
+      Enable with `git config --global rerere.enabled true`; it then runs automatically during merges and rebases.
+    tags: [merging]
+    source: https://git-scm.com/docs/git-rerere
+
+  # --- Releases ----------------------------------------------------------
+
+  - command: git archive
+    meaning: Create a tar or zip archive of the snapshot of a given tree/commit, without the .git directory.
+    details: |
+      E.g. `git archive main --prefix='project/' | gzip > release.tar.gz`, or `--format=zip`.
+    tags: [release]
+    source: https://git-scm.com/docs/git-archive
+
+  - command: git shortlog
+    meaning: Summarize git log output grouped by author, listing each commit's title, e.g. for release notes.
+    details: |
+      E.g. `git shortlog --no-merges main --not v1.0.1`. `-s -n` shows only commit counts per author, sorted.
+    tags: [release]
+    source: https://git-scm.com/docs/git-shortlog
+
+  # --- Stashing and cleaning ---------------------------------------------
+
+  - command: git stash
+    meaning: Save the uncommitted changes to tracked files (staged and unstaged) onto a stack and revert to a clean working tree.
+    details: |
+      Short for `git stash push`. Untracked and ignored files are left alone unless `-u` or `-a` is given.
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash list
+    meaning: List the stashes on the stack (stash@{0} is the most recent).
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash apply <stash>
+    meaning: Reapply the given stash (default the latest) to the working tree, keeping it on the stack.
+    details: |
+      `<stash>` is like `stash@{2}`. The changes come back unstaged unless `--index` is given.
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash drop <stash>
+    meaning: Remove the given stash (default the latest) from the stack.
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash pop
+    meaning: Reapply the latest stash and remove it from the stack.
+    details: |
+      If the apply produces conflicts, the stash is not dropped.
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash -u
+    meaning: Stash the changes including untracked files.
+    details: |
+      `--include-untracked` is the long form. Ignored files are still left alone.
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash -a
+    meaning: Stash the changes including untracked and ignored files.
+    details: |
+      `--all` is the long form.
+    tags: [stash]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git stash branch <new_branch>
+    meaning: Create and check out a new branch at the commit where the stash was made, apply the stash there, and drop it if that succeeds.
+    details: |
+      Useful when the stash no longer applies cleanly to the current branch.
+    tags: [stash, branching]
+    source: https://git-scm.com/docs/git-stash
+
+  - command: git clean
+    meaning: Remove untracked files from the working tree.
+    details: |
+      Refuses to delete anything without `-f` (unless `clean.requireForce = false`). Deleted files are unrecoverable; `git stash --all` is a safer alternative.
+      `-i` runs it interactively.
+    tags: [clean]
+    source: https://git-scm.com/docs/git-clean
+
+  - command: git clean -f
+    meaning: Actually delete the untracked files (force).
+    details: |
+      A second `-f` is needed to remove untracked nested Git repositories.
+    tags: [clean]
+    source: https://git-scm.com/docs/git-clean
+
+  - command: git clean -d
+    meaning: Also remove untracked directories, recursing into them.
+    details: |
+      Usually combined as `git clean -fd`.
+    tags: [clean]
+    source: https://git-scm.com/docs/git-clean
+
+  - command: git clean -n
+    meaning: Dry run - show what would be removed without deleting anything.
+    details: |
+      `--dry-run` is the long form. E.g. `git clean -dn` before `git clean -df`.
+    tags: [clean]
+    source: https://git-scm.com/docs/git-clean
+
+  - command: git clean -x
+    meaning: Also remove files ignored by .gitignore (e.g. build products), not only untracked ones.
+    details: |
+      `-X` instead removes only the ignored files.
+    tags: [clean]
+    source: https://git-scm.com/docs/git-clean
+
+  # --- Searching ---------------------------------------------------------
+
+  - command: git grep -n <pattern>
+    meaning: Search the tracked files for the pattern and print the line numbers of the matches.
+    details: |
+      Can also search any committed tree, e.g. `git grep <pattern> v1.0`.
+    tags: [searching]
+    source: https://git-scm.com/docs/git-grep
+
+  - command: git grep -c <pattern>
+    meaning: Print, per file, only the number of lines matching the pattern instead of the lines themselves.
+    tags: [searching]
+    source: https://git-scm.com/docs/git-grep
+
+  - command: git grep -p <pattern>
+    meaning: For each match, also show the enclosing function (the preceding line containing the function name).
+    details: |
+      `--show-function` is the long form. The function line is found the same way as `git diff` hunk headers.
+    tags: [searching]
+    source: https://git-scm.com/docs/git-grep
