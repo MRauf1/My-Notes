@@ -1,0 +1,28 @@
+---
+tags:
+  - computer_science
+  - philosophy
+---
+
+# Definition
+> [!info] Paths to Superintelligence[^1]
+> The candidate technological routes by which greater-than-current-human intelligence might be achieved.
+
+# Types
+- **Artificial intelligence** - including evolutionary approaches and [[Seed AI|seed AI]]. Blind evolution produced human-level intelligence at least once, so guided evolutionary search should be far more efficient; but evolution only places an upper bound on the difficulty of designing intelligence, and, because of an [[Observation Selection Effect|observation selection effect]], evolutionary arguments cannot meaningfully constrain expectations of the difficulty or timescale of human-level AI. The brain as a template supports feasibility but not timing.[^2]
+- **[[Whole Brain Emulation]]** - scanning and closely modelling the computational structure of a biological brain.
+- **Biological cognition** - enhancing biological brains, e.g. via embryo selection. Any heritable trait, including cognitive capacity, becomes selectable given only (lots of) data on genetic correlates, without understanding causal pathways. Gains show steeply diminishing returns in the number of embryos, but this is greatly abated across multiple generations. Stem cell-derived gametes would enable *iterated embryo selection*, compressing many generations of selection into less than a human maturation period, with the resulting cell lines reusable to produce many enhanced embryos (though it disrupts the genetic parent-child relationship). Mature gene editing could design embryos, including rare beneficial alleles; reproductive cloning could replicate exceptional genomes; somatic (non-germline) enhancement would act faster but is technologically much harder, requiring gene insertion into many cells including the brain.[^3]
+- **Brain-computer interfaces** - implants letting humans exploit digital computing. Even successful implants (e.g. deep brain stimulation) carry cognitive side effects, and output bandwidth is low. Directly "downloading" concepts between brains is implausible: the rate-limiting step of intelligence is extracting meaning rather than raw data input, brains use idiosyncratic rather than standardised representations, and building a real-time semantic translator between brains is probably AI-complete (and would itself enable neuromorphic AI). One hope is that the brain learns a mapping to an implanted device over time.[^4]
+- **Networks and organisations** - collective superintelligence through better-connected humans and machines; the Internet might conceivably "wake up" into a unified super-intellect.[^5]
+
+# Properties
+- Superintelligence reached along the AI path precludes [[Motivation Selection Methods|augmentation]], while non-AI paths rule out many other motivation selection methods.[^6]
+- Even if [[Whole Brain Emulation]] arrives first, a second transition to mature AI would remain, since AI is ultimately the more powerful technology.[^7]
+
+[^1]: [Bostrom, 2014, p. 36](zotero://open-pdf/library/items/9ECZCLTQ?page=53&annotation=Y2JW7KM2)
+[^2]: [Bostrom, 2014, p. 23](zotero://open-pdf/library/items/9ECZCLTQ?page=40&annotation=G2NH9FT8); [Bostrom, 2014, p. 24](zotero://open-pdf/library/items/9ECZCLTQ?page=41&annotation=SA6QP6LV); [Bostrom, 2014, p. 27](zotero://open-pdf/library/items/9ECZCLTQ?page=44&annotation=56Y3VS2Z); [Bostrom, 2014, p. 27](zotero://open-pdf/library/items/9ECZCLTQ?page=44&annotation=QSJXNTDR); [Bostrom, 2014, p. 28](zotero://open-pdf/library/items/9ECZCLTQ?page=45&annotation=4GFGTSH7)
+[^3]: [Bostrom, 2014, p. 37](zotero://open-pdf/library/items/9ECZCLTQ?page=54&annotation=YZMF5V8V); [Bostrom, 2014, p. 38](zotero://open-pdf/library/items/9ECZCLTQ?page=55&annotation=XFEXDDFW); [Bostrom, 2014, p. 38](zotero://open-pdf/library/items/9ECZCLTQ?page=55&annotation=RCWSC5U3); [Bostrom, 2014, p. 38](zotero://open-pdf/library/items/9ECZCLTQ?page=55&annotation=H2XCXEMY); [Bostrom, 2014, p. 38](zotero://open-pdf/library/items/9ECZCLTQ?page=55&annotation=V78X6CUU); [Bostrom, 2014, p. 39](zotero://open-pdf/library/items/9ECZCLTQ?page=56&annotation=6CT7YT6Z); [Bostrom, 2014, p. 39](zotero://open-pdf/library/items/9ECZCLTQ?page=56&annotation=C8NAAZRK); [Bostrom, 2014, p. 41](zotero://open-pdf/library/items/9ECZCLTQ?page=58&annotation=HALL3HHL); [Bostrom, 2014, p. 42](zotero://open-pdf/library/items/9ECZCLTQ?page=59&annotation=R83HWATR); [Bostrom, 2014, p. 42](zotero://open-pdf/library/items/9ECZCLTQ?page=59&annotation=2P2TCPYQ)
+[^4]: [Bostrom, 2014, p. 44](zotero://open-pdf/library/items/9ECZCLTQ?page=61&annotation=2QK9PCG2); [Bostrom, 2014, p. 45](zotero://open-pdf/library/items/9ECZCLTQ?page=62&annotation=9SVJASF4); [Bostrom, 2014, p. 46](zotero://open-pdf/library/items/9ECZCLTQ?page=63&annotation=FNSM7I28); [Bostrom, 2014, p. 46](zotero://open-pdf/library/items/9ECZCLTQ?page=63&annotation=2XQ8IL6V); [Bostrom, 2014, p. 46](zotero://open-pdf/library/items/9ECZCLTQ?page=63&annotation=MTXU2JBC); [Bostrom, 2014, p. 46](zotero://open-pdf/library/items/9ECZCLTQ?page=63&annotation=R895HUBP); [Bostrom, 2014, p. 47](zotero://open-pdf/library/items/9ECZCLTQ?page=64&annotation=VBD75S49); [Bostrom, 2014, p. 48](zotero://open-pdf/library/items/9ECZCLTQ?page=65&annotation=8UM3EPS4)
+[^5]: [Bostrom, 2014, p. 49](zotero://open-pdf/library/items/9ECZCLTQ?page=66&annotation=7NUD9DJM)
+[^6]: [Bostrom, 2014, p. 142](zotero://open-pdf/library/items/9ECZCLTQ?page=159&annotation=TCUSDZPD); [Bostrom, 2014, p. 143](zotero://open-pdf/library/items/9ECZCLTQ?page=160&annotation=G3ELBFL4)
+[^7]: [Bostrom, 2014, p. 243](zotero://open-pdf/library/items/9ECZCLTQ?page=260&annotation=6693ACDU)

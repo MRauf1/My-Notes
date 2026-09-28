@@ -1,0 +1,39 @@
+---
+tags:
+  - psychology
+  - existential_psychology
+---
+
+# Definition
+> [!info] Existential Isolation[^1]
+> An unbridgeable gulf between oneself and any other being, and, more fundamentally, a separation between the individual and the world. No matter how close one becomes to another, each enters and leaves existence alone.
+
+# Types
+- **Interpersonal isolation** - isolation from other individuals, experienced as loneliness; increased by the decline of intimacy-sponsoring institutions.[^2]
+- **Intrapersonal isolation** - partitioning off parts of oneself: stifling feelings, accepting "shoulds" as wishes, distrusting one's judgment, burying potential. Therapy reintegrates split-off parts ("discovering and accepting previously unknown parts of myself" was the most chosen therapeutic item).[^3]
+- **Existential isolation** - the isolation beneath the other two.[^1]
+
+# Properties
+- Confrontation with death ("no one can die with one or for one") and with freedom (the loneliness of being one's own parent, the universe's indifference) both lead into it; see also [[Uncanniness]].[^4]
+- **Growth is separation**: "ex-ist" means to stand out; autonomy, individuation, and independence carry the toll of isolation. The **fusion–isolation** (attachment–separation) dilemma is the major existential developmental task; "we yearn for autonomy but recoil from autonomy's inevitable consequence — isolation".[^5]
+- The basic interpersonal task is to be at once "a part of" and "apart from": to relate without fusing with the other and without reducing the other to a tool against isolation.[^6]
+- Defenses: taking part of the isolation "resolutely", and relationship; when dread dominates, relationships become I–It uses of others for products (power, fusion, protection, adoration). Forms include fusion (conformity, dissolving self-awareness), sadism and masochism (swallowing or being swallowed), and compulsive sexuality; fear of isolation drives transference.[^7]
+- No relationship can eliminate isolation, but aloneness can be shared so that love compensates; those most needing authentic relationship are the least able to form one ("Eve failed to get what she wanted because she needed it too much"); the problem is misidentified as being unloved rather than being unable to love.[^8]
+- One forms rather than finds a relationship; even brief encounters leave a permanent internal reference point, and no relationship guarantees permanency.[^9]
+- There is no "solution" to isolation: one must take it into oneself; recognising others facing the same dread yields compassion. "The ability to be alone is the condition for the ability to love." The rich get richer: the more self-actualised tolerate isolation better, and the more disturbed the family, the harder it is to leave.[^10]
+- **Meditation** permits facing isolation in an anxiety-reduced state, letting go rather than acquiring.[^11]
+- **"It is the relationship that heals"**: a positive therapist–patient relationship is the best-established predictor of outcome; the intimacy is permanent even though the relationship is temporary, and one learns the limits of what others can give (Kaiser's one rule: "communicate").[^12]
+- Healthy relating: [[I-Thou Relationship]], [[Love]].
+
+[^1]: [Yalom, 1980, p. 355](zotero://open-pdf/library/items/9AN2W49G?page=373&annotation=8D9W9JAS); [p. 9](zotero://open-pdf/library/items/9AN2W49G?page=27&annotation=DCISB6Y8)
+[^2]: [Yalom, 1980, p. 353](zotero://open-pdf/library/items/9AN2W49G?page=371&annotation=Q44I3Y5I); [p. 353](zotero://open-pdf/library/items/9AN2W49G?page=371&annotation=857GHN9F); [p. 353](zotero://open-pdf/library/items/9AN2W49G?page=371&annotation=J5P3QE88)
+[^3]: [Yalom, 1980, p. 354](zotero://open-pdf/library/items/9AN2W49G?page=372&annotation=2Q87JPQL); [p. 354](zotero://open-pdf/library/items/9AN2W49G?page=372&annotation=ZND6JH8C); [p. 354](zotero://open-pdf/library/items/9AN2W49G?page=372&annotation=TWRC6SMC); [p. 354](zotero://open-pdf/library/items/9AN2W49G?page=372&annotation=QTBLF6FT); [p. 354](zotero://open-pdf/library/items/9AN2W49G?page=372&annotation=5IFQ65RN)
+[^4]: [Yalom, 1980, p. 356](zotero://open-pdf/library/items/9AN2W49G?page=374&annotation=7GECPWLB); [p. 356](zotero://open-pdf/library/items/9AN2W49G?page=374&annotation=6SDIHKDZ); [p. 356](zotero://open-pdf/library/items/9AN2W49G?page=374&annotation=HCR8HAZH); [p. 357](zotero://open-pdf/library/items/9AN2W49G?page=375&annotation=6QARBIEB); [p. 358](zotero://open-pdf/library/items/9AN2W49G?page=376&annotation=Y8Y8DQIR); [p. 40](zotero://open-pdf/library/items/9AN2W49G?page=58&annotation=FGDQXKL4)
+[^5]: [Yalom, 1980, p. 361](zotero://open-pdf/library/items/9AN2W49G?page=379&annotation=EMESF6RK); [p. 361](zotero://open-pdf/library/items/9AN2W49G?page=379&annotation=ZSDFI2U5); [p. 361](zotero://open-pdf/library/items/9AN2W49G?page=379&annotation=7YIGSTIG); [p. 362](zotero://open-pdf/library/items/9AN2W49G?page=380&annotation=6UC8QZ5L); [p. 362](zotero://open-pdf/library/items/9AN2W49G?page=380&annotation=MFS824R4); [p. 251](zotero://open-pdf/library/items/9AN2W49G?page=269&annotation=9TR3BELW)
+[^6]: [Yalom, 1980, p. 362](zotero://open-pdf/library/items/9AN2W49G?page=380&annotation=VWPBQH6J)
+[^7]: [Yalom, 1980, p. 362](zotero://open-pdf/library/items/9AN2W49G?page=380&annotation=AKTIQZQE); [p. 363](zotero://open-pdf/library/items/9AN2W49G?page=381&annotation=8P9V6P4V); [p. 363](zotero://open-pdf/library/items/9AN2W49G?page=381&annotation=VJUAIU9J); [p. 380](zotero://open-pdf/library/items/9AN2W49G?page=398&annotation=3CH3UV4P); [p. 381](zotero://open-pdf/library/items/9AN2W49G?page=399&annotation=GX9G5VXM); [p. 382](zotero://open-pdf/library/items/9AN2W49G?page=400&annotation=SMVPQ3MG); [p. 384](zotero://open-pdf/library/items/9AN2W49G?page=402&annotation=LPRMCUFP)
+[^8]: [Yalom, 1980, p. 363](zotero://open-pdf/library/items/9AN2W49G?page=381&annotation=WIPSKAH7); [p. 393](zotero://open-pdf/library/items/9AN2W49G?page=411&annotation=GFMVSZRD); [p. 394](zotero://open-pdf/library/items/9AN2W49G?page=412&annotation=4S75EMJE); [p. 394](zotero://open-pdf/library/items/9AN2W49G?page=412&annotation=S5M4BE5G); [p. 376](zotero://open-pdf/library/items/9AN2W49G?page=394&annotation=PK4LDFC5)
+[^9]: [Yalom, 1980, p. 387](zotero://open-pdf/library/items/9AN2W49G?page=405&annotation=JUXREPGV); [p. 396](zotero://open-pdf/library/items/9AN2W49G?page=414&annotation=27H7QVDT); [p. 397](zotero://open-pdf/library/items/9AN2W49G?page=415&annotation=7VGULXUQ); [p. 397](zotero://open-pdf/library/items/9AN2W49G?page=415&annotation=2LY3MAF4)
+[^10]: [Yalom, 1980, p. 398](zotero://open-pdf/library/items/9AN2W49G?page=416&annotation=UKJDJVIV); [p. 398](zotero://open-pdf/library/items/9AN2W49G?page=416&annotation=AUJ72RPS); [p. 398](zotero://open-pdf/library/items/9AN2W49G?page=416&annotation=KP5NMIHD); [p. 398](zotero://open-pdf/library/items/9AN2W49G?page=416&annotation=DEU3274Y); [p. 399](zotero://open-pdf/library/items/9AN2W49G?page=417&annotation=XCKXSQPC); [p. 399](zotero://open-pdf/library/items/9AN2W49G?page=417&annotation=9C575VKG)
+[^11]: [Yalom, 1980, p. 400](zotero://open-pdf/library/items/9AN2W49G?page=418&annotation=WY46PF7E); [p. 400](zotero://open-pdf/library/items/9AN2W49G?page=418&annotation=I5EI7AAU); [p. 401](zotero://open-pdf/library/items/9AN2W49G?page=419&annotation=ZSR3Y57Y)
+[^12]: [Yalom, 1980, p. 401](zotero://open-pdf/library/items/9AN2W49G?page=419&annotation=AUPBFAY5); [p. 401](zotero://open-pdf/library/items/9AN2W49G?page=419&annotation=REDRKBJS); [p. 405](zotero://open-pdf/library/items/9AN2W49G?page=423&annotation=2SCD9QDX); [p. 406](zotero://open-pdf/library/items/9AN2W49G?page=424&annotation=AY2DLFBX); [p. 406](zotero://open-pdf/library/items/9AN2W49G?page=424&annotation=WYDR9SA7); [p. 406](zotero://open-pdf/library/items/9AN2W49G?page=424&annotation=63H4KW72); [p. 406](zotero://open-pdf/library/items/9AN2W49G?page=424&annotation=2H47RUQC)

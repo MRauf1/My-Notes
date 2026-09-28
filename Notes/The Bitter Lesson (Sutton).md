@@ -5,7 +5,7 @@ tags:
 
 # Review[^1]
 
-Sutton argues that the most effective methods to have come out have mostly been due to larger compute. It ultimately dominates human's domain knowledge as well. While they do not have to be mutually exclusive in theory, in practice, they oftentimes are as niche and complex algorithms do not necessarily merge well with large scale compute like the general methods do.
+Sutton argues (see [[Bitter Lesson]]) that the most effective methods to have come out have mostly been due to larger compute. It ultimately dominates human's domain knowledge as well. While they do not have to be mutually exclusive in theory, in practice, they oftentimes are as niche and complex algorithms do not necessarily merge well with large scale compute like the general methods do.
 
 In particular, the two best classes of techniques for leveraging large amounts of compute is search and learning.
 

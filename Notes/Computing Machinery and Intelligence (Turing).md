@@ -9,4 +9,6 @@ This is the paper that introduces the famous Imitation Game, now known as the [[
 
 Turing recognized that AI may think differently from how humans think even if both AI and humans are intelligent.
 
+He then rebuts the [[Objections to Machine Intelligence]] and proposes the [[Child Machine]], educated by rewards and punishments, as the path to machine intelligence.
+
 [^1]: [Computing Machinery and Intelligence](zotero://open-pdf/library/items/PGZER5NA?page=1)

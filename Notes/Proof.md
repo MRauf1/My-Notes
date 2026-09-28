@@ -43,4 +43,8 @@ tags:
 - [[Proof of Existential Quantifier|Proof of Existential Quantifier]]
 - [[Proof of Unique Existential Quantifier|Proof of Unique Existential Quantifier]]
 
+## Presentation
+
+- [[Structured Proof]]
+
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=100)

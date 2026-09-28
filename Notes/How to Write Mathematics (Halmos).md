@@ -25,4 +25,6 @@ Don't repeat proofs. If some steps are common in multiple theorems, then take ou
 
 Use "we", not "I". Use factual and imperative tone.
 
+Related notes: [[Mathematical Writing]], [[Spiral Plan (Writing)]].
+
 [^1]: [How to Write Mathematics](zotero://open-pdf/library/items/9Q96EPCM?page=1)

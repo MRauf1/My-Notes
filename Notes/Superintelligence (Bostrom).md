@@ -13,4 +13,6 @@ The sections about the future of superintelligence and humanity in chapter 6, es
 
 It's interesting how he keeps repeating "human's cosmic endowment" as if there is a high likelihood of us ruling over/occupying a large amount of space in the observable universe.
 
+Related notes: [[Superintelligence]], [[Intelligence Explosion]], [[Superintelligence Takeoff]], [[Paths to Superintelligence]], [[Seed AI]], [[Whole Brain Emulation]], [[Decisive Strategic Advantage]], [[Singleton]], [[Orthogonality Thesis]], [[Instrumental Convergence Thesis]], [[Treacherous Turn]], [[Perverse Instantiation]], [[Wireheading]], [[Infrastructure Profusion]], [[Mind Crime]], [[AI Control Problem]], [[Capability Control Methods]], [[Motivation Selection Methods]], [[AI System Castes]], [[Value-Loading Problem]], [[Indirect Normativity]], [[Coherent Extrapolated Volition]], [[Multipolar Scenario]], [[Observation Selection Effect]], [[Combinatorial Explosion]], [[AI Effect]], [[Differential Technological Development]], [[State Risk and Step Risk]], [[Common Good Principle]], [[Person-Affecting and Impersonal Perspectives]], [[Crucial Consideration]].
+
 [^1]: [Superintelligence: Paths, Dangers, Strategies](zotero://open-pdf/library/items/9ECZCLTQ?page=1)

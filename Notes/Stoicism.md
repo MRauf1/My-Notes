@@ -48,6 +48,14 @@ Were known to counsel retirement from politics.
 
 Believed that upheaval is worse than lawless tyranny.
 
+# Concepts
+- [[Dichotomy of Control]], [[Prohairesis]], [[Indifferent (Stoicism)]], [[Stoic Virtue]], [[Living in Accord with Nature]]
+- [[Impression (Stoicism)]], [[Assent (Stoicism)]], [[Propatheia]], [[Passion (Stoicism)]], [[Apatheia]], [[Eupatheia]]
+- [[Stoic Determinism]], [[Stoic Theology]], [[Cosmopolitanism]], [[Oikeiosis]], [[Preconception (Stoicism)]], [[Appropriate Action (Stoicism)]]
+- [[Freedom (Stoicism)]], [[Stoic Sage]], [[Moral Progress (Stoicism)]], [[Stoic View of Death]]
+- [[Divisions of Philosophy (Stoicism)]], [[Three Disciplines (Epictetus)]], [[Stoic Exercises]], [[Reserve Clause]], [[Philosophy as a Way of Life]]
+- Influences: [[Socratic Intellectualism]], [[Cynicism]]
+
 # Philosophers
 ## Founders
 - [[Zeno]]
@@ -57,6 +65,7 @@ Believed that upheaval is worse than lawless tyranny.
 ## Others
 - [[Epictetus]]
 - [[Seneca]]
+- [[Musonius Rufus]]
 - [[Marcus Aurelius]]
 
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=129)

@@ -22,6 +22,8 @@ AI is the study of agents that receive percepts from the environment and perform
 - Studies [[Agent|agents]]: entities that perceive their environment through sensors and act upon it through actuators.
 - A [[Rational Agent|rational agent]] acts so as to achieve the best (expected) outcome; the [[Standard Model of Artificial Intelligence|standard model]] builds such agents to optimize a fixed, designer-specified objective, which raises the [[Value Alignment Problem]].
 - A [[Knowledge-Based Agent|knowledge-based agent]] translates stimuli into internal representations, manipulates them, and retranslates them back into action.
+- Frontier models are beginning to accelerate novel research; see [[AI-Assisted Scientific Research]].
+- The [[Bitter Lesson]]: historically, general methods that scale with computation (search and learning) have outperformed methods that build in human domain knowledge.
 
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=15)
 [^2]: [Russell and Norvig, 2022, p. 19](zotero://open-pdf/library/items/JZXT5DZQ?page=19&annotation=2MVA2RL4)

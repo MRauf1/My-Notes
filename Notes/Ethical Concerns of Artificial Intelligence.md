@@ -13,12 +13,14 @@ tags:
 - Explainability
 	- Modern AI is so complex that it cannot be properly explained as to why it does certain actions.
 - Weaponization
-	- Modern AI is already being used for war purposes.
+	- Modern AI is already being used for war purposes; see [[Artificial Intelligence in Warfare]].
 - Concentration of Power
 	- Modern AI is being exploited and used by the advanced global companies, and this will concentrate even more power in their hands, while the lower class will unlikely see benefits
 - Existential Risk
 	- Modern AI is advancing very quickly and there is no proper regulation of the technology. It may end up that the technology surpasses humanity and will not be able to be controlled/regulated by humans, which may pose an existential risk.
 - Value Alignment
 	- Ensuring that the objectives given to an AI system are aligned with humans' true preferences is known as the [[Value Alignment Problem]].
+- Resource, Environmental, and Social Costs
+	- Weighing these human costs against benefits is central to [[Human-Centered Artificial Intelligence]]; training on AI-generated data risks [[Model Collapse]].
 
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=27)

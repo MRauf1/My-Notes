@@ -54,3 +54,19 @@ They are less vulnerable to stereotypes/negative labels affecting them negativel
 
 ## In Others
 Others should be praised for their effort and for their desire to learn more.
+
+# Properties
+- Based on the belief that basic qualities can be cultivated through effort, strategies, and help from others; the hand one is dealt is only the starting point. It does not claim anyone can become Einstein, only that true potential is unknown and unknowable ([[Malleability of Intelligence]]).[^1]
+- Failure means not growing, and effort is what makes one smart or talented; failure may still hurt but does not define, so there remain many paths to success.[^2]
+- In the growth mindset one does not always need confidence: one can plunge wholeheartedly into something one is not yet good at.[^3]
+- It lets people value what they do regardless of outcome; many growth-minded people reach the top as a by-product of doing what they love, and may like prizes or money but not as validation of worth.[^4]
+- Growth-minded students took charge of their learning, seeking underlying principles and studying mistakes, rather than memorising and rereading; growth-minded students' grades rose across the junior-high transition while fixed-minded students' declined from indistinguishable records.[^5]
+- Brain-wave studies: only growth-minded people attended closely to information that could stretch their knowledge.[^6]
+- Common misreadings are collected in [[False Growth Mindset]]; it is acquired by [[Mindset Change]] and passed on by [[Mindset Transmission]] (e.g. [[Process Praise]]). It underlies [[Character (Positive Psychology)|character]] and protects against [[Stereotype Threat]].
+
+[^1]: [Dweck, p. 12](zotero://open-pdf/library/items/YK83HZIS?page=12&annotation=VYMAGNWJ); [p. 12](zotero://open-pdf/library/items/YK83HZIS?page=12&annotation=GWT64FYH)
+[^2]: [Dweck, p. 20](zotero://open-pdf/library/items/YK83HZIS?page=20&annotation=MTBYBWEF); [p. 20](zotero://open-pdf/library/items/YK83HZIS?page=20&annotation=MYEMUS4C); [p. 41](zotero://open-pdf/library/items/YK83HZIS?page=41&annotation=24WEVF26); [p. 42](zotero://open-pdf/library/items/YK83HZIS?page=42&annotation=FK8TNJ3F)
+[^3]: [Dweck, p. 54](zotero://open-pdf/library/items/YK83HZIS?page=54&annotation=ITGT2SUZ); [p. 54](zotero://open-pdf/library/items/YK83HZIS?page=54&annotation=BTE5BNGL)
+[^4]: [Dweck, p. 50](zotero://open-pdf/library/items/YK83HZIS?page=50&annotation=SRVAULWN); [p. 50](zotero://open-pdf/library/items/YK83HZIS?page=50&annotation=ELL4644J); [p. 50](zotero://open-pdf/library/items/YK83HZIS?page=50&annotation=REQWGMLR); [p. 51](zotero://open-pdf/library/items/YK83HZIS?page=51&annotation=E8RAXEC4)
+[^5]: [Dweck, p. 61](zotero://open-pdf/library/items/YK83HZIS?page=61&annotation=6KDDDNUP); [p. 62](zotero://open-pdf/library/items/YK83HZIS?page=62&annotation=JN8QE2M6); [p. 58](zotero://open-pdf/library/items/YK83HZIS?page=58&annotation=HNRWTNCQ); [p. 58](zotero://open-pdf/library/items/YK83HZIS?page=58&annotation=LXE4HXSZ); [p. 58](zotero://open-pdf/library/items/YK83HZIS?page=58&annotation=F87797TY)
+[^6]: [Dweck, p. 23](zotero://open-pdf/library/items/YK83HZIS?page=23&annotation=8LKKNRWS)

@@ -53,4 +53,6 @@ His lessons learned:
 
 The author didn't find the journey consistently fun, but despite all of the challenges, it was one of his most fulfilling experiences in life.
 
+Related notes: [[Research Heuristics]], [[Doctor of Philosophy (Ph.D.)]].
+
 [^1]: [PhD Grind](zotero://open-pdf/library/items/74YB7K48?page=1)

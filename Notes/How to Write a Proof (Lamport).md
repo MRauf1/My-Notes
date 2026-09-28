@@ -11,4 +11,6 @@ Personally, while he does have some good points as to how this method would be b
 
 Overall, he presents some good ideas and cases for the structured proofs.
 
+See [[Structured Proof]].
+
 [^1]: [How to Write a Proof](zotero://open-pdf/library/items/P7KZECMR?page=1)

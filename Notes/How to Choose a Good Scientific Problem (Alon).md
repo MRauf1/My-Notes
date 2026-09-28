@@ -23,4 +23,6 @@ In the end, basing your research on your inner self typically results in work th
 
 It is cognitive dissonance that can result in many mental problems if you assume that research is linear and clean and doesn't diverge. In this schema, the student can be seen as a means to an end (the answer to the research problem). In reality, the path is very non-linear, often diverges, and sometimes you end up solving not the original problem, but some new problem you have stumbled upon, but could solve using your existing work so far. In this schema, the journey itself becomes the primary research, and it is this process of research that is thus nurtured and developed. Research becomes a sail into the unknown; one that requires courage and open-mindedness.
 
+Related notes: [[Feasibility-Interest Diagram]], [[Nurturing Schema of Research]].
+
 [^1]: [How to Choose a Good Scientific Problem](zotero://open-pdf/library/items/PT2GTXMJ?page=1)

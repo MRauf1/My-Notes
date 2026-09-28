@@ -59,4 +59,6 @@ One way to combat the problems of fame and refusing to work on small problems ju
 
 Surround yourself with other great scientists and regularly interact with them.
 
+Related notes: [[Important Problem]], [[Tolerance of Ambiguity]], [[Research Heuristics]].
+
 [^1]: [You and Your Research](zotero://open-pdf/library/items/NIFAPK28?page=1)

@@ -9,4 +9,6 @@ Quite a dense and terse read, but one of the most influential papers in CS. For 
 
 This paper characterizes exactly which functions are [[Computability|computable]].
 
+Related notes: [[Turing Machine]], [[Computable Number]], [[Universal Turing Machine]].
+
 [^1]: [On Computable Numbers](zotero://open-pdf/library/items/JN7TDAA3?page=1)

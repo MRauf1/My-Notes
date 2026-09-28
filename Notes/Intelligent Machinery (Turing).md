@@ -9,4 +9,6 @@ Just because humans are intelligent, that doesn't mean that learning how humans 
 
 Turing proposed the idea of educating a model, which we nowadays do through training, all the way back in 1948. He also proposed the idea of random initialization for the model, which then learns the suitable weights through training. He also came up with the paradigm of reinforcement learning. He even came up with the idea of exploration. He proposed evolutionary algorithms too.
 
+Related notes: [[Unorganized Machine]], [[Pleasure-Pain System]], [[Discipline and Initiative]], [[Intellectual Search]], [[Child Machine]].
+
 [^1]: [Intelligent Machinery](zotero://open-pdf/library/items/7B3JT2D6?page=1)

@@ -1,4 +1,4 @@
-**---
+---
 tags:
   - review
 ---
@@ -151,5 +151,7 @@ Such existential questions, especially that of meaning, tend to arise more often
 As the Eastern philosophies say, one does not even necessarily need a meaning of life. One should just enjoy the river of life for what it is without bothering about such questions to begin with.
 
 Engagement is an effective way to momentarily escape from meaninglessness, but also as a way to slowly build up a repertoire of things that do matter to you.
+
+Related notes: [[Existential Psychotherapy]], [[Ultimate Concerns]], [[Death Anxiety]], [[Responsibility (Existential Psychology)]], [[Existential Isolation]], [[Cosmic and Terrestrial Meaning]].
 
 [^1]: [Existential Psychotherapy](zotero://open-pdf/library/items/9AN2W49G?page=1)

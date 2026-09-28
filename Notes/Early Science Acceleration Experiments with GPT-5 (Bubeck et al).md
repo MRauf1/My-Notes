@@ -5,6 +5,8 @@ tags:
 
 # Review[^1]
 
+See [[AI-Assisted Scientific Research]] for the atomic note (findings specific to GPT-5).
+
 Current LLMs seem reluctant to confess that they don't know something and would much rather confidently give out incorrect answer instead. This particularly happens in more open-ended research questions or doing state-of-the-art research for which the model doesn't have as much training data for.
 
 Can be used for much more efficient literature review, idea discussor/proposer/improver.

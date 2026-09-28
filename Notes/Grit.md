@@ -22,3 +22,6 @@ Research shows that grit is a better predictor of academic success than talent o
 
 # Applying Grit
 Adopt an attitude that looks at the end goal as the only acceptable outcome. This grants acceptance that you may not succeed on the first attempt. Failure then is seen as part of the process that grants knowledge that moves you to success.
+
+# Properties
+- In learning mathematics, grit and persistence matter more than talent; see [[Productive Struggle]].

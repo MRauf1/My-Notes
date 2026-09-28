@@ -22,4 +22,7 @@ It was originally discovered in a 1954 experiment by neuroscientists [[James Old
 3) Dopamine will spike in anticipation, but will drop below baseline if reward is not experienced
 4) Dopamine will spike in anticipation, start to drop below baseline when reward is not experienced, but spike again when the reward is experienced (reward has been delayed)
 
+# Properties
+- Phasic dopamine encodes the temporal-difference reward prediction error of [[Temporal-Difference Learning]]; see [[Reward Prediction Error Hypothesis]].
+
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/WNYPG/what-motivates-you

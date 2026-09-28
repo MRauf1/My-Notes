@@ -20,4 +20,6 @@ Most of the sections are very specific applications of data-intensive software a
 
 The book presents fascinating potential new ways of working through problems, such as the "health avatar" to get a full view of one's health with which the doctors can interact in detail and use statistical methods to better understand the person's health. This can then be even further extended to communities too. It sounds futuristic, but this was proposed in 2009, and we still do not have these proposed methods. The book presents multiple such interesting futuristic proposals.
 
+Related notes: [[Data-Intensive Science]], [[Gray's Laws]], [[Laboratory Information Management System]], [[Open Scholarly Communication]], [[Ontology (Computer Science)]], [[Scientific Workflow]], [[Applications Science]], [[Citizen Science]], [[Data-Intensive Healthcare]], [[Health Avatar]], [[Connectomics]], [[Algorithmic Systems Biology]], [[Data Parallelism]].
+
 [^1]: [The Fourth Paradigm: Data-Intensive Scientific Discovery](zotero://open-pdf/library/items/XHD2CC9T?page=1)

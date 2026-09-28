@@ -50,5 +50,8 @@ Inverse reinforcement learning - instilling human values in machines by having t
 
 Inverse Reward Design - pulling back further from IRL, and the machine is asking, "What do I think you want, based on what you told me to do?" There is inherent uncertainty in the instruction itself that humans devise because they cannot come up with a perfect solution, and this uncertainty is reflected when they construct the agent. Thus, the agent tries to make sense of what the humans want based on the instruction that imperfectly represents what the humans want. Kind of like telling the agent to understand just how difficult it is for humans to design a reward function that actually captures what they want.
 
+
+Related notes: [[Algorithmic Bias]], [[Word Embedding]], [[Differential Privacy]], [[Redundant Encoding]], [[Fairness Impossibility Theorem]], [[Feedback Loop (Machine Learning)]], [[Interpretability (Machine Learning)]], [[Saliency Map]], [[Multitask Learning]], [[Feature Visualization]], [[Concept Activation Vector]], [[Improper Linear Model]], [[Law of Effect]], [[Hedonistic Neuron]], [[Reward Hypothesis]], [[Temporal-Difference Learning]], [[Reward Prediction Error Hypothesis]], [[Shaping (Machine Learning)]], [[Curriculum Learning]], [[Reward Shaping]], [[Curiosity-Driven Exploration]], [[Imitation Learning]], [[Overimitation]], [[Inverse Reinforcement Learning]], [[Cooperative Inverse Reinforcement Learning]], [[Attainable Utility Preservation]], [[Corrigibility]], [[Inverse Reward Design]], [[Moral Uncertainty]], [[Astronomical Waste]].
+
 [^1]: [The Alignment Problem: Machine Learning and Human Values](zotero://open-pdf/library/items/P27SWKW4?page=1)
 

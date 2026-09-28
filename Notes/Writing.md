@@ -10,4 +10,7 @@ Writing is the medium of research and studying is nothing more than research its
 # Circularity of Writing
 - [[Circularity of Writing]]
 
+# Types
+- [[Mathematical Writing]]
+
 [^1]: [How To Take Smart Notes](zotero://open-pdf/library/items/TZUSXCS6?page=39)

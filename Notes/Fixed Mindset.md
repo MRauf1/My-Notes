@@ -65,3 +65,19 @@ People with fixed mindset may delude themselves into a situation where only vali
 
 ## In Others
 Praising someone's talents can lead them to believe that talent is what matters, which leads to fixed mindset.
+
+# Properties
+- Belief that qualities are "carved in stone", creating an urgency to prove oneself over and over; every situation is evaluated as success or failure, smart or dumb, accepted or rejected.[^1]
+- Setbacks are catastrophised: minor, reversible setbacks are read as a direct measure of competence and worth, leading to paralysis and coping by giving up; fixed-minded students with depression ruminated over setbacks and took less action. The mindset "robs them of their coping resources".[^2]
+- After failure, fixed-minded people repair self-esteem rather than learn: comparing themselves with those who did worse, blaming, and making excuses ("you aren't a failure until you start to blame").[^3]
+- Brain-wave studies: fixed-minded people attended only to feedback on whether they were right, not to information that could help them learn.[^4]
+- People want to prove themselves special and even superior; success can then pass for superiority and entitlement.[^5]
+- It never lets one "prove oneself and live happily ever after": ever larger challenges threaten yesterday's proven ability.[^6]
+- Mechanisms and settings: [[Self-Handicapping]], [[Dunning-Kruger Effect]], [[Stereotype Threat]], [[Groupthink]], [[Organizational Mindset]], [[Relationship Mindset]]; induced by ability praise (see [[Process Praise]]).
+
+[^1]: [Dweck, p. 11](zotero://open-pdf/library/items/YK83HZIS?page=11&annotation=MPVV2N2G); [p. 12](zotero://open-pdf/library/items/YK83HZIS?page=12&annotation=DBCHAC9X); [p. 12](zotero://open-pdf/library/items/YK83HZIS?page=12&annotation=KA47EBRI)
+[^2]: [Dweck, p. 13](zotero://open-pdf/library/items/YK83HZIS?page=13&annotation=PXHH3RI4); [p. 13](zotero://open-pdf/library/items/YK83HZIS?page=13&annotation=ERXZY6J2); [p. 14](zotero://open-pdf/library/items/YK83HZIS?page=14&annotation=APXNQ26G); [p. 40](zotero://open-pdf/library/items/YK83HZIS?page=40&annotation=DBHM3K2B); [p. 40](zotero://open-pdf/library/items/YK83HZIS?page=40&annotation=AH5WQVNU); [p. 41](zotero://open-pdf/library/items/YK83HZIS?page=41&annotation=K2RYKN4Y)
+[^3]: [Dweck, p. 38](zotero://open-pdf/library/items/YK83HZIS?page=38&annotation=EZSBFS8U); [p. 39](zotero://open-pdf/library/items/YK83HZIS?page=39&annotation=4ICGARDD); [p. 39](zotero://open-pdf/library/items/YK83HZIS?page=39&annotation=2NBYR3GT); [p. 39](zotero://open-pdf/library/items/YK83HZIS?page=39&annotation=IU9XWHGT)
+[^4]: [Dweck, p. 23](zotero://open-pdf/library/items/YK83HZIS?page=23&annotation=S3ZCSXVH); [p. 23](zotero://open-pdf/library/items/YK83HZIS?page=23&annotation=VN2TWH3I)
+[^5]: [Dweck, p. 33](zotero://open-pdf/library/items/YK83HZIS?page=33&annotation=RDIMNIW7); [p. 34](zotero://open-pdf/library/items/YK83HZIS?page=34&annotation=25Z64CAN); [p. 35](zotero://open-pdf/library/items/YK83HZIS?page=35&annotation=7U35SMS7)
+[^6]: [Dweck, p. 47](zotero://open-pdf/library/items/YK83HZIS?page=47&annotation=YFSUW9NB); [p. 47](zotero://open-pdf/library/items/YK83HZIS?page=47&annotation=ANT7GMB8)

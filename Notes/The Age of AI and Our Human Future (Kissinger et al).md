@@ -29,4 +29,6 @@ In addition to reason and faith as tools for understanding reality, AI will be t
 
 In the future, human children may be raised by AI, which would completely reshape their views of the world compared to humans today. The future children may prefer AI companionship to human companionship as AI would be much better versed in the child's liked and dislikes, preferences, and so on.
 
+Related notes: [[AI as a Way of Knowing]], [[Thing-in-Itself]], [[Human-Machine Partnership]], [[Information-Knowledge-Wisdom Hierarchy]], [[Algorithmic Echo Chamber]], [[Artificial Intelligence in Warfare]], [[AI-Driven Societal Transformation]].
+
 [^1]: [The Age of AI and Our Human Future](zotero://open-pdf/library/items/G5HEUC7V?page=1)

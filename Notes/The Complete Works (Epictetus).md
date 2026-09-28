@@ -166,4 +166,6 @@ Stoic ideas generally clash with those of Epicurus.
 
 Reframe your mindset regarding difficulties and see them as opportunities to prove your character and help your character grow further. See it as training, or as a challenge within a character arc as you would see in fiction.
 
+Related notes: [[Epictetus]], [[Dichotomy of Control]], [[Three Disciplines (Epictetus)]], [[Stoic Exercises]], [[Indifferent (Stoicism)]], [[Prohairesis]].
+
 [^1]: [The Complete Works: Handbook, Discourses, and Fragments](zotero://open-pdf/library/items/SLUTDCET?page=1)
