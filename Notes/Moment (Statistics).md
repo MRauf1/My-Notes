@@ -26,6 +26,6 @@ The name comes from mechanics: if $f$ is a mass density on a line, the first mom
 
 # Properties
 - [[mth Moment Existence Theorem]]: existence of the $m$th moment implies existence of all lower moments.
-- A distribution may have no moments at all beyond some order (e.g. the Cauchy distribution has no mean), in which case no mgf exists; the [[Characteristic Function (Probability)|characteristic function]] always exists.
+- A distribution may have no moments at all beyond some order (e.g. the [[Cauchy Distribution]] has no mean), in which case no mgf exists; the [[Characteristic Function (Probability)|characteristic function]] always exists.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=88)

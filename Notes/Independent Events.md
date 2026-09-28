@@ -29,6 +29,7 @@ In general, this does not imply that $A, B$ are marginally independent.
 
 # Types
 - [[Mutually Independent Events]]
+- [[Independent Random Variable]]: random variables whose determined events $\{X_1 \in A\}, \{X_2 \in B\}$ are independent for all $A, B$ ([[Independent Random Variable Equivalent Conditions]]).
 
 # Properties
 

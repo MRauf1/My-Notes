@@ -22,10 +22,11 @@ Hogg et al. say that for non-one-to-one $g$ there is no overall rule, but there 
 
 # Techniques
 - **Pmf (preimage) method**, discrete case: Theorem 1.
-- **Cdf method**, any case: compute $F_Y(y) = P(g(X) \leq y) = P(X \in \{x : g(x) \leq y\})$ directly, then differentiate for a pdf. It handles non-monotone $g$ by splitting the set $\{x : g(x) \leq y\}$ into intervals (e.g. for $Y = X^2$, $F_Y(y) = F_X(\sqrt{y}) - F_X\big((-\sqrt{y})^-\big)$ for $y \geq 0$).
+- **Cdf method**, any case ([[Cumulative Distribution Function Method]]): compute $F_Y(y) = P(g(X) \leq y) = P(X \in \{x : g(x) \leq y\})$ directly, then differentiate for a pdf. It handles non-monotone $g$ by splitting the set $\{x : g(x) \leq y\}$ into intervals (e.g. for $Y = X^2$, $F_Y(y) = F_X(\sqrt{y}) - F_X\big((-\sqrt{y})^-\big)$ for $y \geq 0$).
 - **Change-of-variable (Jacobian) method**, continuous one-to-one $g$: [[Cumulative Distribution Function Transformation Technique]], $f_Y(y) = f_X(g^{-1}(y)) \left|\frac{dx}{dy}\right|$.
 - **Piecewise one-to-one extension**, continuous case: if the support of $X$ splits into pieces $A_1, \dots, A_m$ on each of which $g$ is one-to-one and differentiable, then $f_Y(y) = \sum_{i} f_X(g_i^{-1}(y)) \left|\frac{d}{dy} g_i^{-1}(y)\right|$, summed over the pieces whose image contains $y$; this is the continuous counterpart of Theorem 1.
-- **Mgf method**: compute $M_Y(t) = E[e^{t g(X)}]$ and recognize it, using the [[Moment Generating Function Equal Distribution Theorem]]. Most useful for sums of [[Independent Random Variable|independent]] variables.
+- **Mgf method** ([[Moment Generating Function Technique]]): compute $M_Y(t) = E[e^{t g(X)}]$ and recognize it, using the [[Moment Generating Function Equal Distribution Theorem]]. Most useful for sums of [[Independent Random Variable|independent]] variables.
+- For functions of several random variables, see [[Random Vector Transformation]].
 - [[Inverse Transform Sampling]] is the special case where the transformation is an inverse cdf applied to a uniform variable.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=63)

@@ -21,7 +21,7 @@ The first line is a [[Disjoint Set Union|disjoint union]], so the second follows
 # Properties
 - Holds for a countable partition $B_1, B_2, \dots$ by countable additivity.
 - Supplies the denominator of [[Bayes' Theorem]].
-- Its expectation analogue is the [[Law of Total Expectation]].
+- Its expectation analogue is the [[Law of Total Expectation]]; for random variables, $p_2(x_2) = \sum_{x_1} p_{2|1}(x_2 | x_1) p_1(x_1)$ with the [[Conditional Distribution]].
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=45)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=42)

@@ -14,3 +14,5 @@ tags:
 > f(x, y)\ \text{(Continuous)}
 > \end{align}
 > $$
+
+The joint distribution is the distribution of the [[Random Vector]] $(X, Y)$, determined by its [[Joint Cumulative Distribution Function]]; see [[Multivariate Discrete Probability Distribution]] and [[Multivariate Continuous Probability Distribution]] for the joint pmf and pdf, and [[Marginal Distribution]] for recovering each component.

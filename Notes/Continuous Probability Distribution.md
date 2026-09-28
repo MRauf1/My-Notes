@@ -16,3 +16,5 @@ tags:
 - [[Exponential Distribution]]
 - [[Chi-Squared Distribution]]
 - [[Beta Distribution]]
+- [[Cauchy Distribution]]
+- [[Laplace Distribution]]

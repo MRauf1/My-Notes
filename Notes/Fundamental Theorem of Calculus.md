@@ -22,5 +22,6 @@ Function $g$ is the [[Antiderivative]] of $f$.
 # Types
 - [[Fundamental Theorem for Line Riemann Integral]]
 - [[Fundamental Theorem for Contour Riemann Integral]]
+- $n$-fold iterated version over a box, $\int_{\mathbf{a}}^{\mathbf{b}} \frac{\partial^n G}{\partial x_1 \cdots \partial x_n} = \sum_{I} (-1)^{|I|} G(\mathbf{c}_I)$ over the $2^n$ corners (see [[Joint Cumulative Distribution Function]])
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=426)

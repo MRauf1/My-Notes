@@ -35,9 +35,10 @@ It is useful because
 - $\text{Var}(X) = M''(0) - [M'(0)]^2$.
 - $M_{aX+b}(t) = e^{bt} M_X(at)$.
 - The subscript $M_X$ is used to indicate which random variable the mgf belongs to.
-- Not all [[Probability Distribution|distributions]] have an mgf (e.g. the Cauchy distribution, or any distribution missing some moment); the [[Characteristic Function (Probability)|characteristic function]] $\varphi(t) = E(e^{itX})$ always exists and plays the same role.
+- Not all [[Probability Distribution|distributions]] have an mgf (e.g. the [[Cauchy Distribution]], or any distribution missing some moment); the [[Characteristic Function (Probability)|characteristic function]] $\varphi(t) = E(e^{itX})$ always exists and plays the same role.
 - [[Moment Generating Function Equal Distribution Theorem]]
 - [[mth Moment Existence Theorem]]
+- Multivariate version: [[Moment Generating Function of Random Vector]] $E[e^{\mathbf{t}^T \mathbf{X}}]$.
 - Related generating functions: [[Cumulant Generating Function]] $\psi(t) = \log M(t)$, [[Factorial Moment Generating Function]] $K(t) = M(\log t)$.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=86)

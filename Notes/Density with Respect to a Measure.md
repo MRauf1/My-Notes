@@ -17,6 +17,7 @@ $$
 This is the [[Change of Variables|change-of-variables]] formula for densities: one random variable, two descriptions, related by a Jacobian. Every measure conversion in Monte Carlo sampling reduces to this.
 
 # Properties
+- A pmf is the density with respect to counting measure, which is invariant under bijections, so discrete transformations need no Jacobian ([[Random Vector Transformation]]).
 - A mismatched reference measure is a silent bug in hand-written sampling code: it does not crash, it produces a plausible but wrong answer.
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

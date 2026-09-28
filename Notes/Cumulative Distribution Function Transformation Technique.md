@@ -24,6 +24,8 @@ Algorithm, assuming $Y = g(X)$ is one-to-one:[^1]
 4. The pdf of $Y$ is $f_Y(y) = f_X(g^{-1}(y)) \left|\frac{dx}{dy}\right|$ for $y \in S_Y$.
 
 # Properties
+- Despite its name, this is the change-of-variable (Jacobian) formula for smooth one-to-one $g$; the general cdf approach for arbitrary $g$ is the [[Cumulative Distribution Function Method]].
+- Multivariate version: [[Random Vector Transformation]], with $|dx/dy|$ replaced by the absolute Jacobian determinant $|J|$.
 - For non-injective $g$, sum over one-to-one pieces or use the cdf method directly (see [[Random Variable Transformation]]).
 - [[Inverse Transform Sampling]] is the special case where $g = F^{-1}$ (the inverse of the target CDF) and $X \sim \mathcal{U}[0,1]$.
 

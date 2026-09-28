@@ -45,6 +45,7 @@ Cauchy-Schwarz applies to **any** norm that is induced by an inner product — e
 - [[Triangle Inequality]]
 - [[Hölder's Inequality]] (generalization to $p$-norms and dual norms)
 - [[Parallelogram Identity]]
+- Probabilistic version: for [[Random Variable|random variables]] with finite second moments, $|E[UV]| \leq \sqrt{E[U^2]\,E[V^2]}$, since $E[UV]$ is an inner product. Applied to centered variables it gives $|\text{Cov}(X, Y)| \leq \sigma_X \sigma_Y$, i.e. $-1 \leq \rho \leq 1$ for the [[Correlation]] coefficient, with equality iff $Y$ is a linear function of $X$ with probability one.
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=60)
 [^2]: [Cauchy–Schwarz inequality — Wikipedia](https://en.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality)

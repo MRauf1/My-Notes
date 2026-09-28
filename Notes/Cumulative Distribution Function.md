@@ -24,6 +24,7 @@ Every random variable has a cdf, and it determines the distribution completely. 
 - [[Cumulative Distribution Function Basic Properties]]
 - [[Random Variables Equal in Distribution]]
 - Its (generalized) inverse is the [[Quantile Function]].
+- Multivariate version: [[Joint Cumulative Distribution Function]].
 
 [^1]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=19)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=55)

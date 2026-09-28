@@ -27,6 +27,8 @@ The ratio form is forced by two requirements:[^2] relative to the new [[Sample S
 > \end{align}
 > $$
 
+See [[Conditional Distribution]] for the conditional pmf and pdf in full.
+
 # Properties
 - [[Conditional Probability Primary Properties]]
 - [[Conditional Probability Multiplication Rule]]
