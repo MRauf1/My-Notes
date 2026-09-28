@@ -14,3 +14,7 @@ tags:
 > \end{align}
 > $$
 > Where ${n \choose k}$ is the binomial coefficient
+
+The coefficient of $a^k b^{n-k}$ is ${n \choose k}$ because expanding $(a+b)^n$ amounts to choosing, from the $n$ factors, the $k$ that contribute $a$, i.e. a $k$-element [[Combination]].[^1]
+
+[^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=33)

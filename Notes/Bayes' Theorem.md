@@ -14,6 +14,15 @@ tags:
 > \end{align}
 > $$
 
+> [!abstract] Theorem 1 (Bayes' Theorem over a [[Partition]])[^3]
+> Let $A_1, \dots, A_k$ be events with $P(A_i) > 0$ that form a [[Partition]] of the [[Sample Space]] $\mathcal{C}$, and let $B$ be any event with $P(B) > 0$. Then
+> $$
+> \begin{align}
+> P(A_j | B) = \frac{P(A_j) P(B | A_j)}{\sum_{i=1}^k P(A_i) P(B | A_i)}
+> \end{align}
+> $$
+> The denominator is $P(B)$ by the [[Law of Total Probability]]. The $P(A_j)$ are the prior probabilities and the $P(A_j | B)$ the posterior probabilities.
+
 > [!info] Definition 2 (Bayes' Theorem in Bayesian Inference)[^2]
 > For data $Y$ and parameters $\theta$, the Bayes' Theorem is
 > $$
@@ -30,3 +39,4 @@ If the prior is $1$ (no uncertainty about the prior), then the imperfect data wi
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=45)
 [^2]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=34)
+[^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=42)

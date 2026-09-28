@@ -17,6 +17,8 @@ tags:
 
 With conditional probability, our sample space changes from the [[Universe of Discourse|universe of discourse]] to the space of event $B \subseteq U$.
 
+The ratio form is forced by two requirements:[^2] relative to the new [[Sample Space]] $B$, only $A \cap B$ matters and $B$ is certain, so $P(A | B) = P(A \cap B | B)$ and $P(B | B) = 1$; and the ratio of the probabilities of $A \cap B$ and $B$ should be the same relative to $B$ as relative to $\mathcal{C}$, i.e. $\frac{P(A \cap B | B)}{P(B | B)} = \frac{P(A \cap B)}{P(B)}$. At this level the conditional probability is defined only when $P(B) > 0$.
+
 > [!info] Definition 2 (Conditional Probability using [[Probability Function]])
 > Giving [[Random Variable]] $X_1, X_2$ with [[Joint Probability Distribution]] $f(x_1, x_2)$, the conditional probability is
 > $$
@@ -33,3 +35,4 @@ With conditional probability, our sample space changes from the [[Universe of Di
 - [[Conditional Probability Other Properties]]
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=30)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=39)

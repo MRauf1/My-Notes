@@ -15,7 +15,7 @@ tags:
 > $$
 > Otherwise, they are called dependent events.
 
-When the occurrence of one [[Event|event]] does not change the [[Probability|probability]] of the occurrence of the other event.[^1]
+When the occurrence of one [[Event|event]] does not change the [[Probability|probability]] of the occurrence of the other event.[^1] Intuitively this means $P(B | A) = P(B)$ when $P(A) > 0$; plugging into the [[Conditional Probability Multiplication Rule]] gives $P(A \cap B) = P(A)P(B)$. When $P(A) > 0$ and $P(B) > 0$ the two formulations are equivalent, but the product form is taken as the definition because it is symmetric and still makes sense when a probability is $0$.[^2] Independent events are also called statistically independent, stochastically independent, or independent in a probability sense.
 
 > [!info] Definition 2 (Conditionally Independent Events)
 > Events $A, B$ are conditionally independent given $C$ if
@@ -39,3 +39,4 @@ In general, this does not imply that $A, B$ are marginally independent.
 	3) $A^c, B^c$ are independent
 
 [^1]: [Probability and Statistical Inference](zotero://open-pdf/library/items/RM5FREYV?page=38)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=44)
