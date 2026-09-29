@@ -45,7 +45,7 @@ $$
 0 \leq \text{Var}(\mathbf{a}^T \mathbf{X}) = \mathbf{a}^T\,\text{Cov}(\mathbf{X})\,\mathbf{a}
 \end{align}
 $$
-  Hence all eigenvalues are $\geq 0$. It is singular exactly when some nontrivial linear combination $\mathbf{a}^T\mathbf{X}$ is constant with probability one, i.e. the distribution lies in a proper affine subspace.
+  Hence all eigenvalues are $\geq 0$. It is singular exactly when some nontrivial linear combination $\mathbf{a}^T\mathbf{X}$ is constant with probability one, i.e. the distribution lies in a proper affine subspace; for a [[Multivariate Normal Distribution]] this is exactly the degenerate case without a density.
 - Its diagonal entries are the variances, so $\text{tr}\,\text{Cov}(\mathbf{X}) = \sum_i \text{Var}(X_i) = E\lVert \mathbf{X} - \boldsymbol{\mu} \rVert^2$.
 - Diagonal for [[Mutually Independent Random Variables|independent]] (or merely pairwise uncorrelated) components.
 - Normalizing by the standard deviations gives the correlation matrix $[\rho_{ij}]$ ([[Correlation]]).

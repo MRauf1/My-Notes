@@ -1,0 +1,391 @@
+deck: Commands::Vim
+source: https://vimhelp.org/
+entries:
+  # --- Help, saving, quitting --------------------------------------------
+
+  - command: ":help"
+    meaning: Open Vim's built-in documentation; :help <topic> jumps to a topic, e.g. :help dd or :help :w.
+    details: |
+      `Ctrl+]` follows a link (tag) and `Ctrl+O` jumps back; `:q` closes the help window. Prefix modes: `:help i_CTRL-W` (Insert mode), `:help v_d` (Visual).
+    tags: [files]
+    source: https://vimhelp.org/helphelp.txt.html
+
+  - command: ":q"
+    meaning: Quit the current window, refusing if the buffer has unsaved changes.
+    details: |
+      `:qa` quits all windows.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Aq
+
+  - command: ":q!"
+    meaning: Quit without saving, discarding any unsaved changes.
+    details: |
+      `:qa!` discards changes in all buffers and exits Vim.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Aq
+
+  - command: ":w"
+    meaning: Write (save) the buffer to its file.
+    details: |
+      `:w <file>` writes to another file; `:w !sudo tee %` saves a file you opened without root.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Aw
+
+  - command: ":w!"
+    meaning: Forcefully write the file even when 'readonly' is set or writing was otherwise refused.
+    details: |
+      Can't override missing filesystem permissions (use `sudo`/`sudoedit` for root-owned files).
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Aw%21
+
+  - command: ":wq"
+    meaning: Write the file and quit.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Awq
+
+  - command: ":wq!"
+    meaning: Forcefully write the file (even if 'readonly') and quit.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Awq
+
+  - command: ":x"
+    meaning: Like :wq, but write only if the buffer has changes, then quit.
+    details: |
+      Unlike `:wq`, it leaves the file's modification time untouched when nothing changed.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#%3Ax
+
+  - command: "ZZ"
+    meaning: Normal-mode shortcut for :x, i.e. write if changed and quit.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#ZZ
+
+  - command: "ZQ"
+    meaning: Normal-mode shortcut for :q!, i.e. quit without saving.
+    tags: [files]
+    source: https://vimhelp.org/editing.txt.html#ZQ
+
+  # --- Searching ---------------------------------------------------------
+
+  - command: "/<pattern>"
+    meaning: Search forward for the pattern (a regular expression) and jump to the next match.
+    details: |
+      Press `Enter` to run the search. `/` with no pattern repeats the last search forward.
+    tags: [search]
+    source: https://vimhelp.org/pattern.txt.html#%2F
+
+  - command: "?<pattern>"
+    meaning: Search backward for the pattern.
+    tags: [search]
+    source: https://vimhelp.org/pattern.txt.html#%3F
+
+  - command: "n / N"
+    meaning: Repeat the last search in the same (n) or opposite (N) direction.
+    tags: [search]
+    source: https://vimhelp.org/pattern.txt.html#n
+
+  - command: "*"
+    meaning: Search forward for the next occurrence of the whole word under (or nearest to) the cursor.
+    details: |
+      `g*` also matches the word as part of longer words.
+    tags: [search]
+    source: https://vimhelp.org/pattern.txt.html#star
+
+  - command: "#"
+    meaning: Search backward for the previous occurrence of the whole word under the cursor (the backward version of *).
+    tags: [search]
+    source: https://vimhelp.org/pattern.txt.html#%23
+
+  - command: ":%s/<old>/<new>/g"
+    meaning: Substitute new for every match of old on all lines of the file (% is the range of all lines).
+    details: |
+      Without `%` only the current line is affected; add `c` (`/gc`) to confirm each replacement.
+    tags: [search, editing]
+    source: https://vimhelp.org/change.txt.html#%3Asubstitute
+
+  # --- Motions -----------------------------------------------------------
+
+  - command: "h"
+    meaning: Move the cursor one character left.
+    details: |
+      A count repeats a motion: `5h` moves 5 characters left.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#h
+
+  - command: "j"
+    meaning: Move the cursor one line down.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#j
+
+  - command: "k"
+    meaning: Move the cursor one line up.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#k
+
+  - command: "l"
+    meaning: Move the cursor one character right.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#l
+
+  - command: "w"
+    meaning: Move forward to the start of the next word, where a word is a run of letters, digits, and underscores, or a run of other non-blank characters.
+    details: |
+      So `foo.bar` has three words: `foo`, `.`, `bar`.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#w
+
+  - command: "b"
+    meaning: Move backward to the start of the current or previous word.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#b
+
+  - command: "e"
+    meaning: Move forward to the end of the current or next word.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#e
+
+  - command: "W"
+    meaning: Move forward to the start of the next WORD, where a WORD is any run of non-blank characters (punctuation included).
+    details: |
+      `foo.bar(x)` is a single WORD, so `W` skips over it in one step.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#W
+
+  - command: "B"
+    meaning: Move backward to the start of the current or previous WORD (whitespace-delimited).
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#B
+
+  - command: "E"
+    meaning: Move forward to the end of the current or next WORD (whitespace-delimited).
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#E
+
+  - command: "0"
+    meaning: Move to the first character (column 0) of the line.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#0
+
+  - command: "^"
+    meaning: Move to the first non-blank character of the line.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#%5E
+
+  - command: "$"
+    meaning: Move to the end of the line.
+    details: |
+      With a count, `3$` goes to the end of the line 2 lines below.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#%24
+
+  - command: "gg"
+    meaning: Go to the first line of the file.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#gg
+
+  - command: "G"
+    meaning: Go to the last line of the file.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#G
+
+  - command: "{Number}G"
+    meaning: Go to line Number, e.g. 42G.
+    details: |
+      `:42` and `42gg` do the same. `Ctrl+G` shows the current line number and file position.
+    tags: [motions]
+    source: https://vimhelp.org/motion.txt.html#G
+
+  - command: "Ctrl+F"
+    meaning: Scroll forward (down) one screen.
+    details: |
+      `Ctrl+D` scrolls down half a screen.
+    tags: [motions]
+    source: https://vimhelp.org/scroll.txt.html#CTRL-F
+
+  - command: "Ctrl+B"
+    meaning: Scroll backward (up) one screen.
+    details: |
+      `Ctrl+U` scrolls up half a screen.
+    tags: [motions]
+    source: https://vimhelp.org/scroll.txt.html#CTRL-B
+
+  # --- Entering Insert mode ----------------------------------------------
+
+  - command: "i"
+    meaning: Enter Insert mode before the cursor.
+    details: |
+      `Esc` (or `Ctrl+[`) returns to Normal mode.
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#i
+
+  - command: "a"
+    meaning: Enter Insert mode after the cursor (append).
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#a
+
+  - command: "I"
+    meaning: Enter Insert mode before the first non-blank character of the line.
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#I
+
+  - command: "A"
+    meaning: Enter Insert mode at the end of the line (append to the line).
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#A
+
+  - command: "o"
+    meaning: Open a new line below the current one and enter Insert mode.
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#o
+
+  - command: "O"
+    meaning: Open a new line above the current one and enter Insert mode.
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#O
+
+  - command: ":a"
+    meaning: Ex command :append, which inserts the lines you type below the current line (or a given line), ending with a line containing only a period.
+    details: |
+      Mostly an old ex/vi feature; `o` is the usual Normal-mode way to add lines. Not supported in Vim9 script.
+    tags: [insert]
+    source: https://vimhelp.org/insert.txt.html#%3Aappend
+
+  # --- Operators ---------------------------------------------------------
+
+  - command: "[count] operator [count] motion"
+    meaning: The general form of a Vim edit, applying an operator (such as d, c, or y) to the text covered by a motion.
+    details: |
+      Counts multiply: `2d3w` deletes 6 words. Doubling an operator acts on whole lines (`dd`, `cc`, `yy`). Text objects also work as motions: `diw` deletes the inner word, `ci"` changes inside quotes.
+    tags: [operators]
+    source: https://vimhelp.org/motion.txt.html#operator
+
+  - command: "d{motion}"
+    meaning: Delete the text covered by the motion, e.g. dw (to next word), d$ (to end of line), dG (to end of file).
+    details: |
+      Deleted text goes into a register, so `d` is also "cut" and can be pasted with `p`. `D` is `d$`.
+    tags: [operators]
+    source: https://vimhelp.org/change.txt.html#d
+
+  - command: "c{motion}"
+    meaning: Change the text covered by the motion, i.e. delete it and enter Insert mode, e.g. cw or c$.
+    details: |
+      `C` is `c$` (change to the end of the line). `cw` behaves like `ce`, so it doesn't delete the trailing space.
+    tags: [operators]
+    source: https://vimhelp.org/change.txt.html#c
+
+  - command: "y{motion}"
+    meaning: Yank (copy) the text covered by the motion into a register, e.g. yw, y$, yG.
+    details: |
+      `"+y` yanks to the system clipboard. Arch's `vim` package is built without clipboard support (`-clipboard`); the `gvim` package's vim has it, and Neovim uses `wl-copy`/`xclip`.
+    tags: [operators]
+    source: https://vimhelp.org/change.txt.html#y
+
+  - command: "dd"
+    meaning: Delete the whole current line (3dd deletes 3 lines).
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#dd
+
+  - command: "cc"
+    meaning: Change the whole current line, deleting its text (keeping the indent) and entering Insert mode.
+    details: |
+      `S` is a synonym.
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#cc
+
+  - command: "yy"
+    meaning: Yank (copy) the whole current line.
+    details: |
+      `Y` is a synonym in Vim (`y$` in Neovim).
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#yy
+
+  - command: "D"
+    meaning: Delete from the cursor to the end of the line (same as d$).
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#D
+
+  - command: "C"
+    meaning: Change from the cursor to the end of the line (same as c$).
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#C
+
+  # --- Simple edits ------------------------------------------------------
+
+  - command: "x"
+    meaning: Delete the character under the cursor (3x deletes 3 characters).
+    details: |
+      `X` deletes the character before the cursor. `xp` swaps two characters.
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#x
+
+  - command: "r{char}"
+    meaning: Replace the character under the cursor with char, staying in Normal mode.
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#r
+
+  - command: "R"
+    meaning: Enter Replace mode, where each typed character overwrites the one under the cursor.
+    details: |
+      `Backspace` restores the original characters. `Esc` exits.
+    tags: [editing]
+    source: https://vimhelp.org/insert.txt.html#R
+
+  - command: "p"
+    meaning: Put (paste) the last yanked or deleted text after the cursor (below the line for whole lines).
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#p
+
+  - command: "P"
+    meaning: Put (paste) the last yanked or deleted text before the cursor (above the line for whole lines).
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#P
+
+  - command: "J"
+    meaning: Join the next line onto the current one, removing its indent and inserting a space.
+    details: |
+      With a count, `3J` joins 3 lines. `gJ` joins without inserting or removing spaces.
+    tags: [editing]
+    source: https://vimhelp.org/change.txt.html#J
+
+  - command: "u"
+    meaning: Undo the last change (repeatable, e.g. 3u).
+    tags: [editing]
+    source: https://vimhelp.org/undo.txt.html#u
+
+  - command: "Ctrl+R"
+    meaning: Redo, i.e. undo the last undo.
+    tags: [editing]
+    source: https://vimhelp.org/undo.txt.html#CTRL-R
+
+  - command: "."
+    meaning: Repeat the last change (e.g. repeat a dw or an insertion at the cursor).
+    details: |
+      Combine with `n` to repeat an edit at each search match.
+    tags: [editing]
+    source: https://vimhelp.org/repeat.txt.html#.
+
+  # --- Visual mode -------------------------------------------------------
+
+  - command: "v"
+    meaning: Start characterwise Visual mode to select text, then apply an operator such as d, y, c, or > (indent).
+    tags: [visual]
+    source: https://vimhelp.org/visual.txt.html#v
+
+  - command: "V"
+    meaning: Start linewise Visual mode, selecting whole lines.
+    tags: [visual]
+    source: https://vimhelp.org/visual.txt.html#V
+
+  - command: "Ctrl+V"
+    meaning: Start blockwise Visual mode, selecting a rectangular block of text.
+    details: |
+      `I` / `A` then insert text on every selected line (e.g. to comment out several lines).
+    tags: [visual]
+    source: https://vimhelp.org/visual.txt.html#CTRL-V
+
+  # --- Neovim ------------------------------------------------------------
+
+  - command: ":checkhealth"
+    meaning: (Neovim) Run health checks to diagnose problems with the configuration, providers, and plugins.
+    tags: [neovim]
+    source: https://neovim.io/doc/user/health.html

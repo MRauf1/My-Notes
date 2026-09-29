@@ -18,10 +18,16 @@ Distribution for $x$ successes in $n$ binary observations (e.g. success or failu
 
 This is a [[Multinomial Distribution]] with $c = 2$.
 
+Derivation:[^2] an outcome of $n$ [[Bernoulli Distribution|Bernoulli trials]] is an $n$-tuple of zeros and ones. There are $\binom{n}{x}$ ways to place $x$ successes ([[Combination]]), each with probability $p^x(1-p)^{n-x}$ by independence, and these are mutually exclusive events, so their probabilities add. Hogg et al. write $b(n, p)$.
+
 # Properties
 ## Basic Statistical Properties
 - [[Binomial Distribution Expectation]]
 - [[Binomial Distribution Variance]]
+- [[Moment Generating Function|mgf]]:[^3] $M(t) = \sum_x \binom{n}{x}(pe^t)^x(1-p)^{n-x} = [(1 - p) + pe^t]^n$ for all $t$ (by the [[Binomial Theorem]]), giving $\mu = np$ and $\sigma^2 = np(1-p)$.
+
+## Operation
+- [[Binomial Distribution Addition]]
 
 ## [[Probability Distribution Skewness]]
 - [[Binomial Distribution Skewness]]
@@ -35,3 +41,5 @@ This is a [[Multinomial Distribution]] with $c = 2$.
 - [[Binomial Distribution Maximum Likelihood Estimation]]
 
 [^1]: [Categorical Data Analysis](zotero://open-pdf/library/items/JZKRKD5L?page=23)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=172)
+[^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=173)

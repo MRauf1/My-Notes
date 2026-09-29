@@ -1028,101 +1028,12 @@ entries:
     tags: [vim]
     source: https://vimhelp.org/
 
-  - command: "vim: :w / :q / :wq / :q!"
-    meaning: Save (:w), quit (:q), save and quit (:wq, also :x or ZZ), or quit discarding changes (:q!).
-    tags: [vim]
-    source: https://vimhelp.org/editing.txt.html
-
-  - command: "vim: i / a / o / O"
-    meaning: Enter Insert mode before the cursor (i), after the cursor (a), on a new line below (o), or on a new line above (O).
-    details: |
-      `I` / `A` insert at the start / end of the line.
-    tags: [vim]
-    source: https://vimhelp.org/insert.txt.html
-
-  - command: "vim: h / j / k / l"
-    meaning: Move the cursor left, down, up, and right in Normal mode.
-    details: |
-      A count repeats a motion: `5j` moves down 5 lines.
-    tags: [vim]
-    source: https://vimhelp.org/motion.txt.html
-
-  - command: "vim: w / b / e"
-    meaning: Move to the start of the next word (w), the start of the previous word (b), or the end of the word (e).
-    tags: [vim]
-    source: https://vimhelp.org/motion.txt.html
-
-  - command: "vim: 0 / ^ / $"
-    meaning: Move to the first column (0), the first non-blank character (^), or the end of the line ($).
-    tags: [vim]
-    source: https://vimhelp.org/motion.txt.html
-
-  - command: "vim: gg / G / :<n>"
-    meaning: Go to the first line (gg), the last line (G), or line n (:n or nG).
-    tags: [vim]
-    source: https://vimhelp.org/motion.txt.html
-
-  - command: "vim: x / dd / dw / D"
-    meaning: Delete the character under the cursor (x), the whole line (dd), to the start of the next word (dw), or to the end of the line (D).
-    details: |
-      `d` is an operator combined with any motion (`d$`, `dG`); deleted text goes to a register and can be pasted, so this is also "cut".
-    tags: [vim]
-    source: https://vimhelp.org/change.txt.html
-
-  - command: "vim: yy / yw / p / P"
-    meaning: Yank (copy) the line (yy) or a word (yw), then paste after (p) or before (P) the cursor.
-    details: |
-      `y` is an operator like `d`: `y$`, `yG`, `3yy`.
-    tags: [vim]
-    source: https://vimhelp.org/change.txt.html
-
-  - command: "vim: cw / cc / C"
-    meaning: Change (delete and enter Insert mode) to the end of the word (cw), the whole line (cc), or to the end of the line (C).
-    details: |
-      `ciw` changes the whole word under the cursor, `ci"` the text inside quotes.
-    tags: [vim]
-    source: https://vimhelp.org/change.txt.html
-
-  - command: "vim: u / Ctrl+R / ."
-    meaning: Undo (u), redo (Ctrl+R), or repeat the last change (.).
-    tags: [vim]
-    source: https://vimhelp.org/undo.txt.html
-
-  - command: "vim: v / V / Ctrl+V"
-    meaning: Start Visual mode to select characters (v), whole lines (V), or a rectangular block (Ctrl+V), then apply an operator such as d, y, or >.
-    tags: [vim]
-    source: https://vimhelp.org/visual.txt.html
-
-  - command: "vim: /pattern / ?pattern / n / N"
-    meaning: Search forward (/) or backward (?), then jump to the next (n) or previous (N) match.
-    details: |
-      `*` searches for the word under the cursor.
-    tags: [vim]
-    source: https://vimhelp.org/pattern.txt.html
-
-  - command: "vim: :%s/<old>/<new>/g"
-    meaning: Substitute new for every match of old in the whole file (% is the range of all lines).
-    details: |
-      Add `c` to confirm each replacement (`/gc`). Without `%`, only the current line is affected.
-    tags: [vim]
-    source: https://vimhelp.org/change.txt.html#%3Asubstitute
-
-  - command: "vim: :help <topic>"
-    meaning: Open Vim's built-in documentation on a topic (e.g. :help dd).
-    tags: [vim]
-    source: https://vimhelp.org/helphelp.txt.html
-
   - command: nvim <file>
     meaning: Open a file in Neovim, a modernized fork of Vim with the same modal keybindings, built-in LSP support, and Lua configuration.
     details: |
       Config lives in `~/.config/nvim/init.lua` (or `init.vim`) instead of `~/.vimrc`; data follows the XDG base directories.
     tags: [vim]
     source: https://neovim.io/doc/user/nvim.html
-
-  - command: "nvim: :checkhealth"
-    meaning: Run Neovim's health checks to diagnose problems with the configuration, providers, and plugins.
-    tags: [vim]
-    source: https://neovim.io/doc/user/health.html
 
   # --- Users and privileges ----------------------------------------------
 
@@ -1624,3 +1535,597 @@ entries:
       `-f FILE` uses a different makefile; `-k` keeps going after errors.
     tags: [build]
     source: https://www.gnu.org/software/make/manual/make.html#Options-Summary
+
+  # --- Devices and udev --------------------------------------------------
+
+  - command: devtmpfs
+    meaning: Kernel-managed virtual filesystem mounted on /dev, where the kernel automatically creates device nodes for detected hardware.
+    details: |
+      udev then adjusts permissions, ownership, and symlinks (e.g. `/dev/disk/by-uuid/`) on top of it. Check with `findmnt /dev`.
+    tags: [devices]
+    source: https://docs.kernel.org/admin-guide/devices.html
+
+  - command: udev
+    meaning: The Linux userspace device manager, which handles kernel device events (uevents) to set up /dev nodes, symlinks, permissions, and load drivers or firmware.
+    details: |
+      Rules live in `/usr/lib/udev/rules.d/` (packaged) and `/etc/udev/rules.d/` (local overrides). Part of systemd; the daemon is `systemd-udevd`.
+    tags: [devices]
+    source: https://man.archlinux.org/man/udev.7
+
+  - command: systemd-udevd
+    meaning: The udev daemon, which listens for kernel uevents and applies the matching udev rules to each device.
+    details: |
+      Runs as `systemd-udevd.service`; normally controlled through `udevadm`, not started by hand.
+    tags: [devices]
+    source: https://man.archlinux.org/man/systemd-udevd.8
+
+  - command: udevadm info <device>
+    meaning: Query the udev database for a device's properties, e.g. udevadm info /dev/sda.
+    details: |
+      `udevadm info -a <syspath>` walks the parent devices and prints the attributes usable in rule matches.
+    tags: [devices]
+    source: https://man.archlinux.org/man/udevadm.8
+
+  - command: udevadm monitor
+    meaning: Print kernel uevents and udev events live as devices are plugged in or removed.
+    details: |
+      `--property` also prints each event's properties.
+    tags: [devices]
+    source: https://man.archlinux.org/man/udevadm.8
+
+  - command: udevadm control --reload && udevadm trigger
+    meaning: Reload the udev rules files and replay device events so that new or changed rules are applied without rebooting.
+    tags: [devices]
+    source: https://man.archlinux.org/man/udevadm.8
+
+  - command: lsusb
+    meaning: List the USB buses and connected USB devices with their vendor:product IDs.
+    details: |
+      `-v` verbose details; `-t` shows the device tree with drivers and speeds.
+    tags: [devices]
+    source: https://man.archlinux.org/man/lsusb.8
+
+  - command: lspci
+    meaning: List all PCI devices, such as the GPU, network, and storage controllers.
+    details: |
+      `-k` shows the kernel driver in use and available modules; `-nn` shows vendor:device IDs; `-v` is verbose.
+    tags: [devices]
+    source: https://man.archlinux.org/man/lspci.8
+
+  # --- File metadata -----------------------------------------------------
+
+  - command: stat <file>
+    meaning: Display a file's metadata from its inode, such as size, blocks, permissions, owner, inode number, link count, and access/modify/change/birth times.
+    details: |
+      `-c FORMAT` prints chosen fields, e.g. `stat -c '%a %U %n' file` gives octal permissions, owner, and name. `-f` shows filesystem status.
+    tags: [files]
+    source: https://man.archlinux.org/man/stat.1
+
+  - command: readlink <symlink>
+    meaning: Print the target a symbolic link points to.
+    details: |
+      `readlink -f` resolves all links recursively and prints the canonical absolute path (also works on non-links, like `realpath`).
+    tags: [files]
+    source: https://man.archlinux.org/man/readlink.1
+
+  # --- Kernel and system logs --------------------------------------------
+
+  - command: dmesg
+    meaning: Print the kernel ring buffer, i.e. messages from the kernel about hardware, drivers, and boot.
+    details: |
+      `-H` human-readable with a pager, `-T` readable timestamps, `-w` follows new messages, `-l err,warn` filters by level. May need `sudo`.
+    tags: [logs]
+    source: https://man.archlinux.org/man/dmesg.1
+
+  - command: journalctl
+    meaning: Query the systemd journal, the binary log of all system services and the kernel.
+    details: |
+      `-e` jumps to the end, `-r` shows newest first, `-n N` the last N lines, `-x` adds explanations. Your user can read system logs if in the `wheel` group, otherwise use `sudo`.
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: journalctl -u <unit>
+    meaning: Show only the log messages of a systemd unit, e.g. journalctl -u sshd.
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: journalctl -f
+    meaning: Follow the journal, printing new entries as they arrive (like tail -f).
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: journalctl -b
+    meaning: Show messages from the current boot only; -b -1 shows the previous boot.
+    details: |
+      `--list-boots` lists all recorded boots. `-k` shows only kernel messages (like `dmesg`).
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: journalctl -p err
+    meaning: Show only messages of priority err or more severe (emerg, alert, crit, err).
+    details: |
+      Ranges also work: `-p warning..err`. Priorities 0-7: emerg, alert, crit, err, warning, notice, info, debug.
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: journalctl --since "<time>" --until "<time>"
+    meaning: Show messages in a time window, e.g. --since "1 hour ago" or --since "2026-09-29 10:00".
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: journalctl --disk-usage / --vacuum-size=<size>
+    meaning: Show how much disk space the journal uses, or delete the oldest archived journal files until it is below size (e.g. 500M).
+    details: |
+      `--vacuum-time=2weeks` deletes by age. A permanent limit goes in `SystemMaxUse=` in `/etc/systemd/journald.conf`.
+    tags: [logs, systemd]
+    source: https://man.archlinux.org/man/journalctl.1
+
+  - command: logger "<message>"
+    meaning: Write a message to the system log (the journal), e.g. from a shell script.
+    details: |
+      `-t TAG` sets the tag (shown as the program name); `-p user.err` sets the priority. View with `journalctl -t TAG`.
+    tags: [logs]
+    source: https://man.archlinux.org/man/logger.1
+
+  - command: zgrep '<pattern>' <file.gz>
+    meaning: Search gzip-compressed (or plain) files like grep, without decompressing them first, e.g. rotated logs such as syslog.2.gz.
+    details: |
+      Accepts grep's options. `zcat` and `zless` view compressed files similarly.
+    tags: [logs, grep]
+    source: https://man.archlinux.org/man/zgrep.1
+
+  # --- Disks, partitions, filesystems ------------------------------------
+
+  - command: lsblk
+    meaning: List block devices (disks and partitions) as a tree with their sizes, types, and mountpoints.
+    details: |
+      `-f` adds filesystem type, label, UUID, and usage; `-p` prints full `/dev` paths; `-o NAME,SIZE,MODEL` chooses columns.
+    tags: [disks]
+    source: https://man.archlinux.org/man/lsblk.8
+
+  - command: blkid
+    meaning: Print the attributes of block devices, such as UUID, filesystem TYPE, LABEL, and PARTUUID.
+    details: |
+      `blkid /dev/sda1` for one device. UUIDs are what `/etc/fstab` should reference, since `/dev/sdX` names can change between boots.
+    tags: [disks]
+    source: https://man.archlinux.org/man/blkid.8
+
+  - command: dd if=<input> of=<output> bs=4M status=progress
+    meaning: Copy raw data block by block from an input file to an output file, e.g. writing an ISO image to a USB drive (of=/dev/sdX).
+    details: |
+      Writing to the wrong `of=` device destroys its data irreversibly: check with `lsblk` first. `bs` sets the block size, `count=N` copies N blocks, `conv=fsync` flushes at the end.
+      E.g. `dd if=/dev/zero of=file bs=1M count=100` creates a 100 MiB file.
+    tags: [disks]
+    source: https://man.archlinux.org/man/dd.1
+
+  - command: fdisk <disk>
+    meaning: Interactively create, delete, and edit the partitions of a disk (supports both GPT and MBR tables), e.g. fdisk /dev/sda.
+    details: |
+      Inside: `p` print, `n` new partition, `d` delete, `t` change type, `g` new GPT table, `w` write changes and quit, `q` quit without saving. `fdisk -l` lists all partition tables.
+    tags: [disks]
+    source: https://man.archlinux.org/man/fdisk.8
+
+  - command: parted <disk>
+    meaning: Partition editor that can also be scripted, e.g. parted /dev/sda mklabel gpt or mkpart, and that applies changes immediately.
+    details: |
+      Changes take effect as soon as each command runs (there is no final "write" step as in fdisk). `print` shows the table; `resizepart` resizes. GParted is its GUI.
+    tags: [disks]
+    source: https://man.archlinux.org/man/parted.8
+
+  - command: mkfs.<type> <partition>
+    meaning: Create (format) a filesystem on a partition, e.g. mkfs.ext4 /dev/sda1 or mkfs.fat -F 32 /dev/sda1 for an EFI partition.
+    details: |
+      `mkfs -t ext4` is the generic front end. `-L LABEL` sets a label (for most types). Formatting destroys the existing data.
+    tags: [disks]
+    source: https://man.archlinux.org/man/mkfs.8
+
+  - command: wipefs <device>
+    meaning: List the filesystem, RAID, or partition-table signatures on a device; with -a, erase all of them.
+    details: |
+      `wipefs -a /dev/sdX` clears old signatures before repartitioning. It only erases the signature bytes, not the data.
+    tags: [disks]
+    source: https://man.archlinux.org/man/wipefs.8
+
+  - command: mount -a
+    meaning: Mount all filesystems listed in /etc/fstab that are not already mounted.
+    details: |
+      A good way to test an edited `/etc/fstab` before rebooting.
+    tags: [filesystems]
+    source: https://man.archlinux.org/man/mount.8
+
+  - command: mount -o loop <image.iso> <mountpoint>
+    meaning: Mount a disk image file as if it were a device, through a loop device.
+    details: |
+      Modern `mount` usually sets up the loop device automatically. `-o ro` mounts read-only; `-o remount,rw` changes options of an existing mount.
+    tags: [filesystems]
+    source: https://man.archlinux.org/man/mount.8
+
+  - command: fuser -m <mountpoint>
+    meaning: Show the PIDs of processes using files on the mounted filesystem (or fuser <file> for a single file).
+    details: |
+      `-v` gives a readable table; `-k` kills the processes. Useful when `umount` reports "target is busy".
+    tags: [filesystems, processes]
+    source: https://man.archlinux.org/man/fuser.1
+
+  - command: df -h
+    meaning: Report the size, used, and available space of each mounted filesystem, in human-readable units.
+    details: |
+      `df -h <path>` shows just the filesystem containing the path; `-T` adds the filesystem type; `-i` shows inode usage.
+    tags: [disks]
+    source: https://man.archlinux.org/man/df.1
+
+  - command: du -sh <path>
+    meaning: Print the total disk usage of a file or directory (-s summarize, -h human-readable).
+    details: |
+      `du -h -d 1 <dir> | sort -h` ranks subdirectories by size. `ncdu` is an interactive alternative.
+    tags: [disks]
+    source: https://man.archlinux.org/man/du.1
+
+  - command: fsck <partition>
+    meaning: Check (and repair) a filesystem for consistency errors, e.g. fsck /dev/sda1.
+    details: |
+      Only run it on an unmounted filesystem, or it can cause corruption. `-n` checks without repairing. Calls the type-specific checker (e.g. `e2fsck`). systemd checks filesystems automatically at boot.
+    tags: [disks]
+    source: https://man.archlinux.org/man/fsck.8
+
+  # --- Swap and memory ---------------------------------------------------
+
+  - command: free -h
+    meaning: Display the total, used, free, and available physical memory (RAM) and swap, in human-readable units.
+    details: |
+      The `available` column (memory usable without swapping) matters more than `free`, since Linux uses spare RAM as disk cache. `-s N` repeats every N seconds.
+    tags: [memory]
+    source: https://man.archlinux.org/man/free.1
+
+  - command: mkswap <device_or_file>
+    meaning: Set up a partition or file as swap space.
+    details: |
+      For a swap file: create it (e.g. `mkswap --file -s 4GiB /swapfile`), then `swapon /swapfile`, and add it to `/etc/fstab` to enable it at boot.
+    tags: [memory]
+    source: https://man.archlinux.org/man/mkswap.8
+
+  - command: swapon <device_or_file>
+    meaning: Enable a swap device or file.
+    details: |
+      `swapon --show` lists active swap; `swapon -a` enables all swap in `/etc/fstab`.
+    tags: [memory]
+    source: https://man.archlinux.org/man/swapon.8
+
+  - command: swapoff <device_or_file>
+    meaning: Disable a swap device or file, moving its contents back into RAM.
+    details: |
+      `swapoff -a` disables all swap.
+    tags: [memory]
+    source: https://man.archlinux.org/man/swapoff.8
+
+  # --- Kernel and modules ------------------------------------------------
+
+  - command: uname -a
+    meaning: Print system information, such as the kernel name, hostname, kernel release, version, and architecture.
+    details: |
+      `-r` prints only the kernel release (e.g. `7.2.7-arch1-1`); `-m` the machine architecture.
+    tags: [kernel]
+    source: https://man.archlinux.org/man/uname.1
+
+  - command: lsmod
+    meaning: List the currently loaded kernel modules with their sizes and the modules that use them.
+    details: |
+      Formats `/proc/modules`.
+    tags: [kernel]
+    source: https://man.archlinux.org/man/lsmod.8
+
+  - command: modinfo <module>
+    meaning: Show information about a kernel module, such as its file, description, license, dependencies, and parameters.
+    tags: [kernel]
+    source: https://man.archlinux.org/man/modinfo.8
+
+  - command: modprobe <module>
+    meaning: Load a kernel module together with any modules it depends on.
+    details: |
+      `modprobe -r <module>` unloads it (and unused dependencies). Load at boot by listing it in `/etc/modules-load.d/*.conf`.
+    tags: [kernel]
+    source: https://man.archlinux.org/man/modprobe.8
+
+  - command: blacklist <module>
+    meaning: A line in /etc/modprobe.d/*.conf that stops a module from being loaded automatically by its hardware aliases.
+    details: |
+      The module can still be loaded manually or as another module's dependency; `install <module> /bin/false` blocks it completely. Regenerate the initramfs if the module is included there.
+    tags: [kernel]
+    source: https://man.archlinux.org/man/modprobe.d.5
+
+  - command: options <module> <param>=<value>
+    meaning: A line in /etc/modprobe.d/*.conf that sets parameters passed to a module every time it is loaded.
+    details: |
+      E.g. `options snd-hda-intel power_save=1`. Check the available parameters with `modinfo`.
+    tags: [kernel]
+    source: https://man.archlinux.org/man/modprobe.d.5
+
+  - command: strace <command>
+    meaning: Trace the system calls (and signals) a program makes, for debugging what it does with files, network, and processes.
+    details: |
+      `-p PID` attaches to a running process, `-f` follows child processes, `-e trace=openat` filters calls, `-o FILE` writes to a file. From the `strace` package.
+    tags: [kernel, debugging]
+    source: https://man.archlinux.org/man/strace.1
+
+  # --- systemd and power -------------------------------------------------
+
+  - command: systemctl status <unit>
+    meaning: Show a unit's (e.g. a service's) state, whether it is enabled, its main PID, and its most recent log lines.
+    details: |
+      `systemctl` with no arguments lists the loaded units; `systemctl --failed` lists failed ones.
+    tags: [systemd]
+    source: https://man.archlinux.org/man/systemctl.1
+
+  - command: systemctl start / stop / restart <unit>
+    meaning: Start, stop, or restart a unit now (does not change whether it starts at boot).
+    details: |
+      `reload` asks a service to reload its configuration without restarting. Needs root for system units.
+    tags: [systemd]
+    source: https://man.archlinux.org/man/systemctl.1
+
+  - command: systemctl enable / disable <unit>
+    meaning: Make a unit start (or no longer start) automatically at boot.
+    details: |
+      `enable --now` also starts it immediately. `mask` prevents a unit from being started at all.
+    tags: [systemd]
+    source: https://man.archlinux.org/man/systemctl.1
+
+  - command: systemctl daemon-reload
+    meaning: Reload systemd's configuration so it notices new or changed unit files.
+    tags: [systemd]
+    source: https://man.archlinux.org/man/systemctl.1
+
+  - command: systemctl --user <command>
+    meaning: Manage the per-user systemd instance (user services in ~/.config/systemd/user/) instead of the system instance.
+    tags: [systemd]
+    source: https://man.archlinux.org/man/systemctl.1
+
+  - command: shutdown now / shutdown +<m> / shutdown <hh:mm>
+    meaning: Power off the machine now, in m minutes, or at a set time (a wall message can follow the time).
+    details: |
+      `-r` reboots instead; `-c` cancels a scheduled shutdown. Without a time, `+1` is assumed.
+    tags: [systemd, power]
+    source: https://man.archlinux.org/man/shutdown.8
+
+  - command: reboot
+    meaning: Restart the machine.
+    details: |
+      Same as `systemctl reboot`.
+    tags: [systemd, power]
+    source: https://man.archlinux.org/man/reboot.8
+
+  - command: poweroff
+    meaning: Shut down the system and turn off the power.
+    details: |
+      Same as `systemctl poweroff`.
+    tags: [systemd, power]
+    source: https://man.archlinux.org/man/poweroff.8
+
+  - command: halt
+    meaning: Stop the system (all processes are ended and the CPU halted) without necessarily powering the machine off.
+    details: |
+      Same as `systemctl halt`. Use `poweroff` to actually turn the machine off.
+    tags: [systemd, power]
+    source: https://man.archlinux.org/man/halt.8
+
+  - command: crontab -e
+    meaning: Edit your crontab, a list of commands that cron runs on a schedule.
+    details: |
+      Line format: `min hour day-of-month month day-of-week command`, e.g. `0 3 * * * /path/backup.sh` runs daily at 03:00. `crontab -l` lists, `crontab -r` removes the whole crontab.
+      On Arch, cron comes from `cronie` (enable `cronie.service`); systemd timers are the built-in alternative.
+    tags: [scheduling]
+    source: https://man.archlinux.org/man/crontab.1
+
+  # --- Monitoring --------------------------------------------------------
+
+  - command: uptime
+    meaning: Show the current time, how long the system has been running, the number of logged-in users, and the load averages over 1, 5, and 15 minutes.
+    details: |
+      `uptime -p` prints a readable duration. A load average above the CPU count (`nproc`) means processes are waiting.
+    tags: [monitoring]
+    source: https://man.archlinux.org/man/uptime.1
+
+  - command: nproc
+    meaning: Print the number of processing units (CPU threads) available to the current process.
+    details: |
+      `nproc --all` counts all installed ones. Commonly `make -j$(nproc)`.
+    tags: [monitoring]
+    source: https://man.archlinux.org/man/nproc.1
+
+  - command: lsof
+    meaning: List open files and the processes that have them open (in Linux, sockets and devices are files too).
+    details: |
+      `lsof <file>` shows who has a file open, `lsof -p PID` a process's files, `-u user` a user's files, `lsof -i :8080` what uses a network port. Run as root to see all processes.
+    tags: [monitoring, processes]
+    source: https://man.archlinux.org/man/lsof.8
+
+  - command: ss -tulpn
+    meaning: List listening (-l) TCP (-t) and UDP (-u) sockets with numeric ports (-n) and the processes that own them (-p).
+    details: |
+      The replacement for the deprecated `netstat`. `ss -tan` shows all TCP connections. Showing processes of other users needs root.
+    tags: [monitoring, network]
+    source: https://man.archlinux.org/man/ss.8
+
+  - command: vmstat <delay>
+    meaning: Report virtual memory statistics (processes, memory, swap, I/O, system, and CPU), repeating every delay seconds.
+    details: |
+      The first line is an average since boot. Watch `r` (runnable processes), `si`/`so` (swap in/out), and `wa` (I/O wait).
+    tags: [monitoring]
+    source: https://man.archlinux.org/man/vmstat.8
+
+  # --- SSH and file transfer ---------------------------------------------
+
+  - command: ssh <user>@<host>
+    meaning: Open an encrypted remote shell on another machine over SSH (port 22 by default).
+    details: |
+      `-p PORT` another port, `-i KEY` a specific private key, `ssh host '<command>'` runs a single command. `-L 8080:localhost:80` forwards a local port through the connection.
+      Host aliases and defaults go in `~/.ssh/config` (`Host`, `HostName`, `User`, `IdentityFile`).
+    tags: [network, ssh]
+    source: https://man.archlinux.org/man/ssh.1
+
+  - command: ssh-keygen -t ed25519
+    meaning: Generate a new SSH key pair (private key ~/.ssh/id_ed25519 and public key id_ed25519.pub).
+    details: |
+      Ed25519 is the recommended key type. `-C "comment"` labels the key; protect the private key with a passphrase and keep it at `600` permissions.
+    tags: [network, ssh]
+    source: https://man.archlinux.org/man/ssh-keygen.1
+
+  - command: ssh-copy-id <user>@<host>
+    meaning: Install your public key in the remote user's ~/.ssh/authorized_keys, enabling key-based login.
+    tags: [network, ssh]
+    source: https://man.archlinux.org/man/ssh-copy-id.1
+
+  - command: scp <source> <user>@<host>:<path>
+    meaning: Copy files between hosts over SSH, e.g. scp file.txt me@server:~/ or scp me@server:~/file.txt . (either side may be remote).
+    details: |
+      `-r` copies directories, `-P PORT` sets the port (capital P, unlike ssh). Modern OpenSSH's scp uses the SFTP protocol under the hood (`-O` forces the legacy protocol). For large or repeated transfers prefer `rsync`.
+    tags: [network, ssh]
+    source: https://man.archlinux.org/man/scp.1
+
+  - command: rsync -avh <source> <destination>
+    meaning: Synchronize files locally or over SSH, transferring only differences; -a (archive) recurses and preserves permissions, times, links, and ownership, -v is verbose, -h human-readable.
+    details: |
+      A trailing slash matters: `src/` copies the contents of src, `src` copies the directory itself. Remote paths use `user@host:path`.
+    tags: [network, rsync]
+    source: https://man.archlinux.org/man/rsync.1
+
+  - command: rsync -avh --delete <source>/ <destination>/
+    meaning: Mirror the source exactly by also deleting files in the destination that no longer exist in the source.
+    details: |
+      Run with `-n` (`--dry-run`) first, because a wrong path can delete data. `--exclude=PATTERN` skips files; `-P` shows progress and keeps partial files for resuming; `-z` compresses in transit.
+    tags: [network, rsync]
+    source: https://man.archlinux.org/man/rsync.1
+
+  - command: curl <url>
+    meaning: Transfer data from or to a URL (HTTP, HTTPS, FTP, ...), printing the response body to stdout by default.
+    details: |
+      `-o FILE` saves to a file, `-O` uses the remote filename, `-L` follows redirects, `-I` shows only headers, `-s` is silent, `-f` fails on HTTP errors.
+      `-X POST -H 'Content-Type: application/json' -d '{...}'` sends a request body. Check a script before piping `curl ... | sh`.
+    tags: [network, http]
+    source: https://man.archlinux.org/man/curl.1
+
+  - command: wget <url>
+    meaning: Download a file from a URL into the current directory.
+    details: |
+      `-O FILE` sets the output name, `-c` resumes a partial download, `-r` downloads recursively (mirroring a site), `-q` is quiet. Follows redirects by default, unlike curl.
+    tags: [network, http]
+    source: https://man.archlinux.org/man/wget.1
+
+  # --- Interfaces, addresses, routes --------------------------------------
+
+  - command: ip addr
+    meaning: Show the network interfaces and their IP addresses (inet for IPv4, inet6 for IPv6).
+    details: |
+      Short forms: `ip a`, `ip -br a` (brief table), `ip -4 a` (IPv4 only). `ip addr add 192.168.1.10/24 dev eth0` adds an address (temporary until reboot).
+    tags: [network]
+    source: https://man.archlinux.org/man/ip-address.8
+
+  - command: ip link
+    meaning: Show the network interfaces and their link-layer state (UP/DOWN, MAC address, MTU).
+    details: |
+      `ip link set <dev> up` / `down` enables or disables an interface.
+    tags: [network]
+    source: https://man.archlinux.org/man/ip-link.8
+
+  - command: ip route
+    meaning: Show the kernel routing table, including the default gateway (the default via ... line).
+    details: |
+      `ip route get 1.1.1.1` shows which route and interface a destination would use. `ip route add default via 192.168.1.1` adds a gateway.
+    tags: [network]
+    source: https://man.archlinux.org/man/ip-route.8
+
+  - command: ip neigh
+    meaning: Show the neighbor (ARP/NDP) table, mapping IP addresses on the local network to MAC addresses.
+    tags: [network]
+    source: https://man.archlinux.org/man/ip-neighbour.8
+
+  - command: inet
+    meaning: The IPv4 address family; in ip addr output, inet lines are IPv4 addresses and inet6 lines IPv6 addresses.
+    details: |
+      In nftables, the `inet` table family instead covers both IPv4 and IPv6 in one table (`ip` is IPv4-only, `ip6` IPv6-only).
+    tags: [network]
+    source: https://wiki.nftables.org/wiki-nftables/index.php/Nftables_families
+
+  - command: nmcli
+    meaning: Command-line client for NetworkManager (Arch's common network manager), showing the overall status and devices.
+    details: |
+      `nmcli device` (or `d`) lists interfaces and their state; `nmcli connection show` lists saved connection profiles; `nmcli connection up <name>` activates one. `nmtui` is a text UI.
+    tags: [network, networkmanager]
+    source: https://man.archlinux.org/man/nmcli.1
+
+  - command: nmcli device wifi list / nmcli device wifi connect <SSID> --ask
+    meaning: Scan for and list Wi-Fi networks, or connect to one (prompting for the password with --ask).
+    details: |
+      `password <pw>` instead of `--ask` puts the password in your shell history.
+    tags: [network, networkmanager]
+    source: https://man.archlinux.org/man/nmcli.1
+
+  - command: networkctl
+    meaning: List network links and their state as managed by systemd-networkd.
+    details: |
+      `networkctl status <link>` shows details. Only useful when `systemd-networkd` manages the network (an alternative to NetworkManager); don't run both on the same interface.
+    tags: [network, systemd]
+    source: https://man.archlinux.org/man/networkctl.1
+
+  # --- DNS ---------------------------------------------------------------
+
+  - command: resolvectl status
+    meaning: Show the DNS servers and search domains that systemd-resolved uses, per interface.
+    details: |
+      `resolvectl query <name>` resolves a name through systemd-resolved; `resolvectl flush-caches` clears its cache. Requires `systemd-resolved` to be running.
+    tags: [network, dns]
+    source: https://man.archlinux.org/man/resolvectl.1
+
+  - command: dig <name> [<type>]
+    meaning: Query DNS servers directly and show the full answer, e.g. dig archlinux.org or dig archlinux.org MX.
+    details: |
+      `+short` prints only the answer, `@8.8.8.8` queries a specific server, `-x <ip>` does a reverse lookup, `+trace` follows delegation from the root. Types include A, AAAA, MX, NS, TXT, CNAME. From the `bind` package.
+    tags: [network, dns]
+    source: https://man.archlinux.org/man/dig.1
+
+  # --- Diagnostics -------------------------------------------------------
+
+  - command: ping <host>
+    meaning: Send ICMP echo requests to a host to test whether it is reachable and measure round-trip time and packet loss.
+    details: |
+      Runs until `Ctrl+C` on Linux; `-c N` sends N packets. A failing `ping` doesn't prove the host is down, since ICMP may be blocked.
+    tags: [network]
+    source: https://man.archlinux.org/man/ping.8
+
+  - command: traceroute <host>
+    meaning: Show each router hop on the path to a host, with the latency at each hop.
+    details: |
+      `* * *` means a hop didn't answer. `-n` skips DNS lookups. From the `traceroute` package; `tracepath` (iputils) and `mtr` are alternatives.
+    tags: [network]
+    source: https://man.archlinux.org/man/traceroute.8
+
+  - command: netstat -tulpn
+    meaning: (Outdated) List listening TCP/UDP sockets with their owning processes.
+    details: |
+      From the deprecated `net-tools` package; use `ss -tulpn` (same flags) instead. Likewise `ip` replaces `ifconfig` and `route`.
+    tags: [network, outdated]
+    source: https://man.archlinux.org/man/netstat.8
+
+  - command: tcpdump -i <interface>
+    meaning: Capture and print network packets on an interface, for debugging traffic.
+    details: |
+      Needs root. `-n` skips name resolution, `-c N` stops after N packets, `-w file.pcap` saves for Wireshark. Filters follow: `tcpdump -i any port 443`, `host 10.0.0.1`. From the `tcpdump` package.
+    tags: [network]
+    source: https://man.archlinux.org/man/tcpdump.8
+
+  # --- Firewall (nftables) -----------------------------------------------
+
+  - command: nft list ruleset
+    meaning: Show the complete nftables firewall configuration (all tables, chains, and rules).
+    details: |
+      nftables replaces iptables on modern Linux. The persistent config is `/etc/nftables.conf`, loaded by `nftables.service`. Needs root.
+    tags: [network, firewall]
+    source: https://man.archlinux.org/man/nft.8
+
+  - command: nft add rule inet filter input tcp dport 22 accept
+    meaning: Add a rule to the input chain of the inet-family table named filter that accepts incoming TCP traffic to port 22 (SSH).
+    details: |
+      Structure: table (with a family such as `inet`) → chain (with a hook such as `input`) → rules. Rules added on the command line are lost at reboot unless saved into `/etc/nftables.conf`. `nft -f file` loads a ruleset.
+    tags: [network, firewall]
+    source: https://wiki.archlinux.org/title/Nftables
+

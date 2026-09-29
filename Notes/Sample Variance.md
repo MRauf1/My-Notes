@@ -43,7 +43,7 @@ All three estimators ($1/(n-1)$, $1/n$, $1/(n+1)$) differ by $O(1/n)$ and are co
 
 # Properties
 - The computational form $\sum X_i^2 - n\bar{X}^2$ is algebraically equal but numerically unstable when $\bar{X}$ is large relative to the spread; the two-pass or Welford update is used in practice.
-- For a normal sample, $(n-1)S^2/\sigma^2$ has a [[Chi-Squared Distribution]] with $n - 1$ degrees of freedom, independent of $\bar{X}$.
+- For a normal sample, $(n-1)S^2/\sigma^2$ has a [[Chi-Squared Distribution]] with $n - 1$ degrees of freedom, independent of $\bar{X}$ ([[Student's Theorem]]).
 - The sample analogue of the population [[Variance]]; $S$ is the sample [[Standard Deviation]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=169)
