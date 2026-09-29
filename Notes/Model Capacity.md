@@ -10,6 +10,7 @@ tags:
 
 # Properties
 - The number of free parameters is only a rough proxy for model capacity, not the full story: a single infinite-precision parameter can already parameterize an arbitrarily complex function and so define a very expressive (high-capacity) hypothesis space, while a million parameters that are [[Regularization|regularized]] to be almost all zero may define only a simple class of functions.
+- For neural networks, the number of hidden units is a measure of capacity: in a [[Shallow Neural Network]] with [[ReLU Function|ReLU]] activations, $D$ hidden units give at most $D + 1$ linear regions for a scalar input ([[Linear Regions of ReLU Network]]).[^2]
 - Should follow a "Goldilocks principle": a hypothesis space should be expressive enough to fit the data, but not so flexible that it [[Overfitting|overfits]] it.
 - **Why overparameterized deep networks often do not overfit despite very high nominal capacity** is an active area of research; several strands of evidence and theory bear on it:
 	- **Double descent**: as capacity increases past the point of exactly interpolating the training data, test error can first worsen (as classical theory predicts) but then *decrease* again into the heavily overparameterized regime, contrary to the classical U-shaped bias-variance tradeoff curve.
@@ -18,3 +19,4 @@ tags:
 	- Together, these suggest that a model's *effective* capacity, as constrained by its architecture and optimizer, can be far lower than its nominal parameter count would suggest.
 
 [^1]: [MIT Vision Book - The Problem of Generalization](https://visionbook.mit.edu/problem_of_generalization.html)
+[^2]: [Prince, p. 29](zotero://open-pdf/library/items/BWT7FYX5?page=43&annotation=IRUAYRI5); [Prince, p. 46](zotero://open-pdf/library/items/BWT7FYX5?page=60&annotation=AIZB9MQV)

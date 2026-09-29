@@ -9,6 +9,7 @@ tags:
 > An approach that directly models the posterior class probabilities $p(\mathcal{C}_k | \mathbf{x})$ (or, for regression, the conditional density $p(t | \mathbf{x})$), then uses [[Decision Theory|decision theory]] to assign each new $\mathbf{x}$ to a class.
 
 # Properties
+- In deterministic form, a model $\mathbf{y} = \mathbf{f}[\mathbf{x}, \boldsymbol{\phi}]$ that predicts the output $\mathbf{y}$ directly from real-world measurements $\mathbf{x}$, so [[Inference (Machine Learning)|inference]] is direct.[^3]
 - Contrasts with a [[Generative Model]], which models the distribution of the inputs as well, $p(\mathbf{x}, \mathcal{C}_k)$ or $p(\mathbf{x} | \mathcal{C}_k)\,p(\mathcal{C}_k)$.
 - Less demanding of data and computation when only decisions are needed, since class-conditional densities may contain much structure with little effect on the posteriors.[^2]
 - Cannot provide the marginal $p(\mathbf{x})$, so it does not support [[Novelty Detection|novelty detection]].
@@ -17,3 +18,4 @@ tags:
 
 [^1]: [Bishop, 2006, p. 43](zotero://open-pdf/library/items/5G99AZ8U?page=63&annotation=8IPZ2JC6)
 [^2]: [Bishop, 2006, p. 44](zotero://open-pdf/library/items/5G99AZ8U?page=64&annotation=FNCQYKUP)
+[^3]: [Prince, p. 23](zotero://open-pdf/library/items/BWT7FYX5?page=37&annotation=KM6TDWK5)

@@ -6,4 +6,4 @@ tags:
 
 # Definition
 
-- Zeros out negative neuron outputs, which can lead to dead neurons
+- Zeros out negative neuron outputs, which can lead to dead neurons ([[Dying ReLU Problem]])

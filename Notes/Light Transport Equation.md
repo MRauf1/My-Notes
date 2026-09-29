@@ -20,6 +20,7 @@ $L_e$ is the known emitted [[Radiance]]. $f_s$ is the known [[Bidirectional Scat
 
 # Properties
 - Solved by the recursive [[Path Tracing (Recursive Estimator)|Monte Carlo estimator]].
+- A Fredholm integral equation of the second kind, solved stochastically by a transport-type [[Monte Carlo Method]].
 - Rewritten in [[Three-Point Form of the Light Transport Equation|three-point form]] by absorbing the direction-to-point change of measure into a [[Geometric Term (Light Transport)|geometric term]].
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

@@ -10,6 +10,17 @@ A technique for [[Parameter Estimation]]. The maximum likelihood estimate is the
 
 Instead of maximizing the likelihood function directly, we instead maximize the [[Log-Likelihood Function]], which converts products into sums, which are easier to deal with.[^1]
 
+> [!info] Definition 1 (Maximum Likelihood Estimator)[^2]
+> For the [[Likelihood Function]] $L(\theta)$ of a [[Random Sample]], if the maximizer is unique, the maximum likelihood estimator is
+> $$
+> \begin{align}
+> \hat{\theta} = \operatorname{Argmax}_{\theta \in \Omega} L(\theta)
+> \end{align}
+> $$
+> Since $\log$ is strictly increasing, $\hat{\theta}$ also maximizes $l(\theta) = \log L(\theta)$, and for differentiable models it frequently solves the estimating equations (EE) $\partial l(\theta)/\partial\theta = 0$, a system of equations when $\theta$ is a vector.
+
+It uses the value of $\theta$ under which the observed data are most probable as a measure of the center of $L(\theta)$.
+
 Steps:
 1) Calculate the [[Log-Likelihood Function]] ($L(\beta) = log(l(\beta))$).
 2) Calculate the [[Score Function]] and set it equal to $0$ ($u(\beta) = \frac{\partial L(\beta)}{\partial \beta} = 0$). If solving for multiple parameters, the [[Partial Derivative]] will turn into the [[Gradient Vector]].
@@ -37,3 +48,4 @@ These three have certain asymptotic equivalences.
 [^2]: [Bishop, 2006, p. 23](zotero://open-pdf/library/items/5G99AZ8U?page=43&annotation=4KU9QTLZ)
 [^3]: [Bishop, 2006, p. 26](zotero://open-pdf/library/items/5G99AZ8U?page=46&annotation=7JADG3MS)
 [^4]: [Bishop, 2006, p. 26](zotero://open-pdf/library/items/5G99AZ8U?page=46&annotation=8E3NKN4J)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=243)

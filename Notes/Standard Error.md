@@ -18,7 +18,10 @@ tags:
 
 Roughly speaking, the standard errors tells the average amount that the estimate $\hat{\mu}$ deviates from the actual value of $\mu$. According to the formula, this deviation gets lower as $n$ increases.
 
+When $\sigma$ is unknown it is estimated, and the estimated standard deviation of $\bar{X}$, $s/\sqrt{n}$, is also called the standard error of $\bar{X}$ ([[Sample Mean]]).[^2]
+
 # Types
 - [[Residual Standard Error]]
 
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=84)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=255)

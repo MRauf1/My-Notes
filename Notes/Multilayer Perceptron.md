@@ -20,4 +20,10 @@ $$
 $$
 In general, MLPs can be constructed with any number of layers following this pattern: linear layer, activation function, linear layer, activation function, and so on; this linear-nonlinear motif recurs throughout almost all neural networks, including [[Deep Neural Network|deep nets]].
 
+# Properties
+- For historical reasons, any neural network with at least one hidden layer is called an MLP; with one hidden layer it is a [[Shallow Neural Network]], and with several a [[Deep Neural Network]].[^2]
+- Terminology: the layers are the **input**, **hidden**, and **output layers**; hidden units are also called **neurons**; values entering the hidden layer before the activation are **pre-activations**, and values after it are **activations**. The slope parameters are **weights** and the offset parameters are **biases**.[^2]
+- The examples are [[Feed-Forward Neural Network|feed-forward]] and fully connected.
+
 [^1]: https://visionbook.mit.edu/neural_nets.html
+[^2]: [Prince, p. 35](zotero://open-pdf/library/items/BWT7FYX5?page=49&annotation=R2SB644P); [Prince, p. 35](zotero://open-pdf/library/items/BWT7FYX5?page=49&annotation=LV3HF7ZK); [Prince, p. 36](zotero://open-pdf/library/items/BWT7FYX5?page=50&annotation=N9X89K3U)

@@ -21,6 +21,7 @@ tags:
 
 # Properties
 - Unlike [[Supervised Learning]], the algorithm is not given examples of optimal outputs but must discover them by trial and error, through a sequence of states and actions in which the current action affects not only the immediate reward but also the rewards at all subsequent time steps.[^3]
+- The [[Policy]] can be represented by a deep network mapping observed world states to actions ([[Policy Network]]).
 - Interactions between agent and environment are often formalized as a [[Markov Decision Process]], in which the agent follows a [[Policy]] to maximize its expected [[Discounted Return]].
 
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=25)

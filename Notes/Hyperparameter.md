@@ -11,7 +11,9 @@ tags:
 # Properties
 - Examples include the regularization coefficient $\lambda$ of [[Regularization]], the polynomial order $M$, and the prior and noise precisions $\alpha, \beta$; for [[L2 Regularization]] derived as MAP, $\lambda = \alpha / \beta$.
 - Not fitted by maximizing the training likelihood (which would always favour maximal complexity), but set by [[Model Selection]]: a [[Validation Set]], [[Cross-Validation]], information criteria like the [[Akaike Information Criterion]], or, in a fully Bayesian treatment, by inference from the data itself.
+- In neural networks, the number of layers $K$ and the number of hidden units per layer $D_1, \dots, D_K$ are hyperparameters chosen before the weights and biases are learned; for fixed hyperparameters the model is a family of functions, so the network with its hyperparameters represents a family of families of functions ([[Deep Neural Network]]).[^3]
 - Searching combinations of several hyperparameters by cross-validation can require a number of training runs exponential in the number of hyperparameters.[^2]
 
 [^1]: [Bishop, 2006, p. 30](zotero://open-pdf/library/items/5G99AZ8U?page=50&annotation=KQLPNKN2)
 [^2]: [Bishop, 2006, p. 33](zotero://open-pdf/library/items/5G99AZ8U?page=53&annotation=B95CXRC2)
+[^3]: [Prince, p. 46](zotero://open-pdf/library/items/BWT7FYX5?page=60&annotation=3BIZK6QZ)

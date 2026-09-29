@@ -15,4 +15,6 @@ However, even though human [[Inductive Bias|inductive biases]] are frowned upon,
 
 In the terms of [[Generalization]]'s three tools (data, priors, hypothesis space), Sutton's argument can be read as a claim about which tool ages best: a strong, hand-designed prior is a soft constraint that encodes a fixed, human guess about the solution, whereas scaling up data and using a broad, general-purpose hypothesis space lets the learning algorithm itself discover structure that may go beyond what any human prior anticipated. Since priors only help when they are good guesses, and since compute keeps making the data-driven alternative cheaper, the bet on hand-crafted priors tends to lose out over time to the bet on more data and more general (less constrained) hypothesis spaces.
 
+For a fuller treatment of which priors survive scaling, and where the Bayesian perspective still pays off, see [[Priors in Light of the Bitter Lesson]].
+
 [^1]: [The Bitter Lesson](zotero://open-pdf/library/items/7HZ94VF3?page=1)

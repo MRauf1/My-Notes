@@ -16,5 +16,6 @@ tags:
 # Properties
 - Obstacles (1)–(3) concern differentiating the forward model itself; obstacles (4)–(5) concern doing so efficiently within a [[Monte Carlo Estimator|Monte Carlo estimator]]'s sampling and memory constraints.
 - Obstacle (2) is concrete in light transport as the visibility term $V$ of the [[Geometric Term (Light Transport)|geometric term]]: the one factor of a path's contribution that is discontinuous rather than smooth in the vertex positions.
+- The obstacles faced by [[Differentiable Monte Carlo]].
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

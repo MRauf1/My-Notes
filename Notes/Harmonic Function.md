@@ -11,3 +11,6 @@ tags:
 
 # Types
 - [[Harmonic Conjugate Function]]
+
+# Properties
+- Mean value property underlies the [[Walk on Spheres]] Monte Carlo solver for the Laplace equation.

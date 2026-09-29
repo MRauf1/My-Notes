@@ -21,6 +21,7 @@ tags:
 - The actual contents of minds (e.g. notions of space, objects, multiple agents, or symmetries) are tremendously, irredeemably complex, being part of the arbitrary, intrinsically complex outside world. They should not be hand-built into agents, e.g. via hand-crafted [[Knowledge Representation (Artificial Intelligence)|knowledge representations]] or [[Inductive Bias|inductive biases]].[^7]
 - Instead, only the meta-methods that can find and capture this arbitrary complexity should be built in. These methods must be able to find good approximations, but the search for those approximations should be done by the methods, not by the researcher: agents should discover like we can, rather than contain what we have discovered. Building in our discoveries only obscures how the discovering process itself can be done.[^7]
 - See [[The Bitter Lesson (Sutton)]] for a review and critique of the source essay.
+- See [[Priors in Light of the Bitter Lesson]] for which kinds of priors remain worth pursuing under the lesson.
 
 [^1]: [Sutton, The Bitter Lesson, p. 1](zotero://open-pdf/library/items/7HZ94VF3?page=1&annotation=W2CINBZ3); [p. 2](zotero://open-pdf/library/items/7HZ94VF3?page=2&annotation=EQ8LZIBE)
 [^2]: [Sutton, The Bitter Lesson, p. 2](zotero://open-pdf/library/items/7HZ94VF3?page=2&annotation=2TZE9AKV)

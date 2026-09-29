@@ -23,6 +23,8 @@ This importance-sampling construction is a single cancellation between $f$ and $
 
 Every run gives a different number: "is it right?" is not a question about the number on the screen, but about the distribution of $\langle I \rangle$. That distribution can fail three independent ways: centered in the wrong place ([[Bias|bias]]), spread too wide ([[Variance|variance]]), or never settling down as $N$ grows (inconsistency). See the [[Bias-Variance-MSE Decomposition of an Estimator|bias-variance-MSE decomposition]].
 
+The simplest case is uniform sampling on an interval:[^2] $\int_a^b g(x)\,dx = (b - a)E[g(X)]$ for $X \sim \text{Uniform}(a, b)$, so with a [[Random Sample]] $X_1, \dots, X_n$ from the uniform, the [[Sample Mean]] of $Y_i = (b - a)g(X_i)$ is an [[Unbiased Estimator]] of the integral. This is the estimator above with $p = 1/(b - a)$.
+
 # Properties
 - Unbiased: $\mathbb{E}[\langle I \rangle_N] = I$ for every $N$.
 - Consistent: $\langle I \rangle_N \to I$ almost surely as $N \to \infty$, by the [[Strong Law of Large Numbers]] — see [[Bias and Consistency of an Estimator]] for how bias and consistency combine in general.
@@ -34,5 +36,7 @@ Every run gives a different number: "is it right?" is not a question about the n
 - Drawing $X \sim p$ is typically done via [[Inverse Transform Sampling]] or [[Rejection Sampling]].
 - Its variance can be reduced without changing $p$ via [[Stratified Sampling]] or [[Control Variates]], or by choosing $p$ close to the [[Optimal Importance Sampling Distribution]].
 - Instantiated recursively by [[Path Tracing (Recursive Estimator)|path tracing]] to estimate the [[Light Transport Equation]], and by extension the [[Path Integral (Light Transport)|path integral]] over [[Path Space]].
+- The core estimator of every [[Monte Carlo Method]]; when $p$ can only be evaluated up to a normalizing constant, samples are drawn by [[Markov Chain Monte Carlo]] instead.
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=311)

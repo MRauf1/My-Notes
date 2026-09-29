@@ -19,8 +19,8 @@ The interior term is what naive automatic differentiation computes: it different
 Interpretation: the interior term captures the continuous variation of $f$ inside $\Omega(\theta)$, while the boundary term captures the effect of $\Omega(\theta)$'s motion sweeping across a discontinuity of $f$ at its edge — so, informally, the interior/boundary split mirrors a continuous/discontinuous split of the integrand's dependence on $\theta$.
 
 There are two ways to recover the boundary term:
-- Sample the boundary explicitly: locate the discontinuity and integrate over it directly (edge sampling, then path-space boundary integrals).
-- Reparameterize: change variables so that the discontinuity no longer moves with $\theta$, absorbing the boundary term back into an interior term of the reparameterized integrand.
+- Sample the boundary explicitly: locate the discontinuity and integrate over it directly ([[Edge Sampling (Differentiable Monte Carlo)|edge sampling]], then path-space boundary integrals).
+- [[Reparameterization (Differentiable Monte Carlo)|Reparameterize]]: change variables so that the discontinuity no longer moves with $\theta$, absorbing the boundary term back into an interior term of the reparameterized integrand.
 
 # Properties
 - When $\Omega(\theta)$ does not depend on $\theta$, $v\cdot n = 0$ and the boundary term vanishes, recovering ordinary [[Interchange of Differentiation and Expectation|differentiation under the integral sign]].

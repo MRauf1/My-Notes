@@ -16,5 +16,6 @@ Since the rate $O(1/\sqrt{N})$ is fixed regardless of the technique used, the co
 
 # Properties
 - Contrasts with quadrature methods (e.g. the trapezoidal rule), whose $O(N^{-2/d})$ rate depends on dimension.
+- Follows from the [[Central Limit Theorem]]; improved to nearly $O(N^{-1})$ for smooth integrands by [[Quasi-Monte Carlo]].
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

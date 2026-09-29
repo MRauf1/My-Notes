@@ -11,3 +11,6 @@ tags:
 3) Specify a prior density
 4) Determine the posterior
 5) Use the posterior to make [[Inference]]
+
+# Properties
+- When the posterior's normalizing constant is intractable, it is sampled by [[Markov Chain Monte Carlo]].

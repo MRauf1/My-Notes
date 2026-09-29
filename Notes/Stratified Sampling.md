@@ -17,5 +17,6 @@ tags:
 # Properties
 - Variance never increases relative to plain [[Monte Carlo Estimator|Monte Carlo]] sampling — a rare unconditional guarantee.
 - Improves [[Monte Carlo Estimator Efficiency|efficiency]] whenever the between-strata term is non-negligible, i.e. when the integrand's mean varies across the domain.
+- Needs $k^d$ samples to stratify every axis of a $d$-dimensional domain into $k$ strata; [[Latin Hypercube Sampling]] stratifies only the one-dimensional marginals with $N$ samples.
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

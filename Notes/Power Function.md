@@ -6,6 +6,9 @@ tags:
 
 # Definition
 
+For the power function of a statistical test, see [[Power Function (Statistics)]].
+
+
 > [!info] Definition 1 (Power [[Function]])[^1]
 > A type of [[Polynomial Function]] of the form
 > $$

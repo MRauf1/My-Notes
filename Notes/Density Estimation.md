@@ -13,6 +13,7 @@ tags:
 - Intimately related to data compression: by the [[Noiseless Coding Theorem]] the most efficient code is achieved with the true distribution, and coding with an approximation $q$ costs, on average, an extra $\mathrm{KL}(p \| q)$ nats per symbol.[^2]
 - A [[Generative Model|generative model]] of the inputs is a density estimate, and it enables [[Novelty Detection|novelty detection]] via the marginal $p(\mathbf{x})$.
 - Naive non-parametric approaches that divide the input space into cells suffer from the [[Curse of Dimensionality]].
+- Nonparametric estimators: the [[Histogram]] and [[Kernel Density Estimation]].
 
 [^1]: [Bishop, 2006, p. 3](zotero://open-pdf/library/items/5G99AZ8U?page=23&annotation=FBYN8VEI)
 [^2]: [Bishop, 2006, p. 57](zotero://open-pdf/library/items/5G99AZ8U?page=77&annotation=ZLT8Z9K5)
