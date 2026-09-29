@@ -16,11 +16,13 @@ tags:
 # Difficulties
 
 - [[Temporal Credit Assignment Problem|Temporal Credit Assignment Problem]]
-- Exploitation vs. Exploration Tradeoff, including [[Safe Exploration]]
+- [[Exploration-Exploitation Tradeoff]], including [[Safe Exploration]]
 - [[Reward Hacking]]
 
 # Properties
+- Unlike [[Supervised Learning]], the algorithm is not given examples of optimal outputs but must discover them by trial and error, through a sequence of states and actions in which the current action affects not only the immediate reward but also the rewards at all subsequent time steps.[^3]
 - Interactions between agent and environment are often formalized as a [[Markov Decision Process]], in which the agent follows a [[Policy]] to maximize its expected [[Discounted Return]].
 
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=25)
 [^2]: [MIT Vision Book - Introduction to Learning](https://visionbook.mit.edu/intro_to_learning.html)
+[^3]: [Bishop, 2006, p. 3](zotero://open-pdf/library/items/5G99AZ8U?page=23&annotation=TRT94VKD)

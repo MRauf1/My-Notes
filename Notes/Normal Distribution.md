@@ -36,6 +36,12 @@ tags:
 - $\mu$ is a [[Location Parameter]] and $\sigma$ a [[Scale Parameter]]: changing them shifts or stretches the same bell shape.[^5]
 - [[Kurtosis]] $3$ and all cumulants beyond the second are $0$ ([[Cumulant Generating Function]]).
 
+## Information and Estimation
+- The reciprocal of the variance, $\beta = 1/\sigma^2$, is called the **precision**.[^6]
+- The Gaussian maximizes [[Differential Entropy]] for a given mean and variance, with $\mathrm{H}[x] = \frac{1}{2}\{1 + \ln(2\pi\sigma^2)\}$.
+- [[Normal Distribution Maximum Likelihood Estimation]]: the ML estimates are the sample mean and the (biased) divide-by-$N$ sample variance.
+- In $D$ dimensions, the probability mass of an isotropic Gaussian concentrates in a thin shell of radius $\approx \sigma\sqrt{D}$ ([[Curse of Dimensionality]]).
+
 ## Related Distributions
 - $V = (X - \mu)^2/\sigma^2 \sim \chi^2(1)$ ([[Chi-Squared Random Variable and Normal Random Variable]]).[^3]
 - [[Normal Distribution Linear Combination]]: linear combinations of independent normals are normal; in particular $\bar{X} \sim N(\mu, \sigma^2/n)$.
@@ -46,3 +52,4 @@ tags:
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=208)
 [^4]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=206)
 [^5]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=207)
+[^6]: [Bishop, 2006, p. 24](zotero://open-pdf/library/items/5G99AZ8U?page=44&annotation=43LNDV4V)

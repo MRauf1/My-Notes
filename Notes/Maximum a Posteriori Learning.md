@@ -19,4 +19,8 @@ Learning using [[Maximum a Posteriori|MAP]].[^1] Trying to infer the hypothesis 
 # Properties
 - [[Regularization]] can be derived as MAP learning: the data-fit loss (e.g., $L_2$ loss) plays the role of the negative log likelihood, and the regularizer plays the role of the negative log prior, so that minimizing (loss + regularizer) is equivalent to maximizing (likelihood × prior).
 
+- Still a point estimate of the parameters, so not yet a fully Bayesian treatment, which would marginalize over them ([[Predictive Distribution]]).[^2]
+- Compared with maximum likelihood in [[Maximum Likelihood vs Maximum a Posteriori Estimation]].
+
 [^1]: https://visionbook.mit.edu/intro_to_learning.html
+[^2]: [Bishop, 2006, p. 30](zotero://open-pdf/library/items/5G99AZ8U?page=50&annotation=84MJ5RRL)

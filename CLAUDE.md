@@ -36,7 +36,7 @@ The creator does research in computer science/mathematics/statistics with the sp
 		- Do NOT read more than 5 candidate notes to check for links. If unsure, link only to the primary parent concept and finish.
 		- Run `Glob "Notes/*<keyword>*.md"` first. 
 		- Only if title matching yields nothing, execute at most 2 `Grep` searches on exact technical phrases. 
-		- Limit peripheral note updates to direct parent concepts, hub notes, or obvious counterparts (e.g., 2D vs 3D). Do not patch more than 3 existing files per run.
+		- Limit peripheral note updates to direct parent concepts, hub notes, or obvious counterparts (e.g., 2D vs 3D). Do not patch more than 5 existing files per new/modified note.
 
 ## 3. Formatting & Conventions
 - **Wikilinks**: Always use internal Obsidian wikilinks for concepts: `[[Target Note]]` or `[[Target Note|Custom Display Text]]`. Never use standard markdown file links like `[text](./file.md)`.
