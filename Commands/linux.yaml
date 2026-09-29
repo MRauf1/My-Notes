@@ -1,0 +1,1626 @@
+deck: Commands::Linux
+source: https://www.gnu.org/software/coreutils/manual/
+entries:
+  # --- Shell basics ------------------------------------------------------
+
+  - command: echo <args>
+    meaning: Print the arguments to standard output, separated by spaces and followed by a newline.
+    details: |
+      `-n` omits the trailing newline; `-e` interprets backslash escapes such as `\n` and `\t`.
+      A shell builtin in bash and zsh (there is also `/usr/bin/echo`).
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-echo
+
+  - command: pwd
+    meaning: Print the absolute path of the current working directory.
+    details: |
+      `-P` prints the physical path with symbolic links resolved.
+    tags: [navigation]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-pwd
+
+  - command: cd <dir>
+    meaning: Change the shell's current working directory to dir.
+    details: |
+      With no argument, goes to `$HOME`. `cd -` returns to the previous directory (`$OLDPWD`); `cd ..` goes to the parent; `~` is the home directory.
+      A shell builtin, since a child process cannot change the shell's directory.
+    tags: [navigation]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-cd
+
+  - command: clear
+    meaning: Clear the terminal screen.
+    details: |
+      `Ctrl+L` does the same in most shells.
+    tags: [shell]
+    source: https://man.archlinux.org/man/clear.1
+
+  - command: history
+    meaning: List the shell's command history with line numbers.
+    details: |
+      `history <n>` shows only the last n entries. Up Arrow recalls earlier commands for editing.
+      The `history -c/-w/-d` options are bash-specific; zsh manages history with `fc` and `$HISTFILE` instead.
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-history
+
+  - command: "!!"
+    meaning: History expansion that re-runs the most recent command.
+    details: |
+      Commonly `sudo !!` to repeat the last command with sudo.
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Event-Designators
+
+  - command: "!<n>"
+    meaning: History expansion that runs command number n from the history list (e.g. !102).
+    details: |
+      `!-n` refers to the command n lines back.
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Event-Designators
+
+  - command: "!<prefix>"
+    meaning: History expansion that runs the most recent command starting with prefix (e.g. !cat).
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Event-Designators
+
+  - command: Ctrl+R
+    meaning: Start a reverse incremental search through the command history; type part of a command to find the latest match.
+    details: |
+      Press `Ctrl+R` again for older matches, `Enter` to run the match, or an arrow key to put it on the line for editing.
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Searching
+
+  - command: history -c
+    meaning: Clear the current in-memory history list (bash).
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-history
+
+  - command: history -w
+    meaning: Write the current history list to the history file, usually ~/.bash_history (bash).
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-history
+
+  - command: history -d <offset>
+    meaning: Delete the history entry at the given position (bash).
+    details: |
+      Negative offsets count back from the end; `start-end` deletes a range.
+    tags: [shell, history]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-history
+
+  - command: Shell wildcards (*, ?, [...])
+    meaning: Glob patterns the shell expands into matching pathnames before running the command.
+    details: |
+      `*` matches any sequence of characters, `?` any single character, `[abc]` any one enclosed character (`[a-z]` ranges).
+      Quote a pattern (`"*.txt"`) to pass it unexpanded to a program such as `find`.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching
+
+  - command: alias <name>='<command>'
+    meaning: Define a shell alias so that typing name runs command.
+    details: |
+      `alias` with no arguments lists all aliases. Put definitions in `~/.bashrc` / `~/.zshrc` to make them persistent.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-alias
+
+  - command: unalias <name>
+    meaning: Remove the named alias.
+    details: |
+      `unalias -a` removes all aliases.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-unalias
+
+  - command: exit
+    meaning: Exit the current shell, with exit status n if given (exit n), otherwise the status of the last command.
+    details: |
+      `Ctrl+D` on an empty line also exits.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-exit
+
+  - command: logout
+    meaning: Exit a login shell.
+    details: |
+      Returns an error if the shell is not a login shell; use `exit` otherwise.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-logout
+
+  # --- Getting help ------------------------------------------------------
+
+  - command: help <builtin>
+    meaning: Show help for a bash builtin command (e.g. help cd); with no argument, list all builtins.
+    details: |
+      Builtins like `cd` and `history` have no man page of their own. `help` exists only in bash; zsh uses `run-help` or `man zshbuiltins`.
+    tags: [help]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-help
+
+  - command: type <name>
+    meaning: Show how the shell would interpret a command name, i.e. whether it is an alias, keyword, function, builtin, or executable file (and its path).
+    details: |
+      `type -a` lists every match, e.g. both the builtin and `/usr/bin/echo`.
+    tags: [help]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-type
+
+  - command: man <command>
+    meaning: Open the manual page for a command, in a pager (usually less).
+    details: |
+      `man <section> <name>` picks a section, e.g. `man 5 passwd` (1 user commands, 5 file formats, 8 admin commands). `man -k` is the same as `apropos`.
+    tags: [help]
+    source: https://man.archlinux.org/man/man.1
+
+  - command: whatis <command>
+    meaning: Display the one-line description from a command's manual page.
+    tags: [help]
+    source: https://man.archlinux.org/man/whatis.1
+
+  - command: apropos <keyword>
+    meaning: Search the names and short descriptions of all manual pages for a keyword, to find a command you don't know the name of.
+    details: |
+      Equivalent to `man -k`. Uses the database built by `mandb`.
+    tags: [help]
+    source: https://man.archlinux.org/man/apropos.1
+
+  # --- Listing and inspecting files --------------------------------------
+
+  - command: ls
+    meaning: List the contents of a directory (the current one by default).
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -a
+    meaning: List all entries, including hidden ones whose names start with a dot.
+    details: |
+      `-A` does the same but omits `.` and `..`.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -l
+    meaning: Use the long listing format showing permissions, link count, owner, group, size, modification time, and name.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -h
+    meaning: With -l, print sizes in human-readable units (1K, 234M, 2G).
+    details: |
+      Usually combined as `ls -lh`.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -r
+    meaning: Reverse the sort order.
+    details: |
+      E.g. `ls -ltr` lists with the newest files last.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -t
+    meaning: Sort by modification time, newest first.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -S
+    meaning: Sort by file size, largest first.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: ls -d <dir>
+    meaning: List the directory itself instead of its contents.
+    details: |
+      E.g. `ls -ld documents` shows the permissions of the directory.
+    tags: [files]
+    source: https://man.archlinux.org/man/ls.1
+
+  - command: file <file>
+    meaning: Determine a file's type by examining its contents (not its extension).
+    tags: [files]
+    source: https://man.archlinux.org/man/file.1
+
+  - command: file -i <file>
+    meaning: Print MIME-style type information, e.g. "text/plain; charset=us-ascii", instead of a human-readable description.
+    tags: [files]
+    source: https://man.archlinux.org/man/file.1
+
+  - command: file -b <file>
+    meaning: Brief mode, omitting the filename from the output.
+    tags: [files]
+    source: https://man.archlinux.org/man/file.1
+
+  - command: file -L <link>
+    meaning: Follow symbolic links and classify their targets.
+    tags: [files]
+    source: https://man.archlinux.org/man/file.1
+
+  - command: file -z <file>
+    meaning: Try to examine the contents of compressed files.
+    tags: [files]
+    source: https://man.archlinux.org/man/file.1
+
+  # --- Viewing file contents ---------------------------------------------
+
+  - command: cat <file>...
+    meaning: Concatenate the files in operand order and write their contents to standard output.
+    details: |
+      `cat a b > c` saves the combined contents to a new file.
+    tags: [viewing]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: cat > <file>
+    meaning: Write text typed at the terminal (standard input) into a file, ending with Ctrl+D.
+    details: |
+      `>` truncates the file if it already exists.
+    tags: [viewing, redirection]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: cat >> <file>
+    meaning: Append text typed at the terminal (standard input) to the end of a file, ending with Ctrl+D.
+    tags: [viewing, redirection]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: cat -n <file>
+    meaning: Number all output lines, starting from 1.
+    tags: [viewing]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: cat -b <file>
+    meaning: Number only the non-empty output lines.
+    tags: [viewing]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: cat -s <file>
+    meaning: Squeeze multiple adjacent blank lines into one.
+    tags: [viewing]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: cat -A <file>
+    meaning: Show nonprinting characters, tabs (as ^I), and line endings (as $).
+    details: |
+      Useful for spotting trailing whitespace or Windows `\r\n` line endings (shown as `^M$`).
+    tags: [viewing]
+    source: https://man.archlinux.org/man/cat.1
+
+  - command: less <file>
+    meaning: View a file one screen at a time in a pager, without loading the whole file.
+    details: |
+      Also reads piped input, e.g. `dmesg | less`.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: "less: g / G"
+    meaning: Jump to the beginning (g) or the end (G) of the file.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: "less: u / d"
+    meaning: Scroll up (u) or down (d) by half a screen.
+    details: |
+      Up/Down arrows move by lines; Page Up/Page Down (or `b`/`Space`) by screens.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: "less: /pattern / ?pattern"
+    meaning: Search forward (/) or backward (?) for a pattern.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: "less: n / N"
+    meaning: Repeat the last search in the same (n) or opposite (N) direction.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: "less: q / h"
+    meaning: Quit less (q) or open its built-in help (h).
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: less -N <file>
+    meaning: Show line numbers.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: less +G <file>
+    meaning: Open the file positioned at its end.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: less +F <file>
+    meaning: Follow new content as it is appended to the file, like tail -f.
+    details: |
+      `Ctrl+C` stops following and returns to normal navigation; then `q` quits.
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  - command: less -i / less -I
+    meaning: Make searches ignore case, unless the pattern contains an uppercase letter (-i) or regardless of the pattern (-I).
+    tags: [viewing, less]
+    source: https://man.archlinux.org/man/less.1
+
+  # --- Creating, copying, moving, deleting -------------------------------
+
+  - command: touch <file>...
+    meaning: Create each named file if it does not exist, or set an existing file's access and modification times to now without changing its contents.
+    tags: [files]
+    source: https://man.archlinux.org/man/touch.1
+
+  - command: touch -a / touch -m
+    meaning: Change only the access time (-a) or only the modification time (-m).
+    tags: [files]
+    source: https://man.archlinux.org/man/touch.1
+
+  - command: touch -d "<date>" <file>
+    meaning: Set the file's times to the given date string instead of the current time.
+    details: |
+      E.g. `touch -d "2026-06-23 12:30:00" file`. `-t [[CC]YY]MMDDhhmm[.ss]` takes a compact timestamp instead.
+    tags: [files]
+    source: https://man.archlinux.org/man/touch.1
+
+  - command: touch -r <ref_file> <file>
+    meaning: Give the file the same access and modification times as the reference file.
+    tags: [files]
+    source: https://man.archlinux.org/man/touch.1
+
+  - command: touch -c <file>
+    meaning: Update the file's times only if it already exists; never create it.
+    tags: [files]
+    source: https://man.archlinux.org/man/touch.1
+
+  - command: cp <source> <destination>
+    meaning: Copy a file, leaving the source in place.
+    details: |
+      With several sources, the last argument must be a directory: `cp a b c dir/`. Overwrites an existing destination by default.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -r <dir> <destination>
+    meaning: Copy a directory and everything below it recursively.
+    details: |
+      `-R` is the same.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -a <source> <destination>
+    meaning: Archive mode, copying recursively while preserving symbolic links, permissions, ownership, and timestamps (for backups).
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -i <source> <destination>
+    meaning: Ask for confirmation before overwriting an existing destination file.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp --update=none <source> <destination>
+    meaning: Never overwrite an existing destination file.
+    details: |
+      Replaces `cp -n` (`--no-clobber`), which is deprecated in current GNU coreutils. `--update=none-fail` also reports an error for skipped files.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -f <source> <destination>
+    meaning: If the destination can't be opened for writing, remove it and retry the copy.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -p <source> <destination>
+    meaning: Preserve the source's mode, ownership (when permitted), and timestamps.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -u <source> <destination>
+    meaning: Copy only when the destination is missing or older than the source.
+    details: |
+      Equivalent to `--update=older`.
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: cp -v <source> <destination>
+    meaning: Print each file as it is copied (verbose).
+    tags: [files]
+    source: https://man.archlinux.org/man/cp.1
+
+  - command: mv <source> <destination>
+    meaning: Move or rename a file or directory.
+    details: |
+      If the destination is an existing directory, the source is moved into it; otherwise it is renamed. With several sources, the last argument must be a directory.
+      Directories need no `-r`. Overwrites an existing destination by default.
+    tags: [files]
+    source: https://man.archlinux.org/man/mv.1
+
+  - command: mv -t <dir> <source>...
+    meaning: Move all sources into dir, with the target directory given first.
+    tags: [files]
+    source: https://man.archlinux.org/man/mv.1
+
+  - command: mv -i <source> <destination>
+    meaning: Ask for confirmation before overwriting an existing destination.
+    tags: [files]
+    source: https://man.archlinux.org/man/mv.1
+
+  - command: mv -n <source> <destination>
+    meaning: Do not overwrite an existing destination.
+    details: |
+      If several of `-i`, `-f`, `-n` are given, only the last one takes effect.
+    tags: [files]
+    source: https://man.archlinux.org/man/mv.1
+
+  - command: mv -b <source> <destination>
+    meaning: Back up an existing destination before replacing it (backup suffix ~ by default).
+    tags: [files]
+    source: https://man.archlinux.org/man/mv.1
+
+  - command: mv -v <source> <destination>
+    meaning: Print each move as it happens (verbose).
+    tags: [files]
+    source: https://man.archlinux.org/man/mv.1
+
+  - command: mkdir <dir>...
+    meaning: Create one or more directories.
+    details: |
+      Reports an error if an entry with that name already exists.
+    tags: [files]
+    source: https://man.archlinux.org/man/mkdir.1
+
+  - command: mkdir -p <path>
+    meaning: Create the directory along with any missing parent directories, without erroring if it already exists.
+    details: |
+      E.g. `mkdir -p books/hemingway/favorites`.
+    tags: [files]
+    source: https://man.archlinux.org/man/mkdir.1
+
+  - command: mkdir -m <mode> <dir>
+    meaning: Create the directory with the given permissions (e.g. mkdir -m 755 public).
+    tags: [files]
+    source: https://man.archlinux.org/man/mkdir.1
+
+  - command: mkdir -v <dir>
+    meaning: Print a message for each directory created (verbose).
+    tags: [files]
+    source: https://man.archlinux.org/man/mkdir.1
+
+  - command: rm <file>...
+    meaning: Remove files permanently (there is no trash).
+    details: |
+      Does not remove directories without `-r`.
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  - command: rm -i <file>
+    meaning: Ask for confirmation before each removal.
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  - command: rm -I <files>
+    meaning: Prompt once before removing more than three files or removing recursively.
+    details: |
+      A less intrusive safeguard than `-i`.
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  - command: rm -f <file>
+    meaning: Force removal, ignoring nonexistent files and never prompting.
+    details: |
+      Handy in scripts; don't use it just to silence an error you haven't understood.
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  - command: rm -r <dir>
+    meaning: Remove a directory and all of its contents recursively.
+    details: |
+      `-R` is the same. For an empty directory, `rmdir` is safer since it fails on non-empty directories.
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  - command: rmdir <dir>
+    meaning: Remove an empty directory; fails if it is not empty.
+    tags: [files]
+    source: https://man.archlinux.org/man/rmdir.1
+
+  - command: rm -- <-file>
+    meaning: Remove a file whose name begins with a hyphen; -- ends option parsing.
+    details: |
+      `rm ./-file` also works.
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  - command: rm -v <file>
+    meaning: Report each removal (verbose).
+    tags: [files]
+    source: https://man.archlinux.org/man/rm.1
+
+  # --- Finding files -----------------------------------------------------
+
+  - command: find <path> <expression>
+    meaning: Recursively search the directory tree under path for entries matching the expression's tests, and act on them (print by default).
+    details: |
+      E.g. `find /home -name puppies.jpg`. Multiple tests are ANDed.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -name "<pattern>"
+    meaning: Match entries whose basename matches the name or shell-style pattern.
+    details: |
+      Quote wildcard patterns so the shell doesn't expand them first. `-iname` matches case-insensitively.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -type f / -type d
+    meaning: Match only regular files (f) or directories (d).
+    details: |
+      `l` matches symbolic links.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -size +<n>M / -size -<n>k
+    meaning: Match files larger (+) or smaller (-) than n units (c bytes, k KiB, M MiB, G GiB).
+    details: |
+      Sizes round up, so `-size -1k` matches only empty files. Without a suffix the unit is 512-byte blocks.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -mtime -<n> / -mtime +<n>
+    meaning: Match files modified less than (-n) or more than (+n) n days (24-hour periods) ago.
+    details: |
+      E.g. `-mtime -7` is the last week. `-atime` tests access time; `-mmin` uses minutes.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -print
+    meaning: Print the matching paths (the default action when no action is given).
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -exec <command> {} \;
+    meaning: Run the command once for each match, with {} replaced by the matching path.
+    details: |
+      The `\;` terminates the command (escaped from the shell). Ending with `{} +` passes many paths to one command invocation instead.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -delete
+    meaning: Delete the matching files.
+    details: |
+      Run the same tests with `-print` first and inspect the results. Place `-delete` after the tests, since find evaluates the expression left to right.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  - command: find . -maxdepth <n>
+    meaning: Descend at most n directory levels below the starting points.
+    details: |
+      `-maxdepth 1` searches only the starting directory's direct entries.
+    tags: [find]
+    source: https://man.archlinux.org/man/find.1
+
+  # --- Redirection and pipes ---------------------------------------------
+
+  - command: <command> > <file>
+    meaning: Redirect standard output (stdout) to a file, creating it or truncating (overwriting) an existing file.
+    details: |
+      Same as `1>`. Bash's `set -o noclobber` (zsh `setopt noclobber`) makes `>` refuse to overwrite; `>|` forces it.
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output
+
+  - command: <command> >> <file>
+    meaning: Append standard output to the end of a file, creating it if it does not exist.
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Appending-Redirected-Output
+
+  - command: <command> < <file>
+    meaning: Redirect standard input (stdin) so the command reads from a file instead of the keyboard.
+    details: |
+      E.g. `sort < names.txt`. Same as `0<`.
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Input
+
+  - command: <command> 2> <file>
+    meaning: Redirect standard error (stderr, file descriptor 2) to a file.
+    details: |
+      `2> /dev/null` discards error messages. File descriptors are 0 stdin, 1 stdout, 2 stderr.
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Redirections
+
+  - command: <command> > <file> 2>&1
+    meaning: Redirect both stdout and stderr to the same file (2>&1 sends stderr wherever stdout currently goes).
+    details: |
+      Order matters: `2>&1 > file` sends stderr to the terminal because stdout wasn't redirected yet.
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Standard-Output-and-Standard-Error
+
+  - command: <command> &> <file>
+    meaning: Redirect both stdout and stderr to a file, truncating it (shorthand for > file 2>&1).
+    details: |
+      A bash/zsh extension, not POSIX `sh`.
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Standard-Output-and-Standard-Error
+
+  - command: <command> &>> <file>
+    meaning: Append both stdout and stderr to a file (shorthand for >> file 2>&1).
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Appending-Standard-Output-and-Standard-Error
+
+  - command: <command1> | <command2>
+    meaning: Pipe, connecting the stdout of command1 to the stdin of command2.
+    details: |
+      Commands in a pipeline run concurrently. `|&` also pipes stderr (like `2>&1 |`).
+    tags: [redirection]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Pipelines
+
+  - command: tee <file>...
+    meaning: Copy standard input to standard output and also to each file, e.g. to save a pipeline's output while still seeing it.
+    details: |
+      `-a` appends instead of overwriting. `cmd | sudo tee /etc/file` writes a root-owned file (a plain `sudo cmd > file` redirects as your user).
+    tags: [redirection]
+    source: https://man.archlinux.org/man/tee.1
+
+  # --- Environment variables ---------------------------------------------
+
+  - command: env
+    meaning: Print all environment variables.
+    tags: [environment]
+    source: https://man.archlinux.org/man/env.1
+
+  - command: env <VAR>=<value> <command>
+    meaning: Run a command with the given variables added to (or changed in) its environment, without affecting the current shell.
+    details: |
+      The shell shorthand `VAR=value command` does the same. `-u VAR` removes a variable; `-i` starts from an empty environment.
+      `#!/usr/bin/env python3` in a shebang finds the interpreter on `$PATH`.
+    tags: [environment]
+    source: https://man.archlinux.org/man/env.1
+
+  - command: export <VAR>=<value>
+    meaning: Set a shell variable and mark it for export, so child processes inherit it as an environment variable.
+    details: |
+      `export VAR` exports an existing variable. Lasts only for the current session; put it in `~/.bashrc` / `~/.zshrc` (or `~/.profile`) to persist.
+      E.g. `export PATH="$HOME/bin:$PATH"`.
+    tags: [environment]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-export
+
+  - command: printenv <VAR>
+    meaning: Print the value of an environment variable, or all of them if none is given.
+    details: |
+      Only shows exported variables, unlike `echo $VAR`, which also shows unexported shell variables.
+    tags: [environment]
+    source: https://man.archlinux.org/man/printenv.1
+
+  # --- Text processing ---------------------------------------------------
+
+  - command: cut -f <list> <file>
+    meaning: Print only the selected tab-separated fields of each line (e.g. -f 1,3 or -f 2-4).
+    details: |
+      Lines with no delimiter are printed whole unless `-s` is given. `--complement` prints the unselected fields.
+    tags: [text]
+    source: https://man.archlinux.org/man/cut.1
+
+  - command: cut -d '<delim>' -f <list> <file>
+    meaning: Print the selected fields using delim instead of a tab as the field separator (e.g. cut -d ':' -f 1 /etc/passwd).
+    details: |
+      The delimiter is a single character, and repeated delimiters produce empty fields. Newer coreutils also have `-w` to split on runs of whitespace.
+    tags: [text]
+    source: https://man.archlinux.org/man/cut.1
+
+  - command: cut -c <list> <file>
+    meaning: Print only the selected character positions of each line (e.g. -c 1-5).
+    details: |
+      `-b` selects bytes instead. `N-` means from N to the end of the line.
+    tags: [text]
+    source: https://man.archlinux.org/man/cut.1
+
+  - command: paste <file1> <file2>
+    meaning: Merge corresponding lines of the files side by side, separated by tabs.
+    tags: [text]
+    source: https://man.archlinux.org/man/paste.1
+
+  - command: paste -d '<delims>' <file>...
+    meaning: Merge lines using the given delimiter characters instead of tabs (cycled through in order).
+    tags: [text]
+    source: https://man.archlinux.org/man/paste.1
+
+  - command: paste -s <file>
+    meaning: Paste one file at a time (serially), joining all lines of each file into a single line.
+    details: |
+      E.g. `paste -sd ',' file` turns lines into a comma-separated list.
+    tags: [text]
+    source: https://man.archlinux.org/man/paste.1
+
+  - command: head <file>
+    meaning: Print the first 10 lines of a file.
+    tags: [text]
+    source: https://man.archlinux.org/man/head.1
+
+  - command: head -n <num> <file>
+    meaning: Print the first num lines; with -n -num, print all but the last num lines.
+    details: |
+      `-c <num>` counts bytes instead. `head -5` is shorthand for `-n 5`.
+    tags: [text]
+    source: https://man.archlinux.org/man/head.1
+
+  - command: tail <file>
+    meaning: Print the last 10 lines of a file.
+    tags: [text]
+    source: https://man.archlinux.org/man/tail.1
+
+  - command: tail -n <num> <file>
+    meaning: Print the last num lines; with -n +num, print starting from line num.
+    details: |
+      E.g. `tail -n +2` skips a header line. `-c` counts bytes instead.
+    tags: [text]
+    source: https://man.archlinux.org/man/tail.1
+
+  - command: tail -f <file>
+    meaning: Keep printing data appended to the file as it grows (follow), e.g. for log files.
+    details: |
+      `-F` (`--follow=name --retry`) keeps following when the file is rotated or recreated. Stop with `Ctrl+C`.
+    tags: [text]
+    source: https://man.archlinux.org/man/tail.1
+
+  - command: expand <file>
+    meaning: Convert tabs to spaces (tab stops every 8 columns by default).
+    details: |
+      `-t N` sets tab stops N columns apart (or a comma-separated list of positions); `-i` converts only leading tabs.
+    tags: [text]
+    source: https://man.archlinux.org/man/expand.1
+
+  - command: unexpand <file>
+    meaning: Convert leading spaces to tabs (the reverse of expand).
+    details: |
+      `-a` converts all runs of blanks, not just leading ones; `-t N` sets tab width N (implies `-a`).
+    tags: [text]
+    source: https://man.archlinux.org/man/unexpand.1
+
+  - command: join <file1> <file2>
+    meaning: Join lines of two files that share an identical join field (the first field by default), like a database join.
+    details: |
+      Both inputs must be sorted on the join field. `-1 N`/`-2 N` choose the field in each file, `-t CHAR` sets the separator, `-a 1` also prints unpaired lines of file 1.
+    tags: [text]
+    source: https://man.archlinux.org/man/join.1
+
+  - command: split <file> [<prefix>]
+    meaning: Split a file into pieces of 1000 lines each, named prefixaa, prefixab, ... (prefix defaults to x).
+    details: |
+      `-l N` lines per piece, `-b SIZE` bytes per piece (e.g. `-b 100M`), `-n N` N equal chunks, `-d` numeric suffixes. Rejoin with `cat x* > file`.
+    tags: [text]
+    source: https://man.archlinux.org/man/split.1
+
+  - command: sort <file>
+    meaning: Sort the lines of the file(s) and print the result.
+    details: |
+      Order depends on the locale; `LC_ALL=C sort` sorts by byte values. `-o FILE` writes to a file (safe even if it is the input file).
+    tags: [text, sort]
+    source: https://man.archlinux.org/man/sort.1
+
+  - command: sort -n / sort -h
+    meaning: Sort numerically (-n) or by human-readable sizes such as 2K and 1G (-h), instead of alphabetically.
+    details: |
+      E.g. `du -h | sort -h`. `-V` sorts version numbers naturally.
+    tags: [text, sort]
+    source: https://man.archlinux.org/man/sort.1
+
+  - command: sort -r
+    meaning: Reverse the sort order.
+    tags: [text, sort]
+    source: https://man.archlinux.org/man/sort.1
+
+  - command: sort -u
+    meaning: Sort and output only the first of each run of equal lines (like sort | uniq).
+    tags: [text, sort]
+    source: https://man.archlinux.org/man/sort.1
+
+  - command: sort -k <n> -t '<sep>'
+    meaning: Sort by the key starting at field n, with sep as the field separator (blank-separated by default).
+    details: |
+      `-k 2,2` restricts the key to only field 2 (plain `-k 2` runs to the end of the line). Types can be attached, e.g. `-k 3,3n`.
+    tags: [text, sort]
+    source: https://man.archlinux.org/man/sort.1
+
+  - command: sort -f
+    meaning: Sort ignoring case.
+    tags: [text, sort]
+    source: https://man.archlinux.org/man/sort.1
+
+  - command: tr '<set1>' '<set2>'
+    meaning: Translate characters from standard input, replacing each character in set1 with the corresponding one in set2.
+    details: |
+      Reads only stdin (`tr 'a-z' 'A-Z' < file`). Supports ranges and classes like `'[:lower:]' '[:upper:]'`.
+    tags: [text]
+    source: https://man.archlinux.org/man/tr.1
+
+  - command: tr -d '<set>'
+    meaning: Delete all characters in set from standard input.
+    details: |
+      E.g. `tr -d '\r'` strips Windows carriage returns. `-c` complements the set (`tr -cd '[:alnum:]'` keeps only alphanumerics).
+    tags: [text]
+    source: https://man.archlinux.org/man/tr.1
+
+  - command: tr -s '<set>'
+    meaning: Squeeze each run of a repeated character from set into a single occurrence.
+    details: |
+      E.g. `tr -s ' '` collapses multiple spaces.
+    tags: [text]
+    source: https://man.archlinux.org/man/tr.1
+
+  - command: uniq <file>
+    meaning: Collapse adjacent duplicate lines into one.
+    details: |
+      Only adjacent duplicates are detected, so usually run after `sort` (`sort | uniq`).
+    tags: [text]
+    source: https://man.archlinux.org/man/uniq.1
+
+  - command: uniq -c
+    meaning: Prefix each output line with its number of occurrences.
+    details: |
+      `sort | uniq -c | sort -rn` gives a frequency table.
+    tags: [text]
+    source: https://man.archlinux.org/man/uniq.1
+
+  - command: uniq -d / uniq -u
+    meaning: Print only the duplicated lines, one per group (-d), or only the lines that are not repeated (-u).
+    details: |
+      `-i` ignores case when comparing.
+    tags: [text]
+    source: https://man.archlinux.org/man/uniq.1
+
+  - command: wc <file>
+    meaning: Print the newline, word, and byte counts of a file.
+    tags: [text]
+    source: https://man.archlinux.org/man/wc.1
+
+  - command: wc -l / wc -w / wc -c / wc -m
+    meaning: Print only the line (-l), word (-w), byte (-c), or character (-m) count.
+    details: |
+      `-l` counts newline characters, so a last line without a trailing newline isn't counted. `-L` prints the longest line's width.
+    tags: [text]
+    source: https://man.archlinux.org/man/wc.1
+
+  - command: nl <file>
+    meaning: Print the file with line numbers added (by default only non-empty lines are numbered).
+    details: |
+      `-b a` numbers all lines (like `cat -n`); `-b t` non-empty only (default). `-s STRING` sets the separator after the number; `-w N` the number width.
+    tags: [text]
+    source: https://man.archlinux.org/man/nl.1
+
+  # --- grep --------------------------------------------------------------
+
+  - command: grep '<pattern>' <file>...
+    meaning: Print the lines of the files (or stdin) that match the pattern, a basic regular expression by default.
+    details: |
+      Quote the pattern to protect it from the shell. Often used in pipes: `ps aux | grep firefox`.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -i
+    meaning: Match case-insensitively.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -v
+    meaning: Invert the match, printing the lines that do not match.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -r '<pattern>' <dir>
+    meaning: Search all files under the directory recursively.
+    details: |
+      `-R` also follows all symbolic links. Narrow with `--include='*.py'` or `--exclude-dir=.git`.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -n
+    meaning: Prefix each matching line with its line number.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -c
+    meaning: Print only the number of matching lines per file.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -l
+    meaning: Print only the names of the files that contain a match.
+    details: |
+      `-L` prints the files with no match.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -w
+    meaning: Match only whole words (the match must not be surrounded by word characters).
+    details: |
+      `-x` requires the whole line to match.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -o
+    meaning: Print only the matched parts of each line, each on its own line.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -E
+    meaning: Use extended regular expressions, so +, ?, |, (), and {} work without backslashes.
+    details: |
+      Replaces the obsolete `egrep`. `-P` uses Perl-compatible regexes (`\d`, lookarounds).
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -F
+    meaning: Treat the pattern as a fixed string, not a regular expression.
+    details: |
+      Replaces the obsolete `fgrep`. Useful for patterns containing `.`, `*`, `[`, etc.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  - command: grep -A <n> / -B <n> / -C <n>
+    meaning: Also print n lines of context after (-A), before (-B), or around (-C) each match.
+    tags: [grep]
+    source: https://man.archlinux.org/man/grep.1
+
+  # --- sed and awk -------------------------------------------------------
+
+  - command: sed '<script>' <file>
+    meaning: Stream editor that applies editing commands to each input line and prints the result, without changing the file.
+    details: |
+      Reads files or stdin. `-e` adds multiple commands; `-E` enables extended regexes.
+    tags: [text, sed]
+    source: https://www.gnu.org/software/sed/manual/sed.html
+
+  - command: sed 's/<regex>/<replacement>/g'
+    meaning: Substitute replacement for every match of regex on each line (without g, only the first match per line).
+    details: |
+      Flags: `i` ignore case, a number `N` replaces only the Nth match. Any delimiter works: `s|/usr|/opt|g`. `&` in the replacement is the whole match, `\1` a captured group.
+    tags: [text, sed]
+    source: https://www.gnu.org/software/sed/manual/sed.html#The-_0022s_0022-Command
+
+  - command: sed -i '<script>' <file>
+    meaning: Edit the file in place instead of printing to stdout.
+    details: |
+      `-i.bak` keeps a backup copy with the suffix `.bak`. Test the script without `-i` first.
+    tags: [text, sed]
+    source: https://www.gnu.org/software/sed/manual/sed.html#Command_002dLine-Options
+
+  - command: sed -n '<address>p'
+    meaning: Suppress automatic printing (-n) and print only the addressed lines with p, e.g. sed -n '5,10p' or sed -n '/error/p'.
+    tags: [text, sed]
+    source: https://www.gnu.org/software/sed/manual/sed.html#Command_002dLine-Options
+
+  - command: sed '<address>d'
+    meaning: Delete the addressed lines from the output, e.g. sed '/^#/d' removes comment lines, sed '1d' the first line.
+    details: |
+      Addresses are line numbers (`3`, `$` last line, `2,5`) or `/regex/`.
+    tags: [text, sed]
+    source: https://www.gnu.org/software/sed/manual/sed.html#Addresses-overview
+
+  - command: awk '<pattern> { <action> }' <file>
+    meaning: Pattern-scanning language that splits each line into fields and runs the action on lines matching the pattern.
+    details: |
+      Fields are `$1`, `$2`, ... (`$0` the whole line) split on whitespace by default. Built-ins: `NR` line number, `NF` number of fields (`$NF` the last one).
+      Pattern or action can be omitted: `awk '/error/'` prints matches, `awk '{print $2}'` runs on every line. On Arch, `awk` is GNU awk (gawk).
+    tags: [text, awk]
+    source: https://www.gnu.org/software/gawk/manual/gawk.html
+
+  - command: awk '{print $1, $3}'
+    meaning: Print the first and third whitespace-separated fields of each line, separated by a space.
+    tags: [text, awk]
+    source: https://www.gnu.org/software/gawk/manual/gawk.html#Print-Examples
+
+  - command: awk -F '<sep>' '<program>'
+    meaning: Use sep (a character or regex) as the input field separator instead of whitespace, e.g. awk -F ':' '{print $1}' /etc/passwd.
+    tags: [text, awk]
+    source: https://www.gnu.org/software/gawk/manual/gawk.html#Field-Separators
+
+  - command: awk 'BEGIN { ... } { ... } END { ... }'
+    meaning: BEGIN runs before any input is read and END after all of it, e.g. awk '{s += $1} END {print s}' sums a column.
+    tags: [text, awk]
+    source: https://www.gnu.org/software/gawk/manual/gawk.html#BEGIN_002fEND
+
+  # --- Shell builtins ----------------------------------------------------
+
+  - command: command <name> [<args>]
+    meaning: Run name while bypassing shell functions (and aliases), e.g. to call the real ls from inside an ls wrapper function.
+    details: |
+      `command -v name` prints the path or name that would run (the portable way to check whether a command exists in scripts); `-V` gives a verbose description like `type`.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-command
+
+  - command: printf '<format>' <args>...
+    meaning: Print the arguments formatted according to a C-style format string, with no automatic trailing newline.
+    details: |
+      Specifiers: `%s` string, `%d` integer, `%f` float (`%.2f`), `%x` hex, `%5s` / `%-5s` right/left-padded width, `%%` literal percent; escapes like `\n` work in the format.
+      The format is reused until all arguments are consumed. More portable and predictable than `echo -e`.
+    tags: [shell]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-printf
+
+  # --- Vim / Neovim ------------------------------------------------------
+
+  - command: vim <file>
+    meaning: Open a file in Vim, a modal text editor that starts in Normal mode (keys are commands, not text).
+    details: |
+      `i` enters Insert mode to type text; `Esc` returns to Normal mode. `vimtutor` is a built-in 30-minute tutorial.
+    tags: [vim]
+    source: https://vimhelp.org/
+
+  - command: "vim: :w / :q / :wq / :q!"
+    meaning: Save (:w), quit (:q), save and quit (:wq, also :x or ZZ), or quit discarding changes (:q!).
+    tags: [vim]
+    source: https://vimhelp.org/editing.txt.html
+
+  - command: "vim: i / a / o / O"
+    meaning: Enter Insert mode before the cursor (i), after the cursor (a), on a new line below (o), or on a new line above (O).
+    details: |
+      `I` / `A` insert at the start / end of the line.
+    tags: [vim]
+    source: https://vimhelp.org/insert.txt.html
+
+  - command: "vim: h / j / k / l"
+    meaning: Move the cursor left, down, up, and right in Normal mode.
+    details: |
+      A count repeats a motion: `5j` moves down 5 lines.
+    tags: [vim]
+    source: https://vimhelp.org/motion.txt.html
+
+  - command: "vim: w / b / e"
+    meaning: Move to the start of the next word (w), the start of the previous word (b), or the end of the word (e).
+    tags: [vim]
+    source: https://vimhelp.org/motion.txt.html
+
+  - command: "vim: 0 / ^ / $"
+    meaning: Move to the first column (0), the first non-blank character (^), or the end of the line ($).
+    tags: [vim]
+    source: https://vimhelp.org/motion.txt.html
+
+  - command: "vim: gg / G / :<n>"
+    meaning: Go to the first line (gg), the last line (G), or line n (:n or nG).
+    tags: [vim]
+    source: https://vimhelp.org/motion.txt.html
+
+  - command: "vim: x / dd / dw / D"
+    meaning: Delete the character under the cursor (x), the whole line (dd), to the start of the next word (dw), or to the end of the line (D).
+    details: |
+      `d` is an operator combined with any motion (`d$`, `dG`); deleted text goes to a register and can be pasted, so this is also "cut".
+    tags: [vim]
+    source: https://vimhelp.org/change.txt.html
+
+  - command: "vim: yy / yw / p / P"
+    meaning: Yank (copy) the line (yy) or a word (yw), then paste after (p) or before (P) the cursor.
+    details: |
+      `y` is an operator like `d`: `y$`, `yG`, `3yy`.
+    tags: [vim]
+    source: https://vimhelp.org/change.txt.html
+
+  - command: "vim: cw / cc / C"
+    meaning: Change (delete and enter Insert mode) to the end of the word (cw), the whole line (cc), or to the end of the line (C).
+    details: |
+      `ciw` changes the whole word under the cursor, `ci"` the text inside quotes.
+    tags: [vim]
+    source: https://vimhelp.org/change.txt.html
+
+  - command: "vim: u / Ctrl+R / ."
+    meaning: Undo (u), redo (Ctrl+R), or repeat the last change (.).
+    tags: [vim]
+    source: https://vimhelp.org/undo.txt.html
+
+  - command: "vim: v / V / Ctrl+V"
+    meaning: Start Visual mode to select characters (v), whole lines (V), or a rectangular block (Ctrl+V), then apply an operator such as d, y, or >.
+    tags: [vim]
+    source: https://vimhelp.org/visual.txt.html
+
+  - command: "vim: /pattern / ?pattern / n / N"
+    meaning: Search forward (/) or backward (?), then jump to the next (n) or previous (N) match.
+    details: |
+      `*` searches for the word under the cursor.
+    tags: [vim]
+    source: https://vimhelp.org/pattern.txt.html
+
+  - command: "vim: :%s/<old>/<new>/g"
+    meaning: Substitute new for every match of old in the whole file (% is the range of all lines).
+    details: |
+      Add `c` to confirm each replacement (`/gc`). Without `%`, only the current line is affected.
+    tags: [vim]
+    source: https://vimhelp.org/change.txt.html#%3Asubstitute
+
+  - command: "vim: :help <topic>"
+    meaning: Open Vim's built-in documentation on a topic (e.g. :help dd).
+    tags: [vim]
+    source: https://vimhelp.org/helphelp.txt.html
+
+  - command: nvim <file>
+    meaning: Open a file in Neovim, a modernized fork of Vim with the same modal keybindings, built-in LSP support, and Lua configuration.
+    details: |
+      Config lives in `~/.config/nvim/init.lua` (or `init.vim`) instead of `~/.vimrc`; data follows the XDG base directories.
+    tags: [vim]
+    source: https://neovim.io/doc/user/nvim.html
+
+  - command: "nvim: :checkhealth"
+    meaning: Run Neovim's health checks to diagnose problems with the configuration, providers, and plugins.
+    tags: [vim]
+    source: https://neovim.io/doc/user/health.html
+
+  # --- Users and privileges ----------------------------------------------
+
+  - command: id [<user>]
+    meaning: Print the user ID (UID), primary group ID (GID), and all group memberships of the current or given user.
+    details: |
+      `-u` / `-g` / `-G` print only the UID / GID / all group IDs; add `-n` for names instead of numbers (e.g. `id -un`).
+    tags: [users]
+    source: https://man.archlinux.org/man/id.1
+
+  - command: groups [<user>]
+    meaning: Print the groups the current or given user belongs to.
+    details: |
+      Group changes made with `usermod` take effect only after logging in again.
+    tags: [users]
+    source: https://man.archlinux.org/man/groups.1
+
+  - command: sudo <command>
+    meaning: Run a command as root (or another user), authenticating with your own password, as permitted by /etc/sudoers.
+    details: |
+      Credentials are cached for a few minutes. On Arch, allow the `wheel` group by uncommenting `%wheel ALL=(ALL:ALL) ALL` with `visudo` (never edit sudoers directly).
+    tags: [users, sudo]
+    source: https://man.archlinux.org/man/sudo.8
+
+  - command: sudo -u <user> <command>
+    meaning: Run the command as the given user instead of root.
+    tags: [users, sudo]
+    source: https://man.archlinux.org/man/sudo.8
+
+  - command: sudo -i
+    meaning: Start an interactive login shell as root (the target user), with root's environment.
+    details: |
+      `sudo -s` starts a non-login shell that keeps your environment.
+    tags: [users, sudo]
+    source: https://man.archlinux.org/man/sudo.8
+
+  - command: sudo -l
+    meaning: List the commands you are allowed to run with sudo.
+    details: |
+      `sudo -k` forgets the cached credentials so the next sudo asks for the password again.
+    tags: [users, sudo]
+    source: https://man.archlinux.org/man/sudo.8
+
+  - command: sudo -e <file>
+    meaning: Edit a file as root safely (sudoedit), opening a temporary copy in your own $EDITOR.
+    tags: [users, sudo]
+    source: https://man.archlinux.org/man/sudo.8
+
+  - command: su [<user>]
+    meaning: Switch to another user (root by default), authenticating with that user's password.
+    details: |
+      Unlike `sudo`, it requires the target user's password. `exit` returns to your own shell.
+    tags: [users]
+    source: https://man.archlinux.org/man/su.1
+
+  - command: su - [<user>]
+    meaning: Switch user and start a login shell, with the target user's full environment and home directory (-, -l, or --login).
+    details: |
+      `su -c '<command>' <user>` runs a single command as that user.
+    tags: [users]
+    source: https://man.archlinux.org/man/su.1
+
+  - command: getent <database> [<key>]
+    meaning: Look up entries in a system database such as passwd, group, hosts, or shadow, including network sources (LDAP, systemd) configured in /etc/nsswitch.conf.
+    details: |
+      E.g. `getent passwd rauf` shows a user's account line; `getent group wheel` lists the group's members. More complete than reading `/etc/passwd` directly.
+    tags: [users]
+    source: https://man.archlinux.org/man/getent.1
+
+  - command: useradd -m -G <groups> -s <shell> <user>
+    meaning: Create a new user account with a home directory (-m), supplementary groups (-G), and a login shell (-s).
+    details: |
+      Without `-m`, no home directory is created (unless `CREATE_HOME yes` is set in `/etc/login.defs`, which Arch does not do). Set the password afterwards with `passwd <user>`. `-r` creates a system account; `-u` sets the UID.
+    tags: [users]
+    source: https://man.archlinux.org/man/useradd.8
+
+  - command: usermod -aG <group> <user>
+    meaning: Add the user to a supplementary group, keeping existing memberships.
+    details: |
+      Without `-a`, `-G` replaces the user's entire supplementary group list. The change applies at the next login.
+    tags: [users]
+    source: https://man.archlinux.org/man/usermod.8
+
+  - command: usermod <option> <user>
+    meaning: Modify an existing user account.
+    details: |
+      `-s SHELL` login shell, `-l NEW` rename the login, `-d DIR -m` move the home directory, `-L` / `-U` lock / unlock the password, `-rG group` remove from a group.
+    tags: [users]
+    source: https://man.archlinux.org/man/usermod.8
+
+  - command: userdel -r <user>
+    meaning: Delete a user account together with their home directory and mail spool (-r).
+    details: |
+      Without `-r`, the home directory is left in place. Files owned by the user elsewhere are not removed.
+    tags: [users]
+    source: https://man.archlinux.org/man/userdel.8
+
+  - command: vipw
+    meaning: Safely edit /etc/passwd with the file locked against concurrent changes.
+    details: |
+      `vipw -s` edits `/etc/shadow`; `vigr` edits `/etc/group`. Uses `$EDITOR` (default vi).
+    tags: [users]
+    source: https://man.archlinux.org/man/vipw.8
+
+  - command: pwck
+    meaning: Verify the integrity of /etc/passwd and /etc/shadow (field count, unique names, valid UIDs/GIDs, home directories, shells), prompting to fix bad entries.
+    details: |
+      `-r` runs read-only; `-s` sorts entries by UID. `grpck` checks the group files.
+    tags: [users]
+    source: https://man.archlinux.org/man/pwck.8
+
+  - command: passwd [<user>]
+    meaning: Change your own password, or another user's password when run as root.
+    tags: [users]
+    source: https://man.archlinux.org/man/passwd.1
+
+  - command: passwd -l / passwd -u <user>
+    meaning: Lock (-l) or unlock (-u) an account's password.
+    details: |
+      Locking does not block other login methods such as SSH keys.
+    tags: [users]
+    source: https://man.archlinux.org/man/passwd.1
+
+  - command: passwd -e <user>
+    meaning: Expire the user's password immediately, forcing a change at the next login.
+    details: |
+      `passwd -S <user>` shows the account's password status.
+    tags: [users]
+    source: https://man.archlinux.org/man/passwd.1
+
+  # --- Permissions and ownership -----------------------------------------
+
+  - command: chmod <mode> <file>
+    meaning: Change a file's permission bits (read, write, execute for user, group, and others).
+    details: |
+      `-R` applies recursively. For directories, `x` means permission to enter the directory (cd) and `r` to list its contents.
+    tags: [permissions]
+    source: https://man.archlinux.org/man/chmod.1
+
+  - command: chmod 755 <file>
+    meaning: Set permissions numerically (octal), one digit each for user, group, and others, where r=4, w=2, x=1.
+    details: |
+      `755` = rwxr-xr-x (programs, directories), `644` = rw-r--r-- (regular files), `600` = rw------- (private files such as SSH keys).
+    tags: [permissions]
+    source: https://man.archlinux.org/man/chmod.1
+
+  - command: chmod u+x / g-w / o=r / a+r <file>
+    meaning: Change permissions symbolically, adding (+), removing (-), or setting exactly (=) bits for the user (u), group (g), others (o), or all (a).
+    details: |
+      E.g. `chmod +x script.sh` makes a script executable; `chmod go-rwx file` removes all access for group and others.
+    tags: [permissions]
+    source: https://man.archlinux.org/man/chmod.1
+
+  - command: chown <user>:<group> <file>
+    meaning: Change the owner (and optionally the group) of a file.
+    details: |
+      `chown user file` changes only the owner; `chown :group file` only the group. `-R` recurses. Usually requires root.
+    tags: [permissions]
+    source: https://man.archlinux.org/man/chown.1
+
+  - command: chgrp <group> <file>
+    meaning: Change the group ownership of a file.
+    details: |
+      `-R` recurses. You can change to any group you belong to without root.
+    tags: [permissions]
+    source: https://man.archlinux.org/man/chgrp.1
+
+  - command: umask [<mask>]
+    meaning: Show or set the mask of permission bits that are removed from newly created files and directories.
+    details: |
+      The usual default `022` gives new files `644` (from 666) and directories `755` (from 777). `umask -S` prints it symbolically. It is a shell builtin and applies only to the current shell.
+    tags: [permissions]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-umask
+
+  - command: chage -l <user>
+    meaning: Show a user's password aging information (last change, expiry, minimum/maximum days, warning period).
+    details: |
+      Setting values requires root: `-M` max days between changes, `-m` min days, `-W` warning days, `-E` account expiry date, `-d 0` forces a password change at next login.
+    tags: [users]
+    source: https://man.archlinux.org/man/chage.1
+
+  # --- Processes ---------------------------------------------------------
+
+  - command: ps
+    meaning: Show a snapshot of the processes running in the current terminal.
+    tags: [processes]
+    source: https://man.archlinux.org/man/ps.1
+
+  - command: ps aux
+    meaning: List every process on the system (BSD syntax) with its user, PID, CPU and memory usage, state, and command.
+    details: |
+      `ps -ef` is the standard-syntax equivalent. Pipe to grep to find a process, or use `pgrep`. `ps -o pid,cmd` chooses columns; `--sort=-%mem` sorts.
+    tags: [processes]
+    source: https://man.archlinux.org/man/ps.1
+
+  - command: top
+    meaning: Show a continuously updating, interactive view of processes sorted by CPU usage, with system load and memory summaries.
+    details: |
+      Keys: `q` quit, `M` sort by memory, `P` sort by CPU, `k` kill a process, `1` per-CPU usage.
+    tags: [processes]
+    source: https://man.archlinux.org/man/top.1
+
+  - command: htop
+    meaning: An interactive, colorful process viewer (an improved top) supporting scrolling, mouse, a tree view, and killing processes.
+    details: |
+      Keys: `F3` or `/` search, `F4` filter, `F5` tree view, `F6` choose sort column, `F9` kill, `F10` or `q` quit.
+    tags: [processes]
+    source: https://man.archlinux.org/man/htop.1
+
+  - command: pgrep <pattern>
+    meaning: Print the PIDs of processes whose names match the pattern (a regex).
+    details: |
+      `-l` also shows names, `-a` full command lines, `-f` matches against the full command line, `-u user` limits to a user, `-x` requires an exact match.
+    tags: [processes]
+    source: https://man.archlinux.org/man/pgrep.1
+
+  - command: kill <pid>
+    meaning: Send a signal to a process, by default SIGTERM (15), asking it to terminate gracefully.
+    details: |
+      `kill -l` lists signal names. `kill %1` targets job 1 of the shell.
+    tags: [processes]
+    source: https://man.archlinux.org/man/kill.1
+
+  - command: kill -9 <pid>
+    meaning: Send SIGKILL, which terminates the process immediately; it cannot be caught or ignored.
+    details: |
+      Use only after a plain `kill` fails, since the process gets no chance to clean up. Other common signals: `-HUP` (1) reload, `-STOP`/`-CONT` pause/resume.
+    tags: [processes]
+    source: https://man.archlinux.org/man/kill.1
+
+  - command: pkill <pattern>
+    meaning: Send a signal (SIGTERM by default) to all processes whose names match the pattern.
+    details: |
+      Takes the same matching options as `pgrep` (e.g. `-f`, `-u`); check the matches with `pgrep -l` first. `killall name` kills by exact name.
+    tags: [processes]
+    source: https://man.archlinux.org/man/pkill.1
+
+  - command: nice -n <n> <command>
+    meaning: Run a command with its niceness adjusted by n (default 10), lowering (or, as root, raising) its CPU scheduling priority.
+    details: |
+      Niceness ranges from -20 (highest priority) to 19 (lowest). Only root can use negative values.
+    tags: [processes]
+    source: https://man.archlinux.org/man/nice.1
+
+  - command: renice -n <priority> -p <pid>
+    meaning: Change the niceness of a running process.
+    details: |
+      In current util-linux, `-n` sets the absolute niceness (relative only when `POSIXLY_CORRECT` is set). `-u user` renices all of a user's processes. Non-root users can only increase niceness.
+    tags: [processes]
+    source: https://man.archlinux.org/man/renice.1
+
+  - command: sleep <duration>
+    meaning: Pause for the given duration, in seconds by default.
+    details: |
+      Suffixes: `s`, `m`, `h`, `d`; fractions work (`sleep 0.5`). Several arguments are added together (`sleep 1m 30s`).
+    tags: [processes]
+    source: https://man.archlinux.org/man/sleep.1
+
+  - command: <command> &
+    meaning: Run the command in the background as a job, returning the prompt immediately.
+    details: |
+      The shell prints the job number and PID, e.g. `[1] 12345`.
+    tags: [processes, jobs]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Job-Control-Basics
+
+  - command: Ctrl+Z
+    meaning: Suspend (stop) the foreground job and return to the shell prompt.
+    details: |
+      Resume it with `fg` (foreground) or `bg` (background). `Ctrl+C` instead sends SIGINT to terminate the job.
+    tags: [processes, jobs]
+    source: https://www.gnu.org/software/bash/manual/bash.html#Job-Control-Basics
+
+  - command: jobs
+    meaning: List the current shell's background and stopped jobs with their job numbers and states.
+    details: |
+      `-l` also shows PIDs. `+` marks the current job and `-` the previous one.
+    tags: [processes, jobs]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-jobs
+
+  - command: fg [%<n>]
+    meaning: Bring a background or stopped job (the current one by default) to the foreground.
+    tags: [processes, jobs]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-fg
+
+  - command: bg [%<n>]
+    meaning: Resume a stopped job (the current one by default) in the background.
+    tags: [processes, jobs]
+    source: https://www.gnu.org/software/bash/manual/bash.html#index-bg
+
+  # --- System information ------------------------------------------------
+
+  - command: tty
+    meaning: Print the file name of the terminal device connected to standard input, e.g. /dev/pts/0.
+    details: |
+      `/dev/pts/N` is a pseudo-terminal (terminal emulator, SSH); `/dev/ttyN` is a virtual console (`Ctrl+Alt+F1`-`F6`).
+    tags: [system]
+    source: https://man.archlinux.org/man/tty.1
+
+  - command: fastfetch
+    meaning: Display system information (OS, kernel, uptime, packages, shell, DE/WM, CPU, GPU, memory) next to a distribution logo.
+    details: |
+      `--gen-config` creates a config at `~/.config/fastfetch/config.jsonc`; `-l none` disables the logo; `--list-modules` shows the available info modules. The maintained successor of neofetch.
+    tags: [system]
+    source: https://github.com/fastfetch-cli/fastfetch/wiki
+
+  # --- Filesystems and mounting ------------------------------------------
+
+  - command: mount <device> <mountpoint>
+    meaning: Attach the filesystem on a device (e.g. /dev/sdb1) to a directory in the file tree.
+    details: |
+      `-t TYPE` sets the filesystem type, `-o ro,...` options; `mount -a` mounts everything in `/etc/fstab`. With no arguments, lists mounts (prefer `findmnt`).
+      `/mnt` is the conventional mountpoint for temporary manual mounts; removable media usually appear under `/run/media/<user>`.
+    tags: [filesystems]
+    source: https://man.archlinux.org/man/mount.8
+
+  - command: umount <mountpoint>
+    meaning: Detach a mounted filesystem.
+    details: |
+      Fails with "target is busy" if a process is using it; find the process with `lsof` or `fuser -m`.
+    tags: [filesystems]
+    source: https://man.archlinux.org/man/umount.8
+
+  - command: findmnt
+    meaning: List all mounted filesystems as a tree showing target, source device, type, and options.
+    details: |
+      `findmnt <path>` shows the mount containing a path; `-t ext4` filters by type; `-l` gives a flat list; `-D` mimics `df`; `-s` reads `/etc/fstab`.
+    tags: [filesystems]
+    source: https://man.archlinux.org/man/findmnt.8
+
+  # --- Package management (Arch) -----------------------------------------
+
+  - command: pacman -Syu
+    meaning: Synchronize the package databases and upgrade all installed packages (a full system upgrade).
+    details: |
+      Arch does not support partial upgrades: never run `pacman -Sy` alone before installing a package; always use `-Syu`. Read the Arch news before big upgrades.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -S <package>
+    meaning: Install a package (and its dependencies) from the official repositories.
+    details: |
+      `pacman -S --needed pkg...` skips packages that are already up to date.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Ss <regex>
+    meaning: Search the sync databases for packages whose names or descriptions match.
+    details: |
+      `pacman -Qs` searches installed packages instead.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Si <package> / pacman -Qi <package>
+    meaning: Show detailed information about a package from the repositories (-Si) or an installed package (-Qi).
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Rns <package>
+    meaning: Remove a package together with its dependencies no other package needs (-s) and without saving backup .pacsave config files (-n).
+    details: |
+      Plain `-R` removes only the package itself and leaves orphaned dependencies.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Q
+    meaning: List all installed packages with their versions.
+    details: |
+      `-Qe` lists only explicitly installed packages; `-Qm` foreign packages (e.g. from the AUR).
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Ql <package> / pacman -Qo <file>
+    meaning: List the files owned by an installed package (-Ql), or find which package owns a file (-Qo).
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -F <file>
+    meaning: Find which repository package provides a file, including packages that are not installed.
+    details: |
+      Sync the files database first with `pacman -Fy`.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Qdtq | pacman -Rns -
+    meaning: Remove orphans, i.e. packages installed as dependencies that nothing requires anymore.
+    details: |
+      `-Qdt` lists the orphans (`-q` prints bare names), and `-` makes `-Rns` read the package list from stdin. Run as root. Review the list first.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Removing_unused_packages_(orphans)
+
+  - command: pacman -U <file.pkg.tar.zst>
+    meaning: Install a local package file (or a URL to one), e.g. to downgrade from /var/cache/pacman/pkg/.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman
+
+  - command: pacman -Sc
+    meaning: Remove packages that are no longer installed from the package cache (/var/cache/pacman/pkg), plus unused sync databases.
+    details: |
+      `-Scc` empties the whole cache (downgrades are no longer possible). `paccache -r` (from pacman-contrib) keeps the last 3 versions instead.
+    tags: [pacman]
+    source: https://wiki.archlinux.org/title/Pacman#Cleaning_the_package_cache
+
+  - command: yay
+    meaning: AUR helper; run without arguments, it upgrades all repository and AUR packages (like pacman -Syu plus AUR).
+    details: |
+      Takes pacman's options (`-S`, `-Ss`, `-R`, ...) and extends them to the AUR. Run it as your normal user, not with sudo. Review PKGBUILDs, since AUR packages are user-submitted.
+    tags: [pacman, yay]
+    source: https://github.com/Jguer/yay
+
+  - command: yay <search_term>
+    meaning: Search the repositories and the AUR, then interactively choose packages to install by number.
+    tags: [pacman, yay]
+    source: https://github.com/Jguer/yay
+
+  - command: yay -S <package>
+    meaning: Install a package from the repositories or the AUR (building AUR packages from their PKGBUILD).
+    tags: [pacman, yay]
+    source: https://github.com/Jguer/yay
+
+  - command: yay -Yc
+    meaning: Remove unneeded dependencies (orphans) of repository and AUR packages.
+    tags: [pacman, yay]
+    source: https://github.com/Jguer/yay
+
+  - command: yay -Ps
+    meaning: Show statistics about installed packages and system health (sizes, orphans, out-of-date packages).
+    tags: [pacman, yay]
+    source: https://github.com/Jguer/yay
+
+  # --- Compression and archives ------------------------------------------
+
+  - command: gzip <file>
+    meaning: Compress a file, replacing it with file.gz.
+    details: |
+      `-k` keeps the original, `-c` writes to stdout, `-r` recurses into directories, `-1` to `-9` fast to best compression, `-l` lists compressed/uncompressed sizes.
+      gzip compresses individual files only; bundle directories with `tar` first.
+    tags: [archives]
+    source: https://man.archlinux.org/man/gzip.1
+
+  - command: gunzip <file.gz>
+    meaning: Decompress a .gz file, replacing it with the uncompressed file.
+    details: |
+      Same as `gzip -d`. `zcat` prints the decompressed contents without writing a file.
+    tags: [archives]
+    source: https://man.archlinux.org/man/gunzip.1
+
+  - command: tar -czvf <archive.tar.gz> <files>
+    meaning: Create (-c) a gzip-compressed (-z) archive file (-f) from the files, listing them as it goes (-v).
+    details: |
+      `-j` uses bzip2 (`.tar.bz2`), `-J` xz (`.tar.xz`), `--zstd` zstd; `-a` picks the compressor from the archive suffix (`tar -caf x.tar.zst dir/`). `-f` must be followed directly by the archive name.
+    tags: [archives]
+    source: https://man.archlinux.org/man/tar.1
+
+  - command: tar -xvf <archive>
+    meaning: Extract (-x) all files from an archive into the current directory.
+    details: |
+      GNU tar detects the compression automatically when extracting. `-C DIR` extracts into DIR instead.
+    tags: [archives]
+    source: https://man.archlinux.org/man/tar.1
+
+  - command: tar -tvf <archive>
+    meaning: List (-t) the contents of an archive without extracting it.
+    tags: [archives]
+    source: https://man.archlinux.org/man/tar.1
+
+  - command: zip -r <archive.zip> <files>
+    meaning: Create a .zip archive, recursing into directories (-r).
+    details: |
+      Unlike gzip, the originals are kept and zip both bundles and compresses. `-e` encrypts with a password; `-9` is best compression.
+    tags: [archives]
+    source: https://man.archlinux.org/man/zip.1
+
+  - command: unzip <archive.zip>
+    meaning: Extract a .zip archive into the current directory.
+    details: |
+      `-l` lists the contents, `-d DIR` extracts into DIR, `-o` overwrites without prompting, `-q` works quietly.
+    tags: [archives]
+    source: https://man.archlinux.org/man/unzip.1
+
+  # --- Build tools -------------------------------------------------------
+
+  - command: make [<target>]
+    meaning: Build a target (the first one in the Makefile by default) by running the rules in ./Makefile, rebuilding only what is out of date by comparing file timestamps.
+    details: |
+      A rule is `target: prerequisites` followed by recipe lines indented with a tab. Common targets are `all`, `install` (often `sudo make install`), and `clean`.
+    tags: [build]
+    source: https://www.gnu.org/software/make/manual/make.html
+
+  - command: make -j<n>
+    meaning: Run up to n recipes in parallel to speed up the build.
+    details: |
+      E.g. `make -j$(nproc)` uses all CPU cores.
+    tags: [build]
+    source: https://www.gnu.org/software/make/manual/make.html#Parallel
+
+  - command: make -n / make -C <dir> / make -B
+    meaning: Print the commands without running them (-n), run make in another directory (-C dir), or rebuild all targets unconditionally (-B).
+    details: |
+      `-f FILE` uses a different makefile; `-k` keeps going after errors.
+    tags: [build]
+    source: https://www.gnu.org/software/make/manual/make.html#Options-Summary
