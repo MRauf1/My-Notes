@@ -13,6 +13,7 @@ tags:
 > - Biased and not consistent: clamping outliers, denoising the output, naive automatic differentiation of a discontinuous integrand.
 
 # Properties
+- Formal definitions: [[Unbiased Estimator]] and [[Consistent Estimator]].
 - A biased-but-consistent estimator is often an acceptable engineering tradeoff, since its bias vanishes as $N \to \infty$; a biased-and-inconsistent estimator never self-corrects with more samples.
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

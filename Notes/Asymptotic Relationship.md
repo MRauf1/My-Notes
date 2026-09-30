@@ -11,5 +11,6 @@ tags:
 # Types
 - [[Big O]]
 - [[Big Theta]]
+- [[Little O]]
 
 [^1]: [Building Blocks for Theoretical Computer Science](zotero://open-pdf/library/items/5IGT8C55?page=186)

@@ -13,6 +13,7 @@ In Hogg et al.'s formulation,[^2] a bootstrap sample is a random sample of size 
 # Types
 - [[Percentile Bootstrap Confidence Interval]]
 - [[Bootstrap Hypothesis Test]]
+- [[Bootstrap Standard Error]]: including the nonparametric vs parametric bootstrap
 
 # Properties
 - Because sampling is with replacement, some points of $\mathbf{X}$ are replicated in $\mathbf{X}_B$ while others are absent; on average a bootstrap set contains a fraction $1 - (1 - 1/N)^N \to 1 - e^{-1} \approx 0.632$ of the distinct original points.

@@ -14,6 +14,17 @@ tags:
 > $$
 > converges to $\Phi$, the cdf of the standard [[Normal Distribution]], as $n \to \infty$.
 
+Equivalently (Hogg Theorem 5.3.1),[^2] $Y_n = \frac{\sum_{i=1}^n X_i - n\mu}{\sqrt{n}\,\sigma} \xrightarrow{D} N(0, 1)$, or in the often more convenient form $\sqrt{n}(\bar{X} - \mu) \xrightarrow{D} N(0, \sigma^2)$ ([[Convergence in Distribution]]). For normal samples this holds exactly for every $n$.
+
+> [!abstract] Theorem 2 (Multivariate Central Limit Theorem)[^3]
+> Let $\{\mathbf{X}_n\}$ be iid random vectors with mean vector $\boldsymbol{\mu}$ and positive definite covariance matrix $\Sigma$, whose common mgf exists near $\mathbf{0}$. Then
+> $$
+> \begin{align}
+> \mathbf{Y}_n = \frac{1}{\sqrt{n}}\sum_{i=1}^n(\mathbf{X}_i - \boldsymbol{\mu}) = \sqrt{n}(\bar{\mathbf{X}} - \boldsymbol{\mu}) \xrightarrow{D} N_p(\mathbf{0}, \Sigma)
+> \end{align}
+> $$
+> (The mgf assumption is for Hogg's proof; finite second moments suffice.)
+
 Whatever the shape of the population (as long as its variance is finite), the standardized [[Sample Mean]] is approximately normal for large $n$. The exact normality for normal samples ([[Normal Distribution Linear Combination]]) becomes approximate normality for all finite-variance samples.
 
 # Properties
@@ -21,6 +32,10 @@ Whatever the shape of the population (as long as its variance is finite), the st
 - Equivalently $\sqrt{n}(\bar{X} - \mu) \to N(0, \sigma^2)$ in distribution; the error of $\bar{X}$ shrinks at rate $\sigma/\sqrt{n}$, which is the [[Monte Carlo Convergence Rate]].
 - Explains the normal approximations to the [[Binomial Distribution Normal Approximation|binomial]], [[Poisson Distribution Normal Approximation|Poisson]], and [[Chi-Squared Distribution Normal Approximation|chi-squared]] distributions, which are sums of iid variables.
 - Fails without finite variance: sample means of the [[Cauchy Distribution]] never become normal.
-- The multivariate version: $\sqrt{n}(\bar{\mathbf{X}} - \boldsymbol{\mu}) \to N_k(\mathbf{0}, \Sigma)$ ([[Multivariate Normal Distribution]]).
+- This is why the normal distribution is central to statistics:[^4] few populations are normal, but the distributions of statistics computed from samples are often nearly normal. The theorem is stated for the sample mean, but it extends to most common statistics (the sample variance, sample quantiles, regression coefficients, maximum likelihood and M-estimators) via the [[Delta Method]], [[Slutsky's Theorem]], and asymptotic normality results; the sample mean is not special in having good convergence properties.
+- The limit is used through the [[Multivariate Normal Distribution]] in the vector case.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=256)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=358)
+[^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=367)
+[^4]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=362)

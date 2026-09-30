@@ -27,7 +27,7 @@ It follows from Definition 1 because $E[\text{Var}(X_2 | X_1)] \geq 0$, with equ
 
 The total variance splits into the average within-slice spread $E[\text{Var}(X_2 | X_1)]$ and the spread of the slice means $\text{Var}[E(X_2 | X_1)]$; conditioning discards the first part.
 
-**Interpretation.**[^2] $X_2$ and $E(X_2 | X_1)$ have the same mean $\mu_2$ ([[Law of Total Expectation]]), so both are unbiased guesses at an unknown $\mu_2$, but $E(X_2 | X_1)$ has smaller variance and is the more reliable guess: after observing $(x_1, x_2)$, prefer $E(X_2 | x_1)$ to $x_2$. Applied with $X_1$ a sufficient statistic, this is the Rao-Blackwell theorem: conditioning an unbiased estimator on a sufficient statistic never increases its variance.
+**Interpretation.**[^2] $X_2$ and $E(X_2 | X_1)$ have the same mean $\mu_2$ ([[Law of Total Expectation]]), so both are unbiased guesses at an unknown $\mu_2$, but $E(X_2 | X_1)$ has smaller variance and is the more reliable guess: after observing $(x_1, x_2)$, prefer $E(X_2 | x_1)$ to $x_2$. Applied with $X_1$ a sufficient statistic, this is the [[Rao-Blackwell Theorem]]: conditioning an unbiased estimator on a sufficient statistic never increases its variance.
 
 # Properties
 - Analogous to the decomposition of total sum of squares into within-group and between-group parts in ANOVA.

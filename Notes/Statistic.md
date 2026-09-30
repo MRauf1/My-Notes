@@ -18,5 +18,7 @@ A statistic summarizes the information in a sample. It must be computable from t
 # Properties
 - Upper-case letters denote the statistic (random variable) and lower-case letters its observed realization, as with $X_i$ and $x_i$.
 - Usually computed from a [[Random Sample]].
+- Any statistic $Y = u(X_1, \dots, X_n)$ partitions the sample space into the level sets $\{\mathbf{x} : u(\mathbf{x}) = y\}$.[^2] A statistic whose partition keeps all the information about $\theta$ is a [[Sufficient Statistic]], and one whose distribution is free of $\theta$ is an [[Ancillary Statistic]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=242)
+[^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=435&annotation=M75GQ92V)

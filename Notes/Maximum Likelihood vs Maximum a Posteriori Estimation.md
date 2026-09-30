@@ -15,7 +15,7 @@ tags:
 > $$
 > MAP is maximum likelihood plus a log-prior penalty; the evidence $p(\mathcal{D})$ does not depend on $\mathbf{w}$ and drops out. With a uniform (flat) prior, MAP reduces to maximum likelihood.
 
-[[Maximum Likelihood Estimation|Maximum likelihood]] is a frequentist estimator: $\mathbf{w}$ is a fixed unknown and $p(\mathcal{D} | \mathbf{w})$ is the probability of the observed data. MAP ([[Maximum a Posteriori Learning]]) maximizes the posterior of [[Bayes' Theorem]] but, being a point estimate, is not yet a full Bayesian treatment, which would instead marginalize over $\mathbf{w}$ ([[Predictive Distribution]]).
+[[Maximum Likelihood Estimation|Maximum likelihood]] is a frequentist estimator: $\mathbf{w}$ is a fixed unknown and $p(\mathcal{D} | \mathbf{w})$ is the probability of the observed data. MAP ([[Maximum a Posteriori Learning]]) maximizes the posterior of [[Bayes' Theorem]] but, being a point estimate, is not yet a full Bayesian treatment, which would instead marginalize over $\mathbf{w}$ ([[Predictive Distribution]]). MAP is also not, strictly speaking, a full [[Bayes Estimator]], i.e. the minimizer of posterior expected loss. In continuous spaces, it corresponds to one only in the limit of a degenerate 0-1 loss that rewards exact hits only. So it is not Bayes-optimal for standard losses such as squared error (posterior mean) or absolute error (posterior median).
 
 # Properties
 ## Maximum Likelihood

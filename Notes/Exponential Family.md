@@ -20,6 +20,7 @@ tags:
 
 # Types
 - [[Natural Exponential Family]]
+- [[Regular Exponential Class]]: Hogg's form $\exp[p(\theta)K(x) + H(x) + q(\theta)]$ with support free of $\theta$, for which $\sum_i T(X_i)$ is a complete [[Sufficient Statistic]]
 
 # Examples
 - [[Normal Distribution]]

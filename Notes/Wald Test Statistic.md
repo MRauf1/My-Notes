@@ -7,7 +7,7 @@ tags:
 # Definition
 
 > [!info] Definition 1 (Wald Test Statistic ([[Normal Distribution]] Form))
-> For a [[Maximum Likelihood Estimation]], to test the [[Null Hypothesis]] $H_0: \beta = \beta_0$, the Wald test statistic is
+> For a [[Maximum Likelihood Estimation]], to test the [[Statistical Hypothesis Test|Null Hypothesis]] $H_0: \beta = \beta_0$, the Wald test statistic is
 > $$
 > \begin{align}
 > z_w = \frac{\hat{\beta} - \beta_0}{SE} \sim_{H_0} N(0, 1)
@@ -18,7 +18,7 @@ tags:
 Reject the null hypothesis if $|z_w| \geq z_{\alpha/2}$ for a [[Two-Sided Test]] with $\alpha$.
 
 > [!info] Definition 2 (Wald Test Statistic ([[Chi-Squared Distribution]] Form))
-> For a [[Maximum Likelihood Estimation]], to test the [[Null Hypothesis]] $H_0: \beta = \beta_0$, the Wald test statistic is
+> For a [[Maximum Likelihood Estimation]], to test the [[Statistical Hypothesis Test|Null Hypothesis]] $H_0: \beta = \beta_0$, the Wald test statistic is
 > $$
 > \begin{align}
 > z_w^2 = \frac{(\hat{\beta} - \beta_0)^2}{SE^2} \sim_{H_0} \chi^2(1)
