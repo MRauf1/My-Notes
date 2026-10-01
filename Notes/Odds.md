@@ -16,3 +16,6 @@ tags:
 > with $p = \frac{\Omega}{1 + \Omega}$
 
 [[Ratio]] of the [[Probability]] of an [[Event]] occurring to the probability of it not occurring.
+
+# Properties
+- [[Bayes' Theorem]] in odds form: [[Posterior Odds]] = prior odds $\times$ likelihood ratio.

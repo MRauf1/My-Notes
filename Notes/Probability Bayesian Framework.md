@@ -11,6 +11,7 @@ Views [[Probability]] from both the [[Probability Objective Interpretation]] and
 In a Bayesian framework, for inference, unlike [[Probability Frequentist Framework]] for inference, the Bayesians treat the parameters as random.
 
 # Properties
+- Probability is the fundamental yardstick of uncertainty: the state of knowledge about anything unknown, observable or not, is described by a probability distribution ([[Bayesian Inference]]).[^7]
 - Quantifies uncertainty and revises it precisely in light of new evidence via [[Bayes' Theorem]], and then supports optimal actions via [[Decision Theory]].[^2]
 - Using probability for degrees of belief is not ad hoc: by [[Cox's Theorem]], common-sense axioms for rational belief force the sum and product rules.[^3]
 - The machinery of probability describes uncertainty in model parameters $\mathbf{w}$, and even in the choice of model itself.[^4]
@@ -25,3 +26,4 @@ In a Bayesian framework, for inference, unlike [[Probability Frequentist Framewo
 [^4]: [Bishop, 2006, p. 22](zotero://open-pdf/library/items/5G99AZ8U?page=42&annotation=GBXB8RKB)
 [^5]: [Bishop, 2006, p. 23](zotero://open-pdf/library/items/5G99AZ8U?page=43&annotation=8J6ISJH4)
 [^6]: [Bishop, 2006, p. 23](zotero://open-pdf/library/items/5G99AZ8U?page=43&annotation=I67L46V2)
+[^7]: [Gelman et al., p. 11](zotero://open-pdf/library/items/HDF44SF4?page=21&annotation=4MXGVKD3)

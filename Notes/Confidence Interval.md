@@ -17,7 +17,7 @@ For a $x\%$ confidence interval, it is an [[Interval Notation|interval]] such th
 > $$
 > $1 - \alpha$ is the confidence coefficient (confidence level).
 
-**Interpretation.**[^3] The randomness is in the endpoints, not in $\theta$. Once the sample is drawn, the realized interval $(l, u)$ either traps $\theta$ or it does not. The procedure is a Bernoulli trial with success probability $1 - \alpha$: over $M$ independent $(1-\alpha)100\%$ intervals, about $(1 - \alpha)M$ trap their parameters, which is the sense in which one is "$(1-\alpha)100\%$ confident" about a particular $(l, u)$. The Bayesian counterpart, a credible interval, makes a probability statement about $\theta$ itself.
+**Interpretation.**[^3] The randomness is in the endpoints, not in $\theta$. Once the sample is drawn, the realized interval $(l, u)$ either traps $\theta$ or it does not. The procedure is a Bernoulli trial with success probability $1 - \alpha$: over $M$ independent $(1-\alpha)100\%$ intervals, about $(1 - \alpha)M$ trap their parameters, which is the sense in which one is "$(1-\alpha)100\%$ confident" about a particular $(l, u)$. The Bayesian counterpart, a [[Credible Interval|credible interval]], makes a probability statement about $\theta$ itself.
 
 # Types
 - $t$-interval for a normal mean: $\bar{x} \pm t_{\alpha/2, n-1}\,s/\sqrt{n}$ ([[Student's Theorem]]), where $s/\sqrt{n}$ is the [[Standard Error]] of $\bar{X}$.[^3]

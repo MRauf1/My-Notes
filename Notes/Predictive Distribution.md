@@ -32,9 +32,11 @@ A point-estimate method instead plugs in a single parameter value, e.g. $p(t | \
 - The variance splits into two sources: $\beta^{-1}$ is the noise on the targets (already present in the maximum likelihood plug-in predictive), while $\boldsymbol{\phi}(\mathbf{x})^T\mathbf{S}\boldsymbol{\phi}(\mathbf{x})$ is the uncertainty in $\mathbf{w}$, which arises only from the Bayesian treatment and is largest where training data is sparse.[^4]
 - Here $\alpha, \beta$ are fixed [[Hyperparameter|hyperparameters]]; a fuller treatment infers them from data as well.
 - The mean $m(\mathbf{x})$ coincides with the prediction of the MAP (ridge) solution; the difference lies in the variance.
+- General form (posterior predictive distribution): $p(\tilde{y} \mid y) = \int p(\tilde{y} \mid \theta)\, p(\theta \mid y)\, d\theta$, an average of conditional predictions over the [[Posterior Distribution]]; dropping $y$ from $p(\tilde{y} \mid \theta, y)$ uses the conditional independence of $y$ and $\tilde{y}$ given $\theta$. Its pre-data counterpart is the [[Prior Predictive Distribution]].[^5]
 - Averaging over parameters rather than committing to one is what lets Bayesian models avoid [[Overfitting|over-fitting]] even when parameters outnumber data points.
 
 [^1]: [Bishop, 2006, p. 31](zotero://open-pdf/library/items/5G99AZ8U?page=51&annotation=W4DVFWL2)
 [^2]: [Bishop, 2006, p. 31](zotero://open-pdf/library/items/5G99AZ8U?page=51&annotation=FF38GDUR)
 [^3]: [Bishop, 2006, p. 30](zotero://open-pdf/library/items/5G99AZ8U?page=50&annotation=84MJ5RRL)
 [^4]: [Bishop, 2006, p. 31](zotero://open-pdf/library/items/5G99AZ8U?page=51&annotation=D9K9DJ8G)
+[^5]: [Gelman et al., p. 7](zotero://open-pdf/library/items/HDF44SF4?page=17&annotation=5SYNH2BZ)

@@ -19,4 +19,8 @@ Newton's method approximates the $x$-intercept by finding the $x$-intercepts of 
 
 It is not guaranteed to converge for all [[Function]].
 
+# Properties
+- Applied to the gradient of a loss, it gives [[Newton's Method (Optimization)]].[^2]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=378)
+[^2]: [Prince, Ch. 6](zotero://select/library/items/T3V9WVXD)

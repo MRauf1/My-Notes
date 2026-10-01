@@ -25,4 +25,13 @@ SGD can implicitly regularize the learning problem; for example, for linear prob
 - Need to normalize the inputs
 - The learning rate is not adaptive
 
+# Properties
+- Prince's update for batch $\mathcal{B}_t$ with per-example losses $\ell_i$: $\boldsymbol{\phi}_{t+1} \leftarrow \boldsymbol{\phi}_t - \alpha \sum_{i \in \mathcal{B}_t} \partial \ell_i[\boldsymbol{\phi}_t] / \partial \boldsymbol{\phi}$. The noise means each step moves downhill only on average, so SGD can temporarily move uphill and jump between valleys of the loss.[^2]
+- A batch can range from a single example to the whole dataset; the latter, **full-batch gradient descent**, is ordinary gradient descent. One pass through the dataset is an **epoch** ([[Batch Size]]).
+- Alternative view: deterministic gradient descent on a loss function that changes with every batch, whose expected value and expected gradient match those of the full loss.
+- Advantages: updates are sensible even if not optimal, since each improves the fit to some data; sampling without replacement lets all examples contribute equally; gradients are cheaper; it can in principle escape local minima; it reduces the chance of getting stuck near [[Saddle Point|saddle points]]; and there is evidence it finds parameters that generalize well.
+- Does not converge in the traditional sense; near the global minimum all batches have small gradients, so the parameters stop changing much. It is usually paired with a [[Learning Rate Schedule]].
+- As the learning rate tends to zero, SGD approaches a stochastic differential equation depending on the learning-rate-to-batch-size ratio, which is related to the width of the minimum found (Jastrzębski et al., 2018). Wider minima are preferred, since small parameter errors then barely affect test performance; generalization improves when the batch-size-to-learning-rate ratio is low (He et al., 2019; Smith et al., 2018; Goyal et al., 2018).
+
 [^1]: https://visionbook.mit.edu/gradient_descent.html
+[^2]: [Prince, Ch. 6](zotero://select/library/items/T3V9WVXD)

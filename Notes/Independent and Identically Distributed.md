@@ -24,7 +24,7 @@ M_T(t) = [M(t)]^n, \quad -h < t < h
 $$
   a corollary of the mgf formula for linear combinations of independent variables ([[Moment Generating Function Technique]]).
 - $E\left(\sum_i X_i\right) = n\mu$ and $\text{Var}\left(\sum_i X_i\right) = n\sigma^2$, since the [[Covariance]] terms vanish.
-- The joint distribution is exchangeable: invariant under permutations of $(X_1, \dots, X_n)$.
+- The joint distribution is [[Exchangeability|exchangeable]]: invariant under permutations of $(X_1, \dots, X_n)$.
 - The setting of the [[Strong Law of Large Numbers]] and the central limit theorem.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=156)

@@ -41,7 +41,7 @@ which is [[L2 Regularization|ridge regression]] with $\lambda = \alpha/\beta$.
 - Gaussian noise $\Rightarrow$ squared error ([[L2 Loss]]); the optimal point prediction is the conditional mean ([[Regression Function]]).
 - Laplace noise $\Rightarrow$ absolute error; the optimal point prediction is the conditional [[Median]] ([[Minkowski Loss]] with $q = 1$).
 - Bernoulli / categorical targets $\Rightarrow$ [[Cross-Entropy Loss|cross-entropy]], e.g. [[Binary Logistic Regression|logistic regression]].
-- Letting the model output both a mean $\mu(\mathbf{x})$ and a variance $\sigma^2(\mathbf{x})$ (heteroscedastic regression) gives the loss $\sum_n \left[\frac{(t_n - \mu(\mathbf{x}_n))^2}{2\sigma^2(\mathbf{x}_n)} + \frac{1}{2}\ln\sigma^2(\mathbf{x}_n)\right]$, which learns input-dependent noise.
+- Letting the model output both a mean $\mu(\mathbf{x})$ and a variance $\sigma^2(\mathbf{x})$ ([[Heteroscedasticity (Machine Learning)|heteroscedastic]] regression) gives the loss $\sum_n \left[\frac{(t_n - \mu(\mathbf{x}_n))^2}{2\sigma^2(\mathbf{x}_n)} + \frac{1}{2}\ln\sigma^2(\mathbf{x}_n)\right]$, which learns input-dependent noise.
 
 # Properties
 - Makes the choice of loss an explicit modelling assumption about the noise, rather than an arbitrary choice, and allows [[Model Selection]] tools based on the likelihood (e.g. [[Akaike Information Criterion]]).

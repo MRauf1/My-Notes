@@ -30,8 +30,10 @@ The total variance splits into the average within-slice spread $E[\text{Var}(X_2
 **Interpretation.**[^2] $X_2$ and $E(X_2 | X_1)$ have the same mean $\mu_2$ ([[Law of Total Expectation]]), so both are unbiased guesses at an unknown $\mu_2$, but $E(X_2 | X_1)$ has smaller variance and is the more reliable guess: after observing $(x_1, x_2)$, prefer $E(X_2 | x_1)$ to $x_2$. Applied with $X_1$ a sufficient statistic, this is the [[Rao-Blackwell Theorem]]: conditioning an unbiased estimator on a sufficient statistic never increases its variance.
 
 # Properties
+- Also holds for a random vector $X$, with $\text{Var}[X]$ the [[Covariance Matrix]].[^3]
 - Analogous to the decomposition of total sum of squares into within-group and between-group parts in ANOVA.
 - In prediction, $\text{Var}[E(X_2 | X_1)]$ is the variance of $X_2$ explained by $X_1$, and $E[\text{Var}(X_2 | X_1)]$ is the irreducible error of the best predictor $E(X_2 | X_1)$ (cf. [[Bias-Variance Tradeoff]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=130)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=131)
+[^3]: [Gelman et al., p. 21](zotero://open-pdf/library/items/HDF44SF4?page=31&annotation=VQS9MX9G)

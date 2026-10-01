@@ -22,6 +22,9 @@ With a random initialization of the parameter vector $\theta^0$ and a sufficient
 Since gradient descent uses gradients, the cost function (and the preceding functions if using backpropagation) should ideally be [[Differentiable Function|differentiable]]. However, even non-differentiable functions can work as long as they have the property that one can get a meaningful signal of how to perturb the model's parameters in order to reduce the loss function. In particular, [[PyTorch|PyTorch]] uses the one-sided [[Derivative|derivative]] at the [[Discontinuity|discontinuities]].
 
 # Properties
+- In Prince's notation: compute $\partial L / \partial \boldsymbol{\phi}$, the uphill direction, then update $\boldsymbol{\phi} \leftarrow \boldsymbol{\phi} - \alpha \cdot \partial L / \partial \boldsymbol{\phi}$. The step $\alpha$ may be fixed (the [[Learning Rate]]) or chosen by [[Line Search]]. At a minimum the gradient is zero, so in practice the algorithm terminates when the gradient magnitude becomes too small, which can mistakenly happen near a [[Saddle Point]].[^2]
+- Its final destination is entirely determined by the starting point, with no guarantee of reaching the [[Global Minimum]].
+- With a fixed step, it makes large adjustments to parameters with large gradients and small ones to parameters with small gradients, so when the loss is much steeper in one direction than another no learning rate is both fast and stable; it also oscillates when descending valleys. These motivate [[Gradient Descent with Momentum|momentum]], adaptive methods ([[AdaGrad]], [[RMSProp]], [[Adam]]), and [[Newton's Method (Optimization)|Newton's method]].
 - A [[Gradient-Based Learning|gradient-based]], or [[First-Order Optimization|first-order optimization]] method: at each [[Operating Point]], it observes the gradient of the [[Cost Function]] and uses it to move to a new operating point with lower cost, in contrast to [[Zeroth-Order Optimization]], which observes only the cost's value, and [[Higher-Order Optimization]], which also uses curvature information such as the [[Hessian Matrix]].
 - The learning rate is often varied during training according to a [[Learning Rate Schedule]] rather than held fixed.
 - Descending $\nabla_\theta \mathcal{L}$ to solve an [[Inverse Problem (Analysis by Synthesis)|inverse problem]] is one of the [[Three Uses of a Differentiable Simulator's Gradient|three uses]] of a differentiable simulator's gradient.
@@ -35,3 +38,4 @@ Since gradient descent uses gradients, the cost function (and the preceding func
 - [[Stochastic Gradient Descent|Stochastic Gradient Descent]]
 
 [^1]: https://visionbook.mit.edu/gradient_descent.html
+[^2]: [Prince, Ch. 6](zotero://select/library/items/T3V9WVXD)

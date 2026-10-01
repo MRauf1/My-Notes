@@ -25,6 +25,9 @@ Concretely, the gradients for different parameters, $\partial J/\partial\theta_1
 For computing the gradients over a batch, use the following identity: $\frac{\partial \frac{1}{N} \sum_{i=1}^N J_i(\theta)}{\partial \theta} = \frac{1}{N} \sum_{i=1}^N \frac{\partial J_i(\theta)}{\partial \theta}$.
 
 # Properties
+- Intuition: (1) each weight multiplies the activation of a source hidden unit and adds the result to a destination unit, so its effect is scaled by that activation; hence the **forward pass** runs the network on each batch example and stores all activations. (2) A change to a weight or bias ripples through all subsequent layers to the output and loss, so the derivative of the loss with respect to each later layer is needed; these quantities are shared by all parameters in the same and earlier layers, so they are computed once while moving backward in the **backward pass**.[^2]
+- Computationally efficient, since its most demanding steps are matrix multiplications by $\boldsymbol{\Omega}$ (forward) and $\boldsymbol{\Omega}^T$ (backward); but not memory-efficient, since all intermediate forward values must be stored, which can limit model size ([[Gradient Checkpointing]], [[Micro-Batching]]).
+- If the weights are initialized poorly, gradient magnitudes vanish or explode during the backward pass ([[Weight Initialization]]).
 - Does not distinguish between parameters and data — both are treated as generic inputs to parameterless modules of the [[Computation Graph]]. For a learning problem using neural net $F = f_L \circ \dots \circ f_1$ and loss function $\mathcal{L}$, the full computation graph is $\mathcal{L}(F(\mathbf{x}_0), \mathbf{y}, \theta) \triangleq J(\mathbf{x}_0, \mathbf{y}, \theta)$: in the forward direction, the inputs are the data and parameters and the output is the loss; in the backward direction, the input is the number $1$ and the outputs are the gradients of the loss with respect to both the data and the parameters.
 - Because data and parameter inputs play symmetric roles, just as one can optimize parameters to minimize the loss by descending the parameter gradient, one can equally optimize the input data to minimize (or maximize) some quantity by descending (or ascending) the data gradient; [[Activation Maximization]] is one application of this, used to visualize which inputs a given neuron is sensitive to.
 
@@ -33,3 +36,4 @@ For computing the gradients over a batch, use the following identity: $\frac{\pa
 - Zeroth-order optimizers, such as an [[Evolution Strategy]], which can optimize a neural network's parameters using only [[Cost Function|cost]] values, without computing any gradients at all.
 
 [^1]: https://visionbook.mit.edu/backpropagation.html
+[^2]: [Prince, Ch. 7](zotero://select/library/items/T3V9WVXD)

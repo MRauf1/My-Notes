@@ -34,7 +34,9 @@ $$
 
 # Properties
 - Finite variance is Hogg's hypothesis (needed for part (b), the [[Law of Total Variance]]); part (a) holds whenever $E|X_2| < \infty$.
+- Also holds for a random vector $X$, in which case $E[X]$ is a vector.[^2]
 - Also called the tower property or law of iterated expectations.
 - $E[X_2 | X_1]$ and $X_2$ share the mean $\mu_2$, so either can serve as a guess at $\mu_2$; the [[Law of Total Variance]] shows the conditional mean is the more reliable one.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=130)
+[^2]: [Gelman et al., p. 21](zotero://open-pdf/library/items/HDF44SF4?page=31&annotation=VQS9MX9G)

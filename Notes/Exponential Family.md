@@ -38,3 +38,7 @@ tags:
 - [[Categorical Distribution]]
 - [[Wishart Distribution]]
 - [[Inverse Wishart Distribution]]
+
+# Properties
+- The negative log-likelihood of a regular exponential family equals a [[Bregman Divergence]] between the observation and the mean parameter, up to parameter-independent terms (Banerjee et al., 2005).[^1]
+[^1]: Supplementary notes provided by the creator.
