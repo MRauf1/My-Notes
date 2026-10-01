@@ -16,6 +16,7 @@ For this convergence to be meaningful, the repeated observations must be equival
 - The parameter $\mathbf{w}$ is fixed and determined by an estimator, and error bars on the estimate are obtained by considering the distribution of possible data sets $\mathcal{D}$, e.g. with the [[Bootstrap]].[^3]
 - A widely used frequentist estimator is [[Maximum Likelihood Estimation|maximum likelihood]].[^4]
 - Frequentist evaluation methods such as [[Cross-Validation]] offer protection against poor choices of prior in Bayesian methods and remain useful for [[Model Selection|model comparison]].[^5]
+- Evaluates procedures on the vertical slice $p(x \mid \theta)$ over a reference set of hypothetical datasets. It is a worst-case guarantee over $\theta$ ([[Frequentist vs Bayesian Inference]]).
 - There is no unique frequentist (or Bayesian) viewpoint, which has fueled the debate between the paradigms; in both, the [[Likelihood Function]] plays a central role, but it is used in fundamentally different ways.
 
 [^2]: [The Feynman Lectures on Physics, Vol. I, Ch. 6: Probability](https://www.feynmanlectures.caltech.edu/I_06.html)

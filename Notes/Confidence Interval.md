@@ -29,6 +29,7 @@ For a $x\%$ confidence interval, it is an [[Interval Notation|interval]] such th
 # Properties
 - Efficiency:[^3] among intervals with the same confidence coefficient, $(L_1, U_1)$ is more efficient than $(L_2, U_2)$ if $E_\theta(U_1 - L_1) \leq E_\theta(U_2 - L_2)$ for all $\theta \in \Omega$.
 - Duality with tests: the interval consists of the $\theta_0$ not rejected by a level-$\alpha$ [[Statistical Hypothesis Test]] of $H_0: \theta = \theta_0$.
+- Coverage is a frequentist, vertical-slice property that must hold at every $\theta$. A Bayesian credible interval has exactly this coverage only under a [[Probability Matching Prior]], and approximately for large $n$ in regular models ([[Bernstein-von Mises Theorem]], [[Frequentist vs Bayesian Inference]]).
 
 [^1]: [Introduction to Statistical Learning with Python](zotero://open-pdf/library/items/9JTAJ2JI?page=84)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=254)

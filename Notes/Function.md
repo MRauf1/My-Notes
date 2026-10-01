@@ -18,6 +18,7 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Codomain]]
 - [[Range|Range]]
 - [[Image]]
+- [[Preimage]]
 - [[Zeros of Function|Zeros of Function]]
 - [[Parity of Function|Parity of Function]]
 - [[Function Behavior|Function Behavior]]

@@ -16,6 +16,7 @@ In a Bayesian framework, for inference, unlike [[Probability Frequentist Framewo
 - The machinery of probability describes uncertainty in model parameters $\mathbf{w}$, and even in the choice of model itself.[^4]
 - There is only a single data set $\mathcal{D}$, the one actually observed; uncertainty in the parameters is expressed through a probability distribution over $\mathbf{w}$, in contrast to the [[Probability Frequentist Framework|frequentist]] distribution over possible data sets.[^5]
 - Prior knowledge enters naturally, avoiding extreme conclusions from little data (e.g. estimating $P(\text{heads}) = 1$ after three heads, as [[Maximum Likelihood Estimation|maximum likelihood]] does).[^6]
+- Works on the horizontal slice $p(\theta \mid x)$ and obeys the [[Likelihood Principle]]. It is average-case analysis over $\theta$ under the prior ([[Frequentist vs Bayesian Inference]]).
 - Full Bayesian prediction marginalizes over parameters ([[Predictive Distribution]]), which avoids [[Overfitting|over-fitting]]; see [[Maximum Likelihood vs Maximum a Posteriori Estimation]] for the intermediate point-estimate case.
 
 [^1]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=1)

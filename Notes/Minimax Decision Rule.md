@@ -18,7 +18,7 @@ A uniformly smallest risk function rarely exists, so the minimax principle summa
 
 # Properties
 - The maximum can be replaced by a supremum when it is not attained.
-- A [[Bayes Estimator]] whose risk is constant in $\theta$ is minimax. Equivalently, the minimax rule is the Bayes rule for the least favorable prior.
+- A [[Bayes Estimator]] whose risk is constant in $\theta$ is minimax. Often the minimax rule is the Bayes rule for a least favorable prior, the prior that maximizes the [[Bayes Risk]] by putting its weight where estimation is hardest. In this sense, worst-case analysis is average-case analysis with a pessimistic prior ([[Frequentist vs Bayesian Inference]]).
 - Minimax rules can be overly pessimistic. They may accept poor performance over most of $\Omega$ in exchange for protection in a small region of it.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=431&annotation=G2SSQ82C)

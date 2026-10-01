@@ -12,7 +12,7 @@ tags:
 > \delta^\pi(\mathbf{x}) = \underset{a}{\arg\min}\; E[L(\theta, a) | \mathbf{x}] = \underset{a}{\arg\min} \int_\Omega L(\theta, a)\,\pi(\theta | \mathbf{x})\,d\theta
 > \end{align}
 > $$
-> Equivalently, it minimizes the Bayes risk $\int_\Omega R(\theta, \delta)\pi(\theta)\,d\theta$, the prior-weighted average of the frequentist [[Risk Function (Statistics)|risk]].
+> Equivalently, it minimizes the [[Bayes Risk]] $\int_\Omega R(\theta, \delta)\pi(\theta)\,d\theta$, the prior-weighted average of the frequentist [[Risk Function (Statistics)|risk]].
 
 This is the Bayesian analogue of the [[Minimum Variance Unbiased Estimator]]. There is no unbiasedness constraint; optimality is defined by the choice of loss, and the estimate is conditioned on the data actually observed rather than averaged over hypothetical repeated samples.
 
@@ -27,7 +27,7 @@ This is the Bayesian analogue of the [[Minimum Variance Unbiased Estimator]]. Th
   - In continuous spaces, it is the Bayes rule only in the limit of the degenerate 0-1 loss, which rewards exact hits only. So it is not Bayes-optimal for standard continuous losses.
   - It is also not invariant to reparametrization.
 - Full Bayesian inference keeps the whole posterior ([[Bayesian Inference]], [[Predictive Distribution]]). Every Bayes estimator is a summary of the posterior chosen by the loss, and choosing a single point discards the posterior's uncertainty.
-- From a frequentist standpoint, Bayes estimators are almost always biased, because they shrink toward the prior. With a [[Conjugate Prior]], the posterior mean is often a weighted average of the prior mean and the MLE. The weight on the data tends to $1$ as $n \to \infty$, so Bayes estimators are typically consistent and asymptotically equivalent to the MLE (Bernstein-von Mises).
+- From a frequentist standpoint, Bayes estimators are almost always biased, because they shrink toward the prior. With a [[Conjugate Prior]], the posterior mean is often a weighted average of the prior mean and the MLE. The weight on the data tends to $1$ as $n \to \infty$, so Bayes estimators are typically consistent and asymptotically equivalent to the MLE ([[Bernstein-von Mises Theorem]]).
 - Frequentist evaluation:
   - A unique Bayes estimator with a proper prior is admissible.
   - A Bayes estimator with constant risk is minimax ([[Minimax Decision Rule]]).

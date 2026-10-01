@@ -46,6 +46,7 @@ The ratio is the conditional pmf of the sample given $Y_1 = y_1$. So the definit
   - MLEs are asymptotically unbiased, so a practical route to an MVUE is: find $Y_1$, find the MLE, and adjust it into an unbiased function of $Y_1$.
 - The search for an MVUE can be restricted to functions of a sufficient statistic ([[Rao-Blackwell Theorem]]). If the statistic is also complete, the unbiased function of it is the unique [[Minimum Variance Unbiased Estimator|MVUE]] ([[Lehmann-Scheffé Theorem]]).
 - For the [[Regular Exponential Class]], $\sum_i K(X_i)$ (or $(\sum_i K_1(X_i), \dots, \sum_i K_m(X_i))$) is complete and sufficient.
+- The sufficiency principle says that samples with equal values of a sufficient statistic carry the same evidence about $\theta$. Together with conditionality, it implies the [[Likelihood Principle]] ([[Birnbaum's Theorem]]).
 - The smallest reduction that keeps sufficiency is the [[Minimal Sufficient Statistic]]. Its opposite is an [[Ancillary Statistic]], whose distribution is free of $\theta$.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=437&annotation=UI2UUV5V)

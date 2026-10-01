@@ -26,7 +26,8 @@ Ideally $\delta$ would minimize $R(\theta, \delta)$ for every $\theta \in \Omega
   - a prior-weighted average, $\int R(\theta, \delta)\pi(\theta)\,d\theta$ ([[Bayes Estimator]]).
 
 # Properties
-- A rule $\delta$ is inadmissible if another rule $\delta'$ has $R(\theta, \delta') \leq R(\theta, \delta)$ for all $\theta$, with strict inequality for some $\theta$. Otherwise $\delta$ is admissible. The [[James-Stein Estimator]] shows that the sample mean of $p \geq 3$ normal means is inadmissible under squared-error loss.
+- Averaging the risk against a prior gives the [[Bayes Risk]], which equals the average posterior expected loss by [[Fubini's Theorem]].
+- A rule $\delta$ is inadmissible ([[Admissible Decision Rule]]) if another rule $\delta'$ has $R(\theta, \delta') \leq R(\theta, \delta)$ for all $\theta$, with strict inequality for some $\theta$. Otherwise $\delta$ is admissible. The [[James-Stein Estimator]] shows that the sample mean of $p \geq 3$ normal means is inadmissible under squared-error loss.
 - Complete-class theorems: under mild conditions, every admissible rule is a Bayes rule or a limit of Bayes rules.
 - Part of statistical [[Decision Theory]]. The classification analogue, which averages the loss against a posterior, is the [[Minimum Expected Loss Decision Rule]].
 
