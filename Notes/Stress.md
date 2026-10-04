@@ -25,6 +25,7 @@ History shows us that even those who have everything are not necessarily content
 # Overcoming Stress
 - [[Meditation]]
 - [[Exercise Effect on Stress]]
+- Quitting smoking: nicotine dependence itself raises stress ([[Deprivation Reversal Model]])
 - Gratitude
 
 # Social Support

@@ -12,5 +12,7 @@ tags:
 - Occurs after the fact: the explanatory narrative is generated once a choice has already been made, not while it is being made.
 - The narrative feels logical and complete to the person producing it, even when it does not correspond to the actual unconscious cause of the decision.
 - Reflects the [[Consciousness|conscious mind]]'s limited access to the unconscious processes that actually drive most decisions.
+- **Split-brain evidence (Gazzaniga).** When the word "walk" was shown only to the right hemisphere of a patient with a severed corpus callosum, he walked off; asked why, the verbal left hemisphere promptly answered "to get a Coke". Gazzaniga calls this the left-hemisphere *interpreter*. It is evidence against a single unified self ([[Bundle Theory of Self]]).[^antidote]
 
 [^1]: Popular science synthesis of psychology/neuroscience estimates on conscious vs. unconscious processing (exact primary sources were not resolvable from the source material).
+[^antidote]: [Burkeman, 2012, p. 88](zotero://open-pdf/library/items/CQLUAMWS?page=88&annotation=87RTTDJJ); [p. 89](zotero://open-pdf/library/items/CQLUAMWS?page=89&annotation=P4EZ767N)

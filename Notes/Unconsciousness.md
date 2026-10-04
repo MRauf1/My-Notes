@@ -15,5 +15,7 @@ These figures are widely repeated estimates rather than precisely measured biolo
 - Fast Processing: takes in and processes very large amounts of information per second, drawing on memory, instinct, and environmental input.
 - Neural Preparation: underlying neural activity associated with a decision can be detected before the decision reaches [[Consciousness|conscious]] awareness, suggesting the unconscious mind often "prepares" a choice ahead of conscious recognition of it.
 - The conscious mind frequently generates a [[Confabulation|post-hoc narrative]] to explain a decision after the fact, even when the unconscious processing actually drove the choice.
+- In [[Buddhism|Buddhist]] meditation, every mental state is said to arise first in the unconscious and only a moment later in consciousness; grasping happens in that gap (see [[Distraction (Meditation)]]).[^2]
 
 [^1]: Popular science synthesis of psychology/neuroscience estimates on conscious vs. unconscious processing (exact primary sources, including the cited PubMed-indexed brain studies, were not resolvable from the source material).
+[^2]: [Gunaratana, p. 34](zotero://open-pdf/library/items/AUJ2ZCA3?page=34&annotation=YVJ24GPI); [p. 36](zotero://open-pdf/library/items/AUJ2ZCA3?page=36&annotation=I7J6M6NG)

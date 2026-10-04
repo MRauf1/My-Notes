@@ -24,6 +24,10 @@ People may tolerate the suffering through the little comforts, but these moments
 - A culture that equates unhappiness with maladjustment adds "unhappiness about being unhappy" (Weisskopf-Joelson).
 - The "size" of suffering is relative, like a gas filling any chamber ([[Psychology of Concentration Camp Prisoners]]); see also [[Tragic Optimism]].
 
+# Buddhist View
+- In [[Buddhism]], suffering ([[Dukkha]]) is the pervasive unsatisfactoriness produced by craving, grasping, and rejecting. "Pain is inevitable, suffering is not": suffering is our resistance added to bare pain.[^4]
+
 [^1]: [Atomic Habits](zotero://open-pdf/library/items/N7HGMVC4?page=1)
 [^2]: [Man's Search for Meaning](zotero://open-pdf/library/items/ZMQXB2W2?page=1)
 [^3]: [Frankl, PDF p. 51](zotero://open-pdf/library/items/ZMQXB2W2?page=51&annotation=2GTTMXHN); [p. 65](zotero://open-pdf/library/items/ZMQXB2W2?page=65&annotation=IK5RYKP8); [p. 65](zotero://open-pdf/library/items/ZMQXB2W2?page=65&annotation=HXMAFPCQ); [p. 65](zotero://open-pdf/library/items/ZMQXB2W2?page=65&annotation=V9RSJ5Y9); [p. 51](zotero://open-pdf/library/items/ZMQXB2W2?page=51&annotation=X248GVQD); [p. 51](zotero://open-pdf/library/items/ZMQXB2W2?page=51&annotation=MHQMS4DE); [p. 51](zotero://open-pdf/library/items/ZMQXB2W2?page=51&annotation=856FTMWD); [p. 52](zotero://open-pdf/library/items/ZMQXB2W2?page=52&annotation=3RVUS5S8); [p. 24](zotero://open-pdf/library/items/ZMQXB2W2?page=24&annotation=2443HSKC)
+[^4]: [Gunaratana, p. 27](zotero://open-pdf/library/items/AUJ2ZCA3?page=27&annotation=I7P4QVI2)

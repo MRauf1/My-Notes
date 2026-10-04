@@ -22,5 +22,6 @@ Smallest value infinitely often approached.
 # Properties
 - [[Limit of Sequence With Limit Supremum And Limit Infimum]]
 - [[Limit Supremum and Infimum Inequality]]
+- Monotonicity under termwise inequality: if $s_n \leq t_n$ for all $n \geq N$ (some fixed $N$), then $\liminf s_n \leq \liminf t_n$ — see [[Limit Supremum]].
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=72)

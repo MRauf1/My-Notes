@@ -26,7 +26,7 @@ Three types of death fear (Choron):[^2]
 - Neurosis is "the way of avoiding non-being by avoiding being" (Tillich): the defense against death, by limiting life, is itself a partial death, and generates [[Existential Guilt]].[^11]
 - Death anxiety is both normal and neurotic; the therapist meets a failure of its homeostatic regulation. Long-term therapy is incomplete without working it through; it may be desensitised by gradual, supported exposure (cf. [[Exposure Therapy]]).[^12]
 - Mid-life crises often reflect a "race against time" (manic defenses, compulsive youthfulness).[^13]
-- Its positive face is death as a [[Boundary Situation]]. See also [[Existential Anxiety]], [[Stoic View of Death]].
+- Its positive face is death as a [[Boundary Situation]]. See also [[Existential Anxiety]], [[Stoic View of Death]], [[Terror Management Theory]], [[Memento Mori]], [[Epicurean Argument Against Fearing Death]].
 
 [^1]: [Yalom, 1980, p. 41](zotero://open-pdf/library/items/9AN2W49G?page=59&annotation=UQCAP6MY); [p. 43](zotero://open-pdf/library/items/9AN2W49G?page=61&annotation=68GV8L83); [p. 54](zotero://open-pdf/library/items/9AN2W49G?page=72&annotation=P229D65U); [p. 55](zotero://open-pdf/library/items/9AN2W49G?page=73&annotation=IMSKJJVC); [p. 188](zotero://open-pdf/library/items/9AN2W49G?page=206&annotation=QIJQ3BV3)
 [^2]: [Yalom, 1980, p. 43](zotero://open-pdf/library/items/9AN2W49G?page=61&annotation=NDAGS3XS)

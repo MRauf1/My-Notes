@@ -22,5 +22,7 @@ tags:
 - Pitfall: expecting the improvement of one aspect of a computer to increase overall performance by an amount proportional to the size of that improvement — the improvement is bounded by how much of the execution time it actually affects.
 - Fallacy: Amdahl's Law does not stop applying just because a computer is parallel; any serial fraction of a program still bounds the overall speedup achievable from adding processors, so gains in [[Multiprocessor|parallel]] execution rate are wasted unless matched by comparable gains in sequential execution rate.
 
+- Software-team analogue: [[Brooks's Law]].
+
 [^1]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=72&annotation=2RTPZVSU)
 [^2]: [Computer Organization and Design: The Hardware/Software Interface](zotero://open-pdf/library/items/YWPB5EDC?page=581&annotation=CE3KTC6Z)

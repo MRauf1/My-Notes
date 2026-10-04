@@ -16,6 +16,7 @@ In Hogg et al.'s formulation,[^2] a bootstrap sample is a random sample of size 
 - [[Bootstrap Standard Error]]: including the nonparametric vs parametric bootstrap
 
 # Properties
+- Used in machine learning for [[Bagging]] (bootstrap aggregating).
 - Because sampling is with replacement, some points of $\mathbf{X}$ are replicated in $\mathbf{X}_B$ while others are absent; on average a bootstrap set contains a fraction $1 - (1 - 1/N)^N \to 1 - e^{-1} \approx 0.632$ of the distinct original points.
 - Implements the [[Probability Frequentist Framework|frequentist]] notion of uncertainty, which considers the distribution of possible data sets, by using the empirical distribution of the observed data as a stand-in for the unknown data-generating distribution.
 - Needs $L$ refits of the estimator, so its cost is $L$ times that of a single fit.

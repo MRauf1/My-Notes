@@ -10,6 +10,8 @@ tags:
 # Importance
 Social skills are among the most vital skills given how humans are social creatures. Even in industries, research shows that social skills are more important than technical skills.[^1]
 
+Carnegie cites investigations claiming that 85% of an engineer's financial success comes from "human engineering" and only 15% from technical knowledge.[^2] That figure does not come from a measured study. It traces to a 1918 survey of engineers' *opinions* (Mann, for the Carnegie Foundation). Better evidence supports the general point: since 1980, jobs requiring high social skill have grown in both employment and pay, especially jobs that also require high cognitive skill (Deming, 2017).
+
 # Tips
 - Try to understand their perspective. Don't apply your own prejudices, experiences onto another person when their life may have been significantly different from yours.
 - Treat others as you would want to be treated.
@@ -49,4 +51,20 @@ Social skills are among the most vital skills given how humans are social creatu
 - Begin by emphasizing the things you have in common rather than the differences.
 - Get the person saying "Yes"es, which make the person open-minded, rather than "No"s, which close off the person from other perspectives.
 
+# Evidence for Carnegie's Principles
+- **Criticism**: [[Feedback Intervention Theory]], [[Four Horsemen (Gottman)]].
+- **Desire for importance**: [[Status Motive]].
+- **Listening and interest in others**: [[Active Listening]], [[Self-Disclosure]].
+- **Names**: [[Own-Name Effect]].
+- **Smiling**: [[Facial Feedback Hypothesis]].
+- **Avoiding arguments and "you're wrong"**: [[Psychological Reactance]], [[Motivated Reasoning]], [[Motivational Interviewing]].
+- **"Yes, yes"**: [[Foot-in-the-Door Technique]].
+- **Letting the idea be theirs**: [[IKEA Effect]].
+- **Other's point of view**: [[Perspective-Taking]].
+- **Fine reputation and nobler motives**: [[Pygmalion Effect]].
+- **Praise**: [[Process Praise]], [[Operant Conditioning]].
+- **Dramatize your ideas** is the weakest principle. Vivid information is less persuasive than commonly believed (Taylor and Thompson, 1982).[^3]
+
 [^1]: [How to Win Friends & Influence People](zotero://open-pdf/library/items/IUC5CX9R?page=1)
+[^2]: [Carnegie, 1936, p. 5](zotero://open-pdf/library/items/IUC5CX9R?page=6&annotation=6MP45LVH)
+[^3]: [Carnegie, 1936, p. 99](zotero://open-pdf/library/items/IUC5CX9R?page=100&annotation=CYPZY8GV); [p. 101](zotero://open-pdf/library/items/IUC5CX9R?page=102&annotation=ZHBVX3KB)

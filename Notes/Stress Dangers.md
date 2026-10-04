@@ -12,4 +12,6 @@ tags:
 - Development/exacerbation of asthma
 - [[Learned Helplessness]]
 
+- Repetitive worry prolongs these physiological responses: [[Perseverative Cognition Hypothesis]]. Note that stomach ulcers are mainly caused by *Helicobacter pylori* infection, not stress, contrary to older views.
+
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=518)

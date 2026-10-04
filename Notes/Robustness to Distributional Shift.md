@@ -9,6 +9,7 @@ tags:
 > The problem of ensuring that a machine learning system trained on a distribution $p_0$ "performs reasonably" on a different test distribution $p^*$, in the sense that (1) it often performs well on $p^*$, and (2) it knows when it is performing badly, ideally avoiding or mitigating the bad performance by taking conservative actions or soliciting human input.
 
 # Properties
+- The forms of shift (covariate, prior, concept) and data drift are defined in [[Dataset Shift]].
 - A type of [[Accident (Machine Learning)|accident]]; the danger is silent, unpredictable failure on inputs very different from training data.[^1]
 - When $p^* \neq p_0$, systems may not only perform poorly but also wrongly believe their performance is good.[^2]
 - The simplest and most important failure is the brittle implicit contract of most ML systems: they only necessarily perform well if training and test distributions are identical, a condition that is hard to check and rare in practice. Systems should be built to perform well under weaker contracts that are easier to reason about.[^3]

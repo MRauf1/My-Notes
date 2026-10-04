@@ -11,4 +11,12 @@ tags:
 
 ![[Pasted image 20251030164627.png]]
 
+> [!abstract] Theorem 2 (Path Connected $\implies$ Connected)
+> Let $(S, d)$ be a [[Metric Space]] and $E \subseteq S$ be path connected. Then $E$ is [[Connected Metric Space|connected]].
+
+The converse does not hold in general: a connected set need not be path connected.
+
+# Properties
+- [[Convex Set Path Connected Theorem]]
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=191)

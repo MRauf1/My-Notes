@@ -13,4 +13,6 @@ As he usually does, he uses lots of different examples to present his cases. How
 
 The advice is also not universally applicable. For example, people with mental illnesses might struggle or have their mental health worsen through some of these suggestions, such as socially announcing plans and having the desire not to disappoint others as the motivator for pushing you forward. In particular, this book seems to be designed towards neurotypicals. Maybe even more specific than that.
 
+Core idea: [[Slow Productivity]] (do fewer things, work at a natural pace, obsess over quality).
+
 [^1]: [Slow Productivity](zotero://open-pdf/library/items/LZM6GRZL?page=1)

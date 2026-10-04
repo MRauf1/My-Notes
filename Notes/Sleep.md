@@ -13,3 +13,6 @@ During sleep, brain organizes the ideas [[Learning|learnt]] and reinforces neura
 
 # Stages
 - [[Stages of Sleep]]
+
+# Insomnia
+- Treatment for chronic insomnia: [[Cognitive Behavioral Therapy for Insomnia]].

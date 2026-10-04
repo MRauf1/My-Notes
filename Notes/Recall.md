@@ -11,4 +11,6 @@ After reading a text, it is much more effective to recall the information than t
 
 To further enhance the effect, try recalling from different settings other than your place of study. Recalling in your place of study may make your brain biased to the cues within the place, hence why recalling from different settings can reduce the bias and make your information be independent of the setting.
 
+See also the closely related [[Generation Effect]].
+
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/BuFzf/illusions-of-competence

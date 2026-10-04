@@ -7,7 +7,7 @@ tags:
 
 Set of processes used to [[Encoding|encode]], store, and retrieve information over different periods of time.
 
-Memory is not fixed, but is constantly changing. In particular, it can change when [[Recall|recalled]] through [[Reconsolidation|Reconsolidation]].[^1]
+Memory is not fixed, but is constantly changing. In particular, it can change when [[Recall|recalled]] through [[Reconsolidation|Reconsolidation]], which can produce [[False Memory|false memories]].[^1]
 
 ![[Pasted image 20251011180815.png]]
 

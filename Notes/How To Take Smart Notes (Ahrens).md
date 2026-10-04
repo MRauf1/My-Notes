@@ -17,4 +17,6 @@ Some points are not properly explained, such as the difference between Zettelkas
 
 Overall, nothing too ground-breaking or life-altering about this book, and it does repeat itself over and over, so I'm not sure if I'd recommend it to others. I'd direct someone to the Zettelkasten website instead, probably. The one thing, however, is that I found the author's point of view on writing and note-taking and how it establishes so much of the overall learning process quite insightful.
 
+Core ideas: [[Smart Notes Workflow]], [[Zettelkasten]], [[Writing]].
+
 [^1]: [How To Take Smart Notes](zotero://open-pdf/library/items/TZUSXCS6?page=1)

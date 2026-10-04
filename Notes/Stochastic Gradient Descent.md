@@ -26,6 +26,7 @@ SGD can implicitly regularize the learning problem; for example, for linear prob
 - The learning rate is not adaptive
 
 # Properties
+- Its implicit regularizer penalizes the variance of the batch gradients, which may explain why SGD and smaller batches generalize better ([[Implicit Regularization]]).[^3]
 - Prince's update for batch $\mathcal{B}_t$ with per-example losses $\ell_i$: $\boldsymbol{\phi}_{t+1} \leftarrow \boldsymbol{\phi}_t - \alpha \sum_{i \in \mathcal{B}_t} \partial \ell_i[\boldsymbol{\phi}_t] / \partial \boldsymbol{\phi}$. The noise means each step moves downhill only on average, so SGD can temporarily move uphill and jump between valleys of the loss.[^2]
 - A batch can range from a single example to the whole dataset; the latter, **full-batch gradient descent**, is ordinary gradient descent. One pass through the dataset is an **epoch** ([[Batch Size]]).
 - Alternative view: deterministic gradient descent on a loss function that changes with every batch, whose expected value and expected gradient match those of the full loss.
@@ -35,3 +36,4 @@ SGD can implicitly regularize the learning problem; for example, for linear prob
 
 [^1]: https://visionbook.mit.edu/gradient_descent.html
 [^2]: [Prince, Ch. 6](zotero://select/library/items/T3V9WVXD)
+[^3]: [Prince, p. 143](zotero://open-pdf/library/items/BWT7FYX5?page=157&annotation=R9KMSV35)

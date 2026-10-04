@@ -14,4 +14,7 @@ Can be in real life, imagination, or [[Virtual Reality]].
 
 Another approach is [[Systematic Desensitization]] where a hierarchy of anxiety is created for the stimulus, and increasingly higher anxiety-provoking levels of the stimulus are paired with a relaxation technique.
 
+Goggins' fear of heights eased as he became "conditioned to the risk" through repeated freefall jumps.[^2] Exposure-based treatments are the most effective treatments for specific phobias (Wolitzky-Taylor et al., 2008). See also [[Steeling Effect]].
+
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=621)
+[^2]: [Goggins, p. 139](zotero://open-pdf/library/items/WJXR2A5N?page=139&annotation=HVI63DZZ)

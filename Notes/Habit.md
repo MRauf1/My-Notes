@@ -12,6 +12,10 @@ The more that the habits are properly handled, the more free your mind is to pur
 Since habits are repeating behaviors, they are among the most crucial ones in reinforcing one's [[Personal Identity]]. Habits shape identity and identity shapes habits. Feedback loop.
 
 
+"Civilization advances by extending the number of important operations which we can perform without thinking about them" (Whitehead). Downside: people with the strongest habits were the least accurate yet most confident at predicting their own behavior (Dean, 2013).[^2]
+
+Compare [[Addiction]]: Carr argues drug use is not a habit, though research models compulsive drug use partly as habitual, cue-driven control.
+
 # Steps
 
 1) [[Cue]]/[[Law of Cue]]
@@ -26,6 +30,8 @@ The first two are part of the Problem Phase, while the latter two are part of th
 # Strengthening Habits
 The more you practice, the more the habit is strengthened and vice versa. Habits form based on frequency of the habit.
 
+**Evidence.** Automaticity grows along an asymptotic curve with repetitions. In daily repetition the median time to reach 95% of the plateau was 66 days, with a range of 18–254 days, so the "21 days" myth is wrong. Missing a single opportunity did not materially affect the process (Lally et al., 2010). Clear: "habits form based on frequency, not time."[^3]
+
 ## Refining Habits
 As habits become ingrained, we become blind to the feedback, which, according to some research, ends up with a slight performance decrease over time.
 
@@ -34,7 +40,7 @@ Even when a habit has been established, need to go into a mode of deliberate pra
 ![[Pasted image 20250811180558.png]]
 
 # Habits Influencing Actions
-Habits are among the main causes of your outcomes (both directly and indirectly). Even big changes are the result of constant small actions that you took before. Directly, researchers estimate that 40-50% of actions are done out of habit. The number is even more for the habits' indirect influence.
+Habits are among the main causes of your outcomes (both directly and indirectly). Even big changes are the result of constant small actions that you took before. Directly, researchers estimate that 40-50% of actions are done out of habit (about 43% of daily behaviors were performed almost daily in the same context; Wood, Quinn and Kashy, 2002).[^4] The number is even more for the habits' indirect influence.
 
 # Stacking/Grouping Habits
 ## Stacking
@@ -51,3 +57,6 @@ Habits work like compound interest. It may take a while to get a habit up and ru
 For example, improving by $1\%$ every day for a year would yield a $37.78x$ improvement.
 
 [^1]: [Atomic Habits](zotero://open-pdf/library/items/N7HGMVC4?page=1)
+[^2]: [Ahrens, p. 133](zotero://open-pdf/library/items/TZUSXCS6?page=133&annotation=RFI7GWDY); [p. 133](zotero://open-pdf/library/items/TZUSXCS6?page=133&annotation=C5VV34NT)
+[^3]: [Clear, p. 116](zotero://open-pdf/library/items/N7HGMVC4?page=116&annotation=H6Y5BFQ5); [p. 117](zotero://open-pdf/library/items/N7HGMVC4?page=117&annotation=62CRH29G)
+[^4]: [Clear, p. 127](zotero://open-pdf/library/items/N7HGMVC4?page=127&annotation=GGXQIUI9)

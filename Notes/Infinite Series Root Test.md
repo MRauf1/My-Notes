@@ -12,6 +12,9 @@ tags:
 > 2) It diverges if $\alpha > 1$
 > 3) Otherwise $\alpha = 1$, and the test gives no information
 
-Better test than the [[Infinite Series Ratio Test]] in that, if the root test gives no information, then the ratio test won't give information either. But the converse is not generally true.
+Better test than the [[Infinite Series Ratio Test]] in that, if the root test gives no information, then the ratio test won't give information either. But the converse is not generally true — see [[Limit Supremum and Infimum Inequality]].
+
+# Properties
+- [[Limit Supremum and Infimum Inequality]]
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=111)

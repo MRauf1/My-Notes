@@ -7,4 +7,6 @@ tags:
 
 Any planned task will take longer than you expect, even if you take into account this law.[^1]
 
+Related: [[Planning Fallacy]], [[Parkinson's Law]].
+
 [^1]: [Four Thousand Weeks](zotero://open-pdf/library/items/3DNUXWJK?page=81)

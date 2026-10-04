@@ -14,9 +14,14 @@ tags:
 - [[Compact Metric Space]]
 - [[Connected Metric Space]]
 	- [[Disconnected Metric Space]]
+- [[Separable Metric Space]]
+- [[Polish Space]]
 - [[Normed Space]]
 	- [[Inner Product Space]]
 	- [[Banach Space]]
+
+# [[Set Basic Properties|Properties of Subsets]]
+- [[Totally Bounded]]
 
 # [[Subset]]
 ## Openness

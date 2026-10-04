@@ -13,4 +13,7 @@ They believed that in order to live a good life, one must understand human natur
 
 - De Rerum Natura
 
+# Properties
+- On death: [[Epicurean Argument Against Fearing Death]]; reply: [[Deprivation Account of Death]].
+
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=128)

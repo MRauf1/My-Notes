@@ -19,5 +19,6 @@ Biases that are made due to how our brains function.[^1]
 - [[Sunk Cost Fallacy]]
 - [[Gambler's Fallacy]]
 - [[Fundamental Attribution Error]]
+- [[Survivorship Bias]]
 
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=58)

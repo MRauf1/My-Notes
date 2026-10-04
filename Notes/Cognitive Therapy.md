@@ -10,5 +10,6 @@ Focuses on how a person's thoughts lead to feelings of distress.[^1] Helps clien
 
 # Properties
 - Its core premise was anticipated by [[Epictetus]]: "People are troubled not by things but by their judgments about things"; see [[Assent (Stoicism)]] and [[Stoic Exercises]].
+- Ellis's [[Rational Emotive Behavior Therapy]] preceded Beck's approach and targets absolutist "musts".
 
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=624)

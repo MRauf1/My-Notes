@@ -15,6 +15,7 @@ tags:
 
 # Properties
 - A form of death transcendence driven by [[Death Anxiety]].[^1]
+- Tested empirically by [[Terror Management Theory]].
 - Becker: our universal ambition is continued experience, pursued also by "counting", mattering, or leaving something behind; much of the quest for meaning is contaminated by this.[^2]
 
 [^1]: [Yalom, 1980, p. 41](zotero://open-pdf/library/items/9AN2W49G?page=59&annotation=586REEP6); [p. 42](zotero://open-pdf/library/items/9AN2W49G?page=60&annotation=YINCK2QG)

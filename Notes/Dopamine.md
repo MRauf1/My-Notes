@@ -13,7 +13,9 @@ Loss of dopamine can lead to lack of motivation and [[Anhedonia|anhedonia]]. Sev
 
 # Discovery
 
-It was originally discovered in a 1954 experiment by neuroscientists [[James Olds]] and [[Peter Milner]] where the inhibition of dopamine in rats led to the rats losing all will to live.
+In 1954, [[James Olds]] and [[Peter Milner]] discovered that rats would work to electrically stimulate certain brain regions (intracranial self-stimulation), the first evidence of brain reward circuits. Later work tied these circuits to dopamine.
+
+**Correction.** Popular accounts, including *Atomic Habits*, credit Olds and Milner with blocking dopamine.[^2] That came later. Rats with dopamine-depleting lesions stop eating and drinking and starve unless fed (Ungerstedt, 1971), yet still show "liking" reactions to sugar (Berridge and Robinson, 1998); see [[Incentive Sensitization Theory]]. Dopamine is also only one of many neurochemicals involved in habits.[^3]
 
 # Dopamine Spike
 
@@ -24,5 +26,8 @@ It was originally discovered in a 1954 experiment by neuroscientists [[James Old
 
 # Properties
 - Phasic dopamine encodes the temporal-difference reward prediction error of [[Temporal-Difference Learning]]; see [[Reward Prediction Error Hypothesis]].
+- Dopamine drives *wanting* rather than *liking*, which is why addictive drugs can be wanted without being enjoyed ([[Incentive Sensitization Theory]]).
 
 [^1]: https://www.coursera.org/learn/learning-how-to-learn/lecture/WNYPG/what-motivates-you
+[^2]: [Clear, p. 87](zotero://open-pdf/library/items/N7HGMVC4?page=87&annotation=U3XM8NLT); [p. 87](zotero://open-pdf/library/items/N7HGMVC4?page=87&annotation=XCSG83XC)
+[^3]: [Clear, p. 244](zotero://open-pdf/library/items/N7HGMVC4?page=244&annotation=X5ZBZIYC)

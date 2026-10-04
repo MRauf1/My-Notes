@@ -24,6 +24,21 @@ Euler's number is the base such that the [[Exponential Function]] $f(x) = b^x$ h
 > \end{align}
 > $$
 
+> [!info] Definition 3 (Euler's Number as a Series)[^4]
+> $$
+> \begin{align}
+> e = \sum_{n=0}^{\infty} \frac{1}{n!}
+> \end{align}
+> $$
+> where $0! := 1$.
+
+> [!abstract] Theorem (e is Irrational)[^5]
+> $e$ is an [[Irrational Number]].
+
+The factorial series in Definition 3 converges very rapidly: its partial sum through $n = N$ approximates $e$ with an error strictly between $0$ and $\frac{1}{N \cdot N!}$ — e.g. truncating at $N=10$ already approximates $e$ with error less than $10^{-7}$. This tight, explicit error bound is what makes the irrationality of $e$ easy to prove: if $e = p/q$ for integers $p, q$, the bound forces a contradiction once $N \geq q$.
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=1)
 [^2]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=210)
 [^3]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=254)
+[^4]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=72)
+[^5]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=74)

@@ -14,10 +14,8 @@ tags:
 2) Changing your process.
 3) Changing your [[Personal Identity]]/[[Personal Value]].
 
-Identity-based change -> who we wish to become/who we are -> leads to a change in the [[Process]] -> leads to a change in the [[Goal]].
+The more you repeat a behavior, the more you reinforce your identity. This is consistent with self-perception theory: people infer their attitudes and self-concept partly from observing their own behavior (Bem, 1967).
 
-Ultimate form of intrinsic motivation is when a habit is a part of your identity. Only identity-based habits will stick forever. The more you repeat a behavior, the more you reinforce your identity.
-
-Focus on becoming the person you want to be, rather than the goal of accomplishing a specific thing.
+Clear's stronger claims are not well supported. These include that change should start from identity rather than outcomes, that only identity-based habits last, and that a habit becoming part of your identity is the ultimate form of intrinsic motivation. Studies of identity framing showed that asking people to "be a voter" rather than "vote" increased turnout (Bryan et al., 2011), but large field replications found no effect (Gerber et al., 2016). See [[Process]] and [[Goal-Setting Theory]].
 
 [^1]: [Atomic Habits](zotero://open-pdf/library/items/N7HGMVC4?page=1)

@@ -9,6 +9,7 @@ tags:
 > A heldout subset of data, disjoint from the data used for [[Training Phase|training]] and [[Testing Phase|testing]], used to approximate a model's [[Generalization Error]] without touching the test set.
 
 # Properties
+- Used in [[Hyperparameter Search]]: each candidate is trained on the training set and evaluated on the validation set, and only the selected model is evaluated on the test set, which then gives a reasonable estimate of true performance.[^4]
 - Generalization error is approximated by measuring performance on the validation set:
 > $$
 > \begin{align}
@@ -23,3 +24,4 @@ tags:
 [^1]: [MIT Vision Book - The Problem of Generalization](https://visionbook.mit.edu/problem_of_generalization.html)
 [^2]: [Bishop, 2006, p. 11](zotero://open-pdf/library/items/5G99AZ8U?page=31&annotation=V3VEJ6V8)
 [^3]: [Bishop, 2006, p. 32](zotero://open-pdf/library/items/5G99AZ8U?page=52&annotation=SWB3LAH4)
+[^4]: [Prince, p. 133](zotero://open-pdf/library/items/BWT7FYX5?page=147&annotation=JZRS9992)

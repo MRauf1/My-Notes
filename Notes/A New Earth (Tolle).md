@@ -11,4 +11,6 @@ Considered(?) a sequel to his previous book [[The Power of Now (Tolle)]]. It is 
 
 Chapter 9 on Inner Purpose, in particular, was quite insightful and deserves a reread. It puts a lot of the actions that people strive for and goals into a new light.
 
+Core ideas: [[Two Core Spiritual Insights]], [[Identification with Form]], [[Ego Strategies]], [[Relationship with the Present Moment]], [[Inner Space]], [[Awakened Doing]].
+
 [^1]: [A New Earth](zotero://open-pdf/library/items/BKRKQ2GZ?page=1)

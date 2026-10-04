@@ -9,6 +9,8 @@ tags:
 > The expressivity of a [[Hypothesis Space]]: roughly, how wide a range of input-output mappings it is able to represent.
 
 # Properties
+- **Representational capacity** is the space of functions the model can construct over all possible parameter values; **effective capacity** is what remains once we account for the solutions the optimization algorithm can actually reach. Formal measures include the [[VC Dimension]] and [[Rademacher Complexity]]. See [[Double Descent]] for the effective-complexity view of Nakkiran et al. (2021).[^3]
+- For a deep network, capacity depends on the numbers of hidden layers and units and on other architectural choices; it is a [[Hyperparameter]] chosen by [[Hyperparameter Search]].
 - The number of free parameters is only a rough proxy for model capacity, not the full story: a single infinite-precision parameter can already parameterize an arbitrarily complex function and so define a very expressive (high-capacity) hypothesis space, while a million parameters that are [[Regularization|regularized]] to be almost all zero may define only a simple class of functions.
 - For neural networks, the number of hidden units is a measure of capacity: in a [[Shallow Neural Network]] with [[ReLU Function|ReLU]] activations, $D$ hidden units give at most $D + 1$ linear regions for a scalar input ([[Linear Regions of ReLU Network]]).[^2]
 - Should follow a "Goldilocks principle": a hypothesis space should be expressive enough to fit the data, but not so flexible that it [[Overfitting|overfits]] it.
@@ -20,3 +22,4 @@ tags:
 
 [^1]: [MIT Vision Book - The Problem of Generalization](https://visionbook.mit.edu/problem_of_generalization.html)
 [^2]: [Prince, p. 29](zotero://open-pdf/library/items/BWT7FYX5?page=43&annotation=IRUAYRI5); [Prince, p. 46](zotero://open-pdf/library/items/BWT7FYX5?page=60&annotation=AIZB9MQV)
+[^3]: [Prince, p. 134](zotero://open-pdf/library/items/BWT7FYX5?page=148&annotation=5FWNPPGY); [Prince, p. 134](zotero://open-pdf/library/items/BWT7FYX5?page=148&annotation=EYUEGV6I); [Prince, p. 132](zotero://open-pdf/library/items/BWT7FYX5?page=146&annotation=2997MF4K)

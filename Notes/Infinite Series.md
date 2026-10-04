@@ -30,6 +30,11 @@ tags:
 
 # Properties
 - [[Infinite Series Convergence Cauchy Criterion Theorem]]
+- If $\sum a_n = A$ and $\sum b_n = B$ (both convergent), then $\sum (a_n + b_n) = A + B$, and $\sum (c \cdot a_n) = cA$ for any fixed constant $c$ — convergent series may be added termwise and scaled.[^2]
+- [[Cauchy Product]] of two series, with convergence governed by [[Mertens' Theorem]].
+- [[Rearrangement (Series)]] of a series.
+
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=82)
 
 # Tests
 - [[Infinite Series Comparison Test]]

@@ -13,4 +13,6 @@ Derive pleasure from the system/process itself rather than the goal. Goal achiev
 
 System keeps pushing you even after goal has been accomplished. Pursue endless refinement and improvement rather than goal achieving.
 
+Compare the evidence on goals: [[Goal-Setting Theory]].
+
 [^1]: [Atomic Habits](zotero://open-pdf/library/items/N7HGMVC4?page=1)

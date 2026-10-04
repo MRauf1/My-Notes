@@ -13,4 +13,6 @@ The chapters are very short and each one provides a relatively new idea in relat
 
 Due to the shortness of the chapters though, none of the topics are discussed in deep detail, leaving one wanting a bit more of some of the concepts.
 
+Core idea: [[Imperfectionism]].
+
 [^1]: [Meditations for Mortals](zotero://open-pdf/library/items/ZF42TD5D?page=1)

@@ -28,6 +28,7 @@ A point-estimate method instead plugs in a single parameter value, e.g. $p(t | \
 > For polynomial curve fitting, $\phi_i(x) = x^i$ for $i = 0, \dots, M$.
 
 # Properties
+- **Bayesian approach for neural networks** (Prince): maximum likelihood is overconfident, choosing the single most likely parameters although many are broadly compatible with the data. The Bayesian approach computes $Pr(\boldsymbol{\phi} | \{\mathbf{x}_i, \mathbf{y}_i\}) \propto \prod_i Pr(\mathbf{y}_i | \mathbf{x}_i, \boldsymbol{\phi}) Pr(\boldsymbol{\phi})$ and predicts $Pr(\mathbf{y} | \mathbf{x}, \{\mathbf{x}_i, \mathbf{y}_i\}) = \int Pr(\mathbf{y} | \mathbf{x}, \boldsymbol{\phi}) Pr(\boldsymbol{\phi} | \{\mathbf{x}_i, \mathbf{y}_i\}) d\boldsymbol{\phi}$, an infinite weighted [[Ensemble Learning|ensemble]] whose weights depend on the prior and on agreement with the data. It is elegant and more robust, but for neural networks the posterior cannot be represented or integrated exactly, so all practical methods approximate it, adding considerable complexity.[^6]
 - Both the mean and the variance of the Bayesian predictive distribution depend on $\mathbf{x}$.[^4]
 - The variance splits into two sources: $\beta^{-1}$ is the noise on the targets (already present in the maximum likelihood plug-in predictive), while $\boldsymbol{\phi}(\mathbf{x})^T\mathbf{S}\boldsymbol{\phi}(\mathbf{x})$ is the uncertainty in $\mathbf{w}$, which arises only from the Bayesian treatment and is largest where training data is sparse.[^4]
 - Here $\alpha, \beta$ are fixed [[Hyperparameter|hyperparameters]]; a fuller treatment infers them from data as well.
@@ -40,3 +41,4 @@ A point-estimate method instead plugs in a single parameter value, e.g. $p(t | \
 [^3]: [Bishop, 2006, p. 30](zotero://open-pdf/library/items/5G99AZ8U?page=50&annotation=84MJ5RRL)
 [^4]: [Bishop, 2006, p. 31](zotero://open-pdf/library/items/5G99AZ8U?page=51&annotation=D9K9DJ8G)
 [^5]: [Gelman et al., p. 7](zotero://open-pdf/library/items/HDF44SF4?page=17&annotation=5SYNH2BZ)
+[^6]: [Prince, p. 150](zotero://open-pdf/library/items/BWT7FYX5?page=164&annotation=FIP4DUG2); [Prince, p. 150](zotero://open-pdf/library/items/BWT7FYX5?page=164&annotation=3LNCV3VC); [Prince, p. 151](zotero://open-pdf/library/items/BWT7FYX5?page=165&annotation=VN26RKRH)

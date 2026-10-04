@@ -11,4 +11,6 @@ The book is a stitched together collection of various philosophies, including [[
 
 Overall, I wouldn't recommend this book to others. There isn't anything too transformative or insightful about the book. Instead, if someone is interested in these concepts/philosophies, then I'd suggest they dive into the core resources of these concepts/philosophies instead.
 
+Concept notes: [[Backwards Law]], [[Ironic Process Theory]], [[Hedonic Adaptation]], [[Rational Emotive Behavior Therapy]], [[Non-Attachment]], [[Intolerance of Uncertainty]], [[Effectuation]], [[Bundle Theory of Self]], [[Security Theater]], [[Mono no Aware]], [[Survivorship Bias]], [[Terror Management Theory]], [[Epicurean Argument Against Fearing Death]], [[Deprivation Account of Death]], [[Memento Mori]].
+
 [^1]: [The Antidote: Happiness for People Who Can't Stand Positive Thinking](zotero://open-pdf/library/items/CQLUAMWS?page=1)

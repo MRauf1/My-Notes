@@ -22,8 +22,9 @@ The creator does research in computer science/mathematics/statistics with the sp
 - Titles must use Title Case matching the filename (e.g., `Spectral Theorem.md` -> `# Spectral Theorem`).
 - Do not provide examples unless specifically requested by the creator.
 - Raw highlight text from PDFs may drop certain mathematical symbols due to PDF encoding issues. You must actively verify and reconstruct mathematically sound LaTeX based on the context of the theorem and textbook conventions.
-- Highlights may come from old sources. If you encounter out-of-date information, replace it with the updated information accordingly so that the notes have the most up-to-date knowledge.
+- Highlights may come from old sources. If you encounter out-of-date information, replace it with the updated information accordingly so that the notes have the most up-to-date knowledge. Similarly, do not make notes about concepts that do not have supporting evidence behind them.
 - Highlights may come from exercises. Do not solve the exercises or copy them into the notes unless explicitly instructed to do so. For these exercises, extract the key definition/theorem/concept and add that to the notes.
+- Highlights may include references to papers or citations of papers. If they do, add the fundamental and relevant papers/resources to the creator to the `REFERENCES.md` file.
 - The creator may attach an image that he wants to be incorporated in the notes. Paste that image in `Media/<Appropriate Name>.png` and link that image within the appropriate notes.
 - If a note with the same name for the same concept already exists, append to this existing note to avoid conflicts and rewriting information.
 - If a note with the same name for a different concept already exists, create a new note with the title `<Concept Name>(<Subdomain>)` to avoid conflicts and rewriting information.
