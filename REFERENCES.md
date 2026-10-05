@@ -26,6 +26,27 @@ A compact list of fundamental papers referenced in the notes.
 - Glorot & Bengio (2010). *Understanding the Difficulty of Training Deep Feedforward Neural Networks*. AISTATS. [PMLR 9](https://proceedings.mlr.press/v9/glorot10a.html) — [[Xavier Initialization]]
 - He, Zhang, Ren & Sun (2015). *Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification*. ICCV. [arXiv:1502.01852](https://arxiv.org/abs/1502.01852) — [[He Initialization]], [[Parametric ReLU]]
 - Ioffe & Szegedy (2015). *Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift*. ICML. [arXiv:1502.03167](https://arxiv.org/abs/1502.03167) — [[Batch Normalization]]
+- Ba, Kiros & Hinton (2016). *Layer Normalization*. [arXiv:1607.06450](https://arxiv.org/abs/1607.06450) — [[Layer Normalization]]
+- Wu & He (2018). *Group Normalization*. ECCV. [arXiv:1803.08494](https://arxiv.org/abs/1803.08494) — [[Group Normalization]]
+- Ulyanov, Vedaldi & Lempitsky (2016). *Instance Normalization: The Missing Ingredient for Fast Stylization*. [arXiv:1607.08022](https://arxiv.org/abs/1607.08022) — [[Instance Normalization]]
+- Salimans & Kingma (2016). *Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks*. NeurIPS. [arXiv:1602.07868](https://arxiv.org/abs/1602.07868) — [[Normalization Layer]]
+- Santurkar, Tsipras, Ilyas & Madry (2018). *How Does Batch Normalization Help Optimization?* NeurIPS. [arXiv:1805.11604](https://arxiv.org/abs/1805.11604) — [[Batch Normalization]], [[Internal Covariate Shift]]
+- Bjorck, Gomes, Selman & Weinberger (2018). *Understanding Batch Normalization*. NeurIPS. [arXiv:1806.02375](https://arxiv.org/abs/1806.02375) — [[Batch Normalization]]
+- Yang, Pennington, Rao, Sohl-Dickstein & Schoenholz (2019). *A Mean Field Theory of Batch Normalization*. ICLR. [arXiv:1902.08129](https://arxiv.org/abs/1902.08129) — [[Batch Normalization]]
+- Li & Arora (2019). *An Exponential Learning Rate Schedule for Deep Learning*. ICLR 2020. [arXiv:1910.07454](https://arxiv.org/abs/1910.07454) — [[Batch Normalization]]
+- Hoffer, Hubara & Soudry (2017). *Train Longer, Generalize Better: Closing the Generalization Gap in Large Batch Training of Neural Networks*. NeurIPS. [arXiv:1705.08741](https://arxiv.org/abs/1705.08741) — [[Ghost Batch Normalization]]
+- Luo, Wang, Shao & Peng (2019). *Towards Understanding Regularization in Batch Normalization*. ICLR. [arXiv:1809.00846](https://arxiv.org/abs/1809.00846) — [[Batch Normalization]]
+- Teye, Azizpour & Smith (2018). *Bayesian Uncertainty Estimation for Batch Normalized Deep Networks*. ICML. [arXiv:1802.06455](https://arxiv.org/abs/1802.06455) — [[Batch Normalization]]
+- Lubana, Dick & Tanaka (2021). *Beyond BatchNorm: Towards a Unified Understanding of Normalization in Deep Learning*. NeurIPS. [arXiv:2106.05956](https://arxiv.org/abs/2106.05956) — [[Normalization Layer]]
+
+## Residual Networks
+- He, Zhang, Ren & Sun (2016). *Deep Residual Learning for Image Recognition*. CVPR. [arXiv:1512.03385](https://arxiv.org/abs/1512.03385) — [[Residual Connection]]
+- He, Zhang, Ren & Sun (2016). *Identity Mappings in Deep Residual Networks*. ECCV. [arXiv:1603.05027](https://arxiv.org/abs/1603.05027) — [[Residual Connection]]
+- Balduzzi, Frean, Leary, Lewis, Ma & McWilliams (2017). *The Shattered Gradients Problem: If ResNets Are the Answer, Then What Is the Question?* ICML. [arXiv:1702.08591](https://arxiv.org/abs/1702.08591) — [[Shattered Gradients]]
+- Veit, Wilber & Belongie (2016). *Residual Networks Behave Like Ensembles of Relatively Shallow Networks*. NeurIPS. [arXiv:1605.06431](https://arxiv.org/abs/1605.06431) — [[Residual Network as Ensemble]]
+- Li, Xu, Taylor, Studer & Goldstein (2018). *Visualizing the Loss Landscape of Neural Nets*. NeurIPS. [arXiv:1712.09913](https://arxiv.org/abs/1712.09913) — [[Residual Connection]]
+- Zagoruyko & Komodakis (2016). *Wide Residual Networks*. BMVC. [arXiv:1605.07146](https://arxiv.org/abs/1605.07146) — [[Residual Connection]]
+- Orhan & Pitkow (2018). *Skip Connections Eliminate Singularities*. ICLR. [arXiv:1701.09175](https://arxiv.org/abs/1701.09175) — [[Residual Connection]]
 
 ## Generalization and Capacity
 - Vapnik & Chervonenkis (1971). *On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities*. Theory of Probability & Its Applications. [doi:10.1137/1116025](https://doi.org/10.1137/1116025) — [[VC Dimension]]

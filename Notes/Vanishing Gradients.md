@@ -10,6 +10,7 @@ When the [[Gradient Vector|gradient]] [[Magnitude|magnitudes]] are too small, wh
 
 # Properties
 - In deep networks, poorly scaled weights $\boldsymbol{\Omega}$ make gradient magnitudes shrink uncontrollably during the backward pass of [[Backpropagation]], so updates become vanishingly small; prevented by [[Weight Initialization|variance-preserving initialization]] such as [[He Initialization]].[^2]
+- [[Residual Connection|Residual connections]] give every layer a direct path to the output, so gradients do not vanish with depth.
 - When the gradient is zero almost everywhere, it is sometimes possible to substitute a [[Surrogate Loss Function]] with meaningful gradients, or to estimate a useful update direction by sampling perturbations, as in an [[Evolution Strategy]].
 
 [^1]: https://visionbook.mit.edu/gradient_descent.html

@@ -17,6 +17,7 @@ tags:
 - Reliably improves test performance, at the cost of training and storing multiple models and running inference multiple times.
 - Averaging assumes the models' errors are independent and cancel out, reducing variance ([[Bias-Variance Tradeoff]]).
 - [[Dropout]] with Monte Carlo inference and the Bayesian [[Predictive Distribution]] (an infinite weighted ensemble) are closely related.
+- [[Residual Network as Ensemble|Residual networks]] can be interpreted as implicit ensembles of shorter networks.
 
 [^1]: [Prince, p. 145](zotero://open-pdf/library/items/BWT7FYX5?page=159&annotation=FTAYQGZ8); [Prince, p. 146](zotero://open-pdf/library/items/BWT7FYX5?page=160&annotation=PFP7RHVZ); [Prince, p. 146](zotero://open-pdf/library/items/BWT7FYX5?page=160&annotation=H6B8MYS2)
 [^2]: [Prince, p. 146](zotero://open-pdf/library/items/BWT7FYX5?page=160&annotation=XVVM6JD6)

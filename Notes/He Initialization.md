@@ -25,6 +25,7 @@ $$
 - The "backward-pass He initialization" is therefore not about initializing gradients: it scales the random weights by fan-out so that backpropagated gradients neither vanish nor explode on the way to the early layers. Frameworks expose this choice, e.g. PyTorch's `torch.nn.init.kaiming_normal_(..., mode='fan_in')` (default, forward) versus `mode='fan_out'` (backward).[^2]
 - The factor $2$ compensates for ReLU zeroing half of its inputs on average; without it, the rule reduces to the [[Xavier Initialization|Glorot / Xavier]] form, which differs by this factor of two.
 - Prevents the [[Vanishing Gradients|vanishing]] and [[Exploding Gradients|exploding gradient]] problems at initialization ([[Weight Initialization]]).
+- Not sufficient for [[Residual Connection|residual networks]]: adding each block's output back to its input doubles the variance per block ([[Residual Network Variance at Initialization]]).
 
 [^1]: [Prince, Ch. 7](zotero://select/library/items/T3V9WVXD)
 [^2]: Supplementary notes provided by the creator.

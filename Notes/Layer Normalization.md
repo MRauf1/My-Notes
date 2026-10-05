@@ -22,4 +22,11 @@ Similar to [[L2 Normalization|L2 Normalization]], layer normalization also proje
 
 If a batch is stored as a [[Tensor]] $\mathbf{X} \in \mathbb{R}^{N_{batch}\times C}$, layer normalization looks like a "transpose" of [[Batch Normalization|batchnorm]]: batchnorm standardizes each element by the mean and variance of its column (over the batch), while layer normalization standardizes each element by the mean and variance of its row (over the channels of that datapoint).
 
+![[Normalization Schemes.png]]
+
+# Properties
+- **Convolutional case**: avoids batch statistics by normalizing each data example separately, with statistics gathered across both the channels and the spatial positions; there is still a separate learned scale $\gamma$ and offset per channel (Ba et al., 2016).[^2]
+- Special case of [[Group Normalization]] with a single group containing all channels.
+
 [^1]: https://visionbook.mit.edu/neural_nets.html
+[^2]: [Prince, p. 203](zotero://open-pdf/library/items/BWT7FYX5?page=217&annotation=E94CD4T3)
