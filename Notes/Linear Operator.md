@@ -15,6 +15,9 @@ Whether $T$ can be represented by a matrix at all depends on the dimensionality 
 - [[Finite-Dimensional Linear Operator]]
 - [[Infinite-Dimensional Linear Operator]]
 
+## Examples
+- [[Linear Partial Differential Operator]]
+
 # Properties
 - [[Linear Map]]
 

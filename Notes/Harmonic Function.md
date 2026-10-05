@@ -13,4 +13,5 @@ tags:
 - [[Harmonic Conjugate Function]]
 
 # Properties
+- Solutions of the [[Laplace Equation]]; the steady states of the [[Wave Equation]] and [[Diffusion Equation]].
 - Mean value property underlies the [[Walk on Spheres]] Monte Carlo solver for the Laplace equation.

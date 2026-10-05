@@ -11,3 +11,5 @@ tags:
 # Types
 - [[Homogeneous Linear Partial Differential Equation]]
 - [[Inhomogeneous Linear Partial Differential Equation]]
+- [[First Order Partial Differential Equation]]
+- [[Second Order Partial Differential Equation]]
