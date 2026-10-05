@@ -18,6 +18,8 @@ tags:
 # Properties
 - Maps an arbitrary length-$K$ vector to a vector of the same length with elements in $[0, 1]$ that sum to one: the exponentials ensure positivity and the denominator normalizes. Used to obtain the parameters of a categorical distribution for [[Multiclass Classification]] in the [[Maximum Likelihood Loss Function Recipe]], giving the [[Cross-Entropy Loss]].[^2]
 - Sign convention: some texts write $e^{-z_j}$ (treating $\mathbf{z}$ as energies); with the logits interpreted as unnormalized log probabilities, the standard form is $e^{z_j}$.
+- When the inputs have large magnitude, the largest one dominates and the output barely changes with small input changes, so gradients are tiny; this is why [[Scaled Dot-Product Self-Attention]] divides by $\sqrt{D_q}$. In [[Self-Attention]], it turns query-key similarities into non-negative weights that sum to one.[^3]
 
 [^1]: https://visionbook.mit.edu/intro_to_learning.html
 [^2]: [Prince, Ch. 5](zotero://select/library/items/T3V9WVXD)
+[^3]: [Prince, p. 214](zotero://open-pdf/library/items/BWT7FYX5?page=228&annotation=677ZFUPL)

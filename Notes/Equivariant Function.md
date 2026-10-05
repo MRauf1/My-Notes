@@ -21,7 +21,9 @@ More generally, for a [[Group]] $G$ acting on the input space by $\rho_{\text{in
 - [[Convolutional Layer|Convolutional layers]] are equivariant to translation (strictly, to translations by multiples of the stride and away from boundary effects).[^3]
 - A linear operator is translation-equivariant if and only if it is a convolution; this is the [[Shift-Invariant System]] of signal processing (its "shift-invariant" is deep learning's "shift-equivariant").[^2]
 - Compositions of equivariant maps are equivariant, so a stack of convolutional layers with pointwise [[Activation Layer|activations]] is translation-equivariant.[^2]
+- [[Self-Attention]] is equivariant to permutations of its inputs, so word order must be supplied by a [[Positional Encoding]].[^4]
 
 [^1]: [Prince, p. 162](zotero://open-pdf/library/items/BWT7FYX5?page=176&annotation=Z6JPWHMF)
 [^2]: Added from general knowledge.
 [^3]: [Prince, p. 163](zotero://open-pdf/library/items/BWT7FYX5?page=177&annotation=CDIV2Z4I); [Prince, p. 163](zotero://open-pdf/library/items/BWT7FYX5?page=177&annotation=6LPDNNE6)
+[^4]: [Prince, p. 213](zotero://open-pdf/library/items/BWT7FYX5?page=227&annotation=QUSJZKJ7)

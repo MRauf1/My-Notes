@@ -27,6 +27,8 @@ If a batch is stored as a [[Tensor]] $\mathbf{X} \in \mathbb{R}^{N_{batch}\times
 # Properties
 - **Convolutional case**: avoids batch statistics by normalizing each data example separately, with statistics gathered across both the channels and the spatial positions; there is still a separate learned scale $\gamma$ and offset per channel (Ba et al., 2016).[^2]
 - Special case of [[Group Normalization]] with a single group containing all channels.
+- Used in the [[Transformer Layer]], where it normalizes each token embedding separately over its $D$ dimensions. Vaswani et al. (2017) preferred it to [[Batch Normalization|BatchNorm]] because NLP statistics vary greatly between batches; placing it after the residual addition (Post-LN) makes gradients shrink through the network (Xiong et al., 2020).[^3]
 
 [^1]: https://visionbook.mit.edu/neural_nets.html
 [^2]: [Prince, p. 203](zotero://open-pdf/library/items/BWT7FYX5?page=217&annotation=E94CD4T3)
+[^3]: [Prince, p. 216](zotero://open-pdf/library/items/BWT7FYX5?page=230&annotation=89AW73IT); [Prince, p. 237](zotero://open-pdf/library/items/BWT7FYX5?page=251&annotation=X6CE7KIZ)

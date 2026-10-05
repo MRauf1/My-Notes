@@ -14,5 +14,7 @@ tags:
 
 # Properties
 - Sits between [[Supervised Learning]] and [[Unsupervised Learning]]: no human labels, but trained with supervised-style losses ([[Loss Function Taxonomy]] lists contrastive losses).
+- Pre-trains large [[Transformer|transformers]]: masked-word prediction for a [[Transformer Encoder|BERT-style encoder]], next-token prediction for an [[Autoregressive Language Model]], and image-caption matching in [[Contrastive Language-Image Pre-Training|CLIP]].[^2]
 
 [^1]: [Prince, p. 152](zotero://open-pdf/library/items/BWT7FYX5?page=166&annotation=LNWFRNLX); [Prince, p. 152](zotero://open-pdf/library/items/BWT7FYX5?page=166&annotation=MBT9GCER); [Prince, p. 152](zotero://open-pdf/library/items/BWT7FYX5?page=166&annotation=REGDEM4V)
+[^2]: [Prince, p. 220](zotero://open-pdf/library/items/BWT7FYX5?page=234&annotation=BLT8K4BQ)
