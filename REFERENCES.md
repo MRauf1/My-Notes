@@ -37,6 +37,20 @@ A compact list of fundamental papers referenced in the notes.
 ## Regularization
 - Madry, Makelov, Schmidt, Tsipras & Vladu (2018). *Towards Deep Learning Models Resistant to Adversarial Attacks*. ICLR. [arXiv:1706.06083](https://arxiv.org/abs/1706.06083) — [[Adversarial Training]]
 
+## Convolutional Networks
+- Yu & Koltun (2016). *Multi-Scale Context Aggregation by Dilated Convolutions*. ICLR. [arXiv:1511.07122](https://arxiv.org/abs/1511.07122) — [[Dilated Convolution]]
+- Chen, Papandreou, Kokkinos, Murphy & Yuille (2018). *DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs*. TPAMI. [arXiv:1606.00915](https://arxiv.org/abs/1606.00915) — [[Dilated Convolution]]
+- Long, Shelhamer & Darrell (2015). *Fully Convolutional Networks for Semantic Segmentation*. CVPR. [arXiv:1411.4038](https://arxiv.org/abs/1411.4038) — [[Transposed Convolution]]
+- Odena, Dumoulin & Olah (2016). *Deconvolution and Checkerboard Artifacts*. Distill. [doi:10.23915/distill.00003](https://doi.org/10.23915/distill.00003) — [[Transposed Convolution]]
+- Lin, Chen & Yan (2014). *Network in Network*. ICLR. [arXiv:1312.4400](https://arxiv.org/abs/1312.4400) — [[1x1 Convolution]]
+- Tompson, Goroshin, Jain, LeCun & Bregler (2015). *Efficient Object Localization Using Convolutional Networks*. CVPR. [arXiv:1411.4280](https://arxiv.org/abs/1411.4280) — [[Spatial Dropout]]
+- DeVries & Taylor (2017). *Improved Regularization of Convolutional Neural Networks with Cutout*. [arXiv:1708.04552](https://arxiv.org/abs/1708.04552) — [[Cutout]]
+- Erhan, Bengio, Courville & Vincent (2009). *Visualizing Higher-Layer Features of a Deep Network*. Univ. Montréal Tech. Report 1341. — [[Feature Visualization]]
+- Zeiler & Fergus (2014). *Visualizing and Understanding Convolutional Networks*. ECCV. [arXiv:1311.2901](https://arxiv.org/abs/1311.2901) — [[Feature Visualization]]
+- Mahendran & Vedaldi (2015). *Understanding Deep Image Representations by Inverting Them*. CVPR. [arXiv:1412.0035](https://arxiv.org/abs/1412.0035) — [[Feature Visualization]]
+- Bau, Zhou, Khosla, Oliva & Torralba (2017). *Network Dissection: Quantifying Interpretability of Deep Visual Representations*. CVPR. [arXiv:1704.05796](https://arxiv.org/abs/1704.05796) — [[Network Dissection]]
+- Qin, Yu, Liu & Wang (2018). *How Convolutional Neural Networks See the World — A Survey of Convolutional Neural Network Visualization Methods*. Mathematical Foundations of Computing. [arXiv:1804.11191](https://arxiv.org/abs/1804.11191) — [[Feature Visualization]]
+
 ## Hyperparameter Search
 - Bergstra & Bengio (2012). *Random Search for Hyper-Parameter Optimization*. JMLR. [JMLR 13](https://jmlr.org/papers/v13/bergstra12a.html) — [[Hyperparameter Search]]
 - Snoek, Larochelle & Adams (2012). *Practical Bayesian Optimization of Machine Learning Algorithms*. NeurIPS. [arXiv:1206.2944](https://arxiv.org/abs/1206.2944) — [[Bayesian Optimization]]

@@ -10,6 +10,9 @@ tags:
 
 # Types
 - *Class maximisation* - tweak pixels of noise to maximise a class score (Mordvintsev, Olah, Tyka, 2015).[^1]
+- *Optimal stimulus* - start from noise and use gradient ascent on the input to make a hidden unit most active (Erhan et al., 2009; [[Activation Maximization]]).[^5]
+- *Reconstruction* - train a network to reconstruct its input, zero all hidden units but the one of interest, and inspect the reconstruction (Zeiler & Fergus, 2014).[^5]
+- *Network inversion* - find an image reproducing the activations of an entire layer, with a prior encouraging natural-image statistics (Mahendran & Vedaldi, 2015).[^5]
 - *DeepDream* - start from a real image and amplify whatever neurons are already most active, creating a feedback loop in which faint patterns (a cloud resembling a bird) become vivid hallucinations.[^2]
 
 # Properties
@@ -22,3 +25,4 @@ tags:
 [^2]: [Christian, 2021, p. 115](zotero://open-pdf/library/items/P27SWKW4?page=115&annotation=KXY2ZSCM)
 [^3]: [Christian, 2021, p. 116](zotero://open-pdf/library/items/P27SWKW4?page=116&annotation=PLK7ELMW)
 [^4]: [Christian, 2021, p. 116](zotero://open-pdf/library/items/P27SWKW4?page=116&annotation=WQX6C8RQ)
+[^5]: [Prince, p. 184](zotero://open-pdf/library/items/BWT7FYX5?page=198&annotation=4MI4XBLU)

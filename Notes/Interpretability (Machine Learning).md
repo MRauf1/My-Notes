@@ -12,6 +12,7 @@ tags:
 - Intrinsically interpretable models - rule-based models (among the most easily interpreted) and generalized additive models (sums of per-feature shape functions, generalising the [[Generalized Linear Model]]), which can match neural-network accuracy while being far more transparent.[^2]
 - [[Saliency Map|Saliency maps]]
 - [[Feature Visualization]]
+- [[Network Dissection]]
 - [[Concept Activation Vector|Concept activation vectors]] (TCAV)
 - [[Multitask Learning]], which can improve transparency as a side effect.
 

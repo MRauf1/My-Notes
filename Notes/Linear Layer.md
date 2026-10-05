@@ -12,4 +12,6 @@ Layer in [[Deep Neural Network|DNNs]] that compute a [[Linear Function|linear tr
 - Also called a **fully connected** layer, since every element in one layer connects to every element in the next ([[Feed-Forward Neural Network]]).
 - Mathematically, the function computed, $\mathbf{x}_{out} = \mathbf{W}\mathbf{x}_{in} + \mathbf{b}$, is [[Affine Transformation|affine]] rather than strictly linear, because of the added bias $\mathbf{b}$; it is called a linear layer only by convention, and can equivalently be viewed as a genuinely linear function of the augmented input $\begin{bmatrix}\mathbf{x}_{in} \\ 1\end{bmatrix}$.
 
+- A [[Convolutional Layer]] is a special case with most weights zero and the rest shared; a [[1x1 Convolution]] applies the same linear layer at every spatial position.
+
 [^1]: https://visionbook.mit.edu/neural_nets.html

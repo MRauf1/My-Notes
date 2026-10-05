@@ -14,4 +14,6 @@ tags:
 - Fully characterized by its [[Optical Transfer Function]] in the frequency domain, or equivalently by its [[Point Spread Function]] (or, for one-dimensional stimuli, [[Line Spread Function]]) in the spatial domain.
 - The optics of the human eye are approximately shift-invariant near the [[Fovea]], which licenses inferring the eye's complete [[Retinal Image Formation|imaging behavior]] from a single measured point or line response.
 
+- In deep learning terms, such a system is translation-[[Equivariant Function|equivariant]], and is implemented by a [[Convolutional Layer]].
+
 [^1]: [Foundations of Vision (Wandell)](zotero://open-pdf/library/items/YYQVJZJ3?page=19&annotation=HTIZEXPP)

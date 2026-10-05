@@ -18,7 +18,7 @@ Both increasing depth and width (the number of neurons in a single hidden layer)
 # Components
 ## Linear Layers
 - [[Linear Layer|Linear Layer]]
-- [[Convolutional Layer]]
+- [[Convolutional Layer]] ([[Convolutional Neural Network]])
 - [[Attention Layer]]
 
 ## Non-Linear Layer

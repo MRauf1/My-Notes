@@ -16,9 +16,11 @@ tags:
 	- **Monte Carlo dropout**: run the network several times with different random units dropped and combine the results, like an [[Ensemble Learning|ensemble]] that does not require training or storing multiple networks.
 - Equivalent to multiplicative Bernoulli noise on the activations, which generalizes to [[Noise Injection (Regularization)|injecting noise]] elsewhere in the network.[^5]
 - Combines multiple models, makes the function smoother, and finds wider minima ([[Regularization]]).
+- Less effective for [[Convolutional Layer|convolutional layers]] (Park & Kwak, 2016), plausibly because neighbouring pixels are highly correlated so a dropped unit's information still passes via adjacent positions; this motivates [[Spatial Dropout]] and [[Cutout]].[^6]
 
 [^1]: [Prince, p. 147](zotero://open-pdf/library/items/BWT7FYX5?page=161&annotation=2U7TCMBA)
 [^2]: [Prince, p. 147](zotero://open-pdf/library/items/BWT7FYX5?page=161&annotation=U3CDEX8D); [Prince, p. 148](zotero://open-pdf/library/items/BWT7FYX5?page=162&annotation=8YV25M2V)
 [^3]: [Prince, p. 148](zotero://open-pdf/library/items/BWT7FYX5?page=162&annotation=F42NTSD9)
 [^4]: Inverted dropout added from general knowledge.
 [^5]: [Prince, p. 149](zotero://open-pdf/library/items/BWT7FYX5?page=163&annotation=76BUIMJ6)
+[^6]: [Prince, p. 183](zotero://open-pdf/library/items/BWT7FYX5?page=197&annotation=V6VYB47L)
