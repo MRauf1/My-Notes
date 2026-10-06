@@ -11,6 +11,7 @@ tags:
 # Properties
 - The extreme variant of input [[Noise Injection (Regularization)|noise injection]], which smooths the learned function.
 - Commonly formulated as the min-max problem $\min_{\boldsymbol{\phi}} \sum_i \max_{\lVert \boldsymbol{\delta}_i \rVert \leq \epsilon} \ell_i[\mathbf{x}_i + \boldsymbol{\delta}_i, \mathbf{y}_i]$.[^2]
+- Distinct from the [[Adversarial Loss]] of [[Generative Adversarial Network|GANs]], where an adversary judges output realism rather than perturbing inputs.
 
 [^1]: [Prince, p. 149](zotero://open-pdf/library/items/BWT7FYX5?page=163&annotation=8LN97ID5)
 [^2]: Min-max formulation added from general knowledge (Madry et al., 2018).

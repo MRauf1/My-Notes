@@ -21,6 +21,7 @@ tags:
 - Relies on what the Inception features retain: discarded information, which may matter for realism, does not contribute.
 - Sensitive to both realism and diversity but does not separate them; [[Manifold Precision and Recall]] does.[^3]
 - Lower is better.
+- See [[Wasserstein Distance]] for the general transport formulation.
 
 [^1]: [Prince, p. 273](zotero://open-pdf/library/items/BWT7FYX5?page=287&annotation=MFCGQUJT)
 [^2]: [Prince, p. 274](zotero://open-pdf/library/items/BWT7FYX5?page=288&annotation=5U2JGI6R)

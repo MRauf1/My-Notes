@@ -118,6 +118,27 @@ A compact list of fundamental papers referenced in the notes.
 - Bau, Zhou, Khosla, Oliva & Torralba (2017). *Network Dissection: Quantifying Interpretability of Deep Visual Representations*. CVPR. [arXiv:1704.05796](https://arxiv.org/abs/1704.05796) — [[Network Dissection]]
 - Qin, Yu, Liu & Wang (2018). *How Convolutional Neural Networks See the World — A Survey of Convolutional Neural Network Visualization Methods*. Mathematical Foundations of Computing. [arXiv:1804.11191](https://arxiv.org/abs/1804.11191) — [[Feature Visualization]]
 
+## Generative Adversarial Networks
+- Goodfellow et al. (2014). *Generative Adversarial Nets*. NeurIPS. [arXiv:1406.2661](https://arxiv.org/abs/1406.2661) — [[Generative Adversarial Network]]
+- Radford, Metz & Chintala (2016). *Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks*. ICLR. [arXiv:1511.06434](https://arxiv.org/abs/1511.06434) — [[DCGAN]]
+- Arjovsky & Bottou (2017). *Towards Principled Methods for Training Generative Adversarial Networks*. ICLR. [arXiv:1701.04862](https://arxiv.org/abs/1701.04862) — [[Generative Adversarial Network]]
+- Arjovsky, Chintala & Bottou (2017). *Wasserstein Generative Adversarial Networks*. ICML. [arXiv:1701.07875](https://arxiv.org/abs/1701.07875) — [[Wasserstein GAN]]
+- Gulrajani, Ahmed, Arjovsky, Dumoulin & Courville (2017). *Improved Training of Wasserstein GANs*. NeurIPS. [arXiv:1704.00028](https://arxiv.org/abs/1704.00028) — [[Wasserstein GAN]]
+- Miyato, Kataoka, Koyama & Yoshida (2018). *Spectral Normalization for Generative Adversarial Networks*. ICLR. [arXiv:1802.05957](https://arxiv.org/abs/1802.05957) — [[Wasserstein GAN]]
+- Salimans, Goodfellow, Zaremba, Cheung, Radford & Chen (2016). *Improved Techniques for Training GANs*. NeurIPS. [arXiv:1606.03498](https://arxiv.org/abs/1606.03498) — [[Minibatch Discrimination]]
+- Karras, Aila, Laine & Lehtinen (2018). *Progressive Growing of GANs for Improved Quality, Stability, and Variation*. ICLR. [arXiv:1710.10196](https://arxiv.org/abs/1710.10196) — [[Progressive Growing]]
+- Brock, Donahue & Simonyan (2019). *Large Scale GAN Training for High Fidelity Natural Image Synthesis* (BigGAN). ICLR. [arXiv:1809.11096](https://arxiv.org/abs/1809.11096) — [[Truncation Trick]]
+- Mirza & Osindero (2014). *Conditional Generative Adversarial Nets*. [arXiv:1411.1784](https://arxiv.org/abs/1411.1784) — [[Conditional GAN]]
+- Odena, Olah & Shlens (2017). *Conditional Image Synthesis with Auxiliary Classifier GANs*. ICML. [arXiv:1610.09585](https://arxiv.org/abs/1610.09585) — [[Auxiliary Classifier GAN]]
+- Chen, Duan, Houthooft, Schulman, Sutskever & Abbeel (2016). *InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets*. NeurIPS. [arXiv:1606.03657](https://arxiv.org/abs/1606.03657) — [[InfoGAN]]
+- Isola, Zhu, Zhou & Efros (2017). *Image-to-Image Translation with Conditional Adversarial Networks*. CVPR. [arXiv:1611.07004](https://arxiv.org/abs/1611.07004) — [[Pix2Pix]], [[PatchGAN]]
+- Ledig et al. (2017). *Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network*. CVPR. [arXiv:1609.04802](https://arxiv.org/abs/1609.04802) — [[SRGAN]]
+- Johnson, Alahi & Fei-Fei (2016). *Perceptual Losses for Real-Time Style Transfer and Super-Resolution*. ECCV. [arXiv:1603.08155](https://arxiv.org/abs/1603.08155) — [[Perceptual Loss]]
+- Zhu, Park, Isola & Efros (2017). *Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks*. ICCV. [arXiv:1703.10593](https://arxiv.org/abs/1703.10593) — [[CycleGAN]]
+- Huang & Belongie (2017). *Arbitrary Style Transfer in Real-Time with Adaptive Instance Normalization*. ICCV. [arXiv:1703.06868](https://arxiv.org/abs/1703.06868) — [[Adaptive Instance Normalization]]
+- Karras, Laine & Aila (2019). *A Style-Based Generator Architecture for Generative Adversarial Networks*. CVPR. [arXiv:1812.04948](https://arxiv.org/abs/1812.04948) — [[StyleGAN]]
+- Xia, Zhang, Yang, Xue, Zhou & Yang (2022). *GAN Inversion: A Survey*. TPAMI. [arXiv:2101.05278](https://arxiv.org/abs/2101.05278) — [[GAN Inversion]]
+
 ## Hyperparameter Search
 - Bergstra & Bengio (2012). *Random Search for Hyper-Parameter Optimization*. JMLR. [JMLR 13](https://jmlr.org/papers/v13/bergstra12a.html) — [[Hyperparameter Search]]
 - Snoek, Larochelle & Adams (2012). *Practical Bayesian Optimization of Machine Learning Algorithms*. NeurIPS. [arXiv:1206.2944](https://arxiv.org/abs/1206.2944) — [[Bayesian Optimization]]

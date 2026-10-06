@@ -40,6 +40,7 @@ $$
   The second term is independent of $\boldsymbol{\theta}$ and the first is the negative log likelihood, so minimizing this KL divergence is equivalent to [[Maximum Likelihood Estimation|maximum likelihood]] ([[Density Estimation]]).
 - [[Mutual Information]] is the KL divergence between a joint distribution and the product of its marginals.
 - The [[Inception Score]] exponentiates the average KL divergence between per-sample class predictions and their marginal.
+- The [[Jensen-Shannon Divergence]] symmetrizes it by averaging the KL divergences of each distribution from their mixture.
 
 [^1]: [Bishop, 2006, p. 55](zotero://open-pdf/library/items/5G99AZ8U?page=75&annotation=AU4JTTL2)
 [^2]: [Bishop, 2006, p. 55](zotero://open-pdf/library/items/5G99AZ8U?page=75&annotation=RQNP4C83)
