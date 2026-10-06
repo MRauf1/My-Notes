@@ -42,6 +42,13 @@ $$
 - The [[Inception Score]] exponentiates the average KL divergence between per-sample class predictions and their marginal.
 - The [[Jensen-Shannon Divergence]] symmetrizes it by averaging the KL divergences of each distribution from their mixture.
 - **Forward vs reverse**: fitting a model to samples by maximum likelihood minimizes the forward divergence $\mathrm{KL}(p_{\text{data}} \| q_{\boldsymbol{\theta}})$, while fitting a sampler to an evaluable target density minimizes the reverse divergence $\mathrm{KL}(q_{\boldsymbol{\theta}} \| p)$ ([[Probability Density Distillation]]).
+- **Between normals**: for $k$-dimensional normals,
+$$
+\begin{align}
+D_{KL}\left[\mathrm{Norm}[\boldsymbol{\mu}_0, \boldsymbol{\Sigma}_0] \,\|\, \mathrm{Norm}[\boldsymbol{\mu}_1, \boldsymbol{\Sigma}_1]\right] = \frac{1}{2}\left(\mathrm{Tr}\left[\boldsymbol{\Sigma}_1^{-1}\boldsymbol{\Sigma}_0\right] + (\boldsymbol{\mu}_1 - \boldsymbol{\mu}_0)^T\boldsymbol{\Sigma}_1^{-1}(\boldsymbol{\mu}_1 - \boldsymbol{\mu}_0) - k + \log\frac{\det[\boldsymbol{\Sigma}_1]}{\det[\boldsymbol{\Sigma}_0]}\right)
+\end{align}
+$$
+  With a standard normal second argument this reduces to $\frac{1}{2}\left(\mathrm{Tr}[\boldsymbol{\Sigma}] + \boldsymbol{\mu}^T\boldsymbol{\mu} - k - \log\det[\boldsymbol{\Sigma}]\right)$, the closed-form prior term of the [[Variational Autoencoder]] loss ([[Evidence Lower Bound]]).[^7]
 
 [^1]: [Bishop, 2006, p. 55](zotero://open-pdf/library/items/5G99AZ8U?page=75&annotation=AU4JTTL2)
 [^2]: [Bishop, 2006, p. 55](zotero://open-pdf/library/items/5G99AZ8U?page=75&annotation=RQNP4C83)
@@ -49,3 +56,4 @@ $$
 [^4]: [Bishop, 2006, p. 57](zotero://open-pdf/library/items/5G99AZ8U?page=77&annotation=DS4TLMUV)
 [^5]: [Bishop, 2006, p. 57](zotero://open-pdf/library/items/5G99AZ8U?page=77&annotation=ZLT8Z9K5)
 [^6]: [Bishop, 2006, p. 57](zotero://open-pdf/library/items/5G99AZ8U?page=77&annotation=SNY35FXQ)
+[^7]: [Prince, p. 337](zotero://open-pdf/library/items/BWT7FYX5?page=351&annotation=2QERDKHE)

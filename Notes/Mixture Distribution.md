@@ -38,7 +38,7 @@ $$
   the average within-component variance plus the variance of the component means, since the cross terms integrate to zero. This is the [[Law of Total Variance]] with the component label as the conditioning variable, so a mixture is more spread out than its average component.
 - A mixture is not a [[Linear Combination of Random Variables]]: the pdf $\sum p_i f_i$ is a weighted average of densities, whereas $\sum a_i X_i$ is a weighted sum of random variables with a convolution-type pdf, and their means and variances follow different rules.[^3]
 - Compounding typically thickens tails: Poisson with a gamma-distributed rate gives the [[Negative Binomial Distribution]], and a gamma with a gamma-distributed rate gives the (generalized) [[Pareto Distribution]].
-- Examples: the [[Contaminated Normal Distribution]], Gaussian mixture models, and the prior predictive $\int p(y|\theta)p(\theta)\,d\theta$ in [[Bayes' Theorem|Bayesian inference]].
+- Examples: the [[Contaminated Normal Distribution]], the [[Mixture of Gaussians]] (a [[Latent Variable Model|latent variable model]] with a categorical latent), and the prior predictive $\int p(y|\theta)p(\theta)\,d\theta$ in [[Bayes' Theorem|Bayesian inference]].
 - Not to be confused with a [[Mixture Random Variable]], whose cdf mixes a discrete and a continuous part (though such a variable is itself a two-component mixture in this sense).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=234)

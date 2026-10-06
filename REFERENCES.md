@@ -158,6 +158,18 @@ A compact list of fundamental papers referenced in the notes.
 - Hutchinson (1989). *A Stochastic Estimator of the Trace of the Influence Matrix for Laplacian Smoothing Splines*. Communications in Statistics — Simulation and Computation 18(3). — [[Hutchinson's Trace Estimator]]
 - Theis, van den Oord & Bethge (2016). *A Note on the Evaluation of Generative Models*. ICLR. [arXiv:1511.01844](https://arxiv.org/abs/1511.01844) — [[Dequantization]]
 
+## Variational Autoencoders
+- Kingma & Welling (2014). *Auto-Encoding Variational Bayes*. ICLR. [arXiv:1312.6114](https://arxiv.org/abs/1312.6114) — [[Variational Autoencoder]], [[Reparameterization Trick]]
+- Rezende, Mohamed & Wierstra (2014). *Stochastic Backpropagation and Approximate Inference in Deep Generative Models*. ICML. [arXiv:1401.4082](https://arxiv.org/abs/1401.4082) — [[Variational Autoencoder]], [[Reparameterization Trick]]
+- Kingma & Welling (2019). *An Introduction to Variational Autoencoders*. Foundations and Trends in Machine Learning 12(4). [arXiv:1906.02691](https://arxiv.org/abs/1906.02691) — [[Variational Autoencoder]], [[Evidence Lower Bound]]
+- Blei, Kucukelbir & McAuliffe (2017). *Variational Inference: A Review for Statisticians*. JASA 112(518). [arXiv:1601.00670](https://arxiv.org/abs/1601.00670) — [[Variational Inference]], [[Evidence Lower Bound]]
+- Burda, Grosse & Salakhutdinov (2016). *Importance Weighted Autoencoders*. ICLR. [arXiv:1509.00519](https://arxiv.org/abs/1509.00519) — [[Variational Autoencoder]]
+- Vahdat & Kautz (2020). *NVAE: A Deep Hierarchical Variational Autoencoder*. NeurIPS. [arXiv:2007.03898](https://arxiv.org/abs/2007.03898) — [[Variational Autoencoder]]
+- Bowman, Vilnis, Vinyals, Dai, Jozefowicz & Bengio (2016). *Generating Sentences from a Continuous Space*. CoNLL. [arXiv:1511.06349](https://arxiv.org/abs/1511.06349) — [[Posterior Collapse]]
+- Razavi, van den Oord, Poole & Vinyals (2019). *Preventing Posterior Collapse with delta-VAEs*. ICLR. [arXiv:1901.03416](https://arxiv.org/abs/1901.03416) — [[Posterior Collapse]]
+- Lucas, Tucker, Grosse & Norouzi (2019). *Don't Blame the ELBO! A Linear VAE Perspective on Posterior Collapse*. NeurIPS. [arXiv:1911.02469](https://arxiv.org/abs/1911.02469) — [[Posterior Collapse]]
+- van den Oord, Vinyals & Kavukcuoglu (2017). *Neural Discrete Representation Learning*. NeurIPS. [arXiv:1711.00937](https://arxiv.org/abs/1711.00937) — [[Posterior Collapse]]
+
 ## Hyperparameter Search
 - Bergstra & Bengio (2012). *Random Search for Hyper-Parameter Optimization*. JMLR. [JMLR 13](https://jmlr.org/papers/v13/bergstra12a.html) — [[Hyperparameter Search]]
 - Snoek, Larochelle & Adams (2012). *Practical Bayesian Optimization of Machine Learning Algorithms*. NeurIPS. [arXiv:1206.2944](https://arxiv.org/abs/1206.2944) — [[Bayesian Optimization]]

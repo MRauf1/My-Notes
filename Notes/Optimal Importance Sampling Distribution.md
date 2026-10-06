@@ -20,5 +20,6 @@ For a signed integrand, no choice of $p$ achieves zero variance — the best ava
 # Properties
 - Only attainable in the nonnegative-$f$ case; a signed integrand can only be tracked in magnitude.
 - Practically approximated rather than computed exactly, since it depends on the unknown $I$.
+- For a marginal likelihood $\int Pr(\mathbf{x}|\mathbf{z})Pr(\mathbf{z})\,d\mathbf{z}$, $p^\star$ is the posterior $Pr(\mathbf{z}|\mathbf{x})$, so a [[Variational Inference|variational]] approximation of it (e.g. the encoder of a [[Variational Autoencoder]]) is a natural proposal.
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)
