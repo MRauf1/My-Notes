@@ -16,4 +16,9 @@ Latent variables, while used primarily in [[Unsupervised Learning|unsupervised l
 2) Since latent variables correspond to plausible data, one can better enforce the model to produce more plausible examples through using latent variables
 3) By adding randomness to the mapping between either the latent variables or the latent variable with the corresponding output, one can generate multiple images with the supervised constraint (like images following a certain caption).
 
+# Properties
+- A latent variable $\mathbf{z}$ can be viewed as a compressed version of a data example $\mathbf{x}$ capturing its essential qualities; the mapping between $\mathbf{x}$ and $\mathbf{z}$ may go either direction ([[Unsupervised Learning]], [[Generative Model]]).[^2]
+- Desired latent-space properties for generative models (well-behaved, disentangled): [[Generative Model Desiderata]].
+
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=23)
+[^2]: [Prince, p. 269](zotero://open-pdf/library/items/BWT7FYX5?page=283&annotation=R3VM8G8Y)
