@@ -19,6 +19,7 @@ For a [[Latent Variable Model|latent variable model]] $Pr(\mathbf{x}, \mathbf{z}
 # Properties
 - Exact and non-iterative, unlike [[Markov Chain Monte Carlo]]; it only requires that each conditional be easy to sample.
 - Used to generate from the [[Nonlinear Latent Variable Model]] and hence a [[Variational Autoencoder]]: $\mathbf{z}^* \sim \mathrm{Norm}_{\mathbf{z}}[\mathbf{0}, \mathbf{I}]$, then $\mathbf{x}^* \sim \mathrm{Norm}_{\mathbf{x}}[\mathbf{f}[\mathbf{z}^*, \boldsymbol{\phi}], \sigma^2\mathbf{I}]$.
+- Generates from a [[Diffusion Model|diffusion model]] by walking the learned reverse chain $\mathbf{z}_T \to \mathbf{z}_{T-1} \to \dots \to \mathbf{x}$, drawing each step from its Gaussian conditional.
 - The two-stage view of sampling from a [[Mixture Distribution]] (pick a component, then draw from it) is ancestral sampling.
 
 [^1]: [Prince, p. 329](zotero://open-pdf/library/items/BWT7FYX5?page=343&annotation=PERWBZVB)

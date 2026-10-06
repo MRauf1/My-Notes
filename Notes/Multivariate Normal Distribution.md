@@ -53,6 +53,7 @@ So $\boldsymbol{\mu}$ is the [[Mean Vector]] and $\Sigma$ the covariance matrix,
 - [[Multivariate Normal Distribution Affine Transformation]]: $A\mathbf{X} + \mathbf{b} \sim N_m(A\boldsymbol{\mu} + \mathbf{b}, A\Sigma A^T)$; hence all marginals are normal.
 - [[Multivariate Normal Distribution Independence]]: subvectors are independent iff uncorrelated.
 - [[Multivariate Normal Distribution Conditional Distribution]]: conditionals are normal with linear mean and constant covariance.
+- [[Multivariate Normal Density Product]]: a product of normal densities in the same variable is an unnormalized normal density (precisions add).
 - [[Principal Component Analysis]]: rotating to the eigenbasis of $\Sigma$ gives independent components.
 - Sampling: $\boldsymbol{\mu} + A\mathbf{Z}$ for any $AA^T = \Sigma$ ([[Multivariate Normal Sampling (Cholesky Factorization)]]).
 

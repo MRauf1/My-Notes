@@ -11,6 +11,7 @@ tags:
 # Properties
 - Trades diversity for quality: reduces the variation of the samples but improves their fidelity.[^1]
 - The threshold acts as a knob along the precision–recall trade-off ([[Manifold Precision and Recall]]).
+- Analogous to over-weighting the condition in [[Classifier-Free Guidance|classifier-free guidance]] for diffusion models, which also trades diversity for typicality.
 - In [[StyleGAN]], truncation is applied in the intermediate latent space by shrinking $\mathbf{w}$ toward its mean, $\mathbf{w}' = \bar{\mathbf{w}} + \psi(\mathbf{w} - \bar{\mathbf{w}})$ with $\psi < 1$.
 
 [^1]: [Prince, p. 289](zotero://open-pdf/library/items/BWT7FYX5?page=303&annotation=BNF8TWA5)
