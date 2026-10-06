@@ -35,7 +35,8 @@ The size of the region over which inputs are combined is the **kernel size**. Si
 - **Inductive bias**: forcing every position to be processed in the same way embeds prior knowledge (e.g. that objects are translated templates), so the network searches a smaller family of plausible input/output mappings and generalizes better than a fully connected network on the same data; equivalently, the convolutional structure is a [[Regularization|regularizer]] that applies an infinite penalty to most solutions a fully connected network can describe ([[Inductive Bias]]).[^7]
 - Stacking convolutional layers grows the [[Receptive Field]] of the hidden units, gradually integrating information across the input ([[Convolutional Neural Network]]).
 - Output length along one dimension, for input length $N$, padding $P$ per side, kernel size $K$, stride $s$, and dilation $d$: $\left\lfloor \frac{N + 2P - d(K-1) - 1}{s} \right\rfloor + 1$.[^8]
-- What deep learning calls convolution is, strictly, [[Cross Correlation|cross-correlation]] (the kernel is not flipped); since the kernel is learned, the distinction is immaterial.[^8]
+- Implements the signal-processing [[Convolution]] of an [[Shift-Invariant System|LTI system]] (plus bias and nonlinearity).
+- What deep learning calls convolution is, strictly, [[Cross Correlation (Signal Processing)|cross-correlation]] (the kernel is not flipped); since the kernel is learned, the distinction is immaterial.[^8]
 
 [^1]: [Prince, p. 163](zotero://open-pdf/library/items/BWT7FYX5?page=177&annotation=CDIV2Z4I); [Prince, p. 165](zotero://open-pdf/library/items/BWT7FYX5?page=179&annotation=VVB64TAG); [Prince, p. 170](zotero://open-pdf/library/items/BWT7FYX5?page=184&annotation=HX4JTQUR)
 [^2]: [Prince, p. 161](zotero://open-pdf/library/items/BWT7FYX5?page=175&annotation=TULQ84TG); [Prince, p. 161](zotero://open-pdf/library/items/BWT7FYX5?page=175&annotation=B4WFN4CF)

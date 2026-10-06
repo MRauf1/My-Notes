@@ -13,4 +13,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- As a signal, $\delta[n] = \delta_{n0}$ is the discrete impulse, the identity of discrete [[Convolution|convolution]] and the discrete analogue of the [[Dirac Delta Function]].
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=40)

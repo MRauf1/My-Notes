@@ -16,3 +16,4 @@ tags:
 
 # Properties
 - [[Cross Correlation Basic Properties]]
+- Signal-processing counterpart: [[Cross Correlation (Signal Processing)]]
