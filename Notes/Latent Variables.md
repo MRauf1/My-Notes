@@ -20,6 +20,7 @@ Latent variables, while used primarily in [[Unsupervised Learning|unsupervised l
 - A latent variable $\mathbf{z}$ can be viewed as a compressed version of a data example $\mathbf{x}$ capturing its essential qualities; the mapping between $\mathbf{x}$ and $\mathbf{z}$ may go either direction ([[Unsupervised Learning]], [[Generative Model]]).[^2]
 - Desired latent-space properties for generative models (well-behaved, disentangled): [[Generative Model Desiderata]].
 - In a [[Generative Adversarial Network|GAN]], latents are mapped to data by the generator; mapping a real image back to latent space is [[GAN Inversion]].
+- In a [[Normalizing Flow|normalizing flow]], the latent variables have the same dimension as the data and are related to it by an invertible network.
 
 [^1]: [Understanding Deep Learning](zotero://open-pdf/library/items/RTSRBVL6?page=23)
 [^2]: [Prince, p. 269](zotero://open-pdf/library/items/BWT7FYX5?page=283&annotation=R3VM8G8Y)

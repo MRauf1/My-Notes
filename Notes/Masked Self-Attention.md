@@ -19,6 +19,7 @@ tags:
 - Each output embedding then depends only on the current and previous tokens, i.e. it represents a partial sentence.[^1]
 - During generation, earlier embeddings never depend on later tokens, so their computation can be cached and reused as each new token is appended.[^2]
 - The decoder's interaction matrix is lower triangular: about half the interactions of an encoder, but still quadratic in $N$ ([[Sparse Attention]]).[^3]
+- The same masking principle computes all outputs of a masked [[Autoregressive Flow|autoregressive flow]] in parallel.
 
 [^1]: [Prince, p. 223](zotero://open-pdf/library/items/BWT7FYX5?page=237&annotation=FWWCN2W4)
 [^2]: [Prince, p. 224](zotero://open-pdf/library/items/BWT7FYX5?page=238&annotation=RA4LFNCM)

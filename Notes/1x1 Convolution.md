@@ -17,6 +17,7 @@ tags:
 - Changes the number of [[Feature Map|channels]] between layers without spatial pooling, usually so that the representation can be combined with another parallel computation (e.g. residual or multi-branch architectures).[^1]
 - With a bias and activation function it is equivalent to running the same fully connected network ([[Linear Layer]]) on the channel vector at every position.[^1]
 - Lin et al. (2014), *Network in Network*, is an early example.[^2]
+- An invertible 1×1 convolution acts as a learned channel permutation ([[Linear Flow]]) between [[Coupling Flow|coupling layers]] in [[Glow]].
 
 [^1]: [Prince, p. 174](zotero://open-pdf/library/items/BWT7FYX5?page=188&annotation=W2QKD4EC); [Prince, p. 171](zotero://open-pdf/library/items/BWT7FYX5?page=185&annotation=2BL7VV7Z)
 [^2]: [Prince, p. 181](zotero://open-pdf/library/items/BWT7FYX5?page=195&annotation=GA9QQRVM)

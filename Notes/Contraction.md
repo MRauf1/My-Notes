@@ -14,5 +14,6 @@ tags:
 > $$
 
 # Properties
-- A contraction on a [[Complete Metric Space]] has a unique fixed point, to which iterating $T$ from any starting point converges.
+- A contraction on a [[Complete Metric Space]] has a unique fixed point, to which iterating $T$ from any starting point converges ([[Banach Fixed-Point Theorem]]).
+- Equivalently, $T$ is [[Lipschitz Continuity|Lipschitz]] with constant less than one.
 - The [[Bellman Optimality Operator]] is a $\gamma$-contraction under the [[Infinity Norm|infinity norm]], which underlies the convergence of [[Value Iteration]].

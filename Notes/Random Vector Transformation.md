@@ -94,6 +94,7 @@ Each point of $\mathcal{T}$ has exactly one preimage in each $A_i$, so $\{\mathb
 # Properties
 - Multivariate generalization of the univariate [[Random Variable Transformation]]; the $n$-dimensional version replaces $J$ by the $n \times n$ Jacobian determinant of the inverse map.
 - If $T$ is only piecewise one-to-one, sum over the pieces (Theorem 4), as in the univariate case.
+- [[Normalizing Flow|Normalizing flows]] use the $n$-dimensional formula with a deep invertible network as the transformation, giving an exact likelihood for a learned density.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=116)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=118)

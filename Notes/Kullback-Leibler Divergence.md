@@ -41,6 +41,7 @@ $$
 - [[Mutual Information]] is the KL divergence between a joint distribution and the product of its marginals.
 - The [[Inception Score]] exponentiates the average KL divergence between per-sample class predictions and their marginal.
 - The [[Jensen-Shannon Divergence]] symmetrizes it by averaging the KL divergences of each distribution from their mixture.
+- **Forward vs reverse**: fitting a model to samples by maximum likelihood minimizes the forward divergence $\mathrm{KL}(p_{\text{data}} \| q_{\boldsymbol{\theta}})$, while fitting a sampler to an evaluable target density minimizes the reverse divergence $\mathrm{KL}(q_{\boldsymbol{\theta}} \| p)$ ([[Probability Density Distillation]]).
 
 [^1]: [Bishop, 2006, p. 55](zotero://open-pdf/library/items/5G99AZ8U?page=75&annotation=AU4JTTL2)
 [^2]: [Bishop, 2006, p. 55](zotero://open-pdf/library/items/5G99AZ8U?page=75&annotation=RQNP4C83)

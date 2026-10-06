@@ -139,6 +139,25 @@ A compact list of fundamental papers referenced in the notes.
 - Karras, Laine & Aila (2019). *A Style-Based Generator Architecture for Generative Adversarial Networks*. CVPR. [arXiv:1812.04948](https://arxiv.org/abs/1812.04948) — [[StyleGAN]]
 - Xia, Zhang, Yang, Xue, Zhou & Yang (2022). *GAN Inversion: A Survey*. TPAMI. [arXiv:2101.05278](https://arxiv.org/abs/2101.05278) — [[GAN Inversion]]
 
+## Normalizing Flows
+- Rezende & Mohamed (2015). *Variational Inference with Normalizing Flows*. ICML. [arXiv:1505.05770](https://arxiv.org/abs/1505.05770) — [[Normalizing Flow]]
+- Kobyzev, Prince & Brubaker (2020). *Normalizing Flows: An Introduction and Review of Current Methods*. TPAMI. [arXiv:1908.09257](https://arxiv.org/abs/1908.09257) — [[Normalizing Flow]]
+- Papamakarios, Nalisnick, Rezende, Mohamed & Lakshminarayanan (2021). *Normalizing Flows for Probabilistic Modeling and Inference*. JMLR. [arXiv:1912.02762](https://arxiv.org/abs/1912.02762) — [[Normalizing Flow]]
+- Dinh, Krueger & Bengio (2015). *NICE: Non-linear Independent Components Estimation*. ICLR Workshop. [arXiv:1410.8516](https://arxiv.org/abs/1410.8516) — [[Coupling Flow]]
+- Dinh, Sohl-Dickstein & Bengio (2017). *Density Estimation Using Real NVP*. ICLR. [arXiv:1605.08803](https://arxiv.org/abs/1605.08803) — [[Coupling Flow]], [[Multi-Scale Flow]]
+- Kingma & Dhariwal (2018). *Glow: Generative Flow with Invertible 1x1 Convolutions*. NeurIPS. [arXiv:1807.03039](https://arxiv.org/abs/1807.03039) — [[Glow]], [[Linear Flow]]
+- Müller, McWilliams, Rousselle, Gross & Novák (2019). *Neural Importance Sampling*. ACM TOG. [arXiv:1808.03856](https://arxiv.org/abs/1808.03856) — [[Elementwise Flow]]
+- Durkan, Bekasov, Murray & Papamakarios (2019). *Neural Spline Flows*. NeurIPS. [arXiv:1906.04032](https://arxiv.org/abs/1906.04032) — [[Elementwise Flow]]
+- Papamakarios, Pavlakou & Murray (2017). *Masked Autoregressive Flow for Density Estimation*. NeurIPS. [arXiv:1705.07057](https://arxiv.org/abs/1705.07057) — [[Autoregressive Flow]]
+- Kingma, Salimans, Jozefowicz, Chen, Sutskever & Welling (2016). *Improved Variational Inference with Inverse Autoregressive Flow*. NeurIPS. [arXiv:1606.04934](https://arxiv.org/abs/1606.04934) — [[Autoregressive Flow]]
+- Huang, Krueger, Lacoste & Courville (2018). *Neural Autoregressive Flows*. ICML. [arXiv:1804.00779](https://arxiv.org/abs/1804.00779) — [[Autoregressive Flow]]
+- van den Oord et al. (2018). *Parallel WaveNet: Fast High-Fidelity Speech Synthesis*. ICML. [arXiv:1711.10433](https://arxiv.org/abs/1711.10433) — [[Probability Density Distillation]]
+- Gomez, Ren, Urtasun & Grosse (2017). *The Reversible Residual Network: Backpropagation Without Storing Activations*. NeurIPS. [arXiv:1707.04585](https://arxiv.org/abs/1707.04585) — [[Residual Flow]]
+- Behrmann, Grathwohl, Chen, Duvenaud & Jacobsen (2019). *Invertible Residual Networks*. ICML. [arXiv:1811.00995](https://arxiv.org/abs/1811.00995) — [[Residual Flow]]
+- Chen, Behrmann, Duvenaud & Jacobsen (2019). *Residual Flows for Invertible Generative Modeling*. NeurIPS. [arXiv:1906.02735](https://arxiv.org/abs/1906.02735) — [[Residual Flow]]
+- Hutchinson (1989). *A Stochastic Estimator of the Trace of the Influence Matrix for Laplacian Smoothing Splines*. Communications in Statistics — Simulation and Computation 18(3). — [[Hutchinson's Trace Estimator]]
+- Theis, van den Oord & Bethge (2016). *A Note on the Evaluation of Generative Models*. ICLR. [arXiv:1511.01844](https://arxiv.org/abs/1511.01844) — [[Dequantization]]
+
 ## Hyperparameter Search
 - Bergstra & Bengio (2012). *Random Search for Hyper-Parameter Optimization*. JMLR. [JMLR 13](https://jmlr.org/papers/v13/bergstra12a.html) — [[Hyperparameter Search]]
 - Snoek, Larochelle & Adams (2012). *Practical Bayesian Optimization of Machine Learning Algorithms*. NeurIPS. [arXiv:1206.2944](https://arxiv.org/abs/1206.2944) — [[Bayesian Optimization]]

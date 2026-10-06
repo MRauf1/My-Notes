@@ -18,6 +18,7 @@ It is the sum of the diagonal entries.
 - [[Trace of Matrix Multiplication]]
 - [[Trace of Transpose Matrix Multiplication]]
 - [[Trace Eigenvalue]]
+- [[Hutchinson's Trace Estimator]]
 - [[Adjoint]]
 - [[Self-Adjoint Linear Map]]
 
