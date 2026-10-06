@@ -32,6 +32,7 @@ $$
 - **Why they help** (not completely understood): reducing [[Shattered Gradients]] at the start of training, a smoother loss surface near minima, and (alternatively) eliminating singularities, i.e. places on the loss surface where the [[Hessian Matrix]] is degenerate.[^7]
 - **Effect on [[L2 Regularization]]**: in a vanilla network, L2 regularization of the weights encourages a layer's output to be a constant function determined by the biases; in a residual network without BatchNorm, it encourages each residual block to compute the *identity plus a constant* determined by the biases.[^8]
 - A building block of [[Deep Neural Network|deep networks]] such as residual [[Convolutional Neural Network|CNNs]] (ResNet).
+- Residual connections made deep [[Graph Neural Network|graph neural networks]] trainable, countering suspended animation and [[Oversmoothing]]; in a [[Graph Convolutional Network|GCN]] the transformed, activated neighbour aggregate is summed or concatenated with the current node.[^9]
 
 [^1]: [Prince, p. 186](zotero://open-pdf/library/items/BWT7FYX5?page=200&annotation=9UTCW7BL); [Prince, p. 189](zotero://open-pdf/library/items/BWT7FYX5?page=203&annotation=JP5SVSMG)
 [^2]: [Prince, p. 189](zotero://open-pdf/library/items/BWT7FYX5?page=203&annotation=28NMNQFK)
@@ -41,3 +42,4 @@ $$
 [^6]: [Prince, p. 199](zotero://open-pdf/library/items/BWT7FYX5?page=213&annotation=R92DRVX3)
 [^7]: [Prince, p. 202](zotero://open-pdf/library/items/BWT7FYX5?page=216&annotation=8HUWG2BB)
 [^8]: [Prince, p. 202](zotero://open-pdf/library/items/BWT7FYX5?page=216&annotation=GRAWBTGS)
+[^9]: [Prince, p. 257](zotero://open-pdf/library/items/BWT7FYX5?page=271&annotation=RPGSV7IR); [Prince, p. 266](zotero://open-pdf/library/items/BWT7FYX5?page=280&annotation=X2CIB63G)

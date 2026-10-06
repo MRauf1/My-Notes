@@ -23,6 +23,8 @@ So $\sigma \mapsto A_\sigma$ is a [[Group Homomorphism]] from the [[Symmetric Gr
 - [[Symmetric Group]]
 - [[Permutation Sign]]
 - [[LUP Decomposition]]
+- Re-indexing the nodes of a graph maps node data $\mathbf{X} \mapsto \mathbf{X}\mathbf{P}$ and the [[Adjacency Matrix]] $\mathbf{A} \mapsto \mathbf{P}^T\mathbf{A}\mathbf{P}$; [[Graph Neural Network|graph neural networks]] must be equivariant to this action.[^3]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=371)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=372)
+[^3]: [Prince, p. 245](zotero://open-pdf/library/items/BWT7FYX5?page=259&annotation=HJBQDXZN)

@@ -15,8 +15,10 @@ tags:
 
 - Example: on translated-template data, a [[Convolutional Neural Network|CNN]] generalizes better than a fully connected network because it is forced to process every position in the same way; the convolutional structure can be viewed as a [[Regularization|regularizer]] placing an infinite penalty on most solutions a fully connected network can describe ([[Convolutional Layer]]).[^3]
 - Example: the [[Vision Transformer]] lacks the convolutional inductive bias and underperforms CNNs on modest data, but surpasses them when pre-trained on extremely large datasets.[^4]
+- Example: a [[Graph Convolutional Network]] has a **relational inductive bias**, i.e. a bias toward prioritizing information from a node's neighbours.[^5]
 
 [^1]: [MIT Vision Book - Neural Networks](https://visionbook.mit.edu/neural_nets.html)
 [^2]: [Prince, p. 129](zotero://open-pdf/library/items/BWT7FYX5?page=143&annotation=XN6MRP3D)
 [^3]: [Prince, p. 170](zotero://open-pdf/library/items/BWT7FYX5?page=184&annotation=ZKKHF27M); [Prince, p. 170](zotero://open-pdf/library/items/BWT7FYX5?page=184&annotation=EE2MMBYY)
 [^4]: [Prince, p. 230](zotero://open-pdf/library/items/BWT7FYX5?page=244&annotation=8CLW5ECL); [Prince, p. 238](zotero://open-pdf/library/items/BWT7FYX5?page=252&annotation=AEG4IWZR)
+[^5]: [Prince, p. 248](zotero://open-pdf/library/items/BWT7FYX5?page=262&annotation=V6VVW959)

@@ -21,6 +21,7 @@ Typical operations on a graph data structure:[^3]
 # Representations
 - [[Adjacency Matrix]]: constant-time edge queries/updates, $O(n^2)$ space — good for dense graphs.
 - [[Adjacency Lists]]: constant-time `add_edge`/`out_edges`, $O(n+m)$ space — good for sparse graphs and for traversal algorithms.
+- [[Degree Matrix]] and [[Graph Laplacian Matrix]]: algebraic representations used in spectral graph theory and [[Graph Neural Network|graph neural networks]].
 
 # Types
 - [[Simple Graph]]
@@ -38,6 +39,13 @@ Typical operations on a graph data structure:[^3]
 
 ## Connectivity
 - [[Connected Graph]]
+
+## Multiplicity and Structure
+- [[Multigraph]]
+- [[Knowledge Graph]]
+- [[Geometric Graph]]
+- [[Hierarchical Graph]]
+- [[Line Graph]]
 
 # Examples
 - [[Complete Graph]]

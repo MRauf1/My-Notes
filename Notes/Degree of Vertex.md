@@ -12,5 +12,6 @@ tags:
 
 # Properties
 - [[Handshaking Theorem]]
+- The degrees of all vertices form the diagonal of the [[Degree Matrix]].
 
 [^1]: [Building Blocks for Theoretical Computer Science](zotero://open-pdf/library/items/5IGT8C55?page=117)

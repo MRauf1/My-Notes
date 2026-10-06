@@ -73,6 +73,27 @@ A compact list of fundamental papers referenced in the notes.
 - Radford et al. (2021). *Learning Transferable Visual Models From Natural Language Supervision*. ICML. [arXiv:2103.00020](https://arxiv.org/abs/2103.00020) — [[Contrastive Language-Image Pre-Training]]
 - Ramesh et al. (2022). *Hierarchical Text-Conditional Image Generation with CLIP Latents*. [arXiv:2204.06125](https://arxiv.org/abs/2204.06125) — [[Contrastive Language-Image Pre-Training]]
 
+## Graph Neural Networks
+- Bruna, Zaremba, Szlam & LeCun (2014). *Spectral Networks and Locally Connected Networks on Graphs*. ICLR. [arXiv:1312.6203](https://arxiv.org/abs/1312.6203) — [[Spectral Graph Convolution]]
+- Henaff, Bruna & LeCun (2015). *Deep Convolutional Networks on Graph-Structured Data*. [arXiv:1506.05163](https://arxiv.org/abs/1506.05163) — [[Spectral Graph Convolution]]
+- Defferrard, Bresson & Vandergheynst (2016). *Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering* (ChebNet). NeurIPS. [arXiv:1606.09375](https://arxiv.org/abs/1606.09375) — [[Spectral Graph Convolution]]
+- Kipf & Welling (2017). *Semi-Supervised Classification with Graph Convolutional Networks*. ICLR. [arXiv:1609.02907](https://arxiv.org/abs/1609.02907) — [[Graph Convolutional Network]], [[Neighborhood Aggregation (Graph Neural Network)]], [[Spectral Graph Convolution]]
+- Gilmer, Schoenholz, Riley, Vinyals & Dahl (2017). *Neural Message Passing for Quantum Chemistry*. ICML. [arXiv:1704.01212](https://arxiv.org/abs/1704.01212) — [[Graph Neural Network]]
+- Hamilton, Ying & Leskovec (2017). *Inductive Representation Learning on Large Graphs* (GraphSAGE). NeurIPS. [arXiv:1706.02216](https://arxiv.org/abs/1706.02216) — [[Neighborhood Sampling]]
+- Chiang, Liu, Si, Li, Bengio & Hsieh (2019). *Cluster-GCN: An Efficient Algorithm for Training Deep and Large Graph Convolutional Networks*. KDD. [arXiv:1905.07953](https://arxiv.org/abs/1905.07953) — [[Graph Partitioning]]
+- Karypis & Kumar (1998). *A Fast and High Quality Multilevel Scheme for Partitioning Irregular Graphs* (METIS). SIAM Journal on Scientific Computing 20(1). — [[Graph Partitioning]]
+- Veličković, Cucurull, Casanova, Romero, Liò & Bengio (2018). *Graph Attention Networks*. ICLR. [arXiv:1710.10903](https://arxiv.org/abs/1710.10903) — [[Graph Attention Network]]
+- Brody, Alon & Yahav (2022). *How Attentive are Graph Attention Networks?* (GATv2). ICLR. [arXiv:2105.14491](https://arxiv.org/abs/2105.14491) — [[Graph Attention Network]]
+- Xu, Hu, Leskovec & Jegelka (2019). *How Powerful are Graph Neural Networks?* (GIN). ICLR. [arXiv:1810.00826](https://arxiv.org/abs/1810.00826) — [[Graph Convolutional Network]], [[Neighborhood Aggregation (Graph Neural Network)]], [[Graph Neural Network]]
+- Whitney (1932). *Congruent Graphs and the Connectivity of Graphs*. American Journal of Mathematics 54(1). — [[Line Graph]]
+- Li, Han & Wu (2018). *Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning*. AAAI. [arXiv:1801.07606](https://arxiv.org/abs/1801.07606) — [[Oversmoothing]]
+- Xu, Li, Tian, Sonobe, Kawarabayashi & Jegelka (2018). *Representation Learning on Graphs with Jumping Knowledge Networks*. ICML. [arXiv:1806.03536](https://arxiv.org/abs/1806.03536) — [[Oversmoothing]]
+- Alon & Yahav (2021). *On the Bottleneck of Graph Neural Networks and its Practical Implications*. ICLR. [arXiv:2006.05205](https://arxiv.org/abs/2006.05205) — [[Oversquashing]]
+- Topping, Di Giovanni, Chamberlain, Dong & Bronstein (2022). *Understanding Over-Squashing and Bottlenecks on Graphs via Curvature*. ICLR. [arXiv:2111.14522](https://arxiv.org/abs/2111.14522) — [[Oversquashing]]
+- Zhang & Meng (2019). *GResNet: Graph Residual Network for Reviving Deep GNNs from Suspended Animation*. [arXiv:1909.05729](https://arxiv.org/abs/1909.05729) — [[Graph Neural Network]]
+- Li, Müller, Thabet & Ghanem (2019). *DeepGCNs: Can GCNs Go as Deep as CNNs?* ICCV. [arXiv:1904.03751](https://arxiv.org/abs/1904.03751) — [[Graph Neural Network]], [[Residual Connection]]
+- Li, Müller, Ghanem & Koltun (2021). *Training Graph Neural Networks with 1000 Layers*. ICML. [arXiv:2106.07476](https://arxiv.org/abs/2106.07476) — [[Graph Neural Network]]
+
 ## Generalization and Capacity
 - Vapnik & Chervonenkis (1971). *On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities*. Theory of Probability & Its Applications. [doi:10.1137/1116025](https://doi.org/10.1137/1116025) — [[VC Dimension]]
 - Belkin, Hsu, Ma & Mandal (2019). *Reconciling Modern Machine-Learning Practice and the Classical Bias-Variance Trade-Off*. PNAS. [arXiv:1812.11118](https://arxiv.org/abs/1812.11118) — [[Double Descent]]

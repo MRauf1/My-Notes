@@ -18,4 +18,8 @@ tags:
 - [[Closed Graph Walk]]
 - [[Open Graph Walk]]
 
+# Properties
+- The number of walks of length $L$ from node $m$ to node $n$ is entry $(m, n)$ of the $L$th power of the [[Adjacency Matrix]].[^2]
+
 [^1]: [Building Blocks for Theoretical Computer Science](zotero://open-pdf/library/items/5IGT8C55?page=122)
+[^2]: [Prince, p. 245](zotero://open-pdf/library/items/BWT7FYX5?page=259&annotation=EJ8KERTG)

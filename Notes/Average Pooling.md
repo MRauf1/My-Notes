@@ -12,6 +12,8 @@ tags:
 - Equivalent to a [[Stride (Convolution)|strided]] [[Convolutional Layer|convolution]] with a fixed uniform kernel applied per channel.[^2]
 - Averaging over the entire spatial extent (global average pooling) yields a translation-[[Invariant Function|invariant]] per-channel summary.[^2]
 - Contrast with [[Max Pooling]].
+- In a [[Graph Neural Network]], mean pooling over all output node embeddings, $\mathbf{H}_K\mathbf{1}/N$, gives a permutation-invariant graph-level representation.[^3]
 
 [^1]: [Prince, p. 172](zotero://open-pdf/library/items/BWT7FYX5?page=186&annotation=YWT9TXL4)
 [^2]: Added from general knowledge.
+[^3]: [Prince, p. 246](zotero://open-pdf/library/items/BWT7FYX5?page=260&annotation=RY8SLI5G)

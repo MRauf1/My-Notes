@@ -47,6 +47,7 @@ Self-attention can be read as **routing** the values in different proportions to
 - [[Masked Self-Attention]]
 - [[Cross-Attention]]
 - [[Sparse Attention]]
+- [[Graph Attention Network]] (attention masked to graph neighbours)
 
 # Properties
 - **Motivation from text**: encoded text is large (e.g. $37$ words $\times$ $1024$-dimensional [[Word Embedding|embeddings]] $= 37888$ inputs) and of varying length, so a [[Linear Layer|fully connected]] network is impractical; the network should instead (i) share parameters across positions and (ii) contain connections between words whose strength depends on the words themselves and that extend over long spans. Self-attention satisfies both.[^4]
