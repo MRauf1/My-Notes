@@ -15,6 +15,8 @@ In Hogg et al.,[^2] the strong law weakens the hypotheses of the [[Weak Law of L
 - What does *not* survive infinite variance: the Central Limit Theorem, error bars, and any claim about $O(1/\sqrt{N})$ convergence — all of these additionally require finite variance.
 - Guarantees $\langle I \rangle_N \to I$ almost surely as $N \to \infty$ for the [[Monte Carlo Estimator]].
 - Guarantees the consistency of every [[Monte Carlo Method]].
+- Justifies [[Simple Monte Carlo]] provided $\mu$ exists, but says nothing about how large $n$ must be; if $\mu = \infty$, $\hat{\mu}_n \to \infty$ a.s. without ever equaling $\infty$ ([[Infinite Moments in Monte Carlo]]).[^3]
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=338)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=16&annotation=SEHKY7UX); [Owen](zotero://open-pdf/library/items/TXMSRRI3?page=32&annotation=N2P9ZCZ9)

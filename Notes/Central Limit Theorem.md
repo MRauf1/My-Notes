@@ -34,8 +34,12 @@ Whatever the shape of the population (as long as its variance is finite), the st
 - Fails without finite variance: sample means of the [[Cauchy Distribution]] never become normal.
 - This is why the normal distribution is central to statistics:[^4] few populations are normal, but the distributions of statistics computed from samples are often nearly normal. The theorem is stated for the sample mean, but it extends to most common statistics (the sample variance, sample quantiles, regression coefficients, maximum likelihood and M-estimators) via the [[Delta Method]], [[Slutsky's Theorem]], and asymptotic normality results; the sample mean is not special in having good convergence properties.
 - The limit is used through the [[Multivariate Normal Distribution]] in the vector case.
+- In Monte Carlo it gives $\hat{\mu}_n - \mu \approx N(0, \sigma^2/n)$ and hence the [[Monte Carlo Confidence Interval]]; the vector form $\sqrt{n}(\bar{Y} - \mu) \xrightarrow{D} N(0, \Sigma)$ needs only a finite covariance matrix $\Sigma$.[^5]
+- If $\sigma^2 < \infty$ but the third moment is large or infinite, the normal approximation sets in more slowly; its speed is governed by $E|Y - \mu|^3/\sigma^3$ (Berry–Esseen) ([[Infinite Moments in Monte Carlo]]).[^6]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=256)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=358)
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=367)
 [^4]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=362)
+[^5]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=19&annotation=288EKVRQ); [Owen](zotero://open-pdf/library/items/TXMSRRI3?page=19&annotation=VHXGC27L)
+[^6]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=35&annotation=TV4U9UKC)

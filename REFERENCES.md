@@ -242,3 +242,9 @@ A compact list of fundamental papers referenced in the notes.
 - Milgram (1963). *Behavioral Study of Obedience*. Journal of Abnormal and Social Psychology 67(4). — [[Milgram Obedience Experiment]]
 - Burger (2009). *Replicating Milgram: Would People Still Obey Today?* American Psychologist 64(1). — [[Milgram Obedience Experiment]]
 - Scheibehenne, Greifeneder & Todd (2010). *Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload*. Journal of Consumer Research 37(3). — [[Paradox of Choice]]
+
+## Monte Carlo and Asymptotic Statistics
+- Owen (2013). *Monte Carlo Theory, Methods and Examples*. [artowen.su.domains/mc](https://artowen.su.domains/mc/) — [[Simple Monte Carlo]], [[Monte Carlo Confidence Interval]], [[Infinite Moments in Monte Carlo]]
+- Hall (1992). *The Bootstrap and Edgeworth Expansion*. Springer. — [[Monte Carlo Confidence Interval]] (coverage error $1 - \alpha + O(n^{-1})$)
+- Hoeffding (1963). *Probability Inequalities for Sums of Bounded Random Variables*. JASA 58(301). — [[Hoeffding's Inequality]]
+- Knight (2000). *Mathematical Statistics*. Chapman & Hall/CRC. — [[Slutsky's Theorem]]

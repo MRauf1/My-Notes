@@ -17,5 +17,7 @@ A technique earns its place only when it raises $\varepsilon$ — by cutting [[M
 
 # Properties
 - The correct lens for judging whether [[Stratified Sampling|stratification]], [[Control Variates]], or a change of $p$ is actually worthwhile.
+- Under $\sigma/\sqrt{n}$ error, halving $\sigma^2$ is worth exactly as much as doubling $n$ or making each sample twice as fast ([[Monte Carlo Convergence Rate]]).[^2]
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=17&annotation=EDH7LDCP)

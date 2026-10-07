@@ -45,5 +45,11 @@ All three estimators ($1/(n-1)$, $1/n$, $1/(n+1)$) differ by $O(1/n)$ and are co
 - The computational form $\sum X_i^2 - n\bar{X}^2$ is algebraically equal but numerically unstable when $\bar{X}$ is large relative to the spread; the two-pass or Welford update is used in practice.
 - For a normal sample, $(n-1)S^2/\sigma^2$ has a [[Chi-Squared Distribution]] with $n - 1$ degrees of freedom, independent of $\bar{X}$ ([[Student's Theorem]]).
 - The sample analogue of the population [[Variance]]; $S$ is the sample [[Standard Deviation]].
+- In Monte Carlo, $n$ is so large that $s^2$ and $\hat{\sigma}^2 = \frac{1}{n}\sum_i (Y_i - \hat{\mu}_n)^2$ are much closer to each other than either is to $\sigma^2$; both appear in variance estimates. $s/\sqrt{n}$ estimates the error of [[Simple Monte Carlo]].[^2]
+- Stable computation: [[Welford's Algorithm]]; a parallel-friendly alternative is the [[Paired Difference Variance Estimator]].[^3]
+- $s^2 \to \sigma^2$ whenever $\sigma^2 < \infty$, but its RMSE is $O(n^{-1/2})$ only if $E(Y^4) < \infty$.[^4]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=169)
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=18&annotation=ANSY7BNQ); [Owen](zotero://open-pdf/library/items/TXMSRRI3?page=18&annotation=W946237C)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=21&annotation=L6GFHXEP); [Owen](zotero://open-pdf/library/items/TXMSRRI3?page=22&annotation=6JCEEQJN)
+[^4]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=35&annotation=TV4U9UKC)

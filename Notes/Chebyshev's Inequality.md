@@ -19,4 +19,8 @@ The finite variance implies that $\mu = E(X)$ exists ([[mth Moment Existence The
 
 For a particular distribution the bound $1/k^2$ is often far from the actual probability, but it cannot be improved as a bound valid for every $k$ and every distribution with finite variance: for $k \geq 1$, the distribution with $P(X = \mu \pm k\sigma) = \frac{1}{2k^2}$ each and $P(X = \mu) = 1 - \frac{1}{k^2}$ has mean $\mu$, variance $\sigma^2$, and $P(|X - \mu| \geq k\sigma) = \frac{1}{k^2}$ exactly. For $k \leq 1$ the bound is trivial.
 
+# Properties
+- Gives a guaranteed, but roughly $15\times$ too expensive, Monte Carlo sample size when a variance bound is known: the [[Chebyshev Confidence Interval]]. For bounded variables, [[Hoeffding's Inequality]] gives exponential tails.[^2]
+
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=95)
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=35&annotation=4NNRE69A)

@@ -23,6 +23,8 @@ Developed in the 1940s at Los Alamos by Stanislaw Ulam, John von Neumann, and Ni
 
 Unifying view: all Monte Carlo methods are stochastic estimators of expectations. They differ only in which distribution they draw from (uniform, importance-weighted, or the stationary law of a Markov chain) and how they keep the variance from blowing up (importance sampling, control variates, stratification, coordinate warps, gradients).
 
+The core idea of Monte Carlo is to learn about a system by simulating it with random sampling.[^2] Its most direct form is [[Simple Monte Carlo]]; the more sophisticated methods below exist for two reasons:[^3] independent samples of the needed inputs may be impractical to draw, or the samples can be drawn but the $1/\sqrt{n}$ error is still too large.
+
 # Types
 The hundreds of named algorithms are specialized answers to a few computational bottlenecks:
 - **Direct random variate generation** — how to turn uniform $[0,1]$ samples into samples of a simple target density: [[Inverse Transform Sampling]], [[Rejection Sampling]], [[Box-Muller Transform]], [[Ziggurat Algorithm]].
@@ -37,3 +39,5 @@ The hundreds of named algorithms are specialized answers to a few computational 
 - Dimension-independent: the $O(N^{-1/2})$ rate has no $d$ in the exponent, whereas a tensor-product quadrature rule of order $r$ with $k$ points per axis uses $N = k^d$ points and converges as $O(N^{-r/d})$ — the [[Curse of Dimensionality]]. Monte Carlo therefore wins in high (even infinite) dimensions, while quadrature wins for smooth low-dimensional integrands.
 
 [^1]: Monte Carlo Methods — Q&A Overview
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=3&annotation=JMHXLV3G)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=9&annotation=HPTFBXUP); [Owen](zotero://open-pdf/library/items/TXMSRRI3?page=9&annotation=X322PYKX)

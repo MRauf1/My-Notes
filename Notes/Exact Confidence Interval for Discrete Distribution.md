@@ -19,5 +19,7 @@ Interpretation: $\overline{\theta}$ is the largest parameter value under which o
 # Properties
 - Because $T$ is discrete, an exact coverage of $1 - \alpha$ is generally unattainable; the interval is conservative (coverage $\geq 1 - \alpha$).
 - Needs no large-sample approximation; for binomial data it is the Clopper-Pearson interval.
+- Binomial form used in [[Monte Carlo Estimation of a Probability]]:[^2] with $T = t$ successes, the $99\%$ limits solve $0.005 = \sum_{i=t}^n \binom{n}{i} p_L^i(1-p_L)^{n-i}$ and $0.005 = \sum_{i=0}^t \binom{n}{i} p_U^i(1-p_U)^{n-i}$, found by bisection; for $t = 0$ the upper limit is approximately the [[Rule of Three (Statistics)|rule of three]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=265)
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=24&annotation=B2SRGL96)

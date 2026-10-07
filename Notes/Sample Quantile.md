@@ -21,6 +21,8 @@ so on average a fraction $k/(n+1) \approx p$ of the probability lies to the left
 - Special cases: the sample median $Q_2$, and the sample quartiles $Q_1 \approx Y_{0.25(n+1)}$ and $Q_3 \approx Y_{0.75(n+1)}$, which form the [[Five-Number Summary]]; their difference estimates the [[Interquartile Range]].
 - Plotting sample quantiles against theoretical quantiles gives a [[Q-Q Plot]].
 - Order statistics also give an exact [[Distribution-Free Confidence Interval for Quantile]].
+- Monte Carlo convention:[^3] estimate $Q_\theta = F^{-1}(\theta)$ of the distribution $F$ of $Y$ by $\tilde{Q}_\theta = Y_{(\lceil n\theta \rceil)}$, where $Y_{(1)} \leq \dots \leq Y_{(n)}$ are the [[Order Statistic|order statistics]] of $n$ IID simulated values.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=273)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=274)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=25&annotation=XGKFIM9D); [Owen](zotero://open-pdf/library/items/TXMSRRI3?page=26&annotation=FUXDHGXY)

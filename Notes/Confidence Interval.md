@@ -24,6 +24,7 @@ For a $x\%$ confidence interval, it is an [[Interval Notation|interval]] such th
 - Large-sample interval $\bar{x} \pm z_{\alpha/2}\,s/\sqrt{n}$, justified by the [[Central Limit Theorem]].[^4]
 - [[Two-Sample Confidence Interval for Difference of Means]], [[Difference of Proportions Confidence Interval]].
 - [[Exact Confidence Interval for Discrete Distribution]], [[Distribution-Free Confidence Interval for Quantile]], [[Percentile Bootstrap Confidence Interval]].
+- Monte Carlo: [[Monte Carlo Confidence Interval]], with guaranteed (non-asymptotic) alternatives [[Chebyshev Confidence Interval]] and [[Hoeffding's Inequality]]; for $0$ successes, the [[Rule of Three (Statistics)|rule of three]].
 - Related but different: the [[Tolerance Interval]], which covers a proportion of the population rather than a parameter.
 
 # Properties
