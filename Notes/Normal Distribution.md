@@ -35,6 +35,8 @@ tags:
 - By symmetry, the [[Median]] (and [[Mode]]) equals the mean, and $\Phi(-z) = 1 - \Phi(z)$.[^4]
 - $\mu$ is a [[Location Parameter]] and $\sigma$ a [[Scale Parameter]]: changing them shifts or stretches the same bell shape.[^5]
 - [[Kurtosis]] $3$ and all cumulants beyond the second are $0$ ([[Cumulant Generating Function]]).
+- The CDF is expressed via the [[Error Function]]: $\Phi(z) = \frac12\left[1 + \operatorname{erf}(z/\sqrt{2})\right]$.
+- The $N(0, 2kt)$ density is the [[Diffusion Kernel (Partial Differential Equations)|diffusion kernel]] of the diffusion equation $u_t = k u_{xx}$: the density of [[Brownian Motion]] started at $0$.
 
 ## Information and Estimation
 - The reciprocal of the variance, $\beta = 1/\sigma^2$, is called the **precision**.[^6]

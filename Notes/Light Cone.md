@@ -13,6 +13,7 @@ tags:
 - The affective past and affective future are time-like separated from $O$ (positive squared interval, in the $c^2t^2-x^2-y^2-z^2$ convention); "elsewhere" is space-like separated (negative squared interval).
 - Whether a distant event is happening "now," in the sense of being simultaneous with $O$, is not only frame-dependent (see [[Relativity of Simultaneity]]) but physically unobservable at the moment it happens: information about it can only reach $O$ later, once it enters $O$'s affective future, at the earliest at the speed of light.
 - Because nothing travels faster than $c$, no observer can affect or acquire information about events in the "elsewhere" region relative to their present moment, which rules out causal paradoxes such as "foreseeing" an event before any signal from it could possibly arrive.
+- Mathematically, it is the characteristic cone of the 3D [[Wave Equation]] satisfied by the electromagnetic fields; the affective future and past are the [[Domain of Influence]] and [[Domain of Dependence]] ([[Principle of Causality (Wave Equation)]]).
 
 ![[Light Cone.png]]
 

@@ -29,5 +29,8 @@ tags:
 - Each component of the electric and magnetic fields in vacuum satisfies the 3D wave equation (with $c$ the speed of light); the components are coupled only through the [[Boundary Condition|boundary conditions]].
 - Time-independent solutions satisfy the [[Laplace Equation]].
 - Derived from Newton's second law: in 2D/3D, $\rho u_{tt} = \nabla \cdot (T \nabla u)$, which gives the above when $T$ is constant.
+- On the line, the general solution is two arbitrary shapes travelling left and right at speed $c$ ([[D'Alembert's Formula]]); in $\mathbb{R}^n$, plane waves travel in every direction and point disturbances spread on expanding spheres.
+- Finite speed of propagation: [[Principle of Causality (Wave Equation)]], [[Domain of Influence]], [[Domain of Dependence]], sharpened in odd $n \ge 3$ to [[Huygens's Principle]].
+- [[Wave Equation Energy Conservation]]: no maximum principle, no decay of energy, time-reversible ([[Wave and Diffusion Equation Comparison]]).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=24&annotation=JFPEHEK3)

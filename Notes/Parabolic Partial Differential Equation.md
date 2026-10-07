@@ -11,6 +11,7 @@ tags:
 # Properties
 - Canonical form $u_{x_2 x_2} + \cdots + u_{x_n x_n} + \cdots = 0$, with at most a first-order derivative in the degenerate direction; prototype: the [[Diffusion Equation]] (and [[Heat Equation]]).
 - The degenerate direction plays the role of time; needs one [[Initial Condition]].
+- Infinite speed of propagation, instant smoothing, a [[Maximum Principle (Diffusion Equation)|maximum principle]], and ill-posedness backward in time ([[Wave and Diffusion Equation Comparison]]).
 - See [[Canonical Form of Second Order Linear Partial Differential Equation]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=43&annotation=EB885SCJ)

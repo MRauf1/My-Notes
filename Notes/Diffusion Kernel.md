@@ -17,6 +17,8 @@ tags:
 
 (Prince writes $\alpha_t$ for what Ho et al. (2020) call $\bar{\alpha}_t$.)
 
+Not to be confused with the [[Diffusion Kernel (Partial Differential Equations)]], the Gaussian fundamental solution of the diffusion (heat) equation; the noise part of this kernel is that Gaussian.
+
 # Properties
 - Allows drawing $\mathbf{z}_t$ for any $t$ directly from $\mathbf{x}$, without simulating $\mathbf{z}_1, \dots, \mathbf{z}_{t-1}$; this makes training efficient since many $(t, \mathbf{z}_t)$ pairs are needed per example ([[Diffusion Model Loss Function]]).[^1]
 - $\alpha_t$ decreases monotonically from $\approx 1$ to $\approx 0$, so the signal-to-noise ratio $\alpha_t / (1-\alpha_t)$ decreases with $t$ and $q(\mathbf{z}_T|\mathbf{x}) \to \mathrm{Norm}[\mathbf{0}, \mathbf{I}]$ regardless of $\mathbf{x}$.

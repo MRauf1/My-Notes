@@ -28,6 +28,10 @@ tags:
 - Needs one [[Initial Condition]] $u(\mathbf{x}, t_0) = \phi(\mathbf{x})$ (the initial concentration), since it is first order in time.
 - Also describes heat conduction, Brownian motion, and diffusion models of population dynamics.
 - Time-independent solutions satisfy the [[Laplace Equation]].
+- Whole-space solution: convolution of the initial data with the [[Diffusion Kernel (Partial Differential Equations)|diffusion kernel]], a Gaussian of variance $2kt$, built from the [[Diffusion Equation Invariance Properties]]; the density of [[Brownian Motion]] obeys it.
+- [[Maximum Principle (Diffusion Equation)]]: maxima drop, minima rise, so solutions are smoothed out.
+- Well-posed forward, ill-posed (irreversible) backward ([[Diffusion Equation Well-Posedness]]).
+- Infinite speed of propagation, immediate loss of singularities, decay to zero ([[Wave and Diffusion Equation Comparison]]).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=27&annotation=YGPGPWDI)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=28&annotation=BGSR7MAA)

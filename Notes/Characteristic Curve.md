@@ -19,5 +19,6 @@ tags:
 - If the characteristics are $\{\xi(x, y) = C\}$, the general solution is $u = f(\xi(x, y))$ with $f$ arbitrary.
 - Under regularity of $a, b$, the characteristics fill the plane without intersecting.
 - For the [[Transport Equation]], each transported particle moves exactly along a characteristic line in the $xt$-plane.
+- The 1D [[Wave Equation]] has two families of characteristic lines $x \pm ct = \text{const}$; its solutions are carried along them ([[D'Alembert's Formula]]) and they bound the [[Domain of Dependence]] and [[Domain of Influence]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=20&annotation=6SX3PID3)
