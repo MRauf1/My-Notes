@@ -19,6 +19,7 @@ tags:
 - Prescribes the flux through the boundary; the homogeneous condition $\partial u/\partial n = 0$ means no flux (a sealed container by Fick's law, a perfectly insulated body, a string end free to slide without resistance, a rigid wall in acoustics).[^2]
 - Counterpart of the [[Dirichlet Boundary Condition]]; the $a = 0$ case of the [[Robin Boundary Condition]].
 - A homogeneous Neumann condition at a point is enforced by even extension ([[Method of Reflection]]); an inhomogeneous one is reduced to it by subtracting $x h(t)$ ([[Boundary Condition Subtraction Device]]).
+- Its eigenvalue problem on an interval gives cosines, including the constant mode with eigenvalue $0$ ([[Neumann Eigenvalue Problem on an Interval]]).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=33&annotation=75AFYIDW)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=34&annotation=HISV8T4R)

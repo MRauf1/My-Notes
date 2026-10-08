@@ -22,6 +22,7 @@ tags:
 
 # Properties
 - A special case of the [[Fourier Series]].
+- The expansion in [[Eigenfunction|eigenfunctions]] of the [[Dirichlet Eigenvalue Problem on an Interval]]; arises in [[Separation of Variables]].
 - The sum is only guaranteed to converge to $\ell(t)$ within $(0, \pi)$. For any values $a_n$, the resulting sum is a [[Periodic Function|periodic function]] with period $2\pi$ that is anti-symmetric (odd) about $t = 0$; i.e. the series represents the odd $2\pi$-periodic extension of $\ell$.
 - The coefficient formula follows from the orthogonality $\int_0^\pi \sin(nt)\sin(mt)\,dt = \frac{\pi}{2}\delta_{nm}$ ([[Kronecker Delta]]).[^2]
 - The sine and [[Fourier Cosine Series|cosine series]] of the same function agree only on $(0, \pi)$; outside that interval they give different periodic extensions (odd vs. even).

@@ -16,6 +16,7 @@ tags:
 
 # Properties
 - A special case of the [[Fourier Series]].
+- The expansion in [[Eigenfunction|eigenfunctions]] of the [[Neumann Eigenvalue Problem on an Interval]]; arises in [[Separation of Variables]].
 - Converges to $\ell(t)$ within $(0, \pi)$; outside, the sum is the even (symmetric about $t = 0$) $2\pi$-periodic extension of $\ell$.[^2]
 - The cosine and [[Fourier Sine Series|sine series]] of the same function are only equal on $(0, \pi)$ and result in different periodic extensions outside that interval.
 

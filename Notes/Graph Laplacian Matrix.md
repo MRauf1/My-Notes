@@ -23,6 +23,7 @@ tags:
 - $\mathbf{L}\mathbf{1} = \mathbf{0}$, and the multiplicity of the eigenvalue $0$ equals the number of [[Graph Connected Components|connected components]]; $\lambda_2 > 0$ (the Fiedler value, or algebraic connectivity) if and only if the graph is [[Connected Graph|connected]].[^2]
 - Its eigenvectors form the graph Fourier basis used by [[Spectral Graph Convolution]].[^1]
 - **Discrete analogue of the [[Laplacian Operator]]**: $(\mathbf{L}\mathbf{x})_i = \sum_{j \in \mathrm{ne}[i]}(x_i - x_j)$ is the negative of a finite-difference Laplacian; on a regular grid it reduces to the standard stencil. On triangle meshes the cotangent-weighted version is the geometry-processing Laplace–Beltrami operator.[^2]
+- Continuous counterpart of the Neumann problem: the path-graph Laplacian is the finite-difference [[Neumann Eigenvalue Problem on an Interval|Neumann Laplacian]], with the constants as kernel and $\lambda_2 \leftrightarrow (\pi/l)^2$; the quadratic form is the discrete [[Dirichlet Energy]].[^2]
 - The Fiedler vector (eigenvector of $\lambda_2$) underlies spectral clustering and spectral [[Graph Partitioning]].[^2]
 
 [^1]: [Prince, p. 262](zotero://open-pdf/library/items/BWT7FYX5?page=276&annotation=8WUSBTKD)

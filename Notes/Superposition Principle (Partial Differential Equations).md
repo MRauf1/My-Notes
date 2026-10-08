@@ -19,5 +19,6 @@ tags:
 - Fails for nonlinear equations.
 - The physical [[Superposition Principle]] of fields is an instance: it holds exactly because the governing field equations are linear.
 - Adding a homogeneous solution to a solution of the [[Inhomogeneous Linear Partial Differential Equation]] gives another inhomogeneous solution.
+- Basis of [[Separation of Variables]], which superposes separated solutions $X_n(x)T_n(t)$.
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=15&annotation=B4BVPKE6)

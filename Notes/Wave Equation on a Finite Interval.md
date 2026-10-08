@@ -30,6 +30,24 @@ v(x, t) &= h\!\left(t - \tfrac{x}{c}\right) - h\!\left(t + \tfrac{x - 2l}{c}\rig
 $$
 with $h, k$ taken to vanish for negative arguments, so for each $(x, t)$ only finitely many terms are nonzero.
 
+**Separation of variables.**[^5][^6][^7] The same problem is solved by [[Separation of Variables]] with the [[Dirichlet Eigenvalue Problem on an Interval|Dirichlet eigenfunctions]]:
+$$
+\begin{align}
+u(x, t) = \sum_{n=1}^\infty \left(A_n \cos\frac{n\pi c t}{l} + B_n \sin\frac{n\pi c t}{l}\right)\sin\frac{n\pi x}{l}, \qquad \phi = \sum_n A_n \sin\frac{n\pi x}{l}, \quad \psi = \sum_n \frac{n\pi c}{l} B_n \sin\frac{n\pi x}{l},
+\end{align}
+$$
+valid whenever $\phi, \psi$ have [[Fourier Sine Series|Fourier sine expansions]] (practically always, as Fourier claimed; proved in the theory of [[Fourier Series]]). The coefficients $n\pi c/l = c\sqrt{\lambda_n}$ are the (angular) **frequencies**, integer multiples of the fundamental $\pi c/l$ (some texts call $nc/2l$ the frequency); each separated solution is a normal mode in [[Simple Harmonic Motion]].
+
+**Neumann ends** ($u_x(0, t) = u_x(l, t) = 0$).[^8] The zero eigenvalue of the [[Neumann Eigenvalue Problem on an Interval]] gives $T'' = 0$, $T = A + Bt$, so
+$$
+\begin{align}
+u(x, t) = \frac12 A_0 + \frac12 B_0 t + \sum_{n=1}^\infty \left(A_n \cos\frac{n\pi c t}{l} + B_n \sin\frac{n\pi c t}{l}\right)\cos\frac{n\pi x}{l},
+\end{align}
+$$
+with $\phi = \tfrac12 A_0 + \sum A_n \cos\frac{n\pi x}{l}$ and $\psi = \tfrac12 B_0 + \sum \frac{n\pi c}{l} B_n \cos\frac{n\pi x}{l}$: a free string can drift rigidly at constant velocity while vibrating.
+
+**Spectral reading.**[^9] $u(t) = \cos(ct\sqrt{A})\phi + \frac{\sin(ct\sqrt A)}{c\sqrt A}\psi$ with $A = -d^2/dx^2$; since every mode only oscillates, the energy $\tfrac12\sum_n (|\dot T_n|^2 + c^2\lambda_n |T_n|^2)\|X_n\|^2$ is conserved mode by mode ([[Wave Equation Energy Conservation]], [[Dirichlet Energy]]). The eigenvalues are the squared frequencies, so "hearing the shape of a drum" is the inverse spectral problem for the Laplacian.
+
 # Properties
 - Periodic in time with period $2l/c$, since the extended data are $2l$-periodic; the same fact appears as the harmonic series of separation of variables.
 - Singularities of the data are reflected, not smoothed, bouncing between the ends forever ([[Wave and Diffusion Equation Comparison]]).
@@ -39,3 +57,8 @@ with $h, k$ taken to vanish for negative arguments, so for each $(x, t)$ only fi
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=77&annotation=IVHQUGGV)
 [^3]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=78&annotation=SLD9MLRR)
 [^4]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=90&annotation=9KANQNZK)
+[^5]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=96&annotation=AWTSVNCY)
+[^6]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=97&annotation=D2NDSQ4S)
+[^7]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=98&annotation=JWZ6DINZ); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=98&annotation=3Y3IXXXE); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=99&annotation=DZXJXYTX)
+[^8]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=103&annotation=MW3XQS2X)
+[^9]: Spectral-theory connection added from general knowledge.

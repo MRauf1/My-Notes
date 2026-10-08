@@ -14,6 +14,7 @@ Together with [[Initial Condition|initial conditions]], boundary conditions sing
 - [[Dirichlet Boundary Condition]]: $u = g$.
 - [[Neumann Boundary Condition]]: $\partial u / \partial n = g$.
 - [[Robin Boundary Condition]]: $\partial u / \partial n + a u = g$.
+- Mixed condition: Dirichlet on part of the boundary, Neumann on the rest ([[Mixed Eigenvalue Problem on an Interval]]).
 - Radiation/absorbing condition (wave equation): $\dfrac{\partial u}{\partial n} + b \dfrac{\partial u}{\partial t} = 0$; energy is radiated to ($b > 0$) or absorbed from ($b < 0$) the exterior through the boundary.[^3]
 - Conditions at infinity: when $D$ is unbounded, physics prescribes the behavior of $u$ as $|\mathbf{x}| \to \infty$.[^4]
 - Jump (interface) conditions: when $D = D_1 \cup D_2$ consists of parts with different physical properties, conditions relate $u$ and its fluxes across the interface.[^4]

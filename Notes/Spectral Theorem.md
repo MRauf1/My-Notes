@@ -40,6 +40,7 @@ The eigenvalues $\lambda_j$ and $\mu_j$ can still differ between $A$ and $B$ —
 - [[Function of a Matrix]]
 - [[Schur Decomposition]]
 - [[Eigendecomposition]]
+- Infinite-dimensional analogue: $-d^2/dx^2$ with symmetric boundary conditions has real eigenvalues and an orthonormal basis of [[Eigenfunction|eigenfunctions]] of $L^2(0, l)$, which is what makes [[Separation of Variables]] work.
 
 # Geometric Interpretation (Computer Graphics)[^5]
 - Writing the real spectral decomposition as $A = RSR^T$ with $R$ orthogonal (columns $\mathbf{v}_1, \mathbf{v}_2, \dots$, the eigenvectors) and $S$ diagonal (entries $\lambda_1, \lambda_2, \dots$, the eigenvalues), the map $\mathbf{x} \mapsto A\mathbf{x}$ decomposes geometrically into: (1) rotate $\mathbf{v}_1, \mathbf{v}_2, \dots$ onto the coordinate axes (the transform by $R^T$), (2) scale along each axis by the corresponding eigenvalue (the transform by $S$), (3) rotate the axes back to $\mathbf{v}_1, \mathbf{v}_2, \dots$ (the transform by $R$).

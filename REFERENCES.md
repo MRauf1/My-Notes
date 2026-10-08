@@ -251,8 +251,13 @@ A compact list of fundamental papers referenced in the notes.
 
 ## Fourier Analysis and Image Processing
 - Torralba, Isola & Freeman (2024). *Foundations of Computer Vision*, Ch. 16: Fourier Analysis. MIT Press. [visionbook.mit.edu](https://visionbook.mit.edu/image_processing_fourier.html) — [[Discrete Fourier Transform]], [[Fourier Transform]], [[Transfer Function (Signal Processing)]]
-- Fourier (1822). *Théorie analytique de la chaleur*. Firmin Didot. — [[Fourier Series]], [[Heat Equation]]
+- Fourier (1822). *Théorie analytique de la chaleur*. Firmin Didot. — [[Fourier Series]], [[Heat Equation]], [[Separation of Variables]]
 - Cooley & Tukey (1965). *An Algorithm for the Machine Calculation of Complex Fourier Series*. Mathematics of Computation 19(90). [doi:10.2307/2003354](https://doi.org/10.2307/2003354) — [[Fast Fourier Transform]]
 - Oppenheim & Lim (1981). *The Importance of Phase in Signals*. Proceedings of the IEEE 69(5). [doi:10.1109/PROC.1981.12022](https://doi.org/10.1109/PROC.1981.12022) — [[Fourier Amplitude and Phase]]
 - Field (1987). *Relations Between the Statistics of Natural Images and the Response Properties of Cortical Cells*. JOSA A 4(12). [doi:10.1364/JOSAA.4.002379](https://doi.org/10.1364/JOSAA.4.002379) — [[Natural Image Amplitude Spectrum]]
 - Oliva & Torralba (2001). *Modeling the Shape of the Scene: A Holistic Representation of the Spatial Envelope*. IJCV 42(3). [doi:10.1023/A:1011139631724](https://doi.org/10.1023/A:1011139631724) — [[Fourier Amplitude and Phase]] (amplitude-spectrum scene descriptor)
+
+## Spectral Theory of Differential Operators
+- Weyl (1911). *Über die asymptotische Verteilung der Eigenwerte*. Nachrichten der Königlichen Gesellschaft der Wissenschaften zu Göttingen. — [[Eigenfunction]] (Weyl's law)
+- Courant & Hilbert (1953). *Methods of Mathematical Physics*, Vol. I. Interscience. — [[Eigenfunction]], [[Dirichlet Energy]], [[Robin Eigenvalue Problem on an Interval]] (min–max principle, eigenvalue bracketing)
+- Kac (1966). *Can One Hear the Shape of a Drum?* American Mathematical Monthly 73(4). [doi:10.2307/2313748](https://doi.org/10.2307/2313748) — [[Wave Equation on a Finite Interval]]

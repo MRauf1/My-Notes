@@ -25,6 +25,7 @@ tags:
 - Holds because the DFT is a change of basis to an [[Orthogonal Basis|orthogonal basis]] ([[Discrete Complex Exponential]]), so the [[Inner Product|inner product]] and norm are preserved up to a constant factor ([[Inner Product and Vector Norm under Orthonormal Basis]]); with the normalized [[DFT Matrix]] the factor disappears.
 - The [[Signal Energy|energy]] of a signal can be computed as the sum of the squared magnitudes of its Fourier transform.
 - Continuous version (general knowledge): $\int_{-\infty}^{\infty} \ell_1(t) \ell_2^*(t) \, dt = \frac{1}{2\pi} \int_{-\infty}^{\infty} \mathscr{L}_1(w) \mathscr{L}_2^*(w) \, dw$ ([[Fourier Transform]]).[^2]
+- Holds for any orthogonal eigenfunction expansion, e.g. Fourier sine/cosine series on $(0, l)$, where it also diagonalizes the [[Dirichlet Energy]] ([[Diffusion Equation on a Finite Interval]]).[^2]
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.
