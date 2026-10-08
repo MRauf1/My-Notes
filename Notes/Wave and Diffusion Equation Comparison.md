@@ -29,6 +29,7 @@ tags:
 # Properties
 - The table is the prototype of the contrast between [[Hyperbolic Partial Differential Equation|hyperbolic]] and [[Parabolic Partial Differential Equation|parabolic]] equations.
 - The time-independent limit of both is the [[Laplace Equation]].
+- Boundaries: waves reflect off them with singularities intact ([[Wave Equation on a Finite Interval]]); diffusion with mismatched corner data is discontinuous only at the corner ([[Boundary Condition Subtraction Device]]).
 - Whole-line problems isolate these properties without boundary effects; for waves this is physically justified because the boundary's influence takes finite time to arrive.[^5]
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=66&annotation=USPZ5SCZ)

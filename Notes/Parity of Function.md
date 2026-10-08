@@ -12,3 +12,6 @@ tags:
 > - Odd (Symmetric about the [[Origin|origin]]) $\iff$ $f(-x) = -f(x)$
 
 Whether a function is even, odd, or neither.
+
+# Properties
+- Odd and even extensions enforce Dirichlet and Neumann boundary conditions in the [[Method of Reflection]].

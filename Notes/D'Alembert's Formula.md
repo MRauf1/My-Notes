@@ -38,6 +38,7 @@ tags:
 - $u(x, t)$ depends on $\phi$ only at the two points $x \pm ct$ and on $\psi$ only on $[x - ct, x + ct]$ ([[Domain of Dependence]]).
 - Singularities (kinks, jumps) of $\phi$ are not smoothed out; they travel along the characteristics at speed $c$ ([[Wave and Diffusion Equation Comparison]]).
 - Working on the whole line is justified physically by finite propagation speed: far from a boundary, the boundary's effect takes time to arrive, and until then the whole-line solution is valid.[^5]
+- With boundaries, apply it to the odd/even extension of the data ([[Wave Equation on the Half-Line]], [[Wave Equation on a Finite Interval]]); with a force, add the Duhamel term over the characteristic triangle ([[Inhomogeneous Wave Equation]]).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=45&annotation=L3DTZCH6); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=46&annotation=M4946FM9)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=46&annotation=DKN9IJ9K)

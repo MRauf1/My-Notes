@@ -32,6 +32,8 @@ tags:
 - [[Maximum Principle (Diffusion Equation)]]: maxima drop, minima rise, so solutions are smoothed out.
 - Well-posed forward, ill-posed (irreversible) backward ([[Diffusion Equation Well-Posedness]]).
 - Infinite speed of propagation, immediate loss of singularities, decay to zero ([[Wave and Diffusion Equation Comparison]]).
+- Solutions are $C^\infty$ for $t > 0$ even for bounded piecewise continuous data ([[Diffusion Equation Smoothing Theorem]]).
+- Half-line problems by the [[Method of Reflection]] ([[Diffusion Equation on the Half-Line]]); sources by [[Duhamel's Principle]] ([[Inhomogeneous Diffusion Equation]]).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=27&annotation=YGPGPWDI)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=28&annotation=BGSR7MAA)

@@ -22,6 +22,7 @@ Together with [[Initial Condition|initial conditions]], boundary conditions sing
 - The domain may have no boundary (e.g. all of $\mathbb{R}^3$ for the [[Schrödinger Equation]]), in which case no boundary condition is imposed.
 - Expressed with the [[Normal Derivative]] $\partial u/\partial n = \mathbf{n} \cdot \nabla u$, $\mathbf{n}$ the outward unit normal.
 - Can couple several unknowns: the components of the electromagnetic field each satisfy the [[Wave Equation]] separately but are coupled through boundary conditions.
+- Inhomogeneous boundary conditions can be made homogeneous by the [[Boundary Condition Subtraction Device]], at the cost of modified source and initial data.
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=32&annotation=FYN9I4HD)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=33&annotation=75AFYIDW)

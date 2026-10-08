@@ -18,6 +18,7 @@ tags:
 - If $u_p$ solves $\mathcal{L}u = g$ and $u_h$ solves the [[Homogeneous Linear Partial Differential Equation]] $\mathcal{L}u = 0$, then $u_p + u_h$ solves $\mathcal{L}u = g$, since $\mathcal{L}(u_p + u_h) = g + 0$.[^2]
 - Conversely, the difference of two solutions of $\mathcal{L}u = g$ solves $\mathcal{L}u = 0$. Hence the full solution set is the affine space $u_p + \ker \mathcal{L}$ (cf. [[Kernel Vector Subspace]]).
 - Can be of any order.
+- For evolution equations, a particular solution is built from the homogeneous solution operator by [[Duhamel's Principle]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=14&annotation=WFHSAPYJ)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=15&annotation=B4BVPKE6)

@@ -38,6 +38,8 @@ tags:
 - Constructed via the [[Diffusion Equation Invariance Properties]]: $S = \partial Q / \partial x$, where $Q(x, t) = \tfrac12 + \tfrac12 \operatorname{erf}\!\left(x / \sqrt{4kt}\right)$ solves the problem with step initial data, so particular solutions are often expressible through the [[Error Function]], though $u = S * \phi$ is generally not elementary.[^6]
 - **Infinite speed of propagation**: $S > 0$ everywhere for every $t > 0$, so a disturbance at any point is felt everywhere instantly (though mostly negligibly far away).
 - **Smoothing**: $u = S * \phi$ is $C^\infty$ in $(\mathbf{x}, t)$ for $t > 0$ even if $\phi$ is merely bounded and piecewise continuous, because all derivatives fall on the smooth kernel.
+  See [[Diffusion Equation Smoothing Theorem]].
+- Half-line Green's functions $S(x - y, t) \mp S(x + y, t)$ by the [[Method of Reflection]]; as the source operator it generates the solution with sources via [[Duhamel's Principle]].
 - **Decay**: $|u(\mathbf{x}, t)| \le (4\pi k t)^{-n/2}\|\phi\|_{L^1} \to 0$ for integrable $\phi$, while $\int u\, d\mathbf{x} = \int \phi\, d\mathbf{x}$ is conserved (mass spreads, it is not lost).
 - In Fourier space, $\hat{S}(\boldsymbol{\xi}, t) = e^{-k|\boldsymbol{\xi}|^2 t}$: high frequencies are damped fastest, which is the smoothing and the irreversibility ([[Diffusion Equation Well-Posedness]]).
 - Distinct from, but related to, the [[Diffusion Kernel]] of [[Diffusion Model|diffusion models]]: that is a Gaussian transition with an added shrinkage of the mean toward $\mathbf{0}$, whose noise part is this heat kernel.
