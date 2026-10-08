@@ -50,6 +50,7 @@ h[1] & h[0] & h[-1] & \cdots & 0 \\
 $$
 - Closely related to [[Cross Correlation (Signal Processing)|cross-correlation]], whose weights are $h[n, k] = h[k - n]$: the same kernel, mirrored about the origin.
 - The kernel $h$ of an LTI system is its [[Impulse Response]].
+- Becomes a pointwise product in the Fourier domain ([[Convolution Theorem]]).
 - Near the image boundary the kernel extends past the input; this is handled by [[Padding (Convolution)|padding]].
 - The [[Convolution Formula]] of probability is the continuous convolution of densities: the pdf of the sum of independent random variables is $f_{X_1} \circ f_{X_2}$.
 

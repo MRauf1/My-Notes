@@ -49,7 +49,7 @@ A compact list of fundamental papers referenced in the notes.
 - Orhan & Pitkow (2018). *Skip Connections Eliminate Singularities*. ICLR. [arXiv:1701.09175](https://arxiv.org/abs/1701.09175) — [[Residual Connection]]
 
 ## Transformers
-- Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser & Polosukhin (2017). *Attention Is All You Need*. NeurIPS. [arXiv:1706.03762](https://arxiv.org/abs/1706.03762) — [[Transformer]], [[Self-Attention]], [[Multi-Head Self-Attention]], [[Positional Encoding]]
+- Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser & Polosukhin (2017). *Attention Is All You Need*. NeurIPS. [arXiv:1706.03762](https://arxiv.org/abs/1706.03762) — [[Transformer]], [[Self-Attention]], [[Multi-Head Self-Attention]], [[Positional Encoding]], [[Spatial Frequency]]
 - Devlin, Chang, Lee & Toutanova (2019). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*. NAACL. [arXiv:1810.04805](https://arxiv.org/abs/1810.04805) — [[Transformer Encoder]]
 - Brown et al. (2020). *Language Models are Few-Shot Learners*. NeurIPS. [arXiv:2005.14165](https://arxiv.org/abs/2005.14165) — [[Autoregressive Language Model]], [[Transformer Decoder]]
 - Sennrich, Haddow & Birch (2016). *Neural Machine Translation of Rare Words with Subword Units*. ACL. [arXiv:1508.07909](https://arxiv.org/abs/1508.07909) — [[Tokenization]]
@@ -248,3 +248,11 @@ A compact list of fundamental papers referenced in the notes.
 - Hall (1992). *The Bootstrap and Edgeworth Expansion*. Springer. — [[Monte Carlo Confidence Interval]] (coverage error $1 - \alpha + O(n^{-1})$)
 - Hoeffding (1963). *Probability Inequalities for Sums of Bounded Random Variables*. JASA 58(301). — [[Hoeffding's Inequality]]
 - Knight (2000). *Mathematical Statistics*. Chapman & Hall/CRC. — [[Slutsky's Theorem]]
+
+## Fourier Analysis and Image Processing
+- Torralba, Isola & Freeman (2024). *Foundations of Computer Vision*, Ch. 16: Fourier Analysis. MIT Press. [visionbook.mit.edu](https://visionbook.mit.edu/image_processing_fourier.html) — [[Discrete Fourier Transform]], [[Fourier Transform]], [[Transfer Function (Signal Processing)]]
+- Fourier (1822). *Théorie analytique de la chaleur*. Firmin Didot. — [[Fourier Series]], [[Heat Equation]]
+- Cooley & Tukey (1965). *An Algorithm for the Machine Calculation of Complex Fourier Series*. Mathematics of Computation 19(90). [doi:10.2307/2003354](https://doi.org/10.2307/2003354) — [[Fast Fourier Transform]]
+- Oppenheim & Lim (1981). *The Importance of Phase in Signals*. Proceedings of the IEEE 69(5). [doi:10.1109/PROC.1981.12022](https://doi.org/10.1109/PROC.1981.12022) — [[Fourier Amplitude and Phase]]
+- Field (1987). *Relations Between the Statistics of Natural Images and the Response Properties of Cortical Cells*. JOSA A 4(12). [doi:10.1364/JOSAA.4.002379](https://doi.org/10.1364/JOSAA.4.002379) — [[Natural Image Amplitude Spectrum]]
+- Oliva & Torralba (2001). *Modeling the Shape of the Scene: A Holistic Representation of the Spatial Envelope*. IJCV 42(3). [doi:10.1023/A:1011139631724](https://doi.org/10.1023/A:1011139631724) — [[Fourier Amplitude and Phase]] (amplitude-spectrum scene descriptor)

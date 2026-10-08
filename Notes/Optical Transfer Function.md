@@ -11,6 +11,8 @@ tags:
 # Properties
 - Follows from the fact that a harmonic input to a shift-invariant system produces a harmonic output at the same frequency, only scaled in amplitude and shifted in phase — the optical transfer function records exactly that scale and phase shift as a function of frequency.
 - An equivalent, frequency-domain description of a [[Shift-Invariant System|shift-invariant system]] to its spatial-domain [[Point Spread Function]] or [[Line Spread Function]].
+- The optical instance of the [[Transfer Function (Signal Processing)|transfer function]] of an LTI filter: the [[Fourier Transform]] of the [[Point Spread Function]].[^2]
 - Reduces to the real-valued [[Modulation Transfer Function]] when the system's pointspread (or linespread) function is even-symmetric, since this introduces no phase shift.
 
 [^1]: [Foundations of Vision (Wandell)](zotero://open-pdf/library/items/YYQVJZJ3?page=25&annotation=IGIBNTTI)
+[^2]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)

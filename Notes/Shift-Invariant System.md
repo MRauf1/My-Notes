@@ -25,6 +25,7 @@ Motivated by the fact that we typically do not know where in the image a given i
 - The convolution kernel of an LTI system is its [[Impulse Response]].
 - Because every possible shifted stimulus produces the same response shape, only shifted, the system's entire [[Imaging Matrix|system matrix]] can be filled in from the response to a single stimulus (e.g. one line or one point), rather than requiring the response to every individual stimulus to be measured separately as for a general [[Linear Map|linear system]].
 - A harmonic (sinusoidal) input at a given frequency produces a harmonic output at the same frequency: the output is a scaled, and in general phase-shifted, copy of the input frequency, never a different frequency.
+- The [[Discrete Complex Exponential|complex exponentials]] are the eigenfunctions of every LTI system, with eigenvalues given by its [[Transfer Function (Signal Processing)|transfer function]], the Fourier transform of the impulse response ([[Convolution Theorem]]).[^3]
 - Fully characterized by its [[Optical Transfer Function]] in the frequency domain, or equivalently by its [[Point Spread Function]] (or, for one-dimensional stimuli, [[Line Spread Function]]) in the spatial domain.
 - The optics of the human eye are approximately shift-invariant near the [[Fovea]], which licenses inferring the eye's complete [[Retinal Image Formation|imaging behavior]] from a single measured point or line response.
 
@@ -32,3 +33,4 @@ Motivated by the fact that we typically do not know where in the image a given i
 
 [^1]: [Foundations of Vision (Wandell)](zotero://open-pdf/library/items/YYQVJZJ3?page=19&annotation=HTIZEXPP)
 [^2]: [MIT Vision Book - Linear Image Filtering](https://visionbook.mit.edu/linear_image_filtering.html)
+[^3]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)

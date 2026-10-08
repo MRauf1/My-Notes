@@ -17,6 +17,7 @@ tags:
 # Properties
 - By translation invariance, a translated impulse $\delta[n - n_0]$ yields $h[n - n_0]$.
 - For an unknown LTI system, the convolution kernel can be found by measuring its output to an impulse; this is one tool for explaining the behavior of complex systems such as neural networks.
+- Its Fourier transform is the [[Transfer Function (Signal Processing)|transfer function]] of the system.
 - In optics, the impulse response of an imaging system is its [[Point Spread Function]].
 - Follows from the identity property of the impulse ([[Kronecker Delta]], [[Dirac Delta Function]]).
 

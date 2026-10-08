@@ -25,6 +25,7 @@ tags:
 
 # Properties
 - Equal to the squared $\ell^2$ [[Norm]] of the signal, $E = \|\ell\|_2^2$; finite energy signals are exactly the elements of $\ell^2(\mathbb{Z})$ (resp. $L^2(\mathbb{R})$).[^2]
+- Can equivalently be computed from the squared magnitudes of the signal's Fourier transform ([[Parseval's Theorem]]).
 
 [^1]: [MIT Vision Book - Linear Image Filtering](https://visionbook.mit.edu/linear_image_filtering.html)
 [^2]: Added from general knowledge.

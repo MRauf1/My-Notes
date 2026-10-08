@@ -23,6 +23,7 @@ tags:
 # Properties
 - **Adding vs. concatenating**: since usually $D > N$, the encodings lie in a subspace of $\mathbb{R}^D$; because the word embeddings are learned, the network can in principle keep words and positions in orthogonal subspaces and recover the positional component as needed.[^5]
 - **Sinusoidal properties**: (i) the relative position of two encodings is recoverable by a linear operation, since for each frequency the pair $(\sin, \cos)$ at position $n + k$ is a rotation of the pair at $n$ by an angle depending only on $k$; (ii) the [[Dot Product|dot product]] between encodings generally decreases with the distance between positions.[^5]
+- Sinusoidal encodings are best understood through Fourier analysis ([[Spatial Frequency]], [[Discrete Complex Exponential]]): a shift in position acts on each $(\sin, \cos)$ pair as multiplication by a complex exponential, as in the [[Fourier Shift Theorem]].
 - Learned encodings in GPT3 and BERT show a [[Cosine Similarity|cosine similarity]] that generally declines with relative distance but also has a periodic component (Wang et al., 2020).[^5]
 
 [^1]: [Prince, p. 213](zotero://open-pdf/library/items/BWT7FYX5?page=227&annotation=QUSJZKJ7); [Prince, p. 213](zotero://open-pdf/library/items/BWT7FYX5?page=227&annotation=LS2XE8XW)

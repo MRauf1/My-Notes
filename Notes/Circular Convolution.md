@@ -18,7 +18,7 @@ tags:
 - The output is periodic with period $N$: $\ell_{\text{out}}[n] = \ell_{\text{out}}[(n)_N]$.
 - Has the same properties as the ordinary convolution, e.g. it is commutative ([[Convolution Basic Properties]]).
 - Mainly an analytical convenience: it turns a finite signal into a periodic infinite one, at the cost of boundary artifacts.
-- Its matrix $\mathbf{H}$ is circulant, so it is diagonalized by the DFT (circular convolution theorem: the DFT of $h \circ_N \ell$ is the pointwise product of the DFTs).[^2]
+- Its matrix $\mathbf{H}$ is circulant, so it is diagonalized by the [[DFT Matrix]] ([[Convolution Theorem]]: the [[Discrete Fourier Transform|DFT]] of $h \circ_N \ell$ is the pointwise product of the DFTs).[^2]
 
 [^1]: [MIT Vision Book - Linear Image Filtering](https://visionbook.mit.edu/linear_image_filtering.html)
 [^2]: Added from general knowledge.
