@@ -22,6 +22,7 @@ tags:
 # Properties
 - For an image, the DC component is the average intensity of the image.
 - The name comes from "direct current": it is the zero-frequency component of the signal, i.e. the $k = 0$ coefficient of its [[Discrete Fourier Transform|Fourier transform]] divided by $N$.[^2]
+- A filter scales the DC value of its input by its [[DC Gain]].
 - Normalizing a kernel to zero mean (removing its DC component) is the first step of [[Normalized Cross Correlation]].
 
 [^1]: [MIT Vision Book - Linear Image Filtering](https://visionbook.mit.edu/linear_image_filtering.html)

@@ -13,3 +13,6 @@ tags:
 > {n \choose k} = {n-1 \choose k} + {n-1 \choose k-1}
 > \end{align}
 > $$
+
+# Properties
+- Equivalent to $b_n = b_{n-1} \circ [1, 1]$, the recursion generating the [[Binomial Filter]].

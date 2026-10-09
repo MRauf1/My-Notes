@@ -11,7 +11,7 @@ tags:
 # Properties
 - Applied to an image, outputs a blurry picture encoding the coarse elements of the image.
 - Used to blur images, e.g. to remove noise or in preparation for subsampling (to avoid [[Aliasing]]).
-- Typical examples are the box (averaging) filter ([[Box Function (Signal Processing)]]) and the Gaussian filter.[^2]
+- Typical examples are the [[Box Filter]] (averaging), the [[Gaussian Filter]], and the [[Binomial Filter]] ([[Blur Filter|blur filters]]); they are normalized to [[DC Gain]] $1$.[^2]
 - Counterparts: [[Band-Pass Filter]], [[High-Pass Filter]].
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
