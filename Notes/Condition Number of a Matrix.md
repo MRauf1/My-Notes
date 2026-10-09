@@ -86,6 +86,26 @@ Geometrically in 2D: if the two lines are nearly parallel (ill-conditioned), sma
 > $$
 > i.e., the computed solution loses about $\log_{10}(\operatorname{cond}(A))$ decimal digits of accuracy relative to the accuracy of the input.
 
+> [!info] Definition 10 (Condition Number of a Rectangular Matrix)[^11]
+> For $A \in \mathbb{R}^{m \times n}$ with $\operatorname{rank}(A) = n$, with [[Pseudoinverse]] $A^+ = (A^TA)^{-1}A^T$,
+> $$
+> \begin{align}
+> \operatorname{cond}(A) = \lVert A \rVert_2 \cdot \lVert A^+ \rVert_2
+> \end{align}
+> $$
+> By convention $\operatorname{cond}(A) = \infty$ if $\operatorname{rank}(A) < n$. Just as the condition number of a square matrix measures closeness to singularity, that of a rectangular matrix measures closeness to rank deficiency.
+
+> [!abstract] Theorem 11 (Euclidean Condition Number via SVD)[^12]
+> For an arbitrary $A \in \mathbb{R}^{m \times n}$,
+> $$
+> \begin{align}
+> \operatorname{cond}_2(A) = \frac{\sigma_{\max}}{\sigma_{\min}}
+> \end{align}
+> $$
+> This agrees with Definition 6 in the 2-norm for square matrices and with Definition 10, and generalizes both to any shape and rank; $\operatorname{cond}_2(A) = \infty$ if $\operatorname{rank}(A) < \min(m, n)$, since then $\sigma_{\min} = 0$.
+
+For least squares problems, $\operatorname{cond}(A)$ alone does not determine sensitivity; see [[Sensitivity of Linear Least Squares Problem]]. Note also $\operatorname{cond}(A^TA) = [\operatorname{cond}(A)]^2$ ([[Normal Equations]]).[^13]
+
 Caveats:[^10]
 - Norm-based bounds bound the relative error in the *largest* components of the solution; the relative error in smaller components can be much larger, since a norm is dominated by the largest components. Componentwise bounds exist but are more complicated, and matter most for poorly scaled systems.
 - $\operatorname{cond}(A)$ is affected by the scaling of $A$. A large condition number can come from poor scaling as well as from near singularity; rescaling helps the former but not the latter.
@@ -105,6 +125,7 @@ Caveats:[^10]
 - [[Operator Norm]]
 - [[Unitary Matrix]]
 - [[Singular Value]]
+- [[Numerical Rank]]
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=294)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=295)
@@ -116,3 +137,6 @@ Caveats:[^10]
 [^8]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=80)
 [^9]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=81)
 [^10]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=81)
+[^11]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=134)
+[^12]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=159)
+[^13]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=138)

@@ -2,6 +2,8 @@
 tags:
   - mathematics
   - linear_algebra
+  - computer_science
+  - numerical_analysis
 ---
 
 # Definition
@@ -35,6 +37,22 @@ Geometrically, $A = U\Sigma V^*$ decomposes the map $x \mapsto Ax$ into a sequen
 
 This alternate form shows that a rank-$r$ matrix in $M_{m,n}(\mathbb{F})$, which generally takes $mn$ numbers to describe, can be specified using only $(m+n)r$ numbers (the entries of $\sigma_1 u_1, \dots, \sigma_r u_r$ and of $v_1, \dots, v_r$) — the basis for the [[Low-Rank Matrix Approximation Theorem|best low-rank approximation]] of a matrix.
 
+> [!info] Definition 4 (Reduced SVD)[^8]
+> If $A \in \mathbb{R}^{m \times n}$ with $m \geq n$, then
+> $$
+> \begin{align}
+> A = U\Sigma V^T = \begin{bmatrix} U_1 & U_2 \end{bmatrix} \begin{bmatrix} \Sigma_1 \\ O \end{bmatrix} V^T = U_1 \Sigma_1 V^T
+> \end{align}
+> $$
+> with $U_1 \in \mathbb{R}^{m \times n}$ and $\Sigma_1 \in \mathbb{R}^{n \times n}$ is the reduced ("economy size") SVD. If $\operatorname{rank}(A) = n$, then $\Sigma_1$ is nonsingular.
+
+> [!abstract] Theorem 5 (Orthonormal Bases for the Fundamental Subspaces)[^9]
+> If $A = U\Sigma V^T$, then
+> - the columns of $U$ for nonzero singular values form an orthonormal basis for $\operatorname{span}(A)$, and the remaining columns of $U$ one for $\operatorname{span}(A)^\perp$;
+> - the columns of $V$ for zero singular values form an orthonormal basis for the null space $\{x : Ax = 0\}$, and the remaining columns of $V$ one for its [[Orthogonal Complement]].
+
+Numerical uses: solving [[Linear Least Squares Problem|least squares problems]] of any shape or rank (minimum-norm solution $x = \sum_{\sigma_i \neq 0} (u_i^Tb/\sigma_i) v_i$), the 2-norm $\lVert A \rVert_2 = \sigma_{\max}$, the [[Condition Number of a Matrix|condition number]] $\sigma_{\max}/\sigma_{\min}$, [[Numerical Rank]], the [[Pseudoinverse]], [[Low-Rank Matrix Approximation Theorem|low-rank approximation]], and [[Total Least Squares]]. It is the most robust and reliable but also the most expensive least squares method, costing $\propto mn^2 + n^3$ with a constant of 4 to 10 or more.[^10]
+
 # Algorithm
 - [[Singular Value Decomposition Algorithm]]
 
@@ -60,3 +78,6 @@ This alternate form shows that a rank-$r$ matrix in $M_{m,n}(\mathbb{F})$, which
 [^4]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=317)
 [^5]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=321)
 [^6]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=323)
+[^8]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=158)
+[^9]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=161)
+[^10]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=164)

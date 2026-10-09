@@ -34,7 +34,7 @@ Reflection about the origin is a distinct transformation from reflection about t
 > \end{align}
 > $$
 
-A general linear map is a reflection (rather than a rotation) exactly when it is an [[Orthogonal Matrix]] with $\det = -1$.
+A general linear map is a reflection (rather than a rotation) exactly when it is an [[Orthogonal Matrix]] with $\det = -1$. Reflection across a general hyperplane through the origin is a [[Householder Transformation]].
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=22)
 [^2]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=138)

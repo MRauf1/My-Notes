@@ -37,6 +37,7 @@ tags:
 - [[Positive Definite Matrix]]
 - [[Upper Triangular Matrix]]
 - [[QR Decomposition]]
+- Used to solve the [[Normal Equations]] of a [[Linear Least Squares Problem|least squares problem]].
 - [[Matrix Conjugate Transpose]]
 - Used in [[Multivariate Normal Sampling (Cholesky Factorization)|multivariate normal sampling]] to factor a covariance matrix $\Sigma = AA^\top$.
 

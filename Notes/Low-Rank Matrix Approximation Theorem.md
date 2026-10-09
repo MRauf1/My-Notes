@@ -25,7 +25,11 @@ Together, Theorems 1 and 2 imply the surprising fact that the best rank-$k$ appr
 
 This gives a practical way to compress a matrix: approximating $A$ by a lower-rank matrix reduces the amount of data needed to describe it (a rank-$k$ matrix needs only $(m+n)k$ numbers, versus $mn$ for the full matrix), which is important for making large computations feasible.
 
+Writing $A = \sum_i \sigma_i E_i$ with $E_i = u_iv_i^T$, each rank-one $E_i$ is stored in $m + n$ locations and $E_ix$ costs $m + n$ multiplications, so dropping the terms with small singular values gives a useful condensed approximation. Applications include image processing, data compression, information retrieval, and cryptography.[^3]
+
 # Properties
+- [[Total Least Squares]]
+- [[Numerical Rank]]
 - [[Singular Value Decomposition Theorem]]
 - [[Singular Value]]
 - [[Rank]]
@@ -34,3 +38,4 @@ This gives a practical way to compress a matrix: approximating $A$ by a lower-ra
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=324)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=326)
+[^3]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=161)
