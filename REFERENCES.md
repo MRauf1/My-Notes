@@ -269,6 +269,9 @@ A compact list of fundamental papers referenced in the notes.
 - Shi & Malik (2000). *Normalized Cuts and Image Segmentation*. IEEE TPAMI 22(8). [doi:10.1109/34.868688](https://doi.org/10.1109/34.868688) — [[Laplacian Filter]], [[Graph Laplacian Matrix]]
 - Land & McCann (1971). *Lightness and Retinex Theory*. JOSA 61(1). [doi:10.1364/JOSA.61.000001](https://doi.org/10.1364/JOSA.61.000001) — [[Retinex Algorithm]]
 - Barrow & Tenenbaum (1978). *Recovering Intrinsic Scene Characteristics from Images*. In *Computer Vision Systems*, Academic Press. — [[Intrinsic Image Decomposition]]
+- Torralba, Isola & Freeman (2024). *Foundations of Computer Vision*, Ch. 19: Temporal Filters. MIT Press. [visionbook.mit.edu](https://visionbook.mit.edu/temporal_filters_v2.html) — [[Brightness Constancy Assumption]], [[Fourier Transform of Moving Image]], [[Spatio-Temporal Filter]], [[Causal Filter]], [[Infinite Impulse Response Filter]], [[Bounded-Input Bounded-Output Stability]], [[Spatio-Temporal Gaussian Filter]]
+- Horn & Schunck (1981). *Determining Optical Flow*. Artificial Intelligence 17(1–3). [doi:10.1016/0004-3702(81)90024-2](https://doi.org/10.1016/0004-3702(81)90024-2) — [[Brightness Constancy Assumption]]
+- Adelson & Bergen (1985). *Spatiotemporal Energy Models for the Perception of Motion*. JOSA A 2(2). [doi:10.1364/JOSAA.2.000284](https://doi.org/10.1364/JOSAA.2.000284) — [[Fourier Transform of Moving Image]], [[Spatio-Temporal Filter]]
 
 ## Spectral Theory of Differential Operators
 - Weyl (1911). *Über die asymptotische Verteilung der Eigenwerte*. Nachrichten der Königlichen Gesellschaft der Wissenschaften zu Göttingen. — [[Eigenfunction]] (Weyl's law)

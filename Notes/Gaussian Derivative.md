@@ -45,5 +45,7 @@ d_0 = [1, -1], \; d_1 = [1, 0, -1], \; d_2 = [1, 1, -1, -1], \; d_3 = [1, 2, 0, 
 $$
   The 2D separable version with $d_1$ and $b_2$ is the [[Sobel Operator]].
 - The Gaussian gradient and directional derivatives are covered in [[Image Gradient]]; the Laplacian of the Gaussian in [[Laplacian Filter]].
+- The spatio-temporal extension, including $\partial g / \partial t = -\frac{t}{\sigma_t^2} g$, is in [[Spatio-Temporal Gaussian Filter]].[^2]
 
 [^1]: [MIT Vision Book - Image Derivatives](https://visionbook.mit.edu/derivatives.html)
+[^2]: [MIT Vision Book - Temporal Filters](https://visionbook.mit.edu/temporal_filters_v2.html)

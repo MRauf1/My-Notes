@@ -20,5 +20,7 @@ tags:
 - Its Fourier transform is the [[Transfer Function (Signal Processing)|transfer function]] of the system.
 - In optics, the impulse response of an imaging system is its [[Point Spread Function]].
 - Follows from the identity property of the impulse ([[Kronecker Delta]], [[Dirac Delta Function]]).
+- In time, the impulse response determines [[Causal Filter|causality]] ($h[t] = 0$ for $t < 0$) and [[Bounded-Input Bounded-Output Stability|stability]]; filters whose impulse response has infinite support are [[Infinite Impulse Response Filter|IIR filters]].[^2]
 
 [^1]: [MIT Vision Book - Linear Image Filtering](https://visionbook.mit.edu/linear_image_filtering.html)
+[^2]: [MIT Vision Book - Temporal Filters](https://visionbook.mit.edu/temporal_filters_v2.html)

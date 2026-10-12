@@ -44,5 +44,7 @@ $$
 - As $\sigma \to 0$ it becomes an impulse ([[Dirac Delta Function]]).
 - **Discretization breaks these properties**: they hold only in the continuous domain. Convolving discretized Gaussians does not give a discretized Gaussian (errors accumulate over successive convolutions), the sampled kernel's actual variance differs from $\sigma^2$, and it does not fully cancel the highest frequency $[1, -1, 1, -1, \dots]$, which matters e.g. for antialiasing before downsampling ([[Aliasing]]). The [[Binomial Filter]] fixes these.
 - Its derivatives ([[Gaussian Derivative|Gaussian derivatives]]) are used to compute smoothed, noise-robust image derivatives, and its Laplacian is the Laplacian of Gaussian ([[Laplacian Filter]]).
+- Extends to image sequences as the [[Spatio-Temporal Gaussian Filter]], with separate spatial and temporal widths.[^2]
 
 [^1]: [MIT Vision Book - Blurring](https://visionbook.mit.edu/blurring_2.html)
+[^2]: [MIT Vision Book - Temporal Filters](https://visionbook.mit.edu/temporal_filters_v2.html)

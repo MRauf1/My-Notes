@@ -42,6 +42,8 @@ $$
 - **Undefined derivatives**: a continuous image with a step (e.g. $\ell(x, y) = 0$ for $x < 0$ and $1$ otherwise) has no derivative at the discontinuity, whereas its discrete approximation is always defined. The [[Gaussian Derivative]] resolves this in the continuous domain.
 - The derivative loses only the [[DC Value|DC component]] of the signal: see [[Signal Reconstruction from Derivatives]].
 - Discrete derivatives are fundamental components of descriptors such as SIFT and HOG.
+- **Temporal derivative**: $\ell[n, m, t] - \ell[n, m, t-1]$ approximates $\partial \ell / \partial t$ in image sequences and locates moving objects ([[Spatio-Temporal Filter]]).[^3]
 
 [^1]: [MIT Vision Book - Image Derivatives](https://visionbook.mit.edu/derivatives.html)
 [^2]: Derived from the DFT definition; the textbook's DFT discussion was not highlighted.
+[^3]: [MIT Vision Book - Temporal Filters](https://visionbook.mit.edu/temporal_filters_v2.html)

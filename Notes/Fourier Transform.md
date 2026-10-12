@@ -39,7 +39,9 @@ All of them extend to 2D.
 - The [[Characteristic Function (Probability)|characteristic function]] of a random variable is the Fourier transform of its density (up to the sign of the exponent).[^2]
 - The Fourier transform of the [[Dirac Delta Function]] is $1$.[^2]
 - Differentiation becomes multiplication by $jw$: $\frac{\partial \ell(x)}{\partial x} \xrightarrow{\mathscr{F}} jw\mathscr{L}(w)$; discrete approximations are analyzed in [[Discrete Image Derivative]].[^3]
+- The spatio-temporal FT of a translating image lies on a plane (delta wall): see [[Fourier Transform of Moving Image]].[^4]
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.
 [^3]: [MIT Vision Book - Image Derivatives](https://visionbook.mit.edu/derivatives.html)
+[^4]: [MIT Vision Book - Temporal Filters](https://visionbook.mit.edu/temporal_filters_v2.html)
