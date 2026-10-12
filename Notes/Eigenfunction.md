@@ -35,6 +35,7 @@ tags:
 - The building blocks of [[Separation of Variables]]; an expansion in eigenfunctions diagonalizes the PDE.
 - Eigenfunctions of the [[Laplacian Operator]] are the continuous counterpart of eigenvectors of the [[Graph Laplacian Matrix]].
 - With an orthogonal eigenbasis, [[Parseval's Theorem]] holds: $\|f\|^2 = \sum_n |\langle f, X_n\rangle|^2 / \|X_n\|^2$.
+- For a [[Symmetric Boundary Condition]]: eigenfunctions of distinct eigenvalues are orthogonal ([[Symmetric Boundary Condition Orthogonality Theorem]]), eigenvalues are real ([[Symmetric Boundary Condition Real Eigenvalue Theorem]]), and they form a [[Complete Orthogonal Set]] for the [[Eigenfunction Expansion]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=100&annotation=7BSX5QNZ)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=100&annotation=PSI8758E)

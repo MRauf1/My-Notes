@@ -252,6 +252,10 @@ A compact list of fundamental papers referenced in the notes.
 ## Fourier Analysis and Image Processing
 - Torralba, Isola & Freeman (2024). *Foundations of Computer Vision*, Ch. 16: Fourier Analysis. MIT Press. [visionbook.mit.edu](https://visionbook.mit.edu/image_processing_fourier.html) — [[Discrete Fourier Transform]], [[Fourier Transform]], [[Transfer Function (Signal Processing)]]
 - Fourier (1822). *Théorie analytique de la chaleur*. Firmin Didot. — [[Fourier Series]], [[Heat Equation]], [[Separation of Variables]]
+- Dirichlet (1829). *Sur la convergence des séries trigonométriques qui servent à représenter une fonction arbitraire entre des limites données*. Journal für die reine und angewandte Mathematik 4. — [[Fourier Series Pointwise Convergence Theorem]], [[Dirichlet Kernel]]
+- Wilbraham (1848). *On a Certain Periodic Function*. Cambridge and Dublin Mathematical Journal 3. — [[Gibbs Phenomenon]]
+- Gibbs (1899). *Fourier's Series*. Nature 59. [doi:10.1038/059606a0](https://doi.org/10.1038/059606a0) — [[Gibbs Phenomenon]]
+- Carleson (1966). *On Convergence and Growth of Partial Sums of Fourier Series*. Acta Mathematica 116. [doi:10.1007/BF02392815](https://doi.org/10.1007/BF02392815) — [[Fourier Series L2 Convergence Theorem]]
 - Cooley & Tukey (1965). *An Algorithm for the Machine Calculation of Complex Fourier Series*. Mathematics of Computation 19(90). [doi:10.2307/2003354](https://doi.org/10.2307/2003354) — [[Fast Fourier Transform]]
 - Oppenheim & Lim (1981). *The Importance of Phase in Signals*. Proceedings of the IEEE 69(5). [doi:10.1109/PROC.1981.12022](https://doi.org/10.1109/PROC.1981.12022) — [[Fourier Amplitude and Phase]]
 - Field (1987). *Relations Between the Statistics of Natural Images and the Response Properties of Cortical Cells*. JOSA A 4(12). [doi:10.1364/JOSAA.4.002379](https://doi.org/10.1364/JOSAA.4.002379) — [[Natural Image Amplitude Spectrum]]

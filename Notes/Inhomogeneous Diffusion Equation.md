@@ -26,6 +26,7 @@ For a rod, $\phi$ is the initial temperature distribution and $f$ is heat suppli
 - An [[Inhomogeneous Linear Partial Differential Equation]]: particular solution (the Duhamel term, which has zero initial data) plus homogeneous solution.
 - On the half-line, reflect both $\phi$ and $f$ ([[Method of Reflection]], [[Diffusion Equation on the Half-Line]]).
 - A boundary source $v(0, t) = h(t)$ is converted to an extra interior source $-h'(t)$ by the [[Boundary Condition Subtraction Device]].
+- On a finite interval with inhomogeneous boundary data, solved mode by mode with the [[Eigenfunction Expansion Method for Inhomogeneous Boundary Conditions]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=79&annotation=NREHNHGN)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=80&annotation=SRF943HC)

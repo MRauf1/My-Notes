@@ -33,5 +33,6 @@ This [[Algorithm]] can be used to check for [[Linearly Dependent]] [[Vector]]. I
 
 # Properties
 - Applied to the columns of a matrix, it computes the reduced [[QR Decomposition]].
+- Orthogonalizes eigenfunctions sharing an eigenvalue in function space ([[Symmetric Boundary Condition Orthogonality Theorem]]).
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=264)

@@ -36,7 +36,7 @@ $$
 u(x, t) = \sum_{n=1}^\infty \left(A_n \cos\frac{n\pi c t}{l} + B_n \sin\frac{n\pi c t}{l}\right)\sin\frac{n\pi x}{l}, \qquad \phi = \sum_n A_n \sin\frac{n\pi x}{l}, \quad \psi = \sum_n \frac{n\pi c}{l} B_n \sin\frac{n\pi x}{l},
 \end{align}
 $$
-valid whenever $\phi, \psi$ have [[Fourier Sine Series|Fourier sine expansions]] (practically always, as Fourier claimed; proved in the theory of [[Fourier Series]]). The coefficients $n\pi c/l = c\sqrt{\lambda_n}$ are the (angular) **frequencies**, integer multiples of the fundamental $\pi c/l$ (some texts call $nc/2l$ the frequency); each separated solution is a normal mode in [[Simple Harmonic Motion]].
+valid whenever $\phi, \psi$ have [[Fourier Sine Series|Fourier sine expansions]] (practically always, as Fourier claimed; proved in the theory of [[Fourier Series]]). Orthogonality gives $A_m = \frac2l \int_0^l \phi \sin\frac{m\pi x}{l}\, dx$ and $\frac{m\pi c}{l} B_m = \frac2l \int_0^l \psi \sin\frac{m\pi x}{l}\, dx$.[^10] The coefficients $n\pi c/l = c\sqrt{\lambda_n}$ are the (angular) **frequencies**, integer multiples of the fundamental $\pi c/l$ (some texts call $nc/2l$ the frequency); each separated solution is a normal mode in [[Simple Harmonic Motion]].
 
 **Neumann ends** ($u_x(0, t) = u_x(l, t) = 0$).[^8] The zero eigenvalue of the [[Neumann Eigenvalue Problem on an Interval]] gives $T'' = 0$, $T = A + Bt$, so
 $$
@@ -62,3 +62,4 @@ with $\phi = \tfrac12 A_0 + \sum A_n \cos\frac{n\pi x}{l}$ and $\psi = \tfrac12 
 [^7]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=98&annotation=JWZ6DINZ); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=98&annotation=3Y3IXXXE); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=99&annotation=DZXJXYTX)
 [^8]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=103&annotation=MW3XQS2X)
 [^9]: Spectral-theory connection added from general knowledge.
+[^10]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=118&annotation=JKCPVALG)

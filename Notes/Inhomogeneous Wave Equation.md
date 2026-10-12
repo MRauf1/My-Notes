@@ -28,6 +28,7 @@ For a string, $f$ is an external force acting on an infinitely long vibrating st
 - [[Hyperbolic Partial Differential Equation|Hyperbolic]].
 - The force influences $u(x, t)$ only through its values in the characteristic triangle, the [[Domain of Dependence]] of $(x, t)$.
 - On the half-line with boundary data $u(0, t) = h(t)$, the triangle is cut off by the wall and a retarded term $h(t - x/c)$ appears ([[Wave Equation on the Half-Line]]).
+- On a finite interval with inhomogeneous boundary data, solved mode by mode with the [[Eigenfunction Expansion Method for Inhomogeneous Boundary Conditions]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=25&annotation=BCC9SXSP)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=83&annotation=Y3NDAPYC); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=83&annotation=SDQHTZFH)

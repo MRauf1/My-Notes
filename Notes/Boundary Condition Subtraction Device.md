@@ -27,7 +27,12 @@ The new problem has a homogeneous boundary condition, so the [[Method of Reflect
 - Works for any linear PDE, since the difference of solutions solves the problem with the differences of the data ([[Inhomogeneous Linear Partial Differential Equation]]).
 - The choice of $H$ is free: it need only meet the boundary condition (e.g. a linear interpolant $H = h(t) + \frac{x}{l}[g(t) - h(t)]$ on an interval $(0, l)$ with $v(0) = h$, $v(l) = g$).
 - The domain of $(x, t)$ is a quarter-plane with data on both edges; if $\phi(0) \neq h(0)$ the solution is discontinuous at the corner but continuous elsewhere (diffusion smooths the jump immediately for $t > 0$).[^3]
+- General principle: by subtraction, data can be shifted from the boundary to another spot in the problem; the boundary conditions are made homogeneous by subtracting any known function that satisfies them.[^4]
+- If the subtracted function satisfies both the boundary conditions and the (inhomogeneous) differential equation, the PDE and the boundary conditions become homogeneous simultaneously, leaving all data in the initial conditions.[^5]
+- Alternative: expand directly in eigenfunctions ([[Eigenfunction Expansion Method for Inhomogeneous Boundary Conditions]]).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=82&annotation=GV8D8JT5)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=82&annotation=GZN9RQNM)
 [^3]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=82&annotation=UPGKLY8Q)
+[^4]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=161&annotation=2PUHR5U6)
+[^5]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=162&annotation=JZ2WTD7N)

@@ -10,6 +10,17 @@ tags:
 > 1) For each $v \in V$, $\lVert P_U v \rVert \leq \lVert v \rVert$, with equality if and only if $v \in U$.
 > 2) For each $v \in V$ and $u \in U$, $\lVert v - P_U v \rVert \leq \lVert v - u \rVert$, with equality if and only if $u = P_U v$.
 
+> [!abstract] Theorem 2 (Least-Square Approximation by Orthogonal Functions)[^2]
+> Let $\{X_n\}$ be any orthogonal set of functions, $\|f\| < \infty$ in the [[L2 Norm]], and $N$ a fixed positive integer. Among all choices of constants $c_1, \dots, c_N$, the one minimizing
+> $$
+> \begin{align}
+> \Big\| f - \sum_{n=1}^N c_n X_n \Big\|
+> \end{align}
+> $$
+> is $c_n = A_n = (f, X_n)/(X_n, X_n)$, the Fourier coefficients: the linear combination of $X_1, \dots, X_N$ closest to $f$ is the Fourier combination.
+
+Theorem 2 is Theorem 1 with $U = \operatorname{span}(X_1, \dots, X_N)$ in the function space $L^2(a, b)$; the truncated [[Eigenfunction Expansion]] is the [[Orthogonal Projection]] of $f$ onto $U$, and adding more terms never changes the earlier coefficients.
+
 ![[Orthogonal Projection Norm Inequality.png]]
 ![[Orthogonal Projection Best Approximation.png]]
 
@@ -24,3 +35,4 @@ tags:
 - Underlies approximating a complicated function by a simpler one (e.g. a polynomial) with respect to a norm induced by an [[Inner Product]] over an interval, unlike a Taylor polynomial, which only approximates well near a single point.
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=278)
+[^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=143&annotation=SNIWUQBK)

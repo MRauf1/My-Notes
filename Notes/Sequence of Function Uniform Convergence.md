@@ -32,6 +32,7 @@ Unlike pointwise convergence, the "gap" between $(f_n)$ and $f$ must shrink at t
 # Properties
 ## Convergence
 - Uniform convergence implies [[Sequence of Function Pointwise Convergence]]
+- On a bounded interval, uniform convergence implies [[Mean-Square Convergence]]
 
 ## [[Continuity]]
 - [[Uniform Limit of Continuous Functions Theorem]]
