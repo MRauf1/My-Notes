@@ -38,6 +38,8 @@ All of them extend to 2D.
 - Most properties of the DFT (linearity, separability, [[Parseval's Theorem]], [[Convolution Theorem]], [[Fourier Shift Theorem]], [[Fourier Modulation Theorem]]) carry over to the continuous domain by replacing sums with integrals; e.g. the continuous [[Convolution]] $\ell_1(t) \circ \ell_2(t) = \int_{-\infty}^{\infty} \ell_1(t - t') \ell_2(t') \, dt'$ transforms to $\mathscr{L}_1(w) \mathscr{L}_2(w)$.
 - The [[Characteristic Function (Probability)|characteristic function]] of a random variable is the Fourier transform of its density (up to the sign of the exponent).[^2]
 - The Fourier transform of the [[Dirac Delta Function]] is $1$.[^2]
+- Differentiation becomes multiplication by $jw$: $\frac{\partial \ell(x)}{\partial x} \xrightarrow{\mathscr{F}} jw\mathscr{L}(w)$; discrete approximations are analyzed in [[Discrete Image Derivative]].[^3]
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.
+[^3]: [MIT Vision Book - Image Derivatives](https://visionbook.mit.edu/derivatives.html)

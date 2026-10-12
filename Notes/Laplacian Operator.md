@@ -20,5 +20,6 @@ tags:
 - Its zeros are the [[Harmonic Function|harmonic functions]].
 - Invariant under rotations and translations of $\mathbb{R}^n$.
 - Its discrete counterpart on a graph is the [[Graph Laplacian Matrix]] $\mathbf{L} = \mathbf{D} - \mathbf{A}$ (up to sign).
+- In image processing it is computed by the [[Laplacian Filter]] (five-point formula, Laplacian of Gaussian).
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=26&annotation=XR95A2YD)

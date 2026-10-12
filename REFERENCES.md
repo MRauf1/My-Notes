@@ -260,8 +260,17 @@ A compact list of fundamental papers referenced in the notes.
 - Perona & Malik (1990). *Scale-Space and Edge Detection Using Anisotropic Diffusion*. IEEE TPAMI 12(7). [doi:10.1109/34.56205](https://doi.org/10.1109/34.56205) — [[Blur Filter]] (nonlinear, edge-preserving)
 - Tomasi & Manduchi (1998). *Bilateral Filtering for Gray and Color Images*. ICCV. [doi:10.1109/ICCV.1998.710815](https://doi.org/10.1109/ICCV.1998.710815) — [[Blur Filter]] (nonlinear, edge-preserving)
 - Crow (1984). *Summed-Area Tables for Texture Mapping*. SIGGRAPH. [doi:10.1145/800031.808600](https://doi.org/10.1145/800031.808600) — [[Box Filter]] (integral image)
+- Torralba, Isola & Freeman (2024). *Foundations of Computer Vision*, Ch. 18: Image Derivatives. MIT Press. [visionbook.mit.edu](https://visionbook.mit.edu/derivatives.html) — [[Discrete Image Derivative]], [[Gaussian Derivative]], [[Image Gradient]], [[Laplacian Filter]], [[Retinex Algorithm]]
+- Roberts (1963). *Machine Perception of Three-Dimensional Solids*. PhD thesis, MIT. — [[Roberts Cross Operator]]
+- Lowe (2004). *Distinctive Image Features from Scale-Invariant Keypoints*. IJCV 60(2). [doi:10.1023/B:VISI.0000029664.99615.94](https://doi.org/10.1023/B:VISI.0000029664.99615.94) — [[Image Gradient]] (SIFT)
+- Dalal & Triggs (2005). *Histograms of Oriented Gradients for Human Detection*. CVPR. [doi:10.1109/CVPR.2005.177](https://doi.org/10.1109/CVPR.2005.177) — [[Image Gradient]] (HOG)
+- Freeman & Adelson (1991). *The Design and Use of Steerable Filters*. IEEE TPAMI 13(9). [doi:10.1109/34.93808](https://doi.org/10.1109/34.93808) — [[Image Gradient]]
+- Marr & Hildreth (1980). *Theory of Edge Detection*. Proc. R. Soc. Lond. B 207(1167). [doi:10.1098/rspb.1980.0020](https://doi.org/10.1098/rspb.1980.0020) — [[Laplacian Filter]]
+- Shi & Malik (2000). *Normalized Cuts and Image Segmentation*. IEEE TPAMI 22(8). [doi:10.1109/34.868688](https://doi.org/10.1109/34.868688) — [[Laplacian Filter]], [[Graph Laplacian Matrix]]
+- Land & McCann (1971). *Lightness and Retinex Theory*. JOSA 61(1). [doi:10.1364/JOSA.61.000001](https://doi.org/10.1364/JOSA.61.000001) — [[Retinex Algorithm]]
+- Barrow & Tenenbaum (1978). *Recovering Intrinsic Scene Characteristics from Images*. In *Computer Vision Systems*, Academic Press. — [[Intrinsic Image Decomposition]]
 
 ## Spectral Theory of Differential Operators
 - Weyl (1911). *Über die asymptotische Verteilung der Eigenwerte*. Nachrichten der Königlichen Gesellschaft der Wissenschaften zu Göttingen. — [[Eigenfunction]] (Weyl's law)
 - Courant & Hilbert (1953). *Methods of Mathematical Physics*, Vol. I. Interscience. — [[Eigenfunction]], [[Dirichlet Energy]], [[Robin Eigenvalue Problem on an Interval]] (min–max principle, eigenvalue bracketing)
-- Kac (1966). *Can One Hear the Shape of a Drum?* American Mathematical Monthly 73(4). [doi:10.2307/2313748](https://doi.org/10.2307/2313748) — [[Wave Equation on a Finite Interval]]
+- Kac (1966). *Can One Hear the Shape of a Drum?* American Mathematical Monthly 73(4). [doi:10.2307/2313748](https://doi.org/10.2307/2313748) — [[Wave Equation on a Finite Interval]], [[Laplacian Filter]]

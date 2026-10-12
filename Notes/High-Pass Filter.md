@@ -13,6 +13,7 @@ tags:
 - Useful for edge enhancement.
 - Can be built as the identity minus a [[Low-Pass Filter|low-pass filter]], $\delta - h_{\text{LP}}$; then its DC gain is $1 - H_{\text{LP}}[0,0]$, which is $0$ for a normalized low-pass kernel, so the output has zero mean ([[DC Value]]).[^2]
 - Counterparts: [[Low-Pass Filter]], [[Band-Pass Filter]].
+- Adding a high-pass component back to the image gives a [[Sharpening Filter]].
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.

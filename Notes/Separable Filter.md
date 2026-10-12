@@ -19,5 +19,6 @@ tags:
 - Its [[Discrete Fourier Transform|DFT]] is also separable: $H[u, v] = H^x[u] \, H^y[v]$.
 - Examples: the [[Box Filter]], the [[Gaussian Filter]], and 2D [[Binomial Filter|binomial filters]].
 - The [[Gaussian Filter|Gaussian]] is the only circularly symmetric separable kernel.
+- The [[Sobel Operator]] is a separable derivative kernel, $[1, 0, -1] \circ [1, 2, 1]^T$.
 
 [^1]: [MIT Vision Book - Blurring](https://visionbook.mit.edu/blurring_2.html)

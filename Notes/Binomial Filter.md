@@ -27,5 +27,6 @@ $$
   which is real and nonnegative (a zero-phase filter) and monotonically decreasing in $|u|$.
 - Every $b_n$ with $n \ge 1$ maps the highest-frequency wave $[1, -1, 1, -1, \dots]$ to the zero signal (since $[1,1]$ does), making it well suited as an antialiasing filter before downsampling ([[Aliasing]]).
 - [[Separable Filter|Separable]] 2D version: $b_n[k]\,b_n[l]$.
+- Convolving $b_n$ with $[1, -1]$ gives discrete approximations of the [[Gaussian Derivative]], $d_n = b_n \circ [1, -1]$; the [[Sobel Operator]] combines $d_1$ and $b_2$.
 
 [^1]: [MIT Vision Book - Blurring](https://visionbook.mit.edu/blurring_2.html)

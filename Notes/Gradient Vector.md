@@ -22,6 +22,7 @@ From the perspective of [[Optimization|optimization]], the gradient is the local
 
 # Properties
 - Most gradient-based optimizers do not strictly require this true gradient; their update rules are compatible with any locally loss-minimizing direction, which can instead be obtained via a [[Surrogate Loss Function]] or an [[Evolution Strategy]] when the true gradient is zero almost everywhere or otherwise unhelpful.
+- For images, see [[Image Gradient]].
 
 [^1]: https://visionbook.mit.edu/gradient_descent.html
 [^2]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=982)

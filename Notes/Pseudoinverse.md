@@ -48,6 +48,7 @@ Theorem 3 identifies $\Sigma \Sigma^\dagger$ and $\Sigma^\dagger \Sigma$ as [[Or
 - [[Matrix Conjugate Transpose]]
 - [[Orthogonal Projection Matrix]]
 - [[Unitary Matrix]]
+- Recovering a signal from its valid finite differences via the pseudoinverse loses only its mean ([[Signal Reconstruction from Derivatives]]).
 
 [^1]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=330)
 [^2]: [Linear Algebra (Cambridge Mathematical Textbooks) -- Elizabeth S_ Meckes, Mark W_ Meckes](zotero://open-pdf/library/items/HG5B3R7J?page=330)
