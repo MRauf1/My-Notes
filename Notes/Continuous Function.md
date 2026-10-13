@@ -39,7 +39,24 @@ If a function is continuous at every point of its domain, then the graph of the 
 > \end{align}
 > $$
 
+> [!info] Definition 5 (Continuous [[Function]] on Subset of [[Metric Space]])[^4]
+> Let $X, Y$ be [[Metric Space|metric spaces]], $E \subseteq X$, $p \in E$, and $f: E \rightarrow Y$. Then $f$ is continuous at $p$ if for every $\epsilon > 0$ there exists $\delta > 0$ such that
+> $$
+> \begin{align}
+> d_Y(f(x), f(p)) < \epsilon \quad \text{for all } x \in E \text{ with } d_X(x, p) < \delta
+> \end{align}
+> $$
+> If $f$ is continuous at every point of $E$, then $f$ is continuous on $E$.
+
+$f$ has to be defined at $p$ in order to be continuous at $p$ (unlike [[Limit of Function]]). If $p$ is an [[Isolated Point]] of $E$, then every function with domain $E$ is continuous at $p$: choose $\delta$ so that the only $x \in E$ with $d_X(x, p) < \delta$ is $x = p$.[^5]
+
+The complement of $E$ in $X$ plays no role in this definition, so we lose nothing by discarding it and speaking only of continuous mappings of one metric space into another.[^6]
+
+> [!abstract] Theorem 6 (Continuity via [[Limit of Function]])[^5]
+> In the setting of Definition 5, assume also that $p$ is a [[Limit Point]] of $E$. Then $f$ is continuous at $p$ if and only if $\lim_{x \rightarrow p} f(x) = f(p)$.
+
 # Examples
+
 ## Continuous at Every Number in Their Domain
 - [[Polynomial Function]]
 - [[Rational Function]]
@@ -76,6 +93,20 @@ If a function is continuous at every point of its domain, then the graph of the 
 - [[Continuous Function on Metric Space Theorem]]
 - [[Continuous Function Compact Metric Space Theorem]]
 
+## General
+- [[Continuous Function Component Theorem]]
+- [[Continuous Function Dense Subset Theorem]]
+- [[Connected Metric Space Continuous Function Theorem]]
+- [[Extreme Value Theorem]]
+- [[Noncompact Subset of Real Line Continuous Function Theorem]]
+- [[Tietze Extension Theorem]]
+- Stronger notion: [[Uniformly Continuous Function]]
+- Failure of continuity: [[Discontinuity]]
+- Contrast with [[Open Map]]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=147)
 [^2]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=135)
 [^3]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=175)
+[^4]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=94)
+[^5]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=95)
+[^6]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=98)

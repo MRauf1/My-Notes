@@ -21,7 +21,7 @@ Existential Psychodynamics claims that the conflict stems from the individual's 
 
 Given these, the pattern that forms is Awareness of Ultimate Concern -> Anxiety -> Defense Mechanism.
 
-Unlike other types of Psychodynamics, like Freudian and Neo-Freudian, Existential Psychodynamics largely doesn't focus on the past and focuses on the future-becoming-present to understand one's current mode of facing the ultimate concerns. The past is only relevant insofar as it relates to this current mode of facing the ultimate concerns. In a way, it seems more similar to Adlerian teleological psychology.
+Unlike other types of Psychodynamics, like Freudian and Neo-Freudian, Existential Psychodynamics largely doesn't focus on the past and focuses on the future-becoming-present to understand one's current mode of facing the ultimate concerns. The past is only relevant insofar as it relates to this current mode of facing the ultimate concerns. In a way, it seems more similar to [[Teleology (Adlerian Psychology)|Adlerian teleological psychology]].
 
 This existential schema is inherent to the human condition and applies to every human individual.
 

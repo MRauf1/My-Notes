@@ -17,7 +17,14 @@ tags:
 
 The strict second-derivative condition is only sufficient, not necessary: $f(x) = x^4$ is strictly convex on $\mathbb{R}$, yet $f''(0) = 0$.
 
+> [!abstract] Theorem 3 (Continuity)[^2]
+> Every [[Convex Function]] on an open interval $(a, b)$ is [[Continuous Function|continuous]].
+
+> [!abstract] Theorem 4 (Composition)[^2]
+> If $f$ is convex and $g$ is increasing and convex, then $g \circ f$ is convex.
+
 # Properties
 - These tests are the usual way to verify the hypothesis of [[Jensen's Inequality]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=97)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=110)

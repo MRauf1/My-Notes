@@ -11,5 +11,6 @@ Perspective in [[Psychology]] that emphasizes the potential for good that is inn
 # Psychologists
 - [[Abraham Maslow]]
 - [[Carl Rogers]]
+- [[Alfred Adler]] (precursor; [[Adlerian Psychology]])
 
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=26)

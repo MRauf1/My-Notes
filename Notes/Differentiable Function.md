@@ -15,8 +15,12 @@ tags:
 
 It is defined for open intervals only because limits require that points exist on both sides near the point at question, which a closed interval doesn't provide at the endpoints.
 
+> [!info] Definition 2 (Differentiable on a Set)[^2]
+> Let $f$ be real-valued on $[a, b]$. If $f'(x)$ is defined at a point $x$ ([[Derivative|Definition 2]]), $f$ is differentiable at $x$. If $f'$ is defined at every point of a set $E \subseteq [a, b]$, $f$ is differentiable on $E$.
+
 # Properties
 - [[Differentiable Implies Continuous]]
 - [[Inverse Function Theorem]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=187)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=112)

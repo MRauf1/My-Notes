@@ -389,3 +389,471 @@ entries:
     meaning: (Neovim) Run health checks to diagnose problems with the configuration, providers, and plugins.
     tags: [neovim]
     source: https://neovim.io/doc/user/health.html
+
+  # --- My config: basics (kickstart.nvim) ---------------------------------
+  # Leader and localleader are both Space in my config.
+
+  - command: "Space (then wait)"
+    meaning: (My config, which-key) Open a popup listing every key that can follow the leader, grouped by prefix.
+    details: |
+      Opens immediately (`delay = 0`). Works for any prefix, e.g. `g`, `gr`, `Space s`.
+    tags: [config, which-key]
+    source: https://github.com/folke/which-key.nvim
+
+  - command: "Esc (Normal mode)"
+    meaning: (My config) Clear the search highlighting (runs :nohlsearch).
+    tags: [config]
+    source: https://neovim.io/doc/user/pattern.html#%3Anohlsearch
+
+  - command: "Ctrl+H / Ctrl+J / Ctrl+K / Ctrl+L"
+    meaning: (My config) Move focus to the window on the left / below / above / on the right.
+    details: |
+      Shortcuts for `Ctrl+W h/j/k/l`.
+    tags: [config, windows]
+    source: https://neovim.io/doc/user/windows.html#CTRL-W_h
+
+  - command: "Esc Esc (Terminal mode)"
+    meaning: (My config) Leave Terminal mode and return to Normal mode in the built-in terminal.
+    details: |
+      Shortcut for the built-in `Ctrl+\ Ctrl+N`, which still works where the double Esc is swallowed.
+    tags: [config, terminal]
+    source: https://neovim.io/doc/user/terminal.html#Terminal-mode
+
+  - command: "]d / [d"
+    meaning: (Neovim) Jump to the next / previous diagnostic; my config also opens its message in a float.
+    details: |
+      `]D` / `[D` jump to the last / first diagnostic in the buffer.
+    tags: [config, diagnostics]
+    source: https://neovim.io/doc/user/diagnostic.html#%5Dd
+
+  - command: "Space q"
+    meaning: (My config) Put the buffer's diagnostics in the location list.
+    details: |
+      Then `:lnext` / `:lprev` step through them and `:lclose` closes the list.
+    tags: [config, diagnostics]
+    source: https://neovim.io/doc/user/diagnostic.html#vim.diagnostic.setloclist()
+
+  - command: "Space f"
+    meaning: (My config, conform.nvim) Format the buffer, or the selection in Visual mode.
+    details: |
+      Lua, Python, C and C++ are also formatted on save (stylua, ruff, clang-format); other filetypes fall back to the LSP formatter. `:ConformInfo` shows which formatters apply.
+    tags: [config, conform]
+    source: https://github.com/stevearc/conform.nvim
+
+  # --- My config: Telescope (fuzzy finder, fzf-native sorter) -------------
+
+  - command: "Space sf"
+    meaning: (My config, Telescope) Fuzzy-find files in the current directory by name.
+    details: |
+      Respects `.gitignore`. In any picker: `Ctrl+X` / `Ctrl+V` / `Ctrl+T` open in a split / vsplit / tab.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#file-pickers
+
+  - command: "Space sg"
+    meaning: (My config, Telescope) Live-grep the project for text as you type (ripgrep).
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#file-pickers
+
+  - command: "Space sw"
+    meaning: (My config, Telescope) Grep the project for the word under the cursor, or for the selection in Visual mode.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#file-pickers
+
+  - command: "Space s/"
+    meaning: (My config, Telescope) Live-grep only within the currently open buffers.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#file-pickers
+
+  - command: "Space /"
+    meaning: (My config, Telescope) Fuzzy-search lines in the current buffer.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space Space"
+    meaning: (My config, Telescope) Fuzzy-pick one of the open buffers to switch to.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space s."
+    meaning: (My config, Telescope) Fuzzy-pick a recently opened file.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space sh"
+    meaning: (My config, Telescope) Fuzzy-search the help tags and open the chosen help page.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space sk"
+    meaning: (My config, Telescope) Fuzzy-search all defined keymaps with their descriptions.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space sc"
+    meaning: (My config, Telescope) Fuzzy-search Ex commands and run the chosen one.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space sd"
+    meaning: (My config, Telescope) Fuzzy-search the LSP diagnostics of all open buffers.
+    tags: [config, telescope, diagnostics]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "Space sr"
+    meaning: (My config, Telescope) Reopen the last picker with its previous query and results.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#vim-pickers
+
+  - command: "Space ss"
+    meaning: (My config, Telescope) List all Telescope pickers and open the chosen one.
+    details: |
+      Same as `:Telescope` with no argument; `:Telescope <picker>` opens one directly, e.g. `:Telescope colorscheme`.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#usage
+
+  - command: "Space sn"
+    meaning: (My config, Telescope) Fuzzy-find files in the Neovim config directory.
+    tags: [config, telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#file-pickers
+
+  - command: "Ctrl+/ (in a Telescope picker)"
+    meaning: (Telescope) Show the picker's key mappings; ? does the same in Normal mode.
+    tags: [telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#default-mappings
+
+  - command: "Ctrl+Q (in a Telescope picker)"
+    meaning: (Telescope) Send all matching results to the quickfix list.
+    details: |
+      `Tab` / `Shift+Tab` mark results; `Alt+Q` sends only the marked ones.
+    tags: [telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#default-mappings
+
+  - command: "Ctrl+U / Ctrl+D (in a Telescope picker)"
+    meaning: (Telescope) Scroll the preview window up / down.
+    details: |
+      `Ctrl+C` (Insert) or `Esc` (Normal) closes the picker.
+    tags: [telescope]
+    source: https://github.com/nvim-telescope/telescope.nvim#default-mappings
+
+  # --- My config: LSP ------------------------------------------------------
+
+  - command: "grd"
+    meaning: (My config, LSP) Go to the definition of the symbol under the cursor.
+    details: |
+      `Ctrl+T` jumps back. Opens a Telescope picker if there are several.
+    tags: [config, lsp]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "grr"
+    meaning: (My config, LSP) List all references to the symbol under the cursor in Telescope.
+    tags: [config, lsp]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "gri"
+    meaning: (My config, LSP) Go to the implementation(s) of the symbol under the cursor.
+    tags: [config, lsp]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "grt"
+    meaning: (My config, LSP) Go to the type definition of the symbol under the cursor.
+    tags: [config, lsp]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "grD"
+    meaning: (My config, LSP) Go to the declaration of the symbol under the cursor (e.g. the C header), not its definition.
+    tags: [config, lsp]
+    source: https://neovim.io/doc/user/lsp.html#vim.lsp.buf.declaration()
+
+  - command: "grn"
+    meaning: (LSP) Rename the symbol under the cursor everywhere it is used.
+    tags: [config, lsp]
+    source: https://neovim.io/doc/user/lsp.html#grn
+
+  - command: "gra"
+    meaning: (LSP) Show code actions (quick fixes, refactorings) for the cursor position or selection.
+    tags: [config, lsp]
+    source: https://neovim.io/doc/user/lsp.html#gra
+
+  - command: "gO"
+    meaning: (My config, LSP) Fuzzy-search the symbols (functions, classes, …) of the current file.
+    tags: [config, lsp]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "gW"
+    meaning: (My config, LSP) Fuzzy-search symbols across the whole workspace.
+    tags: [config, lsp]
+    source: https://github.com/nvim-telescope/telescope.nvim#neovim-lsp-pickers
+
+  - command: "K"
+    meaning: (LSP) Show hover documentation for the symbol under the cursor; press K again to enter the float.
+    details: |
+      In `.tex` buffers VimTeX maps `K` to open the documentation of the package under the cursor instead.
+    tags: [config, lsp]
+    source: https://neovim.io/doc/user/lsp.html#K-lsp-default
+
+  - command: "Space th"
+    meaning: (My config, LSP) Toggle inlay hints (inline type and parameter annotations).
+    details: |
+      Only mapped when the attached server supports inlay hints.
+    tags: [config, lsp]
+    source: https://neovim.io/doc/user/lsp.html#vim.lsp.inlay_hint.enable()
+
+  - command: "Space ch"
+    meaning: (My config, clangd) Switch between a C/C++ source file and its header.
+    tags: [config, lsp]
+    source: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#clangd
+
+  - command: ":Mason"
+    meaning: (mason.nvim) Open the UI for installing and updating LSP servers, formatters and debuggers.
+    details: |
+      Press `g?` for help inside. `:MasonInstall <pkg>` installs directly.
+    tags: [config, mason]
+    source: https://github.com/mason-org/mason.nvim#commands
+
+  # --- My config: completion and snippets (blink.cmp, LuaSnip) -------------
+
+  - command: "Ctrl+Y (completion menu)"
+    meaning: (blink.cmp) Accept the selected completion item, expanding it if it is a snippet.
+    details: |
+      `Ctrl+N` / `Ctrl+P` select next / previous; `Ctrl+E` closes the menu.
+    tags: [config, completion]
+    source: https://cmp.saghen.dev/configuration/keymap
+
+  - command: "Ctrl+Space (Insert mode)"
+    meaning: (blink.cmp) Open the completion menu, or toggle the documentation of the selected item if it is already open.
+    details: |
+      `Ctrl+B` / `Ctrl+F` scroll the documentation.
+    tags: [config, completion]
+    source: https://cmp.saghen.dev/configuration/keymap
+
+  - command: "Ctrl+K (Insert mode)"
+    meaning: (blink.cmp) Toggle the function signature help window.
+    tags: [config, completion]
+    source: https://cmp.saghen.dev/configuration/keymap
+
+  - command: "Tab / Shift+Tab (in a snippet)"
+    meaning: (blink.cmp + LuaSnip) Jump to the next / previous placeholder of an expanded snippet.
+    tags: [config, completion]
+    source: https://cmp.saghen.dev/configuration/keymap
+
+  # --- My config: text objects and surround (mini.nvim) --------------------
+
+  - command: "a{id} / i{id} (mini.ai)"
+    meaning: (mini.ai) Extended around / inside text objects, e.g. daf deletes a function call, cia changes an argument.
+    details: |
+      Ids: `b` brackets, `q` quotes, `f` function call, `a` argument, `t` tag, `?` prompt for left/right edges; any other character is used as its own delimiter (e.g. `ci_`). Searches up to 500 lines away.
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-ai.md
+
+  - command: "aa{id} / ii{id} / al{id} / il{id}"
+    meaning: (mini.ai) Select the next (aa/ii) or last (al/il) such text object instead of the one under the cursor, e.g. cii) changes inside the next parentheses.
+    details: |
+      My config remaps next from the default `an`/`in` to `aa`/`ii`, so Neovim's built-in incremental selection `an`/`in` still works.
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-ai.md
+
+  - command: "g[ / g] (mini.ai)"
+    meaning: (mini.ai) Move the cursor to the left / right edge of a text object, e.g. g[) jumps to the opening parenthesis.
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-ai.md
+
+  - command: "sa{motion}{char}"
+    meaning: (mini.surround) Add a surrounding, e.g. saiw) wraps the word in parentheses.
+    details: |
+      In Visual mode `sa{char}` surrounds the selection. `{char}` can be `f` (function call, prompts for name), `t` (tag) or `?` (prompt).
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-surround.md
+
+  - command: "sd{char}"
+    meaning: (mini.surround) Delete the surrounding, e.g. sd' removes the quotes around the cursor.
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-surround.md
+
+  - command: "sr{old}{new}"
+    meaning: (mini.surround) Replace a surrounding, e.g. sr)' turns parentheses into single quotes.
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-surround.md
+
+  - command: "sf{char} / sF{char} / sh{char}"
+    meaning: (mini.surround) Find the next / previous surrounding, or briefly highlight it.
+    details: |
+      Suffix `n` / `l` targets the next / last one, e.g. `sdn)`.
+    tags: [config, mini]
+    source: https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-surround.md
+
+  # --- My config: debugging (nvim-dap) -------------------------------------
+
+  - command: "F5"
+    meaning: (My config, nvim-dap) Start debugging, or continue to the next breakpoint.
+    details: |
+      dap-ui opens automatically when a session starts and closes when it ends. Debuggers: debugpy (Python), codelldb (C/C++, compile with `-g`).
+    tags: [config, debug]
+    source: https://github.com/mfussenegger/nvim-dap
+
+  - command: "F1 / F2 / F3"
+    meaning: (My config, nvim-dap) Step into / step over / step out of the current line while debugging.
+    tags: [config, debug]
+    source: https://github.com/mfussenegger/nvim-dap
+
+  - command: "Space b"
+    meaning: (My config, nvim-dap) Toggle a breakpoint on the current line.
+    details: |
+      `Space B` sets a conditional breakpoint (prompts for the condition).
+    tags: [config, debug]
+    source: https://github.com/mfussenegger/nvim-dap
+
+  - command: "F7"
+    meaning: (My config, nvim-dap-ui) Toggle the debugger UI, e.g. to see the last session's output after a crash.
+    details: |
+      In `.tex` buffers `F7` in Insert/Visual mode is VimTeX's create-command instead.
+    tags: [config, debug]
+    source: https://github.com/rcarriga/nvim-dap-ui
+
+  # --- My config: misc plugins ---------------------------------------------
+
+  - command: ":PasteImage"
+    meaning: (img-clip.nvim) Save the image on the clipboard to a file and insert a link to it (Markdown, LaTeX, …).
+    details: |
+      Dragging an image into the terminal also works, even in Insert mode.
+    tags: [config, img-clip]
+    source: https://github.com/HakonHarnes/img-clip.nvim#commands
+
+  - command: ":TodoTelescope"
+    meaning: (todo-comments) Fuzzy-search all TODO/FIX/HACK/WARN/PERF/NOTE/TEST comments in the project.
+    details: |
+      `:TodoQuickFix` / `:TodoLocList` put them in the quickfix / location list; `keywords=TODO,FIX` filters.
+    tags: [config, todo-comments]
+    source: https://github.com/folke/todo-comments.nvim#-usage
+
+  - command: ":GuessIndent"
+    meaning: (guess-indent.nvim) Detect the file's indentation style and set tabs/spaces and width to match.
+    details: |
+      Runs automatically when a file is opened.
+    tags: [config]
+    source: https://github.com/NMAC427/guess-indent.nvim
+
+  - command: ":lua vim.pack.update()"
+    meaning: (Neovim 0.12 vim.pack) Fetch plugin updates and show a confirmation buffer to apply them.
+    details: |
+      `:write` in that buffer applies the updates. `vim.pack.update(nil, { offline = true })` only shows the current state.
+    tags: [config, neovim]
+    source: https://neovim.io/doc/user/pack.html#vim.pack.update()
+
+  # --- My config: LaTeX (VimTeX, localleader = Space) ----------------------
+
+  - command: "Space ll"
+    meaning: (VimTeX) Toggle continuous compilation with latexmk; while on, every save recompiles and Zathura reloads the PDF.
+    details: |
+      `Space lk` stops it; `Space lS` compiles once without continuous mode. Same as `:VimtexCompile`.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space lv"
+    meaning: (VimTeX) Open the PDF viewer at the position of the cursor (SyncTeX forward search).
+    details: |
+      Inverse search: `Ctrl+click` in Zathura jumps to the matching source line.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space le"
+    meaning: (VimTeX) Show compilation errors in the quickfix window.
+    details: |
+      `Space lo` shows the raw compiler output; `Space lq` the log messages.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space lc"
+    meaning: (VimTeX) Delete auxiliary build files (.aux, .log, …).
+    details: |
+      `Space lC` also deletes the PDF.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space lt"
+    meaning: (VimTeX) Open the table of contents of the document; Enter jumps to a section.
+    details: |
+      `Space lT` toggles it.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space li"
+    meaning: (VimTeX) Show info about the project (main file, compiler, viewer).
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space la"
+    meaning: (VimTeX) Open a context menu for the item under the cursor (e.g. a citation or \ref).
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "Space lm"
+    meaning: (VimTeX) List VimTeX's insert-mode math shortcuts.
+    details: |
+      They use the backtick prefix in math mode, e.g. `` `a `` → `\alpha`.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "dse / cse"
+    meaning: (VimTeX) Delete / change the surrounding environment (\begin{…}…\end{…}).
+    details: |
+      `dsc`/`csc` for the surrounding command, `ds$`/`cs$` for the surrounding math environment, `dsd`/`csd` for delimiters.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "ts$"
+    meaning: (VimTeX) Toggle between inline math ($…$) and display math (\[…\]).
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "tse / tss"
+    meaning: (VimTeX) Toggle the surrounding environment (e.g. itemize ↔ enumerate) / toggle its star (equation ↔ equation*).
+    details: |
+      `tsc` toggles the star of the surrounding command.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "tsf"
+    meaning: (VimTeX) Toggle a fraction between a/b and \frac{a}{b}.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "tsd"
+    meaning: (VimTeX) Toggle the surrounding delimiter between (…) and \left(…\right).
+    details: |
+      `tsD` cycles in reverse.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "tsb"
+    meaning: (VimTeX) Toggle the line break \\ at the end of the current line.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "F6 (LaTeX)"
+    meaning: (VimTeX) Surround the current line, or the selection in Visual mode, with an environment you name.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "ie / ae"
+    meaning: (VimTeX) Text object for inside / around a LaTeX environment, e.g. cie changes an equation's body.
+    details: |
+      Also: `i$`/`a$` math, `ic`/`ac` command, `id`/`ad` delimiter, `im`/`am` list item, `iP`/`aP` section.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "% (LaTeX)"
+    meaning: (VimTeX) Jump between matching delimiters, including \begin/\end and \left/\right pairs.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "]] / [[ (LaTeX)"
+    meaning: (VimTeX) Jump to the start of the next / previous section.
+    details: |
+      `]m`/`[m` environments, `]n`/`[n` math zones, `]r`/`[r` frames, `]/`/`[/` comments; capital letters jump to the ends.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
+
+  - command: "]] (LaTeX Insert mode)"
+    meaning: (VimTeX) Close the nearest open environment or delimiter.
+    tags: [config, vimtex, latex]
+    source: https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt

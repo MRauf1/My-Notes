@@ -14,7 +14,7 @@ tags:
 - **Signaling openness.** "I may be wrong. Let's examine the facts."
 	- Franklin dropped "certainly" for "it so appears to me at present" and found his opinions "a readier reception."[^4]
 	- Expressing *receptiveness to opposing views* makes others see you as more persuasive and trustworthy and reduces conflict (Minson, Chen and Tinsley, 2020; Yeomans et al., 2020).
-- Related: [[Motivational Interviewing]], [[Motivated Reasoning]], [[Persuasion]], [[Intrinsic Motivation]].
+- Related: [[Separation of Tasks]], [[Power Struggle (Adlerian Psychology)]], [[Motivational Interviewing]], [[Motivated Reasoning]], [[Persuasion]], [[Intrinsic Motivation]].
 
 [^1]: [Carnegie, 1936, p. 67](zotero://open-pdf/library/items/IUC5CX9R?page=68&annotation=2IALGXKJ); [p. 67](zotero://open-pdf/library/items/IUC5CX9R?page=68&annotation=RYCL2WVZ); [p. 67](zotero://open-pdf/library/items/IUC5CX9R?page=68&annotation=H8FU8JGG); [p. 71](zotero://open-pdf/library/items/IUC5CX9R?page=72&annotation=9VK87XV4)
 [^2]: [Carnegie, 1936, p. 114](zotero://open-pdf/library/items/IUC5CX9R?page=115&annotation=N3ZDT52B); [p. 114](zotero://open-pdf/library/items/IUC5CX9R?page=115&annotation=NUT6CFUE)

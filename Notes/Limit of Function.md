@@ -27,12 +27,23 @@ The only thing that matters is how $f$ is defined near $a$, not at $x = a$.[^1] 
 > \end{align}
 > $$
 
+> [!info] Definition 3 ([[Limit of Function]] on [[Metric Space]])[^4]
+> Let $(X, d_X), (Y, d_Y)$ be [[Metric Space|metric spaces]], $E \subseteq X$, $f: E \rightarrow Y$, and $p$ a [[Limit Point]] of $E$. Then $\lim_{x \rightarrow p} f(x) = q$ (or $f(x) \rightarrow q$ as $x \rightarrow p$) if there is a point $q \in Y$ such that for every $\epsilon > 0$ there exists $\delta > 0$ such that
+> $$
+> \begin{align}
+> d_Y(f(x), q) < \epsilon \quad \text{for all } x \in E \text{ with } 0 < d_X(x, p) < \delta
+> \end{align}
+> $$
+
+Definitions 1 and 2 are special cases: in $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{R}^k$, the distances $d_X, d_Y$ are replaced by absolute values or [[Vector Norm|norms]] of differences. $p \in X$ need not be a point of $E$, and even if $p \in E$, we may have $f(p) \neq \lim_{x \rightarrow p} f(x)$.[^4]
+
 # Types
 - [[One-Sided Limit of Function]]
 - [[Infinite Limit of Function]]
 - [[Limit of Function at Infinity]]
 
 # Properties
+
 ## Arithmetic Properties
 - [[Limit of Function Addition Law]]
 - [[Limit of Function Subtraction Law]]
@@ -55,6 +66,11 @@ The only thing that matters is how $f$ is defined near $a$, not at $x = a$.[^1] 
 ## Indeterminate Forms
 - [[L'Hospital's Rule]]
 
+## General
+- [[Limit of Function Sequential Characterization]] (including uniqueness of the limit)
+- [[Limit of Function in Extended Real Number System]]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=116)
 [^2]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=138)
 [^3]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=936)
+[^4]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=92)

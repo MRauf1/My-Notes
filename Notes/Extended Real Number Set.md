@@ -11,7 +11,11 @@ tags:
 
 $+\infty$ is an [[Set Upper Bound|upper bound]] of every subset of the extended real number system, and $-\infty$ is a [[Set Lower Bound|lower bound]] of every subset, so every nonempty subset has a [[Supremum]] and an [[Infimum]] in the extended real number system.
 
+> [!info] Definition 2 (Neighborhood of $\pm\infty$)[^3]
+> For any real $c$, the set of real numbers $x$ such that $x > c$ is a neighborhood of $+\infty$, written $(c, +\infty)$. Similarly, $(-\infty, c)$ is a neighborhood of $-\infty$.
+
 # Properties
+
 ## Arithmetic Conventions
 The extended real number system is not a [[Field]], but by convention, for $x \in \mathbb{R}$:[^2]
 - $x + \infty = \infty$, $x - \infty = -\infty$, $\frac{x}{\infty} = \frac{x}{-\infty} = 0$
@@ -20,5 +24,9 @@ The extended real number system is not a [[Field]], but by convention, for $x \i
 
 To distinguish real numbers from $\pm \infty$, real numbers are called finite.
 
+## Limits
+- [[Limit of Function in Extended Real Number System]]
+
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=20)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=21)
+[^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=106)

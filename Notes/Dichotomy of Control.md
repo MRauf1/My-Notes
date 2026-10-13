@@ -24,6 +24,7 @@ tags:
 # Modern Echoes
 - **Serenity Prayer.** "God grant me the serenity to accept the things I cannot change; the courage to change the things I can; and the wisdom to know the difference." Carnegie: "Co-operate with the inevitable."[^11] He quotes Epictetus: "There is only one way to happiness, and that is to cease worrying about things which are beyond the power of our will."[^12]
 - **Evidence.** Acceptance-based therapies (Acceptance and Commitment Therapy) have meta-analytic support across anxiety, depression and chronic pain (A-Tjak et al., 2015). Acceptance must be paired with action on what *can* be changed: "If there be one, try to find it; if there be none, never mind it."[^13] Accepting the controllable leads to [[Learned Helplessness]] rather than serenity. See also [[Locus of Control]] and [[Decatastrophizing]].
+- **Adlerian echo.** The [[Separation of Tasks]] applies the same split to relationships (others' judgments are their task), and [[Self-Acceptance]] cites the Serenity Prayer.
 
 [^1]: [Epictetus et al., 2022, p. 45](zotero://open-pdf/library/items/SLUTDCET?page=61&annotation=8I68WZKT); [p. 45](zotero://open-pdf/library/items/SLUTDCET?page=61&annotation=KW7SNV7D); [p. 118](zotero://open-pdf/library/items/SLUTDCET?page=134&annotation=NL2TXD7T); [p. 2](zotero://open-pdf/library/items/SLUTDCET?page=18&annotation=4GPQKR3I)
 [^2]: [Epictetus et al., 2022, p. 45](zotero://open-pdf/library/items/SLUTDCET?page=61&annotation=V53N2DVI)

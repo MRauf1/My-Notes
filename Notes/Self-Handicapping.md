@@ -13,7 +13,7 @@ tags:
 - **Low-effort syndrome**: adolescents facing hard school transitions mobilise their resources to protect their egos rather than to learn, chiefly by not trying; to adults saying "now we will measure you", they answer "No you won't."[^3]
 - After failure, fixed-mindset students planned to study *less* and considered cheating, while growth-mindset students planned to study harder.[^4]
 - In the growth mindset, wanting something and doing nothing about it is almost inconceivable, and "I could have been" is heartbreaking rather than comforting.[^5]
-- Cf. [[Procrastination]].
+- Cf. [[Procrastination]], [[Inferiority Complex]] (Adler's "A, so not B" excuse).
 
 [^1]: [Dweck, p. 45](zotero://open-pdf/library/items/YK83HZIS?page=45&annotation=BQV9FRTX); [p. 45](zotero://open-pdf/library/items/YK83HZIS?page=45&annotation=45G76GKC); [p. 45](zotero://open-pdf/library/items/YK83HZIS?page=45&annotation=ZG8FSZZT)
 [^2]: [Dweck, p. 44](zotero://open-pdf/library/items/YK83HZIS?page=44&annotation=MBEV3WYJ); [p. 45](zotero://open-pdf/library/items/YK83HZIS?page=45&annotation=MYW7IRH8)

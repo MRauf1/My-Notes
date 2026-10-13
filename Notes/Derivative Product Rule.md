@@ -16,4 +16,13 @@ tags:
 
 It is also called the [[Gottfried Wilhelm Leibniz|Leibniz]] rule.
 
+> [!abstract] Theorem 2 (Pointwise Version)[^2]
+> Suppose $f$ and $g$ are defined on $[a, b]$ and are differentiable at a point $x \in [a, b]$. Then
+> $$
+> \begin{align}
+> (fg)'(x) = f'(x) g(x) + f(x) g'(x)
+> \end{align}
+> $$
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=216)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=113)

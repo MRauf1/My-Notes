@@ -21,7 +21,7 @@ tags:
 - Only by resisting what happens are you at the mercy of it.[^8]
 - Seeing the present as marred or deficient hides "the deeper perfection that is inherent in life itself".[^9]
 - To end human misery, start by taking responsibility for your inner state now. With awareness of a negative state comes disidentification: you become the witnessing presence.[^10]
-- Related: [[Psychological Time]], [[Surrender (Spirituality)]], [[Means to an End]], [[Life as Unending Problems]].
+- Related: [[Energeial Life]], [[Psychological Time]], [[Surrender (Spirituality)]], [[Means to an End]], [[Life as Unending Problems]].
 
 [^1]: [Tolle, A New Earth, p. 122](zotero://open-pdf/library/items/BKRKQ2GZ?page=122&annotation=NRMC4JWX); [p. 123](zotero://open-pdf/library/items/BKRKQ2GZ?page=123&annotation=8KW44DSV); [p. 123](zotero://open-pdf/library/items/BKRKQ2GZ?page=123&annotation=64K94CDU); [p. 123](zotero://open-pdf/library/items/BKRKQ2GZ?page=123&annotation=3UMEE4YM); [p. 124](zotero://open-pdf/library/items/BKRKQ2GZ?page=124&annotation=5L3DMYPN); [p. 41](zotero://open-pdf/library/items/BKRKQ2GZ?page=41&annotation=HCIFGYMQ)
 [^2]: [Tolle, A New Earth, p. 71](zotero://open-pdf/library/items/BKRKQ2GZ?page=71&annotation=75RPRPUL); [p. 71](zotero://open-pdf/library/items/BKRKQ2GZ?page=71&annotation=YGWZARSN); [p. 71](zotero://open-pdf/library/items/BKRKQ2GZ?page=71&annotation=5KNPHH9L)

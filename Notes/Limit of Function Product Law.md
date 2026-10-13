@@ -10,4 +10,19 @@ tags:
 > Assume that $\lim_{x \rightarrow a} f(x), \lim_{x \rightarrow a} g(x)$ both exist. Then
 > - $\lim_{x \rightarrow a} (f(x) \cdot g(x)) = \lim_{x \rightarrow a} f(x) \cdot \lim_{x \rightarrow a} g(x)$
 
+> [!abstract] Theorem 2 ([[Limit of Function]] on [[Metric Space]])[^2]
+> Let $E \subseteq X$, a [[Metric Space]], $p$ a [[Limit Point]] of $E$, and $f, g$ [[Complex-Valued Function|complex functions]] on $E$ with $\lim_{x \rightarrow p} f(x) = A$ and $\lim_{x \rightarrow p} g(x) = B$. Then
+> $$
+> \begin{align}
+> \lim_{x \rightarrow p} (fg)(x) = AB
+> \end{align}
+> $$
+
+If $\mathbf{f}, \mathbf{g}$ map $E$ into $\mathbb{R}^k$ with limits $\mathbf{A}, \mathbf{B}$, then $\lim_{x \rightarrow p} (\mathbf{f} \cdot \mathbf{g})(x) = \mathbf{A} \cdot \mathbf{B}$ ([[Dot Product]]).[^3]
+
+# Properties
+- [[Limit of Function Sequential Characterization]]: follows from the analogous laws for sequences.
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=127)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=94)
+[^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=95)

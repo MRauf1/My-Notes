@@ -16,4 +16,13 @@ tags:
 
 Easy way of remembering it (from high school calculus) is low-d-high - high-d-low over get-low, get-low.
 
+> [!abstract] Theorem 2 (Pointwise Version)[^2]
+> Suppose $f$ and $g$ are defined on $[a, b]$ and are differentiable at a point $x \in [a, b]$. Then
+> $$
+> \begin{align}
+> \left(\frac{f}{g}\right)'(x) = \frac{g(x) f'(x) - g'(x) f(x)}{g^2(x)} \quad (g(x) \neq 0)
+> \end{align}
+> $$
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=218)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=113)

@@ -24,4 +24,7 @@ tags:
 > $$
 > We say that the limit does not exist and diverges to infinity.
 
+# Properties
+- Unified with ordinary limits by [[Limit of Function in Extended Real Number System]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=121)

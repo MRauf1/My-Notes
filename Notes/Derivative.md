@@ -22,6 +22,23 @@ It is the [[Slope]] of the [[Tangent Line]] to the curve $y = f(x)$ at $x = a$. 
 
 Differentiation is a local [[Operation]].
 
+> [!info] Definition 2 (Derivative on Closed Interval)[^2]
+> Let $f$ be real-valued on $[a, b]$. For any $x \in [a, b]$ form the quotient
+> $$
+> \begin{align}
+> \phi(t) = \frac{f(t) - f(x)}{t - x} \quad (a < t < b, t \neq x)
+> \end{align}
+> $$
+> and define
+> $$
+> \begin{align}
+> f'(x) = \lim_{t \rightarrow x} \phi(t)
+> \end{align}
+> $$
+> provided this limit exists in the sense of the metric-space [[Limit of Function]]. $f'$ is the derivative of $f$; its domain is the set of points at which the limit exists.
+
+One-sided limits in Definition 2 give right-hand and left-hand derivatives; at the endpoints $a$ and $b$, the derivative, if it exists, is a right-hand or left-hand derivative, respectively. If $f$ is defined only on the segment $(a, b)$, then $f'(a)$ and $f'(b)$ are not defined.[^2]
+
 # [[Operator]]
 - [[Differentiation Operator]]
 
@@ -109,3 +126,4 @@ Differentiation is a local [[Operation]].
 - [[Concavity Test]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=176)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=112)

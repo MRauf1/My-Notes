@@ -38,4 +38,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Unified with ordinary limits by [[Limit of Function in Extended Real Number System]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=166)

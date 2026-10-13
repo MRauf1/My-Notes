@@ -27,6 +27,12 @@ If $f(a)$ and $f(b)$ have opposite signs, then the function has at least one zer
 > \end{align}
 > $$
 
+The converse of Theorem 1 is false: a function with the intermediate value property (for all $x_1 < x_2$ and every $c$ between $f(x_1)$ and $f(x_2)$, some $x \in (x_1, x_2)$ has $f(x) = c$) need not be continuous.[^4] Theorem 3 provides such functions, since a derivative need not be continuous.
+
+# Properties
+- Special case of [[Connected Metric Space Continuous Function Theorem]]: the continuous image of the connected set $[a, b]$ is connected, hence an interval ([[Connected Subset of Real Line Theorem]]).
+
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=253)
 [^2]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=245)
 [^3]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=296)
+[^4]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=102)

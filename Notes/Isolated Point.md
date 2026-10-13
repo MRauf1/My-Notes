@@ -13,5 +13,6 @@ Unlike a [[Limit Point]], which may or may not belong to $E$, an isolated point 
 
 # Properties
 - [[Perfect Subset|Perfect set]]: a [[Closed Set|closed]] set with no isolated points, i.e. every point of the set is a [[Limit Point]] of the set.
+- Every function is [[Continuous Function|continuous]] at an isolated point of its domain.
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=41)
