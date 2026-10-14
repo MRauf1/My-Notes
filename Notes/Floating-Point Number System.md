@@ -28,6 +28,7 @@ A floating-point number system is finite and discrete: it contains exactly $2(\b
 IEEE 754 lays a floating-point word out as a sign bit, followed by the exponent field, followed by the fraction field, e.g. `s | exponent | fraction`. Since a [[Normalized Floating-Point System|normalized]] binary mantissa always has a leading 1 bit, that bit is left implicit rather than stored: the stored $(p-1)$-bit pattern is called the fraction, while the full $p$-bit value of 1 followed by the fraction is called the significand. The reserved exponent value of all 0s is used for zero (and, with a nonzero fraction, for denormalized numbers) so that hardware never attaches a leading 1 to it; see [[Denormalized Number]].[^2]
 
 - [[Normalized Floating-Point System]]
+- The uneven spacing makes the floating-point unit interval finer near $0$ than near $1$ ([[Standard Uniform Distribution]]).
 - [[Machine Number]]
 - [[Rounding]]
 - [[Machine Epsilon]]

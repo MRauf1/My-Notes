@@ -14,3 +14,4 @@ tags:
 
 ## [[Continuous]]
 - [[Continuous Uniform Distribution]]
+  - [[Standard Uniform Distribution]]

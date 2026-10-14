@@ -18,3 +18,4 @@ tags:
 ## Basic Statistical Properties
 - [[Continuous Uniform Distribution Expectation]]
 - [[Continuous Uniform Distribution Variance]]
+- [[Standard Uniform Distribution]] — the special case $U(0, 1)$

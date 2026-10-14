@@ -292,7 +292,7 @@ A compact list of fundamental papers referenced in the notes.
 - Sternberg (1986). *A Triangular Theory of Love*. Psychological Review 93(2). — [[Love]]
 
 ## Monte Carlo and Asymptotic Statistics
-- Owen (2013). *Monte Carlo Theory, Methods and Examples*. [artowen.su.domains/mc](https://artowen.su.domains/mc/) — [[Simple Monte Carlo]], [[Monte Carlo Confidence Interval]], [[Infinite Moments in Monte Carlo]]
+- Owen (2013). *Monte Carlo Theory, Methods and Examples*. [artowen.su.domains/mc](https://artowen.su.domains/mc/) — [[Simple Monte Carlo]], [[Monte Carlo Confidence Interval]], [[Infinite Moments in Monte Carlo]], [[Pseudorandom Number Generator]], [[Standard Uniform Distribution]]
 - Hall (1992). *The Bootstrap and Edgeworth Expansion*. Springer. — [[Monte Carlo Confidence Interval]] (coverage error $1 - \alpha + O(n^{-1})$)
 - Hoeffding (1963). *Probability Inequalities for Sums of Bounded Random Variables*. JASA 58(301). — [[Hoeffding's Inequality]]
 - Knight (2000). *Mathematical Statistics*. Chapman & Hall/CRC. — [[Slutsky's Theorem]]
