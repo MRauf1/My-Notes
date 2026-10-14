@@ -20,6 +20,7 @@ In Definition 2, "increasing" is non-strict, i.e. [[Non-Decreasing Function|non-
 # Properties
 - [[Monotonic Function One-Sided Limit Theorem]]: one-sided limits exist everywhere; no [[Discontinuity of the Second Kind|discontinuities of the second kind]].
 - [[Monotonic Function Discontinuity Countable Theorem]]
+- [[Monotonic Function Derivative Theorem]]: the sign of $f'$ determines monotonicity.
 - Every continuous [[Open Map]] of $\mathbb{R}$ into $\mathbb{R}$ is monotonic.
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=104)

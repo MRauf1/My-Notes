@@ -11,3 +11,7 @@ tags:
 
 # Types
 - [[Real Vector-Valued Function]]
+
+# Properties
+- [[Derivative of Vector-Valued Function]]
+- [[Mean Value Inequality for Vector-Valued Function]]

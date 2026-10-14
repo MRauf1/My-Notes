@@ -17,6 +17,7 @@ There are two ways in which a function can have a simple discontinuity:[^1]
 # Properties
 - For any real function $f$ on $(a, b)$, the set of points at which $f$ has a simple discontinuity is at most [[Countable Set|countable]].[^2]
 - Every discontinuity of a [[Monotonic Function]] is simple ([[Monotonic Function One-Sided Limit Theorem]]).
+- A [[Derivative]] defined on an interval has no simple discontinuities ([[Darboux's Theorem]]).
 - Contrast with [[Discontinuity of the Second Kind]].
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=103)

@@ -14,4 +14,7 @@ tags:
 
 If two [[Function]] have the same [[Derivative]], then their graphs are [[Vertical Shift]] of each other.
 
+# Properties
+- Special case of [[Monotonic Function Derivative Theorem]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=322)

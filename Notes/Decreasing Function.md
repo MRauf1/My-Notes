@@ -13,6 +13,7 @@ tags:
 > If $f'(x) < 0$ on the interval $I$, then $f$ is decreasing on $I$.
 
 # Properties
+- [[Monotonic Function Derivative Theorem]]: non-strict version ($f' \geq 0$ or $f' \leq 0$ gives monotonic).
 - [[Inequality Sign Change]]: applying a strictly decreasing function to both sides of a strict [[Inequality]] reverses its direction.
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=113)

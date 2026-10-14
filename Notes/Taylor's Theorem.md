@@ -39,4 +39,25 @@ tags:
 > \end{align}
 > $$
 
+> [!abstract] Theorem 5 (Taylor's Theorem, Rudin's Version)[^2]
+> Suppose $f$ is a real function on $[a, b]$, $n$ is a positive integer, $f^{(n-1)}$ is continuous on $[a, b]$, and $f^{(n)}(t)$ exists for every $t \in (a, b)$. Let $\alpha, \beta$ be distinct points of $[a, b]$, and define
+> $$
+> \begin{align}
+> P(t) = \sum_{k=0}^{n-1} \frac{f^{(k)}(\alpha)}{k!} (t - \alpha)^k
+> \end{align}
+> $$
+> Then there exists a point $x$ between $\alpha$ and $\beta$ such that
+> $$
+> \begin{align}
+> f(\beta) = P(\beta) + \frac{f^{(n)}(x)}{n!} (\beta - \alpha)^n
+> \end{align}
+> $$
+
+For $n = 1$, this is the [[Mean Value Theorem]]. In general, $f$ can be approximated by a polynomial of degree $n - 1$, and the error can be estimated if we know bounds on $|f^{(n)}(x)|$ ([[Taylor's Inequality]]).[^2]
+
+# Properties
+- [[Taylor Series]]
+- [[Nth Derivative]]
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=259)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=119&annotation=DFUILZR8); [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=120&annotation=FLU8RYCZ)

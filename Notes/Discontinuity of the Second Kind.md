@@ -11,6 +11,7 @@ tags:
 
 # Properties
 - Complement of [[Simple Discontinuity]] among discontinuities.
+- The only possible discontinuities of a [[Derivative]] on an interval ([[Darboux's Theorem]]).
 - A [[Monotonic Function]] has no discontinuities of the second kind ([[Monotonic Function One-Sided Limit Theorem]]).
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=103)

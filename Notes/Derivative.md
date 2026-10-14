@@ -53,6 +53,9 @@ One-sided limits in Definition 2 give right-hand and left-hand derivatives; at t
 ## [[Complex Number]]
 - [[Complex Number Derivative]]
 
+## [[Vector-Valued Function]]
+- [[Derivative of Vector-Valued Function]]
+
 ## Geometry (TODO)
 - [[Directional Derivative]]
 - [[Covariant Derivative]]
@@ -115,6 +118,11 @@ One-sided limits in Definition 2 give right-hand and left-hand derivatives; at t
 ## General
 - [[Differentiable Function]]
 - [[Fundamental Theorem of Calculus]]
+- [[Fermat's Theorem]]
+- [[Mean Value Theorem]]
+- [[Darboux's Theorem]]: derivatives have the intermediate value property.
+- [[Derivative Limit Theorem]]
+- [[Uniformly Differentiable Function]]
 
 ## [[Complex Number]]
 - [[Complex Number Derivative]]

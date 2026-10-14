@@ -13,6 +13,7 @@ tags:
 > If $f'(x) > 0$ on the interval $I$, then $f$ is increasing on $I$.
 
 # Properties
+- [[Monotonic Function Derivative Theorem]]: non-strict version ($f' \geq 0$ or $f' \leq 0$ gives monotonic).
 - [[Inequality Sign Change]]: applying a strictly increasing function to both sides of a strict [[Inequality]] preserves its direction.
 - [[Non-Decreasing Function|Non-decreasing]] is the weak (non-strict) counterpart: it permits $f(a) = f(b)$ for $a < b$, whereas strictly increasing does not.
 

@@ -16,4 +16,9 @@ tags:
 
 It is the instantaneous rate of change of an instantaneous rate of change.
 
+# Properties
+- Special case $n = 2$ of [[Nth Derivative]].
+- [[Second Derivative Test]]
+- [[Concavity Test]]
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=190)

@@ -12,3 +12,6 @@ tags:
 # Types
 - [[Holomorphic Function]]
 - [[Complex Analytic Function]]
+
+# Properties
+- [[Derivative of Vector-Valued Function]]: $f' = f_1' + i f_2'$ for $f$ of a real variable.

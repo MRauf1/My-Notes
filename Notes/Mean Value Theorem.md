@@ -24,8 +24,16 @@ Generalization of [[Rolle's Theorem]].
 > $$
 > We get the standard version by setting $g(x) = x$ for all $x$.
 
+Differentiability is not required at the endpoints.[^3] Taylor's theorem ([[Taylor's Theorem]]) with $n = 1$ is exactly the mean value theorem.[^4]
+
 # Properties
 - [[Mean Value Theorem for Riemann Integral]]
+- [[Fermat's Theorem]]: the key step in the proof.
+- [[Monotonic Function Derivative Theorem]]
+- [[Derivative Limit Theorem]]
+- Fails for complex/vector-valued functions ([[Derivative of Vector-Valued Function]]); see [[Mean Value Inequality for Vector-Valued Function]] instead.
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=320)
 [^2]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=250)
+[^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=116&annotation=8MZJYNH9); [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=117&annotation=JRXLEYVB); [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=117&annotation=XSKN8EKL)
+[^4]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=120&annotation=FLU8RYCZ)
