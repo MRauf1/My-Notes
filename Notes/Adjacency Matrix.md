@@ -29,6 +29,7 @@ $O(n^2)$: storing $n^2$ boolean entries requires at least $n^2$ bits; a naive im
 - [[Graph]]
 - Despite its $O(n^2)$ memory and slow `in_edges(i)`/`out_edges(i)`, it remains useful for a *dense* graph (one with close to $n^2$ edges), where $O(n^2)$ space is unavoidable regardless of representation, and for applications that exploit algebraic operations on $a$ to compute properties of $G$.[^7]
 - Contrast with [[Adjacency Lists]], the vertex-centric alternative representation.
+- Generalized to higher-dimensional connectivity (vertex–edge, edge–triangle, …) by the [[Simplicial Adjacency Matrix]].
 - For an [[Undirected Graph]], the adjacency matrix is symmetric; for large sparse graphs it is stored as a list of connections $(m, n)$ instead.[^8]
 - **Powers count walks**: entry $(m, n)$ of $\mathbf{A}^L$ is the number of [[Graph Walk|walks]] of length $L$ from node $m$ to node $n$. Walks may revisit nodes, so this is not the number of [[Graph Path|paths]], but a non-zero entry implies that the [[Graph Distance|distance]] from $m$ to $n$ is at most $L$.[^9]
 - **Relabelling**: re-indexing the nodes with a [[Permutation Matrix|permutation matrix]] $\mathbf{P}$ maps $\mathbf{A} \mapsto \mathbf{P}^T\mathbf{A}\mathbf{P}$ (rows and columns permuted) without changing the graph, so a [[Graph Neural Network]] must be equivariant to this map.[^10]

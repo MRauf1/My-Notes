@@ -16,5 +16,6 @@ tags:
 # Properties
 ## [[Metric Space]]
 - [[Complete Metric Space]]
+- Local model for an $n$-dimensional [[Manifold]].
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=18)

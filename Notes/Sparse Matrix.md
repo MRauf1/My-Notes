@@ -15,6 +15,8 @@ A symmetric sparse matrix corresponds to an undirected [[Graph]] on vertices $\{
 - [[Tridiagonal Matrix]]
 
 # Properties
+- [[Simplicial Adjacency Matrix|Simplicial adjacency (incidence) matrices]] of meshes are stored as sparse matrices.
+
 ## Storage and Basic Operations[^2]
 - Coordinate format (COO): $3\operatorname{nnz}$ numbers (row, column, value).
 - Compressed sparse row (CSR) / compressed sparse column (CSC): $2\operatorname{nnz} + n + 1$ numbers (values, column/row indices, row/column pointers).

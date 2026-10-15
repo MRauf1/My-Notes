@@ -329,3 +329,7 @@ A compact list of fundamental papers referenced in the notes.
 - Weyl (1911). *Über die asymptotische Verteilung der Eigenwerte*. Nachrichten der Königlichen Gesellschaft der Wissenschaften zu Göttingen. — [[Eigenfunction]] (Weyl's law)
 - Courant & Hilbert (1953). *Methods of Mathematical Physics*, Vol. I. Interscience. — [[Eigenfunction]], [[Dirichlet Energy]], [[Robin Eigenvalue Problem on an Interval]] (min–max principle, eigenvalue bracketing)
 - Kac (1966). *Can One Hear the Shape of a Drum?* American Mathematical Monthly 73(4). [doi:10.2307/2313748](https://doi.org/10.2307/2313748) — [[Wave Equation on a Finite Interval]], [[Laplacian Filter]]
+
+## Discrete Differential Geometry
+- Crane (2018). *Discrete Differential Geometry: An Applied Introduction*. Course notes, Carnegie Mellon University. [cs.cmu.edu/~kmcrane/Projects/DDG](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/) — [[Combinatorial Surface]], [[Abstract Simplicial Complex]], [[Simplicial Surface]], [[Halfedge Mesh]], [[Euler Characteristic]]
+- Hatcher (2002). *Algebraic Topology*. Cambridge University Press, Ch. 0 (CW complexes). [pi.math.cornell.edu/~hatcher/AT/ATpage.html](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html) — [[Halfedge Mesh]]
