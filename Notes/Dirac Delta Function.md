@@ -28,7 +28,7 @@ $$
   which underlies the analysis of [[Sampling (Signal Processing)|sampling]].
 - **Convolution identity**: $\ell(t) \circ \delta(t) = \ell(t)$; an LTI system's response to $\delta$ is its [[Impulse Response]].
 - Its discrete analogue is the impulse $\delta[n]$, equal to $1$ at $n = 0$ and $0$ elsewhere, i.e. the [[Kronecker Delta]] $\delta_{n0}$, which is the identity of discrete convolution ([[Convolution Basic Properties]]).
-- It is the derivative of the [[Heaviside Function|Heaviside step function]] in the distributional sense.[^2]
+- It is the derivative of the [[Heaviside Function|Heaviside step function]] in the distributional sense.[^2] Correspondingly, $\int f(x)\,\delta(x - s)\,dx$ is made rigorous by the [[Riemann-Stieltjes Integral]] $\int f\,dI(x - s) = f(s)$ ([[Riemann-Stieltjes Integral with Step Function Integrator Theorem]]).
 
 [^1]: [MIT Vision Book - Linear Image Filtering](https://visionbook.mit.edu/linear_image_filtering.html)
 [^2]: Added from general knowledge.

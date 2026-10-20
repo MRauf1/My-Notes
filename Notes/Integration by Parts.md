@@ -26,4 +26,18 @@ tags:
 > $$
 > where $u = f(x), du = f'(x) dx, v = g(x), dv = g'(x) dx$
 
+> [!abstract] Theorem 3 (Integration by Parts, Rudin's Version)[^2]
+> Suppose $F$ and $G$ are [[Differentiable Function|differentiable functions]] on $[a, b]$, $F' = f \in \mathscr{R}$, and $G' = g \in \mathscr{R}$. Then
+> $$
+> \begin{align}
+> \int_a^b F(x) g(x)\,dx = F(b)G(b) - F(a)G(a) - \int_a^b f(x) G(x)\,dx
+> \end{align}
+> $$
+
+Follows from Rudin's [[Fundamental Theorem of Calculus]] applied to $H = FG$, using [[Functions that are Riemann-Stieltjes Integrable Theorem|integrability of products]]. Only integrability of the derivatives is required, not continuity.
+
+# Properties
+- Discrete analogue: [[Summation by Parts]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=504)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=143&annotation=BRLZ6Q38)

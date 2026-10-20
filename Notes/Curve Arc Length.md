@@ -14,4 +14,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Justified for any curve with continuous $\alpha'$ on a closed interval by the polygonal definition of length ([[Rectifiable Curve]]).
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=68)

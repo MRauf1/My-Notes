@@ -15,8 +15,11 @@ tags:
 > \end{align}
 > $$
 
+Rudin calls $U(f)$ and $L(f)$ the upper and lower Riemann integrals and writes $f \in \mathscr{R}$ for the set of Riemann-integrable functions; this is the case $\alpha(x) = x$ of the [[Riemann-Stieltjes Integral]]. Since $m(b - a) \leq L(P, f) \leq U(P, f) \leq M(b - a)$ for every $P$, the upper and lower integrals are defined for every bounded $f$; whether they are equal is the delicate question.[^2]
+
 # Properties
 - [[Darboux Sums of 2 Partitions Lemma]]
 - [[Darboux Integrable Theorem]]
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=278)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=130&annotation=AUB2Y8IL)

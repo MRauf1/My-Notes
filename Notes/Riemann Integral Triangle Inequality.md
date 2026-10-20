@@ -14,4 +14,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Holds for the [[Riemann-Stieltjes Integral]] ([[Functions that are Riemann-Stieltjes Integrable Theorem]]) and for vector-valued $\mathbf{f}$ ([[Riemann-Stieltjes Integral of Vector-Valued Function]]).
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=293)

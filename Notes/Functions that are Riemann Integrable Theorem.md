@@ -19,4 +19,7 @@ tags:
 > 3) $\max(f, g)$ is integrable
 > 4) $\min(f, g)$ is integrable
 
+# Properties
+- Generalization to integrators $\alpha$ (continuity, monotonicity, composition, products, and Lebesgue's criterion): [[Functions that are Riemann-Stieltjes Integrable Theorem]].
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=289)

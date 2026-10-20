@@ -23,4 +23,7 @@ tags:
 > $$
 > for all [[Partition]] $P$ of $[a, b]$.
 
+# Properties
+- Generalization to an arbitrary increasing integrator $\alpha$: [[Riemann-Stieltjes Integrable Theorem]].
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=283)

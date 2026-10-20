@@ -21,6 +21,11 @@ One way of thinking of a curve is as a trip of a moving [[Point]] in $\mathbb{R}
 
 The image of the curve is called the trace of the curve.
 
+> [!info] Definition 3 (Curve, Rudin's Version)[^2]
+> A continuous mapping $\gamma$ of an interval $[a, b]$ into $\mathbb{R}^k$ is called a curve in $\mathbb{R}^k$, or a curve on $[a, b]$. If $\gamma$ is one-to-one, it is an [[Arc]]. If $\gamma(a) = \gamma(b)$, it is a [[Closed Curve]].
+
+A curve is a mapping, not a point set: each curve has an associated range in $\mathbb{R}^k$, but different curves may have the same range.[^3]
+
 > [!info] Definition 2 (Negative of a Curve)
 > Define $- \gamma$ as $[-\gamma](t) = \gamma(a + b - t)$ for $t \in [a, b]$.
 
@@ -31,9 +36,13 @@ Same curve, but traversed in the opposite direction.
 	- [[Piecewise Smooth Curve]]
 - [[Closed Curve]]
 - [[Simple Curve]]
+- [[Arc]]
+- [[Rectifiable Curve]]
 
 # Properties
 ## [[Complex Number]]
 - [[Jordan Curve Theorem]]
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=31)
+[^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=145&annotation=B4BR6PHD)
+[^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=145&annotation=5WYC4N8E)

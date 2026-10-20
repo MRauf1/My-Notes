@@ -11,3 +11,4 @@ tags:
 # Types
 - [[Riemann Integral]]
 - [[Darboux Integral]]
+- [[Riemann-Stieltjes Integral]]

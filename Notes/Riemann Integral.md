@@ -19,6 +19,9 @@ Integral measures the [[Area of Region Under Curve]]. [[Double Riemann Integral]
 - [[Double Riemann Integral]]
 - [[Triple Riemann Integral]]
 
+## Generalizations
+- [[Riemann-Stieltjes Integral]] (integrate against $d\alpha$ instead of $dx$)
+
 ## Over [[Manifold]]
 - [[Line Riemann Integral]]
 	- [[Contour Riemann Integral]]
@@ -32,5 +35,6 @@ Integral measures the [[Area of Region Under Curve]]. [[Double Riemann Integral]
 ## Integrability
 - [[Riemann Integrable Theorem]]
 - [[Functions that are Riemann Integrable Theorem]]
+- [[Functions that are Riemann-Stieltjes Integrable Theorem]]
 
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=410)

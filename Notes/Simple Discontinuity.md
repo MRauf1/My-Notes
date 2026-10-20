@@ -12,7 +12,7 @@ tags:
 # Types
 There are two ways in which a function can have a simple discontinuity:[^1]
 - $f(x^+) \neq f(x^-)$, in which case the value $f(x)$ is immaterial: [[Jump Discontinuity]].
-- $f(x^+) = f(x^-) \neq f(x)$: removable discontinuity.
+- $f(x^+) = f(x^-) \neq f(x)$: [[Removable Discontinuity]].
 
 # Properties
 - For any real function $f$ on $(a, b)$, the set of points at which $f$ has a simple discontinuity is at most [[Countable Set|countable]].[^2]

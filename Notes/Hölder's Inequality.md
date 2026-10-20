@@ -23,6 +23,15 @@ tags:
 > \end{align}
 > $$
 
+> [!info] Definition 3 (Hölder's Inequality for [[Riemann-Stieltjes Integral]])[^3]
+> Let $p, q > 0$ with $\frac{1}{p} + \frac{1}{q} = 1$. If $f, g$ are complex functions in $\mathscr{R}(\alpha)$ on $[a, b]$, then
+> $$
+> \begin{align}
+> \left| \int_a^b f g \, d\alpha \right| \leq \left( \int_a^b |f|^p \, d\alpha \right)^{1/p} \left( \int_a^b |g|^q \, d\alpha \right)^{1/q}
+> \end{align}
+> $$
+> The case $p = q = 2$ is the Schwarz inequality, and the finite-sum [[Cauchy-Schwarz Inequality]] is a very special case. It also holds for improper integrals ([[Improper Riemann Integral]]).
+
 > [!info] Definition 2 (Hölder's Inequality — Dual Norms)[^2]
 > Let $\lVert \cdot \rVert$ be an arbitrary norm on $\mathbb{R}^n$ and $\lVert \cdot \rVert_*$ its [[Dual Norm]]. Then for any $x, y \in \mathbb{R}^n$,
 > $$
@@ -39,10 +48,11 @@ Definition 2 follows immediately from the definition of the [[Dual Norm]] (apply
 - $p = 1$, $q = \infty$: $\left| \sum_i x_i y_i \right| \leq \lVert x \rVert_1 \lVert y \rVert_\infty$ ([[1-Norm]] and [[Infinity Norm]] are dual to each other).
 - Tightness: for every $y$ there is an $x \neq 0$ attaining equality, which is exactly why $\lVert y \rVert_q = \sup_{\lVert x \rVert_p \leq 1} \langle x, y \rangle$, i.e. the $q$-norm is the [[Dual Norm]] of the $p$-norm.
 - Equality condition ($1 < p < \infty$): equality holds iff $|x_i|^p$ and $|y_i|^q$ are proportional (as vectors in $\mathbb{R}^n$) and the terms $x_i y_i$ all have the same phase/sign.
-- Standard proof: normalize to $\lVert x \rVert_p = \lVert y \rVert_q = 1$ and apply Young's inequality $ab \leq \frac{a^p}{p} + \frac{b^q}{q}$ for $a, b \geq 0$ termwise, then sum.
+- Standard proof: normalize to $\lVert x \rVert_p = \lVert y \rVert_q = 1$ and apply [[Young's Inequality]] $ab \leq \frac{a^p}{p} + \frac{b^q}{q}$ for $a, b \geq 0$ termwise, then sum.
 - Generalized Hölder: if $\frac{1}{r} = \frac{1}{p} + \frac{1}{q}$ with $p, q, r \in (0, \infty]$, then $\lVert fg \rVert_r \leq \lVert f \rVert_p \lVert g \rVert_q$; by induction, $\lVert f_1 \cdots f_k \rVert_r \leq \prod_j \lVert f_j \rVert_{p_j}$ when $\sum_j \frac{1}{p_j} = \frac{1}{r}$.
 - Hölder's inequality is the key step in proving Minkowski's inequality $\lVert x + y \rVert_p \leq \lVert x \rVert_p + \lVert y \rVert_p$, i.e. the [[Triangle Inequality]] for the [[p-Norm]].
 - On a finite measure space, Hölder gives the $L^p$ inclusion $\lVert f \rVert_p \leq \mu(\Omega)^{1/p - 1/r} \lVert f \rVert_r$ for $p \leq r$ (take $g = 1$); in $\mathbb{R}^n$ this yields $\lVert x \rVert_1 \leq \sqrt{n} \lVert x \rVert_2$ from [[Norm Equivalence Inequalities (Finite-Dimensional)]].
 
 [^1]: [Hölder's inequality — Wikipedia](https://en.wikipedia.org/wiki/H%C3%B6lder%27s_inequality)
 [^2]: [Dual norm — Wikipedia](https://en.wikipedia.org/wiki/Dual_norm)
+[^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=148&annotation=9F2ZFFMT)
