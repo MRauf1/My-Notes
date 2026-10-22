@@ -331,5 +331,7 @@ A compact list of fundamental papers referenced in the notes.
 - Kac (1966). *Can One Hear the Shape of a Drum?* American Mathematical Monthly 73(4). [doi:10.2307/2313748](https://doi.org/10.2307/2313748) — [[Wave Equation on a Finite Interval]], [[Laplacian Filter]]
 
 ## Discrete Differential Geometry
-- Crane (2018). *Discrete Differential Geometry: An Applied Introduction*. Course notes, Carnegie Mellon University. [cs.cmu.edu/~kmcrane/Projects/DDG](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/) — [[Combinatorial Surface]], [[Abstract Simplicial Complex]], [[Simplicial Surface]], [[Halfedge Mesh]], [[Euler Characteristic]]
+- Crane (2018). *Discrete Differential Geometry: An Applied Introduction*. Course notes, Carnegie Mellon University. [cs.cmu.edu/~kmcrane/Projects/DDG](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/) — [[Combinatorial Surface]], [[Abstract Simplicial Complex]], [[Simplicial Surface]], [[Halfedge Mesh]], [[Euler Characteristic]], [[Smooth Surface]], [[Induced Metric]], [[Gauss Map]], [[Shape Operator]], [[Principal Curvature]], [[Mean Curvature]], [[Gaussian Curvature]], [[Second Fundamental Form]], [[Bilinear Form]]
+- Riemann (1854, publ. 1868). *Über die Hypothesen, welche der Geometrie zu Grunde liegen*. Abhandlungen der Königlichen Gesellschaft der Wissenschaften zu Göttingen 13. — [[Riemannian Metric]]
+- Fréchet (1906). *Sur quelques points du calcul fonctionnel*. Rendiconti del Circolo Matematico di Palermo 22. — [[Metric]], [[Riemannian Metric]] (origin of metric spaces)
 - Hatcher (2002). *Algebraic Topology*. Cambridge University Press, Ch. 0 (CW complexes). [pi.math.cornell.edu/~hatcher/AT/ATpage.html](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html) — [[Halfedge Mesh]]

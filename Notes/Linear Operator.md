@@ -20,5 +20,6 @@ Whether $T$ can be represented by a matrix at all depends on the dimensionality 
 
 # Properties
 - [[Linear Map]]
+- Under a change of basis $P$, its matrix transforms as $A \mapsto PAP^{-1}$, unlike a [[Bilinear Form]] ($B \mapsto P^{-T}BP^{-1}$).
 
 [^1]: [Operator (mathematics)](https://en.wikipedia.org/wiki/Operator_(mathematics))

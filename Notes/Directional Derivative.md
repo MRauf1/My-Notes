@@ -24,6 +24,10 @@ It is the instantaneous rate of change of $f$ in the direction of $\mathbf{v}$ a
 
 It can also be thought of as the [[Scalar Projection]] of the [[Gradient Vector]] onto $\mathbf{v}$.
 
+**Pushforward view.**[^2] For $\phi: \mathbb{R}^2 \rightarrow \mathbb{R}$, imagine $\phi$ squashing a flat rubber sheet onto the 1-dimensional real line. An arrow $X$ drawn on the sheet is pushed forward to an arrow $d\phi(X)$ on $\mathbb{R}$; its signed length is the rate of change of $\phi$ along $X$, i.e. $d\phi(X) = \nabla_X \phi$. Type check: $d\phi(X)$ is a tangent vector on $\mathbb{R}$, hence identified with a single real number (see [[Tangent Map]]). This contrasts with the height-function picture (the graph of $\phi$ as a hill in $\mathbb{R}^3$, with slope in direction $X$).[^3]
+
+![[Directional Derivative as Pushforward.png]]
+
 # Types
 - [[Directional Derivative Vector Field]]
 
@@ -33,3 +37,5 @@ It can also be thought of as the [[Scalar Projection]] of the [[Gradient Vector]
 - [[Directional Derivative Chain Rule]]
 
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=27)
+[^2]: [Crane, p. 34](zotero://open-pdf/library/items/9N6JDPI2?page=35&annotation=MB6IE8P3)
+[^3]: [Crane, p. 33](zotero://open-pdf/library/items/9N6JDPI2?page=34&annotation=AFMP3NWH)

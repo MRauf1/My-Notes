@@ -13,3 +13,4 @@ tags:
 > 3) $d(x, z) \leq d(x, y) + d(y, z)$ for all $x, y, z \in S$ ([[Triangle Inequality]])
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=96)
+Not to be confused with the metric tensor of differential geometry ([[Riemannian Metric]], [[Induced Metric]]), which is an inner product on tangent vectors rather than a distance between points; the former induces a metric of this kind by minimizing curve lengths.
