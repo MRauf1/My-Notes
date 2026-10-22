@@ -10,6 +10,7 @@ tags:
 > For a [[Group]] element $x \in G$, the conjugation [[Function]] by for some $g \in G$, is $c_g: G \rightarrow G$ with $c_g(x) := g x g^{-1}$.
 
 # Properties
+- Defines the conjugation [[Group Action]] of $G$ on itself; its orbits are the conjugacy classes.
 
 ## [[Group Automorphism]]
 - $c_g \in Aut(G)$ (It's an automorphism)

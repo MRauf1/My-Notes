@@ -42,6 +42,7 @@ with $\hat X_n = X_n / \|X_n\|$. Diffusion damps mode $n$ at rate $k\lambda_n$; 
 - Relies on the [[Superposition Principle (Partial Differential Equations)]]: finite sums of separated solutions are solutions; the infinite sums require convergence theory ([[Fourier Series]]).
 - Building blocks by boundary condition: [[Dirichlet Eigenvalue Problem on an Interval]] (sines, [[Fourier Sine Series]]), [[Neumann Eigenvalue Problem on an Interval]] (cosines, [[Fourier Cosine Series]]), [[Mixed Eigenvalue Problem on an Interval]], [[Robin Eigenvalue Problem on an Interval]].
 - Applications: [[Diffusion Equation on a Finite Interval]], [[Wave Equation on a Finite Interval]].
+- For the [[Laplace Equation]] in special geometries: (i) find separated solutions of the PDE; (ii) impose the homogeneous boundary conditions to get the eigenvalues (the step that needs the special geometry); (iii) sum the series; (iv) impose the inhomogeneous conditions, always last.[^11] Rectangular domains ([[Laplace Equation in a Rectangle]], [[Laplace Equation in a Box]]) and domains bounded by circles and rays ([[Laplace Equation in a Disk]], [[Laplace Equation in a Wedge]], [[Laplace Equation in an Annulus]]).
 - Long-time behavior and stability are read off the bottom of the spectrum: diffusion decays iff $\lambda_{\min} > 0$, tends to a steady state iff $\lambda_{\min} = 0$, and blows up exponentially iff $\lambda_{\min} < 0$.[^9]
 - The same template works in higher dimensions with $A = -\Delta$ ([[Laplacian Operator]]) and on graphs with the [[Graph Laplacian Matrix]], where the eigenvectors are a graph Fourier basis.[^9]
 
@@ -55,3 +56,4 @@ with $\hat X_n = X_n / \|X_n\|$. Diffusion damps mode $n$ at rate $k\lambda_n$; 
 [^8]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=110&annotation=CG4Z52VJ)
 [^9]: Spectral-theory connections added from general knowledge.
 [^10]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=104&annotation=XLES3PT5)
+[^11]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=173&annotation=HCIL3TJG)

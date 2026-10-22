@@ -15,3 +15,7 @@ tags:
 # Properties
 - Solutions of the [[Laplace Equation]]; the steady states of the [[Wave Equation]] and [[Diffusion Equation]].
 - Mean value property underlies the [[Walk on Spheres]] Monte Carlo solver for the Laplace equation.
+- [[Maximum Principle (Laplace Equation)]]: extremes are attained on the boundary.
+- [[Mean Value Property (Harmonic Function)]] and [[Harmonic Function Smoothness]] (harmonic functions are $C^\infty$).
+- Inside a disk, determined by boundary values via [[Poisson's Formula]].
+- Rotation-invariant examples: [[Radial Harmonic Function|$\log r$ in 2D and $1/r$ in 3D]].

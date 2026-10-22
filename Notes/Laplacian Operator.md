@@ -18,7 +18,8 @@ tags:
 - In 2D, $\Delta u = u_{xx} + u_{yy}$; in 3D, $\Delta u = u_{xx} + u_{yy} + u_{zz}$.
 - Appears in the [[Wave Equation]], [[Diffusion Equation]], [[Laplace Equation]], and [[Schrödinger Equation]].
 - Its zeros are the [[Harmonic Function|harmonic functions]].
-- Invariant under rotations and translations of $\mathbb{R}^n$.
+- Invariant under rotations and translations of $\mathbb{R}^n$, in the sense that it commutes with them (equivariant as a map on functions): [[Laplacian Operator Rigid Motion Invariance]].
+- Coordinate forms: [[Laplacian in Polar Coordinates]], [[Laplacian in Spherical Coordinates]].
 - Its discrete counterpart on a graph is the [[Graph Laplacian Matrix]] $\mathbf{L} = \mathbf{D} - \mathbf{A}$ (up to sign).
 - In image processing it is computed by the [[Laplacian Filter]] (five-point formula, Laplacian of Gaussian).
 

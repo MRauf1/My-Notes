@@ -14,7 +14,13 @@ tags:
 > $$
 > i.e. the output is the same regardless of the transformation.
 
-More generally, for a [[Group]] $G$ acting on the input space, $f$ is $G$-invariant if $f(g \cdot \mathbf{x}) = f(\mathbf{x})$ for all $g \in G$; invariance is the special case of [[Equivariant Function|equivariance]] in which $G$ acts trivially on the output.[^2]
+More generally, for a [[Group]] $G$ [[Group Action|acting]] on the input space, $f$ is $G$-invariant if $f(g \cdot \mathbf{x}) = f(\mathbf{x})$ for all $g \in G$; invariance is the special case of [[Equivariant Function|equivariance]] in which $G$ acts trivially on the output.[^2]
+
+**Invariance as a fixed point; relation to equivariance.**[^2] Invariance always means "fixed point of some [[Group Action|action]]". The condition $f(g \cdot \mathbf{x}) = f(\mathbf{x})$ above can be read in two ways:
+- *As a map:* $f$ is [[Equivariant Function|equivariant]] with the trivial action on the output.
+- *As a point:* $f$ is a fixed point of the induced action $f \mapsto f \circ g^{-1}$ on the space of functions.
+
+One level up, a map $F: X \to Y$ is a point of $\mathrm{Map}(X, Y)$, where $G$ acts by conjugation $(g \cdot F)(x) = \rho_{\text{out}}(g)\,F(\rho_{\text{in}}(g)^{-1}x)$; $F$ is invariant under this action if and only if it is equivariant. Hence an "invariant operator" in PDE or signal processing (e.g. $T_g \Delta T_g^{-1} = \Delta$ for the [[Laplacian Operator]], [[Laplacian Operator Rigid Motion Invariance]]) is an equivariant map, not one satisfying $L(T_g f) = L f$. The latter is equivariance with a trivial output action, a different and much stronger condition. The word changes with the level at which the object is viewed (point vs. map), not with whether it is a "function" or an "operator", and each claim needs its action specified.
 
 # Properties
 - Image classification networks should be invariant to geometric transformations (translation, rotation, flipping, warping): the same object should be identified regardless.[^1]

@@ -29,7 +29,7 @@ tags:
 - Gives uniqueness and stability in the uniform sense for the Dirichlet problem ([[Diffusion Equation Well-Posedness]]).
 - Fails for the [[Wave Equation]]: waves carry their amplitude around without damping ([[Wave and Diffusion Equation Comparison]]).
 - Also holds for subsolutions $u_t \le k \Delta u$ (max) and supersolutions (min), and on the whole line for bounded solutions: $\inf \phi \le u(x, t) \le \sup \phi$.
-- The time-independent case is the maximum principle for [[Harmonic Function|harmonic functions]] ([[Laplace Equation]]).
+- The time-independent case is the [[Maximum Principle (Laplace Equation)]] for [[Harmonic Function|harmonic functions]].
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=54&annotation=N5GCRVV8)
 [^2]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=54&annotation=HM2L2QR9); [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=54&annotation=VE6A6KY5)
