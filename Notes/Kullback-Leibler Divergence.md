@@ -38,6 +38,7 @@ $$
 \end{align}
 $$
   The second term is independent of $\boldsymbol{\theta}$ and the first is the negative log likelihood, so minimizing this KL divergence is equivalent to [[Maximum Likelihood Estimation|maximum likelihood]] ([[Density Estimation]]).
+- **Requires absolute continuity**: in measure-theoretic form $\mathrm{KL}(p \| q) = \int \log \frac{dp}{dq}\,dp$, which is finite only if $p$ is [[Absolutely Continuous Measure|absolutely continuous]] with respect to $q$; in particular it is infinite for [[Mutually Singular Measures|mutually singular]] distributions, which is why maximum likelihood breaks on data concentrated on a zero-volume set ([[Maximum Likelihood Loss Optimality and Failure Modes]]).[^8]
 - [[Mutual Information]] is the KL divergence between a joint distribution and the product of its marginals.
 - The [[Inception Score]] exponentiates the average KL divergence between per-sample class predictions and their marginal.
 - The [[Jensen-Shannon Divergence]] symmetrizes it by averaging the KL divergences of each distribution from their mixture.
@@ -57,3 +58,4 @@ $$
 [^5]: [Bishop, 2006, p. 57](zotero://open-pdf/library/items/5G99AZ8U?page=77&annotation=ZLT8Z9K5)
 [^6]: [Bishop, 2006, p. 57](zotero://open-pdf/library/items/5G99AZ8U?page=77&annotation=SNY35FXQ)
 [^7]: [Prince, p. 337](zotero://open-pdf/library/items/BWT7FYX5?page=351&annotation=2QERDKHE)
+[^8]: Supplementary notes provided by the creator.

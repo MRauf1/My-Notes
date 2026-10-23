@@ -15,7 +15,7 @@ tags:
 > $$
 
 # Properties
-- Symmetric, $D_{JS}[p \| q] = D_{JS}[q \| p]$, and bounded: $0 \leq D_{JS} \leq \log 2$, with $0$ iff $p = q$ and $\log 2$ iff $p$ and $q$ have disjoint supports. Its square root is a [[Metric|metric]].
+- Symmetric, $D_{JS}[p \| q] = D_{JS}[q \| p]$, and bounded: $0 \leq D_{JS} \leq \log 2$, with $0$ iff $p = q$ and $\log 2$ iff $p$ and $q$ have disjoint supports (more precisely, are [[Mutually Singular Measures|mutually singular]]). Its square root is a [[Metric|metric]].
 - Always finite, unlike the KL divergence, since $p$ and $q$ are both absolutely continuous with respect to the mixture.
 - **Quality vs. coverage** (with $p = Pr(\mathbf{x}^*)$ the model and $q = Pr(\mathbf{x})$ the data):[^1][^2]
 	- The first term is small if, wherever the sample density is high, the mixture is high: it penalizes samples where there is no real data, enforcing **quality**.

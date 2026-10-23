@@ -21,7 +21,7 @@ $$
   which tends to $1$ for large $D$ even for small $\epsilon$.[^4]
 - **Gaussian mass concentrates in a thin shell**: the density of the radius $r$ of a $D$-dimensional isotropic Gaussian, $p(r) \propto r^{D-1}\exp(-r^2/2\sigma^2)$, is sharply peaked near $r \approx \sigma\sqrt{D}$, far from the mode at the origin, where the density is highest but the volume is negligible.[^5]
 - Does not prevent effective high-dimensional methods, for two reasons:[^6]
-	- Real data is often confined to a region of much lower effective dimensionality, and the directions of important variation in the targets may be confined further.
+	- Real data is often confined to a region of much lower effective dimensionality, and the directions of important variation in the targets may be confined further ([[Manifold Hypothesis]], [[Intrinsic Dimension]]).
 	- Real data typically exhibits (at least local) smoothness, so small changes in the input produce small changes in the target, enabling local interpolation.
 - Motivates [[Feature Extraction]], and explains why [[Rejection Sampling]] envelopes and grid-based [[Density Estimation]] degrade in high dimensions.
 

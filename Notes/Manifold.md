@@ -16,6 +16,7 @@ The manifold assumption is the basic simplifying assumption of differential geom
 - [[Smooth Surface]]
 
 # Properties
+- In machine learning, high-dimensional data is hypothesized to lie near a low-dimensional manifold ([[Manifold Hypothesis]], [[Intrinsic Dimension]]).
 - There are many distinct ways a shape can "look like Euclidean space" (as a topological space, smoothly, conformally, metrically), giving rise to distinct sub-areas of differential geometry: differential topology, conformal geometry, Riemannian geometry, ….[^2]
 
 [^1]: [Crane, p. 7–8](zotero://open-pdf/library/items/9N6JDPI2?page=9&annotation=XLL33IWT)

@@ -34,6 +34,7 @@ Steps:
 - A frequentist estimator: maximizing $p(\mathcal{D} | \mathbf{w})$ chooses the $\mathbf{w}$ under which the observed data is most probable. Maximizing the probability of the data given the parameters, rather than of the parameters given the data, is related to the latter through [[Bayes' Theorem]] ([[Maximum Likelihood vs Maximum a Posteriori Estimation]]).[^2][^3]
 - The log is used not only for convenience but for numerical stability: a product of many small probabilities underflows floating-point precision, while the sum of log probabilities does not.[^4]
 - Equivalent to minimizing the [[Kullback-Leibler Divergence]] from the data distribution to the model.
+- The default estimator because it is consistent, asymptotically efficient, invariant, tractable as a sum over data, and generic; it fails when the likelihood is a [[Probability Density Function|density]] that can become unbounded, e.g. when the data distribution is [[Mutually Singular Measures|mutually singular]] with the model ([[Maximum Likelihood Loss Optimality and Failure Modes]]).
 - Systematically biased for some quantities (e.g. Gaussian variance, [[Normal Distribution Maximum Likelihood Estimation]]), and this bias lies at the root of [[Overfitting|over-fitting]] in complex models; it also gives extreme estimates from small samples.
 
 ## Basic Statistical Properties

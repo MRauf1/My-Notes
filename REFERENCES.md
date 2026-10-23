@@ -157,6 +157,10 @@ A compact list of fundamental papers referenced in the notes.
 - Chen, Behrmann, Duvenaud & Jacobsen (2019). *Residual Flows for Invertible Generative Modeling*. NeurIPS. [arXiv:1906.02735](https://arxiv.org/abs/1906.02735) — [[Residual Flow]]
 - Hutchinson (1989). *A Stochastic Estimator of the Trace of the Influence Matrix for Laplacian Smoothing Splines*. Communications in Statistics — Simulation and Computation 18(3). — [[Hutchinson's Trace Estimator]]
 - Theis, van den Oord & Bethge (2016). *A Note on the Evaluation of Generative Models*. ICLR. [arXiv:1511.01844](https://arxiv.org/abs/1511.01844) — [[Dequantization]]
+- Grover, Dhar & Ermon (2018). *Flow-GAN: Combining Maximum Likelihood and Adversarial Learning in Generative Models*. AAAI. [arXiv:1705.08868](https://arxiv.org/abs/1705.08868) — [[Normalizing Flow]]
+- Brehmer & Cranmer (2020). *Flows for Simultaneous Manifold Learning and Density Estimation*. NeurIPS. [arXiv:2003.13913](https://arxiv.org/abs/2003.13913) — [[Normalizing Flow]] (injective/manifold flows)
+- Loaiza-Ganem, Ross, Cresswell & Caterini (2022). *Diagnosing and Fixing Manifold Overfitting in Deep Generative Models*. TMLR. [arXiv:2204.07172](https://arxiv.org/abs/2204.07172) — [[Manifold Overfitting]], [[Maximum Likelihood Loss Optimality and Failure Modes]], [[Normalizing Flow]], [[Mutually Singular Measures]]
+- Liu, Gong & Liu (2023). *Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow*. ICLR. [arXiv:2209.03003](https://arxiv.org/abs/2209.03003) — [[Normalizing Flow]]
 
 ## Variational Autoencoders
 - Kingma & Welling (2014). *Auto-Encoding Variational Bayes*. ICLR. [arXiv:1312.6114](https://arxiv.org/abs/1312.6114) — [[Variational Autoencoder]], [[Reparameterization Trick]]
@@ -191,9 +195,22 @@ A compact list of fundamental papers referenced in the notes.
 - Gao, Song, Poole, Wu & Kingma (2021). *Learning Energy-Based Models by Diffusion Recovery Likelihood*. ICLR. [arXiv:2012.08125](https://arxiv.org/abs/2012.08125) — [[Diffusion Model]]
 - Dockhorn, Vahdat & Kreis (2022). *Score-Based Generative Modeling with Critically-Damped Langevin Diffusion*. ICLR. [arXiv:2112.07068](https://arxiv.org/abs/2112.07068) — [[Diffusion Model]]
 - Song, Dhariwal, Chen & Sutskever (2023). *Consistency Models*. ICML. [arXiv:2303.01469](https://arxiv.org/abs/2303.01469) — [[Diffusion Model]]
-- Lipman, Chen, Ben-Hamu, Nickel & Le (2023). *Flow Matching for Generative Modeling*. ICLR. [arXiv:2210.02747](https://arxiv.org/abs/2210.02747) — [[Diffusion Model]]
+- Lipman, Chen, Ben-Hamu, Nickel & Le (2023). *Flow Matching for Generative Modeling*. ICLR. [arXiv:2210.02747](https://arxiv.org/abs/2210.02747) — [[Diffusion Model]], [[Normalizing Flow]]
 - Rissanen, Heinonen & Solin (2023). *Generative Modelling with Inverse Heat Dissipation*. ICLR. [arXiv:2206.13397](https://arxiv.org/abs/2206.13397) — [[Diffusion Model]]
 - Bansal et al. (2023). *Cold Diffusion: Inverting Arbitrary Image Transforms Without Noise*. NeurIPS. [arXiv:2208.09392](https://arxiv.org/abs/2208.09392) — [[Diffusion Model]]
+
+## Manifold Hypothesis and Intrinsic Dimension
+- Bengio, Courville & Vincent (2013). *Representation Learning: A Review and New Perspectives*. TPAMI 35(8). [arXiv:1206.5538](https://arxiv.org/abs/1206.5538) — [[Manifold Hypothesis]]
+- Fefferman, Mitter & Narayanan (2016). *Testing the Manifold Hypothesis*. Journal of the AMS 29(4). [arXiv:1310.0425](https://arxiv.org/abs/1310.0425) — [[Manifold Hypothesis]]
+- Pope, Zhu, Abdelkader, Goldblum & Goldstein (2021). *The Intrinsic Dimension of Images and Its Impact on Learning*. ICLR. [arXiv:2104.08894](https://arxiv.org/abs/2104.08894) — [[Intrinsic Dimension]], [[Manifold Hypothesis]]
+- Brown, Caterini, Ross, Cresswell & Loaiza-Ganem (2023). *Verifying the Union of Manifolds Hypothesis for Image Data*. ICLR. [arXiv:2207.02862](https://arxiv.org/abs/2207.02862) — [[Intrinsic Dimension]], [[Manifold Hypothesis]]
+- Levina & Bickel (2004). *Maximum Likelihood Estimation of Intrinsic Dimension*. NeurIPS. — [[Intrinsic Dimension]]
+- Grassberger & Procaccia (1983). *Measuring the Strangeness of Strange Attractors*. Physica D 9(1–2). [doi:10.1016/0167-2789(83)90298-1](https://doi.org/10.1016/0167-2789(83)90298-1) — [[Intrinsic Dimension]] (correlation dimension)
+- Song & Ermon (2019). *Generative Modeling by Estimating Gradients of the Data Distribution*. NeurIPS. [arXiv:1907.05600](https://arxiv.org/abs/1907.05600) — [[Manifold Hypothesis]], [[Diffusion Model]]
+- Loaiza-Ganem, Ross, Cresswell & Caterini (2022). *Diagnosing and Fixing Manifold Overfitting in Deep Generative Models*. TMLR. [arXiv:2204.07172](https://arxiv.org/abs/2204.07172) — [[Manifold Overfitting]]
+- Weyl (1939). *On the Volume of Tubes*. American Journal of Mathematics 61(2). [doi:10.2307/2371513](https://doi.org/10.2307/2371513) — [[Manifold Hypothesis]] (tube formula)
+- Sard (1942). *The Measure of the Critical Values of Differentiable Maps*. Bulletin of the AMS 48(12). [doi:10.1090/S0002-9904-1942-07811-6](https://doi.org/10.1090/S0002-9904-1942-07811-6) — [[Manifold Hypothesis]]
+- Federer (1969). *Geometric Measure Theory*. Springer. — [[Manifold Hypothesis]], [[Mutually Singular Measures]] (Lipschitz maps and Hausdorff measure)
 
 ## Hyperparameter Search
 - Bergstra & Bengio (2012). *Random Search for Hyper-Parameter Optimization*. JMLR. [JMLR 13](https://jmlr.org/papers/v13/bergstra12a.html) — [[Hyperparameter Search]]

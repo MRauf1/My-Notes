@@ -29,6 +29,7 @@ A finer-grained workflow:
 - The usual starting assumption is [[Exchangeability]] of the data, modeled as iid given $\theta$; multi-level data use a [[Hierarchical Model]].
 - Common-sense interpretation of conclusions: a [[Credible Interval]] directly has high probability of containing the unknown quantity ([[Frequentist vs Bayesian Inference]]).
 - Philosophical basis: [[Probability Bayesian Framework]].
+- Not a cure for a degenerate likelihood: since the posterior is proportional to the likelihood, a likelihood that is unbounded (e.g. a continuous density model fit to data on a zero-volume set) yields an improper or degenerate posterior unless the prior rules out the collapse ([[Maximum Likelihood Loss Optimality and Failure Modes]]).[^6]
 - When the posterior's normalizing constant is intractable, it is sampled by [[Markov Chain Monte Carlo]].
 
 [^1]: [Gelman et al., p. 1](zotero://open-pdf/library/items/HDF44SF4?page=11&annotation=TFGB8IG4)
@@ -36,3 +37,4 @@ A finer-grained workflow:
 [^3]: [Gelman et al., p. 3](zotero://open-pdf/library/items/HDF44SF4?page=13&annotation=PC55PE8P)
 [^4]: [Gelman et al., p. 7](zotero://open-pdf/library/items/HDF44SF4?page=17&annotation=C69MVM7Y)
 [^5]: [Gelman et al., p. 7](zotero://open-pdf/library/items/HDF44SF4?page=17&annotation=PU6SRI86)
+[^6]: Supplementary notes provided by the creator.

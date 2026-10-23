@@ -21,7 +21,7 @@ tags:
 > $$
 
 # Properties
-- **Well-behaved for disjoint distributions**: it remains finite and informative when the supports do not overlap and decreases smoothly as the distributions approach each other, unlike the [[Jensen-Shannon Divergence]], which saturates.[^1]
+- **Well-behaved for disjoint distributions**: it remains finite and informative when the supports do not overlap and decreases smoothly as the distributions approach each other, unlike the [[Jensen-Shannon Divergence]], which saturates.[^1] It needs no densities, so it is meaningful even for [[Mutually Singular Measures|mutually singular]] distributions, where the [[Kullback-Leibler Divergence]] is infinite.
 - **Linear program**: the discrete case is a [[Linear Programming|linear program]] in primal form $\min \mathbf{c}^T\mathbf{p}$ s.t. $\mathbf{A}\mathbf{p} = \mathbf{b}$, $\mathbf{p} \geq \mathbf{0}$, with $\mathbf{p}$ the vectorized $P_{ij}$, $\mathbf{c}$ the distances, and $\mathbf{A}\mathbf{p} = \mathbf{b}$ the marginal constraints. Its dual $\max \mathbf{b}^T\mathbf{f}$ s.t. $\mathbf{A}^T\mathbf{f} \leq \mathbf{c}$ has the same optimum:[^3][^4]
 $$
 \begin{align}
