@@ -18,6 +18,7 @@ $F$ is a monotone map that sends each value to the probability mass below it, an
 
 # Properties
 - Its converse is [[Inverse Transform Sampling]]: if $U \sim \text{Uniform}(0, 1)$, then $F^{-1}(U)$ has cdf $F$.
+- Composing it with inversion gives the [[QQ Transformation]] $G^{-1}(F(X)) \sim G$.
 - $F(Y_k) \sim$ [[Beta Distribution|Beta]]$(k, n - k + 1)$, so $E[F(Y_k)] = k/(n+1)$ ([[Sample Quantile]]), and the coverage $F(Y_j) - F(Y_i) \sim \text{Beta}(j - i, n - j + i + 1)$ does not depend on $F$; this makes [[Tolerance Interval|tolerance intervals]] and quantile intervals distribution-free.
 - Under a simple null hypothesis with a continuous [[Test Statistic]], the [[P-Value]] $1 - F_{H_0}(T)$ is uniform on $(0, 1)$ for the same reason.
 - Continuity is essential: for a discrete $X$, $F(X)$ takes only finitely or countably many values.

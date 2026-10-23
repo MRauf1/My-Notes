@@ -28,7 +28,9 @@ In particular, $Beta(\alpha = 1, \beta = 1)$ gives the [[Continuous Uniform Dist
 
 ## Generalization
 - [[Dirichlet Distribution]], the multivariate version on the probability simplex.
+- Sampling:[^4] for positive integers $\alpha, \beta$, $Beta(\alpha, \beta)$ is the $\alpha$th smallest of $\alpha + \beta - 1$ iid uniforms ([[Order Statistic]]).
 
 [^1]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=22)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=197)
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=196)
+[^4]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=17&annotation=9LZBE6GS)

@@ -27,6 +27,10 @@ It is the waiting time until the first event of a [[Poisson Process]] with rate 
 ## Other
 - Memoryless: $P(X > s + t \mid X > s) = P(X > t)$; it is the only continuous memoryless distribution, the continuous counterpart of the [[Geometric Distribution]].
 - The difference of two independent standard exponentials is [[Laplace Distribution|Laplace]].
+- Sampling by [[Inverse Transform Sampling|inversion]]:[^3] $F(x) = 1 - e^{-\lambda x}$ gives $X = -\log(1 - U)/\lambda$, or $X = -\log(U)/\lambda$ by complementary inversion; Owen writes $X \sim \mathrm{Exp}(1)/\lambda$ (rate form) or $X \sim \theta\,\mathrm{Exp}(1)$ (mean form, $\theta = 1/\lambda$).
+- Memorylessness, $P(X > x + \Delta \mid X > x) = e^{-\lambda(x+\Delta)}/e^{-\lambda x} = e^{-\lambda\Delta}$, makes it unsuitable for lifetimes of products that wear out over time; the Weibull distribution is a better model there.[^4]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=192)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=194)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=6&annotation=LQWC4Y4N); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=6&annotation=LRX8MY8D)
+[^4]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=7&annotation=I7ZVTVKG)

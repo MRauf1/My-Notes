@@ -27,6 +27,8 @@ Distribution for a single binary observation (e.g. success or failure). This is 
 
 # Related Distributions
 - Counting successes in $n$ trials: [[Binomial Distribution]]; failures before the first or $r$th success: [[Geometric Distribution]], [[Negative Binomial Distribution]].
+- Sampling:[^3] by [[Inverse Transform Sampling|inversion]] $X = \mathbf{1}\{1 - U \leq p\}$, or more simply by complementary inversion $X = \mathbf{1}\{U \leq p\}$.
 
 [^1]: [Categorical Data Analysis](zotero://open-pdf/library/items/JZKRKD5L?page=23)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=171)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=7&annotation=MYJGH23J)

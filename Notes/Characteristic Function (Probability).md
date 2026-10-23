@@ -21,6 +21,8 @@ Since $|e^{itX}| = 1$, this expectation exists for every distribution, which rem
 - If the mgf exists near $0$, then $\varphi_X(t) = M_X(it)$.
 - If $E|X|^m < \infty$, then $\varphi_X^{(m)}(0) = i^m E(X^m)$.
 - $\varphi_{aX+b}(t) = e^{ibt}\varphi_X(at)$; for [[Independent Random Variable|independent]] $X, Y$, $\varphi_{X+Y} = \varphi_X \varphi_Y$ (convolution of densities becomes multiplication).
+- Fourier inversion recovers the density, $f(x) = \frac{1}{2\pi}\int e^{-itx}\varphi(t)\,dt$, which allows numerical [[Inverse Transform Sampling|inversion]] when only $\varphi$ is known.[^3]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=90)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=91)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=13&annotation=36FFAK6R)

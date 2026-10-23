@@ -28,7 +28,7 @@ The core idea of Monte Carlo is to learn about a system by simulating it with ra
 # Types
 The hundreds of named algorithms are specialized answers to a few computational bottlenecks:
 - **Uniform random numbers** — the raw input to every method: a [[Pseudorandom Number Generator]] simulating the [[Standard Uniform Distribution]].
-- **Direct random variate generation** — how to turn uniform $[0,1]$ samples into samples of a simple target density: [[Inverse Transform Sampling]], [[Rejection Sampling]], [[Box-Muller Transform]], [[Ziggurat Algorithm]].
+- **Direct random variate generation** ([[Non-Uniform Random Variate Generation]]) — how to turn uniform $[0,1]$ samples into samples of a simple target density: [[Inverse Transform Sampling]], [[Rejection Sampling]], [[Box-Muller Transform]], [[Ziggurat Algorithm]].
 - **Variance reduction** — how to shrink the constant $\sigma$ in the $\sigma/\sqrt{N}$ error when $N$ cannot grow: importance sampling ([[Optimal Importance Sampling Distribution]], [[Multiple Importance Sampling]]), [[Control Variates]], [[Antithetic Variates]], [[Stratified Sampling]], [[Latin Hypercube Sampling]], and [[Quasi-Monte Carlo]] (which also improves the rate).
 - **[[Markov Chain Monte Carlo]]** — how to sample a density known only up to its normalizing constant: [[Metropolis-Hastings Algorithm]], [[Gibbs Sampling]], [[Metropolis-Adjusted Langevin Algorithm]], [[Hamiltonian Monte Carlo]].
 - **[[Sequential Monte Carlo]] and particle methods** — how to sample distributions that evolve over time or have separated modes: particle filters, [[Annealed Importance Sampling]].

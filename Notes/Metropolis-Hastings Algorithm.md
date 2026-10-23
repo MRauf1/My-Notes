@@ -24,5 +24,7 @@ tags:
 - The acceptance ratio satisfies detailed balance, making it a valid [[Markov Chain Monte Carlo]] kernel.
 - $Z$ cancels in the ratio, so only the unnormalized density $\tilde{\pi}$ is needed.
 - Random walk proposals mix slowly (diffusively) in high dimensions: the step size must shrink with $d$ to keep acceptance reasonable.
+- Its acceptance rule is derived from the same idea as [[Rejection Sampling|acceptance-rejection sampling]]: accepting proposals from $g$ with probability $A \propto f/g$ yields accepted values with density $\propto Ag \propto f$.[^2]
 
 [^1]: Monte Carlo Methods — Q&A Overview
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=22&annotation=V39QFNII)

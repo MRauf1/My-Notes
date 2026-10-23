@@ -38,8 +38,14 @@ The factor $n!$ counts the orderings of the sample that produce the same sorted 
 - The extremes: $g_n(y) = n[F(y)]^{n-1}f(y)$ and $g_1(y) = n[1 - F(y)]^{n-1}f(y)$ ([[Cumulative Distribution Function Method]]).
 - $F(Y_k)$ is the $k$th order statistic of a uniform sample and has a [[Beta Distribution|Beta]]$(k, n - k + 1)$ distribution ([[Probability Integral Transform]]).
 - Order-statistic methods are distribution-free: [[Distribution-Free Confidence Interval for Quantile]], [[Tolerance Interval]].
+- Max and min CDFs:[^5] for iid $X_i \sim F$, $P(\max_{i \leq r} X_i \leq y) = F(y)^r$ and $P(\min_{i \leq r} X_i \leq y) = 1 - (1 - F(y))^r$; e.g. $\max(U_1, U_2)$ and $\min(U_1, U_2)$ have the triangular densities $2y$ and $2(1-y)$ on $[0,1]$.
+- Uniform order statistics:[^6] the $r$th order statistic $U_{(r)}$ of $n$ iid $\mathcal{U}(0,1)$ variables has density $\frac{n!}{(r-1)!(n-r)!}x^{r-1}(1-x)^{n-r}$, i.e. [[Beta Distribution|Beta]]$(r, n - r + 1)$, by counting $r - 1$, $1$ and $n - r$ points in $(0, x)$, $[x, x + dx)$, $(x + dx, 1)$.
+- Sampling uses:[^7] for integers $\alpha, \beta \geq 1$, $\text{Beta}(\alpha, \beta)$ can be sampled as $U_{(\alpha)}$ among $\alpha + \beta - 1$ uniforms (cheap when $\alpha + \beta$ is small); conversely $Y_{(r)} = F^{-1}(X)$ with $X \sim \text{Beta}(r, n - r + 1)$ samples one order statistic of $n$ draws from $F$ without generating all $n$, provided [[Inverse Transform Sampling|inversion]] is available. (Owen's text prints $\text{Beta}(n, n - r + 1)$ here, which contradicts the uniform order statistic law just above; the parameters are $(r, n - r + 1)$.)
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=270)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=271)
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=272)
 [^4]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=273)
+[^5]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=16&annotation=78G4TDRQ); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=16&annotation=Z2IZ5BJ9); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=16&annotation=ELLDMAP2)
+[^6]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=16&annotation=LX3VH89F); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=17&annotation=9LZBE6GS)
+[^7]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=17&annotation=9LZBE6GS)

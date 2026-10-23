@@ -28,5 +28,7 @@ Algorithm, assuming $Y = g(X)$ is one-to-one:[^1]
 - Multivariate version: [[Random Vector Transformation]], with $|dx/dy|$ replaced by the absolute Jacobian determinant $|J|$.
 - For non-injective $g$, sum over one-to-one pieces or use the cdf method directly (see [[Random Variable Transformation]]).
 - [[Inverse Transform Sampling]] is the special case where $g = F^{-1}$ (the inverse of the target CDF) and $X \sim \mathcal{U}[0,1]$.
+- Increasing case via the CDF:[^2] for invertible increasing $\tau$ and $Y = \tau(X)$, $P(Y \leq y) = P(X \leq \tau^{-1}(y))$, so $f_Y(y) = f_X(\tau^{-1}(y))\frac{d}{dy}\tau^{-1}(y)$; the location-scale case $Y = \mu + \sigma X$ gives $f_Y(y) = \frac{1}{\sigma}f_X\!\left(\frac{y - \mu}{\sigma}\right)$ ([[Non-Uniform Random Variate Generation]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=71)
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=15&annotation=Y5N865ZQ); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=14&annotation=M67I74UJ)

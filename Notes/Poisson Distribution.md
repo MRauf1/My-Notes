@@ -44,8 +44,10 @@ Events are [[Independent Events]] and identical so the distribution is [[i.i.d.]
 
 ## Waiting Times
 - The waiting time until the $k$th event of the underlying [[Poisson Process]] is [[Gamma Distribution|gamma]]$(k, 1/\lambda)$, and the interarrival times are [[Exponential Distribution|exponential]].
+- Sampling by [[Inverse Transform Sampling|inversion]]:[^5] sequential search, accumulating $p_x = p_{x-1}\lambda/x$ from $p_0 = e^{-\lambda}$ into $q = \sum_{j \leq x} p_j$ until $U \leq q$, performs $X + 1$ tests, so $E(\text{iterations}) = \lambda + 1$ and it is slow for large $\lambda$. If $p_x$ underflows below machine epsilon, $q$ can stall below $1$ and the loop never ends for large $U$.
 
 [^1]: [Categorical Data Analysis](zotero://open-pdf/library/items/JZKRKD5L?page=24)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=183)
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=184)
 [^4]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=185)
+[^5]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=7&annotation=NBLGW9NL)

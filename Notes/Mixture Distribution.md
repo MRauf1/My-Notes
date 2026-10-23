@@ -40,7 +40,9 @@ $$
 - Compounding typically thickens tails: Poisson with a gamma-distributed rate gives the [[Negative Binomial Distribution]], and a gamma with a gamma-distributed rate gives the (generalized) [[Pareto Distribution]].
 - Examples: the [[Contaminated Normal Distribution]], the [[Mixture of Gaussians]] (a [[Latent Variable Model|latent variable model]] with a categorical latent), and the prior predictive $\int p(y|\theta)p(\theta)\,d\theta$ in [[Bayes' Theorem|Bayesian inference]].
 - Not to be confused with a [[Mixture Random Variable]], whose cdf mixes a discrete and a continuous part (though such a variable is itself a two-component mixture in this sense).
+- Sampling:[^4] draw $\theta \sim G$, then $X \sim f(\cdot\,; \theta)$, directly from the definition ([[Non-Uniform Random Variate Generation]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=234)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=236)
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=235)
+[^4]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=29&annotation=HB3NXFQD); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=30&annotation=D54MNGRT)

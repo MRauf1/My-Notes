@@ -19,6 +19,6 @@ Compared with two independent samples (variance $\sigma^2/2$), the pair's fluctu
 # Properties
 - Unbiased, since $X'$ has the same marginal as $X$.
 - Reduces variance iff $\rho < 0$; guaranteed when $F$ is monotone in $U$ and the pair is $(U, 1-U)$, and harmful when $\rho > 0$ (e.g. $F$ symmetric about $1/2$).
-- A variance-reduction technique of the [[Monte Carlo Method]], alongside [[Control Variates]] and [[Stratified Sampling]].
+- A variance-reduction technique of the [[Monte Carlo Method]], alongside [[Control Variates]] and [[Stratified Sampling]]. Easiest to apply with [[Inverse Transform Sampling|inversion]], as is [[Common Random Numbers]].
 
 [^1]: Monte Carlo Methods — Q&A Overview

@@ -21,6 +21,8 @@ Some texts instead count the trials up to and including the first success, $Y + 
 - $E(Y) = \frac{1-p}{p}$ and $\text{Var}(Y) = \frac{1-p}{p^2}$.
 - Tail: $P(Y \geq k) = (1 - p)^k$, the probability that the first $k$ trials all fail.
 - Memoryless:[^2] $P(Y \geq k + j \mid Y \geq k) = P(Y \geq j)$ for nonnegative integers $k, j$; having already waited $k$ failures does not change the distribution of the remaining wait. It is the only memoryless distribution on $\{0, 1, 2, \dots\}$, the discrete counterpart of the [[Exponential Distribution]].
+- Sampling by truncated exponential:[^3] $Y = \lfloor \log(U)/\log(1 - p) \rfloor$ for $U \sim \mathcal{U}(0,1)$, i.e. the floor of an [[Exponential Distribution|exponential]] variable with rate $-\log(1-p)$; for the trials-until-success convention use $\lceil \cdot \rceil$ instead ([[Inverse Transform Sampling]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=176)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=182)
+[^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=13&annotation=VK47Q98L)

@@ -23,5 +23,7 @@ tags:
 - The ratio $Z_1/Z_2$ of two independent standard [[Normal Distribution|normals]] is standard Cauchy; it is the [[t-Distribution]] with $1$ degree of freedom.
 - If $X$ is standard Cauchy, so is $1/X$.
 - Geometric origin: if a ray is emitted from $(0, 1)$ at a uniformly random angle $\Theta \in (-\pi/2, \pi/2)$ towards the $x$-axis, its intersection point $\tan \Theta$ is standard Cauchy.
+- Used in simulation to stress test algorithms meant to handle mostly Gaussian inputs while being robust to occasional extremely large values.[^2]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=162)
+[^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=7&annotation=X3FZ2MTG)

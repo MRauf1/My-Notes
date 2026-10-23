@@ -13,6 +13,6 @@ tags:
 
 # Properties
 - The fast path (step 2) needs only a table lookup, one uniform, and one comparison, and is taken with probability close to $1$ for $n \approx 128$–$256$ layers, making it much faster than the [[Box-Muller Transform]] for Gaussian variates.
-- Exact: it is a [[Rejection Sampling|rejection sampler]] whose envelope hugs $f$ closely, so the rare slow paths do not bias the output.
+- Exact: it is a [[Rejection Sampling|rejection sampler]] whose envelope hugs $f$ closely, so the rare slow paths do not bias the output. Its fast path acts as a [[Squeeze Function (Rejection Sampling)|squeeze]].
 
 [^1]: Monte Carlo Methods — Q&A Overview
