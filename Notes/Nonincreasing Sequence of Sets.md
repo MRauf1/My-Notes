@@ -15,6 +15,7 @@ tags:
 > $$
 
 # Properties
+- General case: [[Limit Superior and Limit Inferior of Sets]], whose common value is this limit for monotone sequences.
 - Counterpart of the [[Nondecreasing Sequence of Sets]]; complements of a nonincreasing sequence form a nondecreasing one.
 - [[Continuity Theorem of Probability]]: $\lim_n P(A_n) = P\left(\bigcap_n A_n\right)$.
 

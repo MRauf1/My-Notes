@@ -6,7 +6,7 @@ tags:
 
 # Definition
 
-> [!info] Definition 1 (Separable Metric Space)[^1]
+> [!info] Definition 1 (Separable Metric Space)[^1][^2]
 > A [[Metric Space]] $(X, d)$ is separable if it contains a [[Countable Set|countable]] [[Dense Subset]].
 
 # Properties
@@ -14,3 +14,4 @@ tags:
 - Separability alone does not imply [[Complete Metric Space|completeness]] — contrast with [[Polish Space]], which additionally requires the existence of a complete metric.
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=54)
+[^2]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=27&annotation=9QL4I9XQ)

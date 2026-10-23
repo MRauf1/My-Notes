@@ -18,6 +18,7 @@ tags:
 > (b) If $\{K_n\}$ is a sequence of [[Compact Set|compact]] subsets of $X$ with $K_n \supseteq K_{n+1}$ for all $n$, and $\lim_{n \to \infty} \operatorname{diam}(K_n) = 0$, then $\bigcap_{n=1}^{\infty} K_n$ consists of exactly one point.
 
 # Properties
+- $E$ is [[Bounded Set|bounded]] if and only if $\operatorname{diam} E < \infty$.
 - [[Finite Intersection Property]]
 - [[Nested Interval Theorem]]
 

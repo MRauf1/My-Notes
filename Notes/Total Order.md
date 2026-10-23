@@ -11,4 +11,7 @@ tags:
 
 Unlike [[Partial Order]], it gives a sense of comparing any two elements.
 
+# Types
+- [[Well-Ordered Set]]
+
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=204)

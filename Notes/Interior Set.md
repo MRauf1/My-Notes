@@ -11,6 +11,9 @@ See [[Open Set]].
 > [!info] Definition 1 (Interior of a Set)[^1]
 > Let $(S, d)$ be a [[Metric Space]] and $E \subseteq S$. The interior of $E$, denoted $E^{\circ}$, is the set of all [[Interior Point|interior points]] of $E$.
 
+> [!info] Definition 1' (Interior as Union of Open Subsets)[^2]
+> For $E \subseteq X$, $E^{\circ}$ is the union of all [[Open Set|open sets]] $U \subseteq E$; it is the largest open set contained in $E$.
+
 > [!abstract] Theorem 2 ($E^{\circ}$ is Always Open)[^1]
 > Let $(S, d)$ be a [[Metric Space]] and $E \subseteq S$. Then $E^{\circ}$ is an [[Open Set]].
 
@@ -26,3 +29,4 @@ Also recall $E$ is open if and only if $E^{\circ} = E$ — see [[Open Set]].
 - $E^{\circ} = E \setminus \partial E$, where $\partial E$ is [[Boundary Set]]
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=52)
+[^2]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=26&annotation=LJPIER49)

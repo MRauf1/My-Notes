@@ -22,6 +22,10 @@ The extended real number system is not a [[Field]], but by convention, for $x \i
 - If $x > 0$: $x \cdot \infty = \infty$, $x \cdot (-\infty) = -\infty$
 - If $x < 0$: $x \cdot \infty = -\infty$, $x \cdot (-\infty) = \infty$
 
+Further conventions:[^4]
+- $\infty + \infty = \infty$ and $-\infty - \infty = -\infty$; $\infty - \infty$ is left undefined.
+- In measure theory, unless otherwise stated, $0 \cdot (\pm\infty) = 0$. The expression $0 \cdot \infty$ arises, e.g., as the integral of $\infty$ over a set of measure zero or of $0$ over a set of infinite measure, and its proper interpretation is almost always $0$.
+
 To distinguish real numbers from $\pm \infty$, real numbers are called finite.
 
 ## Limits
@@ -30,3 +34,4 @@ To distinguish real numbers from $\pm \infty$, real numbers are called finite.
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=20)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=21)
 [^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=106)
+[^4]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=24&annotation=A2LD3Y7R)

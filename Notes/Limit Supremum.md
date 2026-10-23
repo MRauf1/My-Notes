@@ -19,6 +19,17 @@ tags:
 
 Largest value infinitely often approached.
 
+> [!info] Definition 2 (Inf-Sup Form)[^3]
+> By completeness of $\mathbb{R}$, every sequence $\{x_n\}$ in $\mathbb{R}$ has a limit superior in the [[Extended Real Number Set]]:
+> $$
+> \begin{align}
+> \limsup_{n \to \infty} x_n = \inf_{k \geq 1} \left( \sup_{n \geq k} x_n \right)
+> \end{align}
+> $$
+> For functions $f: \mathbb{R} \to \overline{\mathbb{R}}$, likewise $\limsup_{x \to a} f(x) = \inf_{\delta > 0} \left( \sup_{0 < |x - a| < \delta} f(x) \right)$.
+
+Since $\sup_{n \geq k} x_n$ is nonincreasing in $k$, the infimum over $k$ equals the limit in Definition 1. The set analogue is [[Limit Superior and Limit Inferior of Sets]].
+
 # Properties
 - [[Limit of Sequence With Limit Supremum And Limit Infimum]]
 - [[Limit Supremum of Product of Sequences]]
@@ -29,3 +40,4 @@ Largest value infinitely often approached.
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=72)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=66)
+[^3]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=24&annotation=A2LD3Y7R)

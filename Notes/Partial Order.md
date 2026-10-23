@@ -20,4 +20,9 @@ Unlike [[Total Order]], not every two elements can be compared with each other.
 - [[Relation Lower Bound]]
 - [[Relation Upper Bound]]
 
+## Maximality and Structure
+- [[Zorn's Lemma]]
+- [[Hausdorff Maximal Principle]]
+- [[Order Isomorphism]]
+
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=204)

@@ -12,6 +12,8 @@ tags:
 - $\mathbb{N}$, $\mathbb{Z}$, and $\mathbb{Q}$ are countably infinite; $\mathbb{R}$ and every [[Non-degenerate Interval]] are uncountable. The [[Set of Binary Sequences Uncountability Theorem|set of all binary (0/1) sequences]] is likewise uncountable.
 - A countable union of countable sets is countable. More generally, if $A$ is at most countable and $B_\alpha$ is at most countable for every $\alpha \in A$, then $\bigcup_{\alpha \in A} B_\alpha$ is at most countable.[^2]
 - If $A$ is a countable set, then the set of all $n$-tuples $(a_1, \dots, a_n)$ with each $a_k \in A$ (not necessarily distinct) is countable.[^2] This is how one shows $\mathbb{Q}$ is countable, by viewing a rational number as a pair of integers.
+- (Folland) If $X$ and $Y$ are countable, so is $X \times Y$; if $A$ is countable and each $X_\alpha$ is countable, then $\bigcup_{\alpha \in A} X_\alpha$ is countable; and if $X$ is countably infinite, then $\operatorname{card}(X) = \operatorname{card}(\mathbb{N})$. Consequently $\mathbb{Z}$ and $\mathbb{Q}$ are countable.[^5]
+- Any set with $\operatorname{card}(X) \geq \mathfrak{c}$ is uncountable; see [[Cardinality of the Continuum]] and [[Continuum Hypothesis]].
 - Every infinite subset of a countable set is countable; equivalently, no uncountable set can be a subset of a countable set, so countably infinite sets are the "smallest" kind of infinite set.[^3]
 - A set is infinite if and only if it is equivalent (in bijection) to one of its own proper subsets; a finite set can never be put in bijection with a proper subset of itself.[^4]
 - Countability is the dividing line in the axioms of [[Probability]]: additivity is required over countable [[Mutually Exclusive Events|disjoint]] unions, and a [[Sigma-Field]] is closed under countable unions.
@@ -23,3 +25,4 @@ Rudin's *Principles of Mathematical Analysis* uses a stricter convention: there,
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=38)
 [^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=35)
 [^4]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=35)
+[^5]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=21&annotation=J9X2BRXK)

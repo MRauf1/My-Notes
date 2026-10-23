@@ -18,6 +18,7 @@ The power set of a set $A$ is the set of all [[Subset|subsets]] of $A$.
 
 # Properties
 
+- $\operatorname{card}(\mathcal{P}(\mathbb{N})) = \mathfrak{c}$: see [[Cardinality of the Continuum]].
 - $\mathcal{P}(A \cap B) = \mathcal{P}(A) \cap \mathcal{P}(B)$
 
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=89)
