@@ -21,7 +21,7 @@ tags:
 - **Inverse autoregressive flow (IAF)**: the autoregressive flow is used in the forward (generative) direction, so sampling is efficient but likelihood evaluation (and training on data) is slow.[^3]
 
 # Properties
-- **Universal**: with sufficiently flexible transformer and conditioners, autoregressive flows are universal approximators that can represent any probability distribution.[^1]
+- **Universal**: with sufficiently flexible transformer and conditioners, autoregressive flows are universal approximators that can represent any probability distribution.[^1] This follows from the [[Knothe-Rosenblatt Rearrangement]]: any density is the pushforward of a normal under a single [[Monotone Triangular Map|monotone triangular map]], which is exactly an autoregressive flow whose transformer is a conditional cdf followed by a quantile function ([[Normalizing Flow Expressivity]]).[^4]
 - **Triangular Jacobian**: $\partial h_d' / \partial h_{d'} = 0$ for $d' > d$, so the Jacobian is [[Lower Triangular Matrix|lower triangular]] and its determinant is $\prod_d \partial \mathrm{g} / \partial h_d$.
 - **Sequential inversion**: the inverse must be computed one dimension at a time, since $h_d$ requires the already recovered $h_{1:d-1}$:[^2]
 $$
@@ -38,3 +38,4 @@ $$
 [^1]: [Prince, p. 313](zotero://open-pdf/library/items/BWT7FYX5?page=327&annotation=RX38FBNQ)
 [^2]: [Prince, p. 314](zotero://open-pdf/library/items/BWT7FYX5?page=328&annotation=DLPYEQTE)
 [^3]: [Prince, p. 314](zotero://open-pdf/library/items/BWT7FYX5?page=328&annotation=QWYLYBD3)
+[^4]: Supplementary notes provided by the creator.

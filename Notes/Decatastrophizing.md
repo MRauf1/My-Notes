@@ -21,6 +21,7 @@ tags:
 	- In people with GAD who kept a worry-outcome journal, 91.4% of worries did not come true. Seeing that evidence predicted greater improvement in symptoms (LaFreniere and Newman, 2020). Carnegie's "99%" is a rhetorical exaggeration of the same pattern.[^3]
 - **Acceptance step.** "Be willing to have it so… acceptance of what has happened is the first step in overcoming the consequences of any misfortune" (William James).[^4] Compare [[Dichotomy of Control]] and the Stoic *premeditatio malorum* ([[Stoic Exercises]]).
 - Related: [[Worry]], [[Exposure Therapy]], [[Problem-Solving Therapy]].
+- Ancient precursor: [[Premeditatio Malorum]].
 
 [^1]: [Carnegie, 1948, p. 16](zotero://open-pdf/library/items/UY6WQCSU?page=16&annotation=GXCDCRX5); [p. 16](zotero://open-pdf/library/items/UY6WQCSU?page=16&annotation=VXYTTX88); [p. 16](zotero://open-pdf/library/items/UY6WQCSU?page=16&annotation=8HV327TB); [p. 17](zotero://open-pdf/library/items/UY6WQCSU?page=17&annotation=MZCH8NRU); [p. 20](zotero://open-pdf/library/items/UY6WQCSU?page=20&annotation=WZLXNFPK)
 [^2]: [Carnegie, 1948, p. 16](zotero://open-pdf/library/items/UY6WQCSU?page=16&annotation=82ET7VIF); [p. 17](zotero://open-pdf/library/items/UY6WQCSU?page=17&annotation=YJGKYKL8); [p. 17](zotero://open-pdf/library/items/UY6WQCSU?page=17&annotation=IJEZLHAA); [p. 17](zotero://open-pdf/library/items/UY6WQCSU?page=17&annotation=VACWHK59)

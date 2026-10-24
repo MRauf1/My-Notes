@@ -67,5 +67,17 @@ Believed that upheaval is worse than lawless tyranny.
 - [[Seneca]]
 - [[Musonius Rufus]]
 - [[Marcus Aurelius]]
+# Stoic Attitude (Hadot)
+Hadot's four features of the Stoic attitude, as paraphrased by Robertson:[^rob1]
+1. **The All is One** - nothing exists in isolation; all things are parts of the universe in its spatio-temporal entirety ([[View from Above]]).
+2. **The only good is moral good** - only what we control (acts of will, decisions, intentions) matters ([[Dichotomy of Control]]).
+3. **The brotherhood of man** - humans share reason and volition and are to be thought of as one ([[Cosmopolitanism]]).
+4. **The here and now** - the sphere of control is the present moment ([[Prosoche]]).
+
+Zeno: living according to nature means living in accord with human virtue, i.e. fulfilling our potential for rational living ([[Living in Accord with Nature]]).[^rob2]
+
+Stoicism as psychotherapy: [[Cognitive Mediation]], [[Hellenistic Philosophy]], [[Premeditatio Malorum]], [[Philosophical Empathy]], [[Amor Fati]], [[Cognitive Behavioral Therapy]].
 
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=129)
+[^rob1]: [Robertson, 2010, p. 54](zotero://open-pdf/library/items/XDSK83B7?page=85&annotation=N4UL8AJF)
+[^rob2]: [Robertson, 2010, p. 55](zotero://open-pdf/library/items/XDSK83B7?page=86&annotation=2PMCXGC7)

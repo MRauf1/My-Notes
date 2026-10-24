@@ -18,6 +18,7 @@ tags:
 - The road to freedom is to submit one's inclinations to God: "He wants me to have a fever; that's what I want too."[^8]
 - Diogenes was free because everything he had was "just an appendage" he would let go of, even his body.[^9]
 - Grounded in the [[Dichotomy of Control]]; compare [[Existentialism]] and Frankl's inner freedom.
+- **Long on Epictetus.** His free will doesn't require freedom from fate; it presupposes willingness to go along with one's allotment. It is freedom from being constrained by external contingencies, and from the passions that follow from believing they must constrain one's volition ([[Stoic Determinism]]). Treating externals as having inherent worth makes us forget our freedom to choose and enslaves us to events (*Discourses* 4.4.23).[^rob1]
 
 [^1]: [Epictetus et al., 2022, p. 4](zotero://open-pdf/library/items/SLUTDCET?page=20&annotation=RKNEEPV6); [p. 99](zotero://open-pdf/library/items/SLUTDCET?page=115&annotation=CGC5FGWD); [p. 288](zotero://open-pdf/library/items/SLUTDCET?page=304&annotation=L4RF54MN)
 [^2]: [Epictetus et al., 2022, p. 309](zotero://open-pdf/library/items/SLUTDCET?page=325&annotation=MT8YICBP); [p. 304](zotero://open-pdf/library/items/SLUTDCET?page=320&annotation=QAPERF69)
@@ -28,3 +29,4 @@ tags:
 [^7]: [Epictetus et al., 2022, p. 27](zotero://open-pdf/library/items/SLUTDCET?page=43&annotation=FHARCMGJ)
 [^8]: [Epictetus et al., 2022, p. 299](zotero://open-pdf/library/items/SLUTDCET?page=315&annotation=E4Z8XHAY); [p. 300](zotero://open-pdf/library/items/SLUTDCET?page=316&annotation=HPMKZHZG)
 [^9]: [Epictetus et al., 2022, p. 307](zotero://open-pdf/library/items/SLUTDCET?page=323&annotation=7A2CT7LC); [p. 307](zotero://open-pdf/library/items/SLUTDCET?page=323&annotation=W8AZXQL2)
+[^rob1]: [Robertson, 2010, p. 232](zotero://open-pdf/library/items/XDSK83B7?page=263&annotation=V3C6IMXP); [p. 13](zotero://open-pdf/library/items/XDSK83B7?page=44&annotation=CNUTX5EB)

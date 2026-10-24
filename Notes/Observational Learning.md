@@ -14,4 +14,6 @@ Learning by watching others and then imitating them.[^1]
 3) Reproduction
 4) [[Motivation]]
 
+Used therapeutically as modelling; Stoic precursor: [[Contemplation of the Sage]].
+
 [^1]: [Psychology2e](zotero://open-pdf/library/items/SSTBV7L5?page=215)

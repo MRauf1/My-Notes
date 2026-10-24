@@ -31,4 +31,6 @@ According to Socrates, real learning comes only through self-discovery.
 
 Socrates believed in the [[Socrates Harm Principle]].
 
+See also [[Socratic Irony]].
+
 [^1]: [Introduction to Philosophy](zotero://open-pdf/library/items/M84L5RRJ?page=35)

@@ -12,5 +12,7 @@ tags:
 - The sage then withholds assent and does not "add a further opinion" (*prosepidoxazein*) to the impression, retaining his conviction that it is not truly frightening.[^1]
 - The fool, by contrast, takes the impression to be as terrible as it seems and assents to it, turning the first movement into a full passion.[^1]
 - Shows that Stoic [[Apatheia]] is not freedom from all feeling.
+- **Physiological limits (Becker).** Raw affective arousal (blushing, stammering, anxiety from illness, brain injury or substances) can't be eliminated by Stoic training any more than perspiration can, though later cognition can usually moderate it. Cognitive training isn't always the treatment of first choice for such affect ([[Cognitive Mediation]]).[^rob1]
 
 [^1]: [Epictetus et al., 2022, p. 358](zotero://open-pdf/library/items/SLUTDCET?page=374&annotation=5Y6B5MDT); [p. 359](zotero://open-pdf/library/items/SLUTDCET?page=375&annotation=JW789EQB)
+[^rob1]: [Robertson, 2010, p. 97](zotero://open-pdf/library/items/XDSK83B7?page=128&annotation=ADZ279TH); [p. 97](zotero://open-pdf/library/items/XDSK83B7?page=128&annotation=G3R2V2JN); [p. 98](zotero://open-pdf/library/items/XDSK83B7?page=129&annotation=MTK9JWWQ)

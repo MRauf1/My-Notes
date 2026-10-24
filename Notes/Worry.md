@@ -61,6 +61,7 @@ Evidence supports this: *intolerance of uncertainty* is a core maintaining facto
 - **Postpone worry.** See [[Worry Postponement]].
 - **Act happy / count blessings / help others.** Small but real effects: [[Facial Feedback Hypothesis]], [[Gratitude Intervention]], [[Prosocial Behavior]].
 - **Health costs.** See [[Perseverative Cognition Hypothesis]]. Carnegie's ulcer claims are outdated.
+- Contrast with deliberate, calm premeditation: [[Premeditatio Malorum]].
 
 [^1]: [Burkeman, 2024, p. 42](zotero://open-pdf/library/items/ZF42TD5D?page=42&annotation=ZFQSGRDM)
 [^2]: [Burkeman, 2021, p. 83](zotero://open-pdf/library/items/3DNUXWJK?page=83&annotation=ANPFBEDM); [p. 83](zotero://open-pdf/library/items/3DNUXWJK?page=83&annotation=74F5AQVU); [p. 84](zotero://open-pdf/library/items/3DNUXWJK?page=84&annotation=NVWSWQRH); [p. 85](zotero://open-pdf/library/items/3DNUXWJK?page=85&annotation=CWGRCWK6)

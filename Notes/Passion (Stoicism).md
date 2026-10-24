@@ -26,6 +26,9 @@ All other passions (anger, envy, jealousy, pity, grief) are subspecies of these.
 - A soul in good condition can endure passions as a fit body endures heat and cold.[^7]
 - The ideal is [[Apatheia]]; the rational alternatives are [[Eupatheia|good feelings]]; involuntary reactions are [[Propatheia|first movements]].
 - The first of the [[Three Disciplines (Epictetus)]], that of desire, targets the passions.
+- **Cognitive view (Robertson).** Passions are emotionally charged cognitions that embody beliefs, so they can be disputed ([[Cognitive Mediation]]). *Pathos* specifically denotes emotions that are irrational, unhealthy and excessive.[^rob1]
+- Judging things to be inherently good or bad produces irrational craving (*epithumia*) or fear (*phobos*). Craving that overvalues externals and others' opinions is the root of anxiety. To demand, rather than merely prefer, praise is unphilosophical, and one then blames one's nerves on the situation.[^rob2]
+- The Stoics thought that until passions are under control we can't fully listen to reason, which is why the discipline of desire comes first.[^rob3]
 
 [^1]: [Epictetus et al., 2022, p. 25](zotero://open-pdf/library/items/SLUTDCET?page=41&annotation=R7H5BI6Z); [p. 31](zotero://open-pdf/library/items/SLUTDCET?page=47&annotation=NF76P67K); [p. 127](zotero://open-pdf/library/items/SLUTDCET?page=143&annotation=4WSQFWM3); [p. 217](zotero://open-pdf/library/items/SLUTDCET?page=233&annotation=4LCJRHDN)
 [^2]: [Epictetus et al., 2022, p. 39](zotero://open-pdf/library/items/SLUTDCET?page=55&annotation=GNCLLPBM); [p. 40](zotero://open-pdf/library/items/SLUTDCET?page=56&annotation=5TVT2BQ2)
@@ -34,3 +37,6 @@ All other passions (anger, envy, jealousy, pity, grief) are subspecies of these.
 [^5]: [Epictetus et al., 2022, p. 111](zotero://open-pdf/library/items/SLUTDCET?page=127&annotation=QDUYALLG)
 [^6]: [Epictetus et al., 2022, p. 184](zotero://open-pdf/library/items/SLUTDCET?page=200&annotation=RRPRW5MR); [p. 185](zotero://open-pdf/library/items/SLUTDCET?page=201&annotation=7CMXM6H2)
 [^7]: [Epictetus et al., 2022, p. 363](zotero://open-pdf/library/items/SLUTDCET?page=379&annotation=FHL4X53C)
+[^rob1]: [Robertson, 2010, p. 73](zotero://open-pdf/library/items/XDSK83B7?page=104&annotation=7WFKKVZN); [p. 78](zotero://open-pdf/library/items/XDSK83B7?page=109&annotation=IWH9LJNR)
+[^rob2]: [Robertson, 2010, p. 120](zotero://open-pdf/library/items/XDSK83B7?page=151&annotation=T8DGGRJB); [p. 122](zotero://open-pdf/library/items/XDSK83B7?page=153&annotation=U9VSVQ7N); [p. 120](zotero://open-pdf/library/items/XDSK83B7?page=151&annotation=Z7497EKM)
+[^rob3]: [Robertson, 2010, p. 63](zotero://open-pdf/library/items/XDSK83B7?page=94&annotation=K26XCZVZ)

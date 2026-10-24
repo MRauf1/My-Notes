@@ -16,6 +16,7 @@ tags:
 - Everything that happens moves one to praise providence, given the ability to see particulars in the context of the whole and a sense of gratitude.[^5]
 - Life is compared to a festival God has laid on: one should be a grateful spectator and participant, and leave when led away, making room for others.[^6]
 - Grounds [[Cosmopolitanism]] and [[Living in Accord with Nature]]; its religious language is not essential to modern [[Stoicism]].
+- **Robertson.** The Stoic God is a "philosopher's god", synonymous with fate or the whole of nature, so belief in it is more a question of perspective than a metaphysical hypothesis. "God" could be replaced by "Nature" or "the Universe" with little loss of meaning, much like Einstein's rational mysticism. Accepting fate then resembles accepting the "Will of God" in more agnostic terms.[^rob1]
 
 [^1]: [Epictetus et al., 2022, p. 37](zotero://open-pdf/library/items/SLUTDCET?page=53&annotation=43V7HICV); [p. 2](zotero://open-pdf/library/items/SLUTDCET?page=18&annotation=5F7AZFAL); [p. 21](zotero://open-pdf/library/items/SLUTDCET?page=37&annotation=9ABUCCWF); [p. 155](zotero://open-pdf/library/items/SLUTDCET?page=171&annotation=5MSLMQVI); [p. 77](zotero://open-pdf/library/items/SLUTDCET?page=93&annotation=YC6Y2L7W)
 [^2]: [Epictetus et al., 2022, p. 103](zotero://open-pdf/library/items/SLUTDCET?page=119&annotation=XQVSZMZC); [p. 77](zotero://open-pdf/library/items/SLUTDCET?page=93&annotation=YC6Y2L7W)
@@ -23,3 +24,4 @@ tags:
 [^4]: [Epictetus et al., 2022, p. 269](zotero://open-pdf/library/items/SLUTDCET?page=285&annotation=3HRGJ4MD); [p. 148](zotero://open-pdf/library/items/SLUTDCET?page=164&annotation=DCNTHY8D); [p. 150](zotero://open-pdf/library/items/SLUTDCET?page=166&annotation=G446JSD6)
 [^5]: [Epictetus et al., 2022, p. 81](zotero://open-pdf/library/items/SLUTDCET?page=97&annotation=MIRT425X)
 [^6]: [Epictetus et al., 2022, p. 301](zotero://open-pdf/library/items/SLUTDCET?page=317&annotation=8YW3W5RR); [p. 301](zotero://open-pdf/library/items/SLUTDCET?page=317&annotation=FBCTFBHL)
+[^rob1]: [Robertson, 2010, p. 56](zotero://open-pdf/library/items/XDSK83B7?page=87&annotation=BYH3FZHI); [p. 56](zotero://open-pdf/library/items/XDSK83B7?page=87&annotation=W9WHRLN3); [p. 56](zotero://open-pdf/library/items/XDSK83B7?page=87&annotation=LQB4TXPD); [p. 55](zotero://open-pdf/library/items/XDSK83B7?page=86&annotation=MYUN3XYW)

@@ -25,6 +25,7 @@ tags:
 - [[Residual Flow]] (reversible and contractive/invertible residual networks)
 - [[Multi-Scale Flow]]
 - [[Glow]]: an image model combining these ideas.
+- [[Continuous Normalizing Flow]]: an ODE-defined flow with a free-form Jacobian, trained by maximum likelihood or [[Flow Matching|flow matching]].
 
 # Properties
 - **Layered composition**: the network is a composition of invertible layers $\mathbf{f}_k[\bullet, \boldsymbol{\phi}_k]$, and the inverse applies the layer inverses in reverse order:[^3]
@@ -56,12 +57,12 @@ $$
 	4. have an efficiently computable Jacobian determinant, in either the forward or the inverse direction.
 - **Same dimension**: invertibility forces the latent space to have the same size as the data space, even though natural data can often be described by fewer underlying variables ([[Multi-Scale Flow]] mitigates the cost).[^6]
 - **Exact likelihood**: of [[Generative Adversarial Network|GANs]], [[Variational Autoencoder|VAEs]], normalizing flows, and [[Diffusion Model|diffusion models]], only normalizing flows compute the exact log-likelihood of a new sample; GANs are not probabilistic, and VAEs and diffusion models return only a lower bound ([[Test Likelihood]], [[Generative Model Desiderata]]).[^7]
-- **Sample quality**: samples are not as good as those from GANs or diffusion models. It is unknown whether this is a fundamental restriction of invertible layers or merely the result of less research effort.[^8]
+- **Sample quality**: samples are not as good as those from GANs or diffusion models. It is unknown whether this is a fundamental restriction of invertible layers or merely the result of less research effort.[^8] Invertibility itself is not very limiting: triangular flows are universal ([[Knothe-Rosenblatt Rearrangement]]), and flow-matching models, which are continuous flows, are state of the art; the limits are topological, conditioning, and near-singular data ([[Normalizing Flow Expressivity]]).[^10]
 - **Discrete data**: images are quantized, so the training likelihood can increase without bound unless noise is added ([[Dequantization]]).[^7]
 - **Manifold-supported data**: maximum likelihood scores the [[Probability Density Function|density]] (mass per unit volume), not the [[Probability Mass Function|mass]]. Real data often concentrates on a lower-dimensional manifold of zero volume in $\mathbb{R}^D$ ([[Manifold Hypothesis]]), where it has no density; a flow (discrete or continuous-time) can then increase the likelihood without bound by collapsing volume, i.e. sending the Jacobian determinant toward singularity, which makes training ill-conditioned ([[Maximum Likelihood Loss Optimality and Failure Modes]]).[^10] Formally, the data distribution is [[Mutually Singular Measures|mutually singular]] with every full-dimensional flow density, so the forward KL is infinite ([[Manifold Overfitting]]).
 - **Why MLE anyway**: exact likelihood is the reason flows exist; invertibility and tractable Jacobians are paid for precisely so that $\log Pr(\mathbf{x})$ can be evaluated, so dropping MLE removes much of the point of the architecture. A Bayesian treatment would not help, since the posterior contains the same likelihood.[^10]
 - **Non-likelihood training**: alternatives replace the objective rather than the inference framework:[^10]
-	- *Flow matching* and rectified flow: train a continuous normalizing flow by regressing its velocity field onto a target vector field along paths from noise to data; simulation-free and never evaluates a density during training ([[Probability Flow ODE]], [[Diffusion Model]]).
+	- *[[Flow Matching|Flow matching]]* and rectified flow: train a continuous normalizing flow by regressing its velocity field onto a target vector field along paths from noise to data; simulation-free and never evaluates a density during training ([[Probability Flow ODE]], [[Diffusion Model]]).
 	- *Adversarial training* (Flow-GAN): train the flow as a [[Generative Adversarial Network|GAN]] generator, optionally combined with the likelihood; [[Wasserstein Distance|Wasserstein]] objectives stay finite for mutually singular distributions.
 	- *Injective/manifold flows*: learn the data manifold and a density on it separately.
 	- *Noise injection*: [[Dequantization]] or adding Gaussian noise gives the data a density again.

@@ -34,7 +34,9 @@ $$
 - Both the inverse and the Jacobian determinant are efficient, and both directions are a single parallel pass.[^1]
 - **Mixing via permutations**: a single layer only transforms the second half in a way that depends on the first. Between layers, the elements are shuffled with [[Permutation Matrix|permutation matrices]] so every variable is ultimately transformed by every other. These are hard to learn, so they are initialized randomly and frozen. For images, the channels are split into halves and permuted between layers with [[1x1 Convolution|1×1 convolutions]] ([[Glow]]).[^1]
 - The special case of a [[Autoregressive Flow|autoregressive flow]] with two blocks.[^2]
+- **Expressivity**: affine coupling flows with permutations are universal approximators of diffeomorphisms, but approximating hard targets can require great depth or ill-conditioned layers ([[Normalizing Flow Expressivity]]).[^3]
 - An additive transformer $\mathbf{g}[\mathbf{h}_2, \boldsymbol{\phi}] = \mathbf{h}_2 + \boldsymbol{\phi}$ gives a volume-preserving layer (NICE); an affine one $\mathbf{g} = \mathbf{h}_2 \odot \exp[\mathbf{s}] + \mathbf{t}$ gives RealNVP.
 
 [^1]: [Prince, p. 311](zotero://open-pdf/library/items/BWT7FYX5?page=325&annotation=AZ5J9TUN); [Prince, p. 312](zotero://open-pdf/library/items/BWT7FYX5?page=326&annotation=H6TW4UAA)
 [^2]: [Prince, p. 313](zotero://open-pdf/library/items/BWT7FYX5?page=327&annotation=RX38FBNQ)
+[^3]: Supplementary notes provided by the creator; Teshima et al. (2020); Koehler, Mehta & Risteski (2021) in `REFERENCES.md`.

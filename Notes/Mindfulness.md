@@ -35,6 +35,7 @@ If mindfulness is to grow, one must accept what they find through mindfulness.
 - It is inclusive and cannot be forced, whereas concentration ([[Samadhi]]) is exclusive and can be forced. Mindfulness manages; concentration supplies the power.[^g8]
 - Tolle's [[Watching the Thinker]] is a closely parallel practice.
 - It is the center of [[Vipassana Meditation]] and, alone, leads to [[Nibbana]].[^g9]
+- Stoic counterpart: [[Prosoche]]; see also [[Cognitive Distancing]].
 
 [^g1]: [Gunaratana, p. 38](zotero://open-pdf/library/items/AUJ2ZCA3?page=38&annotation=ESDRK2NS); [p. 38](zotero://open-pdf/library/items/AUJ2ZCA3?page=38&annotation=LMMJKS6G); [p. 40](zotero://open-pdf/library/items/AUJ2ZCA3?page=40&annotation=GGJ6LUG6); [p. 40](zotero://open-pdf/library/items/AUJ2ZCA3?page=40&annotation=3PETRTKZ)
 [^g2]: [Gunaratana, p. 38](zotero://open-pdf/library/items/AUJ2ZCA3?page=38&annotation=J8C9S3KK); [p. 38](zotero://open-pdf/library/items/AUJ2ZCA3?page=38&annotation=5F54PFQL); [p. 39](zotero://open-pdf/library/items/AUJ2ZCA3?page=39&annotation=GR5EDDQV)
