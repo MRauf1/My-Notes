@@ -20,5 +20,6 @@ The power set of a set $A$ is the set of all [[Subset|subsets]] of $A$.
 
 - $\operatorname{card}(\mathcal{P}(\mathbb{N})) = \mathfrak{c}$: see [[Cardinality of the Continuum]].
 - $\mathcal{P}(A \cap B) = \mathcal{P}(A) \cap \mathcal{P}(B)$
+- $\mathcal{P}(X)$ is always a [[Sigma-Field|$\sigma$-algebra]], but for uncountable $X$ it is usually too large to carry a reasonable measure ([[Banach-Tarski Paradox]]).
 
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=89)

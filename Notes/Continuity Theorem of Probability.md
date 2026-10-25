@@ -23,6 +23,6 @@ The limit and $P$ can be interchanged, i.e. $P$ is continuous along monotone seq
 
 # Properties
 - Used to prove [[Boole's Inequality]] and the right-continuity in [[Cumulative Distribution Function Basic Properties]].
-- The measure-theoretic analogue is continuity from below/above of a [[Measure (Measure Theory)|measure]]; continuity from above requires finite measure, which holds automatically since $P(\mathcal{C}) = 1$.
+- The measure-theoretic analogue is continuity from below/above of a [[Measure (Measure Theory)|measure]] ([[Measure Basic Properties]]); continuity from above requires finite measure, which holds automatically since $P(\mathcal{C}) = 1$.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=35)

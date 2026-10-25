@@ -25,9 +25,11 @@ Every random variable has a cdf, and it determines the distribution completely. 
 - [[Random Variables Equal in Distribution]]
 - Its (generalized) inverse is the [[Quantile Function]].
 - Multivariate version: [[Joint Cumulative Distribution Function]].
+- Measure-theoretically, every finite [[Borel Measure]] $\mu$ on $\mathbb{R}$ is the [[Lebesgue-Stieltjes Measure]] of its cdf $F(x) = \mu((-\infty, x])$, which is increasing and right continuous by [[Measure Basic Properties|monotonicity and continuity from above]].[^4]
 - Expectations of discrete, continuous, and mixed random variables unify as the [[Riemann-Stieltjes Integral]] $E[g(X)] = \int g(x)\,dF_X(x)$, with $F_X$ as integrator ([[Expectation]]).
 - Its generalized inverse $F^{-1}(u) = \inf\{x \mid F(x) \geq u\}$ always exists (by right-continuity) and drives [[Inverse Transform Sampling]].[^3]
 
 [^1]: [Bayesian Statistical Methods](zotero://open-pdf/library/items/ELV3M9SP?page=19)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=55)
 [^3]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=4&annotation=XSDQY29L); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=4&annotation=6N8FHHRN)
+[^4]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=48&annotation=XUVVCF95)

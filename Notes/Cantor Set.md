@@ -2,6 +2,7 @@
 tags:
   - mathematics
   - real_analysis
+  - measure_theory
 ---
 
 # Definition
@@ -21,5 +22,18 @@ Each $E_n$ is a finite union of [[Closed Set|closed]] [[Interval|intervals]], he
 - By the [[Perfect Subset|uncountability of nonempty perfect sets]], $P$ is [[Uncountable Set|uncountable]].
 - $P$ has (Lebesgue) measure zero: $P$ is an example of an uncountable set of measure zero.[^2]
 
+> [!abstract] Proposition 1.22[^3]
+> Let $C$ be the Cantor set.
+> 1. $C$ is compact, [[Nowhere Dense Subset|nowhere dense]], and totally disconnected (its only connected subsets are single points). Moreover, $C$ has no [[Isolated Point|isolated points]].
+> 2. $m(C) = 0$ ([[Lebesgue Measure]]).
+> 3. $\operatorname{card}(C) = \mathfrak{c}$ ([[Cardinality of the Continuum]]).
+
+- The standard example showing [[Null Set (Measure Theory)|Lebesgue null sets]] can have the cardinality of the continuum, not just be countable.[^4]
+- $C$ consists of the $x \in [0,1]$ with a base-3 expansion using only the digits $0$ and $2$; the [[Cantor Function]] maps it onto $[0,1]$.
+- Since $m$ is complete, every subset of $C$ is Lebesgue measurable, which shows that there are more Lebesgue measurable sets than Borel sets.
+- Removing middle $\alpha_j$ths instead of thirds gives a [[Generalized Cantor Set]], which can have positive measure.
+
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=50)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=51)
+[^3]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=51&annotation=TF92G9N5)
+[^4]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=51&annotation=L4B4BZ3Q)

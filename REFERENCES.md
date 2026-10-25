@@ -398,7 +398,10 @@ A compact list of fundamental papers referenced in the notes.
 - Hatcher (2002). *Algebraic Topology*. Cambridge University Press, Ch. 0 (CW complexes). [pi.math.cornell.edu/~hatcher/AT/ATpage.html](https://pi.math.cornell.edu/~hatcher/AT/ATpage.html) — [[Halfedge Mesh]]
 
 ## Set Theory and Measure Theory Foundations
-- Folland (1999). *Real Analysis: Modern Techniques and Their Applications*, 2nd ed. Wiley. — [[Limit Superior and Limit Inferior of Sets]], [[Axiom of Choice]], [[Zorn's Lemma]], [[Well-Ordered Set]], [[Set of Countable Ordinals]], [[Cardinality of the Continuum]], [[Unordered Sum]], [[Equivalent Metrics]]
+- Folland (1999). *Real Analysis: Modern Techniques and Their Applications*, 2nd ed. Wiley. — [[Limit Superior and Limit Inferior of Sets]], [[Axiom of Choice]], [[Zorn's Lemma]], [[Well-Ordered Set]], [[Set of Countable Ordinals]], [[Cardinality of the Continuum]], [[Unordered Sum]], [[Equivalent Metrics]], [[Sigma-Field]], [[Borel Sigma-Algebra]], [[Product Sigma-Algebra]], [[Measure (Measure Theory)]], [[Outer Measure]], [[Carathéodory's Theorem]], [[Carathéodory Extension Theorem]], [[Lebesgue-Stieltjes Measure]], [[Lebesgue Measure]], [[Cantor Set]]
+- Banach & Tarski (1924). *Sur la décomposition des ensembles de points en parties respectivement congruentes*. Fundamenta Mathematicae 6, 244–277. — [[Banach-Tarski Paradox]]
+- Vitali (1905). *Sul problema della misura dei gruppi di punti di una retta*. Bologna: Tip. Gamberini e Parmeggiani. — [[Vitali Set]]
+- Carathéodory (1914). *Über das lineare Maß von Punktmengen – eine Verallgemeinerung des Längenbegriffs*. Nachrichten der Gesellschaft der Wissenschaften zu Göttingen. — [[Carathéodory Measurable Set]], [[Carathéodory's Theorem]]
 - Gödel (1940). *The Consistency of the Axiom of Choice and of the Generalized Continuum-Hypothesis with the Axioms of Set Theory*. Annals of Mathematics Studies 3, Princeton University Press. — [[Axiom of Choice]], [[Continuum Hypothesis]]
 - Gödel (1947). *What Is Cantor's Continuum Problem?* American Mathematical Monthly 54(9). [doi:10.2307/2304370](https://doi.org/10.2307/2304370) — [[Continuum Hypothesis]]
 - Cohen (1963). *The Independence of the Continuum Hypothesis*. PNAS 50(6). [doi:10.1073/pnas.50.6.1143](https://doi.org/10.1073/pnas.50.6.1143) — [[Continuum Hypothesis]], [[Axiom of Choice]]
