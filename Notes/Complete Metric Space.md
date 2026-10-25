@@ -12,6 +12,8 @@ tags:
 Related to [[Completeness Axiom]] and ensures that the space is complete (has no gaps).
 
 # Properties
+- Every metric space is isometric to a [[Dense Subset]] of a complete metric space ([[Completion of Metric Space]]).
+- The [[Space of Bounded Continuous Functions]] $\mathscr{C}(X)$ is complete under the [[Supremum Norm]].
 - [[Complete Metric Space Theorem]]
 - [[Baire Category Theorem]]
 - [[Compact Metric Space|Compact metric spaces]] are complete.[^2]

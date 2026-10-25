@@ -34,6 +34,7 @@ Continuity can be defined at a single point, while uniform continuity is a prope
 > $f: X \rightarrow Y$ is uniformly continuous if and only if for every $\epsilon > 0$ there exists $\delta > 0$ such that $\operatorname{diam} f(E) < \epsilon$ for all $E \subseteq X$ with $\operatorname{diam} E < \delta$ ([[Diameter (Metric Space)]]).
 
 # Properties
+- A family of functions sharing one $\delta$ for each $\epsilon$ is [[Equicontinuity|equicontinuous]]; every member of an equicontinuous family is uniformly continuous.
 - [[Uniformly Differentiable Function]] is the analogous notion for difference quotients.
 - [[Continuous to Uniformly Continuous Theorem]]
 - [[Uniformly Continuous Function Cauchy Sequence Theorem]]

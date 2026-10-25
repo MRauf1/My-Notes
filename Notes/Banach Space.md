@@ -13,4 +13,5 @@ tags:
 - [[Hilbert Space]]
 
 # Properties
+- The [[Space of Bounded Continuous Functions]] $\mathscr{C}(X)$ with the [[Supremum Norm]] is a Banach space.
 - [[When Banach Space is Hilbert Space Theorem]]

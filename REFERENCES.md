@@ -404,3 +404,9 @@ A compact list of fundamental papers referenced in the notes.
 - Cohen (1963). *The Independence of the Continuum Hypothesis*. PNAS 50(6). [doi:10.1073/pnas.50.6.1143](https://doi.org/10.1073/pnas.50.6.1143) — [[Continuum Hypothesis]], [[Axiom of Choice]]
 - Cohen (1966). *Set Theory and the Continuum Hypothesis*. W. A. Benjamin. — [[Continuum Hypothesis]]
 - Smullyan & Fitting (1996). *Set Theory and the Continuum Problem*. Oxford University Press. — [[Continuum Hypothesis]], [[Axiom of Choice]] (exposition of consistency and independence proofs)
+
+## Real Analysis
+- Rudin (1976). *Principles of Mathematical Analysis*, 3rd ed., Ch. 7: Sequences and Series of Functions. McGraw-Hill. — [[Sequence of Function Uniform Convergence]], [[Arzelà-Ascoli Theorem]], [[Stone-Weierstrass Theorem]], [[Space of Bounded Continuous Functions]]
+- Cunningham (1967). *Taking Limits Under the Integral Sign*. Mathematics Magazine 40(4), 179–186. — [[Dominated Convergence Theorem]]
+- Kestelman (1970). *Riemann Integration of Limit Functions*. American Mathematical Monthly 77(2), 182–187. — [[Dominated Convergence Theorem]]
+- Stone (1948). *The Generalized Weierstrass Approximation Theorem*. Mathematics Magazine 21(4), 167–184. — [[Stone-Weierstrass Theorem]]
