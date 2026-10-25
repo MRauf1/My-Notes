@@ -13,6 +13,7 @@ For the [[Normal Distribution]], $\mu$ is a location parameter and $X = \mu + e$
 # Properties
 - Shifting by $\mu$ shifts the mean, median, and mode by $\mu$ and leaves the variance unchanged.
 - Together with a [[Scale Parameter]] it forms a location-scale family $f(x; \mu, \sigma) = \frac{1}{\sigma} f_0\left(\frac{x - \mu}{\sigma}\right)$, e.g. normal, [[Laplace Distribution|Laplace]], [[Cauchy Distribution|Cauchy]], [[Continuous Uniform Distribution|uniform]].
+- Its [[Noninformative Prior]] is uniform, $p(\mu) \propto 1$.
 - Contrast with a [[Shape Parameter]], which changes the form of the pdf.
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=207)

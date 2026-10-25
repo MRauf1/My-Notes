@@ -13,6 +13,7 @@ A small scale makes the pdf tall and narrow, a large scale makes it spread out a
 # Properties
 - Multiplying by $\sigma$ multiplies the standard deviation, [[Interquartile Range]], and all quantiles by $\sigma$; standardized quantities such as [[Probability Distribution Skewness|skewness]] and [[Kurtosis]] are unchanged.
 - The reciprocal $\lambda = 1/\beta$ of a scale parameter is called a rate parameter (e.g. the [[Exponential Distribution]] rate, the events per unit time of a [[Poisson Process]]).
+- Its [[Noninformative Prior]] is $p(\sigma) \propto 1/\sigma$, i.e. uniform in $\log\sigma$.
 - Combined with a [[Location Parameter]] it gives a location-scale family; contrast with a [[Shape Parameter]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=207)

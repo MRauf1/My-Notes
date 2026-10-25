@@ -11,5 +11,6 @@ tags:
 
 # Properties
 - In a [[Floating-Point Number System]], precision corresponds to the number of base-$\beta$ digits $p$ retained in the mantissa.
+- Not to be confused with [[Precision (Statistics)]], the inverse variance.
 
 [^1]: [Scientific Computing](zotero://open-pdf/library/items/EP5UUXW5?page=27)

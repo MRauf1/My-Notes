@@ -41,4 +41,9 @@ tags:
 
 # Properties
 - The negative log-likelihood of a regular exponential family equals a [[Bregman Divergence]] between the observation and the mean parameter, up to parameter-independent terms (Banerjee et al., 2005).[^1]
+- Every exponential family has a natural [[Conjugate Prior]] $p(\theta) \propto g(\theta)^\eta e^{\eta(\theta) \cdot \nu}$, and apart from irregular cases, exponential families are the only families with natural conjugate priors (they alone have a fixed number of sufficient statistics for all $n$).[^2]
+- For an iid sample, the likelihood depends on the data only through the [[Sufficient Statistic]] $\sum_i T(x_i)$.[^3]
+
 [^1]: Supplementary notes provided by the creator.
+[^2]: [Gelman et al., p. 37](zotero://open-pdf/library/items/HDF44SF4?page=47&annotation=8GLB5FJU)
+[^3]: [Gelman et al., p. 36](zotero://open-pdf/library/items/HDF44SF4?page=46&annotation=FD5QVM9I)

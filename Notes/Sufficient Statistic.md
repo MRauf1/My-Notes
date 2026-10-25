@@ -48,6 +48,7 @@ The ratio is the conditional pmf of the sample given $Y_1 = y_1$. So the definit
 - For the [[Regular Exponential Class]], $\sum_i K(X_i)$ (or $(\sum_i K_1(X_i), \dots, \sum_i K_m(X_i))$) is complete and sufficient.
 - The sufficiency principle says that samples with equal values of a sufficient statistic carry the same evidence about $\theta$. Together with conditionality, it implies the [[Likelihood Principle]] ([[Birnbaum's Theorem]]).
 - The smallest reduction that keeps sufficiency is the [[Minimal Sufficient Statistic]]. Its opposite is an [[Ancillary Statistic]], whose distribution is free of $\theta$.
+- Bayesian view: since the [[Posterior Distribution]] depends on the data only through the likelihood, it depends on $y$ only through a sufficient statistic $t(y)$, which simplifies algebraic manipulation of likelihoods and posteriors ([[Conjugate Prior]]).[^9]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=437&annotation=UI2UUV5V)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=437&annotation=E8527QVF)
@@ -57,3 +58,4 @@ The ratio is the conditional pmf of the sample given $Y_1 = y_1$. So the definit
 [^6]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=436&annotation=3XIF39Q7)
 [^7]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=442&annotation=WQDNHY2Q)
 [^8]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=443&annotation=LFI7WAUU)
+[^9]: [Gelman et al., p. 36](zotero://open-pdf/library/items/HDF44SF4?page=46&annotation=32SW5V9I)

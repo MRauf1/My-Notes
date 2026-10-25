@@ -31,6 +31,7 @@ The total variance splits into the average within-slice spread $E[\text{Var}(X_2
 
 # Properties
 - Also holds for a random vector $X$, with $\text{Var}[X]$ the [[Covariance Matrix]].[^3]
+- Bayesian reading: the posterior variance is on average smaller than the prior variance ([[Prior and Posterior Moment Relations]]).
 - Analogous to the decomposition of total sum of squares into within-group and between-group parts in ANOVA.
 - In prediction, $\text{Var}[E(X_2 | X_1)]$ is the variance of $X_2$ explained by $X_1$, and $E[\text{Var}(X_2 | X_1)]$ is the irreducible error of the best predictor $E(X_2 | X_1)$ (cf. [[Bias-Variance Tradeoff]]).
 

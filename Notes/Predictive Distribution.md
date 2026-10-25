@@ -27,6 +27,58 @@ A point-estimate method instead plugs in a single parameter value, e.g. $p(t | \
 > $$
 > For polynomial curve fitting, $\phi_i(x) = x^i$ for $i = 0, \dots, M$.
 
+> [!info] Posterior Predictive Distribution[^5][^7]
+> For a future observation $\tilde{y}$ given observed data $y$,
+> $$
+> \begin{align}
+> p(\tilde{y} \mid y) = \int p(\tilde{y} \mid \theta, y)\, p(\theta \mid y)\, d\theta = \int p(\tilde{y} \mid \theta)\, p(\theta \mid y)\, d\theta
+> \end{align}
+> $$
+
+**Why $p(\tilde{y} \mid \theta, y) = p(\tilde{y} \mid \theta)$.**[^8] This is a modeling assumption, not an identity. The future $\tilde{y}$ is taken to be [[Exchangeability|exchangeable]] with the past $y$, which is modeled as all observations being iid given $\theta$, i.e. $\tilde{y}$ and $y$ are conditionally independent given $\theta$:
+$$
+\begin{align}
+p(\tilde{y}, y \mid \theta) = p(\tilde{y} \mid \theta)\, p(y \mid \theta) \implies p(\tilde{y} \mid \theta, y) = \frac{p(\tilde{y}, y \mid \theta)}{p(y \mid \theta)} = p(\tilde{y} \mid \theta)
+\end{align}
+$$
+The parameter is the entire channel through which past data inform the future: once $\theta$ is known, $y$ carries nothing further about $\tilde{y}$. Marginally, $\tilde{y}$ and $y$ are **dependent** ($p(\tilde{y} \mid y) \neq p(\tilde{y})$), and all the learning happens by $y$ reshaping $p(\theta \mid y)$. The assumption fails when the data have structure beyond $\theta$ (time series, spatial dependence, covariates for $\tilde{y}$), and then $p(\tilde{y} \mid \theta, y)$ must be modeled explicitly.
+
+**Generative view.**[^10] The joint factorizes by the chain rule as $p(y, \tilde{y}, \theta) = p(\tilde{y} \mid y, \theta)\, p(y \mid \theta)\, p(\theta)$. In a parametric model, $\theta$ represents the entire data-generating mechanism, so given $\theta$ it is a complete bottleneck between past and future and the first factor reduces to $p(\tilde{y} \mid \theta)$. The predictive integral then follows from marginalizing $\theta$:
+$$
+\begin{align}
+p(\tilde{y} \mid y) = \int p(\tilde{y}, \theta \mid y)\, d\theta = \int p(\tilde{y} \mid \theta, y)\, p(\theta \mid y)\, d\theta = \int p(\tilde{y} \mid \theta)\, p(\theta \mid y)\, d\theta
+\end{align}
+$$
+
+**"iid" does not mean $p(\tilde{y} \mid y) = p(\tilde{y})$.**[^10] In the Bayesian framework "iid" means **conditionally** iid given $\theta$. Since $\theta$ is unknown, integrating it out couples $y$ and $\tilde{y}$ through their shared dependence on $\theta$, so they are **marginally dependent**. Information flows along the chain
+$$
+\begin{align}
+y \longrightarrow \theta \longrightarrow \tilde{y}
+\end{align}
+$$
+$y$ updates beliefs about $\theta$ (prior $\to$ posterior), and $\theta$ governs $\tilde{y}$. Comparing
+$$
+\begin{align}
+p(\tilde{y}) = \int p(\tilde{y} \mid \theta)\, p(\theta)\, d\theta \qquad \text{vs} \qquad p(\tilde{y} \mid y) = \int p(\tilde{y} \mid \theta)\, p(\theta \mid y)\, d\theta
+\end{align}
+$$
+([[Prior Predictive Distribution]] vs posterior predictive), the two differ exactly because $p(\theta \mid y) \neq p(\theta)$. If $p(\tilde{y} \mid y) = p(\tilde{y})$ held, past data would say nothing about the future and learning would be impossible. Independence holds only while $\theta$ is held fixed.
+
+> [!example]- Bag of Coins
+> One of two coins is picked at random: fair ($P(H) = 0.5$) or biased ($P(H) = 0.9$), so $\theta \in \{\text{fair}, \text{biased}\}$. Ten flips give ten heads.
+> - **Given $\theta$**: if told "it is the fair coin", the prediction for flip 11 reverts to $0.5$, ignoring the ten heads (conditional independence).
+> - **Without $\theta$**: the ten heads shift the posterior strongly toward the biased coin, so the prediction for flip 11 moves toward heads (marginal dependence).
+
+> [!abstract] Posterior Predictive Mean and Variance[^9]
+> By the [[Law of Total Expectation]] and [[Law of Total Variance]] conditional on $y$,
+> $$
+> \begin{align}
+> E(\tilde{y} \mid y) &= E\big(E(\tilde{y} \mid \theta, y) \mid y\big) \\
+> \text{var}(\tilde{y} \mid y) &= \underbrace{E\big(\text{var}(\tilde{y} \mid \theta, y) \mid y\big)}_{\text{sampling variance}} + \underbrace{\text{var}\big(E(\tilde{y} \mid \theta, y) \mid y\big)}_{\text{posterior uncertainty in } \theta}
+> \end{align}
+> $$
+> E.g. for a normal model with known $\sigma^2$ and posterior $N(\mu_1, \tau_1^2)$: mean $\mu_1$, variance $\sigma^2 + \tau_1^2$.
+
 # Properties
 - **Bayesian approach for neural networks** (Prince): maximum likelihood is overconfident, choosing the single most likely parameters although many are broadly compatible with the data. The Bayesian approach computes $Pr(\boldsymbol{\phi} | \{\mathbf{x}_i, \mathbf{y}_i\}) \propto \prod_i Pr(\mathbf{y}_i | \mathbf{x}_i, \boldsymbol{\phi}) Pr(\boldsymbol{\phi})$ and predicts $Pr(\mathbf{y} | \mathbf{x}, \{\mathbf{x}_i, \mathbf{y}_i\}) = \int Pr(\mathbf{y} | \mathbf{x}, \boldsymbol{\phi}) Pr(\boldsymbol{\phi} | \{\mathbf{x}_i, \mathbf{y}_i\}) d\boldsymbol{\phi}$, an infinite weighted [[Ensemble Learning|ensemble]] whose weights depend on the prior and on agreement with the data. It is elegant and more robust, but for neural networks the posterior cannot be represented or integrated exactly, so all practical methods approximate it, adding considerable complexity.[^6]
 - Both the mean and the variance of the Bayesian predictive distribution depend on $\mathbf{x}$.[^4]
@@ -42,3 +94,7 @@ A point-estimate method instead plugs in a single parameter value, e.g. $p(t | \
 [^4]: [Bishop, 2006, p. 31](zotero://open-pdf/library/items/5G99AZ8U?page=51&annotation=D9K9DJ8G)
 [^5]: [Gelman et al., p. 7](zotero://open-pdf/library/items/HDF44SF4?page=17&annotation=5SYNH2BZ)
 [^6]: [Prince, p. 150](zotero://open-pdf/library/items/BWT7FYX5?page=164&annotation=FIP4DUG2); [Prince, p. 150](zotero://open-pdf/library/items/BWT7FYX5?page=164&annotation=3LNCV3VC); [Prince, p. 151](zotero://open-pdf/library/items/BWT7FYX5?page=165&annotation=VN26RKRH)
+[^7]: [Gelman et al., p. 41](zotero://open-pdf/library/items/HDF44SF4?page=51&annotation=FRGV6RK9)
+[^8]: [Gelman et al., p. 41](zotero://open-pdf/library/items/HDF44SF4?page=51&annotation=3VYIG7K6)
+[^9]: [Gelman et al., p. 41](zotero://open-pdf/library/items/HDF44SF4?page=51&annotation=DCAGDPZ5)
+[^10]: Supplementary notes provided by the creator.

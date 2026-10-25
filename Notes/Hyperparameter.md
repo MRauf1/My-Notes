@@ -9,6 +9,7 @@ tags:
 > A variable that controls the distribution of the model parameters (or, more broadly, the model's complexity) rather than being one of the parameters themselves. E.g. the precision $\alpha$ of a Gaussian prior $p(\mathbf{w} | \alpha) = \mathcal{N}(\mathbf{w} | \mathbf{0}, \alpha^{-1}\mathbf{I})$.
 
 # Properties
+- In Bayesian statistics, the parameters of the [[Prior Distribution]] are called hyperparameters; when unknown, they can themselves be given priors in a [[Hierarchical Model]].[^6]
 - Selected empirically by [[Hyperparameter Search]] (neural architecture search when focused on network structure).[^5]
 - The choices of learning algorithm, [[Batch Size|batch size]], [[Learning Rate Schedule|learning rate schedule]], and momentum coefficients are hyperparameters of the training algorithm: they directly affect final performance but are distinct from the model parameters. Choosing them is more art than science; training many models with different hyperparameters and keeping the best is called **hyperparameter search**.[^4]
 - Examples include the regularization coefficient $\lambda$ of [[Regularization]], the polynomial order $M$, and the prior and noise precisions $\alpha, \beta$; for [[L2 Regularization]] derived as MAP, $\lambda = \alpha / \beta$.
@@ -21,3 +22,4 @@ tags:
 [^3]: [Prince, p. 46](zotero://open-pdf/library/items/BWT7FYX5?page=60&annotation=3BIZK6QZ)
 [^4]: [Prince, Ch. 6](zotero://select/library/items/T3V9WVXD)
 [^5]: [Prince, p. 132](zotero://open-pdf/library/items/BWT7FYX5?page=146&annotation=2997MF4K)
+[^6]: [Gelman et al., p. 34](zotero://open-pdf/library/items/HDF44SF4?page=44&annotation=S8A6Y8V2)

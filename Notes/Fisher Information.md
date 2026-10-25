@@ -33,6 +33,7 @@ It is the negative [[Expectation]] of the [[Second Derivative]] of the [[Log-Lik
 - Bounds estimation precision: the [[Rao-Cramér Lower Bound]] $1/(nI(\theta))$ for unbiased estimators, attained asymptotically by the MLE ([[Maximum Likelihood Estimator Asymptotic Normality]]).
 - For a Bernoulli $b(1, \theta)$ sample of size $n$, the information is $n/[\theta(1-\theta)]$ ([[Binomial Distribution Fisher Information]]).[^3]
 - Multiparameter version: [[Fisher Information Matrix]].
+- Its square root defines the reparameterization-invariant [[Jeffreys Prior]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=379)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=380)
