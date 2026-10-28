@@ -14,4 +14,7 @@ tags:
 
 Related to [[Complete Metric Space]] and ensures that the [[Set of Real Numbers]] is complete (has no gaps).
 
+# Properties
+- The order-theoretic version (least upper bound property) is one of the two defining properties of a [[Linear Continuum]].
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=35)

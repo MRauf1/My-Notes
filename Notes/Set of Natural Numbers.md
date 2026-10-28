@@ -16,6 +16,7 @@ Sometimes includes the element $0$ (especially in [[Computer Science|computer sc
 
 # Forming the Set of Natural Numbers
 - [[Peano Axioms]]
+- [[Inductive Set]]: $\mathbb{Z}^+$ as the intersection of all inductive subsets of $\mathbb{R}$
 
 # Properties
 ## [[Minimum]] and [[Maximum]]

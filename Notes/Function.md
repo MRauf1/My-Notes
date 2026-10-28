@@ -25,6 +25,7 @@ The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which 
 - [[Function Transformation|Function Transformation]]
 - [[Function Inequality|Function Inequality]]
 - [[Extension of Function]]
+- [[Restriction of Function]]
 
 # Operations
 - [[Function Operations]]

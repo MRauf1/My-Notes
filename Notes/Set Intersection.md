@@ -28,5 +28,8 @@ Intersection of two sets includes elements that are in both sets.[^1]
 > $$
 > If $\mathcal{F} = \emptyset$, then $\cap \mathcal{F} = \mathcal{X}$, where $\mathcal{X}$ is the [[Universe of Discourse]]
 
+# Properties
+- Indexed notation $\bigcap_{\alpha \in J} A_\alpha$: see [[Indexed Family of Sets]].
+
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=16)
 [^2]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=92)

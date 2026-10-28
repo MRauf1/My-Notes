@@ -15,6 +15,7 @@ Unlike [[Total Order]], not every two elements can be compared with each other.
 ## Elements
 - [[Relation Smallest Element]]
 - [[Relation Minimal Element]]
+- [[Relation Maximal Element]]
 
 ## Bounds
 - [[Relation Lower Bound]]
