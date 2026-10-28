@@ -30,6 +30,7 @@ A finer-grained workflow:
 - Common-sense interpretation of conclusions: a [[Credible Interval]] directly has high probability of containing the unknown quantity ([[Frequentist vs Bayesian Inference]]).
 - Philosophical basis: [[Probability Bayesian Framework]].
 - Not a cure for a degenerate likelihood: since the posterior is proportional to the likelihood, a likelihood that is unbounded (e.g. a continuous density model fit to data on a zero-volume set) yields an improper or degenerate posterior unless the prior rules out the collapse ([[Maximum Likelihood Loss Optimality and Failure Modes]]).[^6]
+- Computation in practice: [[Bayesian Posterior Simulation Strategy]]; parameters not of interest are [[Nuisance Parameter|nuisance parameters]], integrated out to give the [[Marginal Posterior Distribution]].
 - When the posterior's normalizing constant is intractable, it is sampled by [[Markov Chain Monte Carlo]].
 
 [^1]: [Gelman et al., p. 1](zotero://open-pdf/library/items/HDF44SF4?page=11&annotation=TFGB8IG4)

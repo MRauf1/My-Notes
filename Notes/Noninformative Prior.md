@@ -11,7 +11,7 @@ tags:
 The motivation is that, when the prior has no population basis, it can be difficult to construct.
 
 # Types
-- **Uniform on a location parameter.** If $p(y - \theta \mid \theta) = f(y - \theta)$ is free of $\theta$ and $y$, then $y - \theta$ is a pivotal quantity and $\theta$ a pure [[Location Parameter]]. Requiring $y - \theta$ to remain pivotal under the posterior, $p(y - \theta \mid y) = f(y - \theta)$, together with $p(y - \theta \mid y) \propto p(\theta)\, p(y - \theta \mid \theta)$, forces[^2][^3]
+- **Uniform on a location parameter.** If $p(y - \theta \mid \theta) = f(y - \theta)$ is free of $\theta$ and $y$, then $y - \theta$ is a [[Pivotal Quantity|pivotal quantity]] and $\theta$ a pure [[Location Parameter]]. Requiring $y - \theta$ to remain pivotal under the posterior, $p(y - \theta \mid y) = f(y - \theta)$, together with $p(y - \theta \mid y) \propto p(\theta)\, p(y - \theta \mid \theta)$, forces[^2][^3]
 $$
 \begin{align}
 p(\theta) \propto \text{const} \quad \text{on } (-\infty, \infty)

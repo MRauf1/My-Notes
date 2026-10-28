@@ -35,6 +35,7 @@ tags:
   - Uncertainty intervals: [[Credible Interval]], [[Highest Posterior Density Region]].
 - On average less variable than the prior ([[Prior and Posterior Moment Relations]]), and centered at a compromise between prior and data that is increasingly dominated by the data ([[Posterior Compromise Between Prior and Data]]).
 - Depends on the data only through a [[Sufficient Statistic]]. Updating one observation at a time (each posterior becoming the next prior) gives the same posterior as a single batch update.[^5]
+- **Multiparameter models.** With [[Nuisance Parameter|nuisance parameters]], inference targets the [[Marginal Posterior Distribution]], computed by integration or by simply ignoring the nuisance coordinates of joint posterior draws ([[Bayesian Posterior Simulation Strategy]]).
 - Under an [[Improper Prior]], the posterior must be checked to be integrable.
 
 [^1]: [Gelman et al., p. 7](zotero://open-pdf/library/items/HDF44SF4?page=17&annotation=C69MVM7Y)

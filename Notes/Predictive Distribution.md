@@ -86,6 +86,7 @@ $$
 - Here $\alpha, \beta$ are fixed [[Hyperparameter|hyperparameters]]; a fuller treatment infers them from data as well.
 - The mean $m(\mathbf{x})$ coincides with the prediction of the MAP (ridge) solution; the difference lies in the variance.
 - General form (posterior predictive distribution): $p(\tilde{y} \mid y) = \int p(\tilde{y} \mid \theta)\, p(\theta \mid y)\, d\theta$, an average of conditional predictions over the [[Posterior Distribution]]; dropping $y$ from $p(\tilde{y} \mid \theta, y)$ uses the conditional independence of $y$ and $\tilde{y}$ given $\theta$. Its pre-data counterpart is the [[Prior Predictive Distribution]].[^5]
+- With several parameters the average is over all of them, e.g. $p(\tilde{y} \mid y) = \iint p(\tilde{y} \mid \mu, \sigma^2, y)\, p(\mu, \sigma^2 \mid y)\, d\mu\, d\sigma^2$; it is simulated by drawing $\tilde{y}^s \sim p(\tilde{y} \mid \theta^s)$ for each posterior draw $\theta^s$ ([[Marginal Posterior Distribution]], [[Bayesian Posterior Simulation Strategy]]).[^11]
 - Averaging over parameters rather than committing to one is what lets Bayesian models avoid [[Overfitting|over-fitting]] even when parameters outnumber data points.
 
 [^1]: [Bishop, 2006, p. 31](zotero://open-pdf/library/items/5G99AZ8U?page=51&annotation=W4DVFWL2)
@@ -98,3 +99,4 @@ $$
 [^8]: [Gelman et al., p. 41](zotero://open-pdf/library/items/HDF44SF4?page=51&annotation=3VYIG7K6)
 [^9]: [Gelman et al., p. 41](zotero://open-pdf/library/items/HDF44SF4?page=51&annotation=DCAGDPZ5)
 [^10]: Supplementary notes provided by the creator.
+[^11]: [Gelman et al., p. 66](zotero://open-pdf/library/items/HDF44SF4?page=76&annotation=K27Y3WQ3)
