@@ -21,6 +21,7 @@ It composes the [[Probability Integral Transform]] with [[Inverse Transform Samp
 - It is monotone non-decreasing, so it preserves the ranks of the inputs; this is what makes it useful with [[Common Random Numbers]].
 - The [[Array Sampling Method]] with a sorted array is a QQ transformation of a discrete uniform index.
 - Inverse transform sampling is the special case $F = \mathcal{U}(0,1)$, i.e. $F(x) = x$ on $(0,1)$.
+- Applied componentwise to a random vector, it changes the marginals while keeping the [[Copula]]; this is [[Copula-Marginal Sampling]], which reduces to the QQ transformation when $d = 1$.
 
 [^1]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=6&annotation=2HYQFJJR)
 [^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=6&annotation=YLBZU82T)

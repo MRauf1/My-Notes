@@ -23,8 +23,15 @@ tags:
 - [[Rejection Sampling|Acceptance-rejection sampling]], with [[Squeeze Function (Rejection Sampling)|squeezes]], [[Adaptive Rejection Sampling]] and the [[Ziggurat Algorithm]].
 - Mixtures:[^6] if $X \sim f(\cdot\,; \theta)$ with random parameter $\theta \sim G$, sample $\theta \sim G$ and then $X \sim f(\cdot\,; \theta)$ ([[Mixture Distribution]]).
 
+**Random vectors.**[^7] The three generic methods all extend naturally to $\mathbf{X} \in \mathbb{R}^d$, but all tend to become unwieldy:
+- Inversion becomes [[Sequential Inversion]], drawing each component from its conditional given the previous ones; it needs many tractable conditional CDFs.
+- [[Rejection Sampling|Acceptance-rejection]] works verbatim with vectors, but the constant $c$ is hard to keep small as $d$ grows.
+- Mixtures $F(\mathbf{x}) = \sum_{k=1}^K \pi_k F_k(\mathbf{x})$ (or $\int F(\mathbf{x} \mid \mathbf{y})g(\mathbf{y})\,d\mathbf{y}$) are sampled by drawing the label $Z$ with $P(Z = k) = \pi_k$ (or $\mathbf{Y} \sim g$), then $\mathbf{X} \sim F_Z$; this helps for special problems but is not easily adapted to automated generation.
+- [[Copula-Marginal Sampling]] is a fourth generic method for $d > 1$, joining the dependence structure of one family to the marginals of another.
+
 # Properties
 - Multivariate generalizations include [[Multivariate Normal Sampling (Cholesky Factorization)]]; when independent sampling is impractical, [[Markov Chain Monte Carlo]] takes over.
+- The extreme difficulty of some multidimensional sampling problems is a main motivation for [[Markov Chain Monte Carlo]] and [[Sequential Monte Carlo]].[^8]
 
 [^1]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=3&annotation=BW43RZPD); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=4&annotation=FNDWBTRT)
 [^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=14&annotation=5WF45XR9)
@@ -32,3 +39,5 @@ tags:
 [^4]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=16&annotation=78G4TDRQ); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=16&annotation=Z2IZ5BJ9)
 [^5]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=17&annotation=7MQ3BRIM)
 [^6]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=29&annotation=HB3NXFQD); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=30&annotation=D54MNGRT)
+[^7]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=4&annotation=TPFJR2F8); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=7&annotation=Z9WS2PJY); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=7&annotation=4YU6HNVE); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=3&annotation=BLY9P3UL)
+[^8]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=3&annotation=NFN2QEW2)

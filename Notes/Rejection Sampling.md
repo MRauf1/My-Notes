@@ -51,6 +51,16 @@ So $(Y, cg(Y)U)$ is uniform under $cg$, and keeping only the points under $f$ le
 
 This covers e.g. a well-known density restricted to a set whose probability is unknown.
 
+**Multivariate case.**[^11] For a density $f$ on $\mathbb{R}^d$, find a density $g$ that can be sampled with $f(\mathbf{x}) \leq cg(\mathbf{x})$ for a known $c < \infty$, and run the same algorithm with vectors in place of scalars; on average $c$ draws from $g$ are needed per delivered sample. The geometry also carries over: with the $(d+1)$-dimensional region
+$$
+\begin{align}
+S_c(f) = \{(\mathbf{x}, z) \mid 0 \leq z \leq cf(\mathbf{x}),\ \mathbf{x} \in \mathbb{R}^d\}
+\end{align}
+$$
+$(\mathbf{X}, Z) \sim \mathcal{U}(S_c(f))$ implies $\mathbf{X} \sim f$, and conversely $\mathbf{X} \sim f$ with $Z \mid \mathbf{X} = \mathbf{x} \sim \mathcal{U}(0, cf(\mathbf{x}))$ implies $(\mathbf{X}, Z) \sim \mathcal{U}(S_c(f))$. Hence unnormalized $\tilde{f} \leq c\tilde{g}$ with acceptance probability $A(\mathbf{y}) = \tilde{f}(\mathbf{y})/(c\tilde{g}(\mathbf{y}))$ also work in $d$ dimensions.
+
+In high dimensions the method degrades:[^12] finding $c = \sup_{\mathbf{x}} f(\mathbf{x})/g(\mathbf{x})$ becomes a $d$-dimensional optimization, and, more critically, $c$ is hard to keep small; e.g. the volume mismatch between cubes and balls grows strongly with $d$ ([[Curse of Dimensionality]]). It still works when the connection between $f$ and $g$ is inherently low-dimensional: for a radially symmetric $f$, accept-reject on the radius combined with a uniform direction on the unit [[Sphere|sphere]] has a constant $c$ coming only from the one-dimensional radius part.[^13]
+
 # Properties
 - The probability of acceptance is $1/M$, so the number of trials per sample is geometric with mean $M$; choose $M$ as small as possible.[^3]
 - Normalizing constants can be ignored:[^3] if $f = kh$ and $g = ct$, then $f \leq Mg$ iff $h \leq M_2 t$ with $M_2 = cM/k$, and the test becomes $U \leq h(Y)/[M_2 t(Y)]$.
@@ -73,3 +83,6 @@ This covers e.g. a well-known density restricted to a set whose probability is u
 [^8]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=25&annotation=Q49JTBHL); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=25&annotation=2GRIFC7N); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=25&annotation=ZW8D38MX)
 [^9]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=23&annotation=M44ZYTGH)
 [^10]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/7EZQYHPW?page=21&annotation=D62K8ER4)
+[^11]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=5&annotation=ZA9GZT3L); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=5&annotation=E5PBKAP5); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=5&annotation=RMZ9XWFB); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=6&annotation=N9YJ226P)
+[^12]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=6&annotation=UVPZ2FJU); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=6&annotation=8JWWRUDK)
+[^13]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=6&annotation=WJN9PNIY); [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=7&annotation=WE8PTKMF)

@@ -63,6 +63,7 @@ computed by tabulating $\{(k, P_k) \mid 0 \leq k \leq N\}$ and searching for $k$
 - The gold standard method of [[Non-Uniform Random Variate Generation]]: one uniform per variate, available in principle for every distribution, but often hard to compute.[^10]
 - Because $X$ is a monotone function of a single $U$, inversion is the natural partner of [[Common Random Numbers]], [[Antithetic Variates]] and [[Stratified Sampling]].[^11]
 - Generalizes to transforming between arbitrary distributions via the [[QQ Transformation]] $G^{-1}(F(X))$.
+- Multivariate generalizations: [[Sequential Inversion]] (inverting conditional CDFs component by component) and [[Copula-Marginal Sampling]] (inverting marginal CDFs applied to a dependent uniform vector).
 - Sampling order statistics in reverse: $Y_{(r)} = F^{-1}(X)$ with $X \sim \text{Beta}(r, n - r + 1)$ produces the $r$th [[Order Statistic]] of $n$ iid draws from $F$ with a single variate.
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

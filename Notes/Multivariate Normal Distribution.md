@@ -42,6 +42,7 @@ So $\boldsymbol{\mu}$ is the [[Mean Vector]] and $\Sigma$ the covariance matrix,
 **Positive definite vs. positive semidefinite $\Sigma$.** $\Sigma$ is always positive semidefinite, but not always positive definite; defining the distribution through the mgf allows both.
 - $\Sigma$ is positive definite (all eigenvalues $> 0$, invertible) exactly when the distribution is non-degenerate: no nontrivial linear combination $\mathbf{a}^T\mathbf{X}$ has zero variance, i.e. no component is constant or an exact linear combination of the others, so the $n$ coordinates carry $n$ genuine degrees of freedom. Only then does the density above exist.
 - $\Sigma$ is singular (some eigenvalues $= 0$) exactly when the distribution is degenerate: $\text{Var}(\mathbf{a}^T\mathbf{X}) = \mathbf{a}^T\Sigma\mathbf{a} = 0$ for $\mathbf{a}$ in the null space, so $\mathbf{X}$ lies with probability one in the lower-dimensional affine subspace $\boldsymbol{\mu} + \text{col}(\Sigma)$ of dimension $r = \text{rank}\,\Sigma$ (constant components, or perfectly collinear ones). Since that subspace has zero volume in $\mathbb{R}^n$, there is no density with respect to $n$-dimensional [[Lebesgue Measure]], and the formula above breaks down ($|\Sigma| = 0$, $\Sigma^{-1}$ undefined).
+- Equivalently, for singular $\Sigma$ some component is redundant: for some $k$, $P\big(X_k = \alpha_0 + \sum_{j \neq k} \alpha_j X_j\big) = 1$. Redundant components can be removed, or kept for simpler formulas.[^4]
 - The degenerate distribution is still a perfectly valid multivariate normal: the mgf definition and the construction $\Sigma^{1/2}\mathbf{Z} + \boldsymbol{\mu}$ still work, and on its $r$-dimensional subspace it has the density $(2\pi)^{-r/2}(\text{pdet}\,\Sigma)^{-1/2}\exp\{-\frac12(\mathbf{x} - \boldsymbol{\mu})^T\Sigma^{+}(\mathbf{x} - \boldsymbol{\mu})\}$, using the [[Pseudoinverse]] $\Sigma^+$ and the pseudo-determinant (product of nonzero eigenvalues).
 
 # Types
@@ -56,7 +57,9 @@ So $\boldsymbol{\mu}$ is the [[Mean Vector]] and $\Sigma$ the covariance matrix,
 - [[Multivariate Normal Density Product]]: a product of normal densities in the same variable is an unnormalized normal density (precisions add).
 - [[Principal Component Analysis]]: rotating to the eigenbasis of $\Sigma$ gives independent components.
 - Sampling: $\boldsymbol{\mu} + A\mathbf{Z}$ for any $AA^T = \Sigma$ ([[Multivariate Normal Sampling (Cholesky Factorization)]]).
+- Its [[Copula]] (the Gaussian copula) is a common donor of dependence structure in [[Copula-Marginal Sampling]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=217)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=216)
 [^3]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=218)
+[^4]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/I5B7ZUIV?page=8&annotation=4Z5BTPPT)
