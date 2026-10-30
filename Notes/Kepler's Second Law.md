@@ -13,5 +13,6 @@ tags:
 # Properties
 - A special case of a more general fact: any purely radial (central) [[Force]] — one always directed along the line joining the two bodies, with no component tangential to the orbit — produces motion that sweeps out equal areas in equal times. Kepler's second law follows because [[Newton's Law of Universal Gravitation]] is directed exactly toward the sun.
 - One of three [[Kepler's First Law|Kepler's]] [[Kepler's Third Law|laws]] of planetary motion.
+- Equivalent to [[Conservation of Angular Momentum]]: the areal rate is $dA/dt = L/(2m)$, and a central force exerts no [[Torque]] about the force center, so [[Angular Momentum]] $L$ is constant.
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 7: The Theory of Gravitation](https://www.feynmanlectures.caltech.edu/I_07.html)

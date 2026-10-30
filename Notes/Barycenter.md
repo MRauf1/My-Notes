@@ -6,7 +6,7 @@ tags:
 
 # Definition
 > [!info] Barycenter[^1]
-> The common center of mass of two mutually orbiting bodies (e.g. a planet and its moon), lying along the line joining them; both bodies orbit this shared point, rather than one being stationary while the other revolves around it.
+> The common [[Center of Mass|center of mass]] of two mutually orbiting bodies (e.g. a planet and its moon), lying along the line joining them; both bodies orbit this shared point, rather than one being stationary while the other revolves around it.
 
 # Properties
 - Explains why neither body of a two-body system falls into the other: each body is continuously "falling" toward the barycenter, but its orbital motion around it — the same falling mechanism as any orbit (see [[Newton's Cannonball]]) — carries it around rather than into the other body.

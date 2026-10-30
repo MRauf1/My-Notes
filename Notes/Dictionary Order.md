@@ -6,7 +6,7 @@ tags:
 
 # Definition
 > [!info] Dictionary Order[^1]
-> Let $A$ and $B$ be [[Set|sets]] with order relations $<_A$ and $<_B$. The dictionary (lexicographic) order relation $<$ on the [[Cartesian Product]] $A \times B$ is defined by
+> Let $A$ and $B$ be [[Set|sets]] with [[Strict Total Order|order relations]] $<_A$ and $<_B$. The dictionary (lexicographic) order relation $<$ on the [[Cartesian Product]] $A \times B$ is defined by
 > $$
 > \begin{align}
 > a_1 \times b_1 < a_2 \times b_2 \iff a_1 <_A a_2, \quad \text{or} \quad a_1 = a_2 \text{ and } b_1 <_B b_2.
