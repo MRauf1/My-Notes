@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - differential_geometry
+  - linear_algebra
 ---
 
 # Definition

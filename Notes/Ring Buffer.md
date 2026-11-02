@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - systems_programming
+  - data_structures_and_algorithms
 ---
 
 # Definition

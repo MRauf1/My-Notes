@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - computer_architecture
+  - systems_programming
 ---
 
 # Definition

@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - computer_vision
+  - data_structures_and_algorithms
 ---
 
 # Definition

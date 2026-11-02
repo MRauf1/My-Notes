@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - computer_architecture
+  - operating_systems
 ---
 
 # Definition

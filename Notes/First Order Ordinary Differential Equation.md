@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - calculus
+  - differential_equations
 ---
 
 # Definition

@@ -1,7 +1,7 @@
 ---
 tags:
-  - computer_science
-  - monte_carlo_methods
+  - statistics
+  - mathematical_statistics
 ---
 
 # Definition

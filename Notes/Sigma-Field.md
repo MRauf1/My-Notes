@@ -1,7 +1,5 @@
 ---
 tags:
-  - statistics
-  - mathematical_statistics
   - mathematics
   - measure_theory
 ---

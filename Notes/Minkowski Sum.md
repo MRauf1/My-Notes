@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - complex_analysis
+  - geometry
 ---
 
 # Definition

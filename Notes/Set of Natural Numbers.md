@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - abstract_algebra
+  - discrete_mathematics
   - pre_algebra
 ---
 

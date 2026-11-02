@@ -27,7 +27,7 @@ For a [[Right Triangle]] as depicted below, $\tan(\theta) = \frac{b}{a}$. Memori
 
 ## Identity
 - [[Pythagorean Identities]]
-- [[Sum and Difference Identitites]]
+- [[Sum and Difference Identities]]
 - [[Double Angle Identities]]
 - [[Half Angle Identities]]
 - [[Cofunction Identities]]

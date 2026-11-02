@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - computer_vision
+  - deep_learning
 ---
 
 # Definition
@@ -27,7 +27,7 @@ Rectified Linear Unit (ReLU) is an [[Activation Layer|activation function]] comm
 - Networks built from it compute continuous piecewise linear functions whose regions are easy to characterize ([[Linear Regions of ReLU Network]]), which, together with its interpretability, makes it the most common activation.[^3]
 - Its zero gradient for negative inputs causes the [[Dying ReLU Problem]].
 - [[ReLU Function Geometric Properties]]
-- [[ReLU Function Biological Plausability]]
+- [[ReLU Function Biological Plausibility]]
 
 ## Pros
 - [[ReLU Function Benefits]]

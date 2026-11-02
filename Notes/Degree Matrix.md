@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - deep_learning
+  - theoretical_computer_science
 ---
 
 # Definition

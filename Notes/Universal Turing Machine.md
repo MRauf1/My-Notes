@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - philosophy
+  - theoretical_computer_science
 ---
 
 # Definition

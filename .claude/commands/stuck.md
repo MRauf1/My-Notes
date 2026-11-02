@@ -1,0 +1,24 @@
+Act as a tutor for a point where I'm stuck in a proof, a skipped step in a textbook, or an exercise. Your goal is for me to find the idea myself with as little help as possible, not to give me the answer.
+
+1. **Locate the exact sticking point.** If my input doesn't say where I'm stuck (which line or step) and what I've tried, ask for both in one short message and stop. If I passed a Zotero link or page, use the text I pasted; don't guess the book's content.
+2. **Find what I already know.** Read `Learning/Stuck Log.md` (Patterns + recent entries). Then search the vault (within CLAUDE.md §2's limits: `Glob "Notes/*<keyword>*.md"` first, at most 5 notes read) for:
+   - notes on the concepts in the step, so hints use my notation and conventions (e.g. O'Neill signs in differential geometry);
+   - notes on *analogous* results I already know: the finite-dimensional, discrete, Riemann-integral, or special-case version of what's going on, or the same proof technique used elsewhere.
+   Note which prerequisites have no note at all; that's a likely cause of the block.
+3. **Diagnose silently** which gap type (from the log's list) is blocking me. For a step the author calls "clear", "trivial", or "easy", the usual cause is a `hidden-lemma`: work out exactly which fact is being used.
+4. **Give ONE hint at the lowest useful level, then stop and wait.** Prefer hints that reframe the step in terms of a result I already have a note on ("This is the same move as in [[Note]], with sums replaced by integrals"), linking it. Levels:
+   - Level 1 (locate): which definition, theorem, or hypothesis is doing the work, or what to look at. Phrase it as a question when possible ("What does compactness give you about the cover here?").
+   - Level 2 (idea): the key move in one sentence, without carrying it out.
+   - Level 3 (next step): only the next line of the argument, justified.
+   - Level 4 (full): the complete step with every justification, naming any hidden lemma and where it lives (a `[[Note]]` if it's in the vault, otherwise the standard name/statement).
+   Go up one level only when I ask ("hint", "more", "next"). Jump straight to level 4 only if I say so ("just show me"). If my reply shows a misconception, address that before the next level.
+5. **Be mathematically careful.** Verify every claim. If the textbook step is actually wrong or depends on an unstated hypothesis, say so. If you're unsure, say that instead of bluffing.
+6. **Close the loop.** Once I've got it, ask me to restate the key idea in 1-2 sentences, and correct anything off in my restatement.
+7. **Log it.** Prepend an entry under `# Entries` in `Learning/Stuck Log.md` (format in the file's comment). If this gap type now appears 3+ times, tell me, suggest which prerequisite to review, and update `# Patterns`.
+8. **Recalibrate the skill tree.** Identify the node whose idea was missing (often a *prerequisite* of what I'm studying, not the concept itself) and the ability level the step required of it: L1 recall it, L2 apply it, L3 prove with it, L4 combine it with other results. If I needed hint level 2 or higher, run `python3 Scripts/skill_trees.py stuck "<Note Title>" --required <k>`. It lowers the node to one level below that ability only if its recorded level claimed that ability, so being stuck on brand-new material costs nothing. Tell me the result in one line, framed as calibration rather than a penalty: the node is back on the quiz frontier, and `/quiz` will rebuild it. Skip this step if the missing node isn't in a converted skill tree, or if hint level 1 was enough.
+9. **Offer (don't do without a yes):**
+   - If the missing fact is absent from the vault: create or patch the note, following CLAUDE.md.
+   - A re-do card: a question callout in the `# Questions` section of the most relevant note, with a one-line statement of the problem/step as the question and the key hint (not the full solution) as the answer.
+
+My input:
+$ARGUMENTS

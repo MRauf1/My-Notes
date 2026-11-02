@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - pre_calculus
+  - calculus
 ---
 
 # Definition

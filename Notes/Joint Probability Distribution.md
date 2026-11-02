@@ -1,7 +1,7 @@
 ---
 tags:
   - statistics
-  - bayesian_statistics
+  - mathematical_statistics
 ---
 
 # Definition

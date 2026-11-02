@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - linear_algebra
+  - calculus
 ---
 
 # Definition

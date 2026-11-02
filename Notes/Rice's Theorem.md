@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - systems_programming
+  - theoretical_computer_science
 ---
 
 # Definition

@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - artificial_intelligence
+  - machine_learning
 ---
 
 # Definition

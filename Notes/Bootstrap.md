@@ -1,7 +1,7 @@
 ---
 tags:
-  - computer_science
-  - machine_learning
+  - statistics
+  - mathematical_statistics
 ---
 
 # Definition

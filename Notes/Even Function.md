@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - partial_differential_equations
+  - pre_calculus
 ---
 
 # Definition

@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - measure_theory
+  - optimal_transport
 ---
 
 # Definition

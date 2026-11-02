@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - monte_carlo_methods
+  - computer_graphics
 ---
 
 # Definition

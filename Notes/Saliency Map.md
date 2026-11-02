@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - philosophy
+  - deep_learning
 ---
 
 # Definition

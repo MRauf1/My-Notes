@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - abstract_algebra
+  - geometry
 ---
 
 # Definition

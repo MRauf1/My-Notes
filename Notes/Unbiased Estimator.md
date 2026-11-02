@@ -1,7 +1,7 @@
 ---
 tags:
   - statistics
-  - statistical_learning
+  - mathematical_statistics
 ---
 
 # Definition

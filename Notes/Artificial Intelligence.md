@@ -1,7 +1,6 @@
 ---
 tags:
   - computer_science
-  - deep_learning
   - artificial_intelligence
 ---
 

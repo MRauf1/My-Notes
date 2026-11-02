@@ -8,7 +8,7 @@ tags:
 # Definition
 
 > [!info] Definition 1 (Vertical Line)[^1]
-> [[Graph|Graph]] of an [[Equation|equation]] in the form 
+> [[Graph of Function|Graph]] of an [[Equation|equation]] in the form 
 > $$
 > \begin{align}
 > x = a

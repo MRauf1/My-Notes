@@ -1,7 +1,7 @@
 ---
 tags:
-  - statistics
-  - mathematical_statistics
+  - mathematics
+  - linear_algebra
 ---
 
 # Definition

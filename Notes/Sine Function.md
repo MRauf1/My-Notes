@@ -25,7 +25,7 @@ Has [[Domain]] $(-\infty, \infty)$ and range $[-1, 1]$.
 ## Identity
 - [[Pythagorean Identities]]
 - [[Sum and Difference Identities for Sine]]
-- [[Sum and Difference Identitites]]
+- [[Sum and Difference Identities]]
 - [[Double Angle Identities]]
 - [[Half Angle Identities]]
 - [[Cofunction Identities]]

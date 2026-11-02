@@ -1,7 +1,7 @@
 ---
 tags:
-  - statistics
-  - mathematical_statistics
+  - mathematics
+  - real_analysis
 ---
 
 # Definition

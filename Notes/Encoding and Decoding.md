@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - python
+  - computer_architecture
 ---
 
 # Definition

@@ -7,7 +7,7 @@ tags:
 # Definition
 
 > [!info] Definition 1 (Symmetries of Unit Disk)
-> [[Group]] $D$ of symmetries of unit [[Disk]] ($\{(x, y, 0) | x^2 + y^2 \leq 1\}$) with $D \leq SO(3)$ and [[Symmetry]] operations
+> [[Group]] $D$ of symmetries of unit disk ($\{(x, y, 0) | x^2 + y^2 \leq 1\}$) with $D \leq SO(3)$ and [[Symmetry]] operations
 > There are two elements $A$ of $D$
 > 1) $A(e_3) = e_3$ ([[Rotation]])
 > 2) $A(e_3) = -e_3$ ([[Reflection]]/Flip)

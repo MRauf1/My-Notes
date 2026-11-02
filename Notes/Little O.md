@@ -1,7 +1,7 @@
 ---
 tags:
-  - statistics
-  - mathematical_statistics
+  - computer_science
+  - theoretical_computer_science
 ---
 
 # Definition

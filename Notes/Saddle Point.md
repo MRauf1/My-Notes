@@ -1,7 +1,7 @@
 ---
 tags:
-  - computer_science
-  - deep_learning
+  - mathematics
+  - optimization
 ---
 
 # Definition

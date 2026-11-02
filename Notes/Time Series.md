@@ -19,8 +19,8 @@ Cross means comparing 2 different time series.
 
 - ACVF is [[Auto Covariance]] [[Function]]
 - ACF is [[Auto Correlation]] [[Function]]
-- CVF is [[Cross-Covariance]] [[Function]]
-- CCF is [[Cross-Correlation]] [[Function]]
+- CVF is [[Cross Covariance|Cross-Covariance]] [[Function]]
+- CCF is [[Cross Correlation|Cross-Correlation]] [[Function]]
 
 # Approaches
 - [[Time]] domain:

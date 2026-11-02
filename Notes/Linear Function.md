@@ -16,7 +16,7 @@ tags:
 
 The slope is $m$ and the $y$-intercept is $(0, b)$.
 
-Linear equation in two [[Variable|variables]] has [[Infinity|infinitely]] many [[Solution|solutions]]. Each solution is an [[Ordered Pair|ordered pair]], where when the $x$-value is plugged in, the resulting value is the $y$-value. The [[Graph|graph]] of the linear equation forms a [[Line|line]], where every point on the line is a solution to the equation, and every solution is a point on the line.[^2] Note that this line is unique.
+Linear equation in two [[Variable|variables]] has [[Infinity|infinitely]] many [[Solution|solutions]]. Each solution is an [[Ordered Pair|ordered pair]], where when the $x$-value is plugged in, the resulting value is the $y$-value. The [[Graph of Function|graph]] of the linear equation forms a [[Line|line]], where every point on the line is a solution to the equation, and every solution is a point on the line.[^2] Note that this line is unique.
 
 It takes $\geq 2$ [[Point|points]] to determine a [[Line|line]], but a third point can be used for verification. (Put this in the line note).[^3]
 

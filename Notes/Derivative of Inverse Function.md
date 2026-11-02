@@ -1,7 +1,7 @@
 ---
 tags:
-  - computer_science
-  - numerical_analysis
+  - mathematics
+  - calculus
 ---
 
 # Definition

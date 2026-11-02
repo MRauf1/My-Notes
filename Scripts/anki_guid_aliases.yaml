@@ -1,0 +1,5 @@
+# current path (relative to Notes/) -> original path; keeps Anki card IDs stable across renames
+Absorption Laws.md: Absoption Laws.md
+Casorati-Weierstrass Theorem.md: Casarati-Weierstrass Theorem.md
+ReLU Function Biological Plausibility.md: ReLU Function Biological Plausability.md
+Sum and Difference Identities.md: Sum and Difference Identitites.md

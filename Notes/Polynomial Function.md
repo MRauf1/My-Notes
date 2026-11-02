@@ -36,8 +36,8 @@ tags:
 ## Multiplicity of the Function
 
 - For a polynomial function $f$ and $x = c$ being a zero with multiplicity $m$
-	- $m$ is [[Even Number|even]] $\implies$ the [[Graph|graph]] of $f(x)$ touches and rebounds from the $x$-[[Axis|axis]] at $(c, 0)$
-	- $m$ is [[Odd Number|odd]] $\implies$ the [[Graph|graph]] of $f(x)$ passes through the $x$-[[Axis|axis]] at $(c, 0)$
+	- $m$ is [[Even Number|even]] $\implies$ the [[Graph of Function|graph]] of $f(x)$ touches and rebounds from the $x$-[[Axis|axis]] at $(c, 0)$
+	- $m$ is [[Odd Number|odd]] $\implies$ the [[Graph of Function|graph]] of $f(x)$ passes through the $x$-[[Axis|axis]] at $(c, 0)$
 
 ## End Behavior
 

@@ -11,7 +11,7 @@ tags:
 
 [[Relation|Relation]] where each input maps to only a single output.[^1] As such, functions can only have $1$ $y$-[[Intercept|intercept]].[^3]
 
-The [[Graph|graph]] of a function is the [[Set|set]] of [[Point|points]], which satisfy the equation $y = f(x)$.[^2]
+The [[Graph of Function|graph]] of a function is the [[Set|set]] of [[Point|points]], which satisfy the equation $y = f(x)$.[^2]
 
 # Properties
 - [[Domain|Domain]]

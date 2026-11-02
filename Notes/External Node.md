@@ -1,7 +1,7 @@
 ---
 tags:
   - computer_science
-  - theoretical_computer_science
+  - data_structures_and_algorithms
 ---
 
 # Definition

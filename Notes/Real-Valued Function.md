@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - differential_geometry
+  - pre_calculus
 ---
 
 # Definition

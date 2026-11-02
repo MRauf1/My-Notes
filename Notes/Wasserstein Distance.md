@@ -1,7 +1,7 @@
 ---
 tags:
-  - computer_science
-  - machine_learning
+  - mathematics
+  - optimal_transport
 ---
 
 # Definition

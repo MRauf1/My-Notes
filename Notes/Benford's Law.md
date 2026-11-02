@@ -1,7 +1,7 @@
 ---
 tags:
   - statistics
-  - categorical_variable_prediction
+  - introduction_to_statistics
 ---
 
 # Definition

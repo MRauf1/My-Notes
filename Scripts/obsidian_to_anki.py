@@ -23,10 +23,16 @@ Card rules:
     Front = "<Note Title>", Back = whole body.
   - review notes: one card per paragraph. Front = "<Note Title>" for
     every card from that note, Back = that paragraph.
+  - a top-level "# Questions" section: one card per question callout
+    (`> [!question]- <question>` followed by `> <answer>` lines).
+    Front = "<Note Title> - <question>", Back = the answer. Content in
+    that section outside question callouts is ignored.
 
 Re-running after editing notes updates existing Anki cards in place
 (matched by a stable ID derived from the note path + header/paragraph),
-instead of creating duplicates. Nothing outside vault-derived decks/notes
+instead of creating duplicates. Renamed notes keep their IDs through
+Scripts/anki_guid_aliases.yaml (current path -> original path); changing a
+note's tags never changes its IDs. Nothing outside vault-derived decks/notes
 is ever touched.
 """
 
@@ -61,6 +67,10 @@ NOTES_DIR = VAULT_ROOT / "Notes"
 MEDIA_DIR = VAULT_ROOT / "Media"
 DEFAULT_OUTPUT = Path(__file__).resolve().parent / "output" / "ObsidianVault.apkg"
 
+# Renamed notes keep their Anki identity: maps a note's current path (relative
+# to Notes/) to the path it had when its cards were first created.
+GUID_ALIASES_FILE = Path(__file__).resolve().parent / "anki_guid_aliases.yaml"
+
 EXCLUDED_DIR_NAMES = {"Personal", "Gamification", "Unneeded"}
 
 MARKER_TAG = "anki"
@@ -85,6 +95,9 @@ ORDERED_MARKER_RE = re.compile(r"^[ \t]*\d+[.)]\s")
 UNORDERED_MARKER_RE = re.compile(r"^[ \t]*[-*+]\s")
 BLOCK_MATH_RE = re.compile(r"\$\$(.+?)\$\$", re.DOTALL)
 INLINE_MATH_RE = re.compile(r"\$([^\$\n]+?)\$")
+
+QUESTIONS_HEADER = "Questions"
+QUESTION_CALLOUT_TYPES = {"question", "help", "faq"}
 
 CARD_CSS = """
 .card {
@@ -271,6 +284,30 @@ def split_top_level_headers(body: str):
     return sections
 
 
+def split_question_callouts(section_body: str):
+    """Return [(question, answer_markdown)] for question callouts in a section."""
+    lines = section_body.split("\n")
+    pairs = []
+    i = 0
+    while i < len(lines):
+        m = CALLOUT_START_RE.match(lines[i])
+        i += 1
+        if not m or m.group(1).lower() not in QUESTION_CALLOUT_TYPES:
+            continue
+        question = m.group(3).strip()
+        block = []
+        while i < len(lines) and lines[i].startswith(">"):
+            content = lines[i][1:]
+            if content.startswith(" "):
+                content = content[1:]
+            block.append(content)
+            i += 1
+        answer = "\n".join(block).strip()
+        if question and answer:
+            pairs.append((question, answer))
+    return pairs
+
+
 def split_paragraphs(body: str):
     body = ANY_HEADER_LINE_RE.sub("", body)
     raw_paragraphs = re.split(r"\n\s*\n", body)
@@ -317,6 +354,9 @@ def main():
     args = parser.parse_args()
 
     model = make_model()
+    guid_aliases = {}
+    if GUID_ALIASES_FILE.exists():
+        guid_aliases = yaml.safe_load(GUID_ALIASES_FILE.read_text(encoding="utf-8")) or {}
     decks = {}  # full_name -> genanki.Deck
     media_used = set()
     warnings = []
@@ -330,6 +370,7 @@ def main():
 
     for path in iter_note_files():
         rel_path = path.relative_to(NOTES_DIR).as_posix()
+        rel_path = guid_aliases.get(rel_path, rel_path)  # stable card IDs across renames
         text = path.read_text(encoding="utf-8", errors="replace")
         tags, body = parse_frontmatter(text)
         body = strip_footnotes(body)
@@ -379,6 +420,24 @@ def main():
 
         any_card = False
         for header, section_body in sections:
+            if header == QUESTIONS_HEADER:
+                for question, answer in split_question_callouts(section_body):
+                    back_html = render_section_html(answer, media_used)
+                    if not back_html:
+                        continue
+                    question_html = render_section_html(question, media_used)
+                    question_html = re.sub(r"^<p>(.*)</p>$", r"\1", question_html, flags=re.DOTALL)
+                    note = build_note(
+                        model,
+                        guid_key=f"{rel_path}::{header}::{question}",
+                        front_html=f"{note_title} - {question_html}",
+                        back_body_html=back_html,
+                        source_label=note_title,
+                    )
+                    deck.add_note(note)
+                    counts["cards"] += 1
+                    any_card = True
+                continue
             back_html = render_section_html(section_body, media_used)
             if not back_html:
                 continue

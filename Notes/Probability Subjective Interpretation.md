@@ -1,7 +1,7 @@
 ---
 tags:
   - statistics
-  - bayesian_statistics
+  - introduction_to_statistics
 ---
 
 # Definition

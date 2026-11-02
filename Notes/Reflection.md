@@ -22,7 +22,7 @@ Reflection about the origin is a distinct transformation from reflection about t
 
 > [!info] Definition 1 (Function Reflection)
 > For a function $f$
-> - $-f(x)$ reflects the [[Graph|graph]] of $f(x)$ across the $x$-[[Axis|axis]]
+> - $-f(x)$ reflects the [[Graph of Function|graph]] of $f(x)$ across the $x$-[[Axis|axis]]
 > - $f(-x)$ reflects the graph of $f(x)$ across the $y$-axis[^2]
 
 # Matrix Form

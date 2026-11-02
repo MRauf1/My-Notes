@@ -8,7 +8,7 @@ tags:
 
 Pre-Algebra is an introductory course in [[Mathematics|mathematics]] that serves as a preparatory course for the field of [[Algebra|algebra]]. Alternatively, pre-algebra can be thought of as a subset of algebra.[^1]
 
-Pre-Algebra teaches the basics of mathematics that will be used in algebra. In particular, it teaches the various representations of [[Number|numbers]] and how they [[Operation|interact with each other]]. In addition, the field introduces the formal structures of the mathematical language, such as [[Operation|operations]], [[Expression|expressions]], [[Equation|equations]], and [[Inequality|inequalities]], that form the backbone of algebra, as well as the whole domain of mathematics itself. Finally, it lightly delves into algebra by gently covering the topics of [[Function|functions]], [[Polynomial|polynomials]], and [[Graph|graphs]]. 
+Pre-Algebra teaches the basics of mathematics that will be used in algebra. In particular, it teaches the various representations of [[Number|numbers]] and how they [[Operation|interact with each other]]. In addition, the field introduces the formal structures of the mathematical language, such as [[Operation|operations]], [[Expression|expressions]], [[Equation|equations]], and [[Inequality|inequalities]], that form the backbone of algebra, as well as the whole domain of mathematics itself. Finally, it lightly delves into algebra by gently covering the topics of [[Function|functions]], [[Polynomial|polynomials]], and [[Graph of Function|graphs]]. 
 
 Despite being a preparatory course for algebra, pre-algebra also introduces several concepts from other mathematical fields, such as [[Geometry|geometry]], [[Number Theory|number theory]], [[Statistics|statistics]], and [[Probability|probability]].
 

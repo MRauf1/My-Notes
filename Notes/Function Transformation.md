@@ -6,7 +6,7 @@ tags:
 
 # Definition
 
-How [[Function|functions]]/function [[Graph|graphs]] transform when modifications are applied.[^1]
+How [[Function|functions]]/function [[Graph of Function|graphs]] transform when modifications are applied.[^1]
 
 # Types
 

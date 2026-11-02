@@ -7,7 +7,7 @@ tags:
 # Definition
 
 > [!info] Definition 1 (Vertical Shift)
-> For a [[Function|function]] $f$ and $k \in \mathbb{R}$, the [[Graph|graph]] of $f(x) + k$ is the graph of $f(x)$ vertically shifted by $k$ units (up if $k > 0$, down if $k < 0$).[^1]
+> For a [[Function|function]] $f$ and $k \in \mathbb{R}$, the [[Graph of Function|graph]] of $f(x) + k$ is the graph of $f(x)$ vertically shifted by $k$ units (up if $k > 0$, down if $k < 0$).[^1]
 
 [[Addition|Adding]] to the output of a function shifts the function up or down.
 

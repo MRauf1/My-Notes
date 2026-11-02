@@ -1,7 +1,6 @@
 ---
 tags:
   - mathematics
-  - complex_analysis
   - calculus
 ---
 

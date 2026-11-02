@@ -7,7 +7,7 @@ tags:
 # Definition
 
 > [!info] Definition 1 (Horizontal Shift)
-> For a [[Function|function]] $f$ and $k \in \mathbb{R}$, the [[Graph|graph]] of $f(x + k)$ is the graph of $f(x)$ horizontally shifted by $k$ units (left if $k > 0$, right if $k < 0$).[^1]
+> For a [[Function|function]] $f$ and $k \in \mathbb{R}$, the [[Graph of Function|graph]] of $f(x + k)$ is the graph of $f(x)$ horizontally shifted by $k$ units (left if $k > 0$, right if $k < 0$).[^1]
 
 [[Addition|Adding]] to the input of a function shifts the function left or right.
 

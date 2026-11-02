@@ -7,7 +7,7 @@ tags:
 # Definition
 > [!info] Dataset Shift[^1]
 > A mismatch between the statistics of the data a model was trained and tested on and those of real-world data, which makes held-out test performance unrepresentative of real-world performance. Its three main forms are:
-> - **Covariate shift**: the distribution of the inputs (\mathbf{x})$ changes, so the model sees regions of the function that were sparsely sampled or unsampled in training.
+> - **Covariate shift**: the distribution of the inputs $p(\mathbf{x})$ changes, so the model sees regions of the function that were sparsely sampled or unsampled in training.
 > - **Prior shift**: the distribution of the outputs (\mathbf{y})$ changes, so outputs that were rare in training, and which the model learned not to predict in ambiguous cases, become common.
 > - **Concept shift**: the relationship (\mathbf{y} | \mathbf{x})$ between input and output changes.
 
