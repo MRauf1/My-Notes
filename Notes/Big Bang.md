@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - introduction_to_physics
+  - astrophysics_and_cosmology
 ---
 
 # Definition

@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - introduction_to_physics
+  - general_relativity
 ---
 
 # Definition

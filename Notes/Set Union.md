@@ -4,7 +4,7 @@ tags:
   - pre_calculus
   - discrete_mathematics
   - statistics
-  - introduction_to_statistics
+  - mathematical_statistics
 ---
 
 # Definition

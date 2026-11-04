@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - mechanics
+  - classical_mechanics
 ---
 
 # Definition

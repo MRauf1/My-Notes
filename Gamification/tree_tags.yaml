@@ -2,43 +2,50 @@
 # A note's home tree is its first subdomain tag (after the domain tag) listed here.
 Abstract Algebra: abstract_algebra
 Artificial Intelligence: artificial_intelligence
+Astrophysics and Cosmology: astrophysics_and_cosmology
 Bayesian Statistics: bayesian_statistics
 Calculus: calculus
 Categorical Variable Prediction: categorical_variable_prediction
+Classical Mechanics: classical_mechanics
 Complex Analysis: complex_analysis
 Computer Architecture: computer_architecture
 Computer Graphics: computer_graphics
 Computer Security: computer_security
 Computer Vision: computer_vision
+Condensed Matter Physics: condensed_matter_physics
 Data Structures and Algorithms: data_structures_and_algorithms
 Decision Theory: decision_theory
 Deep Learning: deep_learning
-Differential Equations: differential_equations
 Differential Geometry: differential_geometry
 Discrete Mathematics: discrete_mathematics
+Electromagnetism: electromagnetism
+General Relativity: general_relativity
 Geometry: geometry
-Introduction to Physics: introduction_to_physics
-Introduction to Statistics: introduction_to_statistics
 Linear Algebra: linear_algebra
 Machine Learning: machine_learning
 Mathematical Statistics: mathematical_statistics
 Measure Theory: measure_theory
-Mechanics: mechanics
 Miscellaneous (Mathematics): miscellaneous
 Monte Carlo Methods: monte_carlo_methods
 Numerical Analysis: numerical_analysis
 Operating Systems: operating_systems
 Optimal Transport: optimal_transport
 Optimization: optimization
+Ordinary Differential Equations: ordinary_differential_equations
 Partial Differential Equations: partial_differential_equations
 Philosophy (Computer Science): philosophy
 Pre-Algebra: pre_algebra
 Pre-Calculus: pre_calculus
 Python: python
+Quantum Field Theory: quantum_field_theory
+Quantum Gravity: quantum_gravity
+Quantum Mechanics: quantum_mechanics
 Real Analysis: real_analysis
 Reinforcement Learning: reinforcement_learning
 Software Engineering: software_engineering
+Standard Model: standard_model
 Statistical Learning: statistical_learning
+Statistical Mechanics and Thermodynamics: statistical_mechanics_and_thermodynamics
 Stochastic Differential Equations: stochastic_differential_equations
 Stochastic Processes: stochastic_processes
 Systems Programming: systems_programming

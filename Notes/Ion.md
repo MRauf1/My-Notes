@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - introduction_to_physics
+  - quantum_mechanics
 ---
 
 # Definition

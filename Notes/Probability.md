@@ -1,7 +1,7 @@
 ---
 tags:
   - statistics
-  - introduction_to_statistics
+  - mathematical_statistics
 ---
 
 # Definition

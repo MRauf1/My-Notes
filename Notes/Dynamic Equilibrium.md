@@ -1,7 +1,7 @@
 ---
 tags:
   - physics
-  - introduction_to_physics
+  - statistical_mechanics_and_thermodynamics
 ---
 
 # Definition

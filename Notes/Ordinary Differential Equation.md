@@ -1,7 +1,7 @@
 ---
 tags:
   - mathematics
-  - differential_equations
+  - ordinary_differential_equations
 ---
 
 # Definition
