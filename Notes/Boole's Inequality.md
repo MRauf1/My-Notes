@@ -18,5 +18,7 @@ Equality holds when the events are [[Mutually Exclusive Events|mutually exclusiv
 # Properties
 - Also called countable subadditivity; the finite case follows from the [[Probability of Set Union]] by induction, the countable case from the [[Continuity Theorem of Probability]].
 - It is the first of the Bonferroni bounds from the [[Probability of Set Union|inclusion-exclusion formula]]; applied to complements it gives [[Bonferroni's Inequality]].
+- Turns guarantees for each fixed object into simultaneous guarantees: if each of $K$ bad events has probability at most $\delta/K$, none occurs with probability at least $1 - \delta$. Combined with [[Hoeffding's Inequality]], this gives the [[Uniform Sampling Simple Regret Bound]] and the [[Finite Hypothesis Class Generalization Bound]] (via a [[Uniform Deviation Bound]]).[^2]
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=35)
+[^2]: [Jiang, Concentration Inequalities and Union Bound (CS 542 notes), p. 3](https://nanjiang.cs.illinois.edu/files/cs542f22/note2.pdf#page=3)

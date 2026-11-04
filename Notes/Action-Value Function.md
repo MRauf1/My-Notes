@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Action-Value Function (Q-Value Function)
+> [!info] Action-Value Function (Q-Value Function)[^1]
 > For a [[Markov Decision Process]] $M$ and [[Policy]] $\pi$, the function $Q^\pi_M: \mathcal{S} \times \mathcal{A} \to \mathbb{R}$ given by
 > $$
 > \begin{align}
@@ -19,3 +19,5 @@ tags:
 - Generalizes the [[Value Function]]: $V^\pi_M(s) = Q^\pi_M(s, \pi(s))$ for a [[Deterministic Policy]] (or the corresponding expectation over $a \sim \pi(s)$ for a [[Stochastic Policy]]).
 - The dependence on $M$ is often left implicit when clear from context.
 - Together with $V^\pi_M$, satisfies the [[Bellman Equation (Policy Evaluation)|Bellman equation]]: $Q^\pi_M(s,a) = R(s,a) + \gamma\,\mathbb{E}_{s' \sim P(s,a)}[V^\pi_M(s')]$.
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 2](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=2)

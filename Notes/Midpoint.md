@@ -10,7 +10,7 @@ tags:
 > For points $P = (x_1, y_1), Q = (x_2, y_2)$, the midpoint is
 > $$
 > \begin{align}
-> (\frac{x_1 + y_1}{2}, \frac{x_2 + y_2}{2})
+> \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)
 > \end{align}
 > $$
 

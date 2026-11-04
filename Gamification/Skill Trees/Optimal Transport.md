@@ -88,7 +88,8 @@ flowchart TD
     n_metric_space --> n_wasserstein_distance
     n_wasserstein_distance --> n_bures_wasserstein_distance
     class n_radon_measure,n_discrete_measure,n_assignment_problem,n_push_forward_measure,n_monge_problem,n_transportation_polytope,n_coupling_probability,n_kantorovich_problem,n_birkhoff_von_neumann_theorem,n_weak_convergence_of_measures,n_kantorovich_duality,n_brenier_s_theorem,n_monge_amp_re_equation,n_one_dimensional_optimal_transport,n_bures_wasserstein_distance,n_total_variation_distance planned;
-    class n_borel_measure,n_dirac_measure,n_probability_mass_function,n_permutation,n_measure_measure_theory,n_convex_set,n_marginal_distribution,n_permutation_matrix,n_convergence_in_distribution,n_absolutely_continuous_measure,n_convex_function,n_quantile_function,n_multivariate_normal_distribution,n_metric_space,n_wasserstein_distance locked;
+    class n_borel_measure,n_dirac_measure,n_probability_mass_function,n_measure_measure_theory,n_convex_set,n_marginal_distribution,n_permutation_matrix,n_convergence_in_distribution,n_absolutely_continuous_measure,n_quantile_function,n_multivariate_normal_distribution,n_metric_space,n_wasserstein_distance locked;
+    class n_permutation,n_convex_function L0;
     class n_borel_measure,n_dirac_measure,n_probability_mass_function,n_permutation,n_measure_measure_theory,n_convex_set,n_marginal_distribution,n_permutation_matrix,n_convergence_in_distribution,n_absolutely_continuous_measure,n_convex_function,n_quantile_function,n_multivariate_normal_distribution,n_metric_space,n_wasserstein_distance internal-link;
 ```
 
@@ -305,7 +306,8 @@ flowchart TD
     n_benamou_brenier_formula --> n_schr_dinger_problem
     n_wasserstein_distance --> n_wasserstein_fisher_rao_distance
     class n_brenier_s_theorem,n_entropic_optimal_transport,n_continuity_equation,n_displacement_interpolation,n_benamou_brenier_formula,n_staggered_grid_discretization,n_proximal_operator,n_douglas_rachford_splitting,n_wasserstein_fisher_rao_distance,n_schr_dinger_problem planned;
-    class n_divergence_of_vector_field,n_transport_equation,n_convex_function,n_brownian_motion,n_wasserstein_distance locked;
+    class n_divergence_of_vector_field,n_transport_equation,n_brownian_motion,n_wasserstein_distance locked;
+    class n_convex_function L0;
     class n_divergence_of_vector_field,n_transport_equation,n_convex_function,n_brownian_motion,n_wasserstein_distance internal-link;
 ```
 
@@ -353,7 +355,8 @@ flowchart TD
     n_empirical_measure --> n_optimal_transport_sample_complexity
     n_wasserstein_distance --> n_optimal_transport_sample_complexity
     class n_radon_measure,n_phi_divergence,n_hellinger_distance,n_integral_probability_metric,n_maximum_mean_discrepancy,n_negative_definite_kernel,n_empirical_measure,n_optimal_transport_sample_complexity planned;
-    class n_absolutely_continuous_measure,n_convex_function,n_expectation,n_hilbert_space,n_dirac_measure,n_empirical_distribution_function,n_wasserstein_distance locked;
+    class n_absolutely_continuous_measure,n_expectation,n_hilbert_space,n_dirac_measure,n_empirical_distribution_function,n_wasserstein_distance locked;
+    class n_convex_function L0;
     class n_absolutely_continuous_measure,n_convex_function,n_expectation,n_hilbert_space,n_dirac_measure,n_empirical_distribution_function,n_wasserstein_distance internal-link;
 ```
 

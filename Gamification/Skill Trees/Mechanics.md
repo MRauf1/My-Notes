@@ -71,8 +71,9 @@ flowchart TD
     n_derivative --> n_velocity_vector
     n_position_vector --> n_velocity_vector
     n_velocity_vector --> n_acceleration_vector
-    class n_function,n_vector,n_derivative,n_dynamics,n_kinematics,n_vector_component,n_position_vector,n_velocity_vector,n_acceleration_vector locked;
+    class n_vector,n_dynamics,n_kinematics,n_vector_component,n_position_vector,n_velocity_vector,n_acceleration_vector locked;
     class n_time,n_mechanics L0;
+    class n_function,n_derivative L3;
     class n_function,n_time,n_vector,n_derivative,n_mechanics,n_dynamics,n_kinematics,n_vector_component,n_position_vector,n_velocity_vector,n_acceleration_vector internal-link;
 ```
 
@@ -123,7 +124,8 @@ flowchart TD
     n_velocity_vector --> n_speed
     n_acceleration_vector --> n_equations_of_motion_for_constant_acceleration
     n_antiderivative --> n_equations_of_motion_for_constant_acceleration
-    class n_velocity_vector,n_acceleration_vector,n_antiderivative,n_speed,n_equations_of_motion_for_constant_acceleration locked;
+    class n_velocity_vector,n_acceleration_vector,n_speed,n_equations_of_motion_for_constant_acceleration locked;
+    class n_antiderivative L0;
     class n_velocity_vector,n_acceleration_vector,n_antiderivative,n_speed,n_equations_of_motion_for_constant_acceleration internal-link;
 ```
 

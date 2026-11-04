@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Advantage Function
+> [!info] Advantage Function[^1]
 > For a [[Markov Decision Process]] and [[Policy]] $\pi$, the advantage of action $a$ at state $s$ over $\pi$ is
 > $$
 > \begin{align}
@@ -18,3 +18,5 @@ tags:
 - $A^\pi(s, \pi(s)) = 0$, since $Q^\pi(s,\pi(s)) = V^\pi(s)$.
 - Central to the [[Performance Difference Lemma]], which expresses the value difference between two policies as an expectation of an advantage.
 - In [[Policy Iteration]], the advantage of the new (greedy) policy over the old one is nonnegative by construction, which underlies the [[Policy Improvement Theorem]].
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 6](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=6)

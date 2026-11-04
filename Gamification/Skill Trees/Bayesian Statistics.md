@@ -112,8 +112,8 @@ flowchart TD
     n_odds --> n_posterior_odds
     n_prior_distribution --> n_hierarchical_model
     n_hyperparameter --> n_hierarchical_model
-    class n_joint_probability_distribution,n_permutation,n_conditional_distribution,n_marginal_distribution,n_bayes_theorem,n_odds,n_hyperparameter,n_estimand,n_causal_inference,n_exchangeability,n_data_distribution,n_prior_distribution,n_posterior_distribution,n_prior_predictive_distribution,n_bayesian_inference,n_credible_interval,n_posterior_odds,n_hierarchical_model locked;
-    class n_statistical_inference,n_covariate L0;
+    class n_joint_probability_distribution,n_conditional_distribution,n_marginal_distribution,n_bayes_theorem,n_odds,n_hyperparameter,n_estimand,n_causal_inference,n_exchangeability,n_data_distribution,n_prior_distribution,n_posterior_distribution,n_prior_predictive_distribution,n_bayesian_inference,n_credible_interval,n_posterior_odds,n_hierarchical_model locked;
+    class n_permutation,n_statistical_inference,n_covariate L0;
     class n_joint_probability_distribution,n_permutation,n_conditional_distribution,n_marginal_distribution,n_bayes_theorem,n_odds,n_hyperparameter,n_statistical_inference,n_estimand,n_causal_inference,n_covariate,n_exchangeability,n_data_distribution,n_prior_distribution,n_posterior_distribution,n_prior_predictive_distribution,n_bayesian_inference,n_credible_interval,n_posterior_odds,n_hierarchical_model internal-link;
 ```
 

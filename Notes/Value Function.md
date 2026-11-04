@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Value Function
+> [!info] Value Function[^1]
 > For a [[Markov Decision Process]] $M$ and [[Policy]] $\pi$, the function $V^\pi_M: \mathcal{S} \to \mathbb{R}$ given by
 > $$
 > \begin{align}
@@ -16,8 +16,10 @@ tags:
 
 # Properties
 - Bounded in $[0, R_{max}/(1-\gamma)]$, since the underlying [[Discounted Return]] is bounded in this range.
-- May differ for different choices of $s_1$, for a fixed policy $\pi$.
+- May differ for different choices of $s_1$, for a fixed policy $\pi$. Averaging over an initial distribution $d_0$ gives the scalar [[Expected Return (Markov Decision Process)|expected return]] $J(\pi) = \mathbb{E}_{s\sim d_0}[V^\pi(s)]$.
 - Closely related to the [[Action-Value Function]] $Q^\pi_M(s,a)$, which additionally conditions on the first action taken.
 - The dependence on $M$ is often left implicit when clear from context.
 - Satisfies the [[Bellman Equation (Policy Evaluation)|Bellman equation]], and can be computed for finite $\mathcal{S}$ via [[Policy Evaluation]].
 - The optimal value function $V^\star$ (see [[Optimal Policy]]) satisfies the [[Bellman Optimality Equation]].
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 2](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=2)

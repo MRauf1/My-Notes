@@ -110,8 +110,9 @@ flowchart TD
     n_divide_and_conquer --> n_recursion_tree
     n_tree --> n_recursion_tree
     n_recursion_tree --> n_domain_transformation
-    class n_proof_by_induction,n_tree,n_reduction,n_recursion,n_divide_and_conquer,n_recursion_tree,n_domain_transformation locked;
+    class n_tree,n_reduction,n_recursion,n_divide_and_conquer,n_recursion_tree,n_domain_transformation locked;
     class n_algorithm L0;
+    class n_proof_by_induction L2;
     class n_algorithm,n_proof_by_induction,n_tree,n_reduction,n_recursion,n_divide_and_conquer,n_recursion_tree,n_domain_transformation internal-link;
 ```
 
@@ -330,7 +331,8 @@ flowchart TD
     n_binary_search_tree --> n_tree_rotation
     n_random_binary_search_tree --> n_treap
     n_tree_rotation --> n_treap
-    class n_logarithm,n_binary_search_tree,n_permutation,n_expectation,n_harmonic_number,n_random_binary_search_tree,n_tree_rotation,n_treap locked;
+    class n_logarithm,n_binary_search_tree,n_expectation,n_harmonic_number,n_random_binary_search_tree,n_tree_rotation,n_treap locked;
+    class n_permutation L0;
     class n_logarithm,n_binary_search_tree,n_permutation,n_expectation,n_harmonic_number,n_random_binary_search_tree,n_tree_rotation,n_treap internal-link;
 ```
 
@@ -500,7 +502,8 @@ flowchart TD
     n_median --> n_quickselect
     n_quickselect --> n_median_of_medians
     n_recursion_tree --> n_median_of_medians
-    class n_quicksort,n_median,n_recursion_tree,n_quickselect,n_median_of_medians locked;
+    class n_quicksort,n_recursion_tree,n_quickselect,n_median_of_medians locked;
+    class n_median L0;
     class n_quicksort,n_median,n_recursion_tree,n_quickselect,n_median_of_medians internal-link;
 ```
 
@@ -529,7 +532,8 @@ flowchart TD
     n_graph --> n_adjacency_lists
     n_adjacency_lists --> n_depth_first_search
     n_stack --> n_depth_first_search
-    class n_graph,n_stack,n_adjacency_matrix,n_adjacency_lists,n_depth_first_search locked;
+    class n_stack,n_adjacency_matrix,n_adjacency_lists,n_depth_first_search locked;
+    class n_graph L0;
     class n_graph,n_stack,n_adjacency_matrix,n_adjacency_lists,n_depth_first_search internal-link;
 ```
 

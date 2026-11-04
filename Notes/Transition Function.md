@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Transition Function
+> [!info] Transition Function[^1]
 > In a [[Markov Decision Process]], the function $P: \mathcal{S} \times \mathcal{A} \to \Delta(\mathcal{S})$, where $P(s' \mid s, a)$ is the probability of transitioning into state $s'$ upon taking action $a$ in state $s$.
 
 # Properties
@@ -13,3 +13,5 @@ tags:
 - Together with the [[Reward Function (Markov Decision Process)|reward function]], [[Discount Factor]], state space, and action space, fully specifies a [[Markov Decision Process]].
 - For a fixed [[Policy]] $\pi$, induces the [[Transition Matrix (Markov Decision Process)|transition matrix]] $P^\pi$, with $[P^\pi]_{s,s'} = \mathbb{E}_{a \sim \pi(s)}[P(s'|s,a)]$.
 - Also represented as a matrix $P \in \mathbb{R}^{|\mathcal{S}\times\mathcal{A}| \times |\mathcal{S}|}$ (not conditioned on a policy), used e.g. in the [[Bellman Flow Equations]] of the [[Dual Linear Program (Markov Decision Process)|dual linear program]] for planning.
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 1](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=1)

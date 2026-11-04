@@ -71,7 +71,9 @@ flowchart TD
     n_relation_upper_bound --> n_zorn_s_lemma
     n_zorn_s_lemma --> n_well_ordering_principle_set_theory
     n_well_ordered_set --> n_well_ordering_principle_set_theory
-    class n_partial_order,n_bijective_function,n_total_order,n_cartesian_product,n_relation_maximal_element,n_relation_upper_bound,n_order_isomorphism,n_well_ordered_set,n_axiom_of_choice,n_hausdorff_maximal_principle,n_zorn_s_lemma,n_well_ordering_principle_set_theory locked;
+    class n_partial_order,n_total_order,n_relation_maximal_element,n_relation_upper_bound,n_order_isomorphism,n_well_ordered_set,n_axiom_of_choice,n_hausdorff_maximal_principle,n_zorn_s_lemma,n_well_ordering_principle_set_theory locked;
+    class n_cartesian_product L0;
+    class n_bijective_function L2;
     class n_partial_order,n_bijective_function,n_total_order,n_cartesian_product,n_relation_maximal_element,n_relation_upper_bound,n_order_isomorphism,n_well_ordered_set,n_axiom_of_choice,n_hausdorff_maximal_principle,n_zorn_s_lemma,n_well_ordering_principle_set_theory internal-link;
 ```
 
@@ -100,7 +102,8 @@ flowchart TD
     n_power_set --> n_cardinality_of_the_continuum
     n_cardinality_of_the_continuum --> n_continuum_hypothesis
     n_countable_set --> n_continuum_hypothesis
-    class n_set_cardinality,n_power_set,n_countable_set,n_cardinality_of_the_continuum,n_continuum_hypothesis locked;
+    class n_power_set,n_cardinality_of_the_continuum,n_continuum_hypothesis locked;
+    class n_set_cardinality,n_countable_set L0;
     class n_set_cardinality,n_power_set,n_countable_set,n_cardinality_of_the_continuum,n_continuum_hypothesis internal-link;
 ```
 
@@ -137,7 +140,8 @@ flowchart TD
     n_initial_segment --> n_set_of_countable_ordinals
     n_well_ordering_principle_set_theory --> n_set_of_countable_ordinals
     n_countable_set --> n_set_of_countable_ordinals
-    class n_well_ordered_set,n_order_isomorphism,n_proof_by_strong_induction,n_well_ordering_principle_set_theory,n_countable_set,n_initial_segment,n_well_ordered_set_comparability_theorem,n_principle_of_transfinite_induction,n_set_of_countable_ordinals locked;
+    class n_well_ordered_set,n_order_isomorphism,n_well_ordering_principle_set_theory,n_initial_segment,n_well_ordered_set_comparability_theorem,n_principle_of_transfinite_induction,n_set_of_countable_ordinals locked;
+    class n_proof_by_strong_induction,n_countable_set L0;
     class n_well_ordered_set,n_order_isomorphism,n_proof_by_strong_induction,n_well_ordering_principle_set_theory,n_countable_set,n_initial_segment,n_well_ordered_set_comparability_theorem,n_principle_of_transfinite_induction,n_set_of_countable_ordinals internal-link;
 ```
 
@@ -167,7 +171,8 @@ flowchart TD
     n_extended_real_number_set --> n_unordered_sum
     n_open_set --> n_open_subset_of_real_line_theorem
     n_countable_set --> n_open_subset_of_real_line_theorem
-    class n_series,n_extended_real_number_set,n_open_set,n_countable_set,n_unordered_sum,n_open_subset_of_real_line_theorem locked;
+    class n_series,n_extended_real_number_set,n_open_set,n_unordered_sum,n_open_subset_of_real_line_theorem locked;
+    class n_countable_set L0;
     class n_series,n_extended_real_number_set,n_open_set,n_countable_set,n_unordered_sum,n_open_subset_of_real_line_theorem internal-link;
 ```
 
@@ -276,7 +281,8 @@ flowchart TD
     n_set_complement --> n_algebra_of_sets
     n_set_complement --> n_countable_cocountable_sigma_algebra
     n_set_complement --> n_sigma_field
-    class n_collection_of_set,n_countable_set,n_closed_set,n_open_set,n_cartesian_product,n_disjoint_set_union,n_symmetric_difference,n_power_set,n_event,n_set_complement,n_algebra_of_sets,n_countable_cocountable_sigma_algebra,n_generated_sigma_algebra,n_f_sigma_set,n_g_delta_set,n_borel_sigma_algebra,n_product_sigma_algebra,n_elementary_family,n_ring_of_sets,n_sigma_field locked;
+    class n_closed_set,n_open_set,n_disjoint_set_union,n_symmetric_difference,n_power_set,n_event,n_algebra_of_sets,n_countable_cocountable_sigma_algebra,n_generated_sigma_algebra,n_f_sigma_set,n_g_delta_set,n_borel_sigma_algebra,n_product_sigma_algebra,n_elementary_family,n_ring_of_sets,n_sigma_field locked;
+    class n_collection_of_set,n_countable_set,n_cartesian_product,n_set_complement L0;
     class n_collection_of_set,n_countable_set,n_closed_set,n_open_set,n_cartesian_product,n_disjoint_set_union,n_symmetric_difference,n_power_set,n_event,n_set_complement,n_algebra_of_sets,n_countable_cocountable_sigma_algebra,n_generated_sigma_algebra,n_f_sigma_set,n_g_delta_set,n_borel_sigma_algebra,n_product_sigma_algebra,n_elementary_family,n_ring_of_sets,n_sigma_field internal-link;
 ```
 
@@ -428,7 +434,8 @@ flowchart TD
     n_borel_sigma_algebra --> n_borel_measure
     n_measure_measure_theory --> n_borel_measure
     n_lebesgue_stieltjes_measure_regularity --> n_lebesgue_measure
-    class n_carath_odory_extension_theorem,n_elementary_family,n_measure_completion_theorem,n_increasing_function,n_g_delta_set,n_f_sigma_set,n_open_subset_of_real_line_theorem,n_cantor_set,n_borel_sigma_algebra,n_measure_measure_theory,n_lebesgue_stieltjes_measure,n_lebesgue_stieltjes_measure_regularity,n_cantor_function,n_generalized_cantor_set,n_borel_measure,n_lebesgue_measure locked;
+    class n_carath_odory_extension_theorem,n_elementary_family,n_measure_completion_theorem,n_g_delta_set,n_f_sigma_set,n_open_subset_of_real_line_theorem,n_cantor_set,n_borel_sigma_algebra,n_measure_measure_theory,n_lebesgue_stieltjes_measure,n_lebesgue_stieltjes_measure_regularity,n_cantor_function,n_generalized_cantor_set,n_borel_measure,n_lebesgue_measure locked;
+    class n_increasing_function L0;
     class n_carath_odory_extension_theorem,n_elementary_family,n_measure_completion_theorem,n_increasing_function,n_g_delta_set,n_f_sigma_set,n_open_subset_of_real_line_theorem,n_cantor_set,n_borel_sigma_algebra,n_measure_measure_theory,n_lebesgue_stieltjes_measure,n_lebesgue_stieltjes_measure_regularity,n_cantor_function,n_generalized_cantor_set,n_borel_measure,n_lebesgue_measure internal-link;
 ```
 

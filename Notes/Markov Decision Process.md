@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Markov Decision Process (MDP)
+> [!info] Markov Decision Process (MDP)[^1]
 > A tuple $M = (\mathcal{S}, \mathcal{A}, P, R, \gamma)$ modeling the interaction between an agent and an environment, specified by:
 > - State space $\mathcal{S}$ (finite).
 > - Action space $\mathcal{A}$ (finite).
@@ -23,3 +23,5 @@ tags:
 
 # Types
 - [[Finite-Horizon Markov Decision Process]]
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 1](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=1)

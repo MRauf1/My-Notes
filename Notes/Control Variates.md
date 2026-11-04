@@ -25,5 +25,6 @@ Everything depends on $\rho$: an uncorrelated control variate does nothing, and 
 # Properties
 - Unbiased for any $\alpha$, unlike most variance-reduction techniques, which must be applied carefully to avoid introducing bias.
 - Improves [[Monte Carlo Estimator Efficiency|efficiency]] precisely when a control variate correlated with $f$ and cheap to integrate exactly is available.
+- RL instances: the baseline in the [[Policy Gradient Theorem]], and the [[Doubly Robust Estimator]] (coefficient $1$, with a reward model as the control).
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)

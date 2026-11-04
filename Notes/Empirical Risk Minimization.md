@@ -18,5 +18,6 @@ Minimizing the [[Mean|average]] error/risk over all the training data (empirical
 
 # Properties
 - Depending on the [[Loss Function|loss function]] $L$, ERM often has an interpretation as [[Maximum Likelihood Learning|maximum likelihood]] probabilistic inference: searching for the hypothesis $f$ that assigns the highest probability to the observed data.
+- Its excess risk over the best hypothesis in the class is at most twice the [[Uniform Deviation Bound]]. For a finite class and 0–1 loss this gives the [[Finite Hypothesis Class Generalization Bound]] $\sqrt{\frac{2}{n}\ln\frac{2|\mathcal{F}|}{\delta}}$.
 
 [^1]: https://visionbook.mit.edu/intro_to_learning.html

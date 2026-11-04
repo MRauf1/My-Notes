@@ -4,7 +4,8 @@
 Usage:
     python3 skill_trees.py status [--tree NAME]
     python3 skill_trees.py next [--tree NAME] [--node TITLE]
-    python3 skill_trees.py record TITLE --level K --result correct|partial|incorrect [--hints N]
+    python3 skill_trees.py record TITLE --level K --result correct|partial|incorrect [--hints N] [--bonus]
+    python3 skill_trees.py record TITLE --attempted K --source check --result correct|partial|incorrect [--hints N]
     python3 skill_trees.py stuck TITLE --required K
     python3 skill_trees.py add TREE TITLE [--prereq TITLE ...] [--group NAME]
     python3 skill_trees.py edge FROM_TITLE TO_TITLE
@@ -13,7 +14,7 @@ Usage:
     python3 skill_trees.py tree-for TITLE
     python3 skill_trees.py place-order
     python3 skill_trees.py place-next [TREE]
-    python3 skill_trees.py place-record TITLE --level K --result pass|fail
+    python3 skill_trees.py place-record TITLE --level K --result pass|fail [--bonus]
     python3 skill_trees.py place-status [TREE]
     python3 skill_trees.py place-reset TREE
     python3 skill_trees.py render
@@ -51,9 +52,14 @@ Rules:
     - Level-up to k: 1 correct answer for k = 1, 2 correct answers otherwise.
       A correct answer needing 2+ hints, or a partial answer, changes nothing;
       an incorrect answer resets progress (no level loss).
-    - Mastered nodes (level >= 3) go rusty after RUST_DAYS[level] days without
-      a test. A rust check is asked at the current level: pass refreshes it,
-      fail drops one level.
+    - Mastered nodes (level >= 3) go rusty after their rust interval without
+      a test. The interval starts at RUST_DAYS[level] whenever the level
+      changes, and each clean pass of a rust check doubles it (up to
+      RUST_CAP_DAYS), as in spaced repetition. A rust check is asked at the
+      current level: pass refreshes it, fail drops one level.
+    - A /check of a solved problem (record --attempted K) counts like a quiz
+      answer at the node's next level when K is above the current level, and
+      confirms the current level otherwise; it never lowers a level.
     - Being stuck on an ability at level k (via /stuck) sets the level to
       min(level, k - 1).
 Placement (adaptive, per tree, bottom-up across trees):
@@ -62,6 +68,8 @@ Placement (adaptive, per tree, bottom-up across trees):
       descendants) + 1). Pass at k raises the node and all its ancestors (in
       every tree) to k; fail marks the node and its in-tree descendants as
       below k for that stage. Levels are only ever raised.
+    - --bonus credits a node for a correct, self-contained part of another
+      node's question: pass-only, and it uses no question budget.
     - Placed levels are provisional: the next quiz on such a node is a
       "placement check" at its current level (fail drops one level).
 """
@@ -90,7 +98,8 @@ TREE_TAGS_FILE = VAULT_ROOT / "Gamification" / "tree_tags.yaml"  # tree name -> 
 LEVEL_NAMES = ["Discovered", "Recall", "Apply", "Prove", "Wield", "Command"]
 MAX_LEVEL = 5
 MASTERED = 3
-RUST_DAYS = {3: 60, 4: 90, 5: 180}
+RUST_DAYS = {3: 60, 4: 90, 5: 180}  # base rust interval per level
+RUST_CAP_DAYS = 4 * 365
 FRONTIER_SHARE = 2 / 3  # chance of a frontier question when review is also possible
 RECENT_SKIP = 2  # don't quiz the same node again within this many questions
 RECENT_KEEP = 10
@@ -170,12 +179,17 @@ def level_of(data, title):
     return data["nodes"].get(title, {}).get("level", 0)
 
 
+def rust_interval(e):
+    """Days a mastered node stays fresh: the level's base, doubled by each passed rust check."""
+    return max(e.get("rust_interval", 0), RUST_DAYS[e["level"]])
+
+
 def is_rusty(data, title):
     e = data["nodes"].get(title)
     if not e or e.get("level", 0) < MASTERED or not e.get("last_tested"):
         return False
     last = dt.date.fromisoformat(str(e["last_tested"]))
-    return (today() - last).days > RUST_DAYS[e["level"]]
+    return (today() - last).days > rust_interval(e)
 
 
 # ---------------------------------------------------------------- tree parsing
@@ -545,7 +559,9 @@ def print_choice(data, title, k, reason, graph):
 
 
 def log_history(e, frm, to, why):
+    """Log a level change. Every level change restarts the rust interval at the new level's base."""
     e["history"].append(f"{today().isoformat()} L{frm}->L{to} {why}")
+    e.pop("rust_interval", None)
 
 
 def cmd_record(args):
@@ -554,8 +570,20 @@ def cmd_record(args):
         sys.exit(f"No note 'Notes/{args.title}.md'.")
     e = entry(data, args.title)
     lv, k = e["level"], args.level
+    if (k is None) == (args.attempted is None):
+        sys.exit("Give exactly one of --level (quiz: the level asked) or --attempted (check: the level the proof shows).")
+    if args.attempted is not None:
+        # A solved problem shows ability up to the attempted level, so it counts toward the next level;
+        # a failed one never costs a level here (errors recalibrate through `stuck`).
+        k = lv + 1 if args.attempted > lv else lv
+        if k == lv and args.result != "correct":
+            return print(f"{args.title}: no level change (attempted L{args.attempted} is not above current L{lv})")
+    if args.bonus and (args.result != "correct" or k not in (lv, lv + 1)):
+        return print(f"{args.title}: no bonus credit (bonus needs a correct answer at L{lv} or L{lv + 1})")
+    was_rusty = is_rusty(data, args.title)
     e["last_tested"] = today().isoformat()
-    data["recent"] = ([args.title] + [t for t in data["recent"] if t != args.title])[:RECENT_KEEP]
+    if not args.bonus:
+        data["recent"] = ([args.title] + [t for t in data["recent"] if t != args.title])[:RECENT_KEEP]
     clean = args.result == "correct" and args.hints <= 1
     msg = "no level change"
     if k == lv + 1:
@@ -563,7 +591,7 @@ def cmd_record(args):
             e["progress"] += 1
             needed = 1 if k == 1 else 2
             if e["progress"] >= needed:
-                log_history(e, lv, k, "quiz")
+                log_history(e, lv, k, args.source)
                 e["level"], e["progress"] = k, 0
                 msg = f"LEVEL UP: L{lv} -> L{k} ({LEVEL_NAMES[k]})"
             else:
@@ -578,6 +606,9 @@ def cmd_record(args):
             msg = f"level down: L{lv} -> L{lv - 1}"
         else:
             msg = f"L{lv} confirmed"
+            if was_rusty and clean:
+                e["rust_interval"] = min(2 * rust_interval(e), RUST_CAP_DAYS)
+                msg += f" (next rust check in {e['rust_interval']} days)"
     else:
         sys.exit(f"Level {k} doesn't match the node (current L{lv}; ask at L{lv} or L{lv + 1}).")
     if e.get("provisional") and (k == lv or clean):
@@ -585,7 +616,7 @@ def cmd_record(args):
         msg += " (placement level checked)"
     save_mastery(data)
     render_all()
-    print(f"{args.title}: {msg}")
+    print(f"{args.title}: {msg}" + (" (bonus)" if args.bonus else ""))
 
 
 def cmd_stuck(args):
@@ -987,9 +1018,13 @@ def cmd_place_record(args):
         sys.exit(f"'{title}' is not a node with a note.")
     if k not in (2, 3):
         sys.exit("Placement asks at L2 or L3 only.")
+    if args.bonus and args.result != "pass":
+        sys.exit("Bonus credit is pass-only: a part that wasn't asked about a node can't count against it.")
     pl = Placement(graph, data, tree)
     newly_below = (tree_descendants(graph, pl.deps, title, tree) & set(pl.undetermined(k))) - {title}
-    pl.state["asked"].append({"node": title, "level": k, "result": args.result, "date": today().isoformat()})
+    # Bonus credit (a correct part of another node's question) is kept apart so it uses no question budget.
+    pl.state.setdefault("bonus" if args.bonus else "asked", []).append(
+        {"node": title, "level": k, "result": args.result, "date": today().isoformat()})
     if args.result == "pass":
         raised = []
         for t in [title] + sorted(ancestors(graph, title)):
@@ -997,7 +1032,8 @@ def cmd_place_record(args):
                 continue
             e = entry(data, t)
             if e["level"] < k:
-                log_history(e, e["level"], k, "placement" if t == title else f"placement (prerequisite of {title})")
+                why = ("placement bonus" if args.bonus else "placement") if t == title else f"placement (prerequisite of {title})"
+                log_history(e, e["level"], k, why)
                 e["level"], e["progress"], e["provisional"] = k, 0, True
                 e["last_tested"] = today().isoformat()
                 raised.append(t)
@@ -1192,9 +1228,13 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("status"); s.add_argument("--tree"); s.set_defaults(f=cmd_status)
     s = sub.add_parser("next"); s.add_argument("--tree"); s.add_argument("--node"); s.set_defaults(f=cmd_next)
-    s = sub.add_parser("record"); s.add_argument("title"); s.add_argument("--level", type=int, required=True)
+    s = sub.add_parser("record"); s.add_argument("title"); s.add_argument("--level", type=int)
+    s.add_argument("--attempted", type=int, help="/check: level the solved problem demonstrates (credits toward the next level)")
+    s.add_argument("--source", choices=["quiz", "check"], default="quiz")
     s.add_argument("--result", choices=["correct", "partial", "incorrect"], required=True)
-    s.add_argument("--hints", type=int, default=0); s.set_defaults(f=cmd_record)
+    s.add_argument("--hints", type=int, default=0)
+    s.add_argument("--bonus", action="store_true", help="credit from a correct part of another node's question")
+    s.set_defaults(f=cmd_record)
     s = sub.add_parser("stuck"); s.add_argument("title"); s.add_argument("--required", type=int, required=True); s.set_defaults(f=cmd_stuck)
     s = sub.add_parser("add"); s.add_argument("tree"); s.add_argument("title")
     s.add_argument("--prereq", action="append", default=[]); s.add_argument("--group")
@@ -1207,7 +1247,9 @@ def main():
     s = sub.add_parser("place-order"); s.set_defaults(f=cmd_place_order)
     s = sub.add_parser("place-next"); s.add_argument("tree", nargs="?"); s.set_defaults(f=cmd_place_next)
     s = sub.add_parser("place-record"); s.add_argument("title"); s.add_argument("--level", type=int, required=True)
-    s.add_argument("--result", choices=["pass", "fail"], required=True); s.set_defaults(f=cmd_place_record)
+    s.add_argument("--result", choices=["pass", "fail"], required=True)
+    s.add_argument("--bonus", action="store_true", help="pass from a correct part of another node's question (uses no budget)")
+    s.set_defaults(f=cmd_place_record)
     s = sub.add_parser("place-status"); s.add_argument("tree", nargs="?"); s.set_defaults(f=cmd_place_status)
     s = sub.add_parser("place-reset"); s.add_argument("tree"); s.set_defaults(f=cmd_place_reset)
     s = sub.add_parser("render"); s.set_defaults(f=cmd_render)

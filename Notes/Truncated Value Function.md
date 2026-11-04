@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] $H$-Step Truncated Value Function
+> [!info] $H$-Step Truncated Value Function[^1]
 > For a [[Markov Decision Process]] and stationary [[Policy]] $\pi$, the expected finite-horizon return over the first $H$ steps:
 > $$
 > \begin{align}
@@ -17,3 +17,5 @@ tags:
 - $V^{\star,H}(s) := \max_\pi V^{\pi,H}(s)$ is within $\gamma^H R_{max}/(1-\gamma)$ of the true [[Value Function|value]] $V^\star(s)$, for every $s \in \mathcal{S}$: $V^\star(s) - \gamma^H R_{max}/(1-\gamma) \leq V^{\star,H}(s) \leq V^\star(s)$.
 - The optimal $H$-step policy may need to be non-stationary, unlike the stationary [[Optimal Policy]] of the infinite-horizon setting.
 - Provides an alternative (finite-horizon) derivation of the convergence rate of [[Value Iteration]].
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 9](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=9)

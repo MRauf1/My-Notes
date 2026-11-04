@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Bellman Optimality Equation
+> [!info] Bellman Optimality Equation[^1]
 > For a [[Markov Decision Process]], the [[Optimal Policy|optimal]] value functions $V^\star$ and $Q^\star$ satisfy, for all $s \in \mathcal{S}, a \in \mathcal{A}$:
 > $$
 > \begin{align}
@@ -17,3 +17,5 @@ tags:
 # Properties
 - Analogous to the [[Bellman Equation (Policy Evaluation)|Bellman equation for policy evaluation]], but with the expectation over actions taken by a fixed policy replaced by a maximization over actions.
 - Can be written concisely as $Q^\star = \mathcal{T} Q^\star$ using the [[Bellman Optimality Operator]] $\mathcal{T}$, i.e. $Q^\star$ is the fixed point of $\mathcal{T}$.
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 4](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=4)

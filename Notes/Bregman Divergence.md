@@ -30,5 +30,6 @@ tags:
 	- $\psi(t) = t\log t - t \Rightarrow D_\psi(y \| \hat{y}) = y\log\frac{y}{\hat{y}} - (y - \hat{y})$, the generalized KL / [[Poisson Distribution]] NLL.
 	- $\psi(\mathbf{p}) = \sum_k p_k \log p_k$ on the simplex gives the [[Kullback-Leibler Divergence]].
 - Unifies the likelihood and geometric families of the [[Loss Function Taxonomy]].
+- The proximity term in [[Mirror Descent]]; with negative entropy on the simplex it is the KL divergence.
 
 [^1]: Supplementary notes provided by the creator.

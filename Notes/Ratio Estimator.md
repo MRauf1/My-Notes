@@ -18,7 +18,7 @@ Two complications compared with [[Simple Monte Carlo]]:[^2] $E(\hat{\theta}) \ne
 # Properties
 - [[Bias and Consistency of an Estimator|Biased but consistent]]: $\hat{\theta} \to \theta$ almost surely when $E(X) \neq 0$, since $\bar{X}$ and $\bar{Y}$ converge by the [[Strong Law of Large Numbers]] and the ratio is continuous there.
 - Distinct from $E(Y/X)$, which may not even exist when $X$ has positive density at $0$ ([[Infinite Moments in Monte Carlo]]).
-- Underlies [[Monte Carlo Estimation of a Conditional Expectation]] and self-normalized importance sampling.
+- Underlies [[Monte Carlo Estimation of a Conditional Expectation]] and [[Self-Normalized Importance Sampling]].
 
 [^1]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=30&annotation=5PCNFNUL)
 [^2]: [Owen, Monte Carlo Theory, Methods and Examples](zotero://open-pdf/library/items/TXMSRRI3?page=30&annotation=7DKZ7C5X)

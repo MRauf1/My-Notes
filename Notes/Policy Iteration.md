@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Policy Iteration
+> [!info] Policy Iteration[^1]
 > An algorithm for [[Planning]] that starts from an arbitrary policy $\pi_0$ and repeats, for $k = 1, 2, \dots$:
 > $$
 > \begin{align}
@@ -19,3 +19,6 @@ tags:
 - Since only stationary deterministic policies are searched over, and a distinct policy is found every iteration, the algorithm is guaranteed to terminate in at most $|\mathcal{A}|^{|\mathcal{S}|}$ iterations.
 - Guaranteed to improve monotonically until $\pi^\star$ is found (see [[Policy Improvement Theorem]]).
 - Its worst-case iteration complexity is not fully understood, but it enjoys exponential convergence to an approximate solution (see [[Policy Iteration Exponential Convergence]]).
+- [[Natural Policy Gradient]] with softmax policies is a "soft" policy iteration: it moves each $\pi(\cdot|s)$ only partway toward the greedy action.
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 6](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=6)

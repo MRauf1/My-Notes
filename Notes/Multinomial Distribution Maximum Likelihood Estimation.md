@@ -19,4 +19,6 @@ tags:
 
 ## [[Hypothesis Test]]
 - [[Multinomial Distribution Maximum Likelihood Estimation Likelihood Ratio Test]]
-- [[Multinomial Distribution Maximum Likelihood Estimation Score Test]]
+- [[Multinomial Distribution Maximum Likelihood Estimation Score Test]
+- In tabular [[Certainty-Equivalence (Reinforcement Learning)|certainty-equivalence]], the estimated transition $\widehat{P}(\cdot \mid s,a)$ is this MLE. Its $\ell_1$ error is controlled by the [[Empirical Distribution L1 Concentration Bound]].
+]

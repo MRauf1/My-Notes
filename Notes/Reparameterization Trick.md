@@ -30,5 +30,6 @@ tags:
 - The normal case is the [[Multivariate Normal Distribution Affine Transformation|affine transformation]] of a standard normal; any square root of $\boldsymbol{\Sigma}$ works, e.g. the Cholesky factor ([[Multivariate Normal Sampling (Cholesky Factorization)]]). With a diagonal $\boldsymbol{\Sigma}$ it is elementwise scaling by the standard deviations.
 - Also called the *pathwise* gradient estimator; it typically has much lower variance than the score-function estimator $\mathbb{E}_q\left[a[\mathbf{z}]\,\nabla_{\boldsymbol{\theta}} \log q(\mathbf{z}|\boldsymbol{\theta})\right]$, which is the alternative when no such reparameterization exists (e.g. discrete $\mathbf{z}$).
 - Requires $a[\mathbf{t}[\boldsymbol{\epsilon}, \boldsymbol{\theta}]]$ to be differentiable in $\boldsymbol{\theta}$; it is the same idea as [[Reparameterization (Differentiable Monte Carlo)|reparameterization in differentiable Monte Carlo]], which handles discontinuous integrands by moving them to fixed locations.
+- The score-function alternative, which needs no differentiable sampling path, is [[REINFORCE]].
 
 [^1]: [Prince, p. 339](zotero://open-pdf/library/items/BWT7FYX5?page=353&annotation=8CUGHIKA); [Prince, p. 339](zotero://open-pdf/library/items/BWT7FYX5?page=353&annotation=TNLFLVVV)

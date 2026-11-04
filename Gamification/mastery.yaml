@@ -1,0 +1,1340 @@
+# Generated and updated by Scripts/skill_trees.py. Edit by hand only to fix mistakes.
+nodes:
+  2D Cartesian Coordinate System:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Absolute Maximum:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Absolute Minimum:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Addition:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Angle:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Angle Degree Radian Conversion:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Area:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    - 2026-11-02 L2->L3 placement (prerequisite of Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Area of Region Under Curve:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    - 2026-11-02 L2->L3 placement (prerequisite of Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Argument:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Axis:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Bellman Residual Telescoping Identity:
+    history: []
+    last_tested: null
+    level: 0
+    progress: 0
+  Bijective Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Binary Operation:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Binomial:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Bonferroni's Inequality:
+    history: []
+    last_tested: null
+    level: 0
+    progress: 0
+  Boole's Inequality:
+    history: []
+    last_tested: null
+    level: 0
+    progress: 0
+  Bound Variable:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Bounded Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Bounded Set:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Cartesian Coordinate System:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Circle:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Codomain:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Common Multiple:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Least Common Multiple)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Conclusion:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Constant:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Continuous Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative Quotient Rule)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Continuous Function on Interval:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Coordinate System:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Cosine Function:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Decimal:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Definite Riemann Integral:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Degree of Polynomial:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Derivative:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Derivative Chain Rule:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Derivative Quotient Rule:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Derivative of Cosine Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Derivative of Inverse Tangent Function:
+    history:
+    - 2026-11-02 L0->L2 placement bonus
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Derivative of Sine Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Derivative of Tangent Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Difference Quotient of Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Differentiable Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Differentiable Implies Continuous:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative Quotient Rule)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Distance:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Division:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Equivalent Fractions Property)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Domain:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Double Riemann Integral:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Empirical Risk Minimization:
+    history: []
+    last_tested: null
+    level: 0
+    progress: 0
+  Equality:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Proportion)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Equation:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Proportion)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Equivalent Fractions:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Equivalent Fractions Property)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Equivalent Fractions Property:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Exponentiation:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Decimal)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Expression:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Extreme Value Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Factor:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Prime Number)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Fermat's Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Fitted Q-Iteration:
+    history: []
+    last_tested: null
+    level: 0
+    progress: 0
+  Fraction:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Equivalent Fractions Property)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Free Variable:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Function Composition:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Function Maximum:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Function Minimum:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Identity Property:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Identity Property of Multiplication)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Identity Property of Multiplication:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Inequality:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Injective Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Integer:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplication of Signed Numbers)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Intercept:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Interval Notation:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Inverse Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Inverse Trigonometric Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Irrational Number:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Least Common Multiple:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Limit of Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Limit of Function Quotient Law:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative Quotient Rule)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Limit of Function Squeeze Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Limit of Function at Infinity:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    - 2026-11-02 L2->L3 placement (prerequisite of Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Line:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Local Maximum:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Local Minimum:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Logic:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Mean Value Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Midpoint:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Monomial:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Binomial)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Multiple:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Least Common Multiple)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Multiplication:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Multiplication of Signed Numbers:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Multiplicity:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Natural Number:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Whole Number)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Number:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Whole Number)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Number Line:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Coordinate System)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  One-Sided Continuous Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  One-Sided Limit of Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Operation:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Binary Operation)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Ordered Pair:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Origin:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Partition:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Peano Axioms:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Pi:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Point:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Polynomial:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Binomial)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Polynomial Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Premise:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Prime Number:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Proof:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Proof by Induction:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Proof of Universal Quantifier:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Proportion:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Proposition:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Pythagorean Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Quantifier:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Range:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Ratio:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Proportion)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Rational Number:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Ray:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Real Number:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Relation:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Riemann Integral:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Riemann Sum:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Right Angle:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Right Triangle:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Rolle's Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Secant Line:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Set:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Set Lower Bound:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Set Upper Bound:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Set of Integers:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Set of Rational Numbers:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Set of Real Numbers:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Shape:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
+    - 2026-11-02 L2->L3 placement (prerequisite of Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Sine Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Slope:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Square Root:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Surjective Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Tangent Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Tangent Line:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
+      Function Theorem)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Term:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Triangle:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Trigonometric Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Unit Circle:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
+    - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Universal Quantifier:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Universe of Discourse:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Variable:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Whole Number:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Term)
+    - 2026-11-02 L2->L3 placement
+    last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Zero Derivative Implies Constant Function Theorem:
+    history:
+    - 2026-11-02 L0->L2 placement
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Zeros of Function:
+    history:
+    - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
+    last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+placement:
+  Calculus:
+    asked:
+    - date: '2026-11-02'
+      level: 2
+      node: Zero Derivative Implies Constant Function Theorem
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Fundamental Theorem of Calculus
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Line Riemann Integral
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Hyperbolic Function Identities
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Double Riemann Integral
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Hyperbolic Cosecant Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Hyperbolic Secant Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Derivative of Power Series
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Hyperbolic Sine Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Hyperbolic Cosine Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Limit of Function Power Law
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Continuous Function Addition Rule
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Differentiable Function
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: One-Sided Continuous Function
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Derivative Quotient Rule
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: Riemann Integral
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: Derivative of Sine Function
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: Derivative of Tangent Function
+      result: fail
+    bonus:
+    - date: '2026-11-02'
+      level: 2
+      node: Derivative of Inverse Tangent Function
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Derivative Chain Rule
+      result: pass
+  Pre-Algebra:
+    asked:
+    - date: '2026-11-02'
+      level: 2
+      node: Term
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Triangle
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Equivalent Fractions Property
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Linear Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Least Common Multiple
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Proportion
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Binomial
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Identity Property of Multiplication
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Prime Number
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Multiplication of Signed Numbers
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Decimal
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Irrational Number
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Multiplication
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Whole Number
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: Expression
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Binary Operation
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: Angle
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Coordinate System
+      result: pass
+  Pre-Calculus:
+    asked:
+    - date: '2026-11-02'
+      level: 2
+      node: Inverse Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Pythagorean Identities
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Multiplicity
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Midpoint
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Cosine Function
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Function Maximum
+      result: pass
+    - date: '2026-11-02'
+      level: 2
+      node: Quadratic Formula
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Increasing Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Parity of Function
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Function Transformation
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Remainder Theorem
+      result: fail
+    - date: '2026-11-02'
+      level: 2
+      node: Synthetic Division
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Function
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Distance
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Set
+      result: pass
+    - date: '2026-11-02'
+      level: 3
+      node: Cartesian Coordinate System
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Relation
+      result: fail
+    - date: '2026-11-02'
+      level: 3
+      node: Line
+      result: fail
+recent: []

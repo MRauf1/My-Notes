@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Value Iteration
+> [!info] Value Iteration[^1]
 > An algorithm for [[Planning]] that computes a sequence of Q-value functions $Q^{\star,0}, Q^{\star,1}, \dots, Q^{\star,H}$ directly approximating $Q^\star$ (without alternating between value functions and policies as in [[Policy Iteration]]), via
 > $$
 > \begin{align}
@@ -26,3 +26,6 @@ $$
 - The suboptimality of the [[Greedy Policy]] of $Q^{\star,H}$ follows from the [[Approximate Greedy Policy Suboptimality Bound]]: $\|V^\star - V^{\pi_{Q^{\star,H}}}\|_\infty \leq 2\gamma^H R_{max}/(1-\gamma)^2$.
 - Convergence can be monitored without knowing $Q^\star$ via the [[Bellman Error]] $\|f - \mathcal{T}f\|_\infty$ of the iterates.
 - Outputting the non-stationary policy $\pi_{Q^{\star,H}}, \pi_{Q^{\star,H-1}}, \dots, \pi_{Q^{\star,1}}$ (instead of the greedy policy of the final iterate alone) achieves suboptimality $\gamma^H R_{max}/(1-\gamma)$, dropping a factor of the effective horizon compared to using a single stationary policy.
+- [[Fitted Q-Iteration]] is its sample-based version with function approximation: each $\mathcal{T}$ step is replaced by a least-squares regression onto a class $\mathcal{F}$. The same non-stationary trick gives [[Non-Stationary Fitted Q-Iteration]].
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 8](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=8)

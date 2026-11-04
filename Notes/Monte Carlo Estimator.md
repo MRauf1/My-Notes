@@ -37,6 +37,7 @@ The simplest case is uniform sampling on an interval:[^2] $\int_a^b g(x)\,dx = (
 - Its variance can be reduced without changing $p$ via [[Stratified Sampling]] or [[Control Variates]], or by choosing $p$ close to the [[Optimal Importance Sampling Distribution]].
 - Instantiated recursively by [[Path Tracing (Recursive Estimator)|path tracing]] to estimate the [[Light Transport Equation]], and by extension the [[Path Integral (Light Transport)|path integral]] over [[Path Space]].
 - The core estimator of every [[Monte Carlo Method]]; when $p$ can only be evaluated up to a normalizing constant, samples are drawn by [[Markov Chain Monte Carlo]] instead.
+- Estimating an expectation under $p$ with samples from another $q$ is [[Importance Sampling]].
 
 [^1]: Differentiable Monte Carlo — Course Lecture Notes, University of Illinois (Fall 2026)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=311)

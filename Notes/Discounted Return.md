@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Discounted Return
+> [!info] Discounted Return[^1]
 > In a [[Markov Decision Process]], the discounted sum of rewards along a [[Trajectory]], $\sum_{t=1}^{\infty} \gamma^{t-1} r_t$, where $\gamma$ is the [[Discount Factor]]. The agent's goal is to choose a [[Policy]] $\pi$ maximizing its expectation, $\mathbb{E}\left[\sum_{t=1}^{\infty} \gamma^{t-1} r_t \mid \pi, s_1\right]$, called the value.
 
 # Properties
@@ -17,3 +17,5 @@ $$
 $$
 along any actual trajectory, and so is its expectation of any form.
 - The [[Value Function]] $V^\pi_M(s)$ is the expected discounted return conditioned on starting at state $s$ and following $\pi$; the [[Action-Value Function]] $Q^\pi_M(s,a)$ additionally conditions on the first action $a$.
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 2](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=2)

@@ -5,7 +5,7 @@ tags:
 ---
 
 # Definition
-> [!info] Dual Linear Program (Markov Decision Process)
+> [!info] Dual Linear Program (Markov Decision Process)[^1]
 > The dual of the [[Primal Linear Program (Markov Decision Process)|primal LP]]:
 > $$
 > \begin{align}
@@ -19,3 +19,5 @@ tags:
 - The decision variable $d$ can be interpreted as the [[State-Action Occupancy|discounted state-action occupancy]] of a stationary (possibly stochastic) policy starting from $d_0$, so $d^\top R$ is that policy's expected return — hence the objective is maximized, unlike the primal.
 - The feasible region is exactly the set of discounted state-action occupancies of all stationary policies.
 - Given any feasible $d$, the inducing policy can be recovered as $\pi(a|s) = d(s,a) / \sum_{a'\in\mathcal{A}} d(s,a')$; applied to the optimal solution, this recovers $\pi^\star$.
+
+[^1]: [Jiang, MDP Preliminaries (CS 542 notes), p. 11](https://nanjiang.cs.illinois.edu/files/cs542f22/note1.pdf#page=11)
