@@ -32,6 +32,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  And:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Angle:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
@@ -45,6 +52,14 @@ nodes:
     - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
     - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Antisymmetric Relation:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Partial Order)
+    - 2026-11-04 L2->L3 placement (prerequisite of Partial Order)
+    last_tested: '2026-11-04'
     level: 3
     progress: 0
     provisional: true
@@ -84,6 +99,13 @@ nodes:
     last_tested: null
     level: 0
     progress: 0
+  Biconditional Statement:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Proof of Biconditional)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Bijective Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
@@ -119,7 +141,7 @@ nodes:
   Bound Variable:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -144,6 +166,20 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Cartesian Product:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Pascal's Identity)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Cartesian Product Set Cardinality:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Pascal's Identity)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Circle:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
@@ -159,6 +195,13 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Combination:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Pascal's Identity)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Common Multiple:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Least Common Multiple)
@@ -170,6 +213,13 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Conditional Statement:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -198,6 +248,13 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Contradiction:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Proof by Contradiction)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Coordinate System:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
@@ -210,6 +267,13 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  DeMorgan's Laws:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -313,10 +377,31 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Direct Proof:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Distance:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Divides:
+    history:
+    - 2026-11-04 L0->L2 placement bonus
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Divisible:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Divides)
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -363,6 +448,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Equivalence Relation:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Equivalent Fractions:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Equivalent Fractions Property)
@@ -374,6 +466,13 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Existential Quantifier:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Divides)
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -431,7 +530,7 @@ nodes:
   Free Variable:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -538,6 +637,13 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Irreflexive Relation:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Strict Partial Order)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Least Common Multiple:
     history:
     - 2026-11-02 L0->L2 placement
@@ -614,8 +720,9 @@ nodes:
   Logic:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-04 L2->L3 placement
+    last_tested: '2026-11-04'
+    level: 3
     progress: 0
     provisional: true
   Mean Value Theorem:
@@ -677,6 +784,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Not:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Number:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Term)
@@ -717,6 +831,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Or:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Ordered Pair:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
@@ -733,6 +854,14 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Partial Order:
+    history:
+    - 2026-11-04 L0->L2 placement
+    - 2026-11-04 L2->L3 placement
+    last_tested: '2026-11-04'
+    level: 3
+    progress: 0
+    provisional: true
   Partition:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
@@ -740,10 +869,24 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Pascal's Identity:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Peano Axioms:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Permutation (Combinatorics):
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Pascal's Identity)
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -777,6 +920,13 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Power Set:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Premise:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
@@ -798,10 +948,38 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Proof by Cases:
+    history:
+    - 2026-11-04 L0->L2 placement bonus
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Proof by Contradiction:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Proof by Induction:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Proof of Biconditional:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Proof of Existential Quantifier:
+    history:
+    - 2026-11-04 L0->L2 placement bonus
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -822,7 +1000,7 @@ nodes:
   Proposition:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -836,7 +1014,7 @@ nodes:
   Quantifier:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -877,6 +1055,14 @@ nodes:
       Function Theorem)
     last_tested: '2026-11-02'
     level: 2
+    progress: 0
+    provisional: true
+  Reflexive Relation:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Partial Order)
+    - 2026-11-04 L2->L3 placement (prerequisite of Partial Order)
+    last_tested: '2026-11-04'
+    level: 3
     progress: 0
     provisional: true
   Relation:
@@ -941,10 +1127,38 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Set Cardinality:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Pascal's Identity)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Set Difference:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Symmetric Difference)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Set Equality:
+    history:
+    - 2026-11-04 L0->L2 placement bonus
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Set Lower Bound:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Set Union:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Symmetric Difference)
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -1008,10 +1222,38 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Strict Partial Order:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Subset:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Power Set)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Surjective Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Symmetric Difference:
+    history:
+    - 2026-11-04 L0->L2 placement
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Symmetric Relation:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Equivalence Relation)
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -1038,6 +1280,14 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Transitive Relation:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Partial Order)
+    - 2026-11-04 L2->L3 placement (prerequisite of Partial Order)
+    last_tested: '2026-11-04'
+    level: 3
+    progress: 0
+    provisional: true
   Triangle:
     history:
     - 2026-11-02 L0->L2 placement
@@ -1053,6 +1303,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Truth Table:
+    history:
+    - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
+    last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
   Unit Circle:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
@@ -1064,14 +1321,14 @@ nodes:
   Universal Quantifier:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
   Universe of Discourse:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
+    last_tested: '2026-11-04'
     level: 2
     progress: 0
     provisional: true
@@ -1188,6 +1445,117 @@ placement:
     - date: '2026-11-02'
       level: 2
       node: Derivative Chain Rule
+      result: pass
+  Discrete Mathematics:
+    asked:
+    - date: '2026-11-04'
+      level: 2
+      node: Direct Proof
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Partial Order
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Symmetric Difference
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Superset
+      result: fail
+    - date: '2026-11-04'
+      level: 2
+      node: Power Set
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Proof by Contradiction
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Proof of Biconditional
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Strict Partial Order
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Equivalence Relation
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Pascal's Identity
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Double Negation Law
+      result: fail
+    - date: '2026-11-04'
+      level: 2
+      node: DeMorgan's Laws
+      result: pass
+    - date: '2026-11-04'
+      level: 3
+      node: Truth Table
+      result: fail
+    - date: '2026-11-04'
+      level: 3
+      node: Argument
+      result: fail
+    - date: '2026-11-04'
+      level: 3
+      node: Quantifier
+      result: fail
+    - date: '2026-11-04'
+      level: 3
+      node: Proposition
+      result: fail
+    - date: '2026-11-04'
+      level: 3
+      node: Partial Order
+      result: pass
+    - date: '2026-11-04'
+      level: 3
+      node: Logic
+      result: pass
+    bonus:
+    - date: '2026-11-04'
+      level: 2
+      node: Divides
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Proof of Existential Quantifier
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Antisymmetric Relation
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Reflexive Relation
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Proof by Cases
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Set Equality
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Proof of Universal Quantifier
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Irreflexive Relation
+      result: pass
+    - date: '2026-11-04'
+      level: 2
+      node: Free Variable
       result: pass
   Pre-Algebra:
     asked:

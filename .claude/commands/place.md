@@ -16,7 +16,7 @@ Run the skill-tree placement test: a short adaptive test that sets my starting m
 
 ## Finish
 When a tree is done:
-- Show `place-status "<Tree>"` and that tree's stats line (the `**Mastered:**` line at the top of its file in `Gamification/Skill Trees/`).
+- Show `place-status "<Tree>"` and that tree's stats (the `**Mastered:**` line and the level table at the top of its file in `Gamification/Skill Trees/`).
 - Summarize in 2–3 sentences where my L2 and L3 boundaries fell, naming notable strong and weak areas.
 - Then offer to continue with the next tree from `place-order`.
 

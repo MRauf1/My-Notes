@@ -4,9 +4,10 @@ Process the following raw highlighted reading material into atomic Zettelkasten 
 2. Extract the citation and attach it to the generated notes.
 3. Check note titles in `Notes/` to resolve internal [[Wikilinks]]. When reading a candidate note to decide links or patches, read only its first ~20 lines (tags and definition callout), never the whole file. Never print a skill tree's source block; look nodes up with `rg` instead.
 4. Write the new notes and patch reciprocal links in relevant existing notes.
-5. For notes on substantive theorems, propositions, or lemmas (not plain definitions or minor facts), add a `# Questions` section with the two card kinds defined in CLAUDE.md §5:
+5. For notes on substantive theorems, propositions, or lemmas (not plain definitions or minor facts), add a `# Questions` section with the three card kinds defined in CLAUDE.md §5:
    - 1-4 *Understanding* cards.
    - At most 2 *Application* cards, only when the connection to a project in `Learning/Research Profile.md` is genuine. Read the profile before writing them.
+   - At most 1 *Connection* card, only when the same idea appears precisely in another subfield, preferably one with a vault note (link it). Give the dictionary and where it breaks.
    - **Whole-document input** (an entire paper, chapter, or lecture note rather than my highlights): at most 2 cards per note in total, and no cards for corollaries or minor results.
    Only include questions you can answer with certainty, and verify every counterexample and cited paper. Skip a question rather than guess. If the note already has a `# Questions` section, add to it without duplicating existing questions.
 6. **Add each new note to the skill trees** (rules in CLAUDE.md §6). Every note in a technical domain (`mathematics`, `statistics`, `computer_science`, `physics`) gets a node. Skip notes in other domains unless their subdomain tag has a tree in `Gamification/tree_tags.yaml`.
