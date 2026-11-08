@@ -6,7 +6,7 @@
 | **At this level** | 60 | 0 | 0 | 0 | 0 | 0 |
 | **Reached (this level or higher)** | 60 | 0 | 0 | 0 | 0 | 0 |
 
-**Next up:** [[Axiom of Choice]], [[Outer Measure]], [[Order Isomorphism]], [[Cardinality of the Continuum]]
+**Next up:** [[Axiom of Choice]], [[Order Isomorphism]], [[Cardinality of the Continuum]], [[Outer Measure]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->
@@ -288,8 +288,9 @@ flowchart TD
     n_set_complement --> n_algebra_of_sets
     n_set_complement --> n_countable_cocountable_sigma_algebra
     n_set_complement --> n_sigma_field
-    class n_closed_set,n_open_set,n_disjoint_set_union,n_event,n_algebra_of_sets,n_countable_cocountable_sigma_algebra,n_generated_sigma_algebra,n_f_sigma_set,n_g_delta_set,n_borel_sigma_algebra,n_product_sigma_algebra,n_elementary_family,n_ring_of_sets,n_sigma_field locked;
+    class n_closed_set,n_open_set,n_disjoint_set_union,n_algebra_of_sets,n_countable_cocountable_sigma_algebra,n_generated_sigma_algebra,n_f_sigma_set,n_g_delta_set,n_borel_sigma_algebra,n_product_sigma_algebra,n_elementary_family,n_ring_of_sets,n_sigma_field locked;
     class n_collection_of_set,n_countable_set,n_set_complement L0;
+    class n_event L1;
     class n_cartesian_product,n_symmetric_difference,n_power_set L2;
     class n_collection_of_set,n_countable_set,n_closed_set,n_open_set,n_cartesian_product,n_disjoint_set_union,n_symmetric_difference,n_power_set,n_event,n_set_complement,n_algebra_of_sets,n_countable_cocountable_sigma_algebra,n_generated_sigma_algebra,n_f_sigma_set,n_g_delta_set,n_borel_sigma_algebra,n_product_sigma_algebra,n_elementary_family,n_ring_of_sets,n_sigma_field internal-link;
 ```
@@ -500,7 +501,8 @@ flowchart TD
     n_probability --> n_probability_space
     n_probability_space --> n_density_with_respect_to_a_measure
     n_change_of_variables --> n_density_with_respect_to_a_measure
-    class n_measure_measure_theory,n_probability,n_change_of_variables,n_probability_space,n_density_with_respect_to_a_measure locked;
+    class n_measure_measure_theory,n_change_of_variables,n_probability_space,n_density_with_respect_to_a_measure locked;
+    class n_probability L1;
     class n_measure_measure_theory,n_probability,n_change_of_variables,n_probability_space,n_density_with_respect_to_a_measure internal-link;
 ```
 

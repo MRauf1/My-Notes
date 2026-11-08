@@ -19,6 +19,7 @@ The power set of a set $A$ is the set of all [[Subset|subsets]] of $A$.
 # Properties
 
 - $\operatorname{card}(\mathcal{P}(\mathbb{N})) = \mathfrak{c}$: see [[Cardinality of the Continuum]].
+- No set is equinumerous with its power set: $|A| < |\mathcal{P}(A)|$ ([[Cantor's Theorem]]).
 - $\mathcal{P}(A \cap B) = \mathcal{P}(A) \cap \mathcal{P}(B)$
 - $\mathcal{P}(X)$ is always a [[Sigma-Field|$\sigma$-algebra]], but for uncountable $X$ it is usually too large to carry a reasonable measure ([[Banach-Tarski Paradox]]).
 

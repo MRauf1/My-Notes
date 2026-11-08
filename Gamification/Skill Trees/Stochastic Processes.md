@@ -35,8 +35,8 @@ flowchart TD
     n_random_variable --> n_stochastic_process
     n_expectation --> n_random_walk_mean_squared_displacement
     n_random_walk --> n_random_walk_mean_squared_displacement
-    class n_random_variable,n_expectation,n_stochastic_process,n_random_walk_mean_squared_displacement locked;
-    class n_random_walk L0;
+    class n_expectation,n_stochastic_process,n_random_walk_mean_squared_displacement locked;
+    class n_random_variable,n_random_walk L0;
     class n_random_variable,n_expectation,n_stochastic_process,n_random_walk,n_random_walk_mean_squared_displacement internal-link;
 ```
 

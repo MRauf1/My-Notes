@@ -6,7 +6,7 @@
 | **At this level** | 262 | 0 | 0 | 0 | 0 | 0 |
 | **Reached (this level or higher)** | 262 | 0 | 0 | 0 | 0 | 0 |
 
-**Next up:** [[Kronecker Delta]], [[Algebraic Structures]], [[Dot Product]]
+**Next up:** [[Algebraic Structures]], [[Dot Product]], [[Kronecker Delta]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->

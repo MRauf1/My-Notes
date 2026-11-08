@@ -6,7 +6,7 @@
 | **At this level** | 156 | 0 | 0 | 1 | 0 | 0 |
 | **Reached (this level or higher)** | 157 | 1 | 1 | 1 | 0 | 0 |
 
-**Next up:** [[Abstract Simplex]], [[Coordinate Function]], [[Point Addition]], [[Point Scalar Multiplication]]
+**Next up:** [[Coordinate Function]], [[Point Addition]], [[Point Scalar Multiplication]], [[Abstract Simplex]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->

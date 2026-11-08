@@ -129,15 +129,21 @@ nodes:
     progress: 0
     provisional: true
   Bonferroni's Inequality:
-    history: []
-    last_tested: null
-    level: 0
-    progress: 0
+    banked:
+      3: 1
+    history:
+    - 2026-11-04 L0->L1 quiz bonus
+    last_tested: '2026-11-04'
+    level: 1
+    progress: 1
   Boole's Inequality:
-    history: []
-    last_tested: null
-    level: 0
-    progress: 0
+    banked:
+      3: 1
+    history:
+    - 2026-11-04 L0->L1 quiz bonus
+    last_tested: '2026-11-04'
+    level: 1
+    progress: 1
   Bound Variable:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
@@ -216,6 +222,22 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Conditional Distribution:
+    banked:
+      3: 1
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
+  Conditional Expectation:
+    banked:
+      3: 1
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Conditional Statement:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
@@ -271,12 +293,13 @@ nodes:
     progress: 0
     provisional: true
   DeMorgan's Laws:
+    banked:
+      4: 1
     history:
     - 2026-11-04 L0->L2 placement
     last_tested: '2026-11-04'
     level: 2
-    progress: 0
-    provisional: true
+    progress: 1
   Decimal:
     history:
     - 2026-11-02 L0->L2 placement
@@ -469,6 +492,12 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Event:
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Existential Quantifier:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Divides)
@@ -578,6 +607,14 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Independent Random Variable:
+    banked:
+      3: 1
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Inequality:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
@@ -776,6 +813,12 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Mutually Exclusive Events:
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Natural Number:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Term)
@@ -941,6 +984,28 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Probability:
+    banked:
+      3: 1
+    history:
+    - 2026-11-04 L0->L1 quiz bonus
+    last_tested: '2026-11-04'
+    level: 1
+    progress: 1
+  Probability of Complement:
+    banked:
+      3: 1
+    history:
+    - 2026-11-04 L0->L1 quiz bonus
+    last_tested: '2026-11-04'
+    level: 1
+    progress: 1
+  Probability of Subset:
+    history:
+    - 2026-11-04 L0->L1 quiz bonus
+    last_tested: '2026-11-04'
+    level: 1
+    progress: 1
   Proof:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
@@ -953,8 +1018,7 @@ nodes:
     - 2026-11-04 L0->L2 placement bonus
     last_tested: '2026-11-04'
     level: 2
-    progress: 0
-    provisional: true
+    progress: 1
   Proof by Contradiction:
     history:
     - 2026-11-04 L0->L2 placement
@@ -1003,7 +1067,6 @@ nodes:
     last_tested: '2026-11-04'
     level: 2
     progress: 0
-    provisional: true
   Pythagorean Theorem:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
@@ -1018,6 +1081,12 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Random Experiment:
+    history:
+    - 2026-11-05 L0->L1 quiz
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Range:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
@@ -1110,6 +1179,12 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Sample Space:
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Secant Line:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
@@ -1135,19 +1210,19 @@ nodes:
     progress: 0
     provisional: true
   Set Difference:
+    banked:
+      4: 1
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Symmetric Difference)
     last_tested: '2026-11-04'
     level: 2
-    progress: 0
-    provisional: true
+    progress: 1
   Set Equality:
     history:
     - 2026-11-04 L0->L2 placement bonus
     last_tested: '2026-11-04'
     level: 2
-    progress: 0
-    provisional: true
+    progress: 1
   Set Lower Bound:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
@@ -1222,6 +1297,12 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Statistical Analysis:
+    history:
+    - 2026-11-05 L0->L1 quiz
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Strict Partial Order:
     history:
     - 2026-11-04 L0->L2 placement
@@ -1243,6 +1324,14 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Survivorship Bias:
+    banked:
+      3: 1
+    history:
+    - 2026-11-05 L0->L1 quiz
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 0
   Symmetric Difference:
     history:
     - 2026-11-04 L0->L2 placement
@@ -1310,6 +1399,12 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Unbiased Estimator:
+    history:
+    - 2026-11-05 L0->L1 quiz bonus
+    last_tested: '2026-11-05'
+    level: 1
+    progress: 1
   Unit Circle:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
@@ -1705,4 +1800,9 @@ placement:
       level: 3
       node: Line
       result: fail
-recent: []
+recent:
+- Survivorship Bias
+- Statistical Analysis
+- Random Experiment
+- Set Difference
+- Proposition

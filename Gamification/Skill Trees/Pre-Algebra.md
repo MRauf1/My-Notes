@@ -6,7 +6,7 @@
 | **At this level** | 77 | 0 | 29 | 28 | 0 | 0 |
 | **Reached (this level or higher)** | 134 | 57 | 57 | 28 | 0 | 0 |
 
-**Next up:** [[Pre-Algebra]], [[Unary Operation]], [[Mean]], [[Trapezoid]], [[Identity Property]]
+**Next up:** [[Pre-Algebra]], [[Unary Operation]], [[Identity Property]], [[Commutative Property]], [[Perimeter]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->
@@ -315,8 +315,8 @@ flowchart TD
     n_exponentiation --> n_perfect_square
     n_exponentiation --> n_square_root
     n_frequency --> n_mode
-    class n_frequency,n_arithmetic_mean,n_geometric_mean,n_mode locked;
-    class n_nth_root,n_equivalent_decimals,n_repeating_decimal,n_mean,n_median,n_rate,n_perfect_square L0;
+    class n_arithmetic_mean,n_geometric_mean,n_mode locked;
+    class n_nth_root,n_frequency,n_equivalent_decimals,n_repeating_decimal,n_mean,n_median,n_rate,n_perfect_square L0;
     class n_exponentiation,n_inequality,n_decimal,n_square_root L2;
     class n_fraction,n_shape,n_number,n_division,n_circle,n_pi,n_ratio L3;
     class n_exponentiation,n_fraction,n_shape,n_number,n_division,n_nth_root,n_inequality,n_frequency,n_decimal,n_equivalent_decimals,n_repeating_decimal,n_circle,n_pi,n_mean,n_arithmetic_mean,n_geometric_mean,n_median,n_mode,n_ratio,n_rate,n_perfect_square,n_square_root internal-link;

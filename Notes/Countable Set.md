@@ -9,7 +9,7 @@ tags:
 > A [[Set]] $C$ is countable if $C$ is finite or has as many elements as there are positive integers, i.e. there is a [[Bijective Function|bijection]] $C \to \mathbb{N}$. In the latter case $C$ is called countably infinite. A set that is not countable is uncountable.
 
 # Properties
-- $\mathbb{N}$, $\mathbb{Z}$, and $\mathbb{Q}$ are countably infinite; $\mathbb{R}$ and every [[Non-degenerate Interval]] are uncountable. The [[Set of Binary Sequences Uncountability Theorem|set of all binary (0/1) sequences]] is likewise uncountable.
+- $\mathbb{N}$, $\mathbb{Z}$, and $\mathbb{Q}$ are countably infinite; $\mathbb{R}$ and every [[Non-degenerate Interval]] are uncountable. The [[Set of Binary Sequences Uncountability Theorem|set of all binary (0/1) sequences]] is likewise uncountable, as is $\mathcal{P}(\mathbb{Z}^+)$ ([[Cantor's Theorem]]).
 - A countable union of countable sets is countable. More generally, if $A$ is at most countable and $B_\alpha$ is at most countable for every $\alpha \in A$, then $\bigcup_{\alpha \in A} B_\alpha$ is at most countable.[^2]
 - If $A$ is a countable set, then the set of all $n$-tuples $(a_1, \dots, a_n)$ with each $a_k \in A$ (not necessarily distinct) is countable.[^2] This is how one shows $\mathbb{Q}$ is countable, by viewing a rational number as a pair of integers.
 - (Folland) If $X$ and $Y$ are countable, so is $X \times Y$; if $A$ is countable and each $X_\alpha$ is countable, then $\bigcup_{\alpha \in A} X_\alpha$ is countable; and if $X$ is countably infinite, then $\operatorname{card}(X) = \operatorname{card}(\mathbb{N})$. Consequently $\mathbb{Z}$ and $\mathbb{Q}$ are countable.[^5]

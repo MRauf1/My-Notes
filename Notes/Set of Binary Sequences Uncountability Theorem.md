@@ -12,6 +12,6 @@ tags:
 This is proved by a diagonal argument: given any sequence of elements of $A$, one constructs an element of $A$ that differs from the $n$th listed element in its $n$th digit, so no sequence of elements of $A$ can enumerate all of $A$.
 
 # Properties
-- Since $A \sim \mathcal{P}(\mathbb{N})$ (each binary sequence is the indicator sequence of a subset of $\mathbb{N}$), this is equivalent to [[Power Set|the power set]] of a countable set being uncountable.
+- Since $A \sim \mathcal{P}(\mathbb{N})$ (each binary sequence is the indicator sequence of a subset of $\mathbb{N}$), this is equivalent to [[Power Set|the power set]] of a countable set being uncountable, i.e. to [[Cantor's Theorem]].
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=39)

@@ -6,7 +6,7 @@
 | **At this level** | 75 | 0 | 0 | 0 | 0 | 0 |
 | **Reached (this level or higher)** | 75 | 0 | 0 | 0 | 0 | 0 |
 
-**Next up:** [[Gödel's Incompleteness Theorem]], [[Turing Machine]], [[Graph]], [[Asymptotic Relationship]]
+**Next up:** [[Graph]], [[Asymptotic Relationship]], [[Gödel's Incompleteness Theorem]], [[Turing Machine]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->

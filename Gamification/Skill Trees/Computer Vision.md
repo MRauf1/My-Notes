@@ -6,7 +6,7 @@
 | **At this level** | 116 | 0 | 0 | 0 | 0 | 0 |
 | **Reached (this level or higher)** | 116 | 0 | 0 | 0 | 0 | 0 |
 
-**Next up:** [[Signal (Signal Processing)]], [[Hermite Polynomial]], [[Sinusoid (Signal Processing)]]
+**Next up:** [[Signal (Signal Processing)]], [[Sinusoid (Signal Processing)]], [[Hermite Polynomial]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->

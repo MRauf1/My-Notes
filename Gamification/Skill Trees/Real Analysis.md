@@ -6,7 +6,7 @@
 | **At this level** | 257 | 0 | 11 | 0 | 0 | 0 |
 | **Reached (this level or higher)** | 268 | 11 | 11 | 0 | 0 | 0 |
 
-**Next up:** [[Maximum]], [[Minimum]], [[Integral]], [[Partition]], [[Mesh of Partition]]
+**Next up:** [[Maximum]], [[Minimum]], [[Peano Axioms]], [[Set of Integers]], [[Set of Rational Numbers]]
 
 Legend: dashed grey = planned (no note yet) · dark grey = locked · white L0 Discovered · green L1 Recall · blue L2 Apply · purple L3 Prove (Mastered) · orange L4 Wield · gold L5 Command · brown dashed border = rusty
 <!-- END STATS -->

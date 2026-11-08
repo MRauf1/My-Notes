@@ -3,8 +3,9 @@
 
 Usage:
     python3 skill_trees.py status [--tree NAME]
-    python3 skill_trees.py next [--tree NAME] [--node TITLE]
-    python3 skill_trees.py record TITLE --level K --result correct|partial|incorrect [--hints N] [--bonus]
+    python3 skill_trees.py next [--tree NAME] [--node TITLE] [--progressive]
+    python3 skill_trees.py recall-next [--tree NAME] [--count N]
+    python3 skill_trees.py record TITLE --level K --result correct|partial|incorrect [--hints N] [--bonus [--closed-book]]
     python3 skill_trees.py record TITLE --attempted K --source check --result correct|partial|incorrect [--hints N]
     python3 skill_trees.py stuck TITLE --required K
     python3 skill_trees.py add TREE TITLE [--prereq TITLE ...] [--group NAME]
@@ -19,6 +20,7 @@ Usage:
     python3 skill_trees.py place-reset TREE
     python3 skill_trees.py render
     python3 skill_trees.py check
+    python3 skill_trees.py archive-logs [--days N]
 
 Requires: PyYAML (`python-yaml`).
 
@@ -47,8 +49,10 @@ title by node_id(). A label with no matching Notes/<Title>.md is "planned".
 Levels (stored in Gamification/mastery.yaml, keyed by note title):
     0 Discovered  1 Recall  2 Apply  3 Prove (= Mastered)  4 Wield  5 Command
 Rules:
-    - Attempting level k on a node requires every prerequisite at level
-      >= min(k, 3). Planned prerequisites never satisfy this.
+    - Reach gating: attempting level k <= 3 on a node requires every
+      prerequisite at >= L1 (its statement is known); attempting L4/L5
+      requires every prerequisite at >= L3. Planned prerequisites never
+      satisfy this.
     - Level-up to k: 1 correct answer for k = 1, 2 correct answers otherwise.
       A correct answer needing 2+ hints, or a partial answer, changes nothing;
       an incorrect answer resets progress (no level loss).
@@ -57,6 +61,24 @@ Rules:
       ascending order. A tier above the next level banks its credit, which
       becomes that level's progress once the level below it is reached
       (cascading, so banked credit can complete further level-ups).
+    - --bonus (downward credit) credits a node used in a non-routine step of a
+      correct part of another node's question: a use at level k gives one
+      credit at each level from the node's next level up to k (capped at
+      LADDER_SPAN levels), banked as above. Pass-only. L1 is never credited
+      this way unless the part was answered closed-book (--closed-book); a use
+      at L4+ counts only as L3 until the node is mastered.
+    - Audits: a level of L2+ reached without any direct (non-bonus) credit at
+      that level is flagged for an audit with probability AUDIT_RATE. `next`
+      asks pending audits at the node's current level; fail drops one level.
+      Pass rates are kept in mastery.yaml (audit_stats).
+    - Reach anchors (`next`, below L3): among research-spine nodes (targets in
+      research_targets.yaml plus all their ancestors; every tree's nodes once
+      the spine has no attemptable node), pick the one whose
+      number of below-L3 ancestors is closest to the tree's stretch s. Clean
+      anchor tiers at L2+ multiply s by REACH_GROW, partial ones by REACH_PARTIAL; an incorrect one halves it
+      and restricts later anchors to that node's ancestors (descend) until
+      one of them passes cleanly: a binary search for the highest node whose
+      quiz certifies the most of what lies below it.
     - Mastered nodes (level >= 3) go rusty after their rust interval without
       a test. The interval starts at RUST_DAYS[level] whenever the level
       changes, and each clean pass of a rust check doubles it (up to
@@ -77,6 +99,13 @@ Placement (adaptive, per tree, bottom-up across trees):
       node's question: pass-only, and it uses no question budget.
     - Placed levels are provisional: the next quiz on such a node is a
       "placement check" at its current level (fail drops one level).
+Logs (archive-logs, also run after every record / stuck / place-record):
+    - Quiz Log History and Stuck Log Entries (one line per entry, newest
+      first) older than ARCHIVE_DAYS move to Learning/Archive/<Log> <YYYY>-Q<n>.md,
+      so the live logs stay small. Look up a node's past with
+      `rg -F "[[<Note>]]" Learning/` instead of reading the logs.
+    - The Stuck Log's # Patterns section gets a generated gap-type table
+      (counts over live + archived entries, last 30 days, recent notes).
 """
 
 import argparse
@@ -109,6 +138,20 @@ FRONTIER_SHARE = 2 / 3  # chance of a frontier question when review is also poss
 RECENT_SKIP = 2  # don't quiz the same node again within this many questions
 RECENT_KEEP = 10
 LADDER_SPAN = 3  # tiers per quiz: the asked level and up to two levels above it
+PREREQ_FLOOR = 1  # reach gating: L1-L3 attempts need every prerequisite at this level
+AUDIT_RATE = 0.15  # chance that a level reached only through downward credit is audited
+AUDIT_SHARE = 1 / 3  # chance `next` serves a pending audit when there is one
+REACH_START, REACH_MIN, REACH_MAX = 8.0, 1.0, 64.0  # stretch: below-L3 ancestors a reach anchor aims for
+REACH_GROW = 1.25  # stretch factor per clean anchor tier (three clean tiers ~ doubles it)
+REACH_PARTIAL = 0.8  # stretch factor per partial anchor tier
+TARGETS_FILE = VAULT_ROOT / "Gamification" / "research_targets.yaml"  # research-spine targets
+LEARNING_DIR = VAULT_ROOT / "Learning"
+ARCHIVE_DIR = LEARNING_DIR / "Archive"
+LOGS = {"Quiz Log": "# History", "Stuck Log": "# Entries"}  # log file -> heading its entries live under
+ARCHIVE_DAYS = 60  # entries older than this move to Learning/Archive/<Log> <YYYY>-Q<n>.md
+ENTRY_RE = re.compile(r"^- \*\*(\d{4}-\d{2}-\d{2})\*\*")
+PATTERNS_BEGIN = "<!-- BEGIN GAP STATS (generated by Scripts/skill_trees.py archive-logs; do not edit) -->"
+PATTERNS_END = "<!-- END GAP STATS -->"
 
 STATE_BEGIN = "%% BEGIN STATE (generated by Scripts/skill_trees.py; do not edit)"
 STATE_END = "%% END STATE"
@@ -279,10 +322,13 @@ class Graph:
         self.title = {}
         self.prereqs = {}
         self.order = {}
+        self.chapter = {}  # position of the node's group in its home tree (source/chapter order)
         for t in self.trees:
             for idx, (i, title) in enumerate(t.home):
                 self.home_tree[title] = t.name
                 self.order[title] = (t.name, idx)
+                g = t.group.get(i)
+                self.chapter[title] = t.group_order.index(g) if g in t.group_order else len(t.group_order)
             self.title.update(t.titles())
         for t in self.trees:
             for a, b in t.edges:
@@ -301,8 +347,13 @@ class Graph:
         return d
 
     def can_attempt(self, data, title, k):
-        need = min(k, MASTERED)
+        need = prereq_need(k)
         return all(level_of(data, p) >= need for p in self.prereqs.get(title, ()))
+
+
+def prereq_need(k):
+    """Level every prerequisite needs before level k can be attempted (reach gating)."""
+    return min(k, PREREQ_FLOOR) if k <= MASTERED else MASTERED
 
 
 # ---------------------------------------------------------------- rendering
@@ -329,7 +380,7 @@ def tree_stats(tree, graph, data):
 
 
 def frontier(graph, data, tree_name=None):
-    """Attemptable nodes below Mastered, in progressive (depth, file) order."""
+    """Attemptable nodes below Mastered, in progressive order: group (chapter) first, then prerequisite depth, then file order."""
     out = []
     for title, home in graph.home_tree.items():
         if tree_name and home != tree_name:
@@ -338,7 +389,7 @@ def frontier(graph, data, tree_name=None):
         if 0 <= lv < MASTERED and graph.can_attempt(data, title, lv + 1):
             out.append(title)
     memo = {}
-    out.sort(key=lambda t: (graph.depth(t, memo), graph.order[t]))
+    out.sort(key=lambda t: (graph.chapter.get(t, 0), graph.depth(t, memo), graph.order[t]))
     return out
 
 
@@ -357,6 +408,89 @@ def review_pool(graph, data, tree_name=None):
             growing.append(title)
     rusty.sort(key=lambda t: str(data["nodes"][t].get("last_tested")))
     return rusty, growing
+
+
+def research_spine(graph):
+    """Research targets (research_targets.yaml) plus all their ancestors."""
+    targets = []
+    if TARGETS_FILE.exists():
+        targets = [t for t in (yaml.safe_load(TARGETS_FILE.read_text(encoding="utf-8")) or []) if t in graph.home_tree]
+    out = set(targets)
+    for t in targets:
+        out |= ancestors(graph, t)
+    return out
+
+
+def stretch(data, tree):
+    return data.get("reach", {}).get("stretch", {}).get(tree, REACH_START)
+
+
+def reach_pick(graph, data, tree_name=None, recent=()):
+    """Reach anchor: the node below L3 (research spine first, then any tree) whose count of below-L3
+    ancestors is closest to its tree's stretch (restricted to the ancestors of a recently failed anchor
+    while descending).
+    Returns (title, unverified_count) or None."""
+    spine = research_spine(graph)
+    cands = []
+    for pool in (spine, graph.home_tree):  # spine first; once it has no attemptable node, every tree
+        lv = {t: level_of(data, t) for t in pool}
+        cands = [t for t in pool if 0 <= lv[t] < MASTERED and t not in recent
+                 and (not tree_name or graph.home_tree.get(t) == tree_name)
+                 and graph.can_attempt(data, t, lv[t] + 1)]
+        if cands:
+            break
+    descend = data.get("reach", {}).get("descend")
+    if descend in graph.home_tree:
+        below = ancestors(graph, descend)
+        cands = [t for t in cands if t in below] or cands
+    if not cands:
+        return None
+    unv = {t: sum(1 for a in ancestors(graph, t) if 0 <= lv.get(a, level_of(data, a)) < MASTERED) for t in cands}
+    best = min(cands, key=lambda t: (abs(unv[t] - stretch(data, graph.home_tree[t])), graph.chapter.get(t, 0), graph.order[t]))
+    return best, unv[best]
+
+
+def downward_targets(graph, data, title, limit=8):
+    """Below-L3 ancestors (with notes) nearest to `title`: the nodes a reach quiz should exercise non-routinely."""
+    seen, frontier_, out = {title}, [title], []
+    while frontier_ and len(out) < limit:
+        nxt = []
+        for x in frontier_:
+            for p in sorted(graph.prereqs.get(x, ())):
+                if p not in seen:
+                    seen.add(p)
+                    nxt.append(p)
+                    if 0 <= level_of(data, p) < MASTERED and len(out) < limit:
+                        out.append(p)
+        frontier_ = nxt
+    return out
+
+
+def pending_audits(data, recent=()):
+    out = [(str(e.get("last_tested")), t) for t, e in data["nodes"].items()
+           if e.get("audit") and e.get("audit") == e.get("level") and t not in recent and note_exists(t)]
+    return [t for _, t in sorted(out)]
+
+
+def update_reach(graph, data, title, k, result, clean):
+    """Binary-search the stretch from a direct quiz tier on a node below L3 (L2+ tiers only)."""
+    tree = graph.home_tree.get(title)
+    if not tree or k < 2 or k > MASTERED:
+        return ""
+    r = data.setdefault("reach", {})
+    s = stretch(data, tree)
+    if clean:
+        s = min(REACH_MAX, s * REACH_GROW)
+        d = r.get("descend")
+        if d in graph.home_tree and (title == d or title in ancestors(graph, d)):
+            r.pop("descend")
+    elif result == "incorrect":
+        s = max(REACH_MIN, s / 2)
+        r["descend"] = title
+    else:  # partial: usually a gap in a prerequisite the part leaned on, so reach a little less far
+        s = max(REACH_MIN, s * REACH_PARTIAL)
+    r.setdefault("stretch", {})[tree] = round(s, 2)
+    return f"stretch {tree}: {round(s, 1)}"
 
 
 def node_class(graph, data, title):
@@ -498,6 +632,13 @@ def cmd_status(args):
             print("  frontier:", "; ".join(f"{x} (L{level_of(data, x)})" for x in fr) or "-")
             print("  rusty:", "; ".join(rusty) or "-")
             print("  mastered, can level up:", "; ".join(f"{x} (L{level_of(data, x)})" for x in growing) or "-")
+            print(f"  reach stretch: {stretch(data, t.name)}")
+    if not args.tree:
+        a = data.get("audit_stats", {})
+        done = a.get("pass", 0) + a.get("fail", 0)
+        rate = f"{a.get('pass', 0)}/{done} passed" + (f" ({round(100 * a.get('pass', 0) / done)}%)" if done else "")
+        descend = data.get("reach", {}).get("descend")
+        print(f"audits: {len(pending_audits(data))} pending, {rate}" + (f" · descending below: {descend}" if descend else ""))
 
 
 def recently_active_trees(graph):
@@ -532,9 +673,11 @@ def cmd_next(args):
             sys.exit(f"'{title}' is planned (no note yet).")
         if is_rusty(data, title):
             return print_choice(data, title, lv, "rust check", graph)
+        if data["nodes"].get(title, {}).get("audit") == lv and lv > 0:
+            return print_choice(data, title, lv, "audit", graph)
         if lv < MAX_LEVEL and graph.can_attempt(data, title, lv + 1):
             return print_choice(data, title, lv + 1, "requested", graph)
-        blockers = [p for p in graph.prereqs.get(title, ()) if level_of(data, p) < min(lv + 1, MASTERED)]
+        blockers = [p for p in graph.prereqs.get(title, ()) if level_of(data, p) < prereq_need(lv + 1)]
         sys.exit(f"'{title}' is locked at L{lv + 1}; raise these first: {', '.join(blockers) or 'none (max level)'}")
 
     candidate_trees = [t.name for t in graph.trees if not args.tree or t.name == args.tree]
@@ -548,9 +691,23 @@ def cmd_next(args):
         growing = [t for t in growing if t not in recent]
         return fr, rusty, growing
 
+    audits = [t for t in pending_audits(data, recent) if not args.tree or graph.home_tree.get(t) == args.tree]
+    if audits and random.random() < AUDIT_SHARE:
+        return print_choice(data, audits[0], level_of(data, audits[0]), "audit", graph)
+
     viable = {name: options(name) for name in candidate_trees}
     viable = {k: v for k, v in viable.items() if any(v)}
+    reach = None if args.progressive else reach_pick(graph, data, args.tree, recent)
+    any_review = any(v[1] or v[2] for v in viable.values())
+    if reach and (not any_review or random.random() < FRONTIER_SHARE):
+        title, unv = reach
+        why = f"reach (spine anchor; {unv} below-L3 ancestors vs stretch {stretch(data, graph.home_tree[title])})"
+        if data.get("reach", {}).get("descend"):
+            why += f"; descending below {data['reach']['descend']}"
+        return print_choice(data, title, level_of(data, title) + 1, why, graph)
     if not viable:
+        if audits:
+            return print_choice(data, audits[0], level_of(data, audits[0]), "audit", graph)
         sys.exit("Nothing to quiz: no unlocked nodes with notes (or only the last quizzed ones).")
     weights = recently_active_trees(graph)
     names = list(viable)
@@ -589,9 +746,28 @@ def tier_progress(e, lv, t):
     return f"{have}/{needed(t)}"
 
 
+COMPANIONS_MAX = 8
+
+
+def companions(graph, data, title):
+    """Learned nodes (note exists) near `title` to combine into its quiz: prerequisites, dependents,
+    and same-tree neighbours two steps away, least-developed first."""
+    deps = {}
+    for d, ps in graph.prereqs.items():
+        for q in ps:
+            deps.setdefault(q, set()).add(d)
+    near = lambda x: set(graph.prereqs.get(x, ())) | deps.get(x, set())
+    ring1 = near(title)
+    ring2 = {y for x in ring1 for y in near(x)} - ring1 - {title}
+    cands = [(1, x) for x in ring1] + [(2, x) for x in ring2 if graph.home_tree.get(x) == graph.home_tree.get(title)]
+    cands = [(dist, x) for dist, x in cands if level_of(data, x) >= 0]
+    cands.sort(key=lambda c: (level_of(data, c[1]) >= MASTERED, c[0], level_of(data, c[1]), graph.order.get(c[1], 0)))
+    return [x for _, x in cands[:COMPANIONS_MAX]]
+
+
 def print_choice(data, title, k, reason, graph):
     e = data["nodes"].get(title, {})
-    if e.get("provisional"):
+    if e.get("provisional") and reason != "audit":
         k, reason = level_of(data, title), "placement check (level was set by the placement test; confirm it)"
     lv = level_of(data, title)
     print(f"node: {title}")
@@ -602,6 +778,10 @@ def print_choice(data, title, k, reason, graph):
     print("ladder: " + ", ".join(f"L{t} {LEVEL_NAMES[t]} ({tier_progress(e, lv, t)})" for t in ladder(graph, data, title, k)))
     print(f"reason: {reason}")
     print(f"prerequisites: {', '.join(sorted(graph.prereqs.get(title, ()))) or '-'}")
+    print("companions: " + ("; ".join(f"{x} (L{level_of(data, x)})" for x in companions(graph, data, title)) or "-"))
+    if k > lv and lv < MASTERED:
+        down = downward_targets(graph, data, title)
+        print("downward: " + ("; ".join(f"{x} (L{level_of(data, x)})" for x in down) or "-"))
 
 
 def log_history(e, frm, to, why):
@@ -628,15 +808,79 @@ def level_up(e, k, why):
     log_history(e, start, k, why)
     e["level"], e["progress"] = k, 0
     normalize_banked(e)
+    flagged = flag_audit(e, k)
     while e["level"] < MAX_LEVEL and e["progress"] >= needed(e["level"] + 1):
         nxt = e["level"] + 1
         log_history(e, nxt - 1, nxt, why + " (banked ladder credit)")
         e["level"], e["progress"] = nxt, 0
         normalize_banked(e)
+        flagged = flag_audit(e, nxt) or flagged
     lv = e["level"]
+    if e.get("audit") and e["audit"] < lv:
+        e.pop("audit")  # a higher level reached since shows the audited one
+        flagged = False
+    e["direct"] = [t for t in e.get("direct", []) if t > lv]
+    if not e["direct"]:
+        e.pop("direct")
     msg = f"LEVEL UP: L{start} -> L{lv} ({LEVEL_NAMES[lv]})"
+    if flagged:
+        msg += f" [audit flagged at L{e['audit']}: reached by downward credit only]"
     if lv < MAX_LEVEL and e["progress"]:
         msg += f"; banked credit gives {e['progress']}/{needed(lv + 1)} toward L{lv + 1}"
+    return msg
+
+
+def flag_audit(e, k):
+    """On reaching level k >= 2 with no direct (non-bonus) credit at k, flag an audit with probability AUDIT_RATE."""
+    if k >= 2 and k not in e.get("direct", []) and random.random() < AUDIT_RATE:
+        e["audit"] = k
+        return True
+    return False
+
+
+def apply_credit(e, k, result, clean, source, bonus, was_rusty):
+    """Apply one graded answer at level k to entry e (whose level may have changed earlier in the same call)."""
+    lv = e["level"]
+    msg = "no level change"
+    if clean and not bonus and k > lv and k not in e.get("direct", []):
+        e.setdefault("direct", []).append(k)
+    if k == lv + 1:
+        if clean:
+            e["progress"] += 1
+            if e["progress"] >= needed(k):
+                msg = level_up(e, k, source + (" bonus" if bonus else ""))
+            else:
+                msg = f"progress {e['progress']}/{needed(k)} toward L{k}"
+        elif result == "incorrect":
+            e["progress"] = 0
+            msg = f"progress reset toward L{k}"
+    elif lv + 1 < k < lv + LADDER_SPAN + 1 and k <= MAX_LEVEL:
+        # A tier above the next level: bank it until the level below is reached.
+        banked = e.setdefault("banked", {})
+        if clean:
+            banked[k] = banked.get(k, 0) + 1
+            msg = f"banked {banked[k]}/{needed(k)} toward L{k} (counts once L{k - 1} is reached)"
+        elif result == "incorrect":
+            banked.pop(k, None)
+            msg = f"banked progress reset toward L{k}"
+        if not banked:
+            e.pop("banked")
+    elif k == lv:
+        if result == "incorrect" and lv > 0:
+            log_history(e, lv, lv - 1, "failed rust/review check")
+            e["level"], e["progress"] = lv - 1, 0
+            e.pop("banked", None)
+            msg = f"level down: L{lv} -> L{lv - 1}"
+        else:
+            msg = f"L{lv} confirmed"
+            if was_rusty and clean:
+                e["rust_interval"] = min(2 * rust_interval(e), RUST_CAP_DAYS)
+                msg += f" (next rust check in {e['rust_interval']} days)"
+    else:
+        sys.exit(f"Level {k} doesn't match the node (current L{lv}; ask at L{lv} to L{min(lv + LADDER_SPAN, MAX_LEVEL)}).")
+    if e.get("provisional") and (k == lv or (k == lv + 1 and clean)):
+        e.pop("provisional")
+        msg += " (placement level checked)"
     return msg
 
 
@@ -654,55 +898,59 @@ def cmd_record(args):
         k = lv + 1 if args.attempted > lv else lv
         if k == lv and args.result != "correct":
             return print(f"{args.title}: no level change (attempted L{args.attempted} is not above current L{lv})")
-    if args.bonus and (args.result != "correct" or k not in (lv, lv + 1)):
-        return print(f"{args.title}: no bonus credit (bonus needs a correct answer at L{lv} or L{lv + 1})")
+    if args.bonus:
+        if args.result != "correct" or args.hints > 1:
+            return print(f"{args.title}: no bonus credit (bonus needs a correct answer with at most 1 hint)")
+        if k > MASTERED and lv < MASTERED:
+            k = MASTERED  # wielding a node inside a long argument shows at most L3 until it is mastered
+        # Showing the node at level k shows the levels below it too: one credit at each level from the
+        # next level up to k (as in placement), banked above the next level, capped at the ladder span.
+        # L1 is a closed-book statement, so an open-book use never credits it (higher levels still bank).
+        tiers = [lv] if k <= lv else [t for t in range(lv + 1, min(k, lv + LADDER_SPAN, MAX_LEVEL) + 1)
+                                      if t >= 2 or args.closed_book]
+        if not tiers:
+            return print(f"{args.title}: no bonus credit (L1 needs a closed-book statement; use a recall round)")
+    else:
+        tiers = [k]
     normalize_banked(e)
     was_rusty = is_rusty(data, args.title)
+    audit = e.get("audit") if not args.bonus and k == lv else None
     e["last_tested"] = today().isoformat()
     if not args.bonus:
         data["recent"] = ([args.title] + [t for t in data["recent"] if t != args.title])[:RECENT_KEEP]
     clean = args.result == "correct" and args.hints <= 1
-    msg = "no level change"
-    if k == lv + 1:
-        if clean:
-            e["progress"] += 1
-            if e["progress"] >= needed(k):
-                msg = level_up(e, k, args.source)
-            else:
-                msg = f"progress {e['progress']}/{needed(k)} toward L{k}"
-        elif args.result == "incorrect":
-            e["progress"] = 0
-            msg = f"progress reset toward L{k}"
-    elif lv + 1 < k < lv + LADDER_SPAN + 1 and k <= MAX_LEVEL and not args.bonus:
-        # A ladder tier above the next level: bank it until the level below is reached.
-        banked = e.setdefault("banked", {})
-        if clean:
-            banked[k] = banked.get(k, 0) + 1
-            msg = f"banked {banked[k]}/{needed(k)} toward L{k} (counts once L{k - 1} is reached)"
-        elif args.result == "incorrect":
-            banked.pop(k, None)
-            msg = f"banked progress reset toward L{k}"
-        if not banked:
-            e.pop("banked")
-    elif k == lv:
-        if args.result == "incorrect" and lv > 0:
-            log_history(e, lv, lv - 1, "failed rust/review check")
-            e["level"], e["progress"] = lv - 1, 0
-            e.pop("banked", None)
-            msg = f"level down: L{lv} -> L{lv - 1}"
-        else:
-            msg = f"L{lv} confirmed"
-            if was_rusty and clean:
-                e["rust_interval"] = min(2 * rust_interval(e), RUST_CAP_DAYS)
-                msg += f" (next rust check in {e['rust_interval']} days)"
-    else:
-        sys.exit(f"Level {k} doesn't match the node (current L{lv}; ask at L{lv} to L{min(lv + LADDER_SPAN, MAX_LEVEL)}).")
-    if e.get("provisional") and (k == lv or (k == lv + 1 and clean)):
-        e.pop("provisional")
-        msg += " (placement level checked)"
+    msgs = [apply_credit(e, t, args.result, clean, args.source, args.bonus, was_rusty) for t in tiers]
+    if audit and (clean or args.result == "incorrect"):
+        stats = data.setdefault("audit_stats", {"pass": 0, "fail": 0})
+        stats["pass" if clean else "fail"] += 1
+        e.pop("audit", None)
+        msgs.append(f"audit {'passed' if clean else 'failed'}")
+    if e.get("audit") and e["audit"] > e["level"]:
+        e.pop("audit")
+    if not args.bonus and args.source == "quiz" and lv < MASTERED:
+        graph = Graph(load_trees())
+        msg = update_reach(graph, data, args.title, k, args.result, clean)
+        if msg:
+            msgs.append(msg)
     save_mastery(data)
     render_all()
-    print(f"{args.title}: {msg}" + (" (bonus)" if args.bonus else ""))
+    maintain_logs()
+    print(f"{args.title}: " + "; ".join(msgs) + (" (bonus)" if args.bonus else ""))
+
+
+def cmd_recall_next(args):
+    """Nodes for a closed-book recall round: unlocked L0 nodes, research spine first, prerequisites before dependents."""
+    graph = Graph(load_trees())
+    data = load_mastery()
+    spine = research_spine(graph)
+    memo = {}
+    cands = [t for t, home in graph.home_tree.items()
+             if (not args.tree or home == args.tree) and level_of(data, t) == 0 and graph.can_attempt(data, t, 1)]
+    cands.sort(key=lambda t: (t not in spine, graph.depth(t, memo), graph.chapter.get(t, 0), graph.order[t]))
+    if not cands:
+        sys.exit("Nothing to recall: no unlocked L0 nodes" + (f" in {args.tree}." if args.tree else "."))
+    for t in cands[:args.count]:
+        print(f"{t} ({graph.home_tree[t]})" + (" [spine]" if t in spine else ""))
 
 
 def cmd_stuck(args):
@@ -715,11 +963,14 @@ def cmd_stuck(args):
         log_history(e, lv, k - 1, "stuck")
         e["level"], e["progress"] = k - 1, 0
         e.pop("banked", None)
+        if e.get("audit", 0) > e["level"]:
+            e.pop("audit")
         msg = f"recalibrated: L{lv} -> L{k - 1}"
     else:
         msg = f"no change (L{lv} is already below the L{k} ability that was missing)"
     save_mastery(data)
     render_all()
+    maintain_logs()
     print(f"{args.title}: {msg}")
 
 
@@ -1134,6 +1385,7 @@ def cmd_place_record(args):
         msg = f"fail: {title} and {len(newly_below)} dependent node(s) stay below L{k} for this stage"
     save_mastery(data)
     render_all()
+    maintain_logs()
     nk = Placement(graph, load_mastery(), tree).stage()
     print(msg)
     print(f"{tree}: " + ("placement done" if nk is None else f"continue at stage L{nk}"))
@@ -1244,6 +1496,91 @@ def check_one(path):
     return problems
 
 
+def _entry_date(line):
+    m = ENTRY_RE.match(line)
+    return dt.date.fromisoformat(m.group(1)) if m else None
+
+
+def archive_log(name, heading, days):
+    """Move entries older than `days` from the live log to quarterly archive files; returns how many moved."""
+    path = LEARNING_DIR / f"{name}.md"
+    if not path.exists():
+        return 0
+    lines = path.read_text(encoding="utf-8").split("\n")
+    if heading not in lines:
+        return 0
+    start = lines.index(heading)
+    cutoff = today() - dt.timedelta(days=days)
+    keep, moved = [], {}
+    for i, line in enumerate(lines):
+        d = _entry_date(line) if i > start else None
+        if d and d < cutoff:
+            moved.setdefault(f"{d.year}-Q{(d.month - 1) // 3 + 1}", []).append(line)
+        else:
+            keep.append(line)
+    if not moved:
+        return 0
+    ARCHIVE_DIR.mkdir(exist_ok=True)
+    for quarter, new in moved.items():
+        apath = ARCHIVE_DIR / f"{name} {quarter}.md"
+        old = [l for l in apath.read_text(encoding="utf-8").split("\n") if _entry_date(l)] if apath.exists() else []
+        entries = sorted(new + old, key=_entry_date, reverse=True)  # stable: same-day order is kept
+        header = (f"# {name} archive, {quarter}\n\nNewest first. Moved from `Learning/{name}.md` by "
+                  f"`Scripts/skill_trees.py archive-logs`. Search it with `rg`; don't read it whole.\n")
+        apath.write_text(header + "\n" + "\n".join(entries) + "\n", encoding="utf-8")
+    path.write_text("\n".join(keep), encoding="utf-8")
+    return sum(len(v) for v in moved.values())
+
+
+def stuck_gap_stats():
+    """Regenerate the gap-type table under # Patterns in the Stuck Log from live + archived entries."""
+    path = LEARNING_DIR / "Stuck Log.md"
+    if not path.exists():
+        return
+    files = [path] + sorted(ARCHIVE_DIR.glob("Stuck Log *.md")) if ARCHIVE_DIR.exists() else [path]
+    rows = []
+    for f in files:
+        for line in f.read_text(encoding="utf-8").split("\n"):
+            d = _entry_date(line)
+            gap = re.search(r"\| `([^`]+)` \|", line) if d else None
+            if gap:
+                rel = re.search(r"Related:\s*\[\[([^\]|#]+)", line)
+                rows.append((d, gap.group(1), rel.group(1) if rel else None))
+    rows.sort(key=lambda r: r[0], reverse=True)
+    stats = {}
+    for d, gap, rel in rows:
+        g = stats.setdefault(gap, {"n": 0, "recent": 0, "notes": []})
+        g["n"] += 1
+        g["recent"] += (today() - d).days <= 30
+        if rel and rel not in g["notes"] and len(g["notes"]) < 3:
+            g["notes"].append(rel)
+    block = [PATTERNS_BEGIN, "| Gap type | Entries | Last 30 days | Most recent notes |", "|---|---:|---:|---|"]
+    for gap, g in sorted(stats.items(), key=lambda kv: -kv[1]["n"]):
+        block.append(f"| `{gap}` | {g['n']} | {g['recent']} | " + ", ".join(f"[[{n}]]" for n in g["notes"]) + " |")
+    block.append(PATTERNS_END)
+    text = path.read_text(encoding="utf-8")
+    if PATTERNS_BEGIN in text and PATTERNS_END in text:
+        a, b = text.index(PATTERNS_BEGIN), text.index(PATTERNS_END) + len(PATTERNS_END)
+        text = text[:a] + "\n".join(block) + text[b:]
+    elif "# Patterns\n" in text:
+        text = text.replace("# Patterns\n", "# Patterns\n" + "\n".join(block) + "\n", 1)
+    else:
+        return
+    path.write_text(text, encoding="utf-8")
+
+
+def maintain_logs(days=ARCHIVE_DAYS):
+    moved = {name: archive_log(name, heading, days) for name, heading in LOGS.items()}
+    stuck_gap_stats()
+    return moved
+
+
+def cmd_archive_logs(args):
+    moved = maintain_logs(args.days)
+    print("; ".join(f"{n}: {k} entr{'y' if k == 1 else 'ies'} archived" for n, k in moved.items())
+          + "; Stuck Log gap table regenerated")
+
+
 def cmd_check(args):
     if args.file:
         problems = check_one(Path(args.file))
@@ -1315,13 +1652,18 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("status"); s.add_argument("--tree"); s.set_defaults(f=cmd_status)
-    s = sub.add_parser("next"); s.add_argument("--tree"); s.add_argument("--node"); s.set_defaults(f=cmd_next)
+    s = sub.add_parser("next"); s.add_argument("--tree"); s.add_argument("--node")
+    s.add_argument("--progressive", action="store_true", help="old chapter order instead of reach anchors")
+    s.set_defaults(f=cmd_next)
+    s = sub.add_parser("recall-next"); s.add_argument("--tree"); s.add_argument("--count", type=int, default=10)
+    s.set_defaults(f=cmd_recall_next)
     s = sub.add_parser("record"); s.add_argument("title"); s.add_argument("--level", type=int)
     s.add_argument("--attempted", type=int, help="/check: level the solved problem demonstrates (credits toward the next level)")
     s.add_argument("--source", choices=["quiz", "check"], default="quiz")
     s.add_argument("--result", choices=["correct", "partial", "incorrect"], required=True)
     s.add_argument("--hints", type=int, default=0)
     s.add_argument("--bonus", action="store_true", help="credit from a correct part of another node's question")
+    s.add_argument("--closed-book", action="store_true", help="with --bonus: the part was answered closed-book, so it may credit L1")
     s.set_defaults(f=cmd_record)
     s = sub.add_parser("stuck"); s.add_argument("title"); s.add_argument("--required", type=int, required=True); s.set_defaults(f=cmd_stuck)
     s = sub.add_parser("add"); s.add_argument("tree"); s.add_argument("title")
@@ -1341,6 +1683,7 @@ def main():
     s = sub.add_parser("place-status"); s.add_argument("tree", nargs="?"); s.set_defaults(f=cmd_place_status)
     s = sub.add_parser("place-reset"); s.add_argument("tree"); s.set_defaults(f=cmd_place_reset)
     s = sub.add_parser("render"); s.set_defaults(f=cmd_render)
+    s = sub.add_parser("archive-logs"); s.add_argument("--days", type=int, default=ARCHIVE_DAYS); s.set_defaults(f=cmd_archive_logs)
     s = sub.add_parser("check"); s.add_argument("--file", help="check only this tree file (read-only, no cross-tree checks)"); s.set_defaults(f=cmd_check)
     args = p.parse_args()
     args.f(args)

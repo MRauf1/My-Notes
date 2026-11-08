@@ -1,0 +1,47 @@
+# Research targets: the core-toolkit nodes (CLAUDE.md §4). Their ancestors form the research spine,
+# where `next` picks reach anchors. Titles must match notes exactly; titles not in a tree are ignored.
+# Add a node here when its note is written and it belongs to the toolkit.
+- Spectral Theorem
+- Rayleigh Quotient
+- Rayleigh-Ritz Method
+- Minimum Principle for Eigenvalues
+- Schur Decomposition
+- Eigendecomposition
+- Matrix Exponential Solution of Linear System
+- Duhamel's Principle
+- Laplacian Eigenvalue Problem
+- Eigenfunction Expansion
+- Weyl's Asymptotic Law
+- Heat Equation
+- Graph Laplacian Matrix
+- Fourier Series L2 Convergence Theorem
+- Sobolev Space
+- Weak Solution (Partial Differential Equations)
+- Rellich-Kondrachov Compactness Theorem
+- Galerkin Method
+- Orthogonal Projection
+- Linear Least Squares Problem
+- Conditional Expectation
+- Maximum Likelihood Estimator Asymptotic Normality
+- Monte Carlo Estimator Variance
+- Russian Roulette
+- Control Variates
+- Optimal Importance Sampling Distribution
+- Self-Normalized Importance Sampling
+- Multiple Importance Sampling
+- Score Function Variance
+- Reparameterization Trick
+- Five Obstacles to Differentiating Monte Carlo Estimators
+- Markov Chain Monte Carlo
+- Stochastic Gradient Descent
+- Brownian Motion
+- Weak Solution (Stochastic Differential Equations)
+- Diffusion Model Loss Function
+- Probability Flow ODE
+- Flow Matching
+- Gaussian Process
+- Equivariant Function
+- Inverse Problem
+- Temporal-Difference Learning
+- Bellman Evaluation Operator
+- Off-Policy Evaluation

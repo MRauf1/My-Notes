@@ -82,7 +82,8 @@ flowchart TD
     n_it_integral --> n_it_isometry
     n_it_integral --> n_stratonovich_integral
     class n_filtration,n_adapted_process,n_martingale,n_doob_s_martingale_inequality,n_it_integral,n_it_isometry,n_stratonovich_integral planned;
-    class n_sigma_field,n_conditional_expectation,n_brownian_motion,n_riemann_stieltjes_integral locked;
+    class n_sigma_field,n_brownian_motion,n_riemann_stieltjes_integral locked;
+    class n_conditional_expectation L1;
     class n_sigma_field,n_conditional_expectation,n_brownian_motion,n_riemann_stieltjes_integral internal-link;
 ```
 
@@ -186,7 +187,8 @@ flowchart TD
     n_innovation_process --> n_kalman_bucy_filter
     n_multivariate_normal_distribution --> n_kalman_bucy_filter
     class n_stochastic_differential_equation,n_innovation_process,n_kalman_bucy_filter planned;
-    class n_conditional_expectation,n_multivariate_normal_distribution locked;
+    class n_multivariate_normal_distribution locked;
+    class n_conditional_expectation L1;
     class n_conditional_expectation,n_multivariate_normal_distribution internal-link;
 ```
 
@@ -229,7 +231,7 @@ flowchart TD
     n_stopping_time --> n_dynkin_s_formula
     n_dynkin_s_formula --> n_characteristic_operator_it_diffusion
     class n_stochastic_differential_equation_existence_and_uniqueness_theorem,n_filtration,n_multidimensional_it_s_formula,n_it_diffusion,n_markov_property_it_diffusion,n_stopping_time,n_strong_markov_property_it_diffusion,n_infinitesimal_generator_it_diffusion,n_dynkin_s_formula,n_characteristic_operator_it_diffusion planned;
-    class n_conditional_expectation locked;
+    class n_conditional_expectation L1;
     class n_conditional_expectation internal-link;
 ```
 
