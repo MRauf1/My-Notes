@@ -9,8 +9,8 @@ Gap types: `definition-recall`, `prior-result` (forgot or didn't think of an ear
 | Gap type | Entries | Last 30 days | Most recent notes |
 |---|---:|---:|---|
 | `notation` | 10 | 10 | [[Bellman Evaluation Operator]], [[Fitted Q-Iteration]], [[Non-Stationary Fitted Q-Iteration]] |
+| `construction` | 5 | 5 | [[Inner Product Space]], [[Survivorship Bias]], [[Random Variable]] |
 | `prior-result` | 4 | 4 | [[Survivorship Bias]], [[Boole's Inequality]], [[Bonferroni's Inequality]] |
-| `construction` | 4 | 4 | [[Survivorship Bias]], [[Random Variable]], [[Power Set]] |
 | `definition-recall` | 3 | 3 | [[Value Function]], [[Bellman Optimality Operator]], [[Deterministic Policy]] |
 | `computation` | 3 | 3 | [[Bellman Residual Telescoping Identity]], [[Hoeffding's Inequality]] |
 | `misread` | 3 | 3 | [[Fitted Q-Iteration]], [[Hoeffding's Inequality]], [[Primal Linear Program (Markov Decision Process)]] |
@@ -26,6 +26,7 @@ Gap types: `definition-recall`, `prior-result` (forgot or didn't think of an ear
 <!-- Newest first. Format:
 - **YYYY-MM-DD** | <Source, location> | `<gap type>` | Missing idea: <one sentence> | Hint level needed: <1-4> | Related: [[Note]]
 -->
+- **2026-11-11** | placement: Vector Norm Basic Properties (L3), bilinear form on complex space | `construction` | Missing idea: test positivity on $iv$: bilinearity gives $\langle iv,iv\rangle = i^2\langle v,v\rangle = -\langle v,v\rangle$ (also tried to conjugate vectors, which an abstract $V$ doesn't allow) | Hint level needed: 1 | Related: [[Inner Product Space]], [[Vector Norm Basic Properties]]
 - **2026-11-05** | quiz: Survivorship Bias (L2) | `prior-result` | Missing idea: survivors alone can never estimate the population quantity, so any check (including a hypothesis test) needs the failures recorded; and $P(A \mid B)$ says nothing about $P(B \mid A)$ without the base rates, by [[Bayes' Theorem]] $P(B\mid A) = P(A\mid B)P(B)/P(A)$ | Hint level needed: 4 (explained in grading) | Related: [[Survivorship Bias]], [[Bayes' Theorem]], [[Conditional Probability]]
 - **2026-11-05** | quiz: Statistical Analysis (L3) | `construction` | Missing idea: data kept only when $G > 0$ is a sample from the *conditional* law of $G$ given $G > 0$, so a correct sample mean converges to $\mathbb{E}[G \mid G > 0] \neq \mathbb{E}[G]$; the failed assumption is that the sampled population equals the target population (same "which distribution is this mean under?" pattern as the `notation` entries) | Hint level needed: 4 (skipped) | Related: [[Survivorship Bias]], [[Law of Total Expectation]], [[Conditional Distribution]], [[Sample Mean]]
 - **2026-11-05** | quiz: Random Experiment (L3) | `construction` | Missing idea: the events a coarse record $g$ (a random variable) can answer are exactly the preimages $g^{-1}(B)$, which are unions of fibres $g^{-1}(\{y\})$; an event that splits a fibre (like "ends where it started") is invisible to $g$. This is the information/$\sigma(g)$ view behind conditioning on part of the randomness | Hint level needed: 4 (skipped) | Related: [[Random Variable]], [[Sigma-Field]], [[Conditional Expectation]], [[Event]]

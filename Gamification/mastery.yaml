@@ -24,12 +24,52 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Absolute Value:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Absolute Value Non-negativity:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Abstract Algebra:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Addition:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Term)
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
     level: 3
+    progress: 0
+    provisional: true
+  Algebraic Structures:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Alternating Multilinear Function:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    last_tested: '2026-11-09'
+    level: 2
     progress: 0
     provisional: true
   And:
@@ -86,11 +126,88 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Associative Property:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Augmented Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Pivot Variable)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Axis:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis Dimension:
+    history:
+    - 2026-11-11 L0->L3 placement (prerequisite of Linearly Independent Basis Dimension)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis Finite-Dimensional Vector Space:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis Linear Combination:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis Linear Map Isomorphism:
+    history:
+    - 2026-11-11 L0->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis Sublist:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Basis Unique Linear Map:
+    history:
+    - 2026-11-11 L0->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
     level: 3
     progress: 0
     provisional: true
@@ -109,8 +226,10 @@ nodes:
   Bijective Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Binary Operation:
@@ -186,6 +305,31 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Change of Basis Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Change of Basis Matrix Inverse:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Change of Basis Matrix with Linear Map:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Circle:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
@@ -197,8 +341,10 @@ nodes:
   Codomain:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Combination:
@@ -212,6 +358,13 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Least Common Multiple)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Complex Number:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -242,6 +395,13 @@ nodes:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
     last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Conjugate:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -282,6 +442,23 @@ nodes:
     - 2026-11-02 L0->L2 placement (prerequisite of Triangle)
     - 2026-11-02 L2->L3 placement
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Coordinates:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Coordinates n-Dimensional Space Linear Map Isomorphism:
+    history:
+    - 2026-11-11 L0->L3 placement bonus
+    last_tested: '2026-11-11'
     level: 3
     progress: 0
     provisional: true
@@ -374,6 +551,48 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Determinant:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Determinant Invertible Matrix Theorem:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Diagonal Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Diagonalizable Linear Map:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Diagonalizable Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Diagonalizable Matrix Linear Map:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Difference Quotient of Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
@@ -397,6 +616,14 @@ nodes:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
     - 2026-11-02 L2->L3 placement (prerequisite of Derivative Quotient Rule)
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Dimension:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Linearly Independent Basis Dimension)
+    last_tested: '2026-11-11'
     level: 3
     progress: 0
     provisional: true
@@ -439,7 +666,15 @@ nodes:
   Domain:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
-    last_tested: '2026-11-02'
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Dot Product:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -447,6 +682,34 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Eigendecomposition:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Eigenspace:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Geometric Multiplicity of Eigenvalue)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Eigenvalue:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Eigenvector:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -520,6 +783,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Extension of Orthonormal List to Orthonormal Basis:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Extreme Value Theorem:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
@@ -541,6 +811,24 @@ nodes:
       Function Theorem)
     last_tested: '2026-11-02'
     level: 2
+    progress: 0
+    provisional: true
+  Field:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Finite-Dimensional Vector Space:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Fitted Q-Iteration:
@@ -574,8 +862,9 @@ nodes:
   Function Composition:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Function Maximum:
@@ -593,17 +882,73 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Geometric Multiplicity of Eigenvalue:
+    history:
+    - 2026-11-09 L0->L2 placement bonus
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Gram-Schmidt Algorithm:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Extension of Orthonormal List to
+      Orthonormal Basis)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Group:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Group Homomorphism:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Homogeneous Linear System:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    - 2026-11-11 L2->L3 placement (prerequisite of Isoscopic Function)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Identity Property:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Identity Property of Multiplication)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Identity Property of Multiplication:
     history:
     - 2026-11-02 L0->L2 placement
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Image:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Imaginary Unit:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -626,7 +971,23 @@ nodes:
   Injective Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
-    last_tested: '2026-11-02'
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Inner Product:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Inner Product Space:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -655,8 +1016,9 @@ nodes:
   Inverse Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Inverse Trigonometric Function:
@@ -664,6 +1026,15 @@ nodes:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
     last_tested: '2026-11-02'
     level: 2
+    progress: 0
+    provisional: true
+  Invertible Linear Map:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Irrational Number:
@@ -678,6 +1049,35 @@ nodes:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Strict Partial Order)
     last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Isometry (Linear Algebra):
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Isoscopic Function:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    - 2026-11-11 L2->L3 placement
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Kernel:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank-Nullity Theorem)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Kernel Vector Subspace:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank-Nullity Theorem)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -729,12 +1129,124 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Linear Combination:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear Dependence Lemma:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear Dependence Lemma Linearly Independent:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Linearly Independent Basis Dimension)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Linear Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear Map:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear Map Composition:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear Map Image:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Linear Map Isomorphism:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linear System of Equations:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    - 2026-11-11 L2->L3 placement (prerequisite of Isoscopic Function)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linearly Dependent:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linearly Independent:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linearly Independent Basis Dimension:
+    history:
+    - 2026-11-11 L0->L3 placement bonus
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Linearly Independent Finite-Dimensional Vector Space Basis:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Extension of Orthonormal List to
+      Orthonormal Basis)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Linearly Independent List Dimension:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Linearly Independent Basis Dimension)
+    last_tested: '2026-11-11'
     level: 3
     progress: 0
     provisional: true
@@ -762,6 +1274,74 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Magma:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Matrix Conjugate Transpose:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Matrix Inverse:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Matrix Linearly Independent Columns:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    - 2026-11-11 L2->L3 placement (prerequisite of Isoscopic Function)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Matrix Multiplication:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Change of Basis Matrix Inverse)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Matrix Transpose:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Matrix of Linear Map:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Mean Value Theorem:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
@@ -777,11 +1357,29 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Monoid:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Monomial:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Binomial)
     last_tested: '2026-11-02'
     level: 2
+    progress: 0
+    provisional: true
+  Multilinear Function:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
+    - 2026-11-11 L2->L3 placement (prerequisite of Isoscopic Function)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Multiple:
@@ -827,10 +1425,24 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Normed Space:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Not:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
     last_tested: '2026-11-04'
+    level: 2
+    progress: 0
+    provisional: true
+  Nullity:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank-Nullity Theorem)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -874,6 +1486,16 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Operation Closure:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Or:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Direct Proof)
@@ -895,6 +1517,27 @@ nodes:
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
     level: 3
+    progress: 0
+    provisional: true
+  Orthogonal Vector:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Orthonormal Basis:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Orthonormal Vector:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
     progress: 0
     provisional: true
   Partial Order:
@@ -939,6 +1582,13 @@ nodes:
     - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
     last_tested: '2026-11-02'
     level: 3
+    progress: 0
+    provisional: true
+  Pivot Variable:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
     progress: 0
     provisional: true
   Point:
@@ -1090,7 +1740,23 @@ nodes:
   Range:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Function Maximum)
-    last_tested: '2026-11-02'
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Rank:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Rank-Nullity Theorem:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -1123,6 +1789,13 @@ nodes:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
     last_tested: '2026-11-02'
+    level: 2
+    progress: 0
+    provisional: true
+  Reduced Row Echelon Form:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Pivot Variable)
+    last_tested: '2026-11-09'
     level: 2
     progress: 0
     provisional: true
@@ -1179,6 +1852,20 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Row Echelon Form:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Pivot Variable)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Row Operations:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Pivot Variable)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Sample Space:
     history:
     - 2026-11-05 L0->L1 quiz bonus
@@ -1191,6 +1878,16 @@ nodes:
       Function Theorem)
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Semigroup:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
     level: 3
     progress: 0
     provisional: true
@@ -1273,6 +1970,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Similar Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Eigendecomposition)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Sine Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
@@ -1290,11 +1994,29 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Span:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Square Root:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Midpoint)
     last_tested: '2026-11-02'
     level: 2
+    progress: 0
+    provisional: true
+  Standard Basis Vector:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Statistical Analysis:
@@ -1310,6 +2032,26 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Subgroup:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Subgroup Generated by Subset:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Basis Finite-Dimensional Vector
+      Space)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Subset:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Power Set)
@@ -1320,8 +2062,10 @@ nodes:
   Surjective Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Derivative of Inverse Tangent Function)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-11 L2->L3 placement (prerequisite of Coordinates n-Dimensional Space
+      Linear Map Isomorphism)
+    last_tested: '2026-11-11'
+    level: 3
     progress: 0
     provisional: true
   Survivorship Bias:
@@ -1384,6 +2128,13 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Triangle Inequality:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
   Trigonometric Function:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Cosine Function)
@@ -1399,6 +2150,14 @@ nodes:
     level: 2
     progress: 0
     provisional: true
+  Two Bases Dimension:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    - 2026-11-11 L2->L3 placement (prerequisite of Linearly Independent Basis Dimension)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
   Unbiased Estimator:
     history:
     - 2026-11-05 L0->L1 quiz bonus
@@ -1411,6 +2170,13 @@ nodes:
     - 2026-11-02 L2->L3 placement (prerequisite of Derivative of Sine Function)
     last_tested: '2026-11-02'
     level: 3
+    progress: 0
+    provisional: true
+  Unitary Matrix:
+    history:
+    - 2026-11-09 L0->L2 placement
+    last_tested: '2026-11-09'
+    level: 2
     progress: 0
     provisional: true
   Universal Quantifier:
@@ -1433,6 +2199,80 @@ nodes:
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
     level: 3
+    progress: 0
+    provisional: true
+  Vector:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Vector Addition:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Vector Norm:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Vector Norm Basic Properties:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Unitary Matrix)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Vector Operations:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Vector Orthogonal Representation:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Extension of Orthonormal List to
+      Orthonormal Basis)
+    last_tested: '2026-11-09'
+    level: 2
+    progress: 0
+    provisional: true
+  Vector Scalar Multiplication:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Vector Space:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
+      Map)
+    - 2026-11-11 L2->L3 placement (prerequisite of Matrix of Linear Map)
+    last_tested: '2026-11-11'
+    level: 3
+    progress: 0
+    provisional: true
+  Vector Subspace:
+    history:
+    - 2026-11-09 L0->L2 placement (prerequisite of Rank)
+    last_tested: '2026-11-09'
+    level: 2
     progress: 0
     provisional: true
   Whole Number:
@@ -1651,6 +2491,97 @@ placement:
     - date: '2026-11-04'
       level: 2
       node: Free Variable
+      result: pass
+  Linear Algebra:
+    asked:
+    - date: '2026-11-09'
+      level: 2
+      node: Change of Basis Matrix with Linear Map
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Unitary Matrix
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Rank
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Eigendecomposition
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Schur Decomposition
+      result: fail
+    - date: '2026-11-09'
+      level: 2
+      node: Determinant Invertible Matrix Theorem
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Orthogonal Decomposition Theorem
+      result: fail
+    - date: '2026-11-09'
+      level: 2
+      node: Pivot Variable
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Frobenius Norm
+      result: fail
+    - date: '2026-11-09'
+      level: 2
+      node: Rank-Nullity Theorem
+      result: pass
+    - date: '2026-11-09'
+      level: 2
+      node: Triangular Matrix Algebraically Closed Field Similar Matrix
+      result: fail
+    - date: '2026-11-09'
+      level: 2
+      node: Extension of Orthonormal List to Orthonormal Basis
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Matrix of Linear Map
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Basis Finite-Dimensional Vector Space
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Change of Basis Matrix Inverse
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Vector Norm Basic Properties
+      result: fail
+    - date: '2026-11-11'
+      level: 3
+      node: Dimension
+      result: fail
+    - date: '2026-11-11'
+      level: 3
+      node: Isoscopic Function
+      result: pass
+    bonus:
+    - date: '2026-11-09'
+      level: 2
+      node: Geometric Multiplicity of Eigenvalue
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Coordinates n-Dimensional Space Linear Map Isomorphism
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Basis Unique Linear Map
+      result: pass
+    - date: '2026-11-11'
+      level: 3
+      node: Linearly Independent Basis Dimension
       result: pass
   Pre-Algebra:
     asked:

@@ -375,8 +375,11 @@ def tree_stats(tree, graph, data):
     total = len(titles)
     mastered = sum(counts[MASTERED:])
     depth_pct = round(100 * sum(i * c for i, c in enumerate(counts)) / (MAX_LEVEL * total)) if total else 0
+    # Same formula with L3 (Mastered) as the peak: levels above L3 count as L3.
+    mastery_depth_pct = (round(100 * sum(min(i, MASTERED) * c for i, c in enumerate(counts)) / (MASTERED * total))
+                         if total else 0)
     return dict(total=total, discovered=total - planned, planned=planned, mastered=mastered,
-                depth=depth_pct, counts=counts, locked=locked, rusty=rusty)
+                depth=depth_pct, mastery_depth=mastery_depth_pct, counts=counts, locked=locked, rusty=rusty)
 
 
 def frontier(graph, data, tree_name=None):
@@ -555,7 +558,7 @@ def render_tree(tree, graph, data):
     rusty, _ = review_pool(graph, data, tree.name)
     stats = [
         STATS_BEGIN,
-        f"**Mastered:** {st['mastered']} / {st['total']} · **Depth:** {st['depth']}% · "
+        f"**Mastered:** {st['mastered']} / {st['total']} · **Depth:** {st['depth']}% · **Mastery Depth:** {st['mastery_depth']}% · "
         f"**Discovered:** {st['discovered']} · **Planned:** {st['planned']} · "
         f"**Locked:** {st['locked']} · **Rusty:** {st['rusty']}",
         "",
@@ -623,7 +626,7 @@ def cmd_status(args):
             print(f"{t.name}: legacy tree (not converted)")
             continue
         st = tree_stats(t, graph, data)
-        print(f"{t.name}: mastered {st['mastered']}/{st['total']}, depth {st['depth']}%, "
+        print(f"{t.name}: mastered {st['mastered']}/{st['total']}, depth {st['depth']}%, mastery depth {st['mastery_depth']}%, "
               f"levels {st['counts']}, reached {reached_counts(st['counts'])[1:]}, "
               f"planned {st['planned']}, locked {st['locked']}, rusty {st['rusty']}")
         if args.tree:
