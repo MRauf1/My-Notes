@@ -82,7 +82,7 @@ flowchart TD
     n_proof --> n_structured_proof
     class n_spiral_plan_writing locked;
     class n_mathematical_writing,n_structured_proof L0;
-    class n_proof L2;
+    class n_proof L3;
     class n_proof,n_mathematical_writing,n_spiral_plan_writing,n_structured_proof internal-link;
 ```
 

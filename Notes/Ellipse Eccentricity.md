@@ -15,4 +15,7 @@ tags:
 > $$
 > It is a value in the interval $(0, 1)$. The closer it is to $0$, the more "circular" it is; the closer it is to $1$, the more "eccentric" it is.
 
+# Properties
+- Special case of [[Conic Section Eccentricity]] with $0 < e < 1$.
+
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=534)

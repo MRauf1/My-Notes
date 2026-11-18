@@ -40,7 +40,8 @@ flowchart TD
     n_kolmogorov_extension_theorem --> n_kolmogorov_continuity_theorem
     n_expectation --> n_kolmogorov_continuity_theorem
     class n_kolmogorov_extension_theorem,n_gaussian_process,n_kolmogorov_continuity_theorem planned;
-    class n_measure_measure_theory,n_product_sigma_algebra,n_multivariate_normal_distribution,n_expectation locked;
+    class n_measure_measure_theory,n_product_sigma_algebra,n_multivariate_normal_distribution locked;
+    class n_expectation L1;
     class n_measure_measure_theory,n_product_sigma_algebra,n_multivariate_normal_distribution,n_expectation internal-link;
 ```
 
@@ -82,8 +83,9 @@ flowchart TD
     n_it_integral --> n_it_isometry
     n_it_integral --> n_stratonovich_integral
     class n_filtration,n_adapted_process,n_martingale,n_doob_s_martingale_inequality,n_it_integral,n_it_isometry,n_stratonovich_integral planned;
-    class n_sigma_field,n_brownian_motion,n_riemann_stieltjes_integral locked;
+    class n_brownian_motion locked;
     class n_conditional_expectation L1;
+    class n_sigma_field,n_riemann_stieltjes_integral L3;
     class n_sigma_field,n_conditional_expectation,n_brownian_motion,n_riemann_stieltjes_integral internal-link;
 ```
 
@@ -121,7 +123,7 @@ flowchart TD
     n_it_representation_theorem --> n_martingale_representation_theorem
     n_martingale --> n_martingale_representation_theorem
     class n_it_integral,n_it_isometry,n_martingale,n_it_process,n_it_s_formula,n_multidimensional_it_s_formula,n_it_representation_theorem,n_martingale_representation_theorem planned;
-    class n_taylor_series locked;
+    class n_taylor_series L2;
     class n_taylor_series internal-link;
 ```
 
@@ -157,7 +159,8 @@ flowchart TD
     n_stochastic_differential_equation --> n_strong_solution_stochastic_differential_equations
     n_strong_solution_stochastic_differential_equations --> n_weak_solution_stochastic_differential_equations
     class n_it_process,n_it_isometry,n_stochastic_differential_equation,n_stochastic_differential_equation_existence_and_uniqueness_theorem,n_strong_solution_stochastic_differential_equations,n_weak_solution_stochastic_differential_equations planned;
-    class n_ordinary_differential_equation,n_lipschitz_continuity locked;
+    class n_lipschitz_continuity L0;
+    class n_ordinary_differential_equation L1;
     class n_ordinary_differential_equation,n_lipschitz_continuity internal-link;
 ```
 

@@ -15,4 +15,5 @@ tags:
 > $$
 
 # Properties
+- Generates the interior entries of [[Pascal's Triangle]].
 - Equivalent to $b_n = b_{n-1} \circ [1, 1]$, the recursion generating the [[Binomial Filter]].

@@ -64,7 +64,8 @@ flowchart TD
     n_pinhole_camera --> n_alhacen_s_theory_of_vision
     n_lens --> n_kepler_s_theory_of_vision
     class n_pinhole_camera,n_lens,n_vision,n_visual_experience,n_computer_vision,n_disembodied_perspective,n_occlusion,n_theories_of_vision,n_extramission_theory,n_intromission_theory,n_plato_s_theory_of_vision,n_aristotle_s_theory_of_vision,n_euclid_s_theory_of_vision,n_alhacen_s_theory_of_vision,n_kepler_s_theory_of_vision locked;
-    class n_light,n_reflection L0;
+    class n_light L0;
+    class n_reflection L2;
     class n_ray L3;
     class n_light,n_ray,n_reflection,n_pinhole_camera,n_lens,n_vision,n_visual_experience,n_computer_vision,n_disembodied_perspective,n_occlusion,n_theories_of_vision,n_extramission_theory,n_intromission_theory,n_plato_s_theory_of_vision,n_aristotle_s_theory_of_vision,n_euclid_s_theory_of_vision,n_alhacen_s_theory_of_vision,n_kepler_s_theory_of_vision internal-link;
 ```
@@ -300,9 +301,9 @@ flowchart TD
     n_transfer_function_signal_processing --> n_high_pass_filter
     n_transfer_function_signal_processing --> n_band_pass_filter
     n_discrete_fourier_transform --> n_dc_gain
-    class n_euler_s_identity,n_mean_square_convergence,n_bessel_s_inequality,n_symmetric_boundary_condition,n_circular_convolution,n_complex_number_in_polar_coordinates,n_geometric_series,n_impulse_response,n_discrete_complex_exponential,n_spatial_frequency,n_discrete_fourier_transform,n_dft_matrix,n_fast_fourier_transform,n_discrete_time_fourier_transform,n_parseval_s_theorem,n_convolution_theorem,n_fourier_shift_theorem,n_fourier_modulation_theorem,n_fourier_amplitude_and_phase,n_natural_image_amplitude_spectrum,n_box_function_signal_processing,n_discrete_sinc_function,n_transfer_function_signal_processing,n_low_pass_filter,n_high_pass_filter,n_band_pass_filter,n_dc_gain locked;
-    class n_signal_signal_processing,n_sinusoid_signal_processing L0;
-    class n_cosine_function L2;
+    class n_symmetric_boundary_condition,n_circular_convolution,n_impulse_response,n_discrete_complex_exponential,n_spatial_frequency,n_discrete_fourier_transform,n_dft_matrix,n_fast_fourier_transform,n_discrete_time_fourier_transform,n_parseval_s_theorem,n_convolution_theorem,n_fourier_shift_theorem,n_fourier_modulation_theorem,n_fourier_amplitude_and_phase,n_natural_image_amplitude_spectrum,n_box_function_signal_processing,n_discrete_sinc_function,n_transfer_function_signal_processing,n_low_pass_filter,n_high_pass_filter,n_band_pass_filter,n_dc_gain locked;
+    class n_euler_s_identity,n_signal_signal_processing,n_mean_square_convergence,n_bessel_s_inequality,n_sinusoid_signal_processing L0;
+    class n_cosine_function,n_complex_number_in_polar_coordinates,n_geometric_series L2;
     class n_sine_function L3;
     class n_sine_function,n_cosine_function,n_euler_s_identity,n_signal_signal_processing,n_mean_square_convergence,n_bessel_s_inequality,n_symmetric_boundary_condition,n_circular_convolution,n_complex_number_in_polar_coordinates,n_geometric_series,n_impulse_response,n_sinusoid_signal_processing,n_discrete_complex_exponential,n_spatial_frequency,n_discrete_fourier_transform,n_dft_matrix,n_fast_fourier_transform,n_discrete_time_fourier_transform,n_parseval_s_theorem,n_convolution_theorem,n_fourier_shift_theorem,n_fourier_modulation_theorem,n_fourier_amplitude_and_phase,n_natural_image_amplitude_spectrum,n_box_function_signal_processing,n_discrete_sinc_function,n_transfer_function_signal_processing,n_low_pass_filter,n_high_pass_filter,n_band_pass_filter,n_dc_gain internal-link;
 ```
@@ -347,8 +348,9 @@ flowchart TD
     n_central_limit_theorem --> n_binomial_filter
     n_gaussian_filter --> n_binomial_filter
     n_convolution --> n_separable_filter
-    class n_low_pass_filter,n_dc_gain,n_box_function_signal_processing,n_normal_distribution,n_central_limit_theorem,n_convolution,n_blur_filter,n_box_filter,n_gaussian_filter,n_binomial_filter,n_separable_filter locked;
-    class n_binomial_theorem L0;
+    class n_low_pass_filter,n_dc_gain,n_box_function_signal_processing,n_central_limit_theorem,n_convolution,n_blur_filter,n_box_filter,n_gaussian_filter,n_binomial_filter,n_separable_filter locked;
+    class n_normal_distribution L0;
+    class n_binomial_theorem L1;
     class n_pascal_s_identity L2;
     class n_low_pass_filter,n_dc_gain,n_box_function_signal_processing,n_normal_distribution,n_binomial_theorem,n_pascal_s_identity,n_central_limit_theorem,n_convolution,n_blur_filter,n_box_filter,n_gaussian_filter,n_binomial_filter,n_separable_filter internal-link;
 ```
@@ -414,9 +416,10 @@ flowchart TD
     n_image_gradient --> n_retinex_algorithm
     n_signal_reconstruction_from_derivatives --> n_retinex_algorithm
     n_intrinsic_image_decomposition --> n_retinex_algorithm
-    class n_convolution,n_gaussian_filter,n_separable_filter,n_gradient_vector,n_laplacian_operator,n_binomial_filter,n_pseudoinverse,n_dc_value,n_shading,n_discrete_image_derivative,n_gaussian_derivative,n_image_gradient,n_laplacian_filter,n_sharpening_filter,n_sobel_operator,n_roberts_cross_operator,n_signal_reconstruction_from_derivatives,n_intrinsic_image_decomposition,n_retinex_algorithm locked;
+    class n_convolution,n_gaussian_filter,n_separable_filter,n_laplacian_operator,n_binomial_filter,n_dc_value,n_shading,n_discrete_image_derivative,n_gaussian_derivative,n_image_gradient,n_laplacian_filter,n_sharpening_filter,n_sobel_operator,n_roberts_cross_operator,n_signal_reconstruction_from_derivatives,n_intrinsic_image_decomposition,n_retinex_algorithm locked;
     class n_hermite_polynomial L0;
-    class n_polynomial L2;
+    class n_pseudoinverse L1;
+    class n_polynomial,n_gradient_vector L2;
     class n_derivative L3;
     class n_derivative,n_convolution,n_polynomial,n_gaussian_filter,n_separable_filter,n_gradient_vector,n_laplacian_operator,n_binomial_filter,n_pseudoinverse,n_dc_value,n_shading,n_discrete_image_derivative,n_hermite_polynomial,n_gaussian_derivative,n_image_gradient,n_laplacian_filter,n_sharpening_filter,n_sobel_operator,n_roberts_cross_operator,n_signal_reconstruction_from_derivatives,n_intrinsic_image_decomposition,n_retinex_algorithm internal-link;
 ```

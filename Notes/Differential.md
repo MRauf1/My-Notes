@@ -41,4 +41,7 @@ $d$ is an [[Operator]] that takes [[Function]] to its [[1-Form]].
 - [[Differential of Function Multiplication]]
 - [[Differential of Function Composition]]
 
+# Properties
+- The one-variable calculus version $dy = f'(x)\,dx$ is [[Differential (Calculus)]] (related, but a separate concept and node).
+
 [^1]: [Elementary Differential Geometry](zotero://open-pdf/library/items/F6CCEWIU?page=38)

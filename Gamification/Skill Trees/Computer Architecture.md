@@ -499,7 +499,7 @@ flowchart TD
     n_embedded_system --> n_system_on_a_chip_soc
     class n_datapath_element,n_latch_and_flip_flop,n_sequential_logic_timing,n_field_programmable_device,n_system_on_a_chip_soc locked;
     class n_structured_logic_pla_and_rom,n_hardware_description_language,n_embedded_system L0;
-    class n_truth_table L2;
+    class n_truth_table L3;
     class n_truth_table,n_datapath_element,n_structured_logic_pla_and_rom,n_hardware_description_language,n_latch_and_flip_flop,n_sequential_logic_timing,n_field_programmable_device,n_embedded_system,n_system_on_a_chip_soc internal-link;
 ```
 

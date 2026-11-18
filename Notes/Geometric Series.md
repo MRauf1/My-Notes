@@ -22,4 +22,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Sum of the terms of a [[Geometric Sequence]].
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=108)

@@ -40,4 +40,7 @@ This approximation's quality worsens as we get farther away from $a$.
 
 This can be extended to higher dimensions resulting in [[Tangent Plane]] in 3D and [[Tangent Hyperplane]] in higher dimensions.
 
+# Properties
+- In the notation of differentials, $\Delta y \approx dy = f'(a)\,dx$: [[Differential (Calculus)]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=284)

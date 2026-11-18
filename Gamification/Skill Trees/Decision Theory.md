@@ -34,7 +34,9 @@ flowchart TD
     n_expectation --> n_proper_scoring_rule
     n_loss_function --> n_proper_scoring_rule
     n_probability_distribution --> n_proper_scoring_rule
-    class n_expectation,n_loss_function,n_probability_distribution,n_proper_scoring_rule locked;
+    class n_loss_function,n_proper_scoring_rule locked;
+    class n_expectation L1;
+    class n_probability_distribution L3;
     class n_expectation,n_loss_function,n_probability_distribution,n_proper_scoring_rule internal-link;
 ```
 

@@ -6,8 +6,11 @@ Usage:
     python3 skill_trees.py next [--tree NAME] [--node TITLE] [--progressive]
     python3 skill_trees.py recall-next [--tree NAME] [--count N]
     python3 skill_trees.py record TITLE --level K --result correct|partial|incorrect [--hints N] [--bonus [--closed-book]]
-    python3 skill_trees.py record TITLE --attempted K --source check --result correct|partial|incorrect [--hints N]
+    python3 skill_trees.py check-record --node TITLE K RESULT [--node ...] [--hints N] [--open-book]
+    python3 skill_trees.py exercise-record --node TITLE K pass|fail [--node ...] [--exclude TITLE ...]
     python3 skill_trees.py stuck TITLE --required K
+    python3 skill_trees.py focus on|off|show
+    python3 skill_trees.py grant TREE --level K
     python3 skill_trees.py add TREE TITLE [--prereq TITLE ...] [--group NAME]
     python3 skill_trees.py edge FROM_TITLE TO_TITLE
     python3 skill_trees.py rename OLD_TITLE NEW_TITLE
@@ -84,9 +87,14 @@ Rules:
       changes, and each clean pass of a rust check doubles it (up to
       RUST_CAP_DAYS), as in spaced repetition. A rust check is asked at the
       current level: pass refreshes it, fail drops one level.
-    - A /check of a solved problem (record --attempted K) counts like a quiz
-      answer at the node's next level when K is above the current level, and
-      confirms the current level otherwise; it never lowers a level.
+    - A /check of a solved problem (check-record) credits every node the
+      solution uses at the level K it demonstrates like a bonus: one credit at
+      each level from the node's next level up to K (capped at LADDER_SPAN,
+      banked above the next level; L1 only if not --open-book), and confirms
+      the current level when K is not above it. Downward credit: every
+      ancestor of a correctly used node gets the same ladder credit up to
+      K - 1 (once per check, at its highest K). An incorrect node loses only
+      its next-level progress; check never lowers a level (that is `stuck`).
     - Being stuck on an ability at level k (via /stuck) sets the level to
       min(level, k - 1).
 Placement (adaptive, per tree, bottom-up across trees):
@@ -96,10 +104,20 @@ Placement (adaptive, per tree, bottom-up across trees):
       every tree) to k; fail marks the node and its in-tree descendants as
       below k for that stage. Levels are only ever raised.
     - --bonus credits a node for a correct, self-contained part of another
-      node's question: pass-only, and it uses no question budget.
+      node's question: pass-only, and it uses no question budget. A bonus may
+      be L4 (node already at L3) or L5 (node already at L4); its ancestors are
+      then raised to L3.
     - Placed levels are provisional: the next quiz on such a node is a
       "placement check" at its current level (fail drops one level).
-Logs (archive-logs, also run after every record / stuck / place-record):
+Exercise credit (exercise-record, used by /exercises while working through a textbook):
+    - Placement rules without the placement budget: a pass at K (2 or 3)
+      raises each named node and all its ancestors (in every tree; an
+      --exclude node and the ancestors reachable only through it are skipped) to K, marked provisional; a fail changes nothing. K = 4 is
+      allowed only for a node already at L3 (a prerequisite from an earlier
+      section used in a multi-step argument): it raises that node to L4 and
+      its ancestors to L3. K = 5 likewise needs the node already at L4. Levels are
+      only ever raised. Provisional levels get a placement check in /quiz.
+Logs (archive-logs, also run after every record / stuck / place-record / exercise-record):
     - Quiz Log History and Stuck Log Entries (one line per entry, newest
       first) older than ARCHIVE_DAYS move to Learning/Archive/<Log> <YYYY>-Q<n>.md,
       so the live logs stay small. Look up a node's past with
@@ -691,7 +709,8 @@ def cmd_next(args):
         fr = [t for t in frontier(graph, data, tree_name) if t not in recent]
         rusty, growing = review_pool(graph, data, tree_name)
         rusty = [t for t in rusty if t not in recent]
-        growing = [t for t in growing if t not in recent]
+        # L3 focus: skip the random review of mastered nodes (it only works toward L4/L5); rust checks stay.
+        growing = [] if data.get("focus_l3") else [t for t in growing if t not in recent]
         return fr, rusty, growing
 
     audits = [t for t in pending_audits(data, recent) if not args.tree or graph.home_tree.get(t) == args.tree]
@@ -939,6 +958,111 @@ def cmd_record(args):
     render_all()
     maintain_logs()
     print(f"{args.title}: " + "; ".join(msgs) + (" (bonus)" if args.bonus else ""))
+
+
+def ladder_credit(e, k, result, clean, why, bonus, closed_book, was_rusty=False):
+    """One credit at each level from e's next level up to k (capped at the ladder span), as a placement pass
+    or a bonus does; k at or below the current level confirms it. L1 needs a closed-book answer."""
+    lv = e["level"]
+    if k <= lv:
+        return [apply_credit(e, lv, result, clean, why, bonus, was_rusty)] if clean else []
+    tiers = [t for t in range(lv + 1, min(k, lv + LADDER_SPAN, MAX_LEVEL) + 1) if t >= 2 or closed_book]
+    return [apply_credit(e, t, result, clean, why, bonus, False) for t in tiers]
+
+
+def cmd_check_record(args):
+    """Record a /check: every node the solution uses, plus downward credit to all their ancestors."""
+    graph = Graph(load_trees())
+    data = load_mastery()
+    nodes = {}
+    for title, k, result in args.node:
+        if not note_exists(title):
+            sys.exit(f"No note 'Notes/{title}.md'.")
+        if result not in ("correct", "partial", "incorrect"):
+            sys.exit(f"Result for '{title}' must be correct, partial or incorrect.")
+        nodes[title] = (int(k), result)
+    if len(nodes) > 15:
+        sys.exit("At most 15 nodes per check.")
+    closed = not args.open_book
+    out = []
+    for title, (k, result) in nodes.items():
+        e = entry(data, title)
+        normalize_banked(e)
+        was_rusty = is_rusty(data, title)
+        lv = e["level"]
+        if k > MASTERED and lv < MASTERED:
+            k = MASTERED  # a long argument shows at most L3 until the node is mastered
+        clean = result == "correct" and args.hints <= 1
+        e["last_tested"] = today().isoformat()
+        if result == "incorrect":
+            # Only the next level's progress is lost; levels drop only through `stuck` (a concept error).
+            msgs = [apply_credit(e, lv + 1, result, False, "check", False, was_rusty)] if lv < MAX_LEVEL else []
+        else:
+            msgs = ladder_credit(e, k, result, clean, "check", False, closed, was_rusty)
+        msgs = [m for m in msgs if m != "no level change"] or ["no level change"]
+        out.append(f"{title}: " + "; ".join(msgs))
+    # Downward credit: using a node at level k shows its prerequisites at level k - 1 (a direct application
+    # needs their statements, a proof needs them applied). Each ancestor is credited once, at its highest level.
+    down = {}
+    for title, (k, result) in nodes.items():
+        if result != "correct" or args.hints > 1:
+            continue
+        for a in ancestors(graph, title):
+            if a not in nodes and note_exists(a):
+                down[a] = max(down.get(a, 0), min(k, MASTERED) - 1)
+    moved = []
+    for a, k in sorted(down.items()):
+        e = entry(data, a)
+        normalize_banked(e)
+        if k <= e["level"]:
+            continue
+        before = e["level"]
+        msgs = ladder_credit(e, k, "correct", True, "check prerequisite", True, closed)
+        if msgs:
+            e["last_tested"] = today().isoformat()
+            moved.append(a + (f" L{before}->L{e['level']}" if e["level"] > before else " (progress)"))
+    save_mastery(data)
+    render_all()
+    maintain_logs()
+    print("\n".join(out))
+    print(f"downward: {len(moved)} prerequisite(s) credited" + (": " + ", ".join(moved) if moved else ""))
+
+
+def cmd_grant(args):
+    """Raise every node with a note in TREE that is below level K to K, on the creator's own assessment
+    (e.g. a field he has long used). Never lowers; not provisional, so no placement check follows."""
+    graph = Graph(load_trees())
+    data = load_mastery()
+    if args.tree not in {t.name for t in graph.trees}:
+        sys.exit(f"No converted tree '{args.tree}'.")
+    if not 1 <= args.level <= MASTERED:
+        sys.exit("Grant levels L1 to L3 only.")
+    raised = []
+    for t, home in sorted(graph.home_tree.items()):
+        if home != args.tree or not note_exists(t):
+            continue
+        e = entry(data, t)
+        if e["level"] < args.level:
+            log_history(e, e["level"], args.level, "self-assessed grant")
+            e["level"], e["progress"] = args.level, 0
+            normalize_banked(e)
+            e.pop("provisional", None)
+            raised.append(t)
+    save_mastery(data)
+    render_all()
+    print(f"{args.tree}: {len(raised)} node(s) raised to L{args.level} (self-assessed)")
+
+
+def cmd_focus(args):
+    """Toggle L3 focus: `next` stops serving random reviews of mastered nodes, so quizzes push nodes to L3."""
+    data = load_mastery()
+    if args.state == "on":
+        data["focus_l3"] = True
+    elif args.state == "off":
+        data.pop("focus_l3", None)
+    if args.state != "show":
+        save_mastery(data)
+    print("L3 focus: " + ("on (no random reviews of mastered nodes; rust checks and audits stay)" if data.get("focus_l3") else "off"))
 
 
 def cmd_recall_next(args):
@@ -1206,14 +1330,15 @@ def cmd_move(args):
 
 # ---------------------------------------------------------------- placement
 
-def ancestors(graph, title):
-    """All transitive prerequisites of a node, across every tree."""
-    seen, stack = set(), list(graph.prereqs.get(title, ()))
+def ancestors(graph, title, skip=()):
+    """All transitive prerequisites of a node, across every tree. Nodes in `skip` are not traversed,
+    so their own prerequisites count only when reachable through another path."""
+    seen, stack = set(), [p for p in graph.prereqs.get(title, ()) if p not in skip]
     while stack:
         n = stack.pop()
         if n not in seen:
             seen.add(n)
-            stack.extend(graph.prereqs.get(n, ()))
+            stack.extend(p for p in graph.prereqs.get(n, ()) if p not in skip)
     return seen
 
 
@@ -1357,8 +1482,10 @@ def cmd_place_record(args):
     tree = graph.home_tree.get(title)
     if not tree or not note_exists(title):
         sys.exit(f"'{title}' is not a node with a note.")
-    if k not in (2, 3):
-        sys.exit("Placement asks at L2 or L3 only.")
+    if k not in (2, 3) and not (args.bonus and k in (4, 5)):
+        sys.exit("Placement asks at L2 or L3 only (L4/L5 only as --bonus for a node already one level below).")
+    if k > MASTERED and level_of(data, title) < k - 1:
+        sys.exit(f"'{title}' is below L{k - 1}: L{k} bonus credit needs the node already at L{k - 1}.")
     if args.bonus and args.result != "pass":
         sys.exit("Bonus credit is pass-only: a part that wasn't asked about a node can't count against it.")
     pl = Placement(graph, data, tree)
@@ -1372,17 +1499,19 @@ def cmd_place_record(args):
             if not note_exists(t):
                 continue
             e = entry(data, t)
-            if e["level"] < k:
+            kt = k if t == title else min(k, MASTERED)  # an L4/L5 use shows its prerequisites at L3 (gating)
+            if e["level"] < kt:
                 why = ("placement bonus" if args.bonus else "placement") if t == title else f"placement (prerequisite of {title})"
-                log_history(e, e["level"], k, why)
-                e["level"], e["progress"], e["provisional"] = k, 0, True
+                log_history(e, e["level"], kt, why)
+                e["level"], e["progress"], e["provisional"] = kt, 0, True
                 normalize_banked(e)
                 e["last_tested"] = today().isoformat()
                 raised.append(t)
         by_tree = {}
         for t in raised:
             by_tree[graph.home_tree.get(t)] = by_tree.get(graph.home_tree.get(t), 0) + 1
-        msg = f"pass: {len(raised)} node(s) raised to L{k}" + (
+        msg = (f"pass: {len(raised)} node(s) raised: {title} to L{k}, prerequisites to L{MASTERED}" if k > MASTERED
+               else f"pass: {len(raised)} node(s) raised to L{k}") + (
             " (" + ", ".join(f"{n} {c}" for n, c in sorted(by_tree.items())) + ")" if raised else "")
     else:
         msg = f"fail: {title} and {len(newly_below)} dependent node(s) stay below L{k} for this stage"
@@ -1392,6 +1521,74 @@ def cmd_place_record(args):
     nk = Placement(graph, load_mastery(), tree).stage()
     print(msg)
     print(f"{tree}: " + ("placement done" if nk is None else f"continue at stage L{nk}"))
+
+
+def cmd_exercise_record(args):
+    """Record an /exercises answer with placement rules: a pass at K raises the node and all its ancestors
+    (in every tree; an --exclude node and the ancestors reachable only through it are skipped) to K, marked
+    provisional; a fail changes nothing. No placement budget."""
+    graph = Graph(load_trees())
+    data = load_mastery()
+    nodes = {}
+    for title, k, result in args.node:
+        if not graph.home_tree.get(title) or not note_exists(title):
+            sys.exit(f"'{title}' is not a node with a note.")
+        if int(k) not in (2, 3, 4, 5):
+            sys.exit("Exercise credit is placed at L2-L5.")
+        if int(k) > MASTERED and level_of(data, title) < int(k) - 1:
+            sys.exit(f"'{title}' is below L{int(k) - 1}: L{k} credit needs the node already at L{int(k) - 1}.")
+        if result not in ("pass", "fail"):
+            sys.exit(f"Result for '{title}' must be pass or fail.")
+        nodes[title] = (int(k), result)
+    if len(nodes) > 15:
+        sys.exit("At most 15 nodes per exercise.")
+    excluded = set(args.exclude)
+    target = {}  # node -> (level to place, why)
+    out = []
+    for title, (k, result) in nodes.items():
+        lv = level_of(data, title)
+        if result == "fail":
+            out.append(f"{title}: fail at L{k} (stays L{lv}; no change)")
+            continue
+        out.append(f"{title}: pass at L{k}" + ("" if lv < k else f" (already L{lv}; no change)"))
+        for t in [title] + sorted(ancestors(graph, title, skip=excluded)):
+            if t in excluded or not note_exists(t):
+                continue
+            kt = k if t == title else min(k, MASTERED)  # an L4 use shows its prerequisites at L3 (gating)
+            why = "exercise" if t == title else f"exercise (prerequisite of {title})"
+            if t in nodes and nodes[t][1] == "pass":
+                why = "exercise"
+            if kt > target.get(t, (0, ""))[0]:
+                target[t] = (kt, why)
+    raised, by_tree = [], {}
+    for t, (k, why) in sorted(target.items()):
+        e = entry(data, t)
+        if e["level"] >= k:
+            continue
+        log_history(e, e["level"], k, why)
+        e["level"], e["progress"], e["provisional"] = k, 0, True
+        normalize_banked(e)
+        if e.get("audit") and e["audit"] < k:
+            e.pop("audit")
+        e["direct"] = [d for d in e.get("direct", []) if d > k]
+        if not e["direct"]:
+            e.pop("direct")
+        e["last_tested"] = today().isoformat()
+        raised.append(t)
+        tr = graph.home_tree.get(t)
+        by_tree[tr] = by_tree.get(tr, 0) + 1
+    save_mastery(data)
+    render_all()
+    maintain_logs()
+    print("\n".join(out))
+    named = [t for t in raised if t in nodes]
+    others = [t for t in raised if t not in nodes]
+    print(f"raised (provisional): {len(raised)} node(s)" + (
+        " (" + ", ".join(f"{n} {c}" for n, c in sorted(by_tree.items())) + ")" if raised else ""))
+    if named:
+        print("  named: " + ", ".join(f"{t} L{level_of(data, t)}" for t in named))
+    if others:
+        print("  prerequisites: " + ", ".join(f"{t} L{level_of(data, t)}" for t in others))
 
 
 def cmd_place_status(args):
@@ -1668,6 +1865,16 @@ def main():
     s.add_argument("--bonus", action="store_true", help="credit from a correct part of another node's question")
     s.add_argument("--closed-book", action="store_true", help="with --bonus: the part was answered closed-book, so it may credit L1")
     s.set_defaults(f=cmd_record)
+    s = sub.add_parser("check-record", help="record a /check: each used node plus downward credit to its ancestors")
+    s.add_argument("--node", nargs=3, action="append", required=True, metavar=("TITLE", "K", "RESULT"),
+                   help="a node the solution uses, the level it demonstrates, and correct|partial|incorrect")
+    s.add_argument("--hints", type=int, default=0)
+    s.add_argument("--open-book", action="store_true", help="solved with notes open: never credits L1")
+    s.set_defaults(f=cmd_check_record)
+    s = sub.add_parser("grant", help="raise every node in a tree below K to K (self-assessed)")
+    s.add_argument("tree"); s.add_argument("--level", type=int, required=True); s.set_defaults(f=cmd_grant)
+    s = sub.add_parser("focus", help="L3 focus: on|off|show")
+    s.add_argument("state", choices=["on", "off", "show"]); s.set_defaults(f=cmd_focus)
     s = sub.add_parser("stuck"); s.add_argument("title"); s.add_argument("--required", type=int, required=True); s.set_defaults(f=cmd_stuck)
     s = sub.add_parser("add"); s.add_argument("tree"); s.add_argument("title")
     s.add_argument("--prereq", action="append", default=[]); s.add_argument("--group")
@@ -1683,6 +1890,12 @@ def main():
     s.add_argument("--result", choices=["pass", "fail"], required=True)
     s.add_argument("--bonus", action="store_true", help="pass from a correct part of another node's question (uses no budget)")
     s.set_defaults(f=cmd_place_record)
+    s = sub.add_parser("exercise-record", help="credit a solved textbook exercise with placement rules (provisional)")
+    s.add_argument("--node", nargs=3, action="append", required=True, metavar=("TITLE", "K", "RESULT"),
+                   help="a node the solution uses, the level it demonstrates (2, 3, or 4 if already L3), and pass|fail")
+    s.add_argument("--exclude", action="append", default=[], metavar="TITLE",
+                   help="an ancestor not to raise, with the ancestors reachable only through it (wrong edge or a different concept)")
+    s.set_defaults(f=cmd_exercise_record)
     s = sub.add_parser("place-status"); s.add_argument("tree", nargs="?"); s.set_defaults(f=cmd_place_status)
     s = sub.add_parser("place-reset"); s.add_argument("tree"); s.set_defaults(f=cmd_place_reset)
     s = sub.add_parser("render"); s.set_defaults(f=cmd_render)

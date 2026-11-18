@@ -34,6 +34,7 @@ See [[Preimage]] for the corresponding notion of mapping subsets of $Y$ back int
 > $$
 
 # Properties
+- Set-operation identities: [[Image and Preimage Basic Properties]].
 - [[Linear Map Image]]
 
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=33)

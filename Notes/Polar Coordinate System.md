@@ -21,6 +21,12 @@ Works in 2D. Its 3D extensions are [[Cylindrical Coordinate System]] and [[Spher
 
 ![[Pasted image 20251020123347.png]]
 
+# Types (Polar Curves)
+- [[Limacon]]
+- [[Cardioid]]
+- [[Rose Curve]]
+- [[Lemniscate]]
+
 # Changing [[Coordinate System]]
 - [[Cartesian and Polar Coordinate System Change]]
 

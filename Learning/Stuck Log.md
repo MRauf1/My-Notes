@@ -9,13 +9,14 @@ Gap types: `definition-recall`, `prior-result` (forgot or didn't think of an ear
 | Gap type | Entries | Last 30 days | Most recent notes |
 |---|---:|---:|---|
 | `notation` | 10 | 10 | [[Bellman Evaluation Operator]], [[Fitted Q-Iteration]], [[Non-Stationary Fitted Q-Iteration]] |
+| `hidden-lemma` | 5 | 5 | [[Continuity Theorem of Probability]], [[Pythagorean Theorem]], [[Fitted Q-Iteration]] |
 | `construction` | 5 | 5 | [[Inner Product Space]], [[Survivorship Bias]], [[Random Variable]] |
+| `misread` | 4 | 4 | [[Set Complement]], [[Fitted Q-Iteration]], [[Hoeffding's Inequality]] |
 | `prior-result` | 4 | 4 | [[Survivorship Bias]], [[Boole's Inequality]], [[Bonferroni's Inequality]] |
 | `definition-recall` | 3 | 3 | [[Value Function]], [[Bellman Optimality Operator]], [[Deterministic Policy]] |
 | `computation` | 3 | 3 | [[Bellman Residual Telescoping Identity]], [[Hoeffding's Inequality]] |
-| `misread` | 3 | 3 | [[Fitted Q-Iteration]], [[Hoeffding's Inequality]], [[Primal Linear Program (Markov Decision Process)]] |
-| `hidden-lemma` | 3 | 3 | [[Fitted Q-Iteration]], [[Simulation Lemma]], [[Unbiased Estimator]] |
 | `estimate` | 2 | 2 | [[Truncated Value Function]], [[Hoeffding's Inequality]] |
+| `strategy` | 1 | 1 | [[Pythagorean Theorem]] |
 | `quantifiers` | 1 | 1 | [[Boole's Inequality]] |
 <!-- END GAP STATS -->
 <!-- Recurring gap types and weak prerequisites, updated when a type shows up 3+ times. -->
@@ -26,6 +27,10 @@ Gap types: `definition-recall`, `prior-result` (forgot or didn't think of an ear
 <!-- Newest first. Format:
 - **YYYY-MM-DD** | <Source, location> | `<gap type>` | Missing idea: <one sentence> | Hint level needed: <1-4> | Related: [[Note]]
 -->
+- **2026-11-16** | exercise: Hogg §1.5 Ex. 1.5.10 | `hidden-lemma` | Missing idea: $\lim_x P(X\le x)$ cannot be moved inside $P$ for free; write $\{X\le -n\}\downarrow\varnothing$ and $\{X\le n\}\uparrow\mathcal{C}$ (X real-valued, so "$X\le\pm\infty$" is not an event to evaluate) and apply the continuity theorem, then pass from $n$ to real $x$ by monotonicity of $F$ | Hint level needed: 2 | Related: [[Continuity Theorem of Probability]], [[Cumulative Distribution Function Basic Properties]]
+- **2026-11-11** | check: Hogg 1.2.2(a) | `misread` | Missing idea: calligraphic $\mathcal{C}$ is the space (universe), not a second set; the complement is relative to it, $C^c = \{x \in \mathcal{C} : x \notin C\}$, not to $\mathbb{R}$ | Hint level needed: 2 | Related: [[Set Complement]], [[Sample Space]]
+- **2026-11-11** | quiz: Pythagorean Theorem (L3) | `strategy` | Missing idea: proving a theorem by specializing a generalization is circular when the generalization's proof uses it (the textbook law of cosines rests on Pythagoras); prove the cross-term identity $\lVert u-v\rVert^2=\lVert u\rVert^2-2\langle u,v\rangle+\lVert v\rVert^2$ directly | Hint level needed: 4 (explained in grading) | Related: [[Pythagorean Theorem]], [[Law of Cosines]], [[Pythagorean Theorem for Inner Product Space]]
+- **2026-11-11** | quiz: Pythagorean Theorem (L2) | `hidden-lemma` | Missing idea: to rule out a right triangle from one equation you need the hypotenuse to be the longest side, which follows from $c^2=a^2+b^2>a^2$ | Hint level needed: 4 (explained in grading) | Related: [[Pythagorean Theorem]], [[Right Triangle]]
 - **2026-11-11** | placement: Vector Norm Basic Properties (L3), bilinear form on complex space | `construction` | Missing idea: test positivity on $iv$: bilinearity gives $\langle iv,iv\rangle = i^2\langle v,v\rangle = -\langle v,v\rangle$ (also tried to conjugate vectors, which an abstract $V$ doesn't allow) | Hint level needed: 1 | Related: [[Inner Product Space]], [[Vector Norm Basic Properties]]
 - **2026-11-05** | quiz: Survivorship Bias (L2) | `prior-result` | Missing idea: survivors alone can never estimate the population quantity, so any check (including a hypothesis test) needs the failures recorded; and $P(A \mid B)$ says nothing about $P(B \mid A)$ without the base rates, by [[Bayes' Theorem]] $P(B\mid A) = P(A\mid B)P(B)/P(A)$ | Hint level needed: 4 (explained in grading) | Related: [[Survivorship Bias]], [[Bayes' Theorem]], [[Conditional Probability]]
 - **2026-11-05** | quiz: Statistical Analysis (L3) | `construction` | Missing idea: data kept only when $G > 0$ is a sample from the *conditional* law of $G$ given $G > 0$, so a correct sample mean converges to $\mathbb{E}[G \mid G > 0] \neq \mathbb{E}[G]$; the failed assumption is that the sampled population equals the target population (same "which distribution is this mean under?" pattern as the `notation` entries) | Hint level needed: 4 (skipped) | Related: [[Survivorship Bias]], [[Law of Total Expectation]], [[Conditional Distribution]], [[Sample Mean]]

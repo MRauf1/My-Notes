@@ -51,6 +51,9 @@ tags:
 > $$
 > The single-variable rule in Definition 1 is the case $n = k = m = 1$, and its $\frac{df}{dt}$ formula is the case $n = 1, k = 2, m = 1$.
 
+# Properties
+- Applied to equations defining $y$ implicitly: [[Implicit Differentiation]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=230)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=114)
 [^3]: [Chain Rule (Multivariable Case)](https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case)

@@ -57,8 +57,9 @@ flowchart TD
     n_expected_utility --> n_decision_theory
     n_agent --> n_knowledge_based_agent
     n_knowledge_representation_artificial_intelligence --> n_knowledge_based_agent
-    class n_probability_distribution,n_total_turing_test,n_percept,n_agent_function,n_performance_measure,n_rational_agent,n_standard_model_of_artificial_intelligence,n_value_alignment_problem,n_utility_function,n_expected_utility,n_decision_theory,n_knowledge_based_agent locked;
+    class n_total_turing_test,n_percept,n_agent_function,n_performance_measure,n_rational_agent,n_standard_model_of_artificial_intelligence,n_value_alignment_problem,n_utility_function,n_expected_utility,n_decision_theory,n_knowledge_based_agent locked;
     class n_approaches_to_artificial_intelligence,n_turing_test,n_agent,n_knowledge_representation_artificial_intelligence L0;
+    class n_probability_distribution L3;
     class n_probability_distribution,n_approaches_to_artificial_intelligence,n_turing_test,n_total_turing_test,n_agent,n_percept,n_agent_function,n_performance_measure,n_rational_agent,n_standard_model_of_artificial_intelligence,n_value_alignment_problem,n_utility_function,n_expected_utility,n_decision_theory,n_knowledge_representation_artificial_intelligence,n_knowledge_based_agent internal-link;
 ```
 
@@ -179,8 +180,9 @@ flowchart TD
     n_knowledge_graph["Knowledge Graph"]
     n_multigraph --> n_knowledge_graph
     n_directed_graph --> n_knowledge_graph
-    class n_multigraph,n_directed_graph,n_knowledge_graph locked;
-    class n_distributed_representation L0;
+    class n_knowledge_graph locked;
+    class n_multigraph,n_distributed_representation L0;
+    class n_directed_graph L1;
     class n_multigraph,n_directed_graph,n_distributed_representation,n_knowledge_graph internal-link;
 ```
 

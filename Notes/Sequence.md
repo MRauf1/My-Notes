@@ -15,6 +15,10 @@ tags:
 Unlike [[Set]], sequence is ordered and can have repeating elements.
 
 # Types
+## Arithmetic vs. Geometric
+- [[Arithmetic Sequence]]
+- [[Geometric Sequence]]
+
 ## Subsequence
 - [[Subsequence]]
 

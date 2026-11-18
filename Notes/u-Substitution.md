@@ -10,7 +10,7 @@ tags:
 > The technique of setting a new [[Variable|variable]] $u$ equal to an [[Expression|expression]] of existing [[Variable|variables]], and then substituting in $u$ for those expressions to simplify the expression.
 
 > [!info] Definition 2 (In [[Indefinite Riemann Integral]])[^2]
-> If $u = g(x)$ is a [[Differentiable Function]] whose [[Range]] is $I$ with the [[Differential]] $du = g'(x) dx$ and $f$ is [[Continuous Function]] on $I$, then
+> If $u = g(x)$ is a [[Differentiable Function]] whose [[Range]] is $I$ with the [[Differential (Calculus)|Differential]] $du = g'(x) dx$ and $f$ is [[Continuous Function]] on $I$, then
 > $$
 > \begin{align}
 > \int f(g(x)) g'(x) dx = \int f(u) du
@@ -18,7 +18,7 @@ tags:
 > $$
 
 > [!info] Definition 3 (In [[Definite Riemann Integral]])[^2]
-> If $u = g(x)$ is a [[Differentiable Function]] whose [[Range]] is $I$ with the [[Differential]] $du = g'(x) dx$ and $f$ is [[Continuous Function]] on $I$, then
+> If $u = g(x)$ is a [[Differentiable Function]] whose [[Range]] is $I$ with the [[Differential (Calculus)|Differential]] $du = g'(x) dx$ and $f$ is [[Continuous Function]] on $I$, then
 > $$
 > \begin{align}
 > \int_a^b f(g(x)) g'(x) dx = \int_{g(a)}^{g(b)} f(u) du

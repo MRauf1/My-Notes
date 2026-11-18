@@ -20,4 +20,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Used in [[Logarithmic Differentiation]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=250)

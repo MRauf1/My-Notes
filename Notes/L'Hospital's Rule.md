@@ -39,6 +39,7 @@ Limits here are in the sense of [[Limit of Function in Extended Real Number Syst
 You can keep reapplying this rule as long as the answer remains indeterminate.
 
 # Properties
+- Applies to the [[Indeterminate Form|indeterminate forms]] $0/0$ and $\infty/\infty$; the other forms are first rewritten as quotients.
 - Proved using the generalized [[Mean Value Theorem]].
 - Fails for complex-valued functions ([[Derivative of Vector-Valued Function]]).
 

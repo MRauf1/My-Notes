@@ -24,5 +24,8 @@ Section of a [[Cone]].[^1] More specifically, a double-napped cone.
 - [[Parabola]]
 - [[Hyperbola]]
 
+# Properties
+- Focus–directrix definition: [[Conic Section Eccentricity]]; polar equations: [[Conic Section Polar Form]]; removing the $xy$-term: [[Rotation of Axes]].
+
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=507)
 [^2]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=552)

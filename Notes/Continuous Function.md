@@ -100,6 +100,7 @@ The complement of $E$ in $X$ plays no role in this definition, so we lose nothin
 - [[Extreme Value Theorem]]
 - [[Noncompact Subset of Real Line Continuous Function Theorem]]
 - [[Tietze Extension Theorem]]
+- [[Continuous Extension from Closed Subset of Real Line]]
 - Stronger notion: [[Uniformly Continuous Function]]
 - Failure of continuity: [[Discontinuity]]
 - Contrast with [[Open Map]]

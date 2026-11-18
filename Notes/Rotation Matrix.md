@@ -21,6 +21,7 @@ Matrix rotating a [[Plane|plane]] by $\theta$ [[Degree|degrees]] counterclockwis
 $R_{\theta, u}$, where $u$ is a unit vector = matrix of [[Rotation|rotation]] around [[Axis|axis]] through $u$ by $\theta$ angle, counterclockwise viewed from the head/tip of $u$ 
 
 # Properties
+- Coordinate form for rotating the axes of the plane: [[Rotation of Axes]].
 
 Let $u$ be a unit vector
 

@@ -16,4 +16,7 @@ tags:
 
 The set of elements that are either in $A$ or $B$, but not both. Mathematical way of representing [[Exclusive Or]].
 
+# Properties
+- Set counterpart of [[Exclusive Or]].
+
 [^1]: [HOW TO PROVE IT: A Structured Approach, Second Edition](zotero://open-pdf/library/items/THI2Q4PN?page=48)

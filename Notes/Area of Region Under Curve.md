@@ -15,4 +15,7 @@ tags:
 > $$
 > where $x^*_i$ are the sample points (could be left endpoint, right endpoint, midpoint, any point in the interval, but midpoint usually provides the best results)
 
+# Properties
+- Region between two curves: [[Area Between Curves]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=403)

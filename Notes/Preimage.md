@@ -20,6 +20,7 @@ If $f^{-1}(y)$ has at most one element for every $y \in Y$, then $f$ is an [[Inj
 Note that $f^{-1}(E)$ is defined for any $f$, regardless of whether $f$ has an [[Inverse Function]] (which requires $f$ to be bijective); $f^{-1}$ here denotes a set-valued map on subsets of $Y$, not the inverse of $f$ itself.
 
 # Properties
+- Set-operation identities: [[Image and Preimage Basic Properties]].
 - [[Image]] is the dual notion: the image maps subsets of $X$ forward into $Y$, the preimage maps subsets of $Y$ backward into $X$.
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=33)

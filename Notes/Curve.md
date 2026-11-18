@@ -17,7 +17,7 @@ tags:
 
 One-dimensional object/space that is locally [[Euclidean 1-Space]]/"flat" embedded in some higher dimensional space. Doesn't have to be globally Euclidean.
 
-One way of thinking of a curve is as a trip of a moving [[Point]] in $\mathbb{R}^n$.
+One way of thinking of a curve is as a trip of a moving [[Point]] in $\mathbb{R}^n$. In the plane this is a system of [[Parametric Equations]].
 
 The image of the curve is called the trace of the curve.
 

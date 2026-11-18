@@ -14,4 +14,7 @@ tags:
 > \end{align}
 > $$
 
+# Properties
+- Proof uses the [[Fundamental Trigonometric Limits]].
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=224)

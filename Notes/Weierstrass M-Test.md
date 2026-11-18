@@ -23,7 +23,7 @@ The converse is not true.[^2] The M-test also yields [[Absolutely Convergent Inf
 # Properties
 - Consequence of the [[Cauchy Criterion for Uniform Convergence Theorem]].
 - Used to construct a [[Continuous Nowhere Differentiable Function Theorem|continuous nowhere differentiable function]].
-- For series that do not converge absolutely, the uniform [[Dirichlet Test]] can be used instead.
+- For series that do not converge absolutely, the [[Uniform Dirichlet Test]] can be used instead.
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=215)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=157&annotation=IL2W76J3)

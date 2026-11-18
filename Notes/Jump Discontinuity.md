@@ -15,6 +15,7 @@ tags:
 > exist but $\phi(x_0^+) \neq \phi(x_0^-)$. The jump is $\phi(x_0^+) - \phi(x_0^-)$.
 
 # Properties
+- Example: the [[Greatest Integer Function]] jumps by $1$ at every integer.
 - The only kind of discontinuity allowed for a [[Piecewise Continuous Function]] (finitely many in each finite interval).
 - Distinct from a [[Removable Discontinuity]] (equal one-sided limits differing from $\phi(x_0)$) and from essential discontinuities ([[Discontinuity of the Second Kind]]) (a one-sided limit fails to exist).
 - Smoothed instantly by the [[Diffusion Equation]], which converges to the midpoint $\frac12[\phi(x_0^+) + \phi(x_0^-)]$ as $t \to 0$ ([[Diffusion Equation Smoothing Theorem]]); transported unchanged by the [[Wave Equation]] along characteristics.

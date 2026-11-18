@@ -11,6 +11,7 @@ tags:
 > It is the same as the [[Linear Map Image]].
 
 # Properties
+- Application: a [[Linear Code]] is the column space of its encoding matrix.
 - [[Matrix Product Column Space]]
 - [[Linear System of Equations Column Space]]
 

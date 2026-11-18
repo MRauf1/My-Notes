@@ -20,4 +20,6 @@ tags:
 > z^{\frac{1}{n}} = r^{\frac{1}{n}} (\cos(\frac{\theta + 2 \pi k}{n}) + i \sin(\frac{\theta + 2 \pi k}{n}))
 > \end{align}
 > $$
-> for $k = 0, \dots, n - 1$
+> for $k = 0, \dots, n - 1$# Properties
+- Gives the $n$ distinct roots in [[Nth Root of Complex Number]].
+
