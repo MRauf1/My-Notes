@@ -44,6 +44,8 @@ Expectation is a [[Linear Map|linear operator]].
 
 This avoids finding the distribution of $Y$ ([[Random Variable Transformation]]) first; $E[g(X)]$ is the [[Weighted Mean|weighted mean]] of $g(x)$.
 
+The discrete proof groups the terms of $\sum_{x} |g(x)|\,p_X(x)$ by the fibres $\{x : g(x) = y\}$, which is justified by absolute convergence ([[Regrouping (Series)]]), and identifies each fibre sum with $p_Y(y)$.
+
 > [!abstract] Theorem 1' (Expectation of a Function of a [[Random Vector]])[^4]
 > Let $(X_1, X_2)$ be a random vector and $Y = g(X_1, X_2)$ for $g: \mathbb{R}^2 \to \mathbb{R}$.
 > 1. Continuous case: if $\int_{-\infty}^\infty \int_{-\infty}^\infty |g(x_1, x_2)| f_{X_1, X_2}(x_1, x_2)\,dx_1\,dx_2 < \infty$, then $E(Y) = \int_{-\infty}^\infty \int_{-\infty}^\infty g(x_1, x_2) f_{X_1, X_2}(x_1, x_2)\,dx_1\,dx_2$.

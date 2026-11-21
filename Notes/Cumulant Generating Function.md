@@ -19,7 +19,8 @@ The $n$th cumulant is $\kappa_n = \psi^{(n)}(0)$, so $\psi(t) = \sum_{n \geq 1} 
 # Properties
 - Additive over [[Independent Random Variable|independent]] sums: $\psi_{X+Y} = \psi_X + \psi_Y$, so every cumulant of a sum is the sum of the cumulants.
 - $\psi_{aX+b}(t) = bt + \psi_X(at)$, so $\kappa_n$ for $n \geq 2$ is shift-invariant and scales by $a^n$.
-- The [[Normal Distribution]] is the only distribution with finitely many nonzero cumulants: $\psi(t) = \mu t + \sigma^2 t^2/2$.
+- The [[Normal Distribution]] is the only distribution with finitely many nonzero cumulants: $\psi(t) = \mu t + \sigma^2 t^2/2$. So $\kappa_n$ for $n \geq 3$ measures $n$th-order departure from normality.
+- For the standardized sum of $N$ i.i.d. variables, additivity and scaling give $\kappa_n \propto N^{1 - n/2}$. Every cumulant beyond the second vanishes as $N \to \infty$, which is the cumulant view of the [[Central Limit Theorem]]: skewness decays like $N^{-1/2}$ and excess kurtosis like $N^{-1}$ (the leading Edgeworth corrections).
 - $\kappa_3/\sigma^3$ is the [[Probability Distribution Skewness|skewness]] and $\kappa_4/\sigma^4$ is the excess [[Kurtosis]].
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=93)

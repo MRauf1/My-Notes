@@ -33,6 +33,10 @@ Differentiability is not required at the endpoints.[^3] Taylor's theorem ([[Tayl
 - [[Derivative Limit Theorem]]
 - Fails for complex/vector-valued functions ([[Derivative of Vector-Valued Function]]); see [[Mean Value Inequality for Vector-Valued Function]] instead.
 
+# Questions
+> [!question]- Trigger: you know something about $f'$ (a sign, a bound, monotonicity) and need a statement about a difference $f(x) - f(y)$. Which tool turns one into the other?
+> The [[Mean Value Theorem]]: $f(x) - f(y) = f'(c)(x-y)$ for some $c$ strictly between $x$ and $y$, so any information about $f'$ on that interval transfers to the difference. If you know $f''$ instead, use [[Taylor's Theorem]] with a remainder. Mind the sign of $x - y$ when you multiply an inequality on $f'(c)$ through by it.
+
 [^1]: [Calculus: Early Transcendentals](zotero://open-pdf/library/items/EEFDQ9Y5?page=320)
 [^2]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=250)
 [^3]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=116&annotation=8MZJYNH9); [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=117&annotation=JRXLEYVB); [Principles of Mathematical Analysis](zotero://open-pdf/library/items/77RSE64H?page=117&annotation=XSKN8EKL)

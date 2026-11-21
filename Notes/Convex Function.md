@@ -15,6 +15,9 @@ tags:
 > $$
 > $f$ is [[Strictly Convex Function]] if the above [[Inequality]] is strict.
 
+![[Convex Function Chord.png]]
+The chord from $(x_1, f(x_1))$ to $(x_2, f(x_2))$ lies on or above the graph between $x_1$ and $x_2$. In the figure, $\theta$ plays the role of $\gamma$.
+
 # Properties
 - Geometrically, every chord between two points on the graph lies above the function. A twice-differentiable function is convex if its [[Hessian Matrix]] is positive semidefinite everywhere (a positive definite Hessian gives strict convexity); a convex loss has a single [[Global Minimum]], making training relatively easy.[^2]
 - [[Convex Function Basic Properties]]

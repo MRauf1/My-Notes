@@ -28,6 +28,7 @@ $O(n^2)$: storing $n^2$ boolean entries requires at least $n^2$ bits; a naive im
 # Properties
 - [[Graph]]
 - Despite its $O(n^2)$ memory and slow `in_edges(i)`/`out_edges(i)`, it remains useful for a *dense* graph (one with close to $n^2$ edges), where $O(n^2)$ space is unavoidable regardless of representation, and for applications that exploit algebraic operations on $a$ to compute properties of $G$.[^7]
+- For a numeric adjacency matrix $A$ (entries $0/1$), $(A^k)_{ij}$ counts walks of length $k$ from $i$ to $j$. For an undirected graph $A$ is symmetric, and $\frac1n\operatorname{tr}A^k$, the average number of closed $k$-walks, is the $k$th [[Moment (Statistics)|moment]] of its eigenvalue distribution $\frac1n\sum_i\delta_{\lambda_i}$. For example, $\frac1n\operatorname{tr}A^2$ is the average degree and $\frac1{6}\operatorname{tr}A^3$ is the number of triangles.
 - Contrast with [[Adjacency Lists]], the vertex-centric alternative representation.
 - Generalized to higher-dimensional connectivity (vertex–edge, edge–triangle, …) by the [[Simplicial Adjacency Matrix]].
 - For an [[Undirected Graph]], the adjacency matrix is symmetric; for large sparse graphs it is stored as a list of connections $(m, n)$ instead.[^8]

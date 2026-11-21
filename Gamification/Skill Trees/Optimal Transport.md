@@ -92,10 +92,9 @@ flowchart TD
     n_wasserstein_distance --> n_bures_wasserstein_distance
     class n_radon_measure,n_discrete_measure,n_assignment_problem,n_push_forward_measure,n_monge_problem,n_transportation_polytope,n_coupling_probability,n_kantorovich_problem,n_birkhoff_von_neumann_theorem,n_weak_convergence_of_measures,n_kantorovich_duality,n_brenier_s_theorem,n_monge_amp_re_equation,n_one_dimensional_optimal_transport,n_bures_wasserstein_distance,n_total_variation_distance planned;
     class n_borel_measure,n_dirac_measure,n_measure_measure_theory,n_marginal_distribution,n_convergence_in_distribution,n_absolutely_continuous_measure,n_multivariate_normal_distribution,n_wasserstein_distance locked;
-    class n_quantile_function L0;
     class n_convex_set L1;
-    class n_permutation,n_permutation_matrix,n_metric_space L2;
-    class n_probability_mass_function,n_convex_function L3;
+    class n_permutation,n_permutation_matrix,n_convex_function,n_metric_space L2;
+    class n_probability_mass_function,n_quantile_function L3;
     class n_borel_measure,n_dirac_measure,n_probability_mass_function,n_permutation,n_measure_measure_theory,n_convex_set,n_marginal_distribution,n_permutation_matrix,n_convergence_in_distribution,n_absolutely_continuous_measure,n_convex_function,n_quantile_function,n_multivariate_normal_distribution,n_metric_space,n_wasserstein_distance internal-link;
 ```
 
@@ -229,7 +228,7 @@ flowchart TD
     n_expectation --> n_stochastic_gradient_methods_for_optimal_transport
     n_entropic_semi_discrete_optimal_transport --> n_stochastic_gradient_methods_for_optimal_transport
     class n_c_transform,n_entropic_optimal_transport_duality,n_c_concave_function,n_semi_discrete_optimal_transport,n_laguerre_cell,n_entropic_semi_discrete_optimal_transport,n_stochastic_gradient_methods_for_optimal_transport planned;
-    class n_expectation L1;
+    class n_expectation L4;
     class n_expectation internal-link;
 ```
 
@@ -319,7 +318,7 @@ flowchart TD
     class n_brenier_s_theorem,n_entropic_optimal_transport,n_continuity_equation,n_displacement_interpolation,n_benamou_brenier_formula,n_staggered_grid_discretization,n_proximal_operator,n_douglas_rachford_splitting,n_wasserstein_fisher_rao_distance,n_schr_dinger_problem planned;
     class n_transport_equation,n_brownian_motion,n_wasserstein_distance locked;
     class n_divergence_of_vector_field L0;
-    class n_convex_function L3;
+    class n_convex_function L2;
     class n_divergence_of_vector_field,n_transport_equation,n_convex_function,n_brownian_motion,n_wasserstein_distance internal-link;
 ```
 
@@ -368,8 +367,8 @@ flowchart TD
     n_wasserstein_distance --> n_optimal_transport_sample_complexity
     class n_radon_measure,n_phi_divergence,n_hellinger_distance,n_integral_probability_metric,n_maximum_mean_discrepancy,n_negative_definite_kernel,n_empirical_measure,n_optimal_transport_sample_complexity planned;
     class n_absolutely_continuous_measure,n_hilbert_space,n_dirac_measure,n_empirical_distribution_function,n_wasserstein_distance locked;
-    class n_expectation L1;
-    class n_convex_function L3;
+    class n_convex_function L2;
+    class n_expectation L4;
     class n_absolutely_continuous_measure,n_convex_function,n_expectation,n_hilbert_space,n_dirac_measure,n_empirical_distribution_function,n_wasserstein_distance internal-link;
 ```
 
@@ -471,9 +470,10 @@ flowchart TD
     n_inverse_transform_sampling --> n_knothe_rosenblatt_rearrangement
     class n_kantorovich_problem,n_phi_divergence,n_one_dimensional_optimal_transport,n_entropic_optimal_transport,n_multi_marginal_optimal_transport,n_unbalanced_optimal_transport,n_martingale_optimal_transport,n_sliced_wasserstein_distance,n_quantum_optimal_transport,n_gromov_hausdorff_distance,n_gromov_wasserstein_distance planned;
     class n_absolutely_continuous_measure,n_wasserstein_distance,n_inverse_transform_sampling,n_knothe_rosenblatt_rearrangement locked;
-    class n_quantile_function,n_monotone_triangular_map L0;
+    class n_monotone_triangular_map L0;
     class n_conditional_expectation,n_positive_semidefinite_matrix,n_conditional_distribution L1;
-    class n_metric_space,n_jacobian_matrix,n_lower_triangular_matrix L2;
+    class n_metric_space,n_lower_triangular_matrix L2;
+    class n_jacobian_matrix,n_quantile_function L3;
     class n_conditional_expectation,n_positive_semidefinite_matrix,n_metric_space,n_jacobian_matrix,n_lower_triangular_matrix,n_absolutely_continuous_measure,n_conditional_distribution,n_quantile_function,n_wasserstein_distance,n_inverse_transform_sampling,n_monotone_triangular_map,n_knothe_rosenblatt_rearrangement internal-link;
 ```
 

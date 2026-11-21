@@ -12,6 +12,7 @@ For non-injective $g$, the likelihood of $\eta$ is defined as the induced (profi
 
 # Properties
 - Estimation commutes with reparametrization: the MLE of $\sigma$ is $\sqrt{\hat{\sigma}^2}$, and the MLE of $e^\theta$ is $e^{\hat{\theta}}$. Unbiasedness has no such property ([[Unbiased Estimator]]).
+- Why it holds: the likelihood $L(\theta) = p(\mathcal{D} | \theta)$ is a density in the data but only a *function* of $\theta$, so reparametrizing relabels its argument with no Jacobian factor. A posterior density in $\theta$ picks up $|d\theta/d\eta|$, which is why MAP estimates are not invariant ([[Maximum Likelihood vs Maximum a Posteriori Estimation]], [[Random Variable Transformation]]).
 - Combined with the [[Delta Method]], it gives the asymptotic distribution of $g(\hat{\theta})$ ([[Maximum Likelihood Estimator Asymptotic Normality]]).
 - A property of [[Maximum Likelihood Estimation]], listed in [[Maximum Likelihood Estimation Properties]].
 

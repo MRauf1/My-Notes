@@ -15,4 +15,6 @@ tags:
 
 Axiom 5 is the basis of [[Proof by Induction]].
 
+In ZF set theory these axioms are not assumed but proved: the [[Axiom of Infinity]] gives an inductive set, the smallest one is $\omega = \mathbb{N}$ (starting at $0$), and Axiom 5 follows from its minimality.
+
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=16)

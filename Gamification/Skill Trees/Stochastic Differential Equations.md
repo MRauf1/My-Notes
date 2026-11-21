@@ -41,7 +41,7 @@ flowchart TD
     n_expectation --> n_kolmogorov_continuity_theorem
     class n_kolmogorov_extension_theorem,n_gaussian_process,n_kolmogorov_continuity_theorem planned;
     class n_measure_measure_theory,n_product_sigma_algebra,n_multivariate_normal_distribution locked;
-    class n_expectation L1;
+    class n_expectation L4;
     class n_measure_measure_theory,n_product_sigma_algebra,n_multivariate_normal_distribution,n_expectation internal-link;
 ```
 

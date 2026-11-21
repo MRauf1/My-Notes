@@ -25,6 +25,7 @@ Every random variable has a cdf, and it determines the distribution completely. 
 - [[Random Variables Equal in Distribution]]
 - Its (generalized) inverse is the [[Quantile Function]].
 - Multivariate version: [[Joint Cumulative Distribution Function]].
+- Conversely, every nondecreasing, right-continuous $F$ with $F(-\infty) = 0$ and $F(\infty) = 1$ is the cdf of exactly one distribution. So distributions on $\mathbb{R}$ and cdfs are in bijection, and unlike the [[Moment Generating Function|mgf]], the cdf exists for every random variable. For a comparison of the representations, see [[Characteristic Function (Probability)]].
 - Measure-theoretically, every finite [[Borel Measure]] $\mu$ on $\mathbb{R}$ is the [[Lebesgue-Stieltjes Measure]] of its cdf $F(x) = \mu((-\infty, x])$, which is increasing and right continuous by [[Measure Basic Properties|monotonicity and continuity from above]].[^4]
 - Expectations of discrete, continuous, and mixed random variables unify as the [[Riemann-Stieltjes Integral]] $E[g(X)] = \int g(x)\,dF_X(x)$, with $F_X$ as integrator ([[Expectation]]).
 - Its generalized inverse $F^{-1}(u) = \inf\{x \mid F(x) \geq u\}$ always exists (by right-continuity) and drives [[Inverse Transform Sampling]].[^3]

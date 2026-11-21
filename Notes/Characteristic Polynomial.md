@@ -30,6 +30,7 @@ Some algorithms for computing the roots of a polynomial $p(x)$ actually run this
 > If $A \in M_n(\mathbb{F})$, the coefficient of $x^{n-1}$ in $p_A(x)$ is $(-1)^{n-1} tr(A)$, and the constant term of $p_A(x)$ is $\det(A)$.
 
 # Properties
+- Determines the spectrum (with multiplicities), not the matrix. For symmetric $A$ it is equivalent data to the [[Characteristic Function (Probability)|characteristic function]] $\frac1n\operatorname{tr}e^{itA}$ of the eigenvalue distribution.
 - [[Eigenvalue]]
 - [[Algebraic Multiplicity of Eigenvalue]]
 - [[Similar Matrix Characteristic Polynomial]]

@@ -89,7 +89,7 @@ flowchart TD
     n_set_of_real_numbers --> n_inductive_set
     class n_linear_continuum locked;
     class n_open_interval_in_ordered_set,n_relation_least_upper_bound,n_inductive_set L0;
-    class n_set_of_real_numbers L2;
+    class n_set_of_real_numbers L3;
     class n_open_interval_in_ordered_set,n_relation_least_upper_bound,n_set_of_real_numbers,n_linear_continuum,n_inductive_set internal-link;
 ```
 

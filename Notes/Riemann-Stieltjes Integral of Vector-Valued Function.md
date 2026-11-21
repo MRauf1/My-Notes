@@ -36,6 +36,7 @@ Unlike the coordinatewise results, Theorem 3 does not follow by applying the sca
 
 # Properties
 - Scalar version of Theorem 3: [[Riemann Integral Triangle Inequality]].
+- With $\mathbb{C} \cong \mathbb{R}^2$ ($|z|$ the Euclidean norm), Theorem 3 is the triangle inequality for complex-valued integrals, $\left|\int g\,d\alpha\right| \leq \int |g|\,d\alpha$ for $g = u + iv$; e.g. it bounds a [[Characteristic Function (Probability)|characteristic function]] by $1$.
 - Used to compute the length of a $C^1$ curve, $\int_a^b |\gamma'(t)|\,dt$ ([[Rectifiable Curve]]).
 - Parallels [[Derivative of Vector-Valued Function]] (also defined coordinatewise).
 

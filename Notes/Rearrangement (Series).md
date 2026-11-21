@@ -16,6 +16,7 @@ In general, the sequence of partial sums of a rearrangement $\sum a_n'$ is an en
 
 # Properties
 - [[Riemann Series Theorem]]: by contrast, a conditionally (non-absolutely) convergent series of real numbers can be rearranged to converge to any prescribed value, or to diverge.
+- [[Regrouping (Series)]]: a rearrangement is the special case of a regrouping with singleton blocks; absolute convergence also allows grouping into arbitrary (possibly infinite) blocks without changing the sum.
 
 [^1]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=85)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=87)

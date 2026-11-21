@@ -16,6 +16,7 @@ tags:
 - The [[Infinite Series Comparison Test|comparison]], [[Infinite Series Root Test|root]], and [[Infinite Series Ratio Test|ratio]] tests are really tests for absolute convergence, and give no information about nonabsolutely convergent series; [[Summation by Parts|summation by parts]] (e.g. the [[Dirichlet Test]]) can sometimes handle those instead.[^2]
 - A [[Power Series]] converges absolutely at every point in the interior of its circle (or interval) of convergence.[^2]
 - Every [[Rearrangement (Series)|rearrangement]] of an absolutely convergent series converges to the same sum; contrast [[Riemann Series Theorem]] for nonabsolutely convergent series.
+- An absolutely convergent series can be regrouped along any partition of its index set without changing the sum ([[Regrouping (Series)]]).
 
 [^1]: [Elementary Analysis: The Theory of Calculus](zotero://open-pdf/library/items/GUY2WR3V?page=111)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=82)

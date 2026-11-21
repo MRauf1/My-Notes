@@ -28,5 +28,6 @@ No ordering of $X$ is involved, so the value is independent of any enumeration; 
 - A finite unordered sum forces $f$ to be nonzero on at most a [[Countable Set|countable]] set.
 - It is the integral of $f$ with respect to counting measure on $X$ (see [[Lebesgue Integral (Measure Theory)]]).
 - Takes values in the [[Extended Real Number Set]].
+- Grouping the terms along any partition of $X$ does not change the sum ([[Regrouping (Series)]], Theorem 1).
 
 [^1]: [Real Analysis: Modern Techniques and Their Applications](zotero://open-pdf/library/items/D7QVECG5?page=24&annotation=29VBHMLB)

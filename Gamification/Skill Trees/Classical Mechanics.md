@@ -270,7 +270,7 @@ flowchart TD
     n_acceleration_vector --> n_equations_of_motion_for_constant_acceleration
     n_antiderivative --> n_equations_of_motion_for_constant_acceleration
     class n_velocity_vector,n_acceleration_vector,n_speed,n_equations_of_motion_for_constant_acceleration locked;
-    class n_antiderivative L2;
+    class n_antiderivative L3;
     class n_velocity_vector,n_acceleration_vector,n_antiderivative,n_speed,n_equations_of_motion_for_constant_acceleration internal-link;
 ```
 

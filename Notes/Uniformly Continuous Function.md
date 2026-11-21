@@ -36,6 +36,7 @@ Continuity can be defined at a single point, while uniform continuity is a prope
 # Properties
 - A family of functions sharing one $\delta$ for each $\epsilon$ is [[Equicontinuity|equicontinuous]]; every member of an equicontinuous family is uniformly continuous.
 - [[Uniformly Differentiable Function]] is the analogous notion for difference quotients.
+- [[Absolutely Continuous Function|Absolute continuity]] is the stronger condition in which one $\delta$ controls the total change of $f$ over finitely many disjoint intervals at once. Uniform continuity is its one-interval case.
 - [[Continuous to Uniformly Continuous Theorem]]
 - [[Uniformly Continuous Function Cauchy Sequence Theorem]]
 - [[Uniformly Continuous Function Extension of Function Theorem]]

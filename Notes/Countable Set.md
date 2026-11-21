@@ -6,7 +6,7 @@ tags:
 
 # Definition
 > [!info] Countable Set[^1]
-> A [[Set]] $C$ is countable if $C$ is finite or has as many elements as there are positive integers, i.e. there is a [[Bijective Function|bijection]] $C \to \mathbb{N}$. In the latter case $C$ is called countably infinite. A set that is not countable is uncountable.
+> A [[Set]] $C$ is countable if $C$ is [[Finite Set|finite]] or has as many elements as there are positive integers, i.e. there is a [[Bijective Function|bijection]] $C \to \mathbb{N}$. In the latter case $C$ is called countably infinite. A set that is not countable is uncountable.
 
 # Properties
 - $\mathbb{N}$, $\mathbb{Z}$, and $\mathbb{Q}$ are countably infinite; $\mathbb{R}$ and every [[Non-degenerate Interval]] are uncountable. The [[Set of Binary Sequences Uncountability Theorem|set of all binary (0/1) sequences]] is likewise uncountable, as is $\mathcal{P}(\mathbb{Z}^+)$ ([[Cantor's Theorem]]).
@@ -15,7 +15,7 @@ tags:
 - (Folland) If $X$ and $Y$ are countable, so is $X \times Y$; if $A$ is countable and each $X_\alpha$ is countable, then $\bigcup_{\alpha \in A} X_\alpha$ is countable; and if $X$ is countably infinite, then $\operatorname{card}(X) = \operatorname{card}(\mathbb{N})$. Consequently $\mathbb{Z}$ and $\mathbb{Q}$ are countable.[^5]
 - Any set with $\operatorname{card}(X) \geq \mathfrak{c}$ is uncountable; see [[Cardinality of the Continuum]] and [[Continuum Hypothesis]].
 - Every infinite subset of a countable set is countable; equivalently, no uncountable set can be a subset of a countable set, so countably infinite sets are the "smallest" kind of infinite set.[^3]
-- A set is infinite if and only if it is equivalent (in bijection) to one of its own proper subsets; a finite set can never be put in bijection with a proper subset of itself.[^4]
+- A set is [[Infinite Set|infinite]] if and only if it is equivalent (in bijection) to one of its own proper subsets; a finite set can never be put in bijection with a proper subset of itself.[^4]
 - Countability is the dividing line in the axioms of [[Probability]]: additivity is required over countable [[Mutually Exclusive Events|disjoint]] unions, and a [[Sigma-Field]] is closed under countable unions.
 - A [[Discrete Random Variable]] is one whose space is countable.
 

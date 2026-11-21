@@ -244,8 +244,7 @@ flowchart TD
     n_mixture_distribution --> n_jensen_shannon_divergence
     class n_entropy,n_noiseless_coding_theorem,n_differential_entropy,n_conditional_entropy,n_kullback_leibler_divergence,n_mutual_information,n_jensen_shannon_divergence locked;
     class n_jensen_s_inequality,n_mixture_distribution,n_information_content L0;
-    class n_probability_density_function L2;
-    class n_probability L3;
+    class n_probability,n_probability_density_function L3;
     class n_probability,n_probability_density_function,n_jensen_s_inequality,n_mixture_distribution,n_information_content,n_entropy,n_noiseless_coding_theorem,n_differential_entropy,n_conditional_entropy,n_kullback_leibler_divergence,n_mutual_information,n_jensen_shannon_divergence internal-link;
 ```
 

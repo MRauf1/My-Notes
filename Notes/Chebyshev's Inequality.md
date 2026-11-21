@@ -7,7 +7,7 @@ tags:
 # Definition
 
 > [!abstract] Theorem 1 (Chebyshev's [[Inequality]])[^1]
-> Let $X$ be a [[Random Variable]] with finite [[Variance]] $\sigma^2$. Then for every $k > 0$
+> Let $X$ be a [[Random Variable]] with finite, positive [[Variance]] $\sigma^2 > 0$. Then for every $k > 0$
 > $$
 > \begin{align}
 > P(|X - \mu| \geq k \sigma) &\leq \frac{1}{k^2} \\
@@ -16,6 +16,8 @@ tags:
 > $$
 
 The finite variance implies that $\mu = E(X)$ exists ([[mth Moment Existence Theorem]]). It is the special case of [[Markov's Inequality]] with $u(X) = (X - \mu)^2$ and $c = k^2 \sigma^2$.
+
+The hypothesis $\sigma > 0$ is needed (Hogg states only finite variance). If $\sigma = 0$, then $X = \mu$ almost surely ([[Degenerate Distribution]]), so $P(|X - \mu| \geq k\sigma) = P(|X-\mu| \geq 0) = 1 > 1/k^2$ for every $k > 1$. In Markov's terms, $c = k^2\sigma^2$ fails to be positive. The form $P(|X-\mu| \geq \varepsilon) \leq \sigma^2/\varepsilon^2$ for $\varepsilon > 0$ holds without this hypothesis.
 
 For a particular distribution the bound $1/k^2$ is often far from the actual probability, but it cannot be improved as a bound valid for every $k$ and every distribution with finite variance: for $k \geq 1$, the distribution with $P(X = \mu \pm k\sigma) = \frac{1}{2k^2}$ each and $P(X = \mu) = 1 - \frac{1}{k^2}$ has mean $\mu$, variance $\sigma^2$, and $P(|X - \mu| \geq k\sigma) = \frac{1}{k^2}$ exactly. For $k \leq 1$ the bound is trivial.
 

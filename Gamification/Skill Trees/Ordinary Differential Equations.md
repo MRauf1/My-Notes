@@ -275,8 +275,8 @@ flowchart TD
     n_laplace_transform --> n_laplace_transform_of_periodic_function
     class n_laplace_transform,n_inverse_laplace_transform,n_laplace_transform_linearity,n_laplace_transform_existence_theorem,n_laplace_transform_of_derivative,n_laplace_transform_translation_theorem,n_laplace_transform_convolution_theorem,n_laplace_transform_of_integral,n_laplace_transform_differentiation_theorem,n_laplace_transform_time_translation_theorem,n_laplace_transform_of_periodic_function planned;
     class n_improper_riemann_integral_comparison_theorem,n_heaviside_function L0;
-    class n_integration_by_parts,n_fubini_s_theorem,n_fundamental_theorem_of_calculus L2;
-    class n_improper_riemann_integral L3;
+    class n_integration_by_parts,n_fubini_s_theorem L2;
+    class n_improper_riemann_integral,n_fundamental_theorem_of_calculus L3;
     class n_improper_riemann_integral,n_improper_riemann_integral_comparison_theorem,n_integration_by_parts,n_fubini_s_theorem,n_fundamental_theorem_of_calculus,n_heaviside_function internal-link;
 ```
 
@@ -455,7 +455,8 @@ flowchart TD
     n_phase_plane --> n_lorenz_system
     class n_system_of_first_order_ordinary_differential_equations,n_eigenvalue_method_for_linear_systems,n_first_order_linear_system_of_ordinary_differential_equations,n_mass_spring_dashpot_system,n_autonomous_first_order_ordinary_differential_equation,n_stable_equilibrium_solution,n_bifurcation,n_autonomous_system_of_ordinary_differential_equations,n_phase_plane,n_critical_point_of_autonomous_system,n_stability_of_critical_point,n_critical_point_classification_of_linear_systems,n_almost_linear_system,n_almost_linear_system_stability_theorem,n_nonlinear_pendulum,n_nonlinear_spring,n_logistic_map,n_period_doubling,n_lorenz_system planned;
     class n_first_order_ordinary_differential_equation,n_euler_s_method L1;
-    class n_jacobian_matrix,n_equilibrium_solution L2;
+    class n_equilibrium_solution L2;
+    class n_jacobian_matrix L3;
     class n_first_order_ordinary_differential_equation,n_jacobian_matrix,n_euler_s_method,n_equilibrium_solution internal-link;
 ```
 

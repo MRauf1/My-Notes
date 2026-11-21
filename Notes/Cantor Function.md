@@ -18,7 +18,7 @@ On $C$, $f$ is order preserving except that the two endpoints $x < y$ of a remov
 
 # Properties
 - [[Increasing Function|Increasing]] and maps $[0,1]$ onto $[0,1]$; an increasing function whose range is an interval has no [[Jump Discontinuity|jump discontinuities]], so $f$ is [[Continuous Function|continuous]].[^1]
-- Constant on each removed interval, so $f' = 0$ on $[0,1] \setminus C$, a set of full Lebesgue measure; yet $f(0) = 0$ and $f(1) = 1$. It is continuous but not absolutely continuous.
+- Constant on each removed interval, so $f' = 0$ on $[0,1] \setminus C$, a set of full Lebesgue measure; yet $f(0) = 0$ and $f(1) = 1$. It is continuous but not [[Absolutely Continuous Function|absolutely continuous]].
 - $f$ maps $C$ onto $[0,1]$, which proves $\operatorname{card}(C) = \mathfrak{c}$.
 - As a [[Cumulative Distribution Function]], it defines the Cantor distribution: a [[Lebesgue-Stieltjes Measure]] with no atoms that is singular to [[Lebesgue Measure]] ([[Mutually Singular Measures]]).
 - Used to exhibit Lebesgue measurable sets that are not Borel.

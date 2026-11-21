@@ -47,7 +47,8 @@ flowchart TD
     n_time_series --> n_backshift_operator
     n_backshift_operator --> n_difference_operator
     class n_time_series,n_stationarity,n_white_noise_process,n_signal_plus_noise_model,n_random_walk_with_drift_model,n_backshift_operator,n_difference_operator locked;
-    class n_stochastic_process,n_variance,n_random_walk L0;
+    class n_stochastic_process,n_random_walk L0;
+    class n_variance L3;
     class n_stochastic_process,n_variance,n_random_walk,n_time_series,n_stationarity,n_white_noise_process,n_signal_plus_noise_model,n_random_walk_with_drift_model,n_backshift_operator,n_difference_operator internal-link;
 ```
 
@@ -113,7 +114,8 @@ flowchart TD
     n_stochastic_process --> n_auto_covariance
     n_stochastic_process --> n_cross_covariance
     class n_covariance,n_time_series,n_stationarity,n_correlation,n_regression,n_auto_covariance,n_stationary_stochastic_process,n_auto_covariance_basic_properties,n_auto_correlation,n_auto_correlation_basic_properties,n_partial_auto_correlation,n_trend_stationary_stochastic_process,n_cross_covariance,n_cross_correlation,n_joint_stationary_stochastic_process,n_cross_covariance_basic_properties,n_cross_correlation_basic_properties locked;
-    class n_variance,n_stochastic_process L0;
+    class n_stochastic_process L0;
+    class n_variance L3;
     class n_covariance,n_time_series,n_variance,n_stationarity,n_correlation,n_regression,n_stochastic_process,n_auto_covariance,n_stationary_stochastic_process,n_auto_covariance_basic_properties,n_auto_correlation,n_auto_correlation_basic_properties,n_partial_auto_correlation,n_trend_stationary_stochastic_process,n_cross_covariance,n_cross_correlation,n_joint_stationary_stochastic_process,n_cross_covariance_basic_properties,n_cross_correlation_basic_properties internal-link;
 ```
 

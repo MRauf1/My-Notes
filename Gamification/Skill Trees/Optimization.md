@@ -33,8 +33,7 @@ flowchart TD
     n_convex_function --> n_bregman_divergence
     n_taylor_series --> n_bregman_divergence
     class n_bregman_divergence L0;
-    class n_taylor_series L2;
-    class n_convex_function L3;
+    class n_convex_function,n_taylor_series L2;
     class n_convex_function,n_taylor_series,n_bregman_divergence internal-link;
 ```
 
@@ -106,11 +105,11 @@ flowchart TD
     n_gradient_descent --> n_mirror_descent
     n_bregman_divergence --> n_mirror_descent
     n_kullback_leibler_divergence --> n_mirror_descent
-    class n_gradient_based_learning,n_standard_deviation,n_kullback_leibler_divergence,n_zeroth_order_optimization,n_first_order_optimization,n_higher_order_optimization,n_suboptimal_local_minimum,n_gradient_descent,n_learning_rate,n_learning_rate_schedule,n_stochastic_gradient_descent,n_batch_size,n_gradient_descent_with_momentum,n_line_search,n_newton_s_method_optimization,n_evolution_strategy,n_mirror_descent locked;
+    class n_gradient_based_learning,n_kullback_leibler_divergence,n_zeroth_order_optimization,n_first_order_optimization,n_higher_order_optimization,n_suboptimal_local_minimum,n_gradient_descent,n_learning_rate,n_learning_rate_schedule,n_stochastic_gradient_descent,n_batch_size,n_gradient_descent_with_momentum,n_line_search,n_newton_s_method_optimization,n_evolution_strategy,n_mirror_descent locked;
     class n_bregman_divergence,n_operating_point,n_global_minimum L0;
     class n_cost_function,n_hessian_matrix,n_saddle_point L1;
     class n_gradient_vector L2;
-    class n_local_minimum L3;
+    class n_local_minimum,n_standard_deviation L3;
     class n_cost_function,n_gradient_vector,n_hessian_matrix,n_gradient_based_learning,n_local_minimum,n_standard_deviation,n_bregman_divergence,n_kullback_leibler_divergence,n_operating_point,n_zeroth_order_optimization,n_first_order_optimization,n_higher_order_optimization,n_global_minimum,n_suboptimal_local_minimum,n_saddle_point,n_gradient_descent,n_learning_rate,n_learning_rate_schedule,n_stochastic_gradient_descent,n_batch_size,n_gradient_descent_with_momentum,n_line_search,n_newton_s_method_optimization,n_evolution_strategy,n_mirror_descent internal-link;
 ```
 

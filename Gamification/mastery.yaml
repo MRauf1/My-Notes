@@ -28,16 +28,20 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Absolute Minimum:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Absolute Value:
@@ -115,9 +119,11 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Rearrangement (Series))
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Absolutely Convergent Infinite Series Convergence Theorem:
     history:
     - 2026-11-14 L0->L1 check
@@ -218,13 +224,14 @@ nodes:
     level: 2
     progress: 1
   Alternating Multilinear Function:
-    direct:
-    - 3
     history:
     - 2026-11-09 L0->L2 placement (prerequisite of Determinant Invertible Matrix Theorem)
-    last_tested: '2026-11-15'
-    level: 2
-    progress: 1
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
   Alternating Series:
     direct:
     - 2
@@ -266,9 +273,12 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Antisymmetric Relation:
     history:
     - 2026-11-04 L0->L2 placement (prerequisite of Partial Order)
@@ -543,6 +553,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 1
     progress: 1
+  Bias-Variance-MSE Decomposition of an Estimator:
+    history:
+    - 2026-11-19 L0->L2 exercise
+    last_tested: '2026-11-19'
+    level: 2
+    progress: 0
+    provisional: true
   Biconditional Statement:
     direct:
     - 3
@@ -654,8 +671,10 @@ nodes:
   Bounded Set:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Calculus with Parametric Curves:
@@ -810,9 +829,12 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Characteristic Polynomial:
     audit: 2
     direct:
@@ -823,6 +845,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 2
     progress: 1
+  Chebyshev's Inequality:
+    history:
+    - 2026-11-20 L0->L3 exercise
+    last_tested: '2026-11-20'
+    level: 3
+    progress: 0
+    provisional: true
   Cholesky Decomposition:
     banked:
       3: 1
@@ -1324,8 +1353,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Continuous Function on Metric Space Theorem:
@@ -1339,9 +1370,19 @@ nodes:
   Continuous Random Variable:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
-    last_tested: '2026-11-14'
-    level: 1
+    - 2026-11-18 L1->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
+  Continuous Random Variable Probability Inequality Theorem:
+    history:
+    - 2026-11-18 L0->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
   Continuous to Uniformly Continuous Theorem:
     direct:
     - 3
@@ -1397,8 +1438,9 @@ nodes:
     - 2026-11-16 L0->L1 check
     - 2026-11-16 L1->L2 check
     - 2026-11-16 L2->L3 check
+    - 2026-11-20 L3->L2 stuck
     last_tested: '2026-11-16'
-    level: 3
+    level: 2
     progress: 0
   Convex Function Basic Properties:
     history:
@@ -1549,6 +1591,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 2
     progress: 1
+  Cumulant Generating Function:
+    history:
+    - 2026-11-19 L0->L3 exercise
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
   Cumulative Distribution Function:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
@@ -1561,8 +1610,17 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
     - 2026-11-17 L1->L2 exercise
-    last_tested: '2026-11-17'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
+  Cumulative Distribution Function Transformation Technique:
+    history:
+    - 2026-11-18 L0->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Curvature Function on Curve:
@@ -1701,6 +1759,13 @@ nodes:
     last_tested: '2026-11-16'
     level: 3
     progress: 0
+  Degenerate Distribution:
+    history:
+    - 2026-11-19 L0->L2 exercise
+    last_tested: '2026-11-19'
+    level: 2
+    progress: 0
+    provisional: true
   Degree of Polynomial:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
@@ -2401,9 +2466,12 @@ nodes:
   Double Riemann Integral:
     history:
     - 2026-11-02 L0->L2 placement
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Edge:
     history:
     - 2026-11-15 L0->L1 check prerequisite bonus
@@ -2693,13 +2761,14 @@ nodes:
     level: 2
     progress: 0
   Expectation:
-    direct:
-    - 2
     history:
     - 2026-11-14 L0->L1 check
-    last_tested: '2026-11-14'
-    level: 1
-    progress: 1
+    - 2026-11-18 L1->L3 exercise
+    - 2026-11-20 L3->L4 exercise
+    last_tested: '2026-11-20'
+    level: 4
+    progress: 0
+    provisional: true
   Exponent Basic Properties:
     history:
     - 2026-11-13 L0->L1 check
@@ -2764,8 +2833,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Factor:
@@ -2788,12 +2859,21 @@ nodes:
     last_tested: '2026-11-14'
     level: 2
     progress: 0
+  Factorial Moment Generating Function:
+    history:
+    - 2026-11-19 L0->L3 exercise
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
   Fermat's Theorem:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Field:
@@ -2824,9 +2904,20 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
-    progress: 1
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
+  Finite Set:
+    history:
+    - 2026-11-19 L0->L2 exercise (prerequisite of Degenerate Distribution)
+    - 2026-11-19 L2->L3 exercise (prerequisite of Cumulant Generating Function)
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
   Finite-Dimensional Vector Space:
     history:
     - 2026-11-09 L0->L2 placement (prerequisite of Rank)
@@ -2983,16 +3074,20 @@ nodes:
   Function Maximum:
     history:
     - 2026-11-02 L0->L2 placement
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Function Minimum:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Function Multiplication:
@@ -3035,9 +3130,12 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check prerequisite bonus
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Function of a Matrix:
     banked:
       3: 1
@@ -3050,16 +3148,15 @@ nodes:
     level: 1
     progress: 1
   Functions that are Riemann-Stieltjes Integrable Theorem:
-    banked:
-      3: 1
     direct:
-    - 2
     - 3
     history:
     - 2026-11-16 L0->L1 check
-    last_tested: '2026-11-16'
-    level: 1
+    - 2026-11-19 L1->L2 exercise
+    last_tested: '2026-11-19'
+    level: 2
     progress: 1
+    provisional: true
   Fundamental Theorem of Algebra:
     history:
     - 2026-11-12 L0->L1 check prerequisite bonus
@@ -3070,9 +3167,11 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Fundamental Trigonometric Limits:
     direct:
     - 3
@@ -3509,8 +3608,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Inequality Sign Change:
@@ -3537,14 +3638,14 @@ nodes:
     level: 2
     progress: 0
   Infinite Series:
-    direct:
-    - 3
     history:
     - 2026-11-13 L0->L1 check prerequisite bonus
     - 2026-11-15 L1->L2 check prerequisite bonus
-    last_tested: '2026-11-16'
-    level: 2
-    progress: 1
+    - 2026-11-18 L2->L3 exercise (prerequisite of Rearrangement (Series))
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
   Infinite Series Alternating Series Test:
     history:
     - 2026-11-14 L0->L1 check
@@ -3668,8 +3769,10 @@ nodes:
   Integer:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Multiplication of Signed Numbers)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Integer Combination:
@@ -3777,8 +3880,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Invariant of Matrix:
@@ -4010,9 +4115,12 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Jump Discontinuity:
     direct:
     - 3
@@ -4046,6 +4154,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 2
     progress: 1
+  Kurtosis:
+    history:
+    - 2026-11-19 L0->L2 exercise
+    last_tested: '2026-11-19'
+    level: 2
+    progress: 0
+    provisional: true
   L'Hospital's Rule:
     history:
     - 2026-11-14 L0->L1 check
@@ -4095,6 +4210,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 3
     progress: 0
+  Laplace Distribution:
+    history:
+    - 2026-11-20 L0->L2 exercise
+    last_tested: '2026-11-20'
+    level: 2
+    progress: 0
+    provisional: true
   Laplace Expansion:
     history:
     - 2026-11-13 L0->L1 check
@@ -4171,9 +4293,11 @@ nodes:
     history:
     - 2026-11-13 L0->L1 check prerequisite bonus
     - 2026-11-15 L1->L2 check prerequisite bonus
-    last_tested: '2026-11-15'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Rearrangement (Series))
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Limit Comparison Test:
     history:
     - 2026-11-14 L0->L1 check
@@ -4737,6 +4861,13 @@ nodes:
     level: 3
     progress: 0
     provisional: true
+  Markov's Inequality:
+    history:
+    - 2026-11-20 L0->L3 exercise
+    last_tested: '2026-11-20'
+    level: 3
+    progress: 0
+    provisional: true
   Matrix:
     history:
     - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
@@ -4894,9 +5025,11 @@ nodes:
   Mean:
     history:
     - 2026-11-11 L0->L2 self-assessed grant
-    last_tested: null
-    level: 2
+    - 2026-11-19 L2->L3 exercise
+    last_tested: '2026-11-19'
+    level: 3
     progress: 0
+    provisional: true
   Mean Value Theorem:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
@@ -4916,9 +5049,11 @@ nodes:
   Median:
     history:
     - 2026-11-11 L0->L2 self-assessed grant
-    last_tested: null
-    level: 2
+    - 2026-11-18 L2->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Method of Lagrange Multipliers:
     direct:
     - 2
@@ -4977,6 +5112,20 @@ nodes:
     last_tested: '2026-11-15'
     level: 3
     progress: 0
+  Moment (Statistics):
+    history:
+    - 2026-11-19 L0->L3 exercise (prerequisite of Cumulant Generating Function)
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
+  Moment Generating Function:
+    history:
+    - 2026-11-19 L0->L3 exercise
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
   Monoid:
     history:
     - 2026-11-09 L0->L2 placement (prerequisite of Change of Basis Matrix with Linear
@@ -5326,8 +5475,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   One-Sided Limit of Function:
@@ -5594,14 +5745,15 @@ nodes:
     level: 3
     progress: 0
   Partial Derivative:
-    direct:
-    - 3
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
-    progress: 1
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
   Partial Derivative Differentiable Theorem:
     direct:
     - 2
@@ -5629,8 +5781,10 @@ nodes:
   Partition:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Pascal's Identity:
@@ -5650,8 +5804,10 @@ nodes:
   Peano Axioms:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Percent:
@@ -5941,9 +6097,11 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Probability Density Function Definitional Properties:
     history:
     - 2026-11-14 L0->L1 check
@@ -6322,6 +6480,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 2
     progress: 1
+  Quantile Function:
+    history:
+    - 2026-11-18 L0->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
   Quotient Property of Exponents:
     history:
     - 2026-11-11 L0->L2 self-assessed grant
@@ -6501,8 +6666,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Real Vector-Valued Function:
@@ -6516,9 +6683,19 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
     - 2026-11-16 L1->L2 check prerequisite bonus
-    last_tested: '2026-11-16'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
+  Rearrangement (Series):
+    history:
+    - 2026-11-18 L0->L3 exercise
+    last_tested: '2026-11-18'
+    level: 3
+    progress: 0
+    provisional: true
   Reciprocal:
     history:
     - 2026-11-11 L0->L2 self-assessed grant
@@ -6586,6 +6763,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 3
     progress: 0
+  Regrouping (Series):
+    history:
+    - 2026-11-20 L0->L3 exercise
+    last_tested: '2026-11-20'
+    level: 3
+    progress: 0
+    provisional: true
   Relation:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
@@ -6770,8 +6954,10 @@ nodes:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Zero Derivative Implies Constant
       Function Theorem)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Rose Curve:
@@ -6838,9 +7024,12 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
     - 2026-11-16 L1->L2 check prerequisite bonus
-    last_tested: '2026-11-16'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Schur Decomposition:
     direct:
     - 3
@@ -6992,9 +7181,11 @@ nodes:
     history:
     - 2026-11-13 L0->L1 check prerequisite bonus
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Rearrangement (Series))
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Set:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Multiplicity)
@@ -7113,28 +7304,37 @@ nodes:
   Set of Integers:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Set of Natural Numbers:
     history:
     - 2026-11-15 L0->L1 check prerequisite bonus
-    last_tested: '2026-11-15'
-    level: 1
-    progress: 1
+    - 2026-11-19 L1->L2 exercise (prerequisite of Degenerate Distribution)
+    - 2026-11-19 L2->L3 exercise (prerequisite of Cumulant Generating Function)
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
   Set of Rational Numbers:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Set of Real Numbers:
     history:
     - 2026-11-02 L0->L2 placement (prerequisite of Double Riemann Integral)
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Shape:
@@ -7368,6 +7568,13 @@ nodes:
     last_tested: '2026-11-15'
     level: 3
     progress: 0
+  Standard Deviation:
+    history:
+    - 2026-11-19 L0->L3 exercise
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
   Statistical Analysis:
     history:
     - 2026-11-05 L0->L1 quiz
@@ -7895,9 +8102,12 @@ nodes:
     history:
     - 2026-11-14 L0->L1 check prerequisite bonus
     - 2026-11-14 L1->L2 check
-    last_tested: '2026-11-14'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
+    provisional: true
   Truth Set:
     history:
     - 2026-11-15 L0->L1 check
@@ -8109,6 +8319,20 @@ nodes:
     - 2026-11-02 L0->L2 placement (prerequisite of Term)
     - 2026-11-02 L2->L3 placement (prerequisite of Differentiable Function)
     last_tested: '2026-11-02'
+    level: 3
+    progress: 0
+    provisional: true
+  Variance:
+    history:
+    - 2026-11-19 L0->L3 exercise (prerequisite of Variance Basic Properties)
+    last_tested: '2026-11-19'
+    level: 3
+    progress: 0
+    provisional: true
+  Variance Basic Properties:
+    history:
+    - 2026-11-19 L0->L3 exercise
+    last_tested: '2026-11-19'
     level: 3
     progress: 0
     provisional: true
@@ -8338,8 +8562,10 @@ nodes:
   Zero Derivative Implies Constant Function Theorem:
     history:
     - 2026-11-02 L0->L2 placement
-    last_tested: '2026-11-02'
-    level: 2
+    - 2026-11-18 L2->L3 exercise (prerequisite of Cumulative Distribution Function
+      Transformation Technique)
+    last_tested: '2026-11-18'
+    level: 3
     progress: 0
     provisional: true
   Zero Eigenvalue Linear Map Injectivity:
@@ -8368,6 +8594,13 @@ nodes:
     last_tested: '2026-11-13'
     level: 1
     progress: 0
+  mth Moment Existence Theorem:
+    history:
+    - 2026-11-20 L0->L3 exercise
+    last_tested: '2026-11-20'
+    level: 3
+    progress: 0
+    provisional: true
   p-Norm:
     history:
     - 2026-11-15 L0->L1 check prerequisite bonus

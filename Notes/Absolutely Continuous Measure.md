@@ -20,6 +20,6 @@ tags:
 - The opposite extreme is [[Mutually Singular Measures|mutual singularity]]; the Lebesgue decomposition splits any $\sigma$-finite measure into an absolutely continuous part and a singular part.
 - [[Kullback-Leibler Divergence]] $D_{\mathrm{KL}}(P \| Q) = \int \log \frac{dP}{dQ}\,dP$ is finite only if $P \ll Q$; [[Maximum Likelihood Estimation|maximum likelihood]] with model densities implicitly assumes the data distribution is absolutely continuous with respect to the same reference measure as the model.
 - **Closed under convolution with a.c. noise**: if $\boldsymbol{\epsilon}$ has a density and is independent of $\mathbf{s}$, then $\mathbf{s} + \boldsymbol{\epsilon}$ has density $\int f_{\boldsymbol{\epsilon}}(\mathbf{x} - \mathbf{s})\,dP_{\mathbf{s}}(\mathbf{s})$, however singular $P_{\mathbf{s}}$ is; this is why noisy measurements (classical statistics) have densities while clean manifold data does not ([[Manifold Hypothesis]]).
-- For distributions on $\mathbb{R}$, $P \ll \lambda$ is equivalent to the [[Cumulative Distribution Function|cdf]] being an absolutely continuous function, which is stronger than mere continuity (the Cantor distribution has a continuous cdf but no pdf).
+- For distributions on $\mathbb{R}$, $P \ll \lambda$ is equivalent to the [[Cumulative Distribution Function|cdf]] being an [[Absolutely Continuous Function]], which is stronger than mere continuity (the Cantor distribution has a continuous cdf but no pdf).
 
 [^1]: Supplementary notes provided by the creator.

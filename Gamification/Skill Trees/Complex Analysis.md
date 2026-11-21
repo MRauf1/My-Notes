@@ -289,8 +289,8 @@ flowchart TD
     n_cauchy_riemann_conditions_theorem --> n_harmonic_conjugate_function
     class n_branch,n_laplacian_operator,n_holomorphic_function,n_complex_number_derivative,n_cauchy_riemann_conditions_theorem,n_complex_analytic_function,n_operations_on_analytic_function,n_entire_function,n_complex_analytic_function_inverse,n_harmonic_function,n_harmonic_conjugate_function locked;
     class n_complex_valued_function,n_analytic_function L0;
-    class n_partial_derivative,n_power_series L2;
-    class n_differentiable_function,n_open_set,n_inverse_function L3;
+    class n_power_series L2;
+    class n_differentiable_function,n_partial_derivative,n_open_set,n_inverse_function L3;
     class n_complex_valued_function,n_differentiable_function,n_partial_derivative,n_power_series,n_open_set,n_branch,n_inverse_function,n_laplacian_operator,n_holomorphic_function,n_complex_number_derivative,n_cauchy_riemann_conditions_theorem,n_analytic_function,n_complex_analytic_function,n_operations_on_analytic_function,n_entire_function,n_complex_analytic_function_inverse,n_harmonic_function,n_harmonic_conjugate_function internal-link;
 ```
 
@@ -370,7 +370,7 @@ flowchart TD
     n_cauchy_s_theorem --> n_cauchy_s_integral_formula
     n_ml_inequality --> n_cauchy_s_integral_formula
     class n_complex_analytic_function,n_contour_riemann_integral,n_green_s_theorem,n_cauchy_riemann_conditions_theorem,n_contour_riemann_integral_as_line_riemann_integral,n_simply_connected_domain,n_ml_inequality,n_primitive,n_fundamental_theorem_for_contour_riemann_integral,n_cauchy_s_theorem,n_simply_connected_domain_contour_riemann_integral_theorem,n_existence_of_primitives_theorem,n_cauchy_s_integral_formula locked;
-    class n_fundamental_theorem_of_calculus L2;
+    class n_fundamental_theorem_of_calculus L3;
     class n_complex_analytic_function,n_contour_riemann_integral,n_fundamental_theorem_of_calculus,n_green_s_theorem,n_cauchy_riemann_conditions_theorem,n_contour_riemann_integral_as_line_riemann_integral,n_simply_connected_domain,n_ml_inequality,n_primitive,n_fundamental_theorem_for_contour_riemann_integral,n_cauchy_s_theorem,n_simply_connected_domain_contour_riemann_integral_theorem,n_existence_of_primitives_theorem,n_cauchy_s_integral_formula internal-link;
 ```
 
@@ -476,8 +476,8 @@ flowchart TD
     n_cauchy_s_formula_for_a_ring --> n_laurent_series_representation
     class n_complex_analytic_function,n_punctured_open_disk,n_cauchy_s_integral_formula,n_isolated_singularity,n_removable_singularity,n_removable_singularity_limit_existence_theorem,n_pole,n_pole_order,n_essential_singularity,n_casorati_weierstrass_theorem,n_cauchy_s_formula_for_a_ring,n_laurent_series_representation locked;
     class n_laurent_series L0;
-    class n_limit,n_power_series,n_infinite_series L2;
-    class n_bounded_function,n_dense_subset L3;
+    class n_power_series L2;
+    class n_bounded_function,n_limit,n_dense_subset,n_infinite_series L3;
     class n_complex_analytic_function,n_punctured_open_disk,n_bounded_function,n_limit,n_dense_subset,n_power_series,n_infinite_series,n_cauchy_s_integral_formula,n_isolated_singularity,n_removable_singularity,n_removable_singularity_limit_existence_theorem,n_pole,n_pole_order,n_essential_singularity,n_casorati_weierstrass_theorem,n_laurent_series,n_cauchy_s_formula_for_a_ring,n_laurent_series_representation internal-link;
 ```
 

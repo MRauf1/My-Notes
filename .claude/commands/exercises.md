@@ -36,13 +36,21 @@ Don't grade or credit anything in this mode. Only the recommendation is produced
    - **What counts:** every exercise in the section's set, and every theorem, proposition, or lemma the section proves. Proving a theorem yourself is a candidate at L3 for its node.
    - **What to drop:** anything already done. That means items graded in this chat, and items with a Quiz Log `exercise` entry for this source (`rg -F "Source: <book> §<section>" Learning/`).
    - **What each candidate would credit:** the direct nodes it would pass, at L2 (application or computation) or L3 (proof, counterexample, or a decision needing one), judged as Mode A step 3 would grade the expected solution. Skip exercises that need software (e.g. "write R code") unless they also contain a pen-and-paper part, and count only that part.
-4. **Targets.** A direct node's target is the highest level any candidate reaches for it, capped at L3. A node already at its target (provisional or not) needs nothing.
+   - **No exercise set** (e.g. *Foundations of Computer Vision*): the candidates are the section's derivations and proofs, plus a **generated set** (step 3a).
+3a. **Generated set** (only when the section has no exercises). Write the set in the spirit of a textbook set such as Hogg's. Optimize for efficiency, not completeness: aim for the **core ideas** of the section at L2/L3, not every node. Peripheral nodes (e.g. a definition like [[Random Variable]]) need no dedicated problem; ancestor raises, `/quiz`, and `/place` cover them later.
+   - **Size:** 2–4 problems per section, fewer if derivations already cover the core. Each problem is one short paragraph and should take about 10–30 minutes.
+   - **Level: L3 first.** Make every problem a *prove* problem (short proof, or a counterexample showing why a hypothesis is needed → L3), since an L3 pass also raises the node and its ancestors past L2. Use an *apply* problem (L2) only for a core idea that has no good L3 problem, e.g. a purely computational concept. Optionally add one *connection* problem to the core toolkit (CLAUDE.md §4), only when the link is genuine.
+   - **Theory only** (CLAUDE.md §5): no coding, no benchmarks, and no exercises for architecture or empirical sections.
+   - **Pitch at the book's level:** use only the section's material, its prerequisites, and the book's own hypotheses. Don't ask for a more general version that needs tools I haven't reached.
+   - **Verify:** solve each problem yourself before listing it (well-posed, true, a solution of about the intended length). Don't show the solutions.
+   - **Number them** `G1, G2, …`. When I submit one, Mode A records it with source `<book> §<section>, generated Ex. G<n>`, and logs the problem statement in the Quiz Log `Q:` field so the record stands on its own.
+4. **Targets.** A direct node's target is the highest level any candidate reaches for it, capped at L3. For a generated set, only the core nodes chosen in step 3a get targets; the other direct nodes are left to `/quiz` and `/place`, and the report lists them as deferred rather than as unreachable. A node already at its target (provisional or not) needs nothing.
 5. **Minimal cover.** A pass at $K$ also raises every ancestor to $K$, so the cheapest cover takes the **deepest** node of each chain at its target level. Choose the smallest set of candidates that brings every direct node to its target, counting the ancestor raises. Solve it exactly when it's small (it usually is); otherwise use greedy max-coverage and say so. Among equal-size sets, prefer:
    - proofs of the section's own theorems,
    - then exercises that also exercise more nodes,
    - then shorter ones.
 6. **Report** in a `## Exercise plan: <book> §<section>` section of `Learning/Session.md`:
-   - **The set:** a table with one row per chosen item: the exercise or theorem number, a one-line description, the level, and the nodes it settles, both directly and through ancestors.
+   - **The set:** a table with one row per chosen item (for a generated set, the full problem statements go below the table): the exercise or theorem number, a one-line description, the level, and the nodes it settles, both directly and through ancestors.
    - **Unreachable:** direct nodes no candidate reaches, with their current level. Suggest `/place` at the end of the book, or `/quiz`.
    - **Optional extras:**
      - exercises that would also raise an earlier-section prerequisite to L4 (if it's already at L3) or to L5 (if it's already at L4), kept separate from the minimal set;

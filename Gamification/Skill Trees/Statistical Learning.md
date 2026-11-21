@@ -101,9 +101,9 @@ flowchart TD
     n_mean_squared_error --> n_bias_variance_tradeoff
     n_bayes_theorem --> n_naive_bayes_classifier
     n_distance --> n_k_nearest_neighbor_classifier
-    class n_bias_variance_mse_decomposition_of_an_estimator,n_irreducible_error,n_mean_squared_error,n_bias_variance_tradeoff locked;
+    class n_irreducible_error,n_mean_squared_error,n_bias_variance_tradeoff locked;
     class n_naive_bayes_classifier,n_k_nearest_neighbor_classifier L0;
-    class n_bayes_theorem,n_distance L2;
+    class n_bias_variance_mse_decomposition_of_an_estimator,n_bayes_theorem,n_distance L2;
     class n_bias_variance_mse_decomposition_of_an_estimator,n_irreducible_error,n_mean_squared_error,n_bayes_theorem,n_distance,n_bias_variance_tradeoff,n_naive_bayes_classifier,n_k_nearest_neighbor_classifier internal-link;
 ```
 
@@ -166,8 +166,9 @@ flowchart TD
     n_total_sum_of_squares --> n_r2_statistic
     n_multiple_linear_regression --> n_r2_statistic
     class n_linear_regression,n_regression,n_standard_error,n_t_distribution,n_confidence_interval,n_statistical_hypothesis_test,n_linear_regression_assumptions,n_residual_sum_of_squares,n_simple_linear_regression,n_residual_standard_error,n_simple_linear_regression_coefficient_standard_error,n_simple_linear_regression_coefficient_confidence_interval,n_t_test_statistic,n_simple_linear_regression_hypothesis_test,n_total_sum_of_squares,n_r2_statistic locked;
-    class n_normal_distribution,n_variance,n_multiple_linear_regression L0;
+    class n_normal_distribution,n_multiple_linear_regression L0;
     class n_independent_random_variable L1;
+    class n_variance L3;
     class n_independent_random_variable,n_linear_regression,n_normal_distribution,n_regression,n_standard_error,n_t_distribution,n_confidence_interval,n_statistical_hypothesis_test,n_variance,n_multiple_linear_regression,n_linear_regression_assumptions,n_residual_sum_of_squares,n_simple_linear_regression,n_residual_standard_error,n_simple_linear_regression_coefficient_standard_error,n_simple_linear_regression_coefficient_confidence_interval,n_t_test_statistic,n_simple_linear_regression_hypothesis_test,n_total_sum_of_squares,n_r2_statistic internal-link;
 ```
 

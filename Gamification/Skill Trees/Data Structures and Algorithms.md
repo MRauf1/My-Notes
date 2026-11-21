@@ -341,8 +341,8 @@ flowchart TD
     n_tree_rotation --> n_treap
     class n_binary_search_tree,n_random_binary_search_tree,n_tree_rotation,n_treap locked;
     class n_harmonic_number L0;
-    class n_expectation L1;
     class n_logarithm,n_permutation L2;
+    class n_expectation L4;
     class n_logarithm,n_binary_search_tree,n_permutation,n_expectation,n_harmonic_number,n_random_binary_search_tree,n_tree_rotation,n_treap internal-link;
 ```
 
@@ -514,7 +514,7 @@ flowchart TD
     n_quickselect --> n_median_of_medians
     n_recursion_tree --> n_median_of_medians
     class n_quicksort,n_recursion_tree,n_quickselect,n_median_of_medians locked;
-    class n_median L2;
+    class n_median L3;
     class n_quicksort,n_median,n_recursion_tree,n_quickselect,n_median_of_medians internal-link;
 ```
 

@@ -360,6 +360,7 @@ A compact list of fundamental papers referenced in the notes.
 - Hall (1992). *The Bootstrap and Edgeworth Expansion*. Springer. — [[Monte Carlo Confidence Interval]] (coverage error $1 - \alpha + O(n^{-1})$)
 - Hoeffding (1963). *Probability Inequalities for Sums of Bounded Random Variables*. JASA 58(301). — [[Hoeffding's Inequality]]
 - Knight (2000). *Mathematical Statistics*. Chapman & Hall/CRC. — [[Slutsky's Theorem]]
+- Casella & Berger (2002). *Statistical Inference* (2nd ed.), Theorem 2.1.8. Duxbury. — [[Random Variable Transformation]]
 
 ## Fourier Analysis and Image Processing
 - Torralba, Isola & Freeman (2024). *Foundations of Computer Vision*, Ch. 16: Fourier Analysis. MIT Press. [visionbook.mit.edu](https://visionbook.mit.edu/image_processing_fourier.html) — [[Discrete Fourier Transform]], [[Fourier Transform]], [[Transfer Function (Signal Processing)]]
@@ -393,6 +394,8 @@ A compact list of fundamental papers referenced in the notes.
 - Weyl (1911). *Über die asymptotische Verteilung der Eigenwerte*. Nachrichten der Königlichen Gesellschaft der Wissenschaften zu Göttingen. — [[Eigenfunction]] (Weyl's law)
 - Courant & Hilbert (1953). *Methods of Mathematical Physics*, Vol. I. Interscience. — [[Eigenfunction]], [[Dirichlet Energy]], [[Robin Eigenvalue Problem on an Interval]] (min–max principle, eigenvalue bracketing)
 - Kac (1966). *Can One Hear the Shape of a Drum?* American Mathematical Monthly 73(4). [doi:10.2307/2313748](https://doi.org/10.2307/2313748) — [[Wave Equation on a Finite Interval]], [[Laplacian Filter]]
+- Gordon, Webb & Wolpert (1992). *One Cannot Hear the Shape of a Drum*. Bulletin of the AMS 27(1):134–138. [doi:10.1090/S0273-0979-1992-00289-6](https://doi.org/10.1090/S0273-0979-1992-00289-6) — [[Characteristic Function (Probability)]]
+- Heyde (1963). *On a Property of the Lognormal Distribution*. JRSS B 25(2):392–393. [doi:10.1111/j.2517-6161.1963.tb00521.x](https://doi.org/10.1111/j.2517-6161.1963.tb00521.x) — [[Moment Problem]]
 
 ## Discrete Differential Geometry
 - Crane (2018). *Discrete Differential Geometry: An Applied Introduction*. Course notes, Carnegie Mellon University. [cs.cmu.edu/~kmcrane/Projects/DDG](https://www.cs.cmu.edu/~kmcrane/Projects/DDG/) — [[Combinatorial Surface]], [[Abstract Simplicial Complex]], [[Simplicial Surface]], [[Halfedge Mesh]], [[Euler Characteristic]], [[Smooth Surface]], [[Induced Metric]], [[Gauss Map]], [[Shape Operator]], [[Principal Curvature]], [[Mean Curvature]], [[Gaussian Curvature]], [[Second Fundamental Form]], [[Bilinear Form]]
@@ -403,6 +406,7 @@ A compact list of fundamental papers referenced in the notes.
 ## Set Theory and Measure Theory Foundations
 - Folland (1999). *Real Analysis: Modern Techniques and Their Applications*, 2nd ed. Wiley. — [[Limit Superior and Limit Inferior of Sets]], [[Axiom of Choice]], [[Zorn's Lemma]], [[Well-Ordered Set]], [[Set of Countable Ordinals]], [[Cardinality of the Continuum]], [[Unordered Sum]], [[Equivalent Metrics]], [[Sigma-Field]], [[Borel Sigma-Algebra]], [[Product Sigma-Algebra]], [[Measure (Measure Theory)]], [[Outer Measure]], [[Carathéodory's Theorem]], [[Carathéodory Extension Theorem]], [[Lebesgue-Stieltjes Measure]], [[Lebesgue Measure]], [[Cantor Set]]
 - Banach & Tarski (1924). *Sur la décomposition des ensembles de points en parties respectivement congruentes*. Fundamenta Mathematicae 6, 244–277. — [[Banach-Tarski Paradox]]
+- Stanford Encyclopedia of Philosophy, *Set Theory* and its supplement *Zermelo-Fraenkel Set Theory (ZF)*. [plato.stanford.edu/entries/set-theory](https://plato.stanford.edu/entries/set-theory/) — [[Axiom of Infinity]]
 - Vitali (1905). *Sul problema della misura dei gruppi di punti di una retta*. Bologna: Tip. Gamberini e Parmeggiani. — [[Vitali Set]]
 - Carathéodory (1914). *Über das lineare Maß von Punktmengen – eine Verallgemeinerung des Längenbegriffs*. Nachrichten der Gesellschaft der Wissenschaften zu Göttingen. — [[Carathéodory Measurable Set]], [[Carathéodory's Theorem]]
 - Gödel (1940). *The Consistency of the Axiom of Choice and of the Generalized Continuum-Hypothesis with the Axioms of Set Theory*. Annals of Mathematics Studies 3, Princeton University Press. — [[Axiom of Choice]], [[Continuum Hypothesis]]
@@ -412,6 +416,7 @@ A compact list of fundamental papers referenced in the notes.
 - Smullyan & Fitting (1996). *Set Theory and the Continuum Problem*. Oxford University Press. — [[Continuum Hypothesis]], [[Axiom of Choice]] (exposition of consistency and independence proofs)
 
 ## Real Analysis
+- de Oliveira (2012). *Some Simplifications in the Presentations of Complex Power Series and Unordered Sums*. [arXiv:1207.1472](https://arxiv.org/abs/1207.1472) — [[Regrouping (Series)]]
 - Rudin (1976). *Principles of Mathematical Analysis*, 3rd ed., Ch. 7: Sequences and Series of Functions. McGraw-Hill. — [[Sequence of Function Uniform Convergence]], [[Arzelà-Ascoli Theorem]], [[Stone-Weierstrass Theorem]], [[Space of Bounded Continuous Functions]]
 - Cunningham (1967). *Taking Limits Under the Integral Sign*. Mathematics Magazine 40(4), 179–186. — [[Dominated Convergence Theorem]]
 - Kestelman (1970). *Riemann Integration of Limit Functions*. American Mathematical Monthly 77(2), 182–187. — [[Dominated Convergence Theorem]]

@@ -568,7 +568,7 @@ flowchart TD
     n_normalization_layer --> n_instance_normalization
     n_normalization_layer --> n_group_normalization
     class n_deep_neural_network,n_backpropagation,n_ensemble_learning,n_he_initialization,n_batch_normalization,n_normalization_layer,n_residual_connection,n_shattered_gradients,n_residual_network_as_ensemble,n_residual_network_variance_at_initialization,n_internal_covariate_shift,n_ghost_batch_normalization,n_instance_normalization,n_group_normalization locked;
-    class n_variance L0;
+    class n_variance L3;
     class n_deep_neural_network,n_backpropagation,n_ensemble_learning,n_he_initialization,n_variance,n_batch_normalization,n_normalization_layer,n_residual_connection,n_shattered_gradients,n_residual_network_as_ensemble,n_residual_network_variance_at_initialization,n_internal_covariate_shift,n_ghost_batch_normalization,n_instance_normalization,n_group_normalization internal-link;
 ```
 
@@ -938,8 +938,8 @@ flowchart TD
     class n_probabilistic_generative_model,n_latent_variables,n_random_vector_transformation,n_multivariate_normal_distribution,n_residual_connection,n_banach_fixed_point_theorem,n_1x1_convolution,n_kullback_leibler_divergence,n_knothe_rosenblatt_rearrangement,n_normalizing_flow,n_linear_flow,n_elementwise_flow,n_coupling_flow,n_autoregressive_flow,n_residual_flow,n_multi_scale_flow,n_glow,n_dequantization,n_probability_density_distillation,n_normalizing_flow_expressivity,n_continuous_normalizing_flow locked;
     class n_determinant_volume_scaling_theorem,n_lipschitz_continuity L0;
     class n_ordinary_differential_equation L1;
-    class n_jacobian_matrix,n_determinant_invertible_matrix_theorem L2;
-    class n_diagonal_matrix,n_lu_decomposition L3;
+    class n_determinant_invertible_matrix_theorem L2;
+    class n_jacobian_matrix,n_diagonal_matrix,n_lu_decomposition L3;
     class n_probabilistic_generative_model,n_latent_variables,n_random_vector_transformation,n_jacobian_matrix,n_determinant_volume_scaling_theorem,n_multivariate_normal_distribution,n_determinant_invertible_matrix_theorem,n_diagonal_matrix,n_residual_connection,n_lipschitz_continuity,n_banach_fixed_point_theorem,n_1x1_convolution,n_lu_decomposition,n_kullback_leibler_divergence,n_knothe_rosenblatt_rearrangement,n_ordinary_differential_equation,n_normalizing_flow,n_linear_flow,n_elementwise_flow,n_coupling_flow,n_autoregressive_flow,n_residual_flow,n_multi_scale_flow,n_glow,n_dequantization,n_probability_density_distillation,n_normalizing_flow_expressivity,n_continuous_normalizing_flow internal-link;
 ```
 
@@ -1219,9 +1219,9 @@ flowchart TD
     n_batch_normalization --> n_layer_normalization
     n_l2_normalization --> n_layer_normalization
     class n_first_order_optimization,n_gradient_descent,n_loss_function,n_deep_neural_network,n_dynamic_programming,n_backpropagation,n_backpropagation_to_input_data,n_gradient_based_learning,n_exploding_gradients,n_vanishing_gradients,n_gradient_clipping,n_normalization_layer,n_batch_normalization,n_layer_normalization,n_l2_normalization locked;
-    class n_algorithm,n_variance,n_tensor,n_computation_graph,n_data_parallelism L0;
-    class n_jacobian_matrix,n_gradient_vector,n_mean,n_unit_vector L2;
-    class n_function L3;
+    class n_algorithm,n_tensor,n_computation_graph,n_data_parallelism L0;
+    class n_gradient_vector,n_unit_vector L2;
+    class n_function,n_jacobian_matrix,n_mean,n_variance L3;
     class n_algorithm,n_first_order_optimization,n_gradient_descent,n_function,n_loss_function,n_deep_neural_network,n_jacobian_matrix,n_gradient_vector,n_dynamic_programming,n_mean,n_variance,n_tensor,n_unit_vector,n_computation_graph,n_backpropagation,n_backpropagation_to_input_data,n_gradient_based_learning,n_exploding_gradients,n_vanishing_gradients,n_gradient_clipping,n_normalization_layer,n_batch_normalization,n_layer_normalization,n_l2_normalization,n_data_parallelism internal-link;
 ```
 

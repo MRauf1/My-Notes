@@ -38,7 +38,7 @@ tags:
 	- Costs the same as ML: one optimization, with an extra penalty term.
 - Disadvantages:
 	- Depends on the choice of prior and its [[Hyperparameter|hyperparameters]], which are often chosen for convenience and must still be tuned (e.g. by [[Cross-Validation]]).
-	- **Not** invariant to reparametrization: the mode of a density moves under a nonlinear change of variables because of the Jacobian, so MAP answers depend on the parametrization.
+	- **Not** invariant to reparametrization: the mode of a density moves under a nonlinear change of variables because of the Jacobian, so MAP answers depend on the parametrization. Under $\eta = g(\theta)$ the posterior becomes $p(\eta | \mathcal{D}) = p(g^{-1}(\eta) | \mathcal{D}) \left|\frac{d\theta}{d\eta}\right|$, while the likelihood, which is only a function of the parameter and not a density in it, just relabels: $L^*(\eta) = L(g^{-1}(\eta))$ ([[Random Variable Transformation]], [[Maximum Likelihood Estimator Invariance]]). Posterior quantiles, e.g. the posterior median, are invariant under monotone reparametrization, since they are defined through probabilities of events.
 	- Still a point estimate: it discards parameter uncertainty, so its predictive variance contains only the noise term.
 	- The mode can be unrepresentative of the posterior, especially in high dimensions where most posterior mass lies far from the mode ([[Curse of Dimensionality]]).
 
