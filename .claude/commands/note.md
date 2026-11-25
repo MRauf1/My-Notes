@@ -1,7 +1,7 @@
 Process the following raw highlighted reading material into atomic Zettelkasten notes:
 1. Identify the core atomic concepts/theorems.
    - **Tags:** use the domain and subdomain tags I give as the default. If a concept clearly belongs to a different subdomain, use that one instead and tell me which and why. Base this on what the concept *is*, not where I read it: e.g. a Fourier-series theorem met in a vision book is still analysis. Prefer existing subdomain tags (listed in `Gamification/tree_tags.yaml`, plus non-technical ones used in the vault). Keep my tag as a secondary tag when the concept really spans both fields. Domain and subdomain tags decide the Anki deck and the skill tree.
-2. Extract the citation and attach it to the generated notes.
+2. Extract the citation and attach it to the generated notes. When adding papers to `REFERENCES.md`, file them under the right `##` section (and `###` subproblem subsection) and insert each at its place in that section's **self-study order** (each entry builds on those above it; see CLAUDE.md §2), not at the end.
 3. Check note titles in `Notes/` to resolve internal [[Wikilinks]]. When reading a candidate note to decide links or patches, read only its first ~20 lines (tags and definition callout), never the whole file. Never print a skill tree's source block; look nodes up with `rg` instead.
 4. Write the new notes and patch reciprocal links in relevant existing notes.
 5. For notes on substantive theorems, propositions, or lemmas (not plain definitions or minor facts), add a `# Questions` section with the three card kinds defined in CLAUDE.md §5:

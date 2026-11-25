@@ -14,5 +14,7 @@ tags:
 - The [[Line Spread Function]] can always be computed from the pointspread function, since a line is a sum of points along one orientation; the converse only holds when the pointspread function is known to be circularly symmetric, in which case it can be uniquely recovered from the linespread function.
 - An asymmetric pointspread function — narrower along one orientation than another — produces [[Astigmatism]], with better spatial resolution in the narrow direction.
 - In the human eye, the pointspread function is limited chiefly by [[Diffraction]] at small [[Pupil|pupil]] diameters and by imperfections of the [[Cornea]] and [[Eye Lens]] at larger pupil diameters.
+- In tomography with a limited tilt range, the [[Missing Wedge]] makes the point spread function elongated along the beam axis.
+- In cryo-EM, the point spread function is the inverse Fourier transform of the [[Contrast Transfer Function]].
 
 [^1]: [Foundations of Vision (Wandell)](zotero://open-pdf/library/items/YYQVJZJ3?page=32&annotation=IAMHV494)

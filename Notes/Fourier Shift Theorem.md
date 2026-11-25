@@ -26,6 +26,8 @@ $$
 - Exact only for a **circular shift** (pixels leaving one boundary reappear on the other side), a consequence of the periodicity assumed by the DFT. When the translation is due to camera motion, the shift is not circular (new pixels appear at the boundary), so the property holds only approximately.
 - A translation leaves the magnitude $|\mathscr{L}[u, v]|$ unchanged and adds a phase linear in frequency, $-2\pi(un_0/N + vm_0/M)$; this is why the [[Fourier Amplitude and Phase|amplitude]] is largely invariant to location.[^2]
 - In 1D: $\ell[n - n_0] \xrightarrow{\mathcal{F}} \mathscr{L}[u] \exp\left(-2\pi j \frac{un_0}{N}\right)$.
+- **Continuous version**: $g(x - b) \to G(u)\,e^{-2\pi iub}$. Proof: substitute $y = x - b$, so $\int g(y)e^{-2\pi iu(y + b)}dy = G(u)e^{-2\pi iub}$. A shift changes only the phase of each Fourier component, never its magnitude.[^sigft]
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.
+[^sigft]: [Sigworth, Fourier transform notes, p. 5](zotero://open-pdf/library/items/FEUF2XYA?page=5&annotation=SIRWFIIV)

@@ -42,6 +42,7 @@ $$
 - **Resynthesis**: encoding data, possibly modifying the latent, and decoding again. Also possible with normalizing flows and GANs, but a GAN has no encoder and needs a separate search for the latent ([[GAN Inversion]]).[^7]
 - **Disentanglement**: the latent space is disentangled when each dimension represents an independent real-world factor ([[Generative Model Desiderata]]).[^8]
 - **Failure mode**: [[Posterior Collapse|posterior collapse]], where the encoder always predicts the prior.
+- Used in cryo-EM for [[Neural Heterogeneous Reconstruction]] (cryoDRGN), with a decoder that represents a 3D structure for each latent state.
 
 [^1]: [Prince, p. 327](zotero://open-pdf/library/items/BWT7FYX5?page=341&annotation=X4S3BA6Z); [Prince, p. 334](zotero://open-pdf/library/items/BWT7FYX5?page=348&annotation=AMFU5HZB)
 [^2]: [Prince, p. 336](zotero://open-pdf/library/items/BWT7FYX5?page=350&annotation=XNTW7HL8); [Prince, p. 338](zotero://open-pdf/library/items/BWT7FYX5?page=352&annotation=MCBZG8I3)

@@ -35,6 +35,9 @@ extend $\ell_1$ periodically (which removes the modulo operators), substitute $n
 - Continuous version (general knowledge): $\ell_1(t) \circ \ell_2(t) \xrightarrow{\mathcal{F}} \mathscr{L}_1(w) \mathscr{L}_2(w)$ and $\ell_1(t) \ell_2(t) \xrightarrow{\mathcal{F}} \frac{1}{2\pi} \mathscr{L}_1(w) \circ \mathscr{L}_2(w)$ ([[Fourier Transform]], [[Convolution]]).[^2]
 - Together with the [[Fast Fourier Transform]], gives $O(N \log N)$ convolution, faster than direct convolution for large kernels.[^2]
 - In matrix form: the [[DFT Matrix]] diagonalizes circulant matrices; this is also the basis of [[Spectral Graph Convolution]], which replaces the Fourier basis with the eigenvectors of the [[Graph Laplacian Matrix]].[^2]
+- **Continuous version**: for $f(x) = (g * h)(x) = \int g(x - s)h(s)\,ds$, $\ \mathcal{F}\{g * h\} = G\cdot H$. Proof: $\iint g(x - s)h(s)e^{-2\pi iux}ds\,dx$; substitute $y = x - s$ and split $e^{-2\pi iux} = e^{-2\pi iuy}e^{-2\pi ius}$, giving $G(u)H(u)$. Convolution is commutative, $g * h = h * g$. Filtering is costly in real space but is a multiplication in frequency space; the PSF blur of a microscope is a convolution ([[Contrast Transfer Function]]).[^sigft]
+- Its counterpart for comparing signals is the correlation theorem, $g \star h \to G\overline{H}$ ([[Cross-Correlation]]).
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.
+[^sigft]: [Sigworth, Fourier transform notes, p. 5](zotero://open-pdf/library/items/FEUF2XYA?page=5&annotation=SIRWFIIV)

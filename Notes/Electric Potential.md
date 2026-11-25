@@ -13,5 +13,6 @@ tags:
 - Related to the [[Electric Field]] exactly as [[Potential Energy]] is related to [[Force]]: the potential is the potential energy per unit charge, just as the field is the force per unit charge.
 - Measured in volts; the difference in potential between two points is called the voltage between them.
 - Being a scalar, the potential due to several charges is found by ordinary addition, unlike the field, which must be summed as a vector.
+- In cryo-EM, reconstructed maps are maps of the electrostatic potential of a molecule, related to its charge density by Poisson's equation ([[Cryo-EM Density Map]]).
 
 [^1]: [The Feynman Lectures on Physics, Vol. I, Ch. 14: Work and Potential Energy (B)](https://www.feynmanlectures.caltech.edu/I_14.html)

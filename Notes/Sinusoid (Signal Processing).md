@@ -40,5 +40,6 @@ $$
   where $u, v$ are the two [[Spatial Frequency|spatial frequencies]], defining how fast the wave changes along $n$ and $m$.
 - Related to the [[Discrete Complex Exponential]] by [[Euler's Identity]]: $c_k = \frac{1}{2}(e_k + e_{-k})$ and $s_k = \frac{1}{2j}(e_k - e_{-k})$, where $j = \sqrt{-1}$ is the [[Imaginary Unit|imaginary unit]].
 - The continuous counterparts are the [[Sine Function]] and [[Cosine Function]]; physically, a sinusoid in time is [[Simple Harmonic Motion]].
+- Its space-and-time version is the [[Sinusoidal Wave]].
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)

@@ -52,7 +52,8 @@
 		{"id":"99a31bfa17c71c8c","type":"file","file":"Gamification/Skill Trees/Quantum Field Theory.md","x":-5760,"y":32200,"width":6000,"height":4000},
 		{"id":"bc9ec6177281617d","type":"file","file":"Gamification/Skill Trees/Standard Model.md","x":840,"y":32200,"width":6000,"height":4000},
 		{"id":"c27a6137f5ca101c","type":"file","file":"Gamification/Skill Trees/Quantum Gravity.md","x":7440,"y":32200,"width":6000,"height":4000},
-		{"id":"1cd913947e378f34","type":"file","file":"Gamification/Skill Trees/Astrophysics and Cosmology.md","x":14040,"y":32200,"width":6000,"height":4000}
+		{"id":"1cd913947e378f34","type":"file","file":"Gamification/Skill Trees/Astrophysics and Cosmology.md","x":14040,"y":32200,"width":6000,"height":4000},
+		{"id":"c7e2a91f4b3d8e05","type":"file","file":"Gamification/Skill Trees/CryoEM.md","x":20640,"y":32200,"width":6000,"height":4000}
 	],
 	"edges":[]
 }

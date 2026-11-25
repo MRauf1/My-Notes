@@ -23,5 +23,6 @@ Spatial frequency gives a more precise language than "sharp" and "blurry" for de
 - An LTI filter acts by reweighting each spatial frequency according to its [[Transfer Function (Signal Processing)|transfer function]], which leads to the classification into [[Low-Pass Filter|low-pass]], [[Band-Pass Filter|band-pass]], and [[High-Pass Filter|high-pass]] filters.
 - The amplitude of natural images decays with spatial frequency ([[Natural Image Amplitude Spectrum]]).
 - Fourier analysis is also important for understanding sinusoidal [[Positional Encoding]] in transformers, which encodes position with sinusoids of several frequencies.
+- In physics the corresponding angular quantity is the [[Wavenumber]] $2\pi/\lambda$, and in several dimensions the [[Wave Vector]].
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)

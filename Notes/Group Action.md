@@ -34,5 +34,6 @@ whose fixed points are exactly the [[Equivariant Function|equivariant maps]]; wi
 - $x$ is a fixed point (invariant) iff $G_x = G$, i.e. its orbit is $\{x\}$. "Invariant" is always relative to a specified action.
 - Equivariant maps are exactly the structure-preserving maps between $G$-sets, and they send orbits to orbits.
 - Symmetries in geometry, physics, and vision are actions: rigid motions on $\mathbb{R}^n$ ([[Rigid-Body Transformation]], [[Group of Special Orthogonal Matrices]]), translations on images ([[Convolutional Layer]]), and permutations on graph nodes ([[Graph Neural Network]]).
+- Estimating a signal from noisy observations acted on by unknown random group elements is [[Multi-Reference Alignment]]; only the orbit of the signal is identifiable. Invariant polynomials, such as the [[Bispectrum]], are functions constant on orbits.
 
 [^1]: Added from general knowledge.

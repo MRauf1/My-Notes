@@ -33,5 +33,6 @@ tags:
 - Finite speed of propagation: [[Principle of Causality (Wave Equation)]], [[Domain of Influence]], [[Domain of Dependence]], sharpened in odd $n \ge 3$ to [[Huygens's Principle]].
 - [[Wave Equation Energy Conservation]]: no maximum principle, no decay of energy, time-reversible ([[Wave and Diffusion Equation Comparison]]).
 - Boundaries reflect waves: [[Wave Equation on the Half-Line]], [[Wave Equation on a Finite Interval]] ([[Method of Reflection]]); forcing via [[Duhamel's Principle]]; on an interval also by [[Separation of Variables]] into normal modes.
+- Its elementary solutions are [[Plane Wave|plane waves]] $e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ with $\omega = c|\mathbf{k}|$; see [[Wave]] for the general vocabulary.
 
 [^1]: [Partial Differential Equations: An Introduction](zotero://open-pdf/library/items/NNYB7QVM?page=24&annotation=JFPEHEK3)

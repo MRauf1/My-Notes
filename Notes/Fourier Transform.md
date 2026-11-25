@@ -40,8 +40,12 @@ All of them extend to 2D.
 - The Fourier transform of the [[Dirac Delta Function]] is $1$.[^2]
 - Differentiation becomes multiplication by $jw$: $\frac{\partial \ell(x)}{\partial x} \xrightarrow{\mathscr{F}} jw\mathscr{L}(w)$; discrete approximations are analyzed in [[Discrete Image Derivative]].[^3]
 - The spatio-temporal FT of a translating image lies on a plane (delta wall): see [[Fourier Transform of Moving Image]].[^4]
+- The [[Fourier Slice Theorem]] relates the Fourier transform of a projection (line integrals) to a central slice of the full transform; it underlies tomographic reconstruction.
+- **Ordinary-frequency convention** (common in cryo-EM and crystallography): $G(u) = \int g(x)e^{-2\pi iux}dx$, $g(x) = \int G(u)e^{2\pi iux}du$, with $u$ in cycles per unit length. The inverse differs from the forward transform only in the sign of the exponent, and no $2\pi$ prefactors appear. It maps real space to reciprocal space (the frequency domain).[^sigft]
+- **Standard pairs**: [[Fourier Transform of Gaussian]] (self-dual), rect ↔ [[Sinc Function|sinc]], $\delta \leftrightarrow 1$ ([[Dirac Delta Function]]), [[Dirac Comb]] ↔ comb. **Rules**: linearity, [[Fourier Scaling Theorem|scaling]], [[Fourier Shift Theorem|shift]], [[Convolution Theorem|convolution]], [[Cross-Correlation|correlation]], [[Power Spectrum (Signal Processing)|power spectrum]].
 
 [^1]: [MIT Vision Book - Fourier Analysis](https://visionbook.mit.edu/image_processing_fourier.html)
 [^2]: Added from general knowledge.
 [^3]: [MIT Vision Book - Image Derivatives](https://visionbook.mit.edu/derivatives.html)
 [^4]: [MIT Vision Book - Temporal Filters](https://visionbook.mit.edu/temporal_filters_v2.html)
+[^sigft]: [Sigworth, Fourier transform notes, p. 1](zotero://open-pdf/library/items/FEUF2XYA?page=1&annotation=8KUMDHZR)

@@ -159,6 +159,7 @@ flowchart TD
     classDef rusty stroke:#8B4513,stroke-width:4px,stroke-dasharray:3 3;
     subgraph sg_prereqs["Prerequisites from other groups"]
         n_light_ray["Light Ray"]
+        n_interference_waves["Interference (Waves)"]
     end
     n_light["Light"]
     n_refraction["Refraction"]
@@ -171,9 +172,10 @@ flowchart TD
     n_index_of_refraction --> n_snell_s_law
     n_light --> n_diffraction
     n_light_ray --> n_law_of_reflection
-    class n_light_ray,n_refraction,n_index_of_refraction,n_snell_s_law,n_diffraction,n_law_of_reflection locked;
+    n_interference_waves --> n_diffraction
+    class n_light_ray,n_interference_waves,n_refraction,n_index_of_refraction,n_snell_s_law,n_diffraction,n_law_of_reflection locked;
     class n_light L0;
-    class n_light_ray,n_light,n_refraction,n_index_of_refraction,n_snell_s_law,n_diffraction,n_law_of_reflection internal-link;
+    class n_light_ray,n_interference_waves,n_light,n_refraction,n_index_of_refraction,n_snell_s_law,n_diffraction,n_law_of_reflection internal-link;
 ```
 
 # Source
@@ -186,6 +188,7 @@ Graph structure: the single source for the diagrams above, edited by `/note` and
     n_gravitational_field["Gravitational Field"]
     n_potential_energy["Potential Energy"]
     n_light_ray["Light Ray"]
+    n_interference_waves["Interference (Waves)"]
     %% NODES
     %% == Feynman Vol. I Ch. 2: Basic Physics ==
     n_electric_charge["Electric Charge"]
@@ -227,4 +230,5 @@ Graph structure: the single source for the diagrams above, edited by `/note` and
     n_index_of_refraction --> n_snell_s_law
     n_light --> n_diffraction
     n_light_ray --> n_law_of_reflection
+    n_interference_waves --> n_diffraction
 ```

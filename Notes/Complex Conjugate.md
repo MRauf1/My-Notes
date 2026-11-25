@@ -29,6 +29,10 @@ For a complex numbers $z, w$
 - $(\overline{z})^n = \overline{z^n}$, for $n \in \mathbb{N}$
 - $z \in \mathbb{R} \iff \overline{z} = z$
 - $z \overline{z}$ is real and non-negative, and $z \overline{z} = 0 \iff z = 0$[^2]
+- Also written $z^*$ (common in physics and signal processing).[^sigworth]
+- **In Fourier transforms** ([[Fourier Transform]]) it encodes reflection and time reversal: for real $f$, $\hat f(-k) = \overline{\hat f(k)}$ (Hermitian symmetry), and the reversed signal $g(t) = f(-t)$ has $\hat g(k) = \hat f(-k) = \overline{\hat f(k)}$.
+- $\overline{e^{z}} = e^{\bar z}$ ([[Complex Exponential Function]]).
 
 [^1]: [szprecalculus07042013.pdf](zotero://open-pdf/library/items/J3667KH4?page=300)
 [^2]: [Principles of Mathematical Analysis](zotero://open-pdf/library/items/3BD27IHF?page=23)
+[^sigworth]: [Sigworth, p. 2](zotero://open-pdf/library/items/6DH254TU?page=2&annotation=2P2WC9SS)

@@ -35,6 +35,7 @@ tags:
 - Preserved by continuous functions: if $T_n \xrightarrow{P} \theta$ and $g$ is continuous at $\theta$, then $g(T_n)$ is consistent for $g(\theta)$ ([[Convergence in Probability]]); unbiasedness is not preserved by nonlinear $g$.
 - Vector parameters: $(\bar{X}_n, S_n^2)$ is consistent for $(\mu, \sigma^2)$, since convergence in probability of a vector is componentwise.[^2]
 - Maximum likelihood estimators are consistent under regularity conditions ([[Maximum Likelihood Estimation Properties]]).
+- With a number of nuisance parameters growing with the sample, the MLE can be inconsistent ([[Neyman–Scott Problem]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=340)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=366)

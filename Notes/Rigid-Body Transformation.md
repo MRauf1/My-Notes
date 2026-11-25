@@ -12,5 +12,6 @@ tags:
 - Preserves distances and angles between points, i.e., it is an [[Isometry]].
 - Describes the change in configuration of a physical [[Rigid Body]].
 - Implemented in [[Homogeneous Coordinates]] as a matrix whose linear block is orthogonal with determinant $+1$ and whose translation column is otherwise unrestricted.
+- Orientation-preserving rigid-body transformations of $\mathbb{R}^n$ form the [[Special Euclidean Group]] $SE(n)$.
 
 [^1]: [Fundamentals of Computer Graphics](zotero://open-pdf/library/items/7B6A4MRC?page=147&annotation=8CNFJ6WM)

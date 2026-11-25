@@ -40,6 +40,8 @@ Expanding $\mathbf{a} = \sum_j a_j\mathbf{v}_j$ in the orthonormal eigenbasis gi
 - Decorrelation (diagonal $\Lambda$) holds for any distribution with covariance $\Sigma$; independence of the components requires normality.
 - In practice $\Sigma$ is replaced by the sample covariance matrix, and the eigenvectors are computed from the [[Eigendecomposition]] (or the SVD of the centered data matrix).
 - Dividing each component by $\sqrt{\lambda_i}$ gives $\Lambda^{-1/2}V^T(\mathbf{X} - \boldsymbol{\mu}) \sim N_n(\mathbf{0}, I)$, a whitening transform ([[Matrix Square Root]]).
+- In cryo-EM, the principal modes of structural variability come from [[Cryo-EM Covariance Estimation]], where each sample is only partially observed.
+- For image sets invariant under in-plane rotations, the covariance is block-diagonal in angular frequency ([[Steerable PCA]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=222)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=223)

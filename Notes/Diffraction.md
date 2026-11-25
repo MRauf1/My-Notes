@@ -13,5 +13,6 @@ tags:
 - A wave effect of light that the [[Geometric Optics]] approximation, and the [[Light Ray]] abstraction, both ignore.
 - Equivalently explained via the [[Heisenberg Uncertainty Principle]]: confining a photon's position by passing it through a small aperture increases the uncertainty in its direction of travel, scattering the rays and blurring the image; as the aperture shrinks, this scattering grows.
 - Widens the [[Point Spread Function]] as the [[Aperture|aperture]] narrows, setting the dominant limit on image sharpness at small apertures such as a constricted [[Pupil]].
+- In wave terms, diffraction is [[Interference (Waves)|interference]] of the waves scattered from many points. A periodic object of period $d$ sends [[Plane Wave|plane waves]] at angles $d\sin\theta_n = n\lambda$.
 
 [^1]: [MIT Vision Book - Color](https://visionbook.mit.edu/color.html)

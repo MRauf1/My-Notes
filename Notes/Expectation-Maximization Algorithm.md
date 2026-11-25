@@ -34,6 +34,8 @@ Proof: the M step gives $Q(\hat{\theta}^{(m+1)}) \geq Q(\hat{\theta}^{(m)})$, an
 - Geometrically, the E step builds a lower bound on $\log L$ that touches it at the current estimate, and the M step maximizes that bound (a minorize-maximize algorithm).
 - Convergence is typically linear and can be slow when a large fraction of the information is missing.
 - Standard applications: censored data, fitting [[Mixture Distribution|mixture models]] (e.g. Gaussian mixtures, where $\mathbf{Z}$ is the component label), and hidden Markov models.
+- Used in cryo-EM [[3D Classification]], with the class and pose of each particle as latent variables.
+- In cryo-EM, EM with rotations as latent variables is the standard reconstruction algorithm ([[Iterative Refinement (Cryo-EM)]]).
 
 [^1]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=420)
 [^2]: [Introduction to Mathematical Statistics](zotero://open-pdf/library/items/P3TUBR4A?page=421)
